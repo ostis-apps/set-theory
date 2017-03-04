@@ -1,0 +1,36 @@
+reflexive_set
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[reflexive set]
+	(* <- lang_en;;	*);
+=> nrel_idtf:
+	[The set of all sets reflexive]
+	(* <- lang_en;; *);
+	[The set of all sets of reflective signs]
+	(* <- lang_en;; *);;
+
+
+reflexive_set
+<- rrel_key_sc_element:
+	Definition_of_reflexive_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Creflexive set - a set of elements of which are a sign of the set.] (* <-lang_en;; *);; 
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> set;
+			accessory;;
+		*);;
+
+
+	*);;
+
+Definition_of_cortege
+=> nrel_main_idtf:
+	[Definition "reflexive set"]
+	(* <- lang_en;;	*);;

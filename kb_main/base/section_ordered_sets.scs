@@ -1,0 +1,20 @@
+section_ordered_sets
+	<= nrel_section_decomposition:
+	{
+		section_cortege
+		(*
+		=> nrel_section_base_order: 
+			section_projection_operation;;
+		*);
+		section_projection_operation
+		(*
+		=> nrel_section_base_order: 
+			section_Cartesian_product;;
+		*);
+		section_Cartesian_product
+		(*
+		=> nrel_section_base_order: 
+			section_graphics;;
+		*);
+		section_graphics		
+	};;

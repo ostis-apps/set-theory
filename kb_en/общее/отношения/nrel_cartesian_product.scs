@@ -1,0 +1,101 @@
+nrel_cartesian_product
+<- sc_node_norole_relation;
+<- oriented_relation;
+<- relation;
+<- binary_relation;
+<- antitransitive_relation;
+<- antireflexive_relation;
+<- multiset;
+=> nrel_main_idtf:
+	[cartesian product*]
+	(* <- lang_en;;	*);
+=> nrel_idtf:
+	[direct product of sets*]
+	(* <- lang_en;; *);
+	[Cartesian product*]
+	(* <- lang_en;; *);
+	[the ratio of the direct product*]
+	(* <- lang_en;; *);
+	[the ratio of the direct product of sets*]
+	(* <- lang_en;; *);
+	[direct product*]
+	(* <- lang_en;; *);
+	[attitude Cartesian product*]
+	(* <- lang_en;; *);
+	[attitude Cartesian product*]
+	(* <- lang_en;; *);
+	[Operation of the Cartesian product of sets*]
+	(* <- lang_en;; *);;
+
+
+
+nrel_cartesian_product
+<- rrel_key_sc_element:
+	Definition_of_cartesian_product
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Cartesian product of sets A and B is the set of all ordered pairs of elements <xi, xj>, such that each pair of first edement yavlyaetsya xi∈A element of the first factor, the second element of the pair - the second factor xj∈V element, and the multiplicity of each pair <xi, xj> is the product of the multiplicities of xi and xj in sets multiplied.] (* <-lang_en;; *);; 
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> 	corteg;
+			nrel_accessory;
+			set;;
+		*);;
+
+
+	*);;
+
+Definition_of_cartesian_product
+=> nrel_main_idtf:
+	[Definition "cartesian product"]
+	(* <- lang_en;;	*);;
+
+
+nrel_cartesian_product
+<- rrel_key_sc_element:
+	statement
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Cartesian product is the empty set if one of the original set is the empty set.] (* <-lang_en;; *);; 
+		*);;
+	=> sc_identifier:
+		...
+		(*
+		-> rrel_example: [App. (cartesian product*, employ set)] (* <-lang_en;; *);; 
+		*);;
+
+	*);;
+
+nrel_cartesian_product
+<- rrel_key_sc_element: ...
+	(*
+	<-sc_illustration;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [The Cartesian coordinate system - a set of ordered pairs, the first elements of which belong to the x-axis, and the second - the vertical axis.] (* <-lang_en;; *);; 
+		*);;
+	*);;
+
+
+
+
+nrel_multiplicity_of_element
+=>nrel_first_domain: oriented_bunch;
+=>nrel_second_domain: set;;
+
+
+
+
+
+
+
+

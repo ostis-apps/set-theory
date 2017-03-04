@@ -1,0 +1,16 @@
+lib_component_agent_determining_whether_a_plurality_of_unit
+=> nrel_main_idtf:
+	[Компонент библиотеки. sc-агент определения является ли данный узел множеством]
+	(* <- lang_ru;; *);
+	[Library component. sc-agent find the whether a plurality of unit]
+	(* <- lang_en;; *);
+
+<- platform_independent_reusable_component_OSTIS; 
+<- atomic_reusable_component_OSTIS; 
+<- reusable_scp_agent;
+
+=> nrel_attendant_component: 
+	lib_component_ui_menu_determining_whether_a_plurality_of_unit; 
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_determining_whether_a_plurality_of_unit;;

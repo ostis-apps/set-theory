@@ -1,0 +1,13 @@
+sc_text_of_agent_of_finding_buildings_descartes_multiplication
+-> rrel_key_sc_element:
+	agent_of_finding_descartes_multiplication;
+
+<- scp_program_sc_text;
+
+=> nrel_main_idtf: 
+	[sc-текст агентной scp-программы нахождения декартового произведения множеств] 
+	(* <- lang_ru;; *);
+	[sc-text scp-agent based program finding the descartes multiplication of sets] 
+	(* <- lang_en;; *);;
+
+sc_text_of_agent_of_finding_buildings_descartes_multiplication = [*^"file://agent_of_finding_descartes_multiplication.scsi"*];;

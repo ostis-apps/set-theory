@@ -1,0 +1,9 @@
+section_sets_relations_exercises1
+=> nrel_main_idtf:
+	[Раздел 5. Упражнение 1]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_sets_relations_exercises1_ru.html" (* <-lang_ru;; *);;
+		*);;

@@ -1,0 +1,22 @@
+ui_menu_file_operations <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_operations 
+=> nrel_main_idtf: 
+	[Каким отношением порядка является данное отношение?] 
+	(* <- lang_ru;; *);
+=> nrel_idtf: 
+	[Запрос проверки является ли отношение отношение отношением порядка] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_operations => ui_nrel_command_template:
+	[*
+		question_operations _-> ._question_operations_instance
+			(*
+			_-> ui_arg_1;;				
+			*);;
+		._question_operations_instance _<- question;;
+	*];;
+
+ui_menu_file_operations => ui_nrel_command_lang_template: 
+	[Является ли отношение $ui_arg_1 отношением порядка?] 
+	(* <- lang_ru;; *);;

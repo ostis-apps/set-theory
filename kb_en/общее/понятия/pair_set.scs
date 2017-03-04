@@ -1,0 +1,60 @@
+pair_set
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[pair]
+	(* <- lang_en;;	*);
+
+
+<- rrel_key_sc_element:
+	Definition_of_pair
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls/nrel_pair_set_en.html" (* <-lang_en;; *);; 
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> element_of_set;;
+		*);;
+
+	*);;
+
+pair_set
+=> nrel_idtf:
+	[set which capacity is equal 2]
+	(* <- lang_en;;	*);
+	[two-element set]
+	(* <- lang_en;;	*);;
+
+pair_set
+<- infinite_set;
+	cantor_set;
+	not_reflexive_set;
+	not_transitive_set;
+	infinite_set;;
+
+
+Definition_of_pair
+=> nrel_main_idtf:
+	[Definition "pair"]
+	(* <- lang_en;;	*);;
+
+pair_set
+<- rrel_key_sc_element: ...
+	(*
+	<-sc_illustration;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls/example_pair_set_en.html" (* <-lang_en;; *);; 
+		*);;
+	*);;
+
+
+example_pair
+=> nrel_main_idtf:
+	[example (pair)]
+	(* <- lang_en;;	*);;

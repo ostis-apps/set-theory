@@ -1,0 +1,52 @@
+infinite_set
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[бесконечное множество]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[множество с бесконечным количеством элементов]
+	(* <- lang_ru;;	*);;
+
+finite_set
+<- rrel_key_sc_element:
+	Definition_of_fininite_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/nrel_finite_set.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> set;
+			finite_set;;
+		*);;
+
+	*);;
+
+Definition_of_infinite_set
+=> nrel_main_idtf:
+	[Определение понятия "бескончное множество"]
+	(* <- lang_ru;;	*);;
+
+
+
+infinite_set
+<- rrel_key_sc_element:
+	...
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/statement_infinite_set.html" (* <-lang_ru;; *);;
+		*);;
+	=> sc_identifier:
+		...
+		(*
+		-> rrel_example: "file://htmls/app_infinite_set.html" (* <-lang_ru;; *);; 
+		*);;
+
+	*);;

@@ -1,0 +1,62 @@
+<p>
+На <sc_element sys_idtf = "">отношения</sc_element> переносятся основные операции над <sc_element sys_idtf = "set">множествами</sc_element>, но они могут выполняться только на одной и той же <sc_element sys_idtf = "">области задания</sc_element>.<br>
+<b><sc_element sys_idtf = "nrel_combination">Объединением</sc_element></b> отношений &phi;<sub>1</sub> и &phi;<sub>2</sub> на множестве М называется отношение &phi;<sub>3</sub>: 
+<ul>
+	<li>&phi;<sub>1</sub> &cup; &phi;<sub>2</sub> = &phi;<sub>3</sub>, &phi;<sub>1</sub> = &lt;Ф<sub>1</sub>, M>, &phi;<sub>2</sub> = &lt;Ф<sub>2</sub>, M>.</li>
+	<li>&phi;<sub>3</sub> = &lt;Ф<sub>1</sub> &cup; Ф<sub>2</sub>, M>,</li>
+	<li>&lt;a, b> &isin; Ф<sub>1</sub> &cup; Ф<sub>2</sub> → &lt;a, b> &isin; Ф<sub>1</sub> &or; &lt;a, b> &isin; Ф<sub>2</sub> & a, b &isin; M.</li>
+</ul>
+Например, пусть имеем два отношения: &phi;<sub>1</sub> = &lt;Ф<sub>1</sub>, M>, &phi;<sub>2</sub> = &lt;Ф<sub>2</sub>, M>, M = {2, 3, 4}, Ф<sub>1</sub> = {&lt;2, 1>, &lt;2, 2>, &lt;2, 4>}, Ф<sub>2</sub> = {&lt;2, 1>, &lt;2, 3>, &lt;4, 4>}<br>
+Тогда объединение этих отношений &phi;<sub>3</sub> = &lt;Ф<sub>3</sub>, M>, Ф<sub>3</sub> = Ф<sub>1</sub> &cup; Ф<sub>2</sub> = {&lt;2, 1>, &lt;2, 2>, &lt;2, 4>, &lt;2, 3>, &lt;4, 4> }. <br>
+Отметим, что для операции объединения над отношениями справедлива следующая запись: 
+<ul>
+	<li>x (&phi;<sub>1</sub> &cup; &phi;<sub>2</sub>) y → x &phi;<sub>1</sub> y &or; x &phi;<sub>2</sub> y</li>
+</ul> <br>
+<b><sc_element sys_idtf = "nrel_intersection">Пересечением</sc_element></b> отношений &phi;<sub>1</sub> и &phi;<sub>2</sub> на множестве М называется отношение &phi;<sub>3</sub>: 
+<ul>
+	<li>&phi;<sub>1</sub> &cap; &phi;<sub>2</sub> = &phi;<sub>3</sub>, &phi;<sub>1</sub> = &lt;Ф<sub>1</sub>, M>, &phi;<sub>2</sub> = &lt;Ф<sub>2</sub>, M>.</li>
+	<li>&phi;<sub>3</sub> = &lt;Ф<sub>1</sub> &cap; Ф<sub>2</sub>, M>,</li>
+	<li>&lt;a, b> &isin; Ф<sub>1</sub> &cap; Ф<sub>2</sub> → &lt;a, b> &isin; Ф<sub>1</sub> & &lt;a, b> &isin; Ф<sub>2</sub> & a, b &isin; M.</li>
+</ul>
+Например, пусть имеем два отношения: &phi;<sub>1</sub> = &lt;Ф<sub>1</sub>, M>, &phi;<sub>2</sub> = &lt;Ф<sub>2</sub>, M>, M = {1, 2}, &phi;<sub>1</sub>= &lt;{&lt;1, 1>, &lt;1, 2>}, {1, 2}>, &phi;<sub>2</sub> = &lt;{&lt;1, 2>,&lt;2, 2>}, {1, 2}>.<br>
+Тогда пересечение этих отношений &phi;<sub>3</sub> = &lt;Ф<sub>3</sub>, M> = &lt;{&lt;1, 2>},{1, 2}>. <br>
+Отметим, что для операции пересечения над отношениями справедлива следующая запись: 
+<ul>
+	<li>x (&phi;<sub>1</sub> &cap; &phi;<sub>2</sub>) y → x &phi;<sub>1</sub> y & x &phi;<sub>2</sub> y</li>
+</ul>
+Операции объединения и пересечения также, как и для множеств применимы для любого числа отношений.<br>
+<br>
+Отношение &phi;<sub>3</sub> называется <b><sc_element sys_idtf = "nrel_sets_difference">разностью</sc_element></b> отношений &phi;<sub>1</sub> и &phi;<sub>2</sub>, если
+<ul>
+	<li>&phi;<sub>1</sub> = &lt;Ф<sub>1</sub>, M>, &phi;<sub>2</sub> = &lt;Ф<sub>2</sub>, M>.</li>
+	<li>&phi;<sub>3</sub> = &phi;<sub>1</sub> \ &phi;<sub>2</sub> = &lt;Ф<sub>1</sub> \ Ф<sub>2</sub>, M>,</li>
+	<li>&lt;a, b> &isin; Ф<sub>1</sub> \ Ф<sub>2</sub> → &lt;a, b> &isin; Ф<sub>1</sub> & &lt;a, b> &notin; Ф<sub>2</sub> & a, b &isin; M.</li>
+</ul>
+Например, пусть имеем два отношения: &phi;<sub>1</sub> = &lt;Ф<sub>1</sub>, M>, &phi;<sub>2</sub> = &lt;Ф<sub>2</sub>, M>, M = {1, 2, 3}, Ф<sub>1</sub>= {&lt;2, 2>, &lt;1, 2>, &lt;3, 3>}, Ф<sub>2</sub> = {&lt;1, 1>,&lt;2, 2>, &lt;3, 3>}<br>
+Тогда разность этих отношений &phi;<sub>3</sub> = &lt;Ф<sub>3</sub>, M> = &lt;{&lt;1, 2>},{1, 2, 3}>. <br>
+Отметим, что для операции разности над отношениями справедлива следующая запись: 
+<ul>
+	<li>x (&phi;<sub>1</sub> \ &phi;<sub>2</sub>) y → x &phi;<sub>1</sub> y & x &phi;<sub>2</sub>’ y</li>
+</ul><br>
+Над отношениями выполняются также операции <b><sc_element sys_idtf = "">инверсии</sc_element></b> и <b><sc_element sys_idtf = "">композиции</sc_element></b>.<br>
+Если &phi; = &lt;Ф, М>, то инверсия &phi;<sup>-1</sup> = &lt; Ф<sup>-1</sup>, М>.<br>
+Для того, чтобы найти инверсию отношения, необходимо проинвертировать элементы его <sc_element sys_idtf = "">графика</sc_element> на множестве М. Отметим, что для операции инверсии над отношениями справедлива следующая запись
+<ul>
+	<li>х &phi;<sup>-1</sup>у → у &phi; х.</li>
+</ul>
+Например, для отношения &phi; = &lt;Ф, М>, М = {1, 2, 3}, Ф = {&lt;1, 1>, &lt;1, 2>,&lt;1, 3>}, инверсия &phi;<sup>-1</sup> = &lt; Ф<sup>-1</sup>, М> и Ф<sup>-1</sup>= {&lt;1, 1>,&lt;2, 1>, &lt;3, 1>).<br>
+Композицией двух  отношении  является  новое отношение, у которого компонируют графики отношений.
+<ul>
+	<li>&phi;<sub>1</sub> = &lt;Ф<sub>1</sub>, M>, &phi;<sub>2</sub> = &lt;Ф<sub>2</sub>, M>.</li>
+	<li>&phi;<sub>1</sub> · &phi;<sub>2</sub> = &lt;Ф<sub>1</sub> · Ф<sub>2</sub>, M></li>
+</ul>
+Например, пусть имеем два отношения: &phi;<sub>1</sub> = &lt;Ф<sub>1</sub>, M>, &phi;<sub>2</sub> = &lt;Ф<sub>2</sub>, M>, M = {1, 2, 3}, Ф<sub>1</sub>= {&lt;1, 1>, &lt;1, 2>, &lt;1, 3>,&lt;3, 3>}, Ф<sub>2</sub> = {&lt;1, 1>,&lt;2, 3>, &lt;3, 1>,&lt;3, 2>}<br>
+Тогда композиция графиков этих отношений равна Ф<sub>3</sub> = Ф<sub>1</sub>Ф<sub>2</sub> = {&lt;1, 1>, &lt;1, 3>,&lt;1, 2>, &lt;3, 2>, &lt;3, 1>}.<br>
+Отметим, что все операции над отношениями могут выполняться только на одной и той же <sc_element sys_idtf = "">области задания</sc_element>, и в результате выполнения операций снова получается отношение с той же самой областью задания.<br>
+Введем операцию, меняющую область задания отношений.<br>
+Пусть &phi; =&lt;Ф, М>, и &#8707; А &sube; М, тогда <sc_element sys_idtf = "">сужением отношения</sc_element> &phi; на множестве А называется новое отношение
+<ul>
+	<li>&phi;<sub>1</sub> = &lt;Ф &cap; A<sup>2</sup>, A></li>
+</ul>
+Например, &phi; = &lt;Ф, М>, М = {1, 2, 3}, Ф = {&lt;1, 1>,&lt;1, 2>, &lt;1, 3>}, A = {1, 2}. Тогда &phi;<sub>1</sub> = &lt;{&lt;1, 1>,&lt;1, 2>},{1, 2}>. 
+</p>

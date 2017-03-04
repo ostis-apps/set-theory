@@ -1,0 +1,56 @@
+n_powerful_set
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[n-powerful set]
+	(* <- lang_en;;	*);
+
+
+<- rrel_key_sc_element:
+	Definition_of_n_powerful_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [The set consisting of only n elements.] (* <-lang_en;; *);; 
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> element_of_set;;
+		*);;
+
+	*);;
+
+n_powerful_set
+=> nrel_idtf:
+	[set which capacity is equal n]
+	(* <- lang_en;;	*);
+	[set containing N elements]
+	(* <- lang_en;;	*);;
+
+n_powerful_set
+<- infinite_set;
+	cantor_set;
+	not_reflexive_set;
+	not_transitive_set;
+	infinite_set;;
+
+
+Definition_of_n_powerful_set
+=> nrel_main_idtf:
+	[Definition "n-powerful set"]
+	(* <- lang_en;;	*);;
+
+
+n_powerful_set
+<- rrel_key_sc_element: ...
+	(*
+	<-sc_illustration;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [The set <1,2,3,4,5,...,n>   is a singleton.] (* <-lang_en;; *);; 
+		*);;
+	*);;
+

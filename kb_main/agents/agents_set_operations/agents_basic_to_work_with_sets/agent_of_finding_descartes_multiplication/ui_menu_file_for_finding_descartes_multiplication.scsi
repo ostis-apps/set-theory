@@ -1,0 +1,22 @@
+ui_menu_file_for_finding_descartes_multiplication
+	<- 	ui_user_command_class_atom; 
+		ui_user_command_class_view_kb;
+	=> nrel_main_idtf: 
+		[Какое декартовое произведение множеств?] (* <- lang_ru;; *);
+		[What is the cartesian product of given sets?] (* <- lang_en;; *);
+	=> ui_nrel_command_template:
+		[*
+		question_finding_descartes_multiplication _-> ._question_finding_descartes_multiplication_instance
+			(*
+				_-> rrel_1:: ui_arg_1;;
+				_-> rrel_2:: ... (*
+							_-> rrel_1:: ui_arg_2;;
+						*);;
+			*);;
+		._question_finding_descartes_multiplication_instance _<- question;;
+		*];
+	=> ui_nrel_command_lang_template: 
+		[Декартово произведение множеств: $ui_arg_1 и $ui_arg_2] 
+		(* <- lang_ru;; *);
+		[What is the cartesian product of $ui_arg_1 и $ui_arg_2] 
+		(* <- lang_en;; *);;

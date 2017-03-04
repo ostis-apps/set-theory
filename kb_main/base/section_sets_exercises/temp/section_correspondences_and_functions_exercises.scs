@@ -1,0 +1,16 @@
+section_correspondences_and_functions_exercises
+<= nrel_section_decomposition:
+	{
+		section_correspondences_and_functions_exercise1
+		(*
+		=> nrel_section_base_order: 
+			section_correspondences_and_functions_exercise2;;
+		*);
+		section_correspondences_and_functions_exercise2
+		(*
+		=> nrel_section_base_order: 
+			section_correspondences_and_functions_exercise3;;
+		*);
+		section_correspondences_and_functions_exercise3
+	};
+	<-concept_exercise;;

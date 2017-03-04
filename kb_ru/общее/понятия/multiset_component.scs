@@ -1,0 +1,25 @@
+multiset_component
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[компонента мультимножества]
+	(* <- lang_ru;;	*);
+
+
+<- rrel_key_sc_element:
+	Definition_of_multiset_component
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/multiset_component.html"(* <-lang_ru;; *);;
+		*);;
+	*);;
+
+
+Definition_of_multiset_component
+=> nrel_main_idtf:
+	[Определение понятия "компонента мультимножества"]
+	(* <- lang_ru;;	*);;
+
+

@@ -1,0 +1,415 @@
+agent_checking_whether_the_agent_is_a_transitive_relation
+=> nrel_main_idtf:
+	[агентная scp-программа поиска связок отношения] (* <- lang_ru;; *);
+	[agent scp-program of the ligaments relations] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_checking_whether_the_agent_is_a_transitive_relation 
+	(*
+	-> rrel_params: .agent_checking_whether_the_agent_is_a_transitive_relation_params 
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+	-> rrel_operators: .agent_checking_whether_the_agent_is_a_transitive_relation_operator_set 
+		(*
+		-> rrel_init: .agent_checking_whether_the_agent_is_a_transitive_relation_operator1 
+			(*
+			<- searchElStr3;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+			=> nrel_goto: .agent_checking_whether_the_agent_is_a_transitive_relation_operator2;;
+			*);;
+
+		-> .agent_checking_whether_the_agent_is_a_transitive_relation_operator2 
+			(*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: question_checking_whether_the_agent_is_a_transitive_relation;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_then: .agent_checking_whether_the_agent_is_a_transitive_relation_operator3;;
+			=> nrel_else: .agent_checking_whether_the_agent_is_a_transitive_relation_operator_return;;
+			*);;
+
+		-> .agent_checking_whether_the_agent_is_a_transitive_relation_operator3
+			(*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _param;;
+
+			=> nrel_then: .agent_checking_whether_the_agent_is_a_transitive_relation_operator4;;
+			=> nrel_else: .agent_checking_whether_the_agent_is_a_transitive_relation_operator_return;;
+			*);;
+
+		-> .agent_checking_whether_the_agent_is_a_transitive_relation_operator4
+			(*
+		 	<- genEl;;
+		 	-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer;;
+
+		 	=> nrel_goto: .agent_checking_whether_the_agent_is_a_transitive_relation_operator4A;;
+		 	*);;
+
+		-> .agent_checking_whether_the_agent_is_a_transitive_relation_operator4A
+			(*
+			<- searchElStr3;;
+			-> rrel_1: rrel_scp_const: transitive_relation;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+
+			=> nrel_then: .agent_checking_whether_the_agent_is_a_transitive_relation_operator19;;
+			=> nrel_else: .agent_checking_whether_the_agent_is_a_transitive_relation_operator5;;
+			*);;
+
+		-> .agent_checking_whether_the_agent_is_a_transitive_relation_operator5 
+			(*
+		 	<- genEl;;
+		 	-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _set_node;;
+
+		 	=> nrel_goto: .agent_checking_whether_the_agent_is_a_transitive_relation_operator6;;
+		 	*);;
+
+		-> .agent_checking_whether_the_agent_is_a_transitive_relation_operator6
+			(*
+		 	<- genEl;;
+		 	-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _set_dubl_node;;
+
+		 	=> nrel_goto: .agent_checking_whether_the_agent_is_a_transitive_relation_operator7;;
+		 	*);;
+
+		-> .agent_checking_whether_the_agent_is_a_transitive_relation_operator7
+			(*
+            <- printNl;;
+            -> rrel_1: rrel_scp_const: [в 1];;
+            
+            => nrel_goto: .agent_checking_whether_the_agent_is_a_transitive_relation_operator7p;;
+        	*);;
+
+		-> .agent_checking_whether_the_agent_is_a_transitive_relation_operator7p
+			(*
+			<- searchSetStr5;;
+		 	-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: _node1;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+		 	-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _node2;;
+            -> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _param;;
+
+            		-> rrel_set_1: rrel_fixed: rrel_scp_var: _set_dubl_node;;
+                 	-> rrel_set_3: rrel_fixed: rrel_scp_var: _set_dubl_node;;
+
+           			=> nrel_goto: .agent_checking_whether_the_agent_is_a_transitive_relation_operator8A;;
+          			*);;
+
+		-> .agent_checking_whether_the_agent_is_a_transitive_relation_operator8A
+			(*
+			<- searchElStr3;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _set_dubl_node;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+		 	-> rrel_3: rrel_assign: rrel_scp_var: _node;;
+
+           	=> nrel_then: .agent_checking_whether_the_agent_is_a_transitive_relation_operator8B;;
+	       	=> nrel_else: .agent_checking_whether_the_agent_is_a_transitive_relation_operator8E;;
+   			*);;
+
+   		-> .agent_checking_whether_the_agent_is_a_transitive_relation_operator8B
+			(*
+            <- eraseEl;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
+            
+            => nrel_goto: .agent_checking_whether_the_agent_is_a_transitive_relation_operator8C;;
+        	*);;
+
+        -> .agent_checking_whether_the_agent_is_a_transitive_relation_operator8C
+			(*
+			<- searchElStr3;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _set_node;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+		 	-> rrel_3: rrel_fixed: rrel_scp_var: _node;;
+
+           	=> nrel_then: .agent_checking_whether_the_agent_is_a_transitive_relation_operator8A;;
+	       	=> nrel_else: .agent_checking_whether_the_agent_is_a_transitive_relation_operator8D;;
+   			*);;
+
+   		-> .agent_checking_whether_the_agent_is_a_transitive_relation_operator8D
+			(*
+			<- genElStr3;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _set_node;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+		 	-> rrel_3: rrel_fixed: rrel_scp_var: _node;;
+
+           	=> nrel_goto: .agent_checking_whether_the_agent_is_a_transitive_relation_operator8A;;
+   			*);;
+
+   		-> .agent_checking_whether_the_agent_is_a_transitive_relation_operator8E
+			(*
+            <- eraseEl;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _set_dubl_node;;
+            
+            => nrel_goto: .agent_checking_whether_the_agent_is_a_transitive_relation_operator9;;
+        	*);;
+
+        -> .agent_checking_whether_the_agent_is_a_transitive_relation_operator9
+			(*
+            <- printNl;;
+            -> rrel_1: rrel_scp_const: [в 2];;
+            
+            => nrel_goto: .agent_checking_whether_the_agent_is_a_transitive_relation_operator9p;;
+        	*);;
+
+        -> .agent_checking_whether_the_agent_is_a_transitive_relation_operator9p
+			(*
+			<- searchElStr5;;
+		 	-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: _node_prew;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+		 	-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _node_next;;
+            -> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _param;;
+
+           	=> nrel_goto: .agent_checking_whether_the_agent_is_a_transitive_relation_operator10;;
+          	*);;
+
+        -> .agent_checking_whether_the_agent_is_a_transitive_relation_operator10
+			(*
+			<- eraseElStr3;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _set_node;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arc;;
+		 	-> rrel_3: rrel_fixed: rrel_scp_var: _node_prew;;
+
+           	=> nrel_goto: .agent_checking_whether_the_agent_is_a_transitive_relation_operator11;;
+   			*);;
+
+   		-> .agent_checking_whether_the_agent_is_a_transitive_relation_operator11
+			(*
+			<- eraseElStr3;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _set_node;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arc;;
+		 	-> rrel_3: rrel_fixed: rrel_scp_var: _node_next;;
+
+           	=> nrel_goto: .agent_checking_whether_the_agent_is_a_transitive_relation_operator12;;
+   			*);;
+
+   		-> .agent_checking_whether_the_agent_is_a_transitive_relation_operator12
+			(*
+		 	<- genEl;;
+		 	-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _set_next_or_prew;;
+
+		 	=> nrel_goto: .agent_checking_whether_the_agent_is_a_transitive_relation_operator13A;;
+		 	*);;
+
+   		-> .agent_checking_whether_the_agent_is_a_transitive_relation_operator13A
+			(*
+			<- searchSetStr5;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _node_next;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+		 	-> rrel_3: rrel_assign: rrel_scp_var: _node_temp;;
+            -> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _param;;
+
+            		-> rrel_set_3: rrel_fixed: rrel_scp_var: _set_next_or_prew;;
+
+           			=> nrel_then: .agent_checking_whether_the_agent_is_a_transitive_relation_operator14A;;
+           			=> nrel_else: .agent_checking_whether_the_agent_is_a_transitive_relation_operator15A;;
+          			*);;
+
+		-> .agent_checking_whether_the_agent_is_a_transitive_relation_operator14A
+			(*
+			<- searchElStr3;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _set_next_or_prew;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+		 	-> rrel_3: rrel_assign: rrel_scp_var: _node_next;;
+
+           	=> nrel_then: .agent_checking_whether_the_agent_is_a_transitive_relation_operator14B;;
+	       	=> nrel_else: .agent_checking_whether_the_agent_is_a_transitive_relation_operator15A;;
+   			*);;
+
+		-> .agent_checking_whether_the_agent_is_a_transitive_relation_operator14B
+			(*
+            <- eraseEl;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
+            
+            => nrel_goto: .agent_checking_whether_the_agent_is_a_transitive_relation_operator14C;;
+        	*);;
+
+        -> .agent_checking_whether_the_agent_is_a_transitive_relation_operator14C
+			(*
+			<- searchElStr3;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _set_node;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+		 	-> rrel_3: rrel_fixed: rrel_scp_var: _node_next;;
+
+           	=> nrel_then: .agent_checking_whether_the_agent_is_a_transitive_relation_operator14D;;
+	       	=> nrel_else: .agent_checking_whether_the_agent_is_a_transitive_relation_operator14A;;
+   			*);;
+
+   		-> .agent_checking_whether_the_agent_is_a_transitive_relation_operator14D
+			(*
+            <- eraseEl;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
+            
+            => nrel_goto: .agent_checking_whether_the_agent_is_a_transitive_relation_operator14E;;
+        	*);;
+
+   		-> .agent_checking_whether_the_agent_is_a_transitive_relation_operator14E
+			(*
+			<- eraseSetStr3;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _set_next_or_prew;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arc;;
+		 	-> rrel_3: rrel_assign: rrel_scp_var: _node_temp;;
+
+           	=> nrel_goto: .agent_checking_whether_the_agent_is_a_transitive_relation_operator13A;;
+   			*);;
+
+        -> .agent_checking_whether_the_agent_is_a_transitive_relation_operator15A
+			(*
+			<- searchSetStr5;;
+		 	-> rrel_1: rrel_assign: rrel_scp_var: _node_temp;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+		 	-> rrel_3: rrel_fixed: rrel_scp_var: _node_prew;;
+            -> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _param;;
+
+            		-> rrel_set_1: rrel_fixed: rrel_scp_var: _set_next_or_prew;;
+
+           			=> nrel_then: .agent_checking_whether_the_agent_is_a_transitive_relation_operator16A;;
+           			=> nrel_else: .agent_checking_whether_the_agent_is_a_transitive_relation_operator17_controll;;
+          			*);;
+
+		-> .agent_checking_whether_the_agent_is_a_transitive_relation_operator16A
+			(*
+			<- searchElStr3;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _set_next_or_prew;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+		 	-> rrel_3: rrel_assign: rrel_scp_var: _node_prew;;
+
+           	=> nrel_then: .agent_checking_whether_the_agent_is_a_transitive_relation_operator16B;;
+	       	=> nrel_else: .agent_checking_whether_the_agent_is_a_transitive_relation_operator17_controll;;
+   			*);;
+
+		-> .agent_checking_whether_the_agent_is_a_transitive_relation_operator16B
+			(*
+            <- eraseEl;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
+            
+            => nrel_goto: .agent_checking_whether_the_agent_is_a_transitive_relation_operator16C;;
+        	*);;
+
+        -> .agent_checking_whether_the_agent_is_a_transitive_relation_operator16C
+			(*
+			<- searchElStr3;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _set_node;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+		 	-> rrel_3: rrel_fixed: rrel_scp_var: _node_prew;;
+
+           	=> nrel_then: .agent_checking_whether_the_agent_is_a_transitive_relation_operator16D;;
+	       	=> nrel_else: .agent_checking_whether_the_agent_is_a_transitive_relation_operator17_controll;;
+   			*);;
+
+   		-> .agent_checking_whether_the_agent_is_a_transitive_relation_operator16D
+			(*
+            <- eraseEl;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
+            
+            => nrel_goto: .agent_checking_whether_the_agent_is_a_transitive_relation_operator16E;;
+        	*);;
+
+   		-> .agent_checking_whether_the_agent_is_a_transitive_relation_operator16E
+			(*
+			<- eraseSetStr3;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _set_next_or_prew;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arc;;
+		 	-> rrel_3: rrel_assign: rrel_scp_var: _node_temp;;
+
+           	=> nrel_goto: .agent_checking_whether_the_agent_is_a_transitive_relation_operator15A;;
+   			*);;
+
+        -> .agent_checking_whether_the_agent_is_a_transitive_relation_operator17_controll
+			(*
+			<- searchElStr3;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _set_node;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+		 	-> rrel_3: rrel_assign: rrel_scp_var: _node_temp;;
+
+           	=> nrel_then: .agent_checking_whether_the_agent_is_a_transitive_relation_operator18;;
+           	=> nrel_else: .agent_checking_whether_the_agent_is_a_transitive_relation_operator17;;
+   			*);;
+
+        -> .agent_checking_whether_the_agent_is_a_transitive_relation_operator17
+			(*
+			<- genElStr3;;
+		 	-> rrel_1: rrel_scp_const: transitive_relation;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+		 	-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+
+           	=> nrel_goto: .agent_checking_whether_the_agent_is_a_transitive_relation_operator_erase_set_node;;
+   			*);;
+
+   		-> .agent_checking_whether_the_agent_is_a_transitive_relation_operator18
+			(*
+			<- genElStr3;;
+		 	-> rrel_1: rrel_scp_const: transitive_relation;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_neg: rrel_const: rrel_perm: _arc;;
+		 	-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+
+           	=> nrel_goto: .agent_checking_whether_the_agent_is_a_transitive_relation_operator_erase_set_node;;
+   			*);;
+
+   		-> .agent_checking_whether_the_agent_is_a_transitive_relation_operator_erase_set_node
+			(*
+            <- eraseEl;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _set_node;;
+            
+            => nrel_goto: .agent_checking_whether_the_agent_is_a_transitive_relation_operator19;;
+        	*);;
+
+   		-> .agent_checking_whether_the_agent_is_a_transitive_relation_operator19
+			(*
+			<- genElStr3;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+		 	-> rrel_3: rrel_scp_const: transitive_relation;;
+
+           	=> nrel_goto: .agent_checking_whether_the_agent_is_a_transitive_relation_operator20;;
+   			*);;
+
+   		-> .agent_checking_whether_the_agent_is_a_transitive_relation_operator20
+			(*
+			<- genElStr3;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+		 	-> rrel_3: rrel_fixed: rrel_scp_var: _arc;;
+
+           	=> nrel_goto: .agent_checking_whether_the_agent_is_a_transitive_relation_operator_add_param;;
+   			*);;
+
+		-> .agent_checking_whether_the_agent_is_a_transitive_relation_operator_add_param
+			(*
+		 	<- genElStr3;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+		 	-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+
+            => nrel_goto: .agent_checking_whether_the_agent_is_a_transitive_relation_operator_gen_answer;;
+		 	*);;
+
+		-> .agent_checking_whether_the_agent_is_a_transitive_relation_operator_gen_answer 
+			(*
+		  	<- genElStr5;;
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+		  	-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_common: _arc;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+		  	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+		  	=> nrel_goto: .agent_checking_whether_the_agent_is_a_transitive_relation_operator_return;;
+			*);;    
+
+		 -> .agent_checking_whether_the_agent_is_a_transitive_relation_operator_return 
+			(*
+		  	<- return;;
+			*);;
+		*);;
+	*);;

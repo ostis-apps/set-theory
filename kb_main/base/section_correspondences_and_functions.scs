@@ -1,0 +1,25 @@
+section_correspondences_and_functions
+	<= nrel_section_decomposition:
+	{
+		section_basic_concepts_of_correspondence
+		(*
+		=> nrel_section_base_order: 
+			section_correspondence_operations;;
+		*);
+		section_correspondence_operations
+		(*
+		=> nrel_section_base_order: 
+			section_properties_of_correspondence;;
+		*);
+		section_properties_of_correspondence
+		(*
+		=> nrel_section_base_order: 
+			section_mapping_of_sets;;
+		*);
+		section_mapping_of_sets
+		(*
+		=> nrel_section_base_order: 
+			section_function;;
+		*);
+		section_function
+	};;

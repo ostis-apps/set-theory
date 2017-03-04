@@ -1,0 +1,34 @@
+ui_menu_file_for_finding_domain <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_for_finding_domain 
+=> nrel_main_idtf: 
+	[Какие домены и область определения указываемого отношения?] 
+	(* <- lang_ru;; *);
+=> nrel_idtf: 
+	[Запрос поиска доменов и области определения отношения] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_finding_domain 
+=> nrel_main_idtf: 
+	[What is a domain for given relation?] 
+	(* <- lang_en;; *);
+=> nrel_idtf: 
+	[Request of domain for relation] 
+	(* <- lang_en;; *);;
+
+ui_menu_file_for_finding_domain => ui_nrel_command_template:
+	[*
+		question_of_finding_domain _-> ._question_of_finding_domain_instance
+			(*
+			_-> ui_arg_1;;				
+			*);;
+		._question_of_finding_domain_instance _<- question;;
+	*];;
+
+ui_menu_file_for_finding_domain => ui_nrel_command_lang_template: 
+	[Какие домены отношения $ui_arg_1] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_finding_domain => ui_nrel_command_lang_template: 
+	[What is a domain for relation $ui_arg_1] 
+	(* <- lang_en;; *);;

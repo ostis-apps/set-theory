@@ -1,0 +1,79 @@
+cortege
+<=> nrel_equivalence: oriented_set;
+<- sc_node_not_relation;
+<- infinite_set;
+<- antireflexive_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+	[кортеж]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[упорядоченный n-набор]
+	(* <- lang_ru;; *);
+	[упорядоченная последовательность]
+	(* <- lang_ru;; *);;
+
+cortege
+<- rrel_key_sc_element:
+	Definition_of_cortege
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/cortege.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+Definition_of_cortege
+=> nrel_main_idtf:
+	[Определение понятия "кортеж"]
+	(* <- lang_ru;;	*);;
+
+
+
+cortege
+<- rrel_key_sc_element:
+	...
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/statement_cortege.html" (* <-lang_ru;; *);;
+		*);;
+	=> sc_identifier:
+		...
+		(*
+		-> rrel_example: "file://htmls/app_cortege.html" (* <-lang_ru;; *);; 
+		*);;
+
+	*);;
+
+
+
+cortege
+<- rrel_key_sc_element: 
+	...
+	(*
+	<-sc_illustration;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example: "file://content/cortege.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);
+		...
+		(* 
+		-> rrel_example: "file://htmls/example_cortege.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+
+
+
+
+
+

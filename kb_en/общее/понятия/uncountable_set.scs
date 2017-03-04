@@ -1,0 +1,30 @@
+uncountable_set
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[uncountable set]
+	(* <- lang_en;;	*);;
+
+uncountable_set
+<- rrel_key_sc_element:
+	Definition_of_uncuncountable_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [An infinite set, the power of which is greater than the power of a countable set.] (* <-lang_en;; *);; 
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> infinite_set;
+			power_set;
+			countable_set;;
+		*);;
+
+	*);;
+
+Definition_of_uncuncountable_set
+=> nrel_main_idtf:
+	[Definition "uncountable set"]
+	(* <- lang_en;;	*);;

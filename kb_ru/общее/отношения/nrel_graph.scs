@@ -1,0 +1,46 @@
+nrel_graph
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- transitive_relation;
+<- reflexive_relation;
+=> nrel_main_idtf:
+	[график*]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[быть графиком*]
+	(* <- lang_ru;;	*);;
+
+nrel_graph
+<- rrel_key_sc_element:
+	Definition_of_nrel_graph
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/nrel_graph.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> function;
+			cartesian_product;
+			nrel_inclusion;
+			set;;
+		*);;
+
+
+	*);;
+
+
+Definition_of_nrel_graph
+=> nrel_main_idtf:
+	[Определение отношения график*]
+	(* <- lang_ru;;	*);;
+
+
+nrel_graph
+=>nrel_first_domain: function;
+=>nrel_second_domain: set;;

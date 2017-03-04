@@ -1,0 +1,32 @@
+projection
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[проекция]
+	(* <- lang_ru;;	*);;
+projection
+<- rrel_key_sc_element:
+	Definition_of_projection
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/projection.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> cartesian_product;
+		nrel_component;
+
+		element_of_set;;
+		*);;
+
+
+	*);;
+
+Definition_of_projection
+=> nrel_main_idtf:
+	[Определение понятия "проекция"]
+	(* <- lang_ru;;	*);;
+

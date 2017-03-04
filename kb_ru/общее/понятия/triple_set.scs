@@ -1,0 +1,62 @@
+triple_set
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[тройка]
+	(* <- lang_ru;;	*);
+
+
+<- rrel_key_sc_element:
+	Definition_of_triple_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/nrel_triple_set.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> element_of_set;;
+		*);;
+
+	*);;
+
+triple_set
+=> nrel_idtf:
+	[множество, мощность которого равна 3]
+	(* <- lang_ru;;	*);
+	[трехэлементное множество]
+	(* <- lang_ru;;	*);;
+
+triple_set
+<- infinite_set;
+	cantor_set;
+	not_reflexive_set;
+	not_transitive_set;
+	infinite_set;;
+
+
+Definition_of_triple_set
+=> nrel_main_idtf:
+	[Определение понятия "тройка"]
+	(* <- lang_ru;;	*);;
+
+
+
+triple_set
+<- rrel_key_sc_element: ...
+	(*
+	<-sc_illustration;;
+	<=nrel_sc_text_translation:
+		example_of_triple_set
+		(* 
+		-> rrel_example: "file://htmls/example_triple_set.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+
+example_of_triple_set
+=> nrel_main_idtf:
+	[пример (тройка)]
+	(* <- lang_ru;;	*);;

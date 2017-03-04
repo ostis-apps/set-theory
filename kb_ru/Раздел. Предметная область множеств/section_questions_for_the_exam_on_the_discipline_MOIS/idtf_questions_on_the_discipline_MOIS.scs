@@ -1,0 +1,15 @@
+nrel_asked
+=> nrel_main_idtf:
+	[ответ*] (* <- lang_ru;; *);;
+
+section_questions_on_the_discipline_MOIS
+=> nrel_main_idtf:
+	[Раздел. Вопросы по дисциплине МОИС] (* <- lang_ru;; *);;
+
+section_questions_for_the_offset_on_the_discipline_MOIS
+=> nrel_main_idtf:
+	[Раздел. Вопросы к зачету по дисциплине МОИС] (* <- lang_ru;; *);;
+
+section_questions_for_the_exam_on_the_discipline_MOIS
+=> nrel_main_idtf:
+	[Раздел. Вопросы к экзамену по дисциплине МОИС] (* <- lang_ru;; *);;

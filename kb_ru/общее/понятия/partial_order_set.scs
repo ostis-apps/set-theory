@@ -1,0 +1,26 @@
+partial_order_set
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[частично упорядоченное множество]
+	(* <- lang_ru;;	*);;
+
+partial_order_set
+<- rrel_key_sc_element:
+	Definition_of_partial_order_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/partial_order_set.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);;
+
+
+Definition_of_partial_order_set
+=> nrel_main_idtf:
+	[Определение понятия "частично упорядоченное множество"]
+	(* <- lang_ru;;	*);;
+
+partial_order_set <- cortege;;

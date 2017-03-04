@@ -1,0 +1,63 @@
+countable_set
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[счетное множество]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[пронумерованное множество]
+	(* <- lang_ru;;	*);;
+
+countable_set
+<- rrel_key_sc_element:
+	Definition_of_countable_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: [Счётное множество есть бесконечное множество, элементы которого возможно пронумеровать натуральными числами.] (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> set;
+			power_set;
+			nrel_equality;;
+		*);;
+
+	*);;
+
+Definition_of_countable_set
+=> nrel_main_idtf:
+	[Определение понятия "счетное множество"]
+	(* <- lang_ru;;	*);;
+
+
+countable_set
+<- rrel_key_sc_element:
+	statement
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: [Всякое бесконечное множество содержит счетное подмножество.] (* <-lang_ru;; *);;
+		*);;
+	=> sc_identifier:
+		...
+		(*
+		-> rrel_example: [Утв.(счетное множество, конечное множество, подмножество*)] (* <-lang_ru;; *);; 
+		*);;
+
+	*);;
+
+countable_set
+<- rrel_key_sc_element: ...
+	(*
+	<-sc_illustration;;
+	<=nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: [Множество целых чисел - счётное множество. ] (* <-lang_ru;; *);;
+		*);;
+	*);;

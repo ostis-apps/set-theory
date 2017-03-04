@@ -1,0 +1,19 @@
+ui_menu_determining_whether_a_plurality_of_unit 
+	<- 	ui_user_command_class_atom; 
+		ui_user_command_class_view_kb;
+	=> nrel_main_idtf: 
+		[Содержит ли данное множество повторяющиеся элементы?] (* <- lang_ru;; *);
+		[Does this set contain duplicate elements?] (* <- lang_en;; *);
+	=> ui_nrel_command_template:
+		[*
+		question_determining_whether_a_plurality_of_unit _-> ._question_determining_whether_a_plurality_of_unit_instance
+			(*
+				_-> ui_arg_1;;
+			*);;
+		._question_determining_whether_a_plurality_of_unit_instance _<- question;;
+		*];
+	=> ui_nrel_command_lang_template:
+		[Содержит ли $ui_arg_1 повторяющиеся элементы] 
+		(* <- lang_ru;; *);
+		[Does $ui_arg_1 contain duplicate elements]
+                (* <- lang_en;; *);;

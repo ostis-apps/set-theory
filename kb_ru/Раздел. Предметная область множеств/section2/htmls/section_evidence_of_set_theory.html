@@ -1,0 +1,27 @@
+<p><b>Пример 1.</b> Доказать или опровергнуть справедливость тождества (A &cup; B) &cap; C = (A &cap; C) &cup; (B &cap; C).<br>
+<b>Доказательство.</b> Докажем, используя метод взаимного включения. (A &cup; B) &cap; C = E, a (A &cap; C) &cup; (B &cap; C) = F.Тогда необходимо доказать или опровергнуть следующее:<br>
+E &sube; F & F &sube; E.
+<ul>
+	<li>Докажем необходимость: E &sube; F.<br>
+	&forall; a &isin; E => a &isin; (A &cup; B) &cap; C => a &isin; (A &cup; B) & a &isin; C => (a &isin; A &or; a &isin; B) & a &isin; C => a &isin; (A &cap; C) &or; a &isin; (B &cap; C) => a &isin; (A &cap; C) &cup; (B &cap; C) => a &isin; F.</li>
+	<li>Докажем достаточность: F &sube; E<br>
+	&forall; a &isin; F => a &isin; (A &cap; C) &cup; (B &cap; C) => a &isin; (A &cap; C) &or; a &isin; (B &cap; C) =>(a &isin; A &or; a &isin; B) & a &isin; C => a &isin; (A &cup; B) & a &isin; C => a &isin; (A &cup; B) &cap; C => a &isin; E.</li>
+	<li>Следовательно, E = F, т.е. исходное тождество справедливо.</li>
+</ul>
+<b>Пример 2.</b> Доказать или опровергнуть справедливость тождества A / ((A &cap; B) &cup; (A / B)) = &empty;.<br>
+<b>Доказательство.</b> Докажем методом от противного: предположим, что это выражение не равно пустому множеству.<br>
+a &isin; A / ((A &cap; B) &cup; (A / B)) => a &isin; A & a &notin; ((A &cap; B) &cup; (A / B)) => a &isin; A & (a &notin; (A &cap; B) & a &notin; (A / B)) => a &isin; A & (a &notin; A & a &notin; B) & (a &notin; A &or; a &isin; B)<br>
+Получаем противоречие: элемент a одновременно принадлежит и не принадлежит множеству A. Значит, первоначальное предположение неверно и исходное тождество справедливо, т.е. равно &empty;.<br>
+<br>
+<b>Пример 3.</b> Доказать, что A &sube; B => B’ &sube; A’.<br>
+<b>Доказательство.</b> Пусть А и В – подмножества некоторого универсума U, А &sube; B<br>
+<ul>
+	<li>&forall; x &isin; U, x &isin; A => x &isin; B</li>
+	<li>&forall; x &isin; U, x &notin; A => x &notin; B</li>
+	<li>&forall; x &isin; U, x &isin; B’ => x &isin; A’</li>
+</ul>
+Значит B’ &sube; A’.<br>
+<br>
+<b>Пример 4.</b> Доказать (A &cup; B) &cap; C = (A &cap; C) &cup; (B &cap; C).<br>
+<b>Доказательство.</b> Докажем, используя геометрический метод. Построим диаграммы Эйлера-Венна для множеств (A &cup; B) &cap; C (Рисунок 1) и (A &cap; C) &cup; (B &cap; C) (Рисунок 2). На первой диаграмме множество (A &cup; B) &cap; C выделено черной штриховкой, на второй множество (A &cap; C) – светлой, множество (B &cap; C) – серой, а множество (A &cap; C) &cup; (B &cap; C) является их объединением. Сравнивая эти два рисунка, можно сделать вывод, что эти множества равны, следовательно, тождество доказано.
+</p>

@@ -1,0 +1,21 @@
+ui_menu_file_for_finding_sets_relations 
+	<- 	ui_user_command_class_atom; 
+		ui_user_command_class_view_kb;
+	=> nrel_main_idtf: 
+		[Как связаны множества между собой?] (* <- lang_ru;; *);
+		[How are two given sets connected?] (* <- lang_en;; *);
+	=> ui_nrel_command_template:
+		[*
+		question_finding_sets_relations _-> ._question_finding_sets_relations_instance
+			(*
+			_-> ui_arg_1;
+			    ui_arg_2;;
+			*);;
+		._question_finding_sets_relations_instance _<- question;;
+		*];
+	=> ui_nrel_command_lang_template: 
+		[Запрос нахождения связей множеств: $ui_arg_1 и ui_arg_2] 
+		(* <- lang_ru;; *);
+		[How are $ui_arg_1 and $ui_arg_2 connected?] 
+		(* <- lang_en;; *);;
+

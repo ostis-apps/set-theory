@@ -1,0 +1,28 @@
+set_theory 
+=> nrel_main_idtf:
+	[теория множеств] (* <- lang_ru;; *);
+	[set theory] (* <- lang_en;; *);
+<- rrel_key_sc_element:
+	stat_set_teory
+	(*
+	=> nrel_main_idtf: 
+		[Утв. (теория множеств)] (* <- lang_ru;; *);
+		[Stat. (set theory)] (* <- lang_en;; *);;
+	<- sc_text_statement;;
+	<= nrel_sc_text_translation:	
+		...
+		(*  
+		->
+			[Теория множеств - формальная теория, изучающая всевозможные свойства множеств.]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);
+<- formal_theory;
+
+-> rrel_paradoxes_of_set_theory:
+paradox_Burali_Forti;
+
+-> rrel_subject_domain:
+	subject_domain_of_sets;;

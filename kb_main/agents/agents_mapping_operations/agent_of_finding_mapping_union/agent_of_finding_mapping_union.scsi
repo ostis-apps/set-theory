@@ -1,0 +1,185 @@
+agent_of_finding_mapping_union
+=> nrel_main_idtf:
+	[агентная scp-программа нахождения объединения соответствий] 
+	(* <- lang_ru;; *);
+	[agent scp-program of finding mapping union] 
+	(* <- lang_en;; *);
+<- agent_scp_program;;
+
+scp_program -> agent_of_finding_mapping_union (*
+
+	-> rrel_params: .agent_of_finding_mapping_union_params (*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+	-> rrel_operators: .agent_of_finding_mapping_union_set (*
+		-> rrel_init: .agent_of_finding_mapping_union1 (*
+			<- searchElStr3;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+			=>nrel_goto: .agent_of_finding_mapping_union2;;
+		*);;
+
+		-> .agent_of_finding_mapping_union2 (*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: question_finding_mapping_union;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+			=>nrel_then: .agent_of_finding_mapping_union3;;
+			=>nrel_else: .agent_of_finding_mapping_union_return;;
+		*);;
+
+		-> .agent_of_finding_mapping_union3 (*
+			<- printNl;;
+			-> rrel_1: rrel_scp_const: [агент нахождения объединения соответствий];;
+			=> nrel_goto: .agent_of_finding_mapping_union4;;
+   		*);;
+
+
+			-> .agent_of_finding_mapping_union4 (*
+			<- call;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_finding_add_param;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+					-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+					-> rrel_2: rrel_assign: rrel_scp_var: _map1;;
+    				-> rrel_3: rrel_assign: rrel_scp_var: _map2;;
+    				-> rrel_4: rrel_assign: rrel_scp_var: _answer;;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _wait_pr;;
+			=> nrel_goto: .agent_of_finding_mapping_union5;;
+		*);;
+
+		-> .agent_of_finding_mapping_union5 (*
+			<- waitReturn;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _wait_pr;;
+			=> nrel_goto: .agent_of_finding_mapping_union6;;
+		*);;
+
+
+		-> .agent_of_finding_mapping_union6 (*
+			<- varAssign;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _var_nrel;;
+		    -> rrel_2: rrel_fixed: rrel_scp_const: nrel_union;;
+			=> nrel_goto: .agent_of_finding_mapping_union9;;
+		*);;
+
+		-> .agent_of_finding_mapping_union9 (*
+			<- call;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_search_of_mappings;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+					-> rrel_1: rrel_fixed: rrel_scp_var: _map1;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _map2;;
+					-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+        			-> rrel_4: rrel_fixed: rrel_scp_var: _var_nrel;;
+        			-> rrel_5: rrel_assign: rrel_scp_var: _map3;;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _wait_prog_set1;;
+			=> nrel_goto: .agent_of_finding_mapping_union10;;
+		*);;
+
+		-> .agent_of_finding_mapping_union10 (*
+			<- waitReturn;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _wait_prog_set1;;
+			=> nrel_goto: .agent_of_finding_mapping_union13;; //11A
+		*);;
+
+        /*-> .agent_of_finding_mapping_union11 (*
+            <- call;;
+            -> rrel_1: rrel_fixed: rrel_scp_const: proc_add_set;;
+            -> rrel_2: ... (*
+                -> rrel_1: rrel_fixed: rrel_scp_var: _s1;;
+                -> rrel_2: rrel_fixed: rrel_scp_var: _s2;;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+            *);;
+            -> rrel_3: rrel_assign: rrel_scp_var: _argument;;
+            => nrel_goto: .agent_of_finding_mapping_union12;;
+        *);;*/
+
+	/*-> .agent_of_finding_mapping_union11A (*
+            <- call;;
+            -> rrel_1: rrel_fixed: rrel_scp_const: proc_add_mapping;;
+            -> rrel_2: ... (*
+                -> rrel_1: rrel_fixed: rrel_scp_var: _map1;;
+		-> rrel_2: rrel_fixed: rrel_scp_var: _answer;;
+            *);;
+            -> rrel_3: rrel_assign: rrel_scp_var: _argument;;
+            => nrel_goto: .agent_of_finding_mapping_union12;; //12
+        *);;
+
+        ->.agent_of_finding_mapping_union12 (*
+            <- waitReturn;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _argument;;
+            => nrel_goto: .agent_of_finding_mapping_union12A;; //13A
+        *);;
+
+        -> .agent_of_finding_mapping_union12A (*
+            <- call;;
+            -> rrel_1: rrel_fixed: rrel_scp_const: proc_add_mapping;;
+            -> rrel_2: ... (*
+                -> rrel_1: rrel_fixed: rrel_scp_var: _map2;;
+		-> rrel_2: rrel_fixed: rrel_scp_var: _answer;;
+            *);;
+            -> rrel_3: rrel_assign: rrel_scp_var: _argument;;
+            => nrel_goto: .agent_of_finding_mapping_union12B;; 
+        *);;
+
+        ->.agent_of_finding_mapping_union12B (*
+            <- waitReturn;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _argument;;
+            => nrel_goto: .agent_of_finding_mapping_union13;; //16
+        *);;*/
+       /* -> .agent_of_finding_mapping_union11A (*
+		  <- genElStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _map1;;
+
+		  => nrel_goto: .agent_of_finding_mapping_union11B;;
+		*);;
+
+		-> .agent_of_finding_mapping_union11B (*
+		  <- genElStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _map2;;
+
+		  => nrel_goto: .agent_of_finding_mapping_union13;;
+		*);;*/
+
+
+		-> .agent_of_finding_mapping_union13 (*
+			<- call;; 
+			-> rrel_1: rrel_fixed: rrel_scp_const:  proc_of_finding_mapping_union;;
+			->rrel_2: rrel_fixed: rrel_scp_const: ... (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _map1;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _map2;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+				-> rrel_4: rrel_fixed: rrel_scp_var: _map3;;
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+			=>nrel_goto: .agent_of_finding_mapping_union14;;
+		*);;
+ 		->.agent_of_finding_mapping_union14 (*
+            		<- waitReturn;;
+           	 -> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+           	 => nrel_goto: .agent_of_finding_mapping_union16;;
+        *);;
+ 
+		-> .agent_of_finding_mapping_union16 (*
+			<- genElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_const: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+			
+			=>nrel_goto: .agent_of_finding_mapping_union_return;;
+		*);;
+	
+		-> .agent_of_finding_mapping_union_return (*
+			<- return;;
+		*);;
+	*);;
+*);;

@@ -1,0 +1,101 @@
+nrel_cartesian_product
+<- sc_node_norole_relation;
+<- oriented_relation;
+<- relation;
+<- binary_relation;
+<- antitransitive_relation;
+<- antireflexive_relation;
+<- multiset;
+=> nrel_main_idtf:
+	[декартово произведение*]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[прямое произведение множеств*]
+	(* <- lang_ru;; *);
+	[декартово произведение множеств*]
+	(* <- lang_ru;; *);
+	[отношение прямого произведения*]
+	(* <- lang_ru;; *);
+	[отношение прямого произведения множеств*]
+	(* <- lang_ru;; *);
+	[прямое произведение*]
+	(* <- lang_ru;; *);
+	[отношение декартового произведение*]
+	(* <- lang_ru;; *);
+	[отношение декартового произведение множеств*]
+	(* <- lang_ru;; *);
+	[операция декартова произведения множеств*]
+	(* <- lang_ru;; *);;
+
+
+
+nrel_cartesian_product
+<- rrel_key_sc_element:
+	Definition_of_cartesian_product
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: [ Декартовым произведением множеств А и В называеться множество, состоящее из всех упорядоченных пар элементов <xi,xj> таких, что первый эдемент каждой пары являеться элементом первого сомножителя xi∈А, второй элемент пары - элементом второго сомножителя xj∈В, и кратность каждой пары <xi,xj> равна произведению кратностей xi и xj в перемножаемых множествах.] (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> 	corteg;
+			nrel_accessory;
+			set;;
+		*);;
+
+
+	*);;
+
+Definition_of_cartesian_product
+=> nrel_main_idtf:
+	[Определение понятия "декартово произведение"]
+	(* <- lang_ru;;	*);;
+
+
+nrel_cartesian_product
+<- rrel_key_sc_element:
+	statement
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: [Декартово произведение является пустым множеством если один из исходных множеств является пустым множеством.] (* <-lang_ru;; *);;
+		*);;
+	=> sc_identifier:
+		...
+		(*
+		-> rrel_example: [Утв.(декартово произведение*, пустое множество)] (* <-lang_ru;; *);; 
+		*);;
+
+	*);;
+
+nrel_cartesian_product
+<- rrel_key_sc_element: ...
+	(*
+	<-sc_illustration;;
+	<=nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: [Декартова система координат - множество упорядоченных пар, первые элементы которых принадлежит Оси абсцисс, а вторые - оси ординат.] (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+
+
+
+nrel_multiplicity_of_element
+=>nrel_first_domain: oriented_bunch;
+=>nrel_second_domain: set;;
+
+
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+section_sets_relations
+=> nrel_main_idtf:
+	[Раздел. Отношения на множествах]
+	(* <- lang_ru;; *);;
+
+section_concept_of_relation
+=> nrel_main_idtf:
+	[Раздел. Понятие отношения]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_concept_of_relation.html" (* <-lang_ru;; *);;
+		*);;
+
+section_properties_of_relations
+=> nrel_main_idtf:
+	[Раздел. Свойства отношений]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_properties_of_relations.html" (* <-lang_ru;; *);;
+		*);;
+
+section_relations_operations
+=> nrel_main_idtf:
+	[Раздел. Операции над отношениями]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_relations_operations.html" (* <-lang_ru;; *);;
+		*);;
+
+section_equivalence_relation
+=> nrel_main_idtf:
+	[Раздел. Отношение эквивалентности]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_equivalence_relation.html" (* <-lang_ru;; *);;
+		*);;
+
+section_ordering_relation
+=> nrel_main_idtf:
+	[Раздел. Отношение порядка]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_ordering_relation.html" (* <-lang_ru;; *);;
+		*);;
+

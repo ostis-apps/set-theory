@@ -1,0 +1,13 @@
+sc_text_of_agent_of_finding_buildings_union
+-> rrel_key_sc_element:
+	agent_of_finding_union;
+
+<- scp_program_sc_text;
+
+=> nrel_main_idtf: 
+	[sc-текст агентной scp-программы нахождения объединения множеств] 
+	(* <- lang_ru;; *);
+	[sc-text scp-agent based program finding the union of sets] 
+	(* <- lang_en;; *);;
+
+sc_text_of_agent_of_finding_buildings_union = [*^"file://agent_of_finding_union.scsi"*];;

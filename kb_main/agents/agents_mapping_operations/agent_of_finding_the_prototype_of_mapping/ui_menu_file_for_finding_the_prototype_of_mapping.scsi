@@ -1,0 +1,19 @@
+ui_menu_file_for_finding_the_prototype_of_mapping 
+	<- 	ui_user_command_class_atom; 
+		ui_user_command_class_view_kb;
+	=> nrel_main_idtf: 
+		[Каков прообраз соответствия?] (* <- lang_ru;; *);
+		[What is the prototype of mapping?] (* <- lang_en;; *);
+	=> ui_nrel_command_template:
+		[*
+		question_finding_the_prototype_of_mapping _-> ._question_finding_the_prototype_of_mapping_instance
+			(*
+				_-> ui_arg_1;;
+			*);;
+		._question_finding_the_prototype_of_mapping_instance _<- question;;
+		*];
+	=> ui_nrel_command_lang_template: 
+		[Запрос нахождения прообраза соответствия $ui_arg_1] 
+		(* <- lang_ru;; *);
+		[What is the prototype of mapping $ui_arg_1]
+		(* <- lang_en;; *);;

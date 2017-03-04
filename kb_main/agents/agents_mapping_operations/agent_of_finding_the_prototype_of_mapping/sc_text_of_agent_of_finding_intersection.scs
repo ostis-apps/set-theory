@@ -1,0 +1,13 @@
+sc_agent_of_finding_buildings_condition_prototype
+-> rrel_key_sc_element:
+	agent_of_finding_the_prototype_of_mapping;
+
+<- scp_program_sc_text;
+
+=> nrel_main_idtf: 
+	[sc-текст агентной scp-программы нахождения прообраза соответствия] 
+	(* <- lang_ru;; *);
+	[sc-text scp-agent based program finding the prototype of mapping] 
+	(* <- lang_en;; *);;
+
+sc_agent_of_finding_buildings_condition_prototype = [*^"file://agent_of_finding_the_prototype_of_mapping.scsi"*];;

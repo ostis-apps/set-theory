@@ -1,0 +1,369 @@
+agent_sourcing_of_the_ligaments_relations
+=> nrel_main_idtf:
+	[агентная scp-программа поиска связок отношения] (* <- lang_ru;; *);
+	[agent scp-program of the ligaments relations] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_sourcing_of_the_ligaments_relations 
+	(*
+	-> rrel_params: .agent_sourcing_of_the_ligaments_relations_params 
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+	-> rrel_operators: .agent_sourcing_of_the_ligaments_relations_operator_set 
+		(*
+		-> rrel_init: .agent_sourcing_of_the_ligaments_relations_operator1 
+			(*
+			<- searchElStr3;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+			=> nrel_goto: .agent_sourcing_of_the_ligaments_relations_operator2;;
+			*);;
+
+		-> .agent_sourcing_of_the_ligaments_relations_operator2 
+			(*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: question_sourcing_of_the_ligaments_relations;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_then: .agent_sourcing_of_the_ligaments_relations_operator3A;;
+			=> nrel_else: .agent_sourcing_of_the_ligaments_relations_operator_return;;
+			*);;
+
+		-> .agent_sourcing_of_the_ligaments_relations_operator3A 
+			(*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _param;;
+
+			=> nrel_then: .agent_sourcing_of_the_ligaments_relations_operator3B;;
+			=> nrel_else: .agent_sourcing_of_the_ligaments_relations_operator_return;;
+			*);;
+
+		-> .agent_sourcing_of_the_ligaments_relations_operator3B 
+			(*
+		 	<- genEl;;
+		 	-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer;;
+
+		 	=> nrel_goto: .agent_sourcing_of_the_ligaments_relations_operator3C;;
+		 	*);;
+
+		
+		-> .agent_sourcing_of_the_ligaments_relations_operator3C
+			(*
+			<- searchElStr3;;
+		 	-> rrel_1: rrel_scp_const: quasybinary_relation;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+
+           	=> nrel_then: .agent_sourcing_of_the_ligaments_relations_operator3C1;;
+           	=> nrel_else: .agent_sourcing_of_the_ligaments_relations_operator4A;;
+           	*);;
+
+        -> .agent_sourcing_of_the_ligaments_relations_operator3C1
+			(*
+			<- genEl;;
+            -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _set_node;;
+
+           	=> nrel_goto: .agent_sourcing_of_the_ligaments_relations_operator3D;;
+           	*);;
+
+		-> .agent_sourcing_of_the_ligaments_relations_operator3D
+			(*
+			<- searchSetStr5;;
+		 	-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: _node1;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+		 	-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _node2;;
+            -> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _param;;
+
+            		-> rrel_set_1: rrel_fixed: rrel_scp_var: _set_node;;
+                 	-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+                 	-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+		 			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
+
+           	=> nrel_then: .agent_sourcing_of_the_ligaments_relations_operator3E1;;
+           	=> nrel_else: .agent_sourcing_of_the_ligaments_relations_operator4A;;
+          	*);;
+
+        -> .agent_sourcing_of_the_ligaments_relations_operator3E1
+			(*
+			<- searchElStr3;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _set_node;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+		 	-> rrel_3: rrel_assign: rrel_scp_var: _node3;;
+
+           	=> nrel_then: .agent_sourcing_of_the_ligaments_relations_operator3E2;;
+	       	=> nrel_else: .agent_sourcing_of_the_ligaments_relations_operator3E4;;
+   			*);;
+
+   		-> .agent_sourcing_of_the_ligaments_relations_operator3E2
+			(*
+            <- eraseEl;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
+            
+            => nrel_goto: .agent_sourcing_of_the_ligaments_relations_operator3E3;;
+        	*);;
+
+   		-> .agent_sourcing_of_the_ligaments_relations_operator3E3
+			(*
+			<- genElStr3;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _node3;;
+
+           	=> nrel_goto: .agent_sourcing_of_the_ligaments_relations_operator3E3A;;
+           	*);;    
+
+        -> .agent_sourcing_of_the_ligaments_relations_operator3E3A
+			(*
+			<- genEl;;
+            -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _set_node2;;
+
+           	=> nrel_goto: .agent_sourcing_of_the_ligaments_relations_operator3E3B;;
+           	*);;
+
+        -> .agent_sourcing_of_the_ligaments_relations_operator3E3B
+			(*
+			<- searchSetStr3;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _node3;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+		 	-> rrel_3: rrel_assign: rrel_scp_var: _node4;;
+
+                 	-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+                 	-> rrel_set_3: rrel_fixed: rrel_scp_var: _set_node2;;
+
+		           	=> nrel_goto: .agent_sourcing_of_the_ligaments_relations_operator3E3C;;
+          			*);;
+
+		-> .agent_sourcing_of_the_ligaments_relations_operator3E3C
+			(*
+			<- searchElStr3;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _set_node2;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+		 	-> rrel_3: rrel_assign: rrel_scp_var: _el_node;;
+
+          	=> nrel_then: .agent_sourcing_of_the_ligaments_relations_operator3E3D;;
+          	=> nrel_else: .agent_sourcing_of_the_ligaments_relations_operator3E3G;;
+   			*);;
+
+		-> .agent_sourcing_of_the_ligaments_relations_operator3E3D
+			(*
+            <- eraseEl;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc1;;
+            
+            => nrel_goto: .agent_sourcing_of_the_ligaments_relations_operator3E3E;;
+        	*);;
+
+		-> .agent_sourcing_of_the_ligaments_relations_operator3E3E
+			(*
+			<- searchElStr3;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _el_node;;
+
+           	=> nrel_then: .agent_sourcing_of_the_ligaments_relations_operator3E3C;;
+           	=> nrel_else: .agent_sourcing_of_the_ligaments_relations_operator3E3F;;
+           	*);;
+
+        -> .agent_sourcing_of_the_ligaments_relations_operator3E3F
+			(*
+			<- genElStr3;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _el_node;;
+
+           	=> nrel_goto: .agent_sourcing_of_the_ligaments_relations_operator3E3C;;
+           	*);;
+
+        -> .agent_sourcing_of_the_ligaments_relations_operator3E3G
+			(*
+            <- eraseEl;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _set_node2;;
+            
+            => nrel_goto: .agent_sourcing_of_the_ligaments_relations_operator3E1;;
+        	*);;
+
+		-> .agent_sourcing_of_the_ligaments_relations_operator3E4
+			(*
+            <- eraseEl;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _set_node;;
+            
+            => nrel_goto: .agent_sourcing_of_the_ligaments_relations_operator5B;;
+        	*);;
+
+		-> .agent_sourcing_of_the_ligaments_relations_operator4A
+			(*
+			<- searchSetStr5;;
+		 	-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: _node1;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+		 	-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _node2;;
+            -> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _param;;
+
+                 	-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer;;
+                 	-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+                 	-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+		 			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
+
+                 	=> nrel_then: .agent_sourcing_of_the_ligaments_relations_operator4C;;
+                 	=> nrel_else: .agent_sourcing_of_the_ligaments_relations_operator4B;;
+                 	*);;
+
+		-> .agent_sourcing_of_the_ligaments_relations_operator4B
+			(*
+			<- searchSetStr5;;
+		 	-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: _node1;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_edge: _arc1;;
+		 	-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _node2;;
+            -> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _param;;
+
+                 	-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer;;
+                 	-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+                 	-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+		 			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
+
+                 	=> nrel_then: .agent_sourcing_of_the_ligaments_relations_operator4C;;
+                 	=> nrel_else: .agent_sourcing_of_the_ligaments_relations_operator5B;;
+                 	*);;
+
+		-> .agent_sourcing_of_the_ligaments_relations_operator4C
+			(*
+			<- searchSetStr3;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+		 	-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _node1;;
+
+                 	-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+                 	-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+
+            -> rrel_set_3: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _set_ligalement;;
+
+            => nrel_then: .agent_sourcing_of_the_ligaments_relations_operator4D;;
+            => nrel_else: .agent_sourcing_of_the_ligaments_relations_operator5B;;
+            *);;
+
+        -> .agent_sourcing_of_the_ligaments_relations_operator4D
+			(*
+			<- searchSetStr5;;
+		 	-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: _node1;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+		 	-> rrel_3: rrel_fixed: rrel_scp_var: _set_ligalement;;
+            -> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_scp_const: rrel_1;;
+
+                 	-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer;;
+                 	-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+		 			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
+
+                 	=> nrel_then: .agent_sourcing_of_the_ligaments_relations_operator4E;;
+                 	=> nrel_else: .agent_sourcing_of_the_ligaments_relations_operator4F;;
+                 	*);;
+
+		-> .agent_sourcing_of_the_ligaments_relations_operator4E 
+			(*
+		 	<- genElStr3;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_scp_const: rrel_1;;
+
+            => nrel_goto: .agent_sourcing_of_the_ligaments_relations_operator4F;;
+		 	*);;
+
+		-> .agent_sourcing_of_the_ligaments_relations_operator4F
+			(*
+			<- searchSetStr5;;
+		 	-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: _node1;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+		 	-> rrel_3: rrel_fixed: rrel_scp_var: _set_ligalement;;
+            -> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_scp_const: rrel_2;;
+
+                 	-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer;;
+                 	-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+		 			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
+
+                 	=> nrel_then: .agent_sourcing_of_the_ligaments_relations_operator4G;;
+                 	=> nrel_else: .agent_sourcing_of_the_ligaments_relations_operator4H;;
+                 	*);;
+
+		-> .agent_sourcing_of_the_ligaments_relations_operator4G
+			(*
+		 	<- genElStr3;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_scp_const: rrel_2;;
+
+            => nrel_goto: .agent_sourcing_of_the_ligaments_relations_operator4H;;
+		 	*);;
+
+		-> .agent_sourcing_of_the_ligaments_relations_operator4H
+			(*
+			<- searchSetStr5;;
+		 	-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: _node1;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+		 	-> rrel_3: rrel_fixed: rrel_scp_var: _set_ligalement;;
+            -> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_scp_const: rrel_3;;
+
+                 	-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer;;
+                 	-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+		 			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
+
+                 	=> nrel_then: .agent_sourcing_of_the_ligaments_relations_operator4E;;
+                 	=> nrel_else: .agent_sourcing_of_the_ligaments_relations_operator4F;;
+                 	*);;
+
+		-> .agent_sourcing_of_the_ligaments_relations_operator4E
+			(*
+		 	<- genElStr3;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		 	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_scp_const: rrel_3;;
+
+            => nrel_goto: .agent_sourcing_of_the_ligaments_relations_operator5A;;
+		 	*);;
+
+		-> .agent_sourcing_of_the_ligaments_relations_operator5A
+			(*
+            <- eraseEl;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _set_ligalement;;
+            
+            => nrel_goto: .agent_sourcing_of_the_ligaments_relations_operator5B;;
+        	*);;
+
+		-> .agent_sourcing_of_the_ligaments_relations_operator5B
+			(*
+		 	<- genElStr3;;
+		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+		 	-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+		 	-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+
+            => nrel_goto: .agent_sourcing_of_the_ligaments_relations_operator_gen_answer;;
+		 	*);;
+
+		-> .agent_sourcing_of_the_ligaments_relations_operator_gen_answer 
+			(*
+		  	<- genElStr5;;
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+		  	-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		  	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+		  	=> nrel_goto: .agent_sourcing_of_the_ligaments_relations_operator_return;;
+			*);;    
+
+		 -> .agent_sourcing_of_the_ligaments_relations_operator_return 
+			(*
+		  	<- return;;
+			*);;
+		*);;
+	*);;

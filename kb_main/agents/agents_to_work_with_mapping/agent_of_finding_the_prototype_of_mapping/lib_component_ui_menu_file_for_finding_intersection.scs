@@ -1,0 +1,12 @@
+lib_component_ui_menu_file_for_finding_the_prototype_of_mapping
+=> nrel_main_idtf:
+	[Компонент библиотеки. Команда пользовательского интерфейса для нахождения прообраза соответствия]
+	(* <- lang_ru;; *);
+	[Library component. User interface command for buildings prototype of mapping]
+	(* <- lang_en;; *);
+
+<- platform_independent_reusable_component_OSTIS;
+<- atomic_reusable_component_OSTIS;
+<- reusable_knowledge_base_sc_model_component;;
+
+lib_component_ui_menu_file_for_finding_the_prototype_of_mapping = [*^"file://ui_menu_file_for_finding_the_prototype_of_mapping.scsi"*];; 

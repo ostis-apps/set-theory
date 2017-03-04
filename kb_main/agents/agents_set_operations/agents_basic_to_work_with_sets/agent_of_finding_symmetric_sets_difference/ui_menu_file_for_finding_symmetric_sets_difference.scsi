@@ -1,0 +1,21 @@
+ui_menu_file_for_finding_symmetric_sets_difference 
+	<- 	ui_user_command_class_atom; 
+		ui_user_command_class_view_kb;
+	=> nrel_main_idtf: 
+		[Какой результат симметрической разности двух множеств?] (* <- lang_ru;; *);
+		[What is the result of symmetric difference of given sets?] (* <- lang_en;; *);
+	=> ui_nrel_command_template:
+		[*
+		question_finding_symmetric_sets_difference _-> ._question_finding_symmetric_sets_difference_instance
+			(*
+			_-> ui_arg_1;
+			    ui_arg_2;;
+			*);;
+		._question_finding_symmetric_sets_difference_instance _<- question;;
+		*];
+	=> ui_nrel_command_lang_template: 
+		[Запрос нахождения симметрической разности множеств: $ui_arg_1 и $ui_arg_2] 
+		(* <- lang_ru;; *);
+		[What is the result of symmetric difference of $ui_arg_1 and $ui_arg_2] 
+		(* <- lang_en;; *);;
+

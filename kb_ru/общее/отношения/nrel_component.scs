@@ -1,0 +1,47 @@
+nrel_component
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antitransitive_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+=> nrel_main_idtf:
+	[компонента*]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[компонента кортежа*]
+	(* <- lang_ru;;	*);
+	[i-тая компонента кортежа*]
+	(* <- lang_ru;;	*);
+	[i-тая проекция кортежа*]
+	(* <- lang_ru;;	*);;
+
+nrel_component
+<- rrel_key_sc_element:
+	Definition_of_nrel_component
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/nrel_component.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> cortege;
+		element_of_set;;
+		*);;
+
+
+	*);;
+
+Definition_of_nrel_component
+=> nrel_main_idtf:
+	[Определение отношения "компонента*"]
+	(* <- lang_ru;;	*);;
+
+nrel_component
+=>nrel_first_domain: element_of_set;
+=>nrel_second_domain: cortege;;

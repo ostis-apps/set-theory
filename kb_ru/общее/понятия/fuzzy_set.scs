@@ -1,0 +1,89 @@
+fuzzy_set
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[нечёткое множество]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[расплывчатое множество]
+	(* <- lang_ru;; *);
+	[туманное множество]
+	(* <- lang_ru;; *);
+	[пушистое множество]
+	(* <- lang_ru;; *);
+	[размытое множество]
+	(* <- lang_ru;; *);;
+
+fuzzy_set
+<- rrel_key_sc_element:
+	Definition_of_fuzzy_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/fuzzy_set.html" (* <-lang_ru;; *);;
+		*);;
+	
+
+	*);
+<- rrel_key_sc_element:
+	... (*
+	<- sc_statement;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: [ Если функция принадлежности элемента х нечеткому множеству А на его носителе S(A) постоянна, то множество А не нечетко. ]  (* <-lang_ru;; *);;
+		*);;
+	*);
+<- rrel_key_sc_element:
+	... (*
+	<- sc_statement;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: [ Два нечётких множества равны тогда и только тогда, когда равны степени принадлежности для всех соответствующих друг другу элементов обоих нечётких множеств. ]  (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+
+Definition_of_fuzzy_set
+=> nrel_main_idtf:
+	[Определение понятия "нечёткое множество"]
+	(* <- lang_ru;;	*);;
+
+subdividing_to_the_presence_of_height
+	=>nrel_main_idtf:
+		[Разбиение по признаку высоты] (* <-lang_ru;; *);;
+
+subdividing_to_the_presence_of_membership_function
+	=>nrel_main_idtf:
+		[Разбиение по признаку функции принадлежности] (* <-lang_ru;; *);;
+
+subdividing_to_the_presence_of_degree_of_membership
+	=>nrel_main_idtf:
+		[Разбиение по признаку степени принадлежности] (* <-lang_ru;; *);;
+
+
+fuzzy_set
+	<= nrel_subdividing: 
+	subdividing_to_the_presence_of_height
+	(*
+		->subnormal_fuzzy_set ;
+		normal_fuzzy_set;;
+	*);;
+
+fuzzy_set
+	<= nrel_subdividing: 
+	subdividing_to_the_presence_of_degree_of_membership
+	(*
+		->empty_fuzzy_set ;
+		non_empty_fuzzy_set;;
+	*);;
+
+fuzzy_set
+	<= nrel_subdividing: 
+	subdividing_to_the_presence_of_membership_function
+	(*
+		->convex_fuzzy_set ;
+		concave_fuzzy_set;;
+	*);;

@@ -1,0 +1,19 @@
+ui_menu_file_for_finding_converse_relation 
+	<- 	ui_user_command_class_atom; 
+		ui_user_command_class_view_kb;
+	=> nrel_main_idtf: 
+		[Какое отношение является обратным для данного?] (* <- lang_ru;; *);
+		[What is the converse relation of the relation?] (* <- lang_en;; *);
+	=> ui_nrel_command_template:
+		[*
+		question_finding_converse_relation _-> ._question_finding_converse_relation_instance
+			(*
+				_-> ui_arg_1;;
+			*);;
+		._question_finding_converse_relation_instance _<- question;;
+		*];
+	=> ui_nrel_command_lang_template: 
+		[Запрос нахождения обратного отношения: $ui_arg_1] 
+		(* <- lang_ru;; *);
+		[What is the converse relation of the relation of $ui_arg_1] 
+		(* <- lang_en;; *);;

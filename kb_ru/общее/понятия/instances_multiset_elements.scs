@@ -1,0 +1,28 @@
+instances_multiset_elements
+<- sc_node_not_relation;;
+
+instances_multiset_elements
+=> nrel_main_idtf:
+	[экземпляр элемента мультимножества]
+	(* <- lang_ru;;	*);;
+
+instances_multiset_elements
+<- rrel_key_sc_element:
+	Definition_of_instances_multiset_elements
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/instances_multiset_elements.html"(* <-lang_ru;; *);;
+		*);;
+	*);;
+
+
+Definition_of_instances_multiset_elements
+=> nrel_main_idtf:
+	[Определение понятия "экземпляр элемента мультимножества"]
+	(* <- lang_ru;;	*);;
+
+
+

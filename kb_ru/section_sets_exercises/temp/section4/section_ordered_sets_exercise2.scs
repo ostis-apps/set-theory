@@ -1,0 +1,9 @@
+section_ordered_sets_exercise2
+=> nrel_main_idtf:
+	[Раздел 4. Упражнение 2]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_ordered_sets_exercise2_ru.html" (* <-lang_ru;; *);;
+		*);;

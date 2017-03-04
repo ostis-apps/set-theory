@@ -1,0 +1,53 @@
+cantor_set
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[канторовское множество]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[множество без кратных вхождений элементов]
+	(* <- lang_ru;; *);
+	[множество, все элементы которого различны]
+	(* <- lang_ru;; *);
+	[множество без кратных принадлежностей элементов]
+	(* <- lang_ru;; *);
+	[классическое множество]
+	(* <- lang_ru;; *);;
+
+cantor_set
+<- rrel_key_sc_element:
+	Definition_of_cantor_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: [Множество является канторовским множеством тогда и только тогда, когда каждый его элемент в это множество входит однократно.] (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> set;
+			element_of_set;;
+		*);;
+
+	*);;
+
+Definition_of_cantor_set
+=> nrel_main_idtf:
+	[Определение понятия "канторовское множество"]
+	(* <- lang_ru;;	*);;
+
+
+empty_set
+<- rrel_key_sc_element: ...
+	(*
+	<-sc_illustration;;
+	<=nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: [Множество натуральных чисел является канторовским множеством.] (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+
+

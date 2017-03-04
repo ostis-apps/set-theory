@@ -1,0 +1,72 @@
+set
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[множество]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	[вид]
+	(* <- lang_ru;; *);
+	[группа]
+	(* <- lang_ru;; *);
+	[класс]
+	(* <- lang_ru;; *);
+	[коллекция]
+	(* <- lang_ru;; *);
+	[набор]
+	(* <- lang_ru;; *);
+	[перечень]
+	(* <- lang_ru;; *);
+	[род]
+	(* <- lang_ru;; *);
+	[тип]
+	(* <- lang_ru;; *);;
+
+set
+<- rrel_key_sc_element:
+	Definition_of_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: [Множество – мысленная сущность, которая связывает одну или несколько сущностей в целое.] (* <-lang_ru;; *);;
+		*);;
+
+	*);;
+
+Definition_of_set
+=> nrel_main_idtf:
+	[Определение понятия "множество"]
+	(* <- lang_ru;;	*);;
+
+
+
+
+subdividing_to_the_presence_of_multiple_occurrences_of_elements
+	=>nrel_main_idtf:
+		[Разбиение по признаку наличия кратных вхождений элементов] (* <-lang_ru;; *);;
+
+subdividing_to_the_presence_of_reflexivity
+	=>nrel_main_idtf:
+		[Разбиение по признаку рефлексивности] (* <-lang_ru;; *);;
+
+subdividing_to_the_presence_of_transitivity
+	=>nrel_main_idtf:
+		[Разбиение по признаку транзитивности] (* <-lang_ru;; *);;
+subdividing_to_the_presence_of_limbs
+	=>nrel_main_idtf:
+		[Разбиение по признаку конечности] (* <-lang_ru;; *);;
+
+set
+<- rrel_key_sc_element: rrel_example
+	(*
+	<-sc_illustration;;
+	<=nrel_sc_text_translation:
+		illustration
+		(*
+		->rrel_example: "file://content/set.png"
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;

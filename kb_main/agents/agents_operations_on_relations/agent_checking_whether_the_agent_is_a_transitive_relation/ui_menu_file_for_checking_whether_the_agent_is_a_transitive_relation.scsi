@@ -1,0 +1,26 @@
+ui_menu_file_for_checking_whether_the_agent_is_a_transitive_relation <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_file_for_checking_whether_the_agent_is_a_transitive_relation 
+=> nrel_main_idtf: 
+	[Является ли отношение транзитивным?] 
+	(* <- lang_ru;; *);
+=> nrel_idtf: 
+	[Запрос проверки является ли отношение транзитивным] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_checking_whether_the_agent_is_a_transitive_relation => ui_nrel_command_template:
+	[*
+		question_checking_whether_the_agent_is_a_transitive_relation _-> ._question_checking_whether_the_agent_is_a_transitive_relation_instance
+			(*
+			_-> ui_arg_1;;				
+			*);;
+		._question_checking_whether_the_agent_is_a_transitive_relation_instance _<- question;;
+	*];;
+
+ui_menu_file_for_checking_whether_the_agent_is_a_transitive_relation => ui_nrel_command_lang_template: 
+	[Является ли отношение $ui_arg_1 транзитивным?] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_checking_whether_the_agent_is_a_transitive_relation => ui_nrel_command_lang_template: 
+	[What is a ligaments relations $ui_arg_1] 
+	(* <- lang_en;; *);;

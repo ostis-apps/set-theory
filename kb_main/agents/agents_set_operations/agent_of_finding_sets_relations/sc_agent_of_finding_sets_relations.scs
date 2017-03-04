@@ -1,0 +1,53 @@
+sc_agent_of_finding_sets_relations
+=> nrel_main_idtf:
+	[sc-агент нахождения взаимоотношений множеств] 
+	(* <- lang_ru;; *);
+	[sc-agent of finding sets relations] 
+	(* <- lang_en;; *);
+
+<- abstract_sc_agent;
+
+=> nrel_primary_initiation_condition: 
+	(sc_event_add_output_arc => question_initiated);
+
+=> nrel_initiation_condition_and_result: 
+	(..sc_agent_of_finding_sets_relations_condition => ..sc_agent_of_finding_sets_relations_result);
+
+<= nrel_sc_agent_key_sc_elements: 
+	{
+	question_initiated;
+	question;
+	question_finding_sets_relations
+	};
+
+=> nrel_inclusion: 
+	.platform_independent_realization_of_sc_agent_of_finding_sets_relations
+	(*
+	<- platform_independent_abstract_sc_agent;;
+	<= nrel_sc_agent_program: 
+		{
+		agent_of_finding_sets_relations;
+		proc_of_finding_sets_relations	
+		};;
+	-> sc_agent_of_finding_sets_relations_scp   
+		(* <- active_sc_agent;; *);;
+	*);;
+
+..sc_agent_of_finding_sets_relations_condition
+= [*
+	question_finding_sets_relations _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> .._parameter1;;
+	.._question _-> .._parameter2;;
+*];;
+
+..sc_agent_of_finding_sets_relations_result
+= [*
+	question_finding_sets_relations _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._answer;;
+	.._question _-> .._parameter1;;
+	.._question _-> .._parameter2;;
+*];;

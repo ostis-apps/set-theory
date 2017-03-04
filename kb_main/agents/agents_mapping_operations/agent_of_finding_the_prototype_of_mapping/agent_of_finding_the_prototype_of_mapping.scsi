@@ -1,0 +1,201 @@
+agent_of_finding_the_prototype_of_mapping
+=> nrel_main_idtf:
+	[агентная scp-программа нахождения прообраза соответствия] 
+	(* <- lang_ru;; *);
+	[agent scp-program of finding the prototype of mapping] 
+	(* <- lang_en;; *);
+<- agent_scp_program;;
+
+scp_program -> agent_of_finding_the_prototype_of_mapping (*
+
+	-> rrel_params: .agent_of_finding_the_prototype_of_mapping_params (*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+	-> rrel_operators: .agent_of_finding_the_prototype_of_mapping_operator (*
+
+		-> rrel_init: .agent_of_finding_the_prototype_of_mapping_step_1 (*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+			=>nrel_goto: .agent_of_finding_the_prototype_of_mapping_step_2;;
+		*);;
+
+		-> .agent_of_finding_the_prototype_of_mapping_step_2 (*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: question_finding_the_prototype_of_mapping;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=>nrel_then: .agent_of_finding_the_prototype_of_mapping_step_3;;
+			=>nrel_else: .agent_of_finding_the_prototype_of_mapping_return;;
+		*);;
+
+		-> .agent_of_finding_the_prototype_of_mapping_step_3 (*
+			<- printNl;;
+			-> rrel_1: rrel_scp_const: [агент нахождения прообраза соответствия];;
+
+			=> nrel_goto: .agent_of_finding_the_prototype_of_mapping_step_4;;
+   		*);;
+
+   		-> .agent_of_finding_the_prototype_of_mapping_step_4 (*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _map;;
+
+			=>nrel_then: .agent_of_finding_the_prototype_of_mapping_step_5;;
+			=>nrel_else: .agent_of_finding_the_prototype_of_mapping_return;;
+		*);;
+
+		-> .agent_of_finding_the_prototype_of_mapping_step_5 (*
+            <- call;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: proc_of_finding_the_prototype_of_mapping;;
+            -> rrel_2: ... (*
+                -> rrel_1: rrel_fixed: rrel_scp_var: _map;;
+                -> rrel_2: rrel_assign: rrel_scp_var: _prototype;;
+            *);;
+            -> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+            => nrel_goto: .agent_of_finding_the_prototype_of_mapping_step_6;;
+        *);;
+
+        ->.agent_of_finding_the_prototype_of_mapping_step_6 (*
+            <- waitReturn;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+            => nrel_goto: .agent_of_finding_the_prototype_of_mapping_step_7;;
+        *);;
+
+
+        -> .agent_of_finding_the_prototype_of_mapping_step_7 (*
+            <- varAssign;;
+
+            -> rrel_1: rrel_assign: rrel_scp_var: _var_nrel;;
+            -> rrel_2: rrel_fixed: rrel_scp_const: nrel_prototype_of_mapping;;
+
+            => nrel_goto: .agent_of_finding_the_prototype_of_mapping_step_8;;
+        *);;
+
+        -> .agent_of_finding_the_prototype_of_mapping_step_8 (*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _map;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_const: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _prototype;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_prototype_of_mapping;;
+
+			=>nrel_goto: .agent_of_finding_the_prototype_of_mapping_step_9;;
+		*);;
+
+         -> .agent_of_finding_the_prototype_of_mapping_step_9 (*
+            <- call;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_const: proc_add_five_elements;;
+            -> rrel_2: ... (*
+                -> rrel_1: rrel_fixed: rrel_scp_var: _map;;
+                -> rrel_2: rrel_fixed: rrel_scp_var: _var_nrel;;
+                -> rrel_3: rrel_fixed: rrel_scp_var: _prototype;;
+                -> rrel_4: rrel_assign: rrel_scp_var: _answer;;
+            *);;
+            -> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+            => nrel_goto: .agent_of_finding_the_prototype_of_mapping_step_10;;
+        *);;
+
+         -> .agent_of_finding_the_prototype_of_mapping_step_10 (*
+             <- waitReturn;;
+
+             -> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+             => nrel_goto: .agent_of_finding_the_prototype_of_mapping_step_11;;
+        *);;
+
+ 		-> .agent_of_finding_the_prototype_of_mapping_step_11 (*
+		 	 <- searchSetStr5;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _map;;
+		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: _Z;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_3;;
+
+          	-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+          	-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+          	-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
+
+		  	=> nrel_goto: .agent_of_finding_the_prototype_of_mapping_step_12;;
+		*);;
+
+		-> .agent_of_finding_the_prototype_of_mapping_step_12 (*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _element_from_X;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _common;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _element_from_Y;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_4;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _Z;;
+
+			-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+          	-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+          	-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
+
+		  	=> nrel_goto: .agent_of_finding_the_prototype_of_mapping_step_13;;
+		*);;
+
+		-> .agent_of_finding_the_prototype_of_mapping_step_13 (*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _prototype;;
+			-> rrel_2: rrel_assign: rrel_scp_var: _arc_2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _element;;
+			
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+
+
+			=> nrel_goto: .agent_of_finding_the_prototype_of_mapping_step_14;;
+		*);;
+
+		-> .agent_of_finding_the_prototype_of_mapping_step_14 (*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: rrel_3;;
+
+			=>nrel_goto: .agent_of_finding_the_prototype_of_mapping_step_15;;
+		*);;
+
+
+
+
+
+
+		-> .agent_of_finding_the_prototype_of_mapping_step_15 (*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_const: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+			=>nrel_goto: .agent_of_finding_operator_power_return;;
+		*);;
+	
+		-> .agent_of_finding_operator_power_return (*
+			<- return;;
+		*);;
+	*);;
+*);;

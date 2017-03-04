@@ -1,0 +1,222 @@
+scp_program -> proc_of_finding_converse_relation 
+	(*	
+	-> rrel_params: .proc_of_finding_converse_relation_params 
+		(*
+		-> rrel_1: rrel_in: _A;;
+		-> rrel_2: rrel_out: _answer;;
+		*);;
+
+	-> rrel_operators: .proc_of_finding_converse_relation_operator_set 
+		(*
+		-> rrel_init: .proc_of_finding_converse_relation_operator0 (*
+				<- printNl;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: [агент нахождения обратного отношения];;
+				=> nrel_goto: .proc_of_finding_converse_relation_operator01;;
+	   		*);;
+
+	    	-> .proc_of_finding_converse_relation_operator01 (*
+				<- genEl;;
+				-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _newrel;;
+				=> nrel_goto: .proc_of_finding_converse_relation_operator1;;
+			*);;
+
+	    	-> .proc_of_finding_converse_relation_operator1 (*
+				<- genEl;;
+				-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer;;
+				=> nrel_goto: .proc_of_finding_converse_relation_operator2;;
+			*);;
+
+			-> .proc_of_finding_converse_relation_operator2 (*
+				<- genElStr5;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _A;;
+				-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _newrel;;
+				-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+				-> rrel_5: rrel_fixed: rrel_scp_const: nrel_converse_relation;;
+
+			  => nrel_goto: .proc_of_finding_converse_relation_operator3;;
+			*);;
+
+			-> .proc_of_finding_converse_relation_operator3 (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _A;;
+
+			  => nrel_goto: .proc_of_finding_converse_relation_operator4;;
+			*);;
+
+			-> .proc_of_finding_converse_relation_operator4 (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _newrel;;
+
+			  => nrel_goto: .proc_of_finding_converse_relation_operator5;;
+			*);;
+
+			->.proc_of_finding_converse_relation_operator5 (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_fixed: rrel_scp_const: nrel_converse_relation;;
+
+			  => nrel_goto: .proc_of_finding_converse_relation_operator6;;
+			*);; 
+
+			-> .proc_of_finding_converse_relation_operator6 (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _arc1;;
+
+			  => nrel_goto: .proc_of_finding_converse_relation_operator7;;
+			*);;
+
+			->.proc_of_finding_converse_relation_operator7 (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _arc2;;
+
+			  => nrel_goto: .proc_of_finding_converse_relation_operator10;;
+			*);; 
+
+//gen converse rel
+
+
+			->.proc_of_finding_converse_relation_operator10 (*
+				<- searchSetStr5;;
+				-> rrel_1: rrel_assign: rrel_scp_var: _element1;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _element2;;
+				-> rrel_4: rrel_assign: rrel_scp_var: _arc1;;
+				-> rrel_5: rrel_fixed: rrel_scp_var: _A;;
+
+		  		-> rrel_set_1: rrel_fixed: rrel_scp_var: rrel_node: rrel_const: _answer;;		  	
+		  		-> rrel_set_3: rrel_fixed: rrel_scp_var: rrel_node: rrel_const: _answer;;
+
+	             => nrel_then: .proc_of_finding_converse_relation_operator11;;
+	             => nrel_else: .proc_of_finding_converse_relation_operator_return;;
+			*);; 
+			
+			-> .proc_of_finding_converse_relation_operator11 (*
+				<- searchSetStr5;;
+				-> rrel_1: rrel_assign: rrel_scp_var: _element1;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _element2;;
+				-> rrel_4: rrel_assign: rrel_scp_var: _arc1;;
+				-> rrel_5: rrel_fixed: rrel_scp_var: _A;;
+
+		  		-> rrel_set_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _not_checkedA;;		  	
+		  		-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _not_checkedB;;
+
+	             => nrel_goto: .proc_of_finding_converse_relation_operator12;;
+			*);;
+			
+			-> .proc_of_finding_converse_relation_operator12 (*
+				<- searchElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _not_checkedA;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _arc_for_delA;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _element1;;
+
+	            => nrel_then: .proc_of_finding_converse_relation_operator13;;
+	            => nrel_else: .proc_of_finding_converse_relation_operator_return;;
+			*);;
+
+        -> .proc_of_finding_converse_relation_operator13(*
+			<- eraseEl;;
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc_for_delA;;
+
+					=> nrel_goto: .proc_of_finding_converse_relation_operator14;;
+					*);;	
+
+        -> .proc_of_finding_converse_relation_operator14 (*
+				<- searchElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _not_checkedB;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _arc_for_delB;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _element2;;
+
+	            => nrel_then: .proc_of_finding_converse_relation_operator15;;
+	            => nrel_else: .proc_of_finding_converse_relation_operator16;;
+			*);;
+
+        -> .proc_of_finding_converse_relation_operator15(*
+			<- eraseEl;;
+			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc_for_delB;;
+
+			=> nrel_goto: .proc_of_finding_converse_relation_operator17;;
+		*);;			
+        ->.proc_of_finding_converse_relation_operator16 (*
+				<- searchSetStr5;;
+				-> rrel_1: rrel_assign: rrel_scp_var: _el1;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _el2;;
+				-> rrel_4: rrel_assign: rrel_scp_var: _arc1;;
+				-> rrel_5: rrel_fixed: rrel_scp_var: _A;;
+		  	
+		  		-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _not_checkedB;;
+
+	             => nrel_then: .proc_of_finding_converse_relation_operator12;;
+	             => nrel_else: .proc_of_finding_converse_relation_operator_return;;
+			*);; 
+
+			->.proc_of_finding_converse_relation_operator17 (*
+				<- searchElStr5;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _element1;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _arcA;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _element2;;
+				-> rrel_4: rrel_assign: rrel_scp_var: _arcA;;
+				-> rrel_5: rrel_fixed: rrel_scp_var: _A;;
+
+	            => nrel_then: .proc_of_finding_converse_relation_operator018;;
+	            => nrel_else: .proc_of_finding_converse_relation_operator14;;
+			*);; 
+
+			->.proc_of_finding_converse_relation_operator018 (*
+				<- searchElStr5;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _element2;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _arcA;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _element1;;
+				-> rrel_4: rrel_assign: rrel_scp_var: _arcA;;
+				-> rrel_5: rrel_fixed: rrel_scp_var: _newrel;;
+
+	            => nrel_then: .proc_of_finding_converse_relation_operator14;;
+	            => nrel_else: .proc_of_finding_converse_relation_operator18;;
+			*);; 
+
+			->.proc_of_finding_converse_relation_operator18 (*
+				<- genElStr5;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _element2;;
+				-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _element1;;
+				-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+				-> rrel_5: rrel_fixed: rrel_scp_var: _newrel;;
+
+			  => nrel_goto: .proc_of_finding_converse_relation_operator19;;
+			*);; 
+
+			-> .proc_of_finding_converse_relation_operator19 (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _arc1;;
+
+			  => nrel_goto: .proc_of_finding_converse_relation_operator20;;
+			*);;
+
+			-> .proc_of_finding_converse_relation_operator20 (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _arc2;;
+
+			  => nrel_goto: .proc_of_finding_converse_relation_operator14;;
+			*);;
+
+			-> .proc_of_finding_converse_relation_operator_return 
+				(*
+				<- return;;
+			*);;
+		*);;
+	*);;

@@ -1,0 +1,44 @@
+oriented_set
+<=> nrel_equivalence: cortege;;
+oriented_set
+<- sc_node_not_relation;
+<- infinite_set;
+<- antireflexive_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+	[ориентированное множество]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[кортеж]
+	(* <- lang_ru;;	*);
+	[упорядоченный n-набор]
+	(* <- lang_ru;; *);
+	[упорядоченная последовательность]
+	(* <- lang_ru;; *);;
+
+
+oriented_set
+<- nrel_key_sc_element:
+	Definition_of_oriented_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: [Ориентированное множество – это упорядоченный конечный набор элементов длины.] (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> element_of_set;
+			finite_set;;
+		*);;
+
+
+	*);;
+
+Definition_of_oriented_set
+=> nrel_main_idtf:
+	[Определение понятия "ориентированное множество"]
+	(* <- lang_ru;;	*);;
+

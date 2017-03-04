@@ -1,0 +1,11 @@
+mapping2 -> rrel_1: otprav2;;
+mapping2 -> rrel_2: prib2;;
+mapping2 -> rrel_3: Z2;;
+
+otprav2 -> b; c; d; e;;
+prib2 -> 1; 2; 3;;
+
+Z2 -> (d => 2);;
+Z2 -> (e => 1);;
+Z2 -> (b => 3);;
+Z2 -> (c => 1);;

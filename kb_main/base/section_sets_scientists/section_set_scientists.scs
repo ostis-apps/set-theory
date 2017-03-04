@@ -1,0 +1,5 @@
+section_scientists_of_set_theory => nrel_main_idtf: 
+	[Раздел. Учёные теории множеств] (* <- lang_ru;; *);
+	[Partition. Scientists of set theory] (* <- lang_en;; *);;
+section_scientists_of_set_theory = [*^"file://section_set_scientists_scsi/section_scientists_of_set_theory.scsi"*];;
+rrel_key_sc_element -> (section_scientists_of_set_theory -> set_scientists);;

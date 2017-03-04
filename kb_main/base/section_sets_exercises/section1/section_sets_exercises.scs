@@ -1,0 +1,8 @@
+section_sets_exercises
+	<= nrel_section_decomposition:
+	{
+		section_sets_exercise1;
+		section_sets_exercise2;
+		section_sets_exercise3
+	};
+	<-concept_exercise;;

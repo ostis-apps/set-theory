@@ -1,0 +1,63 @@
+countable_set
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[countable set]
+	(* <- lang_en;;	*);
+=> nrel_idtf:
+	[numbered set]
+	(* <- lang_en;;	*);;
+
+countable_set
+<- rrel_key_sc_element:
+	Definition_of_countable_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Countable set has an infinite set elements which may be numbered by natural numbers.] (* <-lang_en;; *);; 
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> set;
+			power_set;
+			nrel_equality;;
+		*);;
+
+	*);;
+
+Definition_of_countable_set
+=> nrel_main_idtf:
+	[Definition "countable set"]
+	(* <- lang_en;;	*);;
+
+
+countable_set
+<- rrel_key_sc_element:
+	statement
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Every infinite set contains a countable subset.] (* <-lang_en;; *);; 
+		*);;
+	=> sc_identifier:
+		...
+		(*
+		-> rrel_example: [App. (countable set, finite set, subset*)] (* <-lang_en;; *);; 
+		*);;
+
+	*);;
+
+countable_set
+<- rrel_key_sc_element: ...
+	(*
+	<-sc_illustration;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [The set of integers - a countable set.] (* <-lang_en;; *);; 
+		*);;
+	*);;

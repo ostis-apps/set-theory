@@ -1,0 +1,6 @@
+sc_text_of_agent_of_finding_dimension_set
+-> rrel_key_sc_element:
+	agent_of_finding_dimension_set;
+<- scp_program_sc_text;;
+
+sc_text_of_agent_of_finding_dimension_set = [*^"file://agent_of_fiding_dimension_set.scsi"*];;

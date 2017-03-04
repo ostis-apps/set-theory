@@ -1,0 +1,19 @@
+ui_menu_file_for_finding_power 
+	<- 	ui_user_command_class_atom; 
+		ui_user_command_class_view_kb;
+	=> nrel_main_idtf: 
+		[Какая мощность множества?] (* <- lang_ru;; *);
+		[What is the cardinality of the set?] (* <- lang_en;; *);
+	=> ui_nrel_command_template:
+		[*
+		question_finding_power _-> ._question_finding_power_instance
+			(*
+				_-> ui_arg_1;;
+			*);;
+		._question_finding_power_instance _<- question;;
+		*];
+	=> ui_nrel_command_lang_template: 
+		[Запрос нахождения мощности множества: $ui_arg_1] 
+		(* <- lang_ru;; *);
+		[What is the cardinality of $ui_arg_1] 
+		(* <- lang_en;; *);;

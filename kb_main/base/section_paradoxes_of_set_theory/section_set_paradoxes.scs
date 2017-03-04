@@ -1,0 +1,5 @@
+section_paradoxes_of_set_theory => nrel_main_idtf: 
+	[Раздел. Парадоксы теории множеств] (* <- lang_ru;; *);
+	[Partition. Paradoxes of set theory] (* <- lang_en;; *);;
+section_paradoxes_of_set_theory = [*^"file://section_set_paradoxes_scsi/section_paradoxes_of_set_theory.scsi"*];;
+rrel_key_sc_element -> (section_paradoxes_of_set_theory -> set_paradoxes);;

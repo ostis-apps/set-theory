@@ -1,0 +1,34 @@
+<p><sc_element sys_idtf = "nrel_mapping">Соответствие</sc_element> Г называется <sc_element sys_idtf = "nrel_functional_mapping">функциональным</sc_element>, если его <sc_element sys_idtf = "graph_of_correspondence">график</sc_element> G функционален. График G называется <sc_element sys_idtf = "">функциональным</sc_element>, если в нем нет <sc_element sys_idtf = "pair_set">пар</sc_element> с одинаковыми первыми и разными вторыми <sc_element sys_idtf = "element_of_set">элементами</sc_element>. Другими словами, из элементов <sc_element sys_idtf = "rrel_input_set">области отправления</sc_element> может выходить не более одной стрелки. Следовательно, соответствие Г = &lt;G, X, Y> функционально тогда, когда истинно:
+<ul>
+	<li>(&forall; x &isin; X, &forall; y<sub>1</sub>, у<sub>2</sub> &isin; Y) [&lt;х, у<sub>1</sub>> &isin; G & &lt;х, у<sub>2</sub>> &isin; G => y<sub>1</sub> = у<sub>2</sub>].</li>
+</ul>
+Соответствие Г называется <sc_element sys_idtf = "nrel_injection">инъективным</sc_element>, если его график инъективен. График G называется <sc_element sys_idtf = "concept_injection_graph">инъективным</sc_element>, если в нем нет пар с разными первыми и одинаковыми вторыми элементами. Отметим, что в частном случае инъективные и функциональные, графики могут совпадать.Соответствие инъективно, когда справедливо:
+<ul>
+	<li>(&forall; x<sub>1</sub>, х<sub>2</sub> &isin; X, &forall; y &isin; Y) [&lt;х<sub>1</sub>,у> &isin; G & &lt;х<sub>2</sub>, у> &isin; G => х<sub>1</sub> = х<sub>2</sub>].</li>
+</ul>
+Соответствие Г = &lt;G, X, Y> называется <sc_element sys_idtf = "nrel_total_mapping">всюду определенным</sc_element>, если его  <sc_element sys_idtf = "nrel_definitional_domain">область  определения</sc_element>  совпадает  с  его  областью   отправления.<br>
+<b>Пример.</b> Г = &lt;G,X,Y> = &lt;{&lt;1,2>, &lt;3,2>, &lt;4,5>}; {1, 3, 4}; {2, 5}>. Здесь область отправления соответствия X = {1, 3, 4} совпадает с областью   определения.<br>
+Для всюду определенного соответствия справедливо выражение:
+<ul>
+	<li>пp<sub>1</sub>G = Х.</li>
+</ul>
+Аналогично можно записать:
+<ul>
+	<li>(&forall; x)(&#8707; y)[&lt;x,y> &isin; G].</li>
+</ul>
+Соответствие Г = &lt;G, X, Y> называется <sc_element sys_idtf = "nrel_surjection">сюръективным</sc_element>, если его <sc_element sys_idtf = "rrel_output_set">область значений</sc_element> совпадает с его <sc_element sys_idtf = "rrel_output_set">областью прибытия</sc_element>. <br>
+<b>Пример.</b> Г = &lt;G, X, Y> = <{&lt;1, b>, &lt;2, а>}; {1, 2, 3}; {а, b}>. Здесь область прибытия соответствия X = {а, b} совпадает с областью значений.
+Для сюръективного соответствия справедливо выражение:
+<ul>
+	<li>пp<sub>2</sub>G = Y.</li>
+</ul>
+Аналогично можно записать:
+<ul>
+	<li>(&forall; y)(&#8707; х)[&lt;x,y> &isin; G].</li>
+</ul>
+Соответствие Г = &lt;G, X, Y> называется <sc_element sys_idtf = "bijection">биективным соответствием</sc_element> или биекцией, или взаимооднозначным соответствием, если оно функционально, инъективно, всюду определено и сюрьективно.<br>
+Частным случаем соответствия является понятие <sc_element sys_idtf = "section_mapping_of_sets">отображения</sc_element>. Всюду определенное соответствие называется отображением X в Y и записывается
+<ul>
+	<li>G: X &rarr; Y.</li>
+</ul>
+</p>

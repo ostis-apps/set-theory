@@ -1,0 +1,52 @@
+infinite_set
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[infinite set]
+	(* <- lang_en;;	*);
+=> nrel_idtf:
+	[set with a finite number of elements]
+	(* <- lang_en;;	*);;
+
+finite_set
+<- rrel_key_sc_element:
+	Definition_of_fininite_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [The set is not finite.] (* <-lang_en;; *);; 
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> set;
+			finite_set;;
+		*);;
+
+	*);;
+
+Definition_of_infinite_set
+=> nrel_main_idtf:
+	[Definition "infinite set"]
+	(* <- lang_en;;	*);;
+
+
+
+infinite_set
+<- rrel_key_sc_element:
+	...
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls/statement_infinite_set_en.html" (* <-lang_en;; *);; 
+		*);;
+	=> sc_identifier:
+		...
+		(*
+		-> rrel_example: "file://htmls/app_infinite_set_en.html" (* <-lang_en;; *);; 
+		*);;
+
+	*);;

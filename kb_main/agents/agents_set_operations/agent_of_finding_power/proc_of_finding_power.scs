@@ -1,0 +1,127 @@
+scp_program -> proc_of_finding_power (*
+	-> rrel_params: ...(*
+    	-> rrel_1: rrel_in: _set;;
+	   	-> rrel_2: rrel_out: rrel_assign: rrel_scp_var: _i;;
+  	*);;
+  
+	-> rrel_operators: ...(*
+    	-> rrel_init: .proc_of_finding_power_operator1 (*
+            <- genEl;;
+            -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _set_temp;;
+
+            => nrel_goto: .proc_of_finding_power_operator3;;
+        *);;
+
+        -> .proc_of_finding_power_operator3 (*
+            <- searchElStr5;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _set;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _arc1;;
+            -> rrel_3: rrel_assign: rrel_scp_var: _i;;
+            -> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_power_set;;
+
+            => nrel_then: .proc_of_finding_power_operator2;;
+            => nrel_else: .proc_of_finding_power_operator33;;
+        *);;
+
+         -> .proc_of_finding_power_operator2 (*
+            <- ifEq;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _i;;
+            -> rrel_2: rrel_fixed: rrel_scp_const: [infinity];;
+
+            => nrel_then: .proc_of_finding_power_operator9;;
+            => nrel_else: .proc_of_finding_power_operator31;;
+        *);;
+
+        -> .proc_of_finding_power_operator31 (*
+            <- contAssign;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _i;;
+            -> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+            => nrel_goto: .proc_of_finding_power_operator32;;
+        *);;
+
+        -> .proc_of_finding_power_operator32 (*
+            <- searchElStr3;;
+            -> rrel_1: rrel_fixed: rrel_scp_const: number;;
+            -> rrel_2: rrel_scp_var: rrel_assign: rrel_pos_const_perm: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _i;;
+
+            => nrel_then: .proc_of_finding_power_operator4;;
+            => nrel_else: .proc_of_finding_power_operator35;;
+        *);;
+
+        -> .proc_of_finding_power_operator33 (*
+            <- contAssign;;
+            -> rrel_1: rrel_assign: rrel_scp_var: _i;;
+            -> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+            => nrel_goto: .proc_of_finding_power_operator34;;
+        *);;
+
+        -> .proc_of_finding_power_operator34 (*
+            <- genElStr5;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _set;;
+            -> rrel_2: rrel_scp_var: rrel_assign: rrel_common: rrel_const: _arc1;;
+            -> rrel_3: rrel_scp_var: rrel_fixed: _i;;
+            -> rrel_4: rrel_scp_var: rrel_assign: rrel_pos_const_perm: _arc2;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_power_set;;
+
+            => nrel_goto: .proc_of_finding_power_operator35;;
+        *);;
+
+        -> .proc_of_finding_power_operator35 (*
+            <- genElStr3;;
+            -> rrel_1: rrel_fixed: rrel_scp_const: number;;
+            -> rrel_2: rrel_scp_var: rrel_assign: rrel_pos_const_perm: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _i;;
+
+            => nrel_goto: .proc_of_finding_power_operator4;;
+        *);;
+
+        -> .proc_of_finding_power_operator4 (*
+            <- searchSetStr3;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _set;;
+            -> rrel_2: rrel_scp_var: rrel_assign: rrel_pos_const_perm: _arcsn;;
+            -> rrel_3: rrel_scp_var: rrel_assign: _elsn;;
+
+            -> rrel_set_2: rrel_fixed: rrel_scp_var: _set_temp;;
+
+            => nrel_goto: .proc_of_finding_power_operator5;;
+        *);;
+		
+		-> .proc_of_finding_power_operator5 (*
+			<- searchElStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _set_temp;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _el;;
+
+		  => nrel_then: .proc_of_finding_power_operator6;;
+      	  => nrel_else: .proc_of_finding_power_operator9;; /// было раньше 8
+		*);;
+
+		-> .proc_of_finding_power_operator6 (*
+			<- eraseEl;;
+		-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc;;
+
+		=> nrel_goto: .proc_of_finding_power_operator7;;
+		*);;
+
+		-> .proc_of_finding_power_operator7 (*
+            <- contAdd;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _i;;
+            -> rrel_2: rrel_fixed: rrel_scp_var: _i;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: [1];;
+            => nrel_goto: .proc_of_finding_power_operator5;;
+        *);;
+
+        -> .proc_of_finding_power_operator9 (*
+			<- eraseEl;;
+		-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _set_temp;;
+
+		=> nrel_goto: .proc_of_finding_power_operator_return;;
+		*);;
+
+	    -> .proc_of_finding_power_operator_return(*
+    	  <- return;;
+    *);;
+  *);;
+*);;

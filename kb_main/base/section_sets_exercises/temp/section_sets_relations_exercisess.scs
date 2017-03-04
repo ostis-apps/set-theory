@@ -1,0 +1,16 @@
+section_sets_relations_exercisess
+	<= nrel_section_decomposition:
+	{
+		section_sets_relations_exercises1
+		(*
+		=> nrel_section_base_order: 
+			section_sets_relations_exercises2;;
+		*);
+		section_sets_relations_exercises2
+		(*
+		=> nrel_section_base_order: 
+			section_sets_relations_exercises3;;
+		*);
+		section_sets_relations_exercises3
+	};
+	<-concept_exercise;;

@@ -1,0 +1,14 @@
+set_A
+=> nrel_main_idtf:
+	[множество A]
+	(*
+	<- lang_ru;;
+	*);
+	[set A]
+	(*
+	<- lang_en;;
+	*);
+<-set;
+<-finite_set;
+-> a; r; g; h; f; d; c;;
+

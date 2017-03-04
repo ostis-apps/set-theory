@@ -1,0 +1,26 @@
+fuzzy_collection
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[нечёткий набор]
+	(* <- lang_ru;;	*);;
+
+fuzzy_collection
+<- rrel_key_sc_element:
+	Definition_of_fuzzy_collection
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/fuzzy_collection.html" (* <-lang_ru;; *);;
+		*);;
+	
+
+	*);;
+
+
+Definition_of_fuzzy_collection
+=> nrel_main_idtf:
+	[Определение понятия "нечёткий набор"]
+	(* <- lang_ru;;	*);;
+

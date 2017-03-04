@@ -1,0 +1,24 @@
+infinity
+<- sc_node_norole_relation;;
+
+nrel_power_set
+	<- sc_node_norole_relation;
+	<- oriented_relation;
+	<- relation;
+	<- binary_relation;;
+
+set_of_natural_numbers
+	<- sc_node_norole_relation;
+	=> nrel_power_set: 
+		[infinity] (* <- lang_en;;*);
+		[бесконечность] (* <- lang_ru;;*);;
+
+set_of_real_numbers
+	<- sc_node_norole_relation;
+	=> nrel_power_set:
+		[infinity] (* <- lang_en;;*);
+                [бесконечность] (* <- lang_ru;;*);;
+
+nrel_asked
+	<- sc_node_norole_relation;
+	<- binary_relation;;

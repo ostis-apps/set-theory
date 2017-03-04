@@ -1,0 +1,72 @@
+set
+<= nrel_subdividing:
+	{
+	infinite_set;
+	finite_set
+	};
+=> nrel_strict_inclusion:
+	empty_set;
+=> nrel_strict_inclusion:
+	reflexive_set;
+=> nrel_strict_inclusion:
+	singleton_set;
+=> nrel_strict_inclusion:
+	pair_set;
+=> nrel_strict_inclusion:
+	triple_set;
+=> nrel_strict_inclusion:
+	oriented_set;;
+
+infinite_set
+<= nrel_subdividing:
+	{
+	countable_set;
+	uncountable_set
+	};;
+	
+nrel_boolean
+<- oriented_relation;
+<- quasybinary_relation;;
+
+nrel_cartesian_product
+<- oriented_relation;
+<- quasybinary_relation;;
+
+nrel_combination
+<- oriented_relation;
+<- quasybinary_relation;;
+
+nrel_inclusion
+<- binary_relation;
+<- oriented_relation;
+<- taxonomy_relation;;
+
+nrel_intersection
+<- binary_relation;
+<- oriented_relation;
+<- quasybinary_relation;;
+	
+nrel_intersection_sets
+<- binary_relation;
+<- non_oriented_relation;;
+
+nrel_nonintersection_sets
+<- binary_relation;
+<- non_oriented_relation;;
+
+nrel_sets_difference
+<- oriented_relation;
+<- ternary_relation;;
+
+nrel_strict_inclusion
+<- binary_relation;
+<- oriented_relation;;
+	
+nrel_subdividing
+<- quasybinary_relation;
+<- oriented_relation;
+<- decomposition_relation;;
+	
+nrel_symmetric_sets_difference
+<- oriented_relation;
+<- quasybinary_relation;;

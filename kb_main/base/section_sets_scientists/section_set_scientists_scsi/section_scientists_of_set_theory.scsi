@@ -1,0 +1,105 @@
+set_scientists
+=> nrel_main_idtf: 
+	[Учёные, которые внесли вклад в развитие теории множеств] (* <- lang_ru;; *);
+	[Scientists of set theory] (* <- lang_en;; *);
+<- rrel_key_sc_element:
+	Zermelo
+	(*
+	=> nrel_main_idtf: 
+		[Эрнст Фри́дрих Фердина́нд Церме́ло] (* <- lang_ru;; *);
+		[Ernst Friedrich Ferdinand Zermelo] (* <- lang_en;; *);;
+	<- sc_text_statement;;
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://html/Zermelo_text_ru.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://html/Ernst_Zermelo.jpg"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+	*);
+	Fraenkel
+	(*
+	=> nrel_main_idtf: 
+		[Абраха́м Галеви́ (Адольф) Фре́нкель] (* <- lang_ru;; *);
+		[Abraham Halevi (Adolf) Fraenkel] (* <- lang_en;; *);;
+	<- sc_text_statement;;
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://html/Fraenkel_text_ru.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://html/Abraham_Fraenkel.jpg"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+	*);
+	Godel
+	(*
+	=> nrel_main_idtf: 
+		[Курт Фри́дрих Гёдель] (* <- lang_ru;; *);
+		[Kurt Friedrich Gödel] (* <- lang_en;; *);;
+	<- sc_text_statement;;
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://html/kurt_gödel_text_ru.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://html/kurt_gödel.jpg"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+	*);
+	Cantor
+	(*
+	=> nrel_main_idtf: 
+		[Гео́рг Ка́нтор] (* <- lang_ru;; *);
+		[ Georg Ferdinand Ludwig Philipp Cantor] (* <- lang_en;; *);;
+	<- sc_text_statement;;
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://html/Georg_cantor_text_ru.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://html/Georg_cantor.jpg"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+	*);;

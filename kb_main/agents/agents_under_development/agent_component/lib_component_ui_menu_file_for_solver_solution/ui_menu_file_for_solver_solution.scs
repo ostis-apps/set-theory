@@ -1,0 +1,18 @@
+ui_menu_file_for_solver_solution <- ui_user_command_class_atom; ui_user_command_class_view_kb;;
+
+ui_menu_file_for_solver_solution => nrel_main_idtf: 
+	[Запрос доказательства тождества?] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_solver_solution => ui_nrel_command_template:
+	[*
+		question_solver _-> ._question_solver_instance
+			(*
+			_-> ui_arg_1;;				
+			*);;
+		._question_solver_instance _<- question;;
+	*];;
+
+ui_menu_file_for_solver_solution => ui_nrel_command_lang_template: 
+	[Запрос решения тождества: $ui_arg_1] 
+	(* <- lang_ru;; *);;

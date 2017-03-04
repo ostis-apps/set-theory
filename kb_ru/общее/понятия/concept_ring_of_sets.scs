@@ -1,0 +1,103 @@
+concept_ring_of_sets
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+		[кольцо множеств]
+			(* <- lang_ru;; *);
+		[ring of sets]
+			(* <- lang_en;; *);
+=> nrel_idtf:
+		[кольцо]
+			(* <- lang_ru;; *);
+<- rrel_key_sc_element:
+		Ring_of_sets_definition // определение
+			(*
+				<- sc_explanation;;
+				=> nrel_main_idtf:
+					[Определение понятия "кольцо множеств"]
+						(* <- lang_ru;; *);;
+				<= nrel_sc_text_translation:
+					...
+						(* 
+						-> rrel_example: "file://htmls/ring_of_sets/ring_of_sets_definition.html" (* <- lang_ru;; *);;
+						*);;
+				<= nrel_using_constants:
+					...
+						(* -> set; element_of_set; nrel_intersection; nrel_symmetric_sets_difference;; *);;
+			*);;
+
+concept_ring_of_sets
+<- rrel_key_sc_element:
+
+	... // первое утверждение
+	(* 
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example:  "file://htmls/ring_of_sets/ring_of_sets_statement_1.html" (* <- lang_ru;; *);;
+			*);;
+		=> nrel_main_idtf: [Утверждение (кольцо, пустое множество)]
+					(* <- lang_ru;; *);;
+
+	*);
+
+	... // второе утверждение
+	(*
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:  "file://htmls/ring_of_sets/ring_of_sets_statement_2.html" (* <- lang_ru;; *);;
+			*);;
+		=> nrel_main_idtf: [Утверждение (кольцо, пересечение*)]
+					(* <- lang_ru;; *);;
+	*);
+
+	... // третье утверждение
+	(*
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: "file://htmls/ring_of_sets/ring_of_sets_statement_3.html" (* <- lang_ru;; *);;
+			*);;
+		=> nrel_main_idtf: [Утверждение (кольцо, полукольцо)]
+					(* <- lang_ru;; *);;
+	*);
+
+	... // четвёртое утверждение
+	(*
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: "file://htmls/ring_of_sets/ring_of_sets_statement_4.html" (* <- lang_ru;; *);;
+			*);;
+		=> nrel_main_idtf: [Утверждение (кольцо, объединение*)]
+					(* <- lang_ru;; *);;
+	*);
+
+	... // пятое утверждение
+	(*
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: "file://htmls/ring_of_sets/ring_of_sets_statement_5.html" (* <- lang_ru;; *);;
+			*);;
+		=> nrel_main_idtf: [Утверждение (кольцо, разность*)]
+					(* <- lang_ru;; *);;
+	*);;
+
+concept_ring_of_sets
+<= nrel_inclusion:
+	concept_semiring_of_sets
+		(*
+			<= nrel_inclusion:
+				concept_family_of_sets;;
+		*);
+-> rrel_example: ring_R;; // пример
+
+			
+
+

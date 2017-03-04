@@ -1,0 +1,51 @@
+nrel_multiplicity_of_element
+<- sc_node_norole_relation;
+<- relation;
+<- ternary_relation;
+=> nrel_main_idtf:
+	[multiplicity of element*]
+	(* <- lang_en;;	*);
+=> nrel_idtf:
+	[Multiplicity function*]
+	(* <- lang_en;; *);
+	[Function of the number of copies*]
+	(* <- lang_en;; *);;
+
+nrel_multiplicity_of_element
+<- rrel_key_sc_element:
+	Definition_of_multiplicity_of_element
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [The multiplicity of elements of the set - the number of occurrences of elements in a set.] (* <-lang_en;; *);; 
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> element_of_set;
+			set;;
+		*);;
+
+
+	*);;
+
+Definition_of_multiplicity_of_element
+=> nrel_main_idtf:
+	[Definition "multiplicity of element"]
+	(* <- lang_en;;	*);;
+
+
+
+nrel_multiplicity_of_element
+=>nrel_first_domain: set;
+=>nrel_second_domain: element_of_set;;
+
+
+
+
+
+
+
+

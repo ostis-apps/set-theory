@@ -1,0 +1,12 @@
+nrel_converse_relation
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[обратное отношение*]
+	(*
+	<- lang_ru;;
+	*);
+	[converse relation*]
+	(*
+	<- lang_en;;
+	*);
+<-relation;;

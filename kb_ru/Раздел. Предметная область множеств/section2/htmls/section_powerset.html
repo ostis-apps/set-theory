@@ -1,0 +1,23 @@
+<p>
+<sc_element sys_idtf  = "set">Множество</sc_element> всех <sc_element sys_idtf  = "subset">подмножеств</sc_element> множества М называется <sc_element sys_idtf  = "nrel_boolean">булеаном</sc_element> и обозначает­ся 2<sup>М</sup>:
+<ul>
+	<li>2<sup>М</sup> = {А | А &sube; М}</li>
+</ul>
+<b>Теорема.</b> Для <sc_element sys_idtf  = "finite_set">конечного множества</sc_element><br>
+ <ul>
+	<li>М |2<sup>М</sup>| = 2<sup>|M|</sup></li>
+</ul>
+<b>Доказательство.</b> Индукция по |M|. База: если |M| = 0, то М = &empty; и 2<sup>&empty;</sup> = {&empty;}. Следовательно, <br>
+<ul>
+	<li>|2<sup>&empty;</sup>| = |{&empty;}| = 1 = 2<sup>0</sup> = 2<sup>|&empty;|</sup>.</li>
+</ul>
+Индукционный переход: пусть &forall; M |М| < k → |2<sup>М</sup>| = 2|M|. Рассмотрим М = {а<sub>1</sub>,... ,a<sub>k</sub>}, |М| = k. Положим<br>
+ <ul>
+	<li>M<sub>1</sub> = {X &sub; 2<sup>М</sup> | a<sub>k</sub> &isin; X} и  М<sub>2</sub> = {X &sub; 2<sup>М</sup>  | a<sub>k</sub> &notin; X}.</li>
+</ul>
+Имеем 2<sup>М</sup> = M<sub>1</sub> &cup; М<sub>2</sub> и M<sub>i</sub> &cap; М<sub>2</sub> = &empty;. По индукционному предположению |M<sub>1</sub>| = 2<sup>k-1</sup>,
+|M<sub>2</sub>| = 2<sup>k-1</sup>. Следовательно, |2<sup>M</sup>| = |M<sub>1</sub>| + |M<sub>2</sub>| = 2<sup>k-1</sup> + 2<sup>k-1</sup> = 2 x 2<sup>k-1</sup> = 2<sup>k</sup> = 2<sup>М</sup>.<br>
+<br>
+<b>Пример.</b> Пусть X = {1,2,3}. Тогда множество всех подмножеств X будет <br>
+2<sup>X</sup> = {0, {1}, {2}, {3}, {1,2}, {1,3}, {2,3}, X}.
+</p>

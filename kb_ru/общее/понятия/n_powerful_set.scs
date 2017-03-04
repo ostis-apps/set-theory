@@ -1,0 +1,56 @@
+n_powerful_set
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[n-мощное множество]
+	(* <- lang_ru;;	*);
+
+
+<- rrel_key_sc_element:
+	Definition_of_n_powerful_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: [Множество состоящее только из n элементов.] (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> element_of_set;;
+		*);;
+
+	*);;
+
+n_powerful_set
+=> nrel_idtf:
+	[множество, мощность которого равна n]
+	(* <- lang_ru;;	*);
+	[множество, содержащее N элементов]
+	(* <- lang_ru;;	*);;
+
+n_powerful_set
+<- infinite_set;
+	cantor_set;
+	not_reflexive_set;
+	not_transitive_set;
+	infinite_set;;
+
+
+Definition_of_n_powerful_set
+=> nrel_main_idtf:
+	[Определение понятия "n-мощное множество"]
+	(* <- lang_ru;;	*);;
+
+
+n_powerful_set
+<- rrel_key_sc_element: ...
+	(*
+	<-sc_illustration;;
+	<=nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: [Множество <1,2,3,4,5,...,n>  является синглетоном.] (* <-lang_ru;; *);;
+		*);;
+	*);;
+

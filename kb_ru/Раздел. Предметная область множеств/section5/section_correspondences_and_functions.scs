@@ -1,0 +1,88 @@
+section_correspondences_and_functions
+=> nrel_main_idtf:
+	[Раздел. Соответствия и функции]
+	(* <- lang_ru;; *);;
+
+section_basic_concepts_of_correspondence
+=> nrel_main_idtf:
+	[Раздел. Основные понятия соответствия]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+		pictureGr
+		(* 
+			=> nrel_main_idtf:[соответствие, заданное в графическом виде](* <- lang_ru;; *);;
+			-> rrel_example: "file://htmls/graph.jpg" (* <-lang_ru;; *);;
+		*);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_basic_concepts_of_correspondence.html" (* <-lang_ru;; *);;
+		*);;
+
+section_correspondence_operations
+=> nrel_main_idtf:
+	[Раздел. Операции над соответствиями]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+		pictureGrOp
+		(* 
+			=> nrel_main_idtf:[пример соответствия](* <- lang_ru;; *);;
+			-> rrel_example: "file://htmls/graphOp.jpg" (* <-lang_ru;; *);;
+		*);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_correspondence_operations.html" (* <-lang_ru;; *);;
+		*);;
+
+section_properties_of_correspondence
+=> nrel_main_idtf:
+	[Раздел. Свойства соответствий]
+	(* <- lang_ru;; *);
+
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_properties_of_correspondence.html" (* <-lang_ru;; *);;
+		*);;
+
+section_mapping_of_sets
+=> nrel_main_idtf:
+	[Раздел. Отображения множеств]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+		picturePr1
+		(* 
+			=> nrel_main_idtf:[отображение](* <- lang_ru;; *);;
+			-> rrel_example: "file://htmls/Pr1.png" (* <-lang_ru;; *);;
+		*);
+<= nrel_sc_text_translation:
+		picturePr2
+		(* 
+			=> nrel_main_idtf:[отображения](* <- lang_ru;; *);;
+			-> rrel_example: "file://htmls/Pr2.png" (* <-lang_ru;; *);;
+		*);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_mapping_of_sets.html" (* <-lang_ru;; *);;
+		*);;
+
+section_function
+=> nrel_main_idtf:
+	[Раздел. Функция]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+		pictureFun
+		(* 
+			=> nrel_main_idtf:[функции](* <- lang_ru;; *);;
+			-> rrel_example: "file://htmls/fun.jpg" (* <-lang_ru;; *);;
+		*);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_function.html" (* <-lang_ru;; *);;
+		*);;
+

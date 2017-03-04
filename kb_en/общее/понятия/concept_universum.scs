@@ -1,0 +1,75 @@
+concept_universum
+<- sc_node_not_relation;
+<- concept;
+<- infinite_set;
+<- antireflexive_relation;
+=> nrel_main_idtf:
+	[universum]
+	(* <- lang_en;;	*);
+=> nrel_idtf:
+	[universal set]
+	(* <- lang_en;; *);
+	[set of all elements of the signs]
+	(* <- lang_en;; *);
+	[fixed universe]
+	(* <- lang_en;; *);
+	[fixed set of characters of certain elements]
+	(* <- lang_en;; *);;
+
+concept_universum
+<- rrel_key_sc_element:
+	Definition_of_universum
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [The universe is some fixed set of specific elements. The universe is not the set of all sets, as it contradicts the axioms ZFC, namely the axiom of infinity.] (* <-lang_en;; *);; 
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> set;
+			element_of_set;;
+		*);;
+
+	*);;
+
+Definition_of_universum
+=> nrel_main_idtf:
+	[Definition "universum"]
+	(* <- lang_en;;	*);;
+
+
+
+empty_set
+<- rrel_key_sc_element:
+	statement
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Any object, whatever its nature, is an element of the universe.] (* <-lang_en;; *);; 
+		*);;
+	=> sc_identifier:
+		...
+		(*
+		-> rrel_example: [App. (object, universum, element_of_set)] (* <-lang_en;; *);; 
+		*);;
+
+	*);;
+
+empty_set
+<- rrel_key_sc_element: ...
+	(*
+	<-sc_illustration;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [The set of natural numbers in some cases is the universe.] (* <-lang_en;; *);; 
+		*);;
+	*);;
+
+
+

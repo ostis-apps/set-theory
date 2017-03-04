@@ -1,0 +1,135 @@
+scp_program -> proc_generation_links (*
+    -> rrel_params: ... (*
+        -> rrel_1: rrel_in: rrel_fixed: rrel_scp_var: _set1;;
+        -> rrel_2: rrel_in: rrel_fixed: rrel_scp_var: _set2;;
+        
+        // узел куда, генерируется ссылка
+        -> rrel_3: rrel_in: rrel_fixed: rrel_scp_var: _result;;
+        
+        // слово, используемое при генерации (тип ссылка)
+        -> rrel_4: rrel_in: rrel_fixed: rrel_scp_var: _syllable;;
+    *);;
+
+    -> rrel_operators: ... (*
+        
+        -> rrel_init: .proc_generation_links_operator1 (*
+            <- call;;
+            -> rrel_1: rrel_fixed: rrel_scp_const: proc_search_idtf;;
+            -> rrel_2: ... (*
+                -> rrel_1: rrel_fixed: rrel_scp_var: _set1;;
+                -> rrel_2: rrel_assign: rrel_scp_var: _link_set1;;
+            *);;
+            -> rrel_3: rrel_assign: rrel_scp_var: _argument;;
+            => nrel_goto: .proc_generation_links_operator2;;
+        *);;
+
+        -> .proc_generation_links_operator2 (*
+            <- waitReturn;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _argument;;
+            => nrel_goto: .proc_generation_links_operator4;;
+        *);;
+
+        -> .proc_generation_links_operator4 (*
+            <- call;;
+            -> rrel_1: rrel_fixed: rrel_scp_const: proc_search_idtf;;
+            -> rrel_2: ... (*
+                -> rrel_1: rrel_fixed: rrel_scp_var: _set2;;
+                -> rrel_2: rrel_assign: rrel_scp_var: _link_set2;;
+            *);;
+            -> rrel_3: rrel_assign: rrel_scp_var: _argument;;
+            => nrel_goto: .proc_generation_links_operator5;;
+        *);;
+
+        -> .proc_generation_links_operator5 (*
+            <- waitReturn;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _argument;;
+            => nrel_goto: .proc_generation_links_operator9;;
+        *);;
+
+        // создание ссылки
+        -> .proc_generation_links_operator9 (*
+            <- contAssign;;
+            -> rrel_1: rrel_assign: rrel_scp_var: _val;;
+            -> rrel_2: rrel_fixed: rrel_scp_var: _syllable;;
+
+            => nrel_goto: .proc_generation_links_operator10;;
+        *);;
+
+        /// добавление скобок
+        -> .proc_generation_links_operator10 (*
+            <- contStringConcat;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _val;;
+            -> rrel_2: rrel_fixed: rrel_scp_var: _val;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: [ (];;
+
+            => nrel_goto: .proc_generation_links_operator11;;
+        *);;
+
+        -> .proc_generation_links_operator11 (*
+            <- contStringConcat;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _val;;
+            -> rrel_2: rrel_fixed: rrel_scp_var: _val;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _link_set1;;
+
+            => nrel_goto: .proc_generation_links_operator12;;
+        *);;
+
+        -> .proc_generation_links_operator12 (*
+            <- contStringConcat;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _val;;
+            -> rrel_2: rrel_fixed: rrel_scp_var: _val;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: [, ];;
+
+            => nrel_goto: .proc_generation_links_operator13;;
+        *);;
+
+        -> .proc_generation_links_operator13 (*
+            <- contStringConcat;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _val;;
+            -> rrel_2: rrel_fixed: rrel_scp_var: _val;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _link_set2;;
+
+            => nrel_goto: .proc_generation_links_operator14;;
+        *);;
+
+        -> .proc_generation_links_operator14 (*
+            <- contStringConcat;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _val;;
+            -> rrel_2: rrel_fixed: rrel_scp_var: _val;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: [)];;
+
+            => nrel_goto: .proc_generation_links_operator15;;
+        *);;
+
+        // создание идентификатора
+        -> .proc_generation_links_operator15 (*
+            <- genElStr5;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _arc2;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _val;;
+            -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+
+            => nrel_goto: .proc_generation_links_operator16;;
+        *);;
+
+        -> .proc_generation_links_operator16 (*
+            <- genElStr3;;
+            -> rrel_1: rrel_fixed: rrel_scp_const: lang_en;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _val;;
+
+            => nrel_goto: .proc_generation_links_operator16_print;;
+        *);;
+
+        -> .proc_generation_links_operator16_print (*
+            <- printNl;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _val;;
+            => nrel_goto: .proc_generation_links_operator_return;;
+        *);;
+
+        -> .proc_generation_links_operator_return (*
+            <- return;;
+        *);;
+    *);;
+*);;

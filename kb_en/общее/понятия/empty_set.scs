@@ -1,0 +1,71 @@
+empty_set
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[empty set]
+	(* <- lang_en;;	*);
+=> nrel_idtf:
+	[set without elements]
+	(* <- lang_en;;	*);
+	[Zero-powerful of set]
+	(* <- lang_en;;	*);;
+
+empty_set
+<- rrel_key_sc_element:
+	Definition_of_empty_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls/empty_set_en.html" (* <-lang_en;; *);; 
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> set;
+			element_of_set;
+			accessory;;
+		*);;
+
+	*);;
+
+Definition_of_empty_set
+=> nrel_main_idtf:
+	[Definition "empty set"]
+	(* <- lang_en;;	*);;
+
+
+empty_set
+<- rrel_key_sc_element:
+	...
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://htmls/statement_empty_set_en.html" (* <-lang_en;; *);; 
+		*);;
+	=> sc_identifier:
+		...
+		(*
+		-> rrel_example: "file://htmls/app_empty_set_en.html" (* <-lang_en;; *);; 
+		*);;
+
+	*);;
+
+empty_set
+<- rrel_key_sc_element: ...
+	(*
+	<-sc_illustration;;
+	<=nrel_sc_text_translation:
+		example_empty_set
+		(*
+		-> rrel_example: "file://htmls/example_empty_set_en.html" (* <-lang_en;; *);; 
+		*);;
+	*);;
+
+
+example_empty_set
+=> nrel_main_idtf:
+	[example (empty set)]
+	(* <- lang_en;;	*);;

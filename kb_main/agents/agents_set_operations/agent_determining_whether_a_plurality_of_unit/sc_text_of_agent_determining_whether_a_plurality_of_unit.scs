@@ -1,0 +1,13 @@
+sc_text_of_agent_determining_whether_a_plurality_of_unit
+-> rrel_key_sc_element:
+	agent_determining_whether_a_plurality_of_unit;
+
+<- scp_program_sc_text;
+
+=> nrel_main_idtf: 
+	[sc-текст агентной scp-программы определения является ли узел множеством] 
+	(* <- lang_ru;; *);
+	[sc-text scp-agent based program determining whether a plurality of unit] 
+	(* <- lang_en;; *);;
+
+sc_text_of_agent_determining_whether_a_plurality_of_unit = [*^"file://agent_determining_whether_a_plurality_of_unit.scsi"*];;

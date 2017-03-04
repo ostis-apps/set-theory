@@ -1,0 +1,21 @@
+ui_menu_file_for_finding_sets_relations_on_power 
+	<- 	ui_user_command_class_atom; 
+		ui_user_command_class_view_kb;
+	=> nrel_main_idtf: 
+		[Как связаны между собой множества по мощности ?] (* <- lang_ru;; *);
+		[Request finding the sets relations on power ?] (* <- lang_en;; *);
+	=> ui_nrel_command_template:
+		[*
+		question_finding_sets_relations_on_power _-> ._question_finding_sets_relations_on_power_instance
+			(*
+			_-> ui_arg_1;
+			    ui_arg_2;;
+			*);;
+		._question_finding_sets_relations_on_power_instance _<- question;;
+		*];
+	=> ui_nrel_command_lang_template: 
+		[Запрос нахождения взаимоотношений множеств по мощности: $ui_arg_1 и ui_arg_2] 
+		(* <- lang_ru;; *);
+		[Request of sets relations_on_power search: $ui_arg_1 and ui_arg_2] 
+		(* <- lang_en;; *);;
+

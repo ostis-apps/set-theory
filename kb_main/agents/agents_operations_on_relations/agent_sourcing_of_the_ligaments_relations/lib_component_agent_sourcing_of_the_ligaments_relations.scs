@@ -1,0 +1,30 @@
+lib_component_agent_sourcing_of_the_ligaments_relations
+=> nrel_main_idtf:
+	[Компонент библиотеки. sc-агент поиска связок отношения]
+	(* <- lang_ru;; *);
+	[Library component. sc-agent sourcing of the ligaments relations]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components; 
+<- library_of_atomic_reusable_components; 
+
+
+=> nrel_attendant_component: 
+	lib_component_ui_menu_file_sourcing_of_the_ligaments_relations; 
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_sourcing_of_the_ligaments_relations; 
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[sc-агент поиска связок отношения.]
+				(* <- lang_ru;; *);; 
+		*);;
+	*);;
+

@@ -1,0 +1,34 @@
+scp_program -> proc_add_el_set_answer (*
+    -> rrel_params: ... (*
+        -> rrel_1: rrel_in: _set1;;
+        -> rrel_2: rrel_in: _set2;;
+        -> rrel_3: rrel_in: _answer;;
+    *);;
+    -> rrel_operators: ... (*
+        ->rrel_init: .proc_add_el_set_answer_operator33516 (*
+            <- print;;
+            -> rrel_1: rrel_fixed: rrel_scp_const: [процедура добавления элементов 2 множеств в ответ];;
+            => nrel_goto: .proc_add_el_set_answer_operator63304;;
+        *);;
+        ->.proc_add_el_set_answer_operator63304 (*
+            <- searchSetStr3;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _set1;;
+            -> rrel_2: rrel_scp_var: rrel_assign: rrel_pos_const_perm: _arc;;
+            -> rrel_3: rrel_scp_var: rrel_assign: rrel_node: _el;;
+            -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+            -> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+            => nrel_goto: .proc_add_el_set_answer_operator5364;;
+        *);;
+        ->.proc_add_el_set_answer_operator5364 (*
+            <- searchSetStr3;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _set2;;
+            -> rrel_2: rrel_scp_var: rrel_assign: rrel_pos_const_perm: _arc;;
+            -> rrel_3: rrel_scp_var: rrel_assign: rrel_node: _el;;
+            -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+            => nrel_goto: .proc_add_el_set_answer_operator60931;;
+        *);;
+        ->.proc_add_el_set_answer_operator60931 (*
+            <- return;;
+        *);;
+    *);;
+*);;

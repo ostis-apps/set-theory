@@ -1,0 +1,14 @@
+lib_component_proc_of_finding_sets_2
+=> nrel_main_idtf:
+	[Компонент библиотеки. scp-программа нахождения узлов множеств по связке отношения для входных множеств с атрибутами]
+	(* <- lang_ru;; *);
+	[Library component. scp-finding program sets of nodes conjunction relationship attrib]
+	(* <- lang_en;; *);
+
+<- platform_independent_reusable_component_OSTIS;
+<- reusable_scp_program;
+
+-> rrel_key_sc_element: 
+	proc_search_of_sets_new_2;;
+
+lib_component_proc_of_finding_sets_2 = [*^"file://proc_search_of_sets_new_2.scs"*];;

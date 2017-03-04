@@ -1,0 +1,55 @@
+section_ordered_sets
+=> nrel_main_idtf:
+	[Раздел. Упорядоченные множества]
+	(* <- lang_ru;; *);;
+
+section_cortege
+=> nrel_main_idtf:
+	[Раздел. Кортеж]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_cortege.html" (* <-lang_ru;; *);;
+		*);;
+
+
+section_projection_operation
+=> nrel_main_idtf:
+	[Раздел. Операция проекции]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_projection_operation.html" (* <-lang_ru;; *);;
+		*);;
+
+section_Cartesian_product
+=> nrel_main_idtf:
+	[Раздел. Декартово произведение множеств]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+		pictureCP
+		(* 
+			=> nrel_main_idtf:[рисунок 1](* <- lang_ru;; *);;
+			-> rrel_example: "file://htmls/CP.png" (* <-lang_ru;; *);;
+		*);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_Cartesian_product.html" (* <-lang_ru;; *);;
+		*);;
+
+section_graphics		
+=> nrel_main_idtf:
+	[Раздел. Графики]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_graphics.html" (* <-lang_ru;; *);;
+		*);;

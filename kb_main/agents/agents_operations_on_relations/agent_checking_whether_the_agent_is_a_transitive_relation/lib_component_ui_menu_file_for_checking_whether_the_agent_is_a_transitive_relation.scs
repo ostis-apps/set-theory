@@ -1,0 +1,12 @@
+lib_component_ui_menu_file_for_checking_whether_the_agent_is_a_transitive_relation
+=> nrel_main_idtf:
+	[Компонент библиотеки. Команда пользовательского интерфейса проверки является ли отношение транзитивным]
+	(* <- lang_ru;; *);
+	[Library component. User interface command of checking whether the agent is a transitive relation]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+<- library_of_atomic_reusable_components;
+<- library_of_reusable_components_of_knowledge_bases;;
+
+lib_component_ui_menu_file_for_checking_whether_the_agent_is_a_transitive_relation = [*^"file://ui_menu_file_for_checking_whether_the_agent_is_a_transitive_relation.scsi"*];;

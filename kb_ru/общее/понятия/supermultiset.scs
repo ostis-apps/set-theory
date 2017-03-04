@@ -1,0 +1,37 @@
+supermultiset
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[надмультимножество*]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[расширенное множество]
+	(* <- lang_ru;; *);
+	[расширенный набор]
+	(* <- lang_ru;; *);
+	[расширенный вариант]
+	(* <- lang_ru;; *);;
+
+supermultiset
+<- rrel_key_sc_element:
+	Definition_of_supermultiset
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:"file://htmls/supermultiset.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+
+Definition_of_supermultiset
+=> nrel_main_idtf:
+	[Определение понятия "надмультимножество*"]
+	(* <- lang_ru;;	*);;
+
+supermultiset
+ <-binary_relation;
+ <-oriented_relation;
+ <-transitive_relation;
+ <-antireflexive_relation;
+ <-superset;
+ <-antisymmetric_relation;;

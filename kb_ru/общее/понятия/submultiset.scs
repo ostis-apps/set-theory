@@ -1,0 +1,35 @@
+submultiset
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[подмультимножество*]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[submultiset*]
+	(* <- lang_en;;	*);;
+
+submultiset
+<- nrel_key_sc_element:
+	Definition_of_submultiset
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/submultiset.html"(* <-lang_ru;; *);;
+		*);;
+	*);;
+
+
+submultiset
+ <-binary_relation;
+ <-oriented_relation;
+ <-transitive_relation;
+ <-antireflexive_relation;
+ <-subset;
+ <-antisymmetric_relation;;
+
+Definition_of_submultiset
+=> nrel_main_idtf:
+	[Определение понятия "подмультимножество*"]
+	(* <- lang_ru;;	*);;
+

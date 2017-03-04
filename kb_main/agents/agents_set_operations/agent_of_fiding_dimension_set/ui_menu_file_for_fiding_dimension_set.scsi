@@ -1,0 +1,20 @@
+ui_menu_file_for_finding_dimension_set 
+	<- 	ui_user_command_class_atom; 
+		ui_user_command_class_view_kb;
+	=> nrel_main_idtf: 
+		[Какая размерность множества?] (* <- lang_ru;; *);
+		[What dimension of set?] (* <- lang_en;; *);
+	=> ui_nrel_command_template:
+		[*
+		question_finding_dimension_set _-> ._question_finding_dimension_set_instance
+			(*
+			_-> ui_arg_1;;
+			*);;
+		._question_finding_dimension_set_instance _<- question;;
+		*];
+	=> ui_nrel_command_lang_template: 
+		[Запрос нахождения размерности множества: $ui_arg_1] 
+		(* <- lang_ru;; *);
+		[Request of dimension of set: $ui_arg_1] 
+		(* <- lang_en;; *);;
+

@@ -1,0 +1,48 @@
+exercise_section_subject_domain_of_sets
+	<= nrel_section_decomposition:
+	{
+		section_sets_exercises
+		(*
+			<= nrel_exercise: 
+				section_sets_and_subsets;;
+			=> nrel_section_base_order: 
+				section_sets_relations_exercises;;
+		*);
+		section_sets_relations_exercises
+		(*
+			<= nrel_exercise:
+				section_sets_operations;;
+			=> nrel_section_base_order: 
+				section_set_operations_exercises;;
+		*);
+
+		section_set_operations_exercises
+		(*
+			<= nrel_exercise:
+				section_set_axiom;;
+			=> nrel_section_base_order: 
+				section_ordered_sets_exercises;;
+		*);
+		section_ordered_sets_exercises
+		(*
+			<= nrel_exercise:
+				section_ordered_sets;;
+			=> nrel_section_base_order: 
+				section_sets_relations_exercisess;;
+		*);
+		section_sets_relations_exercisess
+		(*
+			<= nrel_exercise:
+				section_sets_relations;;
+			=> nrel_section_base_order: 
+				section_correspondences_and_functions_exercises
+				(*
+					<= nrel_exercise:
+						section_correspondences_and_functions;;
+				*);;
+		*);
+		section_correspondences_and_functions_exercises
+			
+	};
+
+	<-concept_exercise;;

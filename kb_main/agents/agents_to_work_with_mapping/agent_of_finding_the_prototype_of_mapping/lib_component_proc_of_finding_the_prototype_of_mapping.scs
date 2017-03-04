@@ -1,0 +1,14 @@
+lib_component_proc_of_finding_the_prototype_of_mapping
+=> nrel_main_idtf:
+	[Компонент библиотеки. scp-программа нахождения прообраза соответствия]
+	(* <- lang_ru;; *);
+	[Library component. scp-program of finding the prototype of mapping]
+	(* <- lang_en;; *);
+
+<- platform_independent_reusable_component_OSTIS;
+<- reusable_scp_program;
+
+-> rrel_key_sc_element: 
+	proc_of_finding_the_prototype_of_mapping;;
+
+lib_component_proc_of_finding_the_prototype_of_mapping = [*^"file://proc_of_finding_the_prototype_of_mapping.scs"*];;

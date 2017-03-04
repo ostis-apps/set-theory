@@ -1,0 +1,5 @@
+concept_exercise
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[exercise]
+	(* <- lang_en;;	*);;

@@ -1,0 +1,7 @@
+nrel_equality
+<- sc_node_not_relation;
+=> nrel_main_idtf: 
+	[равенство*] 
+	(* 
+	<- lang_ru;; 
+	*);;

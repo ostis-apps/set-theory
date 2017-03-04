@@ -1,0 +1,47 @@
+infinity
+=> nrel_main_idtf:
+	[infinity]
+	(* <- lang_en;;	*);
+
+<- rrel_key_sc_element:
+	...
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Infinity] (* <-lang_en;; *);; 
+		*);;
+	*);;
+
+set_of_natural_numbers
+=> nrel_main_idtf:
+	[set of natural numbers]
+	(* <- lang_en;;	*);
+
+<- rrel_key_sc_element:
+	...
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Set of natural numbers is the set of numbers, which] (* <-lang_en;; *);; 
+		*);;
+	*);;
+
+set_of_real_numbers
+=> nrel_main_idtf:
+	[set of real numbers]
+	(* <- lang_en;;	*);
+
+<- rrel_key_sc_element:
+	...
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: [The set of real numbers - a union of rational and irrational numbers.] (* <-lang_en;; *);;
+		*);;
+	*);;

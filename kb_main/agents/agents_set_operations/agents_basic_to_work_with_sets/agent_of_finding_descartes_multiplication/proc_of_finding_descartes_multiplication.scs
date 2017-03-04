@@ -1,0 +1,127 @@
+scp_program -> proc_of_finding_descartes_multiplication (*
+	-> rrel_params: ...(*
+    	-> rrel_1: rrel_in: _s1;;
+    	-> rrel_2: rrel_in: _s2;;
+    	-> rrel_3: rrel_in: _s3;;
+  	*);;
+  
+	-> rrel_operators: ...(*
+    	-> rrel_init: .proc_of_finding_descartes_multiplication_operator1 (*
+			<- genEl;;
+		-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _setel1;;
+		
+		=> nrel_goto: .proc_of_finding_descartes_multiplication_operator2;;
+		*);;
+
+		-> .proc_of_finding_descartes_multiplication_operator2 (*
+			<- genEl;;
+		-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _setel2;;
+		
+		=> nrel_goto: .proc_of_finding_descartes_multiplication_operator3;;
+		*);;
+		
+//-------------------------------------------------------------------
+
+		-> .proc_of_finding_descartes_multiplication_operator3 (*
+			<- searchSetStr3;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _s1;;
+		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+		-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _el;;
+
+		-> rrel_set_3: rrel_fixed: rrel_scp_var: _setel1;;
+
+		=> nrel_then: .proc_of_finding_descartes_multiplication_operator4;;
+      	=> nrel_else: .proc_of_finding_descartes_multiplication_operator_erase1;;
+		*);;
+
+		-> .proc_of_finding_descartes_multiplication_operator4 (*
+			<- searchElStr3;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _setel1;;
+		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		-> rrel_3: rrel_assign: rrel_scp_var: _el1;;
+
+      	=> nrel_then: .proc_of_finding_descartes_multiplication_operator5;;
+      	=> nrel_else: .proc_of_finding_descartes_multiplication_operator_erase1;;
+		*);;
+
+		-> .proc_of_finding_descartes_multiplication_operator5 (*
+			<- eraseEl;;
+		-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc1;;
+
+		=> nrel_goto: .proc_of_finding_descartes_multiplication_operator6;;
+		*);;
+
+//------------------------------------------------------------------
+
+		-> .proc_of_finding_descartes_multiplication_operator6 (*
+			<- searchSetStr3;;
+		  -> rrel_1: rrel_fixed: rrel_scp_var: _s2;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+		  -> rrel_3: rrel_assign: rrel_scp_var: _el;;
+
+		  -> rrel_set_3: rrel_fixed: rrel_scp_var: _setel2;;
+
+		  => nrel_then: .proc_of_finding_descartes_multiplication_operator7;;
+      	  => nrel_else: .proc_of_finding_descartes_multiplication_operator_erase1;;
+		*);;
+
+		// Поиск элемента во 2 множестве
+		-> .proc_of_finding_descartes_multiplication_operator7 (*
+			<- searchElStr3;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _setel2;;
+		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		-> rrel_3: rrel_assign: rrel_scp_var: _el2;;
+
+      	=> nrel_then: .proc_of_finding_descartes_multiplication_operator8;;
+      	=> nrel_else: .proc_of_finding_descartes_multiplication_operator4;;
+		*);;
+
+		-> .proc_of_finding_descartes_multiplication_operator8 (*
+		 	<- eraseEl;;
+		-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc2;;
+
+		=> nrel_goto: .proc_of_finding_descartes_multiplication_operator8A;;
+		*);;
+
+		-> .proc_of_finding_descartes_multiplication_operator8A (*
+			<- searchElStr5;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _el1;;
+		-> rrel_2: rrel_assign: rrel_common: rrel_const: rrel_scp_var: _arc4;;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _el2;;
+		-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc5;;
+		-> rrel_5: rrel_fixed: rrel_scp_var: _s3;;
+
+      	=> nrel_then: .proc_of_finding_descartes_multiplication_operator7;;
+      	=> nrel_else: .proc_of_finding_descartes_multiplication_operator9;;
+		*);;
+
+		-> .proc_of_finding_descartes_multiplication_operator9 (*
+			<- genElStr5;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _el1;;
+		-> rrel_2: rrel_assign: rrel_common: rrel_const: rrel_scp_var: _arc4;;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _el2;;
+		-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc5;;
+		-> rrel_5: rrel_fixed: rrel_scp_var: _s3;;
+
+      	=> nrel_goto: .proc_of_finding_descartes_multiplication_operator7;;
+		*);;
+
+		-> .proc_of_finding_descartes_multiplication_operator_erase1 (*
+			<- eraseEl;;
+		-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _setel1;;
+
+		=> nrel_goto: .proc_of_finding_descartes_multiplication_operator_erase2;;
+		*);;
+
+		-> .proc_of_finding_descartes_multiplication_operator_erase2 (*
+			<- eraseEl;;
+		-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _setel2;;
+
+		=> nrel_goto: .proc_of_finding_descartes_multiplication_operator_return;;
+		*);;
+
+	    -> .proc_of_finding_descartes_multiplication_operator_return(*
+    	  <- return;;
+    *);;
+  *);;
+*);;
