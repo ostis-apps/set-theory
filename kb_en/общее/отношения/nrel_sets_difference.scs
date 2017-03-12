@@ -10,16 +10,16 @@ nrel_sets_difference
 	[Arithmetic difference of sets*]
 	(* <- lang_en;; *);;
 
-Definition_of_sets_difference
-=> nrel_main_idtf: 
-	[Definition "sets difference*"]  
-	 (* <- lang_en;; *);;
 
 nrel_sets_difference
 <- rrel_key_sc_element:
 	Definition_of_sets_difference
 	(* 
 		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Definition "sets difference*"]  
+			 (* <- lang_en;; *);;
+
 		<= nrel_sc_text_translation:
 			...
 			(*
