@@ -1,0 +1,46 @@
+nrel_fuzzy_set_negation
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- quasybinary_relation;
+<- antireflexive_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+	[отрицание нечеткого множества*]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[отношение отрицания нечетого множества*]
+	(* <- lang_ru;; *);
+	[операция отрицания нечеткого множества*]
+	(* <- lang_ru;; *);;
+
+nrel_fuzzy_set_negation
+<- rrel_key_sc_element:
+	Definition_of_nrel_fuzzy_set_negation
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/nrel_fuzzy_set_negation.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> fuzzy_set;
+		membership_function;
+		concept_universum;
+		fuzzy_subset;;
+		*);;
+
+
+	*);;
+
+Definition_of_nrel_fuzzy_set_negation
+=> nrel_main_idtf:
+	[Определение понятия "отрицание нечеткого множества*"]
+	(* <- lang_ru;;	*);;
+
+nrel_fuzzy_set_negation
+=>nrel_first_domain: fuzzy_set;
+=>nrel_second_domain: fuzzy_set;;

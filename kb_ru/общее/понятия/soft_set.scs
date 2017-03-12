@@ -25,6 +25,7 @@ soft_set
 		-> cortege;
 			universum;
 			element_of_set;
+			set_of_accessories;
 			set;;
 		*);;
 

@@ -4,5 +4,6 @@ ui_main_menu <= nrel_ui_commands_decomposition:
 {
 /*	ui_menu_na_keynodes;*/
 	ui_menu_na_view_kb_extended_of_sets;
-	ui_menu_na_sets
+	ui_menu_na_sets;
+	ui_menu_na_mappings
 };;

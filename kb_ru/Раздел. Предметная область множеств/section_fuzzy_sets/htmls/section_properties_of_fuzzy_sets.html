@@ -1,0 +1,13 @@
+<p>
+<b>Свойства нечетких множеств</b><br>
+Пусть задано <sc_element sys_idtf  = "fuzzy_set"> нечеткое множество</sc_element>  A c <sc_element sys_idtf  = "membership_function"> функцией принадлежности</sc_element>  &mu;<sub>A</sub> на <sc_element sys_idtf  = "concept_universum">универсуме</sc_element> X.
+<ul>
+<li>
+<sc_element sys_idtf  = "nrel_alpha_incision"> &alpha;-разрезом</sc_element>  нечёткого множества A, обозначаемым как A<sub>&alpha;</sub>, называется следующее <sc_element sys_idtf  = "cantor_set"> чёткое множество</sc_element>: A<sub>&alpha;</sub> = {x &isin; X; &mu;<sub>A</sub> &ge; &alpha;},
+то есть множество, определяемое функцией принадлежности &chi; A<sub>&alpha;</sub>, которая принимает значение 0, если &mu;<sub>A</sub> < &alpha; и 1, если &mu;<sub>A</sub> &ge; &alpha;. <br>
+Для &alpha;-разреза истинна <sc_element sys_idtf  = "nrel_implication"> импликация</sc_element>  &alpha;<sub>1</sub> < &alpha;<sub>2</sub> &rArr; A<sub>&alpha;1</sub> &sup; A<sub>&alpha;2</sub>
+</li>
+<li>Нечёткое множество <sc_element sys_idtf  = "convex_fuzzy_set"> выпуклым </sc_element> тогда и только тогда, когда для каждой пары точек х<sub>1</sub>,x<sub>2</sub> из Х, выполняется условие:<br> &emsp;&emsp;&emsp;&mu;<sub>A</sub> (&lambda;х<sub>1</sub> + (1 - &lambda;)х<sub>2</sub>) &ge; min (&mu;<sub>A</sub>(х<sub>1</sub>), &mu;<sub>A</sub>(х<sub>2</sub>)); где &lambda; &isin; [0,1]</li>
+<li>Нечёткое множество <sc_element sys_idtf  = "concave_fuzzy_set"> вогнутым </sc_element> тогда и только тогда, когда для каждой пары точек х<sub>1</sub>,x<sub>2</sub> из Х, выполняется условие:<br> &emsp;&emsp;&emsp;&mu;<sub>A</sub> (&lambda;х<sub>1</sub> + (1 - &lambda;)х<sub>2</sub>) &ge; max (&mu;<sub>A</sub>(х<sub>1</sub>), &mu;<sub>A</sub>(х<sub>2</sub>)); где &lambda; &isin; [0,1]</li>
+</ul>
+</p>

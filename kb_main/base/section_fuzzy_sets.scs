@@ -1,0 +1,15 @@
+section_fuzzy_sets
+	<= nrel_section_decomposition:
+	{
+		section_definition_of_fuzzy_set
+		(*
+		=> nrel_section_base_order: 
+			section_properties_of_fuzzy_sets;;
+		*);
+		section_properties_of_fuzzy_sets
+		(*
+		=> nrel_section_base_order: 
+			section_operations_on_fuzzy_sets;;
+		*);
+		section_operations_on_fuzzy_sets		
+	};;

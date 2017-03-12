@@ -1,0 +1,31 @@
+<p>
+Под <sc_element sys_idtf  = "fuzzy_set">нечётким множеством</sc_element>  A понимается совокупность <sc_element sys_idtf  = "cortege">упорядоченных пар</sc_element>, составленных из <sc_element sys_idtf  = "element_of_set">элементов </sc_element>x <sc_element sys_idtf  = "concept_universum">универсального множества</sc_element> X и соответствующих <sc_element sys_idtf  = "membership_function">степеней принадлежности</sc_element> &mu;<sub>A</sub>(x):<br>
+&emsp;&emsp;&emsp;&emsp;A = {(x, &mu;<sub>A</sub>(x)) | x &isin; X},<br>
+причём &mu;<sub>A</sub>(x) — функция принадлежности (характеристическая функция), указывающая в какой степени (мере) элемент x принадлежит нечёткому множеству A. Функция &mu;<sub>A</sub>(x) принимает значения в некотором <sc_element sys_idtf ="total_order_set">линейно упорядоченном</sc_element> <sc_element sys_idtf = "set">множестве</sc_element> M. Множество M называют <sc_element sys_idtf ="set_of_accessories">множеством принадлежностей</sc_element>, часто в качестве M выбирается отрезок [0, 1]. Если M={0,1}  (то есть состоит только из двух элементов), то нечёткое множество может рассматриваться как обычное, <sc_element sys_idtf = "cantor_set">чёткое множество. </sc_element><br>
+&emsp;<b>Основные определения</b><br>
+Пусть А нечёткое множество с элементами из универсального множества X и множеством принадлежностей M=[0,1]. Тогда
+<ul>
+ <li><sc_element sys_idtf  = "support_of_fuzzy_set">Носителем (суппортом)</sc_element> нечеткого множества supp A называется множество {x | x &isin; X, &mu;<sub>A</sub>(x) > 0}</li>
+ <li>Величина sup &mu;<sub>A</sub>(x) = max &mu;<sub>A</sub>(x), x &isin; X называется <sc_element sys_idtf  = "nrel_height_of_fuzzy_set">высотой</sc_element> нечеткого множества A. Нечеткое множество <sc_element sys_idtf  = "normal_fuzzy_set">нормально</sc_element>, если его высота равна 1. Если высота строго меньше 1, нечеткое множество называется <sc_element sys_idtf  = "subnormal_fuzzy_set">субнормальным</sc_element>.</li>
+ <li>Нечеткое множество <sc_element sys_idtf  = "empty_fuzzy_set">пусто</sc_element>, если &forall;x &isin; X: &mu;<sub>A</sub>(x) = 0</li>
+ <li>Нечеткое множество <sc_element sys_idtf  = "unimodal_fuzzy_set">унимодально</sc_element>, если &mu;<sub>A</sub>(x) = 1 только на одном x из X.</li>
+<li>Элементы x &isin; X, для которых &mu;<sub>A</sub>(x) = 0.5, называются <sc_element sys_idtf  = "nrel_transition_point">точками перехода</sc_element> нечеткого множества A. </li>
+</ul>
+&emsp;<b>Сравнение нечетких множеств</b><br>
+Пусть А и B - нечеткие множества, заданные на универсуме X.
+<ul>
+<li>A <sc_element sys_idtf  = "nrel_inclusion">содержится</sc_element> в B, если для любого элемента из X функция его принадлежности множеству A будет принимать значение меньшее либо равное, чем функция принадлежности множеству B:<br>
+&emsp;&emsp;&emsp;A &sub; B &hArr; &forall; x &isin; X &mu;<sub>A</sub>(x) &le; &mu;<sub>B</sub>(x)<br>
+В случае, если условие &mu;<sub>A</sub>(x) &le; &mu;<sub>B</sub>(x) выполняется не для всех x &isin; X, говорят о <sc_element sys_idtf  = "concept_inclusion_degree">степени включения</sc_element> нечёткого множества A в B, которое определяется так:<br>
+&emsp;&emsp;&emsp;l(A&sub;B) = &mu;<sub>B</sub>(x), x &isin; T, <br>
+где T = {x &isin; X; &mu;<sub>A</sub>(x) &le; &mu;<sub>B</sub>(x), &mu;<sub>A</sub>(x) > 0}
+</li>
+<li>Два множества называются равными, если они содержатся друг в друге:<br>
+&emsp;&emsp;&emsp;A = B &hArr; &forall; x &isin; X &mu;<sub>A</sub>(x) = &mu;<sub>B</sub>(x)<br>
+В случае, если значения функций принадлежности &mu;<sub>A</sub>(x) и &mu;<sub>B</sub>(x) почти равны между собой, говорят о <sc_element sys_idtf  = "concept_equality_degree">степени равенства</sc_element> нечётких множеств A и B, например, в виде<br>
+&emsp;&emsp;&emsp;E(A = B) = 1 - max |&mu;<sub>A</sub>(x) - &mu;<sub>B</sub>(x)|, x &isin; T, <br>
+где T = {x &isin; X; &mu;<sub>A</sub>(x) &ne; &mu;<sub>B</sub>(x)}
+</li>
+
+</ul>
+</p>

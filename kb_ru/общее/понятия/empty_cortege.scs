@@ -1,0 +1,32 @@
+empty_cortege
+<- sc_node_not_relation;
+<- cortege;
+=> nrel_main_idtf:
+	[пустой кортеж]
+	(* <- lang_ru;;	*);;
+
+empty_cortege
+<- rrel_key_sc_element:
+	Definition_of_empty_cortege
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/empty_cortege.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> cortege;
+		nrel_component;;
+		*);;
+
+	*);;
+
+
+Definition_of_empty_cortege
+=> nrel_main_idtf:
+	[Определение понятия "пустой кортеж"]
+	(* <- lang_ru;;	*);;
+

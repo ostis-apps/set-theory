@@ -1,0 +1,46 @@
+same_name_component
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- ternary_relation;
+<- antireflexive_relation;
+=> nrel_main_idtf:
+	[одноименная компонента кортежей*]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[одноименная компонента*]
+	(* <- lang_ru;;	*);;
+
+same_name_component
+<- rrel_key_sc_element:
+	Definition_of_same_name_component
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/same_name_component.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> cortege_length;
+		  cortege;
+		nrel_component;;
+
+		*);;
+	
+
+	*);;
+
+
+Definition_of_same_name_component
+=> nrel_main_idtf:
+	[Определение понятия "одноименная компонента кортежей*"]
+	(* <- lang_ru;;	*);;
+
+same_name_component
+=>nrel_first_domain: element_of_set;
+=>nrel_second_domain: cortege;
+=>nrel_third_domain: cortege;;
+

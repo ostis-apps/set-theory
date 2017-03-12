@@ -317,8 +317,18 @@ scp_program -> proc_of_finding_mapping_intersection (*
              => nrel_then: .proc_of_finding_map_intersection_operator20F;;
              => nrel_else: .proc_of_finding_map_intersection_operator20B;; // след. итерация
 		*);;
-
 		-> .proc_of_finding_map_intersection_operator20F
+		(*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _prib_result;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _prib_el;;
+
+             => nrel_then: .proc_of_finding_map_intersection_operator20G;; //след итерация
+             => nrel_else: .proc_of_finding_map_intersection_operator20B;; 
+		*);;
+
+		-> .proc_of_finding_map_intersection_operator20G
 		(*
 			<- searchSetStr5;;
 
@@ -326,7 +336,7 @@ scp_program -> proc_of_finding_mapping_intersection (*
 			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc_common;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _prib_el;;			
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_5: rrel_assign: rrel_scp_var: _nrel;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _nrel_Z1;;
 
 			->rrel_set_2: rrel_fixed: rrel_scp_var: _Z_result;;
 
@@ -334,6 +344,15 @@ scp_program -> proc_of_finding_mapping_intersection (*
 		*);;
 
 		-> .proc_of_finding_map_intersection_operator23
+		(*
+			<- printEl;;
+
+		  	-> rrel_1: rrel_fixed: rrel_scp_var: _Z_result;;
+
+             => nrel_goto: .proc_of_finding_map_intersection_operator23a;;
+		*);;
+
+		-> .proc_of_finding_map_intersection_operator23a
 		(*
 			<- genElStr5;;
 
@@ -393,17 +412,6 @@ scp_program -> proc_of_finding_mapping_intersection (*
             => nrel_goto: .proc_of_finding_map_intersection_operator_return;; 
         *);;
 	
-	
-	   /* -> .proc_of_finding_map_intersection_operator100(*
-    	 		<-printNl;;
-			-> rrel_1: rrel_fixed: rrel_scp_const: [ошибка мать епта];;
-			=> nrel_goto: .proc_of_finding_map_intersection_operator_return;;
-    		*);;
-	    -> .proc_of_finding_map_intersection_operator99(*
-    	 		<-printNl;;
-			-> rrel_1: rrel_fixed: rrel_scp_const: [нормульчик];;
-			=> nrel_goto: .proc_of_finding_map_intersection_operator_return;;
-    		*);;*/
 	    -> .proc_of_finding_map_intersection_operator_return
 	    (*
     	  <- return;;

@@ -26,18 +26,18 @@ set_paradoxes
 		[Cantor's Paradox] (* <- lang_en;; *);;
 	<- sc_text_statement;;
 	<= nrel_sc_text_translation:	
-			...
+		...
+		(*
+		-> 
+			"file://html/paradox_Cantor_text_ru.html"
 			(*
-			-> 
-				"file://html/paradox_Cantor_text_ru.html"
-				(*
-				<- lang_ru;;
-				*);;
+			<- lang_ru;;
 			*);;
+		*);;
 	*);
 	paradox_Russel
 	(*
-	=> nrel_main_idtf: 
+	=> nrel_main_idtf:
 		[Парадокс Рассела] (* <- lang_ru;; *);
 		[Russell's paradox] (* <- lang_en;; *);;
 	<- sc_text_statement;;
@@ -62,6 +62,71 @@ set_paradoxes
 			(*
 			-> 
 				"file://html/paradox_doubling_ball_text_ru.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+	*);
+	paradox_Hausdorff
+	(*
+	=> nrel_main_idtf: 
+		[Парадокс Хаусдорфа] (* <- lang_ru;; *);
+		[Теорема Хаусдорфа] (* <- lang_ru;; *);
+		[Hausdorff's Paradox] (* <- lang_en;; *);;
+	<- sc_text_statement;;
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://html/paradox_Hausdorff_text_ru.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+	*);
+	paradox_Mirimanova
+	(*
+	=> nrel_main_idtf: 
+		[Парадокс Мириманова] (* <- lang_ru;; *);
+		[Mirimanov's Paradox] (* <- lang_en;; *);;
+	<- sc_text_statement;;
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://html/paradox_Mirimanova_text_ru.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+	*);
+	paradox_Galileo
+	(*
+	=> nrel_main_idtf: 
+		[Парадокс Галилео] (* <- lang_ru;; *);
+		[Galileo's Paradox] (* <- lang_en;; *);;
+	<- sc_text_statement;;
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://html/paradox_Galileo_text_ru.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+	*);
+	paradox_grand_hotel
+	(*
+	=> nrel_main_idtf: 
+		[Парадокс «Гранд-отель»] (* <- lang_ru;; *);
+		[The Paradox of "Grand Hotel"] (* <- lang_en;; *);;
+	<- sc_text_statement;;
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://html/paradox_grand_hotel_text_ru.html"
 				(*
 				<- lang_ru;;
 				*);;

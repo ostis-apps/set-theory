@@ -28,5 +28,8 @@ ui_menu_na_sets
 	ui_menu_file_for_finding_axioms;
 	ui_menu_file_for_finding_illustrations;
 	ui_menu_file_for_finding_mapping_intersection;
+	ui_menu_file_for_finding_mapping_union;
+	ui_menu_file_for_finding_mapping_intersection;
+	ui_menu_file_for_finding_the_prototype_of_mapping;
 	ui_menu_file_operations
 };;

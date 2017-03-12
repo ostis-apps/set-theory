@@ -314,7 +314,7 @@ scp_program -> proc_of_finding_mapping_union(*
 			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc_common;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _prib_el;;			
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_5: rrel_assign: rrel_scp_var: _nrel;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _nrel_Z1;; //было assign
 
 			->rrel_set_2: rrel_fixed: rrel_scp_var: _Z_result;;
 
@@ -377,8 +377,24 @@ scp_program -> proc_of_finding_mapping_union(*
              => nrel_then: .proc_of_finding_map_union_operatorS6;;
              => nrel_else: .proc_of_finding_map_union_operatorS3;; // след. итерация
 		*);; 
-
+		
+		//проверяем, есть ли найденная дуга в первом соответствии
+		//если есть, переходим к следующей итерации 
+		//если нет, добавляем ее в результирующее множество дуг Z_result
 		-> .proc_of_finding_map_union_operatorS6
+		(*
+			<- searchElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _temp_el;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc_common;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _prib_el;;			
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _nrel_Z1;;
+
+             => nrel_then: .proc_of_finding_map_union_operatorS3;; // след. итерация
+             => nrel_else: .proc_of_finding_map_union_operatorS61;; 
+		*);; 
+
+		-> .proc_of_finding_map_union_operatorS61
 		(*
 			<- searchSetStr5;;
 
@@ -386,7 +402,7 @@ scp_program -> proc_of_finding_mapping_union(*
 			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc_common;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _prib_el;;			
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-			-> rrel_5: rrel_assign: rrel_scp_var: _nrel;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: _nrel_Z2;; //было assign
 
 			->rrel_set_2: rrel_fixed: rrel_scp_var: _Z_result;;
 

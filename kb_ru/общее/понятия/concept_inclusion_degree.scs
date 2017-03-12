@@ -1,0 +1,35 @@
+concept_inclusion_degree
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[степень включения]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[степеь включения нечеткого множества]
+	(* <- lang_ru;;	*);;
+
+concept_inclusion_degree
+<- rrel_key_sc_element:
+	Definition_of_concept_inclusion_degree
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/concept_inclusion_degree.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> fuzzy_set;
+		concept_universum;
+		membership_function;;
+		*);;
+
+
+	*);;
+
+Definition_of_concept_inclusion_degree
+=> nrel_main_idtf:
+	[Определение понятия "степень включения"]
+	(* <- lang_ru;;	*);;
+

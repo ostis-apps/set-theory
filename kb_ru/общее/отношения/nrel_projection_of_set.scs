@@ -1,0 +1,44 @@
+nrel_projection_of_set
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antitransitive_relation;
+<- antireflexive_relation;
+=> nrel_main_idtf:
+	[проекция множества*]
+	(* <- lang_ru;;	*);;
+
+nrel_projection_of_set
+<- rrel_key_sc_element:
+	Definition_of_nrel_projection_of_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/nrel_projection_of_set.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> set;
+		  cortege;
+		cortege_length;
+		projection;;
+
+		*);;
+	
+
+	*);;
+
+
+Definition_of_nrel_projection_of_set
+=> nrel_main_idtf:
+	[Определение понятия "проекция множества*"]
+	(* <- lang_ru;;	*);;
+
+nrel_projection_of_set
+=>nrel_first_domain: set;
+=>nrel_second_domain: set;;
+

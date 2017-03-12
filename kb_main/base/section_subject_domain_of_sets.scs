@@ -35,18 +35,22 @@ section_subject_domain_of_n_sets
 		section_multisets
 		(*
 		=> nrel_section_base_order: 
-			//section_questions_for_the_exam_on_the_discipline_MOIS;;
+			section_fuzzy_sets;;
+		*);
+		section_fuzzy_sets
+		(*
+		=> nrel_section_base_order: 
 			section_scientists_of_set_theory;;
 		*);
 		section_scientists_of_set_theory
 		(*
-		=>nrel_section_base_order: 
-			section_paradoxes_of_theory;;
+		=> nrel_section_base_order: 
+			section_paradoxes_of_set_theory;;
 		*);
 		section_paradoxes_of_set_theory
 		(*
-		=>nrel_section_base_order: 
-		section_questions_on_the_discipline_MOIS;;
+		=> nrel_section_base_order: 
+			section_questions_on_the_discipline_MOIS;;
 		*);
 		section_questions_on_the_discipline_MOIS
 		(*
