@@ -9,7 +9,7 @@ finite_set
 	(* 
 	<- sc_explanation;;
 	=> nrel_main_idtf:
-		[Definition "finite set"]
+		[Definition of "finite set"]
 		(* <- lang_ru;;	*);;
 
 	<= nrel_sc_text_translation:
