@@ -1,12 +1,12 @@
 membership_function
-<- sc_node_not_relation;
+<- sc_node_norole_relation;
 => nrel_main_idtf:
-	[функция принадлежности]
+	[функция принадлежности*]
 	(* <- lang_ru;;	*);
 => nrel_idtf:
-	[степень принадлежности]
+	[степень принадлежности*]
 	(* <- lang_ru;; *);
-	[степень уверенности]
+	[степень уверенности*]
 	(* <- lang_ru;; *);;
 membership_function
 <- rrel_key_sc_element:
@@ -19,7 +19,11 @@ membership_function
 		-> rrel_example:"file://htmls/membership_function.html" (* <-lang_ru;; *);;
 		*);;
 	
-
+	<= nrel_using_constants:
+		...
+		(* 
+			-> number; fuzzy_set; set; element_of_set;;
+		*);;
 	*);
 
 <- rrel_key_sc_element:
@@ -35,6 +39,18 @@ membership_function
 
 Definition_of_membership_function
 => nrel_main_idtf:
-	[Определение понятия "функция принадлежности"]
+	[Определение понятия "функция принадлежности*"]
 	(* <- lang_ru;;	*);;
+
+membership_function
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;;
+
+membership_function
+=> nrel_first_domain: number;
+=> nrel_second_domain: element_of_set;;
 
