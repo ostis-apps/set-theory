@@ -5,6 +5,13 @@ linear_recurent_equations
 	(* <- lang_ru;;	*);;
 
 linear_recurent_equations
+<= nrel_subdividing: 
+	{
+	heterogeneous_linear_recurent_equations;
+	homogeneous_linear_recurent_equations
+	};;
+
+linear_recurent_equations
 <- rrel_key_sc_element:
 	Definition_of_linear_recurent_equations
 	(* 

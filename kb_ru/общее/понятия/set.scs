@@ -34,6 +34,13 @@ set
 
 	*);;
 
+set
+<= nrel_subdividing:
+	{
+	open_set;
+	close_set
+	};;
+
 Definition_of_set
 => nrel_main_idtf:
 	[Определение понятия "множество"]
