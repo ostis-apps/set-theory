@@ -1,7 +1,7 @@
 <p>
 Под <sc_element sys_idtf  = "fuzzy_set">нечётким множеством</sc_element>  A понимается совокупность <sc_element sys_idtf  = "cortege">упорядоченных пар</sc_element>, составленных из <sc_element sys_idtf  = "element_of_set">элементов </sc_element>x <sc_element sys_idtf  = "concept_universum">универсального множества</sc_element> X и соответствующих <sc_element sys_idtf  = "membership_function">степеней принадлежности</sc_element> &mu;<sub>A</sub>(x):<br>
 &emsp;&emsp;&emsp;&emsp;A = {(x, &mu;<sub>A</sub>(x)) | x &isin; X},<br>
-причём &mu;<sub>A</sub>(x) — функция принадлежности (характеристическая функция), указывающая в какой степени (мере) элемент x принадлежит нечёткому множеству A. Функция &mu;<sub>A</sub>(x) принимает значения в некотором <sc_element sys_idtf ="total_order_set">линейно упорядоченном</sc_element> <sc_element sys_idtf = "set">множестве</sc_element> M. Множество M называют <sc_element sys_idtf ="set_of_accessories">множеством принадлежностей</sc_element>, часто в качестве M выбирается отрезок [0, 1]. Если M={0,1}  (то есть состоит только из двух элементов), то нечёткое множество может рассматриваться как обычное, <sc_element sys_idtf = "cantor_set">чёткое множество. </sc_element><br>
+причём &mu;<sub>A</sub>(x) — функция принадлежности (характеристическая функция), указывающая в какой степени (мере) элемент x принадлежит нечёткому множеству A. Функция &mu;<sub>A</sub>(x) принимает значения в некотором <sc_element sys_idtf ="total_order_set">линейно упорядоченном</sc_element> <sc_element sys_idtf = "set">множестве</sc_element> M. Множество M называют <sc_element sys_idtf ="set_of_accessories">множеством принадлежностей</sc_element>, часто в качестве M выбирается отрезок [0, 1]. Если M={0,1}  (то есть состоит только из двух элементов), то нечёткое множество может рассматриваться как обычное, <sc_element sys_idtf = "crisp_set">чёткое множество. </sc_element><br>
 &emsp;<b>Основные определения</b><br>
 Пусть А нечёткое множество с элементами из универсального множества X и множеством принадлежностей M=[0,1]. Тогда
 <ul>
@@ -20,7 +20,7 @@
 &emsp;&emsp;&emsp;l(A&sub;B) = &mu;<sub>B</sub>(x), x &isin; T, <br>
 где T = {x &isin; X; &mu;<sub>A</sub>(x) &le; &mu;<sub>B</sub>(x), &mu;<sub>A</sub>(x) > 0}
 </li>
-<li>Два множества называются равными, если они содержатся друг в друге:<br>
+<li>Два нечетких множества называются <sc_element sys_idtf = "">равными</sc_element>, если они содержатся друг в друге:<br>
 &emsp;&emsp;&emsp;A = B &hArr; &forall; x &isin; X &mu;<sub>A</sub>(x) = &mu;<sub>B</sub>(x)<br>
 В случае, если значения функций принадлежности &mu;<sub>A</sub>(x) и &mu;<sub>B</sub>(x) почти равны между собой, говорят о <sc_element sys_idtf  = "concept_equality_degree">степени равенства</sc_element> нечётких множеств A и B, например, в виде<br>
 &emsp;&emsp;&emsp;E(A = B) = 1 - max |&mu;<sub>A</sub>(x) - &mu;<sub>B</sub>(x)|, x &isin; T, <br>
