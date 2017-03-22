@@ -26,9 +26,12 @@ nrel_equality_of_fuzzy_sets
 // иллюстрация
 nrel_equality_of_fuzzy_sets
 <- rrel_key_sc_element: 
-	...
+	Illustration_of_equality_of_fuzzy_sets
 	(*
 	<- sc_illustration;;
+	=> nrel_main_idtf:
+		[Иллюстрация к понятию "равенство нечетких множеств"]
+			(* <- lang_ru;; *);;
 	<= nrel_sc_text_translation:
 		...
 		(*
