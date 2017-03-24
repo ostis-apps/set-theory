@@ -61,6 +61,14 @@ Definition_of_nrel_fuzzy_set_concentration
 	(* <- lang_ru;;	*);;
 
 nrel_fuzzy_set_concentration
-=>nrel_first_domain: fuzzy_set;
-=>nrel_second_domain: number;
-=>nrel_third_domain: fuzzy_set;;
+=>nrel_first_domain: fuzzy_set;;
+
+nrel_fuzzy_set_concentration => nrel_second_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		fuzzy_set;
+		number
+		};;
+	*);;

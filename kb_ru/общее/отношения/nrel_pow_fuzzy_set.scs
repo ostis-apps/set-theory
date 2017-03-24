@@ -53,6 +53,14 @@ subdividing_to_the_exponent
 	(* <- lang_ru;;	*);;
 
 nrel_pow_fuzzy_set
-=>nrel_first_domain: fuzzy_set;
-=>nrel_second_domain: number;
-=>nrel_third_domain: fuzzy_set;;
+=>nrel_first_domain: fuzzy_set;;
+
+nrel_pow_fuzzy_set => nrel_second_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+		fuzzy_set;
+		number
+		};;
+	*);;
