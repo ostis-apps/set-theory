@@ -35,6 +35,24 @@ nrel_fuzzy_set_union
 
 	*);;
 
+nrel_fuzzy_set_union
+<- rrel_key_sc_element: 
+	Illustration_of_fuzzy_set_union
+	(*
+	<- sc_illustration;;
+	=> nrel_main_idtf:
+		[Иллюстрация к понятию "объединение нечетких множеств*"]
+			(* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(*
+			-> rrel_example: "file://content/fuzzy_set_union.png"
+				(*
+					=> nrel_format: format_png;;
+				*);;
+		*);;
+	*);;
+
 Definition_of_nrel_fuzzy_set_union
 => nrel_main_idtf:
 	[Определение понятия "объединение нечетких множеств*"]

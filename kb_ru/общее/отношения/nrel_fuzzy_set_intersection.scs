@@ -35,6 +35,25 @@ nrel_fuzzy_set_intersection
 
 	*);;
 
+nrel_fuzzy_set_intersection
+<- rrel_key_sc_element: 
+	Illustration_of_fuzzy_set_intersection
+	(*
+	<- sc_illustration;;
+	=> nrel_main_idtf:
+		[Иллюстрация к понятию "пересечение нечетких множеств*"]
+			(* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(*
+			-> rrel_example: "file://content/fuzzy_set_intersection.png"
+				(*
+					=> nrel_format: format_png;;
+				*);;
+		*);;
+	*);;
+
+
 Definition_of_nrel_fuzzy_set_intersection
 => nrel_main_idtf:
 	[Определение понятия "пересечение нечетких множеств*"]

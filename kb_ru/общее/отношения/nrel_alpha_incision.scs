@@ -12,10 +12,17 @@ nrel_alpha_incision
 => nrel_idtf:
 	[альфа-срез*]
 	(* <- lang_ru;;	*);
+	[альфа-сечение*]
+	(* <- lang_ru;;	*);
+	[альфа-уровень*]
+	(* <- lang_ru;;	*);
 	[альфа-срез нечеткого множества*]
+	(* <- lang_ru;;	*);
+	[альфа-уровень нечеткого множества*]
 	(* <- lang_ru;;	*);
 	[альфа-разрез нечеткого множества*]
 	(* <- lang_ru;;	*);;
+
 nrel_alpha_incision
 <- rrel_key_sc_element:
 	Definition_of_nrel_alpha_incision
@@ -35,8 +42,50 @@ nrel_alpha_incision
 		set;;
 		*);;
 
+	*);;
+
+nrel_alpha_incision
+<- rrel_key_sc_element:
+	statement_decomposition_of_fuzzy_set_alpha_incision_union
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf:
+		[Утв.(о декомпозиции нечеткого множества)"]
+			(* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/statement_nrel_alpha_incision.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> fuzzy_set;
+		nrel_fuzzy_set_union;
+		membership_function;
+		nrel_alpha_incision;;
+		*);;
 
 	*);;
+
+nrel_alpha_incision
+<- rrel_key_sc_element: 
+	Illustration_of_alpha_incision
+	(*
+	<- sc_illustration;;
+	=> nrel_main_idtf:
+		[Иллюстрация к понятию "альфа-разрез"]
+			(* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(*
+			-> rrel_example: "file://content/fuzzy_set_alpha_incision.png"
+				(*
+					=> nrel_format: format_png;;
+				*);;
+		*);;
+	*);;
+
 
 Definition_of_nrel_alpha_incision
 => nrel_main_idtf:
@@ -44,5 +93,5 @@ Definition_of_nrel_alpha_incision
 	(* <- lang_ru;;	*);;
 
 nrel_alpha_incision
-=>nrel_first_domain: cantor_set;
-=>nrel_second_domain: fuzzy_set;;
+=>nrel_first_domain: fuzzy_set;
+=>nrel_second_domain: cantor_set;;

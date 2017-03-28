@@ -1,11 +1,4 @@
 nrel_sets_difference
-<- sc_node_norole_relation;
-<- relation;
-<- oriented_relation;
-<- binary_relation;
-<- cantor_set;
-<- infinite_set;
-<- antireflexive_relation;
 => nrel_main_idtf:
 	[sets difference*]
 	(* <- lang_en;;	*);
@@ -22,34 +15,32 @@ nrel_sets_difference
 <- rrel_key_sc_element:
 	Definition_of_sets_difference
 	(* 
-	<- sc_explanation;;
-	<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example: "file://htmls/nrel_nrel_sets_difference_en.html" (* <-lang_en;; *);; 
-		*);;
-	<= nrel_using_constants:
-		...
-		(* 
-		-> set;
-			multiplicity_of_element;
-			element_of_set;
-			nrel_accessory;;
-		*);;
+		<- sc_explanation;;
+		=> nrel_main_idtf: 
+			[Definition "sets difference*"]  
+			 (* <- lang_en;; *);;
 
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: "file://htmls/nrel_nrel_sets_difference_en.html" (* <-lang_en;; *);; 
+			*);;
+
+		<= nrel_using_constants:
+			...
+			(* 
+			-> set;
+				element_of_set;
+				nrel_belonging;;
+			*);;
 
 	*);;
-
-Definition_of_sets_difference
-=> nrel_main_idtf:
-	[Definition "sets difference*"]
-	(* <- lang_en;;	*);;
 
 
 
 nrel_sets_difference
 <- rrel_key_sc_element:
-	statement
+	...
 	(* 
 	<- sc_explanation;;
 	<= nrel_sc_text_translation:
@@ -57,44 +48,9 @@ nrel_sets_difference
 		(*
 		-> rrel_example: "file://htmls/statement_nrel_sets_difference_en.html" (* <-lang_en;; *);; 
 		*);;
-	=> sc_identifier:
+	=> nrel_main_idtf: [Stat. (sets difference*, empty set, set)]
+					(* <- lang_ru;; *);;
 
-		...
-		(*
-		-> rrel_example: "file://htmls/app_nrel_sets_difference_en.html" (* <-lang_en;; *);; 
-		*);;
 
 	*);;
-
-
-nrel_sets_difference
-<- rrel_key_sc_element: 
-	...
-	(*
-	<-sc_illustration;;
-	<=nrel_sc_text_translation:
-
-		...
-		(*
-		-> rrel_example: "file://htmls/example_nrel_sets_difference_en.html" (* <-lang_en;; *);; 
-		*);
-		illustration
-		(*
-		->rrel_example: "file://content/sets difference.png"
-			(*
-			=> nrel_format: format_png;;
-			*);;
-		*);;
-	*);;
-
-
-
-nrel_sets_difference
-=>nrel_first_domain: oriented_bunch;
-=>nrel_second_domain: set;;
-
-
-
-
-
 

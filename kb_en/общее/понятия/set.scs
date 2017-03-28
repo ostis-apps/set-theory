@@ -1,8 +1,4 @@
 set
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[set]
-	(* <- lang_en;; *);
 => nrel_idtf:
 	[many signs described entities]
 	(* <- lang_en;; *);
@@ -41,68 +37,3 @@ Definition_of_set
 	[Definition "set"]
 	(* <- lang_en;;	*);;
 
-
-
-
-subdividing_to_the_presence_of_multiple_occurrences_of_elements
-	=>nrel_main_idtf:
-		[Subdividing to the presence of multiple occurrences of elements] (* <-lang_en;; *);;
-
-subdividing_to_the_presence_of_reflexivity
-	=>nrel_main_idtf:
-		[Subdividing to the presence of reflexivity] (* <-lang_en;; *);;
-
-subdividing_to_the_presence_of_transitivity
-	=>nrel_main_idtf:
-		[Subdividing to the presence of transitivity] (* <-lang_en;; *);;
-subdividing_to_the_presence_of_limbs
-	=>nrel_main_idtf:
-		[Subdividing to the presence of limbs] (* <-lang_en;; *);;
-
-
-
-concept_nobility
-	<= nrel_subdividing: 
-	subdividing_to_the_presence_of_multiple_occurrences_of_elements
-	(*
-		-> 	cantor_set;
-				multiset;;
-	*);;
-
-concept_nobility
-	<= nrel_subdividing: 
-	subdividing_to_the_presence_of_reflexivity
-	(*
-		-> 	reflexive_set;
-				not_reflexive_set;;
-	*);;
-
-concept_nobility
-	<= nrel_subdividing: 
-	subdividing_to_the_presence_of_transitivity
-	(*
-		-> 	transitive_set;
-				not_transitive_set;;
-	*);;
-
-concept_nobility
-	<= nrel_subdividing: 
-	subdividing_to_the_presence_of_limbs
-	(*
-		-> 	finite_set;
-				infinite_set;;
-	*);;
-
-set
-<- rrel_key_sc_element: rrel_example
-	(*
-	<-sc_illustration;;
-	<=nrel_sc_text_translation:
-		illustration
-		(*
-		->rrel_example: "file://content/set.png"
-			(*
-			=> nrel_format: format_png;;
-			*);;
-		*);;
-	*);;

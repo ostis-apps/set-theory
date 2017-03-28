@@ -1,8 +1,4 @@
 finite_set
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[finite set]
-	(* <- lang_en;;	*);
 => nrel_idtf:
 	[set with a finite number of elements]
 	(* <- lang_en;;	*);;
@@ -12,10 +8,14 @@ finite_set
 	Definition_of_finite_set
 	(* 
 	<- sc_explanation;;
+	=> nrel_main_idtf:
+		[Definition of "finite set"]
+		(* <- lang_ru;;	*);;
+
 	<= nrel_sc_text_translation:
 		...
 		(*
-		-> rrel_example: "file://htmls/nrel_power_set_en.html"  (* <-lang_en;; *);; 
+		-> rrel_example: "file://htmls/nrel_finite_set_en.html"  (* <-lang_en;; *);; 
 		*);;
 	<= nrel_using_constants:
 		...
@@ -28,12 +28,6 @@ finite_set
 
 	*);;
 
-Definition_of_finite_set
-=> nrel_main_idtf:
-	[Definition "finite set"]
-	(* <- lang_en;;	*);;
-
-
 
 finite_set
 <- rrel_key_sc_element:
@@ -45,27 +39,7 @@ finite_set
 		(*
 		-> rrel_example: "file://htmls/statement_finite_set_en.html" (* <-lang_en;; *);; 
 		*);;
-	=> sc_identifier:
-		...
-		(*
-		-> rrel_example: "file://htmls/app_finite_set_en.html" (* <-lang_en;; *);; 
-		*);;
+		=> nrel_main_idtf: [Stat. (finite set, equipotent*, subset*, superset*)]
+					(* <- lang_ru;; *);;
 
-	*);;
-
-
-
-subdividing_to_the_presence_of_power_set
-	=>nrel_main_idtf:
-		[Subdividing to the presence of power set] (* <-lang_en;; *);;
-
-concept_nobility
-	<= nrel_subdividing: 
-	subdividing_to_the_presence_of_power_set
-	(*
-		-> 	empty_set;
-			singletone;
-			pair_set;
-			triple_set;
-			n_powerful_set;;
 	*);;
