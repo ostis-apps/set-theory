@@ -6,10 +6,10 @@ nrel_fuzzy_set_stretch
 <- antireflexive_relation;
 <- antitransitive_relation;
 => nrel_main_idtf:
-	[растяжение нечетких множеств*]
+	[растяжение нечеткого множества*]
 	(* <- lang_ru;; *);
 => nrel_idtf:	
-	[отношение растяжения нечетких множеств*]
+	[отношение растяжения нечеткого множества*]
 	(* <- lang_ru;; *);
 	[операция растяжения
  нечетких множеств*]
@@ -30,7 +30,7 @@ nrel_fuzzy_set_stretch
 		(* 
 		-> fuzzy_set;
 		membership_function;
-		universum;
+		concept_universum;
 		nrel_pow_fuzzy_set;;
 		*);;
 
@@ -43,7 +43,7 @@ nrel_fuzzy_set_stretch
 	(*
 	<- sc_illustration;;
 	=> nrel_main_idtf:
-		[Иллюстрация к понятию "растяжение нечетких множеств*"]
+		[Иллюстрация к понятию "растяжение нечеткого множества*"]
 		(* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation:
 		...
@@ -57,7 +57,7 @@ nrel_fuzzy_set_stretch
 
 Definition_of_nrel_fuzzy_set_stretch
 => nrel_main_idtf:
-	[Определение понятия "растяжение нечетких множеств*"]
+	[Определение понятия "растяжение нечеткого множества*"]
 	(* <- lang_ru;;	*);;
 
 nrel_fuzzy_set_stretch

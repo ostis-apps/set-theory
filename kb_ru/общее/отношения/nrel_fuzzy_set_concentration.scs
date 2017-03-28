@@ -6,13 +6,13 @@ nrel_fuzzy_set_concentration
 <- antireflexive_relation;
 <- antitransitive_relation;
 => nrel_main_idtf:
-	[концентрация нечетких множеств*]
+	[концентрация нечеткого множества*]
 	(* <- lang_ru;; *);
 => nrel_idtf:	
-	[отношение концентрации нечетких множеств*]
+	[отношение концентрации нечеткого множества*]
 	(* <- lang_ru;; *);
 	[операция концентрации
- нечетких множеств*]
+ нечеткого множества*]
 	(* <- lang_ru;; *);;
 
 nrel_fuzzy_set_concentration
@@ -30,7 +30,7 @@ nrel_fuzzy_set_concentration
 		(* 
 		-> fuzzy_set;
 		membership_function;
-		universum;
+		concept_universum;
 		nrel_pow_fuzzy_set;;
 		*);;
 
@@ -43,7 +43,7 @@ nrel_fuzzy_set_concentration
 	(*
 	<- sc_illustration;;
 	=> nrel_main_idtf:
-		[Иллюстрация к понятию "концентрация нечетких множеств*"]
+		[Иллюстрация к понятию "концентрация нечеткого множества*"]
 		(* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation:
 		...
@@ -57,7 +57,7 @@ nrel_fuzzy_set_concentration
 
 Definition_of_nrel_fuzzy_set_concentration
 => nrel_main_idtf:
-	[Определение понятия "концентрация нечетких множеств*"]
+	[Определение понятия "концентрация нечеткого множества*"]
 	(* <- lang_ru;;	*);;
 
 nrel_fuzzy_set_concentration

@@ -6,12 +6,12 @@ nrel_pow_fuzzy_set
 <- antireflexive_relation;
 <- antitransitive_relation;
 => nrel_main_idtf:
-	[возведение нечетких множеств в степень*]
+	[возведение нечеткого множества в степень*]
 	(* <- lang_ru;;	*);
 => nrel_idtf:
-	[отношение возведения нечетких множеств в степень*]
+	[отношение возведения нечеткого множества в степень*]
 	(* <- lang_ru;; *);
-	[операция возведения нечетких множеств в степень*]
+	[операция возведения нечеткого множества в степень*]
 	(* <- lang_ru;; *);;
 
 nrel_pow_fuzzy_set
@@ -29,7 +29,7 @@ nrel_pow_fuzzy_set
 		(* 
 		-> fuzzy_set;
 		membership_function;
-		universum;;
+		concept_universum;;
 		*);;
 
 
@@ -44,7 +44,7 @@ nrel_pow_fuzzy_set
 
 Definition_of_nrel_pow_fuzzy_set
 => nrel_main_idtf:
-	[Определение понятия "возведение нечетких множеств в степень*"]
+	[Определение понятия "возведение нечеткого множества в степень*"]
 	(* <- lang_ru;;	*);;
 
 subdividing_to_the_exponent

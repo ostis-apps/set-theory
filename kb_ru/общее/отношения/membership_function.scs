@@ -51,6 +51,6 @@ membership_function
 <- antitransitive_relation;;
 
 membership_function
-=> nrel_first_domain: number;
-=> nrel_second_domain: element_of_set;;
+=> nrel_first_domain: sheaf;
+=> nrel_second_domain: number;;
 
