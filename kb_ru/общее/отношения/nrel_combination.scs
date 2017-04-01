@@ -64,7 +64,7 @@ nrel_combination
 
 	*);;
 
-nrel_intersection
+nrel_combination
 <- rrel_key_sc_element: 
 	...
 	(*
