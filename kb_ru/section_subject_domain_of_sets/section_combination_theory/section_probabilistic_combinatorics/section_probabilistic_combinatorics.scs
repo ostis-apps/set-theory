@@ -1,0 +1,7 @@
+section_probabilistic_combinatorics
+=> nrel_main_idtf:
+	[Раздел. Вероятностная комбинаторика]
+	(* <- lang_ru;; *);
+	[Section. Probabilistic combinatorics]
+	(* <- lang_en;; *);
+<- unformed_structure;;

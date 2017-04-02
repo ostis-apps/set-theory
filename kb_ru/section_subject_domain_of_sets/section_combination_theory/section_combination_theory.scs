@@ -1,0 +1,28 @@
+section_combination_theory
+=> nrel_main_idtf:
+	[Раздел. Комбинаторика]
+	(* <- lang_ru;; *);
+	[Section. Combination theory]
+	(* <- lang_en;; *);
+<= nrel_section_decomposition:
+	{
+		section_enumerative_combinatorics;
+		section_extreme_combinatorics;
+		section_infinitary_combinatorics;
+		section_probabilistic_combinatorics;
+		section_ramsey_theory;
+		section_structural_combinatorics;
+		section_topological_combinatorics
+	};
+<- not_enough_formed_structure;;
+
+section_combination_theory = [*^"file://section_combination_theory.scsi"*];;
+
+rrel_key_sc_element -> (section_combination_theory -> combination_theory)
+(*
+	=> nrel_key_sc_element_order: (section_combination_theory -> combinatorial_object)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_combination_theory -> basic_rules_of_combinatorics)
+	(* <- rrel_key_sc_element;; *);;
+*);;*);;

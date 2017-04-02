@@ -1,4 +1,4 @@
-section_subject_domain_of_n_sets
+section_subject_domain_of_sets
 	=> nrel_exercise: exercise_section_subject_domain_of_sets;
 	<= nrel_section_decomposition:
 	{
@@ -30,12 +30,17 @@ section_subject_domain_of_n_sets
 		section_correspondences_and_functions
 		(*
 		=> nrel_section_base_order: 
+			section_combination_theory;;
+		*);
+		section_combination_theory
+		(*
+		=> nrel_section_base_order: 
 			section_multisets;;
 		*);
 		section_multisets
 		(*
 		=> nrel_section_base_order: 
-			section_fuzzy_sets;;
+			section_questions_for_the_exam_on_the_discipline_MOIS;;
 		*);
 		section_fuzzy_sets
 		(*

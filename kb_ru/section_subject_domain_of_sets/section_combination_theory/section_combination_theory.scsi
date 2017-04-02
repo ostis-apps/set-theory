@@ -1,0 +1,23 @@
+subject_domain_of_combination_theory
+	=> nrel_main_idtf:
+		[Предметная область комбинаторики] 
+		(* <- lang_ru;; *);
+		[Subject domain of combination theory]	
+		(* <- lang_en;; *);
+<- subject_domain;
+-> rrel_maximum_studied_object_class: combination_theory;
+-> rrel_not_maximum_studied_object_class:
+		section_enumerative_combinatorics;
+		section_extreme_combinatorics;
+		section_infinitary_combinatorics;
+		section_probabilistic_combinatorics;
+		section_ramsey_theory;
+		section_structural_combinatorics;
+		section_topological_combinatorics;
+-> rrel_explored_relation: 
+		nrel_set_of_permutations;
+		nrel_set_of_repet_permutations;
+		nrel_set_of_partial_permutations;
+		nrel_set_of_repet_partial_permutations;
+		nrel_set_of_combinations;
+		nrel_set_of_repet_combinations;;

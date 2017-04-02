@@ -1,0 +1,7 @@
+section_enumerative_combinatorics
+=> nrel_main_idtf:
+	[Раздел. Перечислительная комбинаторика]
+	(* <- lang_ru;; *);
+	[Section. Enumerative combinatorics]
+	(* <- lang_en;; *);
+<-unformed_structure;;

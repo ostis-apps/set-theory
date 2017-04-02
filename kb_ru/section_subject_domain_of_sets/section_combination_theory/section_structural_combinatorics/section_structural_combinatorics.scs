@@ -1,0 +1,7 @@
+section_structural_combinatorics
+=> nrel_main_idtf:
+	[Раздел. Структурная комбинаторика]
+	(* <- lang_ru;; *);
+	[Section. Structural combinatorics]
+	(* <- lang_en;; *);
+<-unformed_structure;;

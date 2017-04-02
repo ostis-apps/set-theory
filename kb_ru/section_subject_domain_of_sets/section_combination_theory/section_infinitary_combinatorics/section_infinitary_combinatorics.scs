@@ -1,0 +1,7 @@
+section_infinitary_combinatorics
+=> nrel_main_idtf:
+	[Раздел. Инфинитарная комбинаторика]
+	(* <- lang_ru;; *);
+	[Section. Infinitary combinatorics]
+	(* <- lang_en;; *);
+<-unformed_structure;;
