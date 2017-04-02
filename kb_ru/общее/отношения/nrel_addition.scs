@@ -1,87 +1,82 @@
 nrel_addition
 <- sc_node_norole_relation;
-<- relation;
 <- oriented_relation;
 <- ternary_relation;
-<- cantor_set;
-<- infinite_set;
-<- antireflexive_relation;
 => nrel_main_idtf:
 	[дополнение*]
 	(* <- lang_ru;;	*);
 => nrel_idtf:
+	[дополнение множества*]
+	(* <- lang_ru;; *);
 	[отношение дополнения*]
 	(* <- lang_ru;; *);
 	[операция дополнения*]
 	(* <- lang_ru;; *);;
 
-
 nrel_addition
 <- rrel_key_sc_element:
 	Definition_of_addition
 	(* 
-	<- sc_explanation;;
-	<= nrel_sc_text_translation:
-		...
-		(* 
-		-> rrel_example: [Дополнение есть разность между каким то фиксированным универсумом и данным множеством.] (* <-lang_ru;; *);;
-		*);;
-	<= nrel_using_constants:
-		...
-		(* 
-		-> set;
-			nrel_sets_difference;
-			universum;;
-		*);;
+		<- definition;;
+		<= nrel_sc_text_translation:
+			.nrel_addition_definition
+			(* 
+				-> rrel_example: "file://htmls/nrel_addition/nrel_addition_definition.html"
+					(* <-lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			...
+			(* 
+				-> concept_universum;
+					set;
+					element_of_set;
+					nrel_belonging;
+					nrel_sets_difference;;
+				=> nrel_main_idtf:
+					[Понятия, используемые в определении понятия "дополнение*"]
+						(* <- lang_ru;; *);;
+			*);;
 	*);;
 
 Definition_of_addition
 => nrel_main_idtf:
 	[Определение понятия "дополнение*"]
-	(* <- lang_ru;;	*);;
-
-
+		(* <- lang_ru;;	*);;
 
 nrel_addition
 <- rrel_key_sc_element:
-	statement
+	Statement_1_addition
 	(* 
-	<- sc_explanation;;
-	<= nrel_sc_text_translation:
-		...
-		(* 
-		-> rrel_example: [Объединения множества и его дополнения есть универсум.] (* <-lang_ru;; *);;
-		*);;
-	=> sc_identifier:
-		...
-		(*
-		-> rrel_example: [Утв.(дополнение*, универсум, объединение)] (* <-lang_ru;; *);; 
-		*);;
-
+		<- statement;;
+		<= nrel_sc_text_translation:
+			.nrel_addition_statement_1
+			(* 
+				-> rrel_example: "file://htmls/nrel_addition/nrel_addition_statement_1.html"
+					(* <-lang_ru;; *);;
+			*);;
+		=> nrel_main_idtf:
+			[Утв. (дополнение*, объединение*, универсум)]
+				(* <-lang_ru;; *);;
 	*);;
-
 
 nrel_addition
 <- rrel_key_sc_element: 
 	...
 	(*
-	<-sc_illustration;;
-	<=nrel_sc_text_translation:
-		illustration
-		(*
-		->rrel_example: "file://content/addition.png"
+		<- illustration;;
+		<= nrel_sc_text_translation:
+			.nrel_addition_illustration
 			(*
-			=> nrel_format: format_png;;
+				-> rrel_example: "file://content/addition(1).png"
+					(*
+						=> nrel_format: format_png;;
+					*);;
+				-> rrel_example: "file://content/addition(2).png"
+					(*
+						=> nrel_format: format_png;;
+					*);;
 			*);;
-		*);;
+		=> nrel_main_idtf:
+			[Иллюстрация к понятию "дополнение*"]
+				(* <- lang_ru;; *);;
 	*);;
-
-
-
-nrel_accessory
-=>nrel_first_domain: set;
-=>nrel_second_domain: set;;
-
-
-
-
