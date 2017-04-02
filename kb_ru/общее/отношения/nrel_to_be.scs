@@ -20,17 +20,20 @@ nrel_to_be
 		(* <- lang_ru;;	*);
 		[to be*]
 		(* <- lang_en;;	*);;
+
 nrel_to_be
-=>nrel_first_domain: ...
-(*
-	<=nrel_combination: set; concept_number; concept_geometric_point;;
-*);
-=>nrel_second_domain: ...
-(*
-	<=nrel_combination: set; concept_number; concept_geometric_point;;
-*);;
-
-
+=> nrel_first_domain:...
+	(*
+		<= nrel_combination:
+			...
+			(*
+				-> set;
+					number;
+					concept_geometric_point;;
+			*);;
+		<= nrel_second_domain:
+		nrel_to_be;;
+	*);;
 
 nrel_to_be
 <- rrel_key_sc_element:

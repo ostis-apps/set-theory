@@ -7,33 +7,32 @@ nrel_intersection
 	[intersection operation*]
 	(* <- lang_en;; *);;
 
-Definition_of_intersection
-<= nrel_sc_text_translation:
-	...
-	(*
-	-> rrel_example: "file://htmls/nrel_intersection/nrel_intersection_definition_en.html" (* <- lang_en;; *);;
-	*);;
+.nrel_intersection_definition
+	-> rrel_example: "file://htmls/nrel_intersection/nrel_intersection_definition_en.html"
+		(* <- lang_en;; *);;
 
 Definition_of_intersection
 => nrel_main_idtf:
 	[Definition "intersection*"]
-	(* <- lang_en;;	*);;
+		(* <- lang_en;;	*);;
 
-nrel_intersection_statement_1
-<= nrel_sc_text_translation:
-	...
-	(*
-	-> rrel_example: "file://htmls/nrel_intersection/nrel_intersection_statement_1_en.html" (* <- lang_en;; *);;
-	*);
+.nrel_intersection_statement_1
+		-> rrel_example: "file://htmls/nrel_intersection/nrel_intersection_statement_1_en.html"
+			(* <- lang_en;; *);;
+
+Statement_1_intersection
 => nrel_main_idtf:
-	[App. (intersection*, empty set)] (* <-lang_en;; *);;
+	[App. (intersection*, empty set)]
+		(* <-lang_en;; *);;
 
-nrel_intersection_statement_2
-<= nrel_sc_text_translation:
-	...
-	(*
-	-> rrel_example: "file://htmls/nrel_intersection/nrel_intersection_statement_2_en.html" (* <- lang_en;; *);;
-	*);;
+.nrel_intersection_statement_2
+	-> rrel_example: "file://htmls/nrel_intersection/nrel_intersection_statement_2_en.html"
+		(* <- lang_en;; *);;
+
+Statement_2_intersection
+=> nrel_main_idtf:
+	[App. (intersection*, singleton)]
+		(* <-lang_en;; *);;
 
 
 
