@@ -19,33 +19,33 @@ section_operations
 	[Раздел. Операции]
 	(* <- lang_ru;; *);
 <= nrel_sc_text_translation:
-		pictureU
+		Venn_diagramm_combination
 		(* 
-			=> nrel_main_idtf:[объединение](* <- lang_ru;; *);;
+			=> nrel_main_idtf:[Диаграмма Венна (объединение)](* <- lang_ru;; *);;
 			-> rrel_example: "file://htmls/union.png" (* <-lang_ru;; *);;
 		*);
 <= nrel_sc_text_translation:
-		pictureInt
+		Venn_diagramm_intersection
 		(* 
-			=> nrel_main_idtf:[пересечение](* <- lang_ru;; *);;
+			=> nrel_main_idtf:[Диаграмма Венна (пересечение)](* <- lang_ru;; *);;
 			-> rrel_example: "file://htmls/intersection.png" (* <-lang_ru;; *);;
 		*);
 <= nrel_sc_text_translation:
-		pictureDif
+		Venn_diagramm_difference
 		(* 
-			=> nrel_main_idtf:[разность](* <- lang_ru;; *);;
+			=> nrel_main_idtf:[Диаграмма Венна (разность)](* <- lang_ru;; *);;
 			-> rrel_example: "file://htmls/dif.png" (* <-lang_ru;; *);;
 		*);
 <= nrel_sc_text_translation:
-		pictureSD
+		Venn_diagramm_symmetric_difference
 		(* 
-			=> nrel_main_idtf:[симметричная разность](* <- lang_ru;; *);;
+			=> nrel_main_idtf:[Диаграмма Венна (симметрическая разность)](* <- lang_ru;; *);;
 			-> rrel_example: "file://htmls/simdif.png" (* <-lang_ru;; *);;
 		*);
 <= nrel_sc_text_translation:
-		pictureAdd
+		Venn_diagramm_complementation
 		(* 
-			=> nrel_main_idtf:[дополнение](* <- lang_ru;; *);;
+			=> nrel_main_idtf:[Диаграмма Венна (дополнение)](* <- lang_ru;; *);;
 			-> rrel_example: "file://htmls/add.png" (* <-lang_ru;; *);;
 		*);
 <= nrel_sc_text_translation:

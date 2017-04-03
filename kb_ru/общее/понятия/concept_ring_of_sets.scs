@@ -20,7 +20,7 @@ concept_ring_of_sets
 						(* 
 						-> rrel_example: "file://htmls/ring_of_sets/ring_of_sets_definition.html" (* <- lang_ru;; *);;
 						*);;
-				<= nrel_using_constants:
+				=> nrel_using_constants:
 					...
 						(* -> set; element_of_set; nrel_intersection; nrel_symmetric_sets_difference;; *);;
 			*);;
