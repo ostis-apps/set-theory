@@ -18,17 +18,19 @@ nrel_to_be_part_of
 		(* <- lang_ru;;	*);
 		[to be part of*]
 		(* <- lang_en;;	*);;
-nrel_to_be_part_of
-=>nrel_first_domain: ...
-(*
-	<=nrel_combination: set; concept_number; concept_geometric_point;;
-*);
-=>nrel_second_domain: ...
-(*
-	<=nrel_combination: set; concept_number; concept_geometric_point;;
-*);;
 
-
+nrel_to_be_par_of
+=> nrel_first_domain:...
+	(*
+		<= nrel_combination:
+			...
+			(*
+				-> set;
+					number;
+					concept_geometric_point;;
+			*);;
+		<= nrel_second_domain: nrel_to_be;;
+	*);;
 
 nrel_to_be_part_of
 <- rrel_key_sc_element:

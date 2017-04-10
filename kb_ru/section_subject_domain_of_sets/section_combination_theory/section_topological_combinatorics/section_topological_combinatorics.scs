@@ -1,0 +1,7 @@
+section_topological_combinatorics
+=> nrel_main_idtf:
+	[Раздел. Топологическая комбинаторика]
+	(* <- lang_ru;; *);
+	[Section. Topological combinatorics]
+	(* <- lang_en;; *);
+<- unformed_structure;;

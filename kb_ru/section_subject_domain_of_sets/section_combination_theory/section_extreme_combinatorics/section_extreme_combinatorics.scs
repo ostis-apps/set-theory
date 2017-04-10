@@ -1,0 +1,7 @@
+section_extreme_combinatorics
+=> nrel_main_idtf:
+	[Раздел. Экстримальная комбинаторика]
+	(* <- lang_ru;; *);
+	[Section. Extreme combinatorics]
+	(* <- lang_en;; *);
+<- unformed_structure;;

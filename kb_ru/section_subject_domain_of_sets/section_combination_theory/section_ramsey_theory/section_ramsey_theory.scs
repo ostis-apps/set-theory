@@ -1,0 +1,7 @@
+section_ramsey_theory
+=> nrel_main_idtf:
+	[Раздел. Теория Рамсея]
+	(* <- lang_ru;; *);
+	[Section. Ramsey theory]
+	(* <- lang_en;; *);
+<-unformed_structure;;
