@@ -2,7 +2,7 @@
 nrel_equality_of_fuzzy_sets
 <- sc_node_norole_relation;
 <- relation;
-<- oriented_relation;
+<- non_oriented_relation;
 <- binary_relation;
 <- reflexive_relation;
 <- symmetric_relation;

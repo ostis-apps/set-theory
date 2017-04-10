@@ -16,6 +16,10 @@ nrel_alpha_incision
 	(* <- lang_ru;;	*);
 	[альфа-уровень*]
 	(* <- lang_ru;;	*);
+	[множество уровеня*]
+	(* <- lang_ru;;	*);
+	[множество альфа-уровеня*]
+	(* <- lang_ru;;	*);
 	[альфа-срез нечеткого множества*]
 	(* <- lang_ru;;	*);
 	[альфа-уровень нечеткого множества*]
@@ -63,6 +67,101 @@ nrel_alpha_incision
 		-> fuzzy_set;
 		nrel_fuzzy_set_union;
 		membership_function;
+		nrel_alpha_incision;;
+		*);;
+
+	*);;
+
+nrel_alpha_incision
+<- rrel_key_sc_element:
+	statement_fuzzy_set_and_alpha_incision_equality
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf:
+		[Утв.(нечеткое множество, альфа-разрез*, равенство нечетких множеств*)]
+			(* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/statement_fuzzy_set_and_alpha_incision_equality.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> fuzzy_set;
+		nrel_fuzzy_set_union;
+		membership_function;
+		nrel_alpha_incision;;
+		*);;
+	*);;
+
+nrel_alpha_incision
+<- rrel_key_sc_element:
+	statement_fuzzy_set_and_alpha_incision_union
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf:
+		[Утв.(нечеткое множество, альфа-разрез*, объединение нечетких множеств*, объединение*)]
+			(* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/statement_fuzzy_set_and_alpha_incision_union.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> fuzzy_set;
+		nrel_combination;
+		nrel_fuzzy_set_union;
+		nrel_alpha_incision;;
+		*);;
+	*);;
+
+nrel_alpha_incision
+<- rrel_key_sc_element:
+	statement_fuzzy_set_and_alpha_incision_intersection
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf:
+		[Утв.(нечеткое множество, альфа-разрез*, пересечение нечетких множеств*, пересечение*)]
+			(* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/statement_fuzzy_set_and_alpha_incision_intersection.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> fuzzy_set;
+		nrel_intersection;
+		nrel_fuzzy_set_intersection;
+		nrel_alpha_incision;;
+		*);;
+
+	*);;
+
+nrel_alpha_incision
+<- rrel_key_sc_element:
+	statement_fuzzy_set_nrel_alpha_incision_rrel_alpha_inclusion
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf:
+		[Утв.(нечеткое множество, альфа-разрез*, включение*, альфа-уровень')]
+			(* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/statement_fuzzy_set_nrel_alpha_incision_rrel_alpha_inclusion.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> fuzzy_set;
+		number;
+		nrel_inclusion;
+		rrel_alpha;
 		nrel_alpha_incision;;
 		*);;
 

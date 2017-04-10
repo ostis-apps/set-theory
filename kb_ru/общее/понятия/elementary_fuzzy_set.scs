@@ -1,0 +1,57 @@
+elementary_fuzzy_set
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[элементарное нечеткое множество]
+	(* <- lang_ru;;	*);;
+
+elementary_fuzzy_set
+<- rrel_key_sc_element:
+	Definition_of_elementary_fuzzy_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://htmls/elementary_fuzzy_set.html" (* <-lang_ru;; *);;
+		*);;
+        <= nrel_using_constants:
+		    ...
+			(*
+             -> set; 
+                fuzzy_set;
+                univresal_set;;
+            *);;
+	
+	*);;
+
+
+Definition_of_elementary_fuzzy_set
+=> nrel_main_idtf:
+	[Определение понятия "элементарное нечеткое множество"]
+	(* <- lang_ru;;	*);;
+
+elementary_fuzzy_set
+<- rrel_key_sc_element:
+
+	statement_elementary_fuzzy_set_intersection_union_negation
+	(* 
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example:  "file://htmls/statement_elementary_fuzzy_set.html" (* <- lang_ru;; *);;
+			*);;
+		=> nrel_main_idtf: [Утв. (элементарное нечеткое множество, пересечение*, объединение*, дополнение*)]
+					(* <- lang_ru;; *);;
+        <= nrel_using_constants:
+		    ...
+			(*
+             -> nrel_fuzzy_set_intersection; 
+                fuzzy_set;
+                univresal_set;
+                nrel_fuzzy_set_union;
+                nrel_fuzzy_set_negation;;
+            *);;
+
+	*);;
+
