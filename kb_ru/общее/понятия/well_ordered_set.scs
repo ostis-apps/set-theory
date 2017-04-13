@@ -12,7 +12,7 @@ concept_well_ordered_set
 <- rrel_key_sc_element:
 		Definition_of_concept_well_ordered_set
 	(*
-		<- sc_explanation;;
+		<- definition;;
 		<= nrel_sc_text_translation:
 			...
 			(*
@@ -27,6 +27,11 @@ concept_well_ordered_set
 		-> minimal_element;;
 		*);;
 	*);;
+
+Definition_of_concept_well_ordered_set
+=> nrel_main_idtf:
+	[Определение понятия "вполне упорядоченное множество"]
+		(* <- lang_ru;; *);;
 
 
 concept_well_ordered_set

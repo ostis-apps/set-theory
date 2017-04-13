@@ -14,7 +14,7 @@ support_of_fuzzy_set
 <- rrel_key_sc_element:
 	Definition_of_support_of_fuzzy_set
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -31,7 +31,7 @@ support_of_fuzzy_set
 <- rrel_key_sc_element: 
 	...
 	(*
-	<- sc_illustration;;
+	<- illustration;;
 	<= nrel_sc_text_translation:
 		...
 		(*
@@ -47,7 +47,7 @@ support_of_fuzzy_set
 
 	statement_support_of_fuzzy_set_empty_set_empty_fuzzy_set
 	(* 
-		<- sc_explanation;;
+		<- statement;;
 		<= nrel_sc_text_translation:
 			...
 			(* 

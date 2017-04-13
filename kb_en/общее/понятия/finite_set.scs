@@ -7,7 +7,7 @@ finite_set
 <- rrel_key_sc_element:
 	Definition_of_finite_set
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	=> nrel_main_idtf:
 		[Definition of "finite set"]
 		(* <- lang_ru;;	*);;
@@ -28,12 +28,17 @@ finite_set
 
 	*);;
 
+Definition_of_finite_set
+=> nrel_main_idtf:
+	[Определение понятия "конечное множество"]
+		(* <- lang_ru;; *);;
+
 
 finite_set
 <- rrel_key_sc_element:
 	...
 	(* 
-	<- sc_explanation;;
+	<- statement;;
 	<= nrel_sc_text_translation:
 		...
 		(*
