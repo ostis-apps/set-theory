@@ -1,0 +1,30 @@
+adamar_matrix
+=> nrel_main_idtf:
+	[матрица Адамара порядка n]
+	(* <-lang_ru;; *);
+	[Adamar matrix of dimension n]
+	(* <- lang_en;; *);
+<- sc_node_not_relation;;
+
+adamar_matrix
+<- rrel_key_sc_element:
+	Definition_of_adamar_matrix
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/adamar_matrix.html" (* <-lang_ru;; *);;
+		*);;
+
+
+	*);;
+
+Definition_of_adamar_matrix
+=> nrel_main_idtf:
+	[Определение понятия "матрица Адамара"]
+	(* <- lang_ru;;	*);;
+
+
+
+

@@ -1,0 +1,18 @@
+binary_matrix
+=> nrel_main_idtf:
+	[бинарная матрица]
+	(* <-lang_ru;; *);
+	[binary matrix]
+	(* <- lang_en;; *);
+<-sc_node_not_relation;
+<- rrel_key_sc_element:
+		...
+		(*  <- explanation;;
+			<= nrel_sc_text_translation:	
+			...
+			(*
+				-> rrel_example:
+				"file://html/binary_matrix.html"
+				(* <- lang_ru;; *);;
+			*);;
+		*);;

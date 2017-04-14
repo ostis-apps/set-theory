@@ -1,0 +1,7 @@
+method_of_studying_combinatorial_objects
+=> nrel_main_idtf:
+	[метод изучения комбинаторных объектов]
+	(* <-lang_ru;; *);
+	[method of studying combinatorial objects]
+	(* <- lang_en;; *);
+<- sc_node_not_relation;;

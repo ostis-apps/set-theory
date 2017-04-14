@@ -1,0 +1,28 @@
+latin_square
+=> nrel_main_idtf:
+	[латинский квадрат]
+	(* <-lang_ru;; *);
+	[latin square]
+	(* <- lang_en;; *);
+<- sc_node_not_relation;;
+
+latin_square
+<- rrel_key_sc_element:
+	Definition_of_latin_square
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/latin_square.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+Definition_of_latin_square
+=> nrel_main_idtf:
+	[Определение понятия "латинский квадрат"]
+	(* <- lang_ru;;	*);;
+
+latin_square -> rrel_example :
+		"file://latin_square_example.jpg";;
+
