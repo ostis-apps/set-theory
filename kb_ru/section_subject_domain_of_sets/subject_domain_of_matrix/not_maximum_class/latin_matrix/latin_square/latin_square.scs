@@ -6,11 +6,11 @@ latin_square
 	(* <- lang_en;; *);
 <- sc_node_not_relation;;
 
-latin_square
-<- rrel_key_sc_element:
-	Definition_of_latin_square
-	(* 
-	<- sc_explanation;;
+latin_square <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(латинский квадрат)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -18,11 +18,31 @@ latin_square
 		*);;
 	*);;
 
-Definition_of_latin_square
-=> nrel_main_idtf:
-	[Определение понятия "латинский квадрат"]
-	(* <- lang_ru;;	*);;
-
 latin_square -> rrel_example :
 		"file://latin_square_example.jpg";;
 
+latin_square <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(изотопия, изотопный латинский квадрат*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://htmls/latin_square_isotopy_statement.html" (* <- lang_ru;; *);;
+		*);;
+	*);;
+
+latin_square <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(парастроф)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://htmls/latin_square_parastrof_statement.html" (* <- lang_ru;; *);;
+		*);;
+	*);;
