@@ -1,0 +1,24 @@
+non_empty_set
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[непустое множество]
+	(* <- lang_ru;;*);
+	[non empty set]
+	(*<- lang_en;;*);;
+
+
+non_empty_set
+ <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(непустое множество))]  (* <- lang_ru;; *);;
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: 
+			"file://htmls/non_empty_set.html" (* <- lang_ru;; *);;
+		*);;
+*);;
+
+
