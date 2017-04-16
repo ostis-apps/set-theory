@@ -32,9 +32,6 @@ nrel_addition
 					element_of_set;
 					nrel_belonging;
 					nrel_sets_difference;;
-				=> nrel_main_idtf:
-					[Понятия, используемые в определении понятия "дополнение*"]
-						(* <- lang_ru;; *);;
 			*);;
 	*);;
 

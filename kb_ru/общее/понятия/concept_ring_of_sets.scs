@@ -9,84 +9,102 @@ concept_ring_of_sets
 		[кольцо]
 			(* <- lang_ru;; *);
 <- rrel_key_sc_element:
-		Ring_of_sets_definition // определение
+		Definition_ring_of_sets
 			(*
-				<- sc_explanation;;
+				<- definition;;
 				=> nrel_main_idtf:
 					[Определение понятия "кольцо множеств"]
 						(* <- lang_ru;; *);;
 				<= nrel_sc_text_translation:
-					...
-						(* 
-						-> rrel_example: "file://htmls/ring_of_sets/ring_of_sets_definition.html" (* <- lang_ru;; *);;
-						*);;
+					.concept_ring_of_sets_definition
+					(* 
+						-> rrel_example: "file://htmls/ring_of_sets/ring_of_sets_definition.html"
+							(* <- lang_ru;; *);;
+					*);;
 				=> nrel_using_constants:
 					...
-						(* -> set; element_of_set; nrel_intersection; nrel_symmetric_sets_difference;; *);;
+					(*
+						-> set;
+						element_of_set;
+						nrel_intersection;
+						nrel_symmetric_sets_difference;;
+						=> nrel_main_idtf:
+							[Понятия, используемые в определении понятия "кольцо множеств"]
+								(* <- lang_ru;; *);;
+					*);;
 			*);;
 
 concept_ring_of_sets
 <- rrel_key_sc_element:
-
-	... // первое утверждение
+	Statement_1_ring_of_sets
 	(* 
-		<- sc_explanation;;
+		<- statement;;
 		<= nrel_sc_text_translation:
-			...
+			.concept_ring_of_sets_statement_1
 			(* 
-			-> rrel_example:  "file://htmls/ring_of_sets/ring_of_sets_statement_1.html" (* <- lang_ru;; *);;
-			*);;
-		=> nrel_main_idtf: [Утверждение (кольцо, пустое множество)]
+				-> rrel_example:  "file://htmls/ring_of_sets/ring_of_sets_statement_1.html"
 					(* <- lang_ru;; *);;
+			*);;
+		=> nrel_main_idtf:
+			[Утверждение (кольцо, пустое множество)]
+				(* <- lang_ru;; *);;
 
 	*);
 
-	... // второе утверждение
+	Statement_2_ring_of_sets
 	(*
-		<- sc_explanation;;
+		<- statement;;
 		<= nrel_sc_text_translation:
-			...
+			.concept_ring_of_sets_statement_2
 			(*
-			-> rrel_example:  "file://htmls/ring_of_sets/ring_of_sets_statement_2.html" (* <- lang_ru;; *);;
-			*);;
-		=> nrel_main_idtf: [Утверждение (кольцо, пересечение*)]
+				-> rrel_example:  "file://htmls/ring_of_sets/ring_of_sets_statement_2.html"
 					(* <- lang_ru;; *);;
+			*);;
+		=> nrel_main_idtf:
+			[Утверждение (кольцо, пересечение*)]
+				(* <- lang_ru;; *);;
 	*);
 
-	... // третье утверждение
+	Statement_3_ring_of_sets
 	(*
-		<- sc_explanation;;
+		<- statement;;
 		<= nrel_sc_text_translation:
-			...
+			.concept_ring_of_sest_statement_3
 			(*
-			-> rrel_example: "file://htmls/ring_of_sets/ring_of_sets_statement_3.html" (* <- lang_ru;; *);;
-			*);;
-		=> nrel_main_idtf: [Утверждение (кольцо, полукольцо)]
+				-> rrel_example: "file://htmls/ring_of_sets/ring_of_sets_statement_3.html"
 					(* <- lang_ru;; *);;
+			*);;
+		=> nrel_main_idtf:
+			[Утверждение (кольцо, полукольцо)]
+				(* <- lang_ru;; *);;
 	*);
 
-	... // четвёртое утверждение
+	Statement_4_ring_of_sets
 	(*
-		<- sc_explanation;;
+		<- statement;;
 		<= nrel_sc_text_translation:
-			...
+			.concept_ring_of_sets_statement_4
 			(*
-			-> rrel_example: "file://htmls/ring_of_sets/ring_of_sets_statement_4.html" (* <- lang_ru;; *);;
-			*);;
-		=> nrel_main_idtf: [Утверждение (кольцо, объединение*)]
+				-> rrel_example: "file://htmls/ring_of_sets/ring_of_sets_statement_4.html" 
 					(* <- lang_ru;; *);;
+			*);;
+		=> nrel_main_idtf:
+			[Утверждение (кольцо, объединение*)]
+				(* <- lang_ru;; *);;
 	*);
 
-	... // пятое утверждение
+	Statement_5_ring_of_sets
 	(*
-		<- sc_explanation;;
+		<- statement;;
 		<= nrel_sc_text_translation:
-			...
+			.concept_ring_of_sets_statement_5
 			(*
-			-> rrel_example: "file://htmls/ring_of_sets/ring_of_sets_statement_5.html" (* <- lang_ru;; *);;
-			*);;
-		=> nrel_main_idtf: [Утверждение (кольцо, разность*)]
+				-> rrel_example: "file://htmls/ring_of_sets/ring_of_sets_statement_5.html"
 					(* <- lang_ru;; *);;
+			*);;
+		=> nrel_main_idtf:
+			[Утверждение (кольцо, разность*)]
+				(* <- lang_ru;; *);;
 	*);;
 
 concept_ring_of_sets
@@ -96,8 +114,4 @@ concept_ring_of_sets
 			<= nrel_inclusion:
 				concept_family_of_sets;;
 		*);
--> rrel_example: ring_R;; // пример
-
-			
-
-
+-> rrel_example: ring_R;;

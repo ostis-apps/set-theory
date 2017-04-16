@@ -8,7 +8,7 @@ inductive_set
 <- rrel_key_sc_element:
 	Definition_of_inductive_set
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -29,7 +29,7 @@ inductive_set
 <- rrel_key_sc_element:
 	Statement_of_inductive_set
 	(* 
-	<- sc_explanation;;
+	<- statement;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
