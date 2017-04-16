@@ -233,6 +233,18 @@ nrel_set_of_combinations
 			*);
 	<- rrel_key_sc_element:
 		...
+			(*  
+				<- statement;;
+				<= nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example:
+						"file://html/Pascal_statement.html"			
+					(* <- lang_ru;;	*);;
+				*);;
+			*);
+	<- rrel_key_sc_element:
+		...
 		(*
 			<- description_of_a_typical_instance;;
 			<= nrel_sc_text_translation:

@@ -4,7 +4,9 @@ non_empty_set
 	[непустое множество]
 	(* <- lang_ru;;*);
 	[non empty set]
-	(*<- lang_en;;*);;
+	(*<- lang_en;;*);
+=> nrel_inclusion : set;
+<= nrel_inclusion : non_empty_fuzzy_set;;
 
 
 non_empty_set
