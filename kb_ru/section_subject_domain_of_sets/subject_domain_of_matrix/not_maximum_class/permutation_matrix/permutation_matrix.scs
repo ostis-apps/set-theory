@@ -6,29 +6,77 @@ permutation_matrix
 	(* <- lang_en;; *);
 <-sc_node_not_relation;
 <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(матрица перестановок)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation:
 		...
-		(*  <- explanation;;
-			<= nrel_sc_text_translation:	
-			...
-			(*
-				-> rrel_example:
-				"file://html/permutation_matrix.html"
-				(* <- lang_ru;; *);;
-			*);;
-		*);
-<- rrel_key_sc_element:
-		...
-		(*  <- statement;;
-			<= nrel_sc_text_translation:	
-			...
-			(*
-				-> rrel_example:
-				"file://html/statement_of_permutation_matrix.html"
-				(* <- lang_en;;*);;
-			*);;
-			<= nrel_using_constants:
-			...
-				(* 
-				-> zero_matrix;;
-				*);;
+		(* 
+		-> rrel_example: "file://html/permutation_matrix.html" (* <-lang_ru;; *);;
 		*);;
+	*);
+<- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(перестановка*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://html/statement_of_permutation_matrix.html" (* <- lang_ru;; *);;
+		*);;
+	*);
+<- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(ортогональность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://html/statement_of_ortogonal_permutation_matrix.html" (* <- lang_ru;; *);;
+		*);;
+	*);
+<- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(произведение матриц, столбец)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://html/multiplication_statement_of_permutation_matrix_1.html" (* <- lang_ru;; *);;
+		*);;
+	*);
+<- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(произведение матриц, строка)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://html/multiplication_statement_of_permutation_matrix_2.html" (* <- lang_ru;; *);;
+		*);;
+	*);
+<- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(определитель*,четность матрицы)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://html/determinant_statement_of_permutation_matrix.html" (* <- lang_ru;; *);;
+		*);;
+	*);
+-> rrel_example :
+		"file://permutation_matrix.jpeg";
+<= nrel_inclusion:	concept_square_matrix;
+					binary_matrix;;

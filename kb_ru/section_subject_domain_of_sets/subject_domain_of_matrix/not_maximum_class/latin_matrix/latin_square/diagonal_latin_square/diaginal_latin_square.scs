@@ -5,7 +5,7 @@ diagonal_latin_square
 	[latin square]
 	(* <- lang_en;; *);
 <- sc_node_not_relation;
-=>nrel_inclusion: latin_square;;
+<=nrel_inclusion: latin_square;;
 
 diagonal_latin_square <- rrel_key_sc_element:
 	... 
@@ -20,7 +20,7 @@ diagonal_latin_square <- rrel_key_sc_element:
 	*);;
 
 diagonal_latin_square -> rrel_example :
-		"file://diagonal_latin_square_example.png";;
+		"file://diagonal_latin_square_example.jpeg";;
 
 diagonal_latin_square <- rrel_key_sc_element:
 	... 

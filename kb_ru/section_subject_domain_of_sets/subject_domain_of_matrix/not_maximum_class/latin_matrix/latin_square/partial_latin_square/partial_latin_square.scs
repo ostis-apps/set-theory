@@ -5,7 +5,7 @@ partial_latin_square
 	[partial latin square]
 	(* <- lang_en;; *);
 <- sc_node_not_relation;
-=>nrel_inclusion: latin_square;;
+<= nrel_inclusion: latin_square;;
 
 partial_latin_square <- rrel_key_sc_element:
 	... 

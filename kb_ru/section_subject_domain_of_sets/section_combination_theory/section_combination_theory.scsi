@@ -31,7 +31,7 @@ combination_theory
 		(* <-lang_ru;; *);
 		[combinatorial analysis]
 		(* <- lang_en;; *);
-	<= nrel_inclusion : 
+	=> nrel_inclusion : 
 		{
 			enumerative_combinatorics;
 			extreme_combinatorics;
@@ -189,7 +189,8 @@ combinatorial_object
 		nrel_set_of_repet_combinations;
 		bit_vector;
 		partition; 
-		partition_of_a_set;;
+		partition_of_a_set;
+	<= nrel_inclusion : set;;
 
 nrel_set_of_combinations
 	<- sc_node_norole_relation;
@@ -454,7 +455,7 @@ nrel_set_of_repet_permutations
 bit_vector
 	<- sc_node_not_relation;
 	=> nrel_main_idtf:
-		[битовый ветор] (* <- lang_ru;; *);
+		[битовый вектор] (* <- lang_ru;; *);
 		[bit vector] (* <- lang_en;; *);
 	<- rrel_key_sc_element:
 		...
@@ -465,13 +466,27 @@ bit_vector
 				(*
 					-> rrel_example:[Битовый вектор — последовательность нулей и единиц заданной длины.](*<- lang_ru;;*);;
 				*);;
-		*);;
+		*);
+	<- rrel_key_sc_element:
+			...
+			(*
+				<- statement;;
+				<= nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example:
+						"file://html/statement_for_bit_vector.html"			
+					(* <- lang_ru;;	*);;
+				*);;
+			*);
+	-> rrel_example:
+		"file://html/bit_vector.jpeg";;
 
 partition
 	<- sc_node_not_relation;
 	=> nrel_main_idtf:
-		[ pазбиение числа на неупорядоченные слагаемые] (* <- lang_ru;; *);
-		[ partions ] (* <- lang_en;; *);
+		[ pазбиение числа на неупорядоченные слагаемые*] (* <- lang_ru;; *);
+		[ partition* ] (* <- lang_en;; *);
 	<- rrel_key_sc_element:
 		...
 		(*
@@ -483,6 +498,7 @@ partition
 					(*<- lang_ru;;*);;
 				*);;
 		*);;
+
 partition_of_a_set
 	<- sc_node_not_relation;
 	=> nrel_main_idtf:

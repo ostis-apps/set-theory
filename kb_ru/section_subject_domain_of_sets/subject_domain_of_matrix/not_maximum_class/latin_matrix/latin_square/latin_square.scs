@@ -4,7 +4,8 @@ latin_square
 	(* <-lang_ru;; *);
 	[latin square]
 	(* <- lang_en;; *);
-<- sc_node_not_relation;;
+<- sc_node_not_relation;
+<= nrel_iclusion : concept_matrix;;
 
 latin_square <- rrel_key_sc_element:
 	... 

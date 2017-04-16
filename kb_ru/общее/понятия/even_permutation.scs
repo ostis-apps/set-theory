@@ -1,0 +1,22 @@
+even_permutation
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[чётная перестановка]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[even permutation]
+	(* <- lang_ru;;	*);
+<- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(чётная перестановка)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/even_permutation.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+even_permutation
+-> rrel_example :
+		"file://content/even_permutation.jpeg";;

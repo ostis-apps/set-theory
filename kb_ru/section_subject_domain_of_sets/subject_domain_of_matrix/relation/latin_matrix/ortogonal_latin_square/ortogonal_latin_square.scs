@@ -53,7 +53,7 @@ ortogonal_latin_square <- rrel_key_sc_element:
 ortogonal_latin_square <- rrel_key_sc_element:
 	... 
 	(*
-	=> nrel_main_idtf: [Утв.(транверсаль*, латинский квадрат] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Утв.(трансверсаль*, латинский квадрат] (* <- lang_ru;; *);;
 	<- sc_statement;;
 	<= nrel_sc_text_translation: 
 		...
@@ -65,4 +65,4 @@ ortogonal_latin_square <- rrel_key_sc_element:
 
 
 ortogonal_latin_square  -> rrel_example :
-		"file://ortogonal_latin_square_example.png";;
+		"file://ortogonal_latin_square_example.jpeg";;
