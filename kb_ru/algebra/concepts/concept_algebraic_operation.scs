@@ -1,0 +1,42 @@
+concept_algebraic_operation
+<= sc_node_not_relation;
+=> nrel_main_idtf:
+    [алгебраическая операция]
+    (* <- lang_ru;; *);
+    [algebraic operation]
+    (* <- lang_en;; *);
+=> nrel_idtf:
+    [операция]
+    (* <- lang_ru;; *);
+    [n-арная алгебраическая операция]
+    (* <- lang_ru;; *);
+    [operation]
+    (* <- lang_en;; *);
+    [n-ary algebraic operation]
+    (* <- lang_en;; *);;
+
+concept_algebraic_operation
+<- rrel_key_sc_element:
+    Definition_of_algebraic_operation
+    (*
+        <- definition;;
+        => nrel_main_idtf:
+            [Определение понятия "алгебраическая операция"] 
+                (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            .concept_algebraic_operation_definition
+            (*
+                -> rrel_example:
+                    "file://htmls/concept_algebraic_operation/concept_algebraic_operation_definition.html"
+                        (* <- lang_ru;; *);;
+            *);;
+        <= nrel_using_constants:
+            ...
+            (* 
+                -> set;
+                    nrel_functional_mapping;
+                    nrel_cartesian_product;
+                    element_of_set;
+                    arity;;
+            *);;
+    *);;
