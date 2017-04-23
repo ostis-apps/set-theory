@@ -1,37 +1,60 @@
-// идентификаторы
-commutative
+commutativity
 <- sc_node_not_relation;
 => nrel_main_idtf:
 	[коммутативность]
 	(* <- lang_ru;;	*);
+	[commutativity]
+	(* <- lang_en;; *);
 => nrel_idtf:
 	[свойство коммутативности]
 	(* <- lang_ru;; *);
-=> nrel_idtf:
 	[переместительность]
 	(* <- lang_ru;; *);
-=> nrel_idtf:
-	[commutative]
-	(* <- lang_en;; *);
-=> nrel_idtf:
+	[закон коммутативности]
+	(* <- lang_ru;;	*);
 	[commutative property]
 	(* <- lang_en;; *);;
 
-// определение
-commutative
+commutativity
 <- rrel_key_sc_element:
-	Definition_of_commutative
+	Definition_of_commutativity
 	(* 
-	<- sc_explanation;;
-	=> nrel_main_idtf:
-		[Определение понятия "коммутативность"]
-			(* <- lang_ru;; *);;
-	<= nrel_sc_text_translation:
-		...
-		(* 
-		-> rrel_example:"file://htmls/commutative.html" (* <-lang_ru;; *);;
-		*);;
-	<= nrel_using_constants:
-		...
-			(* -> parameter; binary_operation; nrel_result; rrel_argument_of_action;; *);;
+		<- definition;;
+		=> nrel_main_idtf:
+			[Определение понятия "коммутативность"]
+				(* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			.commutativity_definition
+			(* 
+				-> rrel_example:
+					"file://htmls/commutativity/commutativity_definition.html"
+						(* <-lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			...
+			(* 
+				-> parameter;
+					concept_binary_operation;
+					set;
+					nrel_result;
+					rrel_argument_of_action;;
+			*);;
+	*);;
+
+commutativity
+<- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		=> nrel_main_idtf:
+			[Иллюстрация к понятию "коммутативность"]
+				(* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			.commutativity_illustration
+			(*
+				->rrel_example: "file://content/commutativity_illustration.png"
+					(*
+						=> nrel_format: format_png;;
+					*);;
+			*);;
 	*);;
