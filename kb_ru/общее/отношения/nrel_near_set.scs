@@ -15,7 +15,7 @@ nrel_near_set
 <- rrel_key_sc_element:
 	Definition_of_nrel_near_set
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -25,10 +25,10 @@ nrel_near_set
 		...
 		(* 
 		-> fuzzy_set;
-		membership_function;
-		nrel_more;
-		nrel_equal_numbers;
-		crisp_set;;
+			membership_function;
+			nrel_be_more;
+			nrel_equal_numbers;
+			crisp_set;;
 		*);;
 	*);;
 
@@ -57,4 +57,14 @@ Definition_of_nrel_near_set
 
 nrel_near_set
 =>nrel_first_domain: fuzzy_set;
-=>nrel_second_domain: crisp_set;;
+=>nrel_second_domain: crisp_set;
+=> nrel_definitional_domain: 
+ ...
+ (*
+	<= nrel_combination:
+	{
+		fuzzy_set;
+		crisp_set
+	};;
+ *);;
+
