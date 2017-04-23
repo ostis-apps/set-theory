@@ -65,4 +65,13 @@ support_of_fuzzy_set
 
 support_of_fuzzy_set
 => nrel_first_domain: crisp_set;
-=> nrel_second_domain: fuzzy_set;;
+=> nrel_second_domain: fuzzy_set;
+=> nrel_definitional_domain:
+...
+(*
+	<= nrel_combination:
+	{
+		crisp_set;
+		fuzzy_set
+	};;
+*);;

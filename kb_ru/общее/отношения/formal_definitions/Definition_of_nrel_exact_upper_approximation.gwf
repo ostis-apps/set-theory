@@ -19,7 +19,7 @@
         <node type="node/var/general_node" idtf="_X" shapeColor="0" id="14607168" parent="18932864" left="0" top="0" right="23.8594" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1247.83" y="317.461" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/group" idtf="universal_set" shapeColor="0" id="18992432" parent="18932864" left="0" top="0" right="95.0781" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1146.66" y="381.961" haveBus="false" idtf_pos="0">
+        <node type="node/const/group" idtf="concept_universum" shapeColor="0" id="18992432" parent="18932864" left="0" top="0" right="95.0781" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1146.66" y="381.961" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/relation" idtf="nrel_upper_approximation" shapeColor="0" id="19445776" parent="18932864" left="0" top="0" right="180.359" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1151.33" y="555.307" haveBus="false" idtf_pos="0">

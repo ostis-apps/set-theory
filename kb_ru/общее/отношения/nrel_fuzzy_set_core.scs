@@ -15,7 +15,7 @@ nrel_fuzzy_set_core
 <- rrel_key_sc_element:
 	Definition_of_nrel_fuzzy_set_core
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -24,7 +24,7 @@ nrel_fuzzy_set_core
 	<= nrel_using_constants:
 		...
 		(* 
-		-> fuzzy_set; set; universal_set; crisp_set;;
+		-> fuzzy_set; set; concept_universum; crisp_set;;
 		*);;
 	*);;
 
@@ -33,7 +33,7 @@ Definition_of_nrel_fuzzy_set_core
 	[Определение понятия "ядро нечеткого множества*"]
 	(* <- lang_ru;;	*);;
 
-// иллюстрация
+
 nrel_fuzzy_set_core
 <- rrel_key_sc_element: 
 	Illustration_of_nrel_fuzzy_set_core
@@ -58,13 +58,13 @@ nrel_fuzzy_set_core
 
 	statement_fuzzy_set_core_subnormal_set_empty_set
 	(* 
-		<- sc_explanation;;
+		<- statement;;
 		<= nrel_sc_text_translation:
 			...
 			(* 
 			   -> rrel_example: "file://htmls/statement_nrel_fuzzy_set_core.html" (* <- lang_ru;; *);;
 			*);;
-		=> nrel_main_idtf: [Утв. (субнормальное нечеткое множество, пустое множество, ядро*)]
+		=> nrel_main_idtf: [Утв. (субнормальное нечеткое множество, пустое множество, ядро нечеткого множества*)]
 					(* <- lang_ru;; *);;
 
 	*);;
@@ -72,3 +72,13 @@ nrel_fuzzy_set_core
 nrel_fuzzy_set_core
 =>nrel_first_domain: fuzzy_set;
 =>nrel_second_domain: crisp_set;;
+
+nrel_fuzzy_set_core => nrel_definitional_domain:
+	...
+	(*
+		<= nrel_combination:
+		{
+			fuzzy_set;
+			crisp_set
+		};;
+	*);;

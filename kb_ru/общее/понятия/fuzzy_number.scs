@@ -1,4 +1,3 @@
-// идентификаторы
 fuzzy_number
 <- sc_node_not_relation;
 => nrel_main_idtf:
@@ -8,12 +7,11 @@ fuzzy_number
 	[fuzzy number]
 	(* <- lang_en;;	*);;
 
-// определение
 fuzzy_number
 <- rrel_key_sc_element:
 	Definition_of_fuzzy_number
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	=> nrel_main_idtf:
 		[Определение понятия "нечеткое число"]
 			(* <- lang_ru;;	*);;
@@ -25,14 +23,14 @@ fuzzy_number
 	<= nrel_using_constants:
 		...
 			(* 
-                -> universal_set; 
+                -> concept_universum; 
                 unimodal_fuzzy_set; 
                 fuzzy_set;
                 convex_fuzzy_set;;
             *);;
 	*);;
 
-// иллюстрация
+
 fuzzy_number
 <- rrel_key_sc_element: 
 	Illustration_of_fuzzy_number

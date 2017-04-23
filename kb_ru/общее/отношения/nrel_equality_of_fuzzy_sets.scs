@@ -1,4 +1,3 @@
-// идентификаторы
 nrel_equality_of_fuzzy_sets
 <- sc_node_norole_relation;
 <- relation;
@@ -16,11 +15,11 @@ nrel_equality_of_fuzzy_sets
 		[быть равными нечеткими множествами*]
 			(* <- lang_ru;; *);;
 
-// домены и область определения
+
 nrel_equality_of_fuzzy_sets
 => nrel_first_domain: fuzzy_set;
 => nrel_second_domain: fuzzy_set;
-=> nrel_definitional_domain: set;;
+=> nrel_definitional_domain: fuzzy_set;;
 
 
 // иллюстрация
@@ -47,7 +46,7 @@ nrel_equality_of_fuzzy_sets
 <- rrel_key_sc_element:
 	Definition_of_equality_of_fuzzy_sets
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	=> nrel_main_idtf:
 		[Определение понятия "равенство нечетких множеств"]
 			(* <- lang_ru;; *);;
@@ -59,7 +58,7 @@ nrel_equality_of_fuzzy_sets
 	<= nrel_using_constants:
 		...
 		(* 
-			-> fuzzy_set; universal_set;;
+			-> fuzzy_set; concept_universum;;
 		*);;
 	*);;
 

@@ -58,7 +58,7 @@
         <node type="node/const/relation" idtf="nrel_lower_approximation" shapeColor="0" id="17131648" parent="14548000" left="0" top="0" right="178.141" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="625.5" y="692.5" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/relation" idtf="nrel_fuzzy_set_union" shapeColor="0" id="18150688" parent="14548000" left="0" top="0" right="143.625" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="507.334" y="561.667" haveBus="false" idtf_pos="0">
+        <node type="node/const/relation" idtf="nrel_fuzzy_set_combination" shapeColor="0" id="18150688" parent="14548000" left="0" top="0" right="143.625" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="507.334" y="561.667" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/var/general_node" idtf="" shapeColor="0" id="13486288" parent="14548000" x="557.334" y="632.833" haveBus="false" idtf_pos="0">
@@ -105,7 +105,7 @@
                 <point x="341.333" y="784.333"/>
             </points>
         </contour>
-        <node type="node/const/general_node" idtf="statement_nrel_lower_approximation_union_fuzzy_set_set_of_sets" shapeColor="193" id="16091344" parent="0" left="0" top="0" right="440.016" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="353.5" y="115.5" haveBus="false" idtf_pos="0">
+        <node type="node/const/general_node" idtf="statement_nrel_lower_approximation_fuzzy_set_combination_set_of_sets" shapeColor="193" id="16091344" parent="0" left="0" top="0" right="440.016" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="353.5" y="115.5" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/relation" idtf="nrel_implication" shapeColor="0" id="15650000" parent="0" left="0" top="0" right="113.141" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="106.5" y="84.5" haveBus="false" idtf_pos="0">

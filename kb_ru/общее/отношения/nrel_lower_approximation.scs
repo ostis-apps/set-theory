@@ -14,7 +14,7 @@ nrel_lower_approximation
 <- rrel_key_sc_element:
 	Definition_of_nrel_lower_approximation
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -25,7 +25,7 @@ nrel_lower_approximation
 		(* 
 		->  fuzzy_set;
             nrel_inclusion;
-            universal_set;
+            concept_universum;
             nrel_alpha_incision;
             set_of_sets;
             number;;
@@ -35,9 +35,9 @@ nrel_lower_approximation
 nrel_lower_approximation
 <- rrel_key_sc_element:
 
-	statement_nrel_lower_approximation_union_fuzzy_set_set_of_sets
+	statement_nrel_lower_approximation_fuzzy_set_combination_set_of_sets
 	(* 
-		<- sc_explanation;;
+		<- statement;;
 		<= nrel_sc_text_translation:
 			...
 			(* 
@@ -48,7 +48,7 @@ nrel_lower_approximation
         <= nrel_using_constants:
 		    ...
 			(*
-             -> nrel_fuzzy_set_union; 
+             -> nrel_fuzzy_set_combination; 
                 nrel_lower_approximation;
                 fuzzy_set;
                 univresal_set;
@@ -64,7 +64,14 @@ Definition_of_nrel_lower_approximation
 	(* <- lang_ru;;	*);;
 
 nrel_lower_approximation
-=>nrel_first_domain: set_of_sets;;
-
-nrel_lower_approximation =>nrel_second_domain: 
-	fuzzy_set;;
+=> nrel_first_domain: set_of_sets;
+=> nrel_second_domain: fuzzy_set;
+=> nrel_definitional_domain: 
+ ...
+ (*
+	<= nrel_combination:
+	{
+		fuzzy_set;
+		set_of_sets
+	};;
+ *);;
