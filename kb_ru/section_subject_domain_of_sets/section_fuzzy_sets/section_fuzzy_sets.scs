@@ -1,7 +1,28 @@
 section_fuzzy_sets
 => nrel_main_idtf:
 	[Раздел. Нечёткие множества]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+<= nrel_section_decomposition:
+	{
+		section_definition_of_fuzzy_set
+		(*
+		=> nrel_section_base_order: 
+			section_properties_of_fuzzy_sets;;
+		*);
+		section_properties_of_fuzzy_sets
+		(*
+		=> nrel_section_base_order: 
+			section_operations_on_fuzzy_sets;;
+		*);
+		section_operations_on_fuzzy_sets		
+	};
+<- not_enough_formed_structure;;
+
+section_fuzzy_sets = [*^"file://section_fuzzy_sets.scsi"*];;
+
+
+rrel_key_sc_element -> (section_fuzzy_sets -> subject_domain_of_fuzzy_sets);;
+	
 
 section_definition_of_fuzzy_set
 => nrel_main_idtf:
@@ -37,3 +58,5 @@ section_operations_on_fuzzy_sets
 		-> rrel_example: "file://htmls/section_operations_on_fuzzy_sets.html" (* <-lang_ru;; *);;
 		*);;
 
+
+	
