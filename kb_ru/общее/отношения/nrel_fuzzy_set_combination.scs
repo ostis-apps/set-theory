@@ -27,7 +27,7 @@ nrel_fuzzy_set_combination
 			(* 
 			-> fuzzy_set;
 			membership_function;
-			fuzzy_subset;;
+			nrel_fuzzy_set_inclusion;;
 			*);;
 
 

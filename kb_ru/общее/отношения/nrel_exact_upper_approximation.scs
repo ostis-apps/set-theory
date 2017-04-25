@@ -28,7 +28,7 @@ nrel_exact_upper_approximation
             nrel_alpha_incision;
             set_of_sets;
             nrel_upper_approximation;
-            fuzzy_subset;;
+            nrel_fuzzy_set_inclusion;;
         *);;
 	*);;
 

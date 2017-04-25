@@ -1,5 +1,11 @@
 membership_function
 <- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
 => nrel_main_idtf:
 	[функция принадлежности*]
 	(* <- lang_ru;;	*);
@@ -12,7 +18,7 @@ membership_function
 <- rrel_key_sc_element:
 	Definition_of_membership_function
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -22,13 +28,14 @@ membership_function
 	<= nrel_using_constants:
 		...
 		(* 
-			-> number; fuzzy_set; set; element_of_set;;
+			-> number; fuzzy_set;;
 		*);;
 	*);
 
 <- rrel_key_sc_element:
-	... (*
-	<- sc_statement;;
+	... 
+	(*
+	<- statement;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -42,15 +49,18 @@ Definition_of_membership_function
 	[Определение понятия "функция принадлежности*"]
 	(* <- lang_ru;;	*);;
 
-membership_function
-<- relation;
-<- oriented_relation;
-<- binary_relation;
-<- antireflexive_relation;
-<- antisymmetric_relation;
-<- antitransitive_relation;;
 
 membership_function
 => nrel_first_domain: sheaf;
-=> nrel_second_domain: number;;
+=> nrel_second_domain: number;
+=> nrel_definitional_domain:
+...
+(*
+	<= nrel_combination:
+	{
+		sheaf;
+		number
+	};;
+
+*);;
 

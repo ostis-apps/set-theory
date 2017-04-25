@@ -19,7 +19,7 @@
         <node type="node/var/general_node" idtf="_B" shapeColor="0" id="36837296" parent="37165488" left="0" top="0" right="22.75" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1387.38" y="618.166" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/relation" idtf="fuzzy_subset" shapeColor="0" id="36890592" parent="37165488" left="0" top="0" right="92.5469" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1455.42" y="555.555" haveBus="false" idtf_pos="0">
+        <node type="node/const/relation" idtf="nrel_fuzzy_set_inclusion" shapeColor="0" id="36890592" parent="37165488" left="0" top="0" right="92.5469" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1455.42" y="555.555" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/group" idtf="number" shapeColor="0" id="36942848" parent="37165488" left="0" top="0" right="59.8906" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="770.414" y="534.555" haveBus="false" idtf_pos="0">

@@ -37,7 +37,7 @@
         <node type="node/var/general_node" idtf="_B" shapeColor="0" id="19521152" parent="19877232" left="0" top="0" right="22.75" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1152.88" y="516.666" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/relation" idtf="fuzzy_subset" shapeColor="0" id="19572384" parent="19877232" left="0" top="0" right="92.5469" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1220.92" y="454.055" haveBus="false" idtf_pos="0">
+        <node type="node/const/relation" idtf="nrel_fuzzy_set_inclusion" shapeColor="0" id="19572384" parent="19877232" left="0" top="0" right="92.5469" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1220.92" y="454.055" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <pair type="pair/var/orient" idtf="" shapeColor="0" id="19874704" parent="19877232" id_b="19836496" id_e="19532544" b_x="4" b_y="-69" e_x="889.914" e_y="557.666" dotBBalance="0.685588" dotEBalance="0">

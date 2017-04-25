@@ -7,7 +7,7 @@ support_of_fuzzy_set
 <- antisymmetric_relation;
 <- antitransitive_relation;
 => nrel_main_idtf:
-	[носитель нечёткого множества]
+	[носитель нечёткого множества*]
 	(* <- lang_ru;;	*);;
 
 support_of_fuzzy_set
@@ -24,7 +24,7 @@ support_of_fuzzy_set
 
 Definition_of_support_of_fuzzy_set
 => nrel_main_idtf:
-	[Определение понятия "носитель нечёткого множества"]
+	[Определение понятия "носитель нечёткого множества*"]
 	(* <- lang_ru;;	*);;
 
 support_of_fuzzy_set

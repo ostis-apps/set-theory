@@ -28,7 +28,7 @@ nrel_fuzzy_set_negation
 		-> fuzzy_set;
 		membership_function;
 		concept_universum;
-		fuzzy_subset;;
+		nrel_fuzzy_set_inclusion;;
 		*);;
 
 
