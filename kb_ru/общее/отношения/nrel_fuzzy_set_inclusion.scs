@@ -1,45 +1,45 @@
-fuzzy_subset
+nrel_fuzzy_set_inclusion
 <- sc_node_norole_relation;
 <- relation;
 <- oriented_relation;
-<- quasybinary_relation;
+<- binary_relation;
 <- antireflexive_relation;
 <- antisymmetric_relation;
 <- transitive_relation;
 => nrel_main_idtf:
-	[нечеткое подмножество*]
+	[нечеткое включение*]
 	(* <- lang_ru;;	*);
 => nrel_idtf:
-	[нечеткое включение*]
+	[нечеткое подмножество*]
 	(* <- lang_ru;; *);;
 
-fuzzy_subset
+nrel_fuzzy_set_inclusion
 <- rrel_key_sc_element:
-	Definition_of_fuzzy_subset
+	Definition_of_nrel_fuzzy_set_inclusion
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example: "file://htmls/fuzzy_subset.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://htmls/nrel_fuzzy_set_inclusion.html" (* <-lang_ru;; *);;
 		*);;
 	<= nrel_using_constants:
 		...
 		(* 
 		-> fuzzy_set;
 		membership_function;
-		concept_universum;
-		fuzzy_subset;;
+		concept_universum;;
 		*);;
 
 
 	*);;
 
-Definition_of_fuzzy_subset
+Definition_of_nrel_fuzzy_set_inclusion
 => nrel_main_idtf:
 	[Определение понятия "нечеткое подмножество*"]
 	(* <- lang_ru;;	*);;
 
-fuzzy_subset
+nrel_fuzzy_set_inclusion
 =>nrel_first_domain: fuzzy_set;
-=>nrel_second_domain: set;;
+=>nrel_second_domain: fuzzy_set;
+=>nrel_definitional_domain: fuzzy_set;;
