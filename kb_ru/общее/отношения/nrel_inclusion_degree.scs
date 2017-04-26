@@ -2,9 +2,7 @@ nrel_inclusion_degree
 <- sc_node_not_relation;
 <- relation;
 <- oriented_relation;
-<- binary_relation;
-<- antireflexive_relation;
-<- antitransitive_relation;
+<- quasybinary_relation;
 => nrel_main_idtf:
 	[степень включения*]
 	(* <- lang_ru;;	*);

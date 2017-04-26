@@ -1,10 +1,8 @@
 nrel_equality_degree
 <- sc_node_not_relation;
-<- binary_relation;
+<- quasybinary_relation;
 <- relation;
 <- oriented_relation;
-<- antireflexive_relation;
-<- antitransitive_relation;
 => nrel_main_idtf:
 	[степень равенства*]
 	(* <- lang_ru;;	*);
