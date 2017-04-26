@@ -1,16 +1,12 @@
 cantor_set
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[cantor set]
-	(* <- lang_en;;	*);
 => nrel_idtf:
 	[set without multiple occurrences of elements]
 	(* <- lang_en;; *);
 	[the set of all elements which are different]
 	(* <- lang_en;; *);
-	[Set of accessories without multiple elements]
+	[set of accessories without multiple elements]
 	(* <- lang_en;; *);
-	[Set of classic]
+	[set of classic]
 	(* <- lang_en;; *);;
 
 cantor_set
@@ -38,10 +34,11 @@ Definition_of_cantor_set
 	(* <- lang_en;;	*);;
 
 
-empty_set
-<- rrel_key_sc_element: ...
+cantor_set
+<- rrel_key_sc_element: 
+	...
 	(*
-	<-sc_illustration;;
+	<-statement;;
 	<=nrel_sc_text_translation:
 		...
 		(*
