@@ -45,7 +45,7 @@ soft_set
 		...
 		(* 
 		-> fuzzy_set;
-			singleton;
+			singletone;
 			set_of_accessories;
 			set;;
 		*);;

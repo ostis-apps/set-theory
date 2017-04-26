@@ -31,7 +31,7 @@ Statement_1_intersection
 
 Statement_2_intersection
 => nrel_main_idtf:
-	[App. (intersection*, singleton)]
+	[App. (intersection*, singletone)]
 		(* <-lang_en;; *);;
 
 

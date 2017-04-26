@@ -13,7 +13,11 @@ cantor_set
 <- rrel_key_sc_element:
 	Definition_of_cantor_set
 	(* 
-	<- sc_explanation;;
+	<- definition;;
+	=> nrel_main_idtf:
+	[Definition "cantor set"]
+	(* <- lang_en;;	*);;
+
 	<= nrel_sc_text_translation:
 		...
 		(*
@@ -27,12 +31,6 @@ cantor_set
 		*);;
 
 	*);;
-
-Definition_of_cantor_set
-=> nrel_main_idtf:
-	[Definition "cantor set"]
-	(* <- lang_en;;	*);;
-
 
 cantor_set
 <- rrel_key_sc_element: 
