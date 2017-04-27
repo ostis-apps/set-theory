@@ -6,6 +6,11 @@ nrel_intersection
 	(* <- lang_ru;; *);;
 
 nrel_intersection
+=> nrel_distributivity:
+	nrel_combination;
+	nrel_symmetric_sets_difference;;
+
+nrel_intersection
 <- rrel_key_sc_element:
 	Definition_of_intersection
 	(* 

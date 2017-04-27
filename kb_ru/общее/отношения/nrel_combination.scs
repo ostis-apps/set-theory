@@ -6,6 +6,10 @@ nrel_combination
 	(* <- lang_ru;; *);;
 
 nrel_combination
+=> nrel_distributivity:
+	nrel_intersection;;
+
+nrel_combination
 <- rrel_key_sc_element:
 	Definition_of_combination
 	(* 

@@ -22,6 +22,11 @@ nrel_distributivity
 	concept_algebraic_operation;;
 
 nrel_distributivity
+=> nrel_strict_inclusion:
+	nrel_left_distributivity;
+	nrel_right_distributivity;;
+
+nrel_distributivity
 <- rrel_key_sc_element:
 	Definition_of_distributivity
 	(* 
@@ -45,6 +50,23 @@ nrel_distributivity
                     nrel_right_distributivity;;
 			*);;
 	*);;
+
+nrel_distributivity
+<- rrel_key_sc_element:
+    Statement_1_distributivity
+    (*
+        <- statement;;
+        => nrel_main_idtf:
+            [Утв. (дистрибутивность*, коммутативная операция)]
+                (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            .nrel_distributivity_statement_1
+            (*
+                -> rrel_example:
+                    "file://htmls/nrel_distributivity/nrel_distributivity_statement_1.html"
+                        (* <- lang_ru;; *);;
+            *);;
+    *);;
 
 nrel_distributivity
 <- rrel_key_sc_element: 
