@@ -95,7 +95,7 @@
         <node type="node/const/group" idtf="fuzzy_set" shapeColor="0" id="63079736" parent="61832128" left="0" top="0" right="66" bottom="24" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-413.5" y="315" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/relation" idtf="nrel_fuzzy_set_negation" shapeColor="0" id="60376248" parent="61832128" left="0" top="0" right="157" bottom="24" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-187.5" y="370" haveBus="false" idtf_pos="0">
+        <node type="node/const/relation" idtf="nrel_fuzzy_set_complement" shapeColor="0" id="60376248" parent="61832128" left="0" top="0" right="157" bottom="24" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-187.5" y="370" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/var/general_node" idtf="_A" shapeColor="0" id="60373056" parent="61832128" left="0" top="0" right="25" bottom="24" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-284.5" y="312" haveBus="false" idtf_pos="0">
@@ -127,7 +127,7 @@
                 <point x="-451.5" y="418"/>
             </points>
         </contour>
-        <node type="node/const/general_node" idtf="Definition_of_nrel_fuzzy_set_negation" shapeColor="0" id="60372144" parent="0" left="0" top="0" right="243" bottom="24" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="303.644" y="23.5" haveBus="false" idtf_pos="0">
+        <node type="node/const/general_node" idtf="Definition_of_nrel_fuzzy_set_complement" shapeColor="0" id="60372144" parent="0" left="0" top="0" right="243" bottom="24" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="303.644" y="23.5" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/attribute" idtf="rrel_main_key_sc_element" shapeColor="0" id="60371232" parent="0" left="0" top="0" right="173" bottom="24" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="153.644" y="-21.5" haveBus="false" idtf_pos="0">
