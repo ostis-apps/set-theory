@@ -20,7 +20,7 @@ concave_fuzzy_set
 	<= nrel_using_constants:
 	...
 	(*
-		->fuzzy_set; nrel_fuzzy_set_negation;;
+		->fuzzy_set; nrel_fuzzy_set_complement;;
 	*);;
 
 	*);;

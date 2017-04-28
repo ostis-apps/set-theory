@@ -50,7 +50,7 @@ elementary_fuzzy_set
                 fuzzy_set;
                 concept_universum;
                 nrel_fuzzy_set_combination;
-                nrel_fuzzy_set_negation;;
+                nrel_fuzzy_set_complement;;
             *);;
 
 	*);;

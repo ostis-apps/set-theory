@@ -37,7 +37,7 @@ subject_domain_of_fuzzy_sets
     nrel_fuzzy_set_difference;
     nrel_fuzzy_set_intersection;
     nrel_fuzzy_set_multiplication;
-    nrel_fuzzy_set_negation;
+    nrel_fuzzy_set_complement;
     nrel_fuzzy_set_stretch;
     nrel_fuzzy_set_sum;
     nrel_height_of_fuzzy_set;
