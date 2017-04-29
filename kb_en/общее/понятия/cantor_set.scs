@@ -38,7 +38,7 @@ Definition_of_cantor_set
 	(* <- lang_en;;	*);;
 
 
-empty_set
+cantor_set
 <- rrel_key_sc_element: ...
 	(*
 	<-sc_illustration;;

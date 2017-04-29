@@ -40,7 +40,7 @@ Definition_of_universum
 
 
 
-empty_set
+concept_universum
 <- rrel_key_sc_element:
 	statement
 	(* 
@@ -58,7 +58,7 @@ empty_set
 
 	*);;
 
-empty_set
+concept_universum
 <- rrel_key_sc_element: ...
 	(*
 	<-sc_illustration;;
