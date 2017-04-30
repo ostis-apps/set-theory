@@ -1,0 +1,72 @@
+nrel_neutral_element
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[нейтральный элемент*]
+	(* <- lang_ru;; *);
+	[neutral element*]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+    [нейтральный элемент бинарной операции*]
+    (* <- lang_ru;; *);
+    [единица*]
+    (* <- lang_ru;; *);
+    [нуль*]
+    (* <- lang_ru;; *);
+    [unit element*]
+    (* <- lang_en;; *);
+    [zero element*]
+    (* <- lang_en;; *);
+    [identity element*]
+    (* <- lang_en;; *);;
+
+nrel_neutral_element
+<- oriented_relation;
+<- binary_relation;
+<- partially_reflexive_relation;
+<- partially_symmetric_relation;
+<- partially_transitive_relation;;
+
+nrel_neutral_element
+=> nrel_first_domain: concept_algebraic_operation;;
+
+nrel_neutral_element
+<- rrel_key_sc_element:
+	Definition_of_neutral_element
+	(* 
+		<- definition;;
+        => nrel_main_idtf:
+            [Определение понятия "нейтральный элемент*"]
+                (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			.nrel_neutral_element_definition
+			(* 
+				-> rrel_example:
+                    "file://htmls/nrel_neutral_element/nrel_neutral_element_definition.html"
+					    (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			...
+			(* 
+                -> concept_binary_operation;
+                    nrel_belonging;
+                    relation;
+                    nrel_signature;
+                    concept_algebraic_system;;
+			*);;
+	*);;
+
+nrel_neutral_element
+=> nrel_comment:
+    Comment_neutral_element
+    (*
+        => nrel_main_idtf:
+        [Комментарий к понятию "нейтральный элемент*"]
+            (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            .nrel_neutral_element_comment
+            (*
+                -> rrel_example:
+                    "file://htmls/nrel_neutral_element/nrel_neutral_element_comment.html"
+                        (* <- lang_ru;; *);;
+            *);;
+    *);;
