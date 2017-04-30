@@ -11,11 +11,15 @@ nrel_fuzzy_set_core
 	[ядро*]
 	(* <- lang_ru;;	*);;
 
+
 nrel_fuzzy_set_core
 <- rrel_key_sc_element:
 	Definition_of_nrel_fuzzy_set_core
 	(* 
 	<- definition;;
+	=> nrel_main_idtf:
+	[Определение понятия "ядро нечеткого множества*"]
+	(* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -28,17 +32,14 @@ nrel_fuzzy_set_core
 		*);;
 	*);;
 
-Definition_of_nrel_fuzzy_set_core
-=> nrel_main_idtf:
-	[Определение понятия "ядро нечеткого множества*"]
-	(* <- lang_ru;;	*);;
-
-
 nrel_fuzzy_set_core
 <- rrel_key_sc_element: 
 	Illustration_of_nrel_fuzzy_set_core
 	(*
 	<- sc_illustration;;
+	=> nrel_main_idtf:
+	[Иллюстрация к понятию "ядро нечеткого множества*"]
+	(* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation:
 		...
 		(*
@@ -48,10 +49,6 @@ nrel_fuzzy_set_core
 				*);;
 		*);;
 	*);;
-Illustration_of_nrel_fuzzy_set_core
-=> nrel_main_idtf:
-	[Иллюстрация к понятию "ядро нечеткого множества*"]
-	(* <- lang_ru;;	*);;
 
 nrel_fuzzy_set_core
 <- rrel_key_sc_element:
@@ -70,15 +67,14 @@ nrel_fuzzy_set_core
 	*);;
 
 nrel_fuzzy_set_core
-=>nrel_first_domain: fuzzy_set;
-=>nrel_second_domain: crisp_set;;
-
-nrel_fuzzy_set_core => nrel_definitional_domain:
-	...
-	(*
-		<= nrel_combination:
-		{
-			fuzzy_set;
-			crisp_set
-		};;
-	*);;
+=> nrel_first_domain: fuzzy_set;
+=> nrel_second_domain: crisp_set;
+=> nrel_definitional_domain:
+ ...
+ (*
+	<= nrel_combination:
+	{
+		fuzzy_set;
+		crisp_set
+	};;
+ *);;

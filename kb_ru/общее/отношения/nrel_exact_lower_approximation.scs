@@ -11,6 +11,10 @@ nrel_exact_lower_approximation
 	(* <- lang_ru;; *);;
 
 nrel_exact_lower_approximation
+	<= nrel_inclusion:
+	nrel_lower_approximation;;
+
+nrel_exact_lower_approximation
 <- rrel_key_sc_element:
 	Definition_of_nrel_exact_lower_approximation
 	(* 

@@ -5,6 +5,9 @@ elementary_fuzzy_set
 	(* <- lang_ru;;	*);;
 
 elementary_fuzzy_set
+	<= nrel_inclusion: fuzzy_set;;
+
+elementary_fuzzy_set
 <- rrel_key_sc_element:
 	Definition_of_elementary_fuzzy_set
 	(* 
@@ -52,6 +55,5 @@ elementary_fuzzy_set
                 nrel_fuzzy_set_combination;
                 nrel_fuzzy_set_complement;;
             *);;
-
 	*);;
 

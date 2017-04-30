@@ -173,7 +173,7 @@ nrel_alpha_incision
 	(*
 	<- sc_illustration;;
 	=> nrel_main_idtf:
-		[Иллюстрация к понятию "альфа-разрез"]
+		[Иллюстрация к понятию "альфа-разрез*"]
 			(* <- lang_ru;; *);;
 	<= nrel_sc_text_translation:
 		...

@@ -52,4 +52,4 @@ Illustration_of_fuzzy_number
 
 fuzzy_number 
 <= nrel_inclusion:
-    fuzzy_set;;
+    fuzzy_set; unimodal_fuzzy_set; convex_fuzzy_set;;

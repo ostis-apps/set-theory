@@ -11,6 +11,10 @@ nrel_exact_upper_approximation
 	(* <- lang_ru;; *);;
 
 nrel_exact_upper_approximation
+	<= nrel_inclusion:
+	nrel_upper_approximation;;
+
+nrel_exact_upper_approximation
 <- rrel_key_sc_element:
 	Definition_of_nrel_exact_upper_approximation
 	(* 

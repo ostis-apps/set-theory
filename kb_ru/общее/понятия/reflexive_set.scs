@@ -13,20 +13,9 @@ reflexive_set
 
 reflexive_set
 <- rrel_key_sc_element:
-	Definition_of_reflexive_set
-	(* 
-	<- sc_explanation;;
-	<= nrel_sc_text_translation:
-		...
-		(* 
-		-> rrel_example:"file://htmls/reflexive_set .html" (* <-lang_ru;; *);;
-		*);;
-	
-
-	*);
-<- rrel_key_sc_element:
-	... (*
-	<- sc_statement;;
+	... 
+	(*
+	<- statement;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -35,7 +24,7 @@ reflexive_set
 	*);
 <- rrel_key_sc_element:
 	... (*
-	<- sc_statement;;
+	<- statement;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -46,7 +35,7 @@ reflexive_set
 *);
 <- rrel_key_sc_element:
 	... (*
-	<- sc_statement;;
+	<- statement;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
