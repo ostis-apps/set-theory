@@ -1,0 +1,52 @@
+concept_semigroup
+<= sc_node_not_relation;
+=> nrel_main_idtf:
+    [полугруппа]
+    (* <- lang_ru;; *);
+    [semigroup]
+    (* <- lang_en;; *);
+=> nrel_idtf:
+    [множество с ассоциативной операцией]
+    (* <- lang_ru;; *);
+    [set with associative operation]
+    (* <- lang_en;; *);;
+
+concept_semigroup
+<- rrel_key_sc_element:
+    Definition_of_semigroup
+    (*
+        <- definition;;
+        => nrel_main_idtf:
+            [Определение понятия "полугруппа"] 
+                (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            .concept_semigroup_definition
+            (*
+                -> rrel_example:
+                    "file://htmls/concept_semigroup/concept_semigroup_definition.html"
+                        (* <- lang_ru;; *);;
+            *);;
+        <= nrel_using_constants:
+            ...
+            (* 
+                -> concept_algebra;
+                    concept_associative_operation;
+                    nrel_carrier_set;;
+            *);;
+    *);;
+
+concept_semigroup
+=> nrel_comment:
+    Comment_semigroup
+    (*
+        => nrel_main_idtf:
+        [Комментарий к понятию "полугруппа"]
+            (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            .concept_semigroup_comment
+            (*
+                -> rrel_example:
+                    "file://htmls/concept_semigroup/concept_semigroup_comment.html"
+                        (* <- lang_ru;; *);;
+            *);;
+    *);;

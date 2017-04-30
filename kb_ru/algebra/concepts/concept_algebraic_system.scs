@@ -61,18 +61,18 @@ concept_algebraic_system
 
 concept_algebraic_system
 => nrel_comment:
-.concept_algebraic_system_comment
-(*
-    => nrel_main_idtf:
-    [Комментарий к понятию "алгебраическая система"]
-        (* <- lang_ru;; *);;
-    <= nrel_sc_text_translation:
-        .concept_algebraic_system_comment
-        (*
-            -> rrel_example:
-                "file://htmls/concept_algebraic_system/concept_algebraic_system_comment.html"
-                    (* <- lang_ru;; *);;
-        *);;
-*);;
+    Comment_algebraic_system
+    (*
+        => nrel_main_idtf:
+        [Комментарий к понятию "алгебраическая система"]
+            (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            .concept_algebraic_system_comment
+            (*
+                -> rrel_example:
+                    "file://htmls/concept_algebraic_system/concept_algebraic_system_comment.html"
+                        (* <- lang_ru;; *);;
+            *);;
+    *);;
 
 
