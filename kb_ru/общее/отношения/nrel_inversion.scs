@@ -26,7 +26,7 @@ nrel_inversion
 	<= nrel_using_constants:
 		...
 		(* 
-		-> cortege;;
+		-> oriented_set;;
 		*);;
 
 
@@ -38,5 +38,5 @@ Definition_of_nrel_inversion
 	(* <- lang_ru;;	*);;
 
 nrel_inversion
-=>nrel_first_domain: cortege;
-=>nrel_second_domain: cortege;;
+=>nrel_first_domain: oriented_set;
+=>nrel_second_domain: oriented_set;;

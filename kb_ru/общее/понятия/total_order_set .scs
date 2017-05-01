@@ -25,5 +25,3 @@ Definition_of_total_order_set
 => nrel_main_idtf:
 	[Определение понятия "линейно упорядоченное множество"]
 	(* <- lang_ru;;	*);;
-
-total_order_set <- cortege;;

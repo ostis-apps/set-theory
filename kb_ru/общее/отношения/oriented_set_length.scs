@@ -1,4 +1,4 @@
-cortege_length
+oriented_set_length
 <- sc_node_norole_relation;
 <- relation;
 <- oriented_relation;
@@ -12,21 +12,21 @@ cortege_length
 	[размерность кортежа*]
 	(* <- lang_ru;;	*);;
 
-cortege_length
+oriented_set_length
 <- rrel_key_sc_element:
-	Definition_of_cortege_length
+	Definition_of_oriented_set_length
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://htmls/cortege_length.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://htmls/oriented_set_length.html" (* <-lang_ru;; *);;
 		*);;
 	<= nrel_using_constants:
 		...
 		(* 
 		-> number;
-		  cortege;
+		  oriented_set;
 		nrel_component;;
 
 		*);;
@@ -35,12 +35,12 @@ cortege_length
 	*);;
 
 
-Definition_of_cortege_length
+Definition_of_oriented_set_length
 => nrel_main_idtf:
 	[Определение понятия "длина кортежа*"]
 	(* <- lang_ru;;	*);;
 
-cortege_length
+oriented_set_length
 =>nrel_first_domain: number;
-=>nrel_second_domain: cortege;;
+=>nrel_second_domain: oriented_set;;
 

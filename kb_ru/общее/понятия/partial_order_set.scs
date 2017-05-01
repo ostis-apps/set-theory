@@ -22,5 +22,3 @@ Definition_of_partial_order_set
 => nrel_main_idtf:
 	[Определение понятия "частично упорядоченное множество"]
 	(* <- lang_ru;;	*);;
-
-partial_order_set <- cortege;;

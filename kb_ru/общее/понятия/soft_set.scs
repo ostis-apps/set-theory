@@ -22,7 +22,7 @@ soft_set
 	<= nrel_using_constants:
 		...
 		(* 
-		-> cortege;
+		-> oriented_set;
 			concept_universum;
 			set_of_accessories;
 			set;;

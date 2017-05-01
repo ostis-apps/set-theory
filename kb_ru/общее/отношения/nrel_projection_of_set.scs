@@ -23,8 +23,8 @@ nrel_projection_of_set
 		...
 		(* 
 		-> set;
-		  cortege;
-		cortege_length;
+		  oriented_set;
+		oriented_set_length;
 		projection;;
 
 		*);;

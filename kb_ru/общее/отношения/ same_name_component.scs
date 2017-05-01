@@ -24,8 +24,8 @@ same_name_component
 	<= nrel_using_constants:
 		...
 		(* 
-		-> cortege_length;
-		  cortege;
+		-> oriented_set_length;
+		  oriented_set;
 		nrel_component;;
 
 		*);;
@@ -41,6 +41,6 @@ Definition_of_same_name_component
 
 same_name_component
 =>nrel_first_domain: element_of_set;
-=>nrel_second_domain: cortege;
-=>nrel_third_domain: cortege;;
+=>nrel_second_domain: oriented_set;
+=>nrel_third_domain: oriented_set;;
 

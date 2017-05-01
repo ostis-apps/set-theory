@@ -3,7 +3,7 @@ section_ordered_sets
 	[Раздел. Упорядоченные множества]
 	(* <- lang_ru;; *);;
 
-section_cortege
+section_oriented_set
 => nrel_main_idtf:
 	[Раздел. Кортеж]
 	(* <- lang_ru;; *);

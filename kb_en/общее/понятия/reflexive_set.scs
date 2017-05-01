@@ -26,7 +26,7 @@ reflexive_set
 
 	*);;
 
-Definition_of_cortege
+Definition_of_oriented_set
 => nrel_main_idtf:
 	[Definition "reflexive set"]
 	(* <- lang_en;;	*);;
