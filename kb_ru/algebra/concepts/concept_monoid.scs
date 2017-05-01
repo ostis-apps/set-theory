@@ -1,0 +1,41 @@
+concept_monoid
+<= sc_node_not_relation;
+=> nrel_main_idtf:
+    [моноид]
+    (* <- lang_ru;; *);
+    [monoid]
+    (* <- lang_en;; *);
+=> nrel_idtf:
+    [множество с ассоциативной операцией и нейтральным элементом]
+    (* <- lang_ru;; *);
+    [полгруппа с единицей]
+    (* <- lang_ru;; *);
+    [semigroup with identity]
+    (* <- lang_en;; *);;
+
+concept_monoid
+<= nrel_strict_inclusion:
+    concept_semigroup;;
+
+concept_monoid
+<- rrel_key_sc_element:
+    Definition_of_monoid
+    (*
+        <- definition;;
+        => nrel_main_idtf:
+            [Определение понятия "моноид"] 
+                (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            .concept_monoid_definition
+            (*
+                -> rrel_example:
+                    "file://htmls/concept_monoid/concept_monoid_definition.html"
+                        (* <- lang_ru;; *);;
+            *);;
+        <= nrel_using_constants:
+            ...
+            (* 
+                -> concept_semigroup;
+                    nrel_neutral_element;;
+            *);;
+    *);;
