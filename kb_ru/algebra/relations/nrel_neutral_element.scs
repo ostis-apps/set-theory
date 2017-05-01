@@ -56,6 +56,23 @@ nrel_neutral_element
 	*);;
 
 nrel_neutral_element
+<- rrel_key_sc_element:
+    Statement_1_neutral_element
+    (*
+        <- statement;;
+        => nrel_main_idtf:
+            [Утв. (нейтральный элемент*, обратный элемент*)]
+                (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            .nrel_neutral_element_statement_1
+            (*
+                -> rrel_example:
+                    "file://htmls/nrel_neutral_element/nrel_neutral_element_statement_1.html"
+                        (* <- lang_ru;; *);;
+            *);;
+    *);;
+
+nrel_neutral_element
 => nrel_comment:
     Comment_neutral_element
     (*
