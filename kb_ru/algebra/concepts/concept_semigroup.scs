@@ -12,6 +12,38 @@ concept_semigroup
     (* <- lang_en;; *);;
 
 concept_semigroup
+<= nrel_strict_inclusion:
+    concept_algebra;;
+
+concept_semigroup
+-> rrel_example:
+    ...
+    (*
+        => nrel_carrier_set:
+            natural_number;;
+        => nrel_signature:
+            ...
+            (*
+                <- singletone;;
+                -> nrel_sum_of_numbers;;
+            *);;
+        => nrel_type_of_algebraic_system:
+            ...
+            (*
+                <- pair_set;;
+                -> ...
+                    (*
+                        <- oriented_set;;
+                        -> rrel_1: 2;;           
+                    *);;
+                -> ...
+                    (*
+                        <- empty_set;;
+                    *);;
+            *);;
+    *);;
+
+concept_semigroup
 <- rrel_key_sc_element:
     Definition_of_semigroup
     (*
@@ -32,6 +64,23 @@ concept_semigroup
                 -> concept_algebra;
                     concept_associative_operation;
                     nrel_carrier_set;;
+            *);;
+    *);;
+
+concept_semigroup
+<- rrel_key_sc_element:
+    Statement_1_semigroup
+    (*
+        <- statement;;
+        => nrel_main_idtf:
+            [Утв. (полугруппа, нейтральный элемент*)]
+                (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            .concept_semigroup_statement_1
+            (*
+                -> rrel_example:
+                    "file://htmls/concept_semigroup/concept_semigroup_statement_1.html"
+                        (* <- lang_ru;; *);;
             *);;
     *);;
 
