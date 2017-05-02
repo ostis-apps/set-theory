@@ -1,0 +1,38 @@
+idempotence
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[идемпотентность]
+	(* <- lang_ru;;	*);
+	[idempotence]
+	(* <- lang_en;;	*);
+=> nrel_idtf:
+	[свойство идемпотентности]
+	(* <- lang_ru;;	*);
+	[закон идемпотентности]
+	(* <- lang_ru;;	*);
+	[idempotence property]
+	(* <- lang_en;;	*);;
+
+idempotence
+<- rrel_key_sc_element:
+	Definition_of_idempotence
+	(* 
+		<- definition;;
+		=> nrel_main_idtf:
+			[Определение понятия "идемпотентность"]
+				(* <- lang_ru;;	*);;
+		<= nrel_sc_text_translation:
+			.idempotence_definition
+			(* 
+				-> rrel_example: 
+					"file://htmls/idempotence/idempotence_definition.html"
+						(* <-lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			...
+			(*
+				-> concept_binary_operation;
+					nrel_belonging;
+					nrel_equal_of_quantities;;
+			*);;
+	*);;

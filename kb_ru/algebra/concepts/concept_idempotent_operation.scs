@@ -1,0 +1,39 @@
+concept_idempotent_operation
+<= sc_node_not_relation;
+=> nrel_main_idtf:
+    [идемпотентная операция]
+    (* <- lang_ru;; *);
+    [idempotent operation]
+    (* <- lang_en;; *);
+=> nrel_idtf:
+    [операция, обладающая идемпотентностью]
+    (* <- lang_ru;; *);
+    [operation, that satisfies the law of idempotency]
+    (* <- lang_en;; *);;
+
+concept_idempotent_operation
+<= nrel_strict_inclusion:
+    concept_binary_operation;;
+
+concept_idempotent_operation
+<- rrel_key_sc_element:
+    Definition_of_idempotent_operation
+    (*
+        <- definition;;
+        => nrel_main_idtf:
+            [Определение понятия "идемпотентная операция"] 
+                (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            .concept_idempotent_operation_definition
+            (*
+                -> rrel_example:
+                    "file://htmls/concept_idempotent_operation/concept_idempotent_operation_definition.html"
+                        (* <- lang_ru;; *);;
+            *);;
+        <= nrel_using_constants:
+            ...
+            (* 
+                -> concept_binary_operation;
+                    idempotence;;
+            *);;
+    *);;
