@@ -1,0 +1,39 @@
+concept_groupoid
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [группоид]
+    (* <- lang_ru;; *);
+    [groupoid]
+    (* <- lang_en;; *);
+=> nrel_idtf:
+    [магма]
+    (* <- lang_ru;; *);
+    [magma]
+    (* <- lang_en;; *);;
+
+concept_groupoid
+<= nrel_strict_inclusion:
+    concept_algebra;;
+
+concept_groupoid
+<- rrel_key_sc_element:
+    Definition_of_groupoid
+    (*
+        <- definition;;
+        => nrel_main_idtf:
+            [Определение понятия "группоид"] 
+                (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            .concept_groupoid_group_definition
+            (*
+                -> rrel_example:
+                    "file://htmls/concept_groupoid/concept_groupoid_definition.html"
+                        (* <- lang_ru;; *);;
+            *);;
+        <= nrel_using_constants:
+            ...
+            (* 
+                -> concept_group;
+                    concept_commutative_operation;;
+            *);;
+    *);;
