@@ -1,0 +1,60 @@
+concept_semiring_of_sets
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [полукольцо множество]
+    (* <- lang_ru;; *);
+    [semiring of sets]
+    (* <- lang_en;; *);;
+
+concept_semiring_of_sets
+<= nrel_strict_inclusion:
+    concept_semiring;;
+
+concept_semiring_of_sets
+=> nrel_signature:
+    ...
+    (*
+        -> nrel_intersection;
+           nrel_combination;;
+    *);
+=> nrel_type_of_algebraic_system:
+    ...
+    (*
+        <- pair_set;;
+        -> ...
+            (*
+                <- oriented_set;;
+                -> rrel_1: 2;
+                   rrel_2: 2;;       
+            *);;
+        -> ...
+            (*
+                <- empty_set;;
+            *);;
+    *);;
+
+concept_semiring_of_sets
+<- rrel_key_sc_element:
+    Definition_of_semiring_of_sets
+    (*
+        <- definition;;
+        => nrel_main_idtf:
+            [Определение понятия "полукольцо множеств"] 
+                (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            .concept_semiring_of_sets_definition
+            (*
+                -> rrel_example:
+                    "file://htmls/concept_semiring_of_sets/concept_semiring_of_sets_definition.html"
+                        (* <- lang_ru;; *);;
+            *);;
+        <= nrel_using_constants:
+            ...
+            (* 
+                -> set_of_sets;
+                    nrel_closed_set;
+                    nrel_intersection;
+                    nrel_combination;
+                    nrel_pairwise_non_intersecting_sets;;
+            *);;
+    *);;
