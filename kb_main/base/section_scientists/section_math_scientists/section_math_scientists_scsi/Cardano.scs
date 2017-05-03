@@ -1,0 +1,64 @@
+Cardano
+	
+	=> nrel_main_idtf: 
+		[Джероламо (Джироламо, Иероним) Кардано] (* <- lang_ru;; *);
+		[Gerolamo (Girolamo, Jerome) Cardano] (* <- lang_en;; *);
+	=> nrel_main_idtf: 
+		[Кардано] (* <- lang_ru;; *);
+		[Cardano] (* <- lang_en;; *);
+	<- concept_scientist;
+
+	<=nrel_author: formula_Cardano
+	(*
+			=> nrel_main_idtf:
+				[Формула Кардано]
+					(*
+						<-lang_ru;;
+					*);
+				[Cardano's Formula]
+					(*
+						<-lang_en;;
+					*);;
+			<- concept;;
+	*);
+=>nrel_place_of_birth: Pavia
+		(*
+			=> nrel_main_idtf:
+				[Павия, Италия]
+					(*
+						<-lang_ru;;
+					*);;
+			*);
+		=>nrel_year_birth: 1501
+		(*
+			<- number;;
+			*);
+		=>nrel_year_death:1576
+		(*
+			<- number;;
+			*);
+		=>nrel_years_life: ...
+		(*
+		<= nrel_combination: ...
+		(*
+			-> 1501; 1576;;
+		*);;
+		*);
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://htmls/Cardano.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/Cardano.jpeg"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;

@@ -45,9 +45,9 @@ section_subject_domain_of_sets
 		section_fuzzy_sets
 		(*
 		=> nrel_section_base_order: 
-			section_scientists_of_set_theory;;
+			section_scientists;;
 		*);
-		section_scientists_of_set_theory
+		section_scientists
 		(*
 		=> nrel_section_base_order: 
 			section_paradoxes_of_set_theory;;

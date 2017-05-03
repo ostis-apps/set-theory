@@ -1,0 +1,79 @@
+Cauchy
+	=> nrel_main_idtf: 
+		[Огюсте́н Луи́ Коши́] (* <- lang_ru;; *);
+		[Augustin Louis Cauchy] (* <- lang_en;; *);
+		=> nrel_idtf: 
+		[Коши] (* <- lang_ru;; *);
+		[Cauchy] (* <- lang_en;; *);
+	<- concept_scientist;
+
+	<= nrel_author: Cauchy_task
+	(*
+		=> nrel_main_idtf:
+				[Задача Коши](*<-lang_ru;;*);
+				[The Cauchy problem](*<-lang_en;;*);;
+	*);
+
+	<= nrel_author: concept_radius_of_convergence
+	(*
+		=> nrel_main_idtf:
+				[Понятие радиуса сходимости]
+					(*
+						<-lang_ru;;
+					*);
+				[The concept of the radius of convergence]
+					(*
+						<-lang_en;;
+					*);;
+			<- concept;;
+	*);	
+
+
+	<= nrel_author: proof_newton_leibniz
+	(*
+		=> nrel_main_idtf:
+				[Доказательство формулы Ньютона-Лейбница](*<-lang_ru;;*);
+				[Proof of the Newton-Leibniz formula](*<-lang_en;;*);;
+	*);	
+	=>nrel_place_of_birth: Paris
+		(*
+			=> nrel_main_idtf:
+				[Париж, Франция]
+					(*
+						<-lang_ru;;
+					*);;
+			*);
+		=>nrel_year_birth: 1789
+		(*
+			<- number;;
+			*);
+		=>nrel_year_death:1857
+		(*
+			<- number;;
+			*);
+		=>nrel_years_life: ...
+		(*
+		<= nrel_combination: ...
+		(*
+			-> 1789; 1857;;
+		*);;
+		*);	
+
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://htmls/Cauchy.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/Cauchy.jpg"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;

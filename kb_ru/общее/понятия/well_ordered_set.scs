@@ -12,14 +12,14 @@ concept_well_ordered_set
 <- rrel_key_sc_element:
 		Definition_of_concept_well_ordered_set
 	(*
-		<- definition;;
+		<- sc_explanation;;
 		<= nrel_sc_text_translation:
 			...
 			(*
 			-> rrel_example: [Вполне упорядоченным множеством называется линейно упорядоченное множество, такое, что в любом его непустом подмножестве есть минимальный элемент.] (* <-lang_ru;; *);;  
 			*);;
 
-<= nrel_using_constants:
+	<= nrel_using_constants:
 		...
 		(* 
 		-> linearly_ordered_set;;
@@ -31,8 +31,9 @@ concept_well_ordered_set
 Definition_of_concept_well_ordered_set
 => nrel_main_idtf:
 	[Определение понятия "вполне упорядоченное множество"]
-		(* <- lang_ru;; *);;
+	(* <- lang_ru;;	*);;
 
+concept_well_ordered_set <- cortege;;
 
 concept_well_ordered_set
 <- rrel_key_sc_element:

@@ -1,0 +1,73 @@
+Lagrange
+	
+	=> nrel_main_idtf: 
+		[Жозеф Луи Лагранж] (* <- lang_ru;; *);
+		[Joseph Louis Lagrange] (* <- lang_en;; *);
+	=> nrel_idtf: 
+		[Лагранж] (* <- lang_ru;; *);
+		[Lagrange] (* <- lang_en;; *);	
+	<- concept_scientist;
+
+	<= nrel_author: Lagrange_points
+	(*
+			=> nrel_main_idtf:
+				[Точки Лагранжа](*<-lang_ru;;*);
+				[The Lagrange points](*<-lang_en;;*);;
+	*);
+
+	<= nrel_author: Lagrange_interpolation_polynominal
+	(*
+			=> nrel_main_idtf:
+				[Интерполяционный многочлен Лагранжа](*<-lang_ru;;*);
+				[The Lagrange interpolation polynomial](*<-lang_en;;*);;		
+	*);
+
+	<= nrel_author: Lagrange_method
+	(*
+			=> nrel_main_idtf:
+				[Метод множителей Лагранжа](*<-lang_ru;;*);
+				[Method of Lagrange multipliers](*<-lang_en;;*);;
+	*);
+	=>nrel_place_of_birth: Torino
+		(*
+			=> nrel_main_idtf:
+				[Турин, Италия]
+					(*
+						<-lang_ru;;
+					*);;
+			*);
+		=>nrel_year_birth: 1736
+		(*
+			<- number;;
+			*);
+		=>nrel_year_death:1813
+		(*
+			<- number;;
+			*);
+		=>nrel_years_life: ...
+		(*
+		<= nrel_combination: ...
+		(*
+			-> 1736; 1813;;
+		*);;
+		*);
+
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://htmls/Lagrange.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/Lagrange.jpg"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+	

@@ -1,0 +1,39 @@
+Kronecker
+	=> nrel_main_idtf: 
+		[Леопо́льд Кро́некер] (* <- lang_ru;; *);
+		[Leopold Kronecker] (* <- lang_en;; *);
+	<- concept_scientist;
+
+	<= nrel_author: sign_Kronecker
+	(*
+		=> nrel_main_idtf: 
+		[Символ Кро́некера] (* <- lang_ru;; *);
+		[Leopold Kronecker] (* <- lang_en;; *);;
+	*);
+
+	<= nrel_author: composition_Kronecker
+	(*
+		=> nrel_main_idtf: 
+		[Произведение Кро́некера] (* <- lang_ru;; *);
+		[Kronecker's composition] (* <- lang_en;; *);;
+	*);
+
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://htmls/Kronecker.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/Kronecker.jpg"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+	

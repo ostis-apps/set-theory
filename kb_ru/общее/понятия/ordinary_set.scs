@@ -21,8 +21,6 @@ ordinary_set
 		nrel_inclusion;
 			set;;
 		*);;
-
-
 	*);;
 
 /*nrel_graph

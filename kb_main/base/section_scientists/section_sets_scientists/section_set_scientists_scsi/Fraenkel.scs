@@ -1,0 +1,55 @@
+Fraenkel
+	
+	=> nrel_main_idtf: 
+		[Абрахам Галеви (Адольф) Френкель] (* <- lang_ru;; *);
+		[Abraham Halevi (Adolf) Fraenkel] (* <- lang_en;; *);
+
+	=> nrel_idtf: 
+		[Френкель] (* <- lang_ru;; *);
+		[Fraenkel] (* <- lang_en;; *);
+	<- concept_scientist;
+
+	<=nrel_author: set_axiom;
+	=>nrel_place_of_birth: Munich
+		(*
+			=> nrel_main_idtf:
+				[Мюнхен, Германия]
+					(*
+						<-lang_ru;;
+					*);;
+			*);
+		=>nrel_year_birth: 1891
+		(*
+			<- number;;
+			*);
+		=>nrel_year_death:1965
+		(*
+			<- number;;
+			*);
+		=>nrel_years_life: ...
+		(*
+		<= nrel_combination: ...
+		(*
+			-> 1891; 1965;;
+		*);;
+		*);
+
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://htmls/Fraenkel_text_ru.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/Abraham_Fraenkel.jpg"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+	

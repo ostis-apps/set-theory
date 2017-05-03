@@ -1,0 +1,79 @@
+Hausdorff
+	=> nrel_main_idtf: 
+		[Феликс Хаусдорф] (* <- lang_ru;; *);
+		[Felix Hausdorff] (* <- lang_en;; *);
+	=> nrel_idtf: 
+		[Хаусдорф] (* <- lang_ru;; *);
+		[Hausdorff] (* <- lang_en;; *);
+	<- concept_scientist;
+		
+	<= nrel_author: concept_Hausdorf_space
+		(*
+			=> nrel_main_idtf:
+				[Понятие Хаусдорфового пространства]
+					(*
+						<- lang_ru;;
+					*);
+				[The concept of Hausdorff space]
+					(*
+						<- lang_en;;
+					*);;
+			<- concept;;
+		*);
+	<= nrel_author: partial_order_set;
+	<=nrel_author: paradox_Hausdorff;
+	<=nrel_author: concept_Hausdorff_dimension
+		(*
+			=> nrel_main_idtf:
+				[Понятие Хаусдорфовой размерности]
+					(*
+						<-lang_ru;;
+					*);
+				[The concept of Hausdorff Dimension]
+					(*
+						<-lang_en;;
+					*);;
+			<- concept;;
+		*);
+			=>nrel_place_of_birth: Wrocslaw
+		(*
+			=> nrel_main_idtf:
+				[Вроцслав, Польша]
+					(*
+						<-lang_ru;;
+					*);;
+			*);
+		=>nrel_year_birth: 1868
+		(*
+			<- number;;
+			*);
+		=>nrel_year_death:1942
+		(*
+			<- number;;
+			*);
+		=>nrel_years_life: ...
+		(*
+		<= nrel_combination: ...
+		(*
+			-> 1861; 1945;;
+		*);;
+		*);
+
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://htmls/Hausdorff_text_ru.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/Hausdorff.jpg"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;

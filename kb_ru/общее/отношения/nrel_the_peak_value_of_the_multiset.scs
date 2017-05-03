@@ -19,7 +19,7 @@ nrel_the_peak_value_of_the_multiset
 		(* <- lang_en;;	*);;	
 
 nrel_the_peak_value_of_the_multiset
-=>nrel_first_domain: natural_number;
+=>nrel_first_domain: number;
 =>nrel_second_domain: multiset;;
 
 nrel_the_peak_value_of_the_multiset
@@ -36,7 +36,7 @@ nrel_the_peak_value_of_the_multiset
 		...
 		 (* 
 		       ->multiset;;
-			->nrel_element_of_set;;
+			->element_of_set;;
 			->nrel_the_multiplicity_of_the_element;;
 		*);;
 		*);
