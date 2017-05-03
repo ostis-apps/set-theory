@@ -24,7 +24,7 @@ concept_groupoid
             [Определение понятия "группоид"] 
                 (* <- lang_ru;; *);;
         <= nrel_sc_text_translation:
-            .concept_groupoid_group_definition
+            .concept_groupoid_definition
             (*
                 -> rrel_example:
                     "file://htmls/concept_groupoid/concept_groupoid_definition.html"
@@ -33,7 +33,8 @@ concept_groupoid
         <= nrel_using_constants:
             ...
             (* 
-                -> concept_group;
-                    concept_commutative_operation;;
+                -> concept_algebra;
+                    nrel_signature;
+                    concept_binary_operation;;
             *);;
     *);;

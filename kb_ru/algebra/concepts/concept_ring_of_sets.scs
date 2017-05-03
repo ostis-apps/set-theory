@@ -51,10 +51,10 @@ concept_ring_of_sets
 		=> nrel_using_constants:
 			...
 			(*
-				-> set;
-				element_of_set;
-				nrel_intersection;
-				nrel_symmetric_sets_difference;;
+				-> set_of_sets;
+					nrel_closed_set;
+					nrel_intersection;
+					nrel_symmetric_sets_difference;;
 			*);;
 	*);;
 
