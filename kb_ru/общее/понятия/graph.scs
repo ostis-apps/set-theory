@@ -14,7 +14,12 @@ graph
 		(* 
 		-> rrel_example:"file://htmls/graph.html" (* <-lang_ru;; *);;
 		*);;
-	
+	<= nrel_using_constants:
+		...
+		(* 
+		-> set;;
+		-> pair_set;;
+		*);;
 
 	*);;
 

@@ -1,0 +1,66 @@
+Cantor
+
+	=> nrel_main_idtf: 
+		[Георг Кантор] (* <- lang_ru;; *);
+		[ Georg Ferdinand Ludwig Philipp Cantor] (* <- lang_en;; *);
+	=> nrel_idtf:
+		[Ка́нтор] (* <- lang_ru;; *);
+		[Cantor] (* <- lang_en;; *);
+	<- concept_scientist;
+
+	<=nrel_author: set
+	(*
+			=> nrel_main_idtf:
+				[Понятие Канторовского множества]
+					(*
+						<- lang_ru;;
+					*);
+				[The concept of Cantor's set]
+					(*
+						<- lang_en;;
+					*);;
+			<- concept;;
+	*);
+	=>nrel_place_of_birth: SanktPeterburg
+		(*
+			=> nrel_main_idtf:
+				[Санкт-Петербург, РФ]
+					(*
+						<-lang_ru;;
+					*);;
+			*);
+		=>nrel_year_birth: 1845
+		(*
+			<- number;;
+			*);
+		=>nrel_year_death:1918
+		(*
+			<- number;;
+			*);
+		=>nrel_years_life: ...
+		(*
+		<= nrel_combination: ...
+		(*
+			-> 1845; 1918;;
+		*);;
+		*);
+
+
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://htmls/Georg_cantor_text_ru.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/Georg_cantor.jpg"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;

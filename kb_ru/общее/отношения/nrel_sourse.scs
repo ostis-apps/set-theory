@@ -4,3 +4,4 @@ nrel_sourse
 => nrel_main_idtf: 
 	[источник*] (* <- lang_ru;; *);
 	[sourse*] (* <- lang_en;; *);;
+

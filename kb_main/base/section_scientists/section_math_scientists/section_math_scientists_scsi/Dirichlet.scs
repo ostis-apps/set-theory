@@ -1,0 +1,70 @@
+Dirichlet
+	
+	=> nrel_main_idtf: 
+		[Ио́ганн Пе́тер Гу́став Лежён Дирихле] (* <- lang_ru;; *);
+		[Johann Peter Gustav Lejeune Dirichlet] (* <- lang_en;; *);
+	<- concept_scientist;
+
+	<= nrel_author: conditional_convergence
+	(*
+		=> nrel_main_idtf:
+				[Понятие условной сходимости]
+					(*
+						<-lang_ru;;
+					*);
+				[Conditional convergence]
+					(*
+						<-lang_en;;
+					*);;
+			<- concept;;
+	*);
+
+	<= nrel_author: Dirichlet_principle;
+
+	<= nrel_author: Dirichlet_theorem
+	(*
+		=> nrel_main_idtf:
+				[Теорема Дирихле]
+					(*
+						<-lang_ru;;
+					*);
+				[Dirichlet's theorem]
+					(*
+						<-lang_en;;
+					*);;
+			<- rrel_theorem;;
+	*);	
+
+	<= nrel_author: Dirichlet_sign
+	(*
+		=> nrel_main_idtf:
+				[Признак Дирихле]
+					(*
+						<-lang_ru;;
+					*);
+				[Sign of Dirichlet]
+					(*
+						<-lang_en;;
+					*);;
+			<- rrel_theorem;;
+	*);	
+
+
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://htmls/Dirichlet.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/Dirichlet.jpg"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;

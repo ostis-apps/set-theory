@@ -14,8 +14,6 @@ predicate
 		(* 
 		-> rrel_example:"file://htmls/predicate.html" (* <-lang_ru;; *);;
 		*);;
-	
-
 	*);
 <- rrel_key_sc_element:
 	...(* 
@@ -25,8 +23,6 @@ predicate
 		(* 
 		-> rrel_example:[выссказывание, содержащее значение 0 или 1 в зависимости от значений переменных] (* <-lang_ru;; *);;
 		*);;
-	
-
 	*);;
 
 
@@ -34,4 +30,13 @@ Definition_of_predicate
 => nrel_main_idtf:
 	[Определение понятия "предикат"]
 	(* <- lang_ru;;	*);;
+predicate
+<= nrel_using_constants:
+		...
+		(* 
+		-> function;;
+		-> set;;
+		-> element_of_set;;
+		*);;
+
 

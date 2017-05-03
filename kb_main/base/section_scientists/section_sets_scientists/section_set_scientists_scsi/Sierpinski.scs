@@ -1,0 +1,124 @@
+Sierpinski
+	
+	=> nrel_main_idtf: 
+		[Вацлав Франциск Серпинский] (* <- lang_ru;; *);
+		[Wacław Franciszek Sierpiński] (* <- lang_en;; *);
+		=> nrel_idtf: 
+		[Серпинский] (* <- lang_ru;; *);
+		[Sierpiński] (* <- lang_en;; *);
+	<- concept_scientist;
+
+	<= nrel_author: concept_Sierpinski_number
+	(*
+			=> nrel_main_idtf:
+				[Понятие чисел Серпи́нского]
+					(*
+						<-lang_ru;;
+					*);
+				[The concept of Sierpinski's numbers]
+					(*
+						<-lang_en;;
+					*);;
+			<- concept;;		
+	*);
+
+	<= nrel_author: concept_Sierpinski_curve
+	(*
+			=> nrel_main_idtf:
+				[Понятие кривой Серпи́нского]
+					(*
+						<-lang_ru;;
+					*);
+				[The concept of Sierpinski's curve]
+					(*
+						<-lang_en;;
+					*);;
+			<- concept;;		
+	*);
+	
+	<= nrel_author: concept_Sierpinski_carpet
+	(*
+			=> nrel_main_idtf:
+				[Понятие ковра Серпи́нского]
+					(*
+						<-lang_ru;;
+					*);
+				[The concept of Sierpinski's carpet]
+					(*
+						<-lang_en;;
+					*);;
+			<- concept;;		
+	*);
+
+	<= nrel_author: concept_Sierpinski_triangle
+	(*
+			=> nrel_main_idtf:
+				[Понятие треугольника Серпи́нского]
+					(*
+						<-lang_ru;;
+					*);
+				[The concept of Sierpinski's triangle]
+					(*
+						<-lang_en;;
+					*);;
+			<- concept;;		
+	*);
+
+	<= nrel_author: concept_Sierpinski_space
+	(*
+			=> nrel_main_idtf:
+				[Понятие пространства Серпи́нского]
+					(*
+						<-lang_ru;;
+					*);
+				[The concept of Sierpinski's space]
+					(*
+						<-lang_en;;
+					*);;
+			<- concept;;		
+	*);
+
+
+=>nrel_place_of_birth: Warsaw
+		(*
+			=> nrel_main_idtf:
+				[Варшава, Польша]
+					(*
+						<-lang_ru;;
+					*);;
+			*);
+		=>nrel_year_birth: 1882
+		(*
+			<- number;;
+			*);
+		=>nrel_year_death:1969
+		(*
+			<- number;;
+			*);
+		=>nrel_years_life: ...
+		(*
+		<= nrel_combination: ...
+		(*
+			-> 1882; 1969;;
+		*);;
+		*);
+
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://htmls/Sierpinski_text_ru.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/Sierpinski.jpg"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+	

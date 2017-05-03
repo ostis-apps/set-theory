@@ -1,0 +1,67 @@
+Ezra
+	
+	=> nrel_main_idtf: 
+		[Авраам бен Меир ибн Эзра] (* <- lang_ru;; *);
+		[Abraham ben Meir ibn Ezra] (* <- lang_en;; *);
+	=> nrel_idtf: 
+		[Эзра] (* <- lang_ru;; *);
+		[Ezra] (* <- lang_en;; *);
+	<- concept_scientist;
+
+	<= nrel_author: concept_binomial_coefficient
+	(*
+		=> nrel_main_idtf:
+				[Понятие биномиального коэффициента]
+					(*
+						<-lang_ru;;
+					*);
+				[The concept of binomial coefficient]
+					(*
+						<-lang_en;;
+					*);;
+			<- concept;;
+	*);
+
+	=>nrel_place_of_birth: Tudela
+		(*
+			=> nrel_main_idtf:
+				[Тудела, Испания]
+					(*
+						<-lang_ru;;
+					*);;
+			*);
+		=>nrel_year_birth: 1089
+		(*
+			<- number;;
+			*);
+		=>nrel_year_death:1164
+		(*
+			<- number;;
+			*);
+		=>nrel_years_life: ...
+		(*
+		<= nrel_combination: ...
+		(*
+			-> 1089; 1154;;
+		*);;
+		*);
+
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://htmls/Ezra.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/Ezra.jpg"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+	

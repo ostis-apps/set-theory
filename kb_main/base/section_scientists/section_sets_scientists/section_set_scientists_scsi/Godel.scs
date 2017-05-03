@@ -1,0 +1,65 @@
+Godel
+	=> nrel_main_idtf: 
+		[Курт Фридрих Гёдель] (* <- lang_ru;; *);
+		[Kurt Friedrich Gödel] (* <- lang_en;; *);
+	=> nrel_idtf: 
+		[Гёдель] (* <- lang_ru;; *);
+		[Gödel] (* <- lang_en;; *);
+	<- concept_scientist;
+
+	<=nrel_author: concept_Godel_theorem
+	(*
+		=> nrel_main_idtf:
+			[Теорема Гёделя]
+				(*
+					<- lang_ru;;
+				*);
+			[Godel's theorem]
+				(*
+					<- lang_en;;
+				*);;
+		<- rrel_theorem;;		
+	*);
+	=>nrel_place_of_birth: Brunn
+		(*
+			=> nrel_main_idtf:
+				[Брюнн, Австро-Венгрия]
+					(*
+						<-lang_ru;;
+					*);;
+			*);
+		=>nrel_year_birth: 1906
+		(*
+			<- number;;
+			*);
+		=>nrel_year_death:1978
+		(*
+			<- number;;
+			*);
+		=>nrel_years_life: ...
+		(*
+		<= nrel_combination: ...
+		(*
+			-> 1906; 1978;;
+		*);;
+		*);
+
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://htmls/kurt_gödel_text_ru.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/kurt_gödel.jpg"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+		
