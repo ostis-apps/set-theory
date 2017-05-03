@@ -12,7 +12,10 @@ concept_boolean_algebra_of_sets
     (* <- lang_en;; *);;
 
 concept_boolean_algebra_of_sets
-<- concept_algebra;
+<= nrel_strict_inclusion:
+    concept_algebra;;
+
+concept_boolean_algebra_of_sets
 => nrel_signature:
     ...
     (*

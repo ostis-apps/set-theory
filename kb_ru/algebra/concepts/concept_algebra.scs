@@ -1,5 +1,5 @@
 concept_algebra
-<= sc_node_not_relation;
+<- sc_node_not_relation;
 => nrel_main_idtf:
     [алгебра]
     (* <- lang_ru;; *);
@@ -10,6 +10,10 @@ concept_algebra
     (* <- lang_ru;; *);
     [алгебраическая система с пустым множеством отношений]
     (* <- lang_ru;; *);;
+
+concept_algebra
+<= nrel_strict_inclusion:
+    concept_algebraic_system;;
 
 concept_algebra
 <- rrel_key_sc_element:

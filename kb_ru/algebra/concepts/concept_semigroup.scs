@@ -1,5 +1,5 @@
 concept_semigroup
-<= sc_node_not_relation;
+<- sc_node_not_relation;
 => nrel_main_idtf:
     [полугруппа]
     (* <- lang_ru;; *);
@@ -13,7 +13,7 @@ concept_semigroup
 
 concept_semigroup
 <= nrel_strict_inclusion:
-    concept_algebra;;
+    concept_groupoid;;
 
 concept_semigroup
 -> rrel_example:

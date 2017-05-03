@@ -13,7 +13,6 @@ concept_algebraic_system
 
 concept_algebraic_system
 => nrel_strict_inclusion:
-    concept_algebra;
     set;;
 
 concept_algebraic_system

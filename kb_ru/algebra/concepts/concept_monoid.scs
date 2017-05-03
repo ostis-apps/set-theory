@@ -1,5 +1,5 @@
 concept_monoid
-<= sc_node_not_relation;
+<- sc_node_not_relation;
 => nrel_main_idtf:
     [моноид]
     (* <- lang_ru;; *);
