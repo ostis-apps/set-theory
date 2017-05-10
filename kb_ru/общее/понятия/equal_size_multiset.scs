@@ -19,4 +19,10 @@ Definition_of_equal_size_multiset
 => nrel_main_idtf:
 	[Определение понятия "равноразмерность мультимножества"]
 	(* <- lang_ru;;	*);;
-
+equal_size_multiset
+	<= nrel_using_constants:
+		...
+		(* 
+		-> nrel_dimension_set;;
+		-> multiset;;
+		*);;

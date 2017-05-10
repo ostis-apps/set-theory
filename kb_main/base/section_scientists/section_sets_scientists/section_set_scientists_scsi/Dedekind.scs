@@ -1,0 +1,94 @@
+Dedekind
+	
+	=> nrel_main_idtf: 
+		[Ю́лиус Вильгельм Рихард Дедекинд] (* <- lang_ru;; *);
+		[ Julius Wilhelm Richard Dedekind] (* <- lang_en;; *);
+	=> nrel_idtf: 
+		[Дедекинд] (* <- lang_ru;; *);
+		[Dedekind] (* <- lang_en;; *);
+	<- concept_scientist;
+
+	<= nrel_author: concept_ring
+	(*
+			=> nrel_main_idtf:
+				[Понятие Кольцо]
+					(*
+						<-lang_ru;;
+					*);
+				[The concept of Ring]
+					(*
+						<-lang_en;;
+					*);;
+			<- concept;;		
+	*);
+
+	<= nrel_author: concept_module_over_ring
+	(*
+			=> nrel_main_idtf:
+				[Понятие модуля над кольцом]
+					(*
+						<-lang_ru;;
+					*);
+				[Concept of a module over a ring]
+					(*
+						<-lang_en;;
+					*);;
+			<- concept;;		
+	*);
+
+	<= nrel_author: concept_ideal
+	(*
+			=> nrel_main_idtf:
+				[Понятие идеала]
+					(*
+						<-lang_ru;;
+					*);
+				[Concept of a ideal]
+					(*
+						<-lang_en;;
+					*);;
+			<- concept;;		
+	*);
+	=>nrel_place_of_birth: Braunschweig
+		(*
+			=> nrel_main_idtf:
+				[Брауншвейг, Германия]
+					(*
+						<-lang_ru;;
+					*);;
+			*);
+		=>nrel_year_birth: 1831
+		(*
+			<- number;;
+			*);
+		=>nrel_year_death:1916
+		(*
+			<- number;;
+			*);
+		=>nrel_years_life: ...
+		(*
+		<= nrel_combination: ...
+		(*
+			-> 1831; 1916;;
+		*);;
+		*);
+
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://htmls/Dedekind_text_ru.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/Dedekind.jpg"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+	

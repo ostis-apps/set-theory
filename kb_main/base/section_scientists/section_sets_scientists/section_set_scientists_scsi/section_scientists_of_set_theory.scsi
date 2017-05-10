@@ -1,0 +1,14 @@
+set_scientists
+=> nrel_main_idtf: 
+	[Учёные, которые внесли вклад в развитие теории множеств] (* <- lang_ru;; *);
+	[Scientists of set theory] (* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+	Zermelo;
+	Fraenkel;
+	Godel;
+	Cantor;
+	Dedekind;
+	Sierpinski;
+	Hausdorff;
+	Mirimanov;;

@@ -1,0 +1,26 @@
+Russell
+=> nrel_main_idtf: 
+		[Бе́ртран А́ртур Уи́льям Ра́ссел́] (* <- lang_ru;; *);
+		[Bertrand Arthur William Russell] (* <- lang_en;; *);
+	<- concept_scientist;
+<= nrel_author: paradox_Tristram_shandy;
+
+<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://htmls/Russell.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/Russell.jpg"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+

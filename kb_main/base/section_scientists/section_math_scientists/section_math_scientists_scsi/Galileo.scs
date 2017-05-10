@@ -1,0 +1,28 @@
+Galileo
+	
+	=> nrel_main_idtf: 
+		[Галиле́о Галиле́й] (* <- lang_ru;; *);
+		[Galileo Galilei] (* <- lang_en;; *);
+	<- concept_scientist;
+
+	<= nrel_author: paradox_Galileo;
+
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://htmls/Galileo.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/Galileo.jpg"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+	

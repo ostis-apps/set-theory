@@ -17,8 +17,12 @@ natural_number
 		(* 
 		-> rrel_example:"file://htmls/explanation_for_natural_number.html" (* <-lang_ru;; *);;
 		*);;
-	
-
+	<= nrel_using_constants:
+		...
+		(* 
+		-> subset;;
+		-> integer;;
+		*);;
 	*);;
 
 

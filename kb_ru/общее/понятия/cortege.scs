@@ -23,6 +23,9 @@ cortege
 		(* 
 		-> rrel_example: "file://htmls/cortege.html" (* <-lang_ru;; *);;
 		*);;
+	<= nrel_using_constants:
+		...
+			(* -> finite_set; element_of_set;; *);;
 	*);;
 
 Definition_of_cortege

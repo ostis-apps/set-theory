@@ -1,0 +1,54 @@
+Mirimanov
+	
+	=> nrel_main_idtf: 
+		[Дмитрий Семёнович Мириманов] (* <- lang_ru;; *);
+		[Dmitriy Mirimanov] (* <- lang_en;; *);
+	=> nrel_idtf: 
+		[Мириманов] (* <- lang_ru;; *);
+		[Mirimanov] (* <- lang_en;; *);
+	<- concept_scientist;
+
+	<= nrel_author: paradox_Mirimanova;
+		=>nrel_place_of_birth: Pereslavl
+		(*
+			=> nrel_main_idtf:
+				[Переславль-Залесский, Россия]
+					(*
+						<-lang_ru;;
+					*);;
+			*);
+		=>nrel_year_birth: 1861
+		(*
+			<- number;;
+			*);
+		=>nrel_year_death:1945
+		(*
+			<- number;;
+			*);
+		=>nrel_years_life: ...
+		(*
+		<= nrel_combination: ...
+		(*
+			-> 1861; 1945;;
+		*);;
+		*);
+
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://htmls/Mirimanov_text_ru.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/Mirimanov.jpg"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+		

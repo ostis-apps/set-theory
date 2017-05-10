@@ -1,0 +1,32 @@
+Taylor
+	=> nrel_main_idtf: 
+		[Брук Те́йлор] (* <- lang_ru;; *);
+		[Brook Taylor] (* <- lang_en;; *);
+	<- concept_scientist;
+
+	<= nrel_author: formula_Taylor
+	(*
+		=> nrel_main_idtf: 
+		[Формула Тейлора] (* <- lang_ru;; *);
+		[Taylor's formula] (* <- lang_en;; *);;
+	*);
+
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://htmls/Taylor.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+	/*<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/Taylor.jpg"
+				(*
+				<- lang_ru;;
+				*);;
+			*);*/
+	

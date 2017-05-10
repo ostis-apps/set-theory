@@ -1,0 +1,39 @@
+Riman
+	
+	=> nrel_main_idtf: 
+		[Георг Фридрих Бернхард Риман] (* <- lang_ru;; *);
+		[Georg Friedrich Bernhard Riemann] (* <- lang_en;; *);
+	<- concept_scientist;
+
+	<=nrel_author: Riemann_surface
+	(*
+			=> nrel_main_idtf:
+				[Понятие Римановых поверхностей]
+					(*
+						<-lang_ru;;
+					*);
+				[The concept of  the Riemann surface]
+					(*
+						<-lang_en;;
+					*);;
+			<- concept;;
+	*);
+
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://htmls/Riman.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/Riman.jpeg"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;

@@ -1,0 +1,35 @@
+Moore
+	
+	=> nrel_main_idtf: 
+		[Элиаким Гастингс Мур] (* <- lang_ru;; *);
+		[Eliakim Hastings Moore] (* <- lang_en;; *);
+	<- concept_scientist;
+
+	<= nrel_author: not_inverse_matrix
+	(*
+			=> nrel_main_idtf:
+				[Псевдообратная матрица]
+					(*
+						<-lang_ru;;
+					*);;
+			<- matrix;;		
+	*);
+
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://htmls/Moore.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/Moore.jpg"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
