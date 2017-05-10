@@ -1,0 +1,32 @@
+Dalamber
+	=> nrel_main_idtf: 
+		[Жан Леро́н Д’Аламбе́р] (* <- lang_ru;; *);
+		[Jean Le Rond D'Alembert] (* <- lang_en;; *);
+	<- concept_scientist;
+
+	<= nrel_author: sign_Dahlamber
+	(*
+		=> nrel_main_idtf: 
+		[Признак сходимости Д’Аламбера] (* <- lang_ru;; *);
+		[The Dahlamber Convergence Sign] (* <- lang_en;; *);;
+	*);
+
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://htmls/Dalamber.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/Dalamber.jpg"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+	

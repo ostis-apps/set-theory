@@ -19,8 +19,11 @@ nrel_multiset_addition
 		(* 
 		-> rrel_example: "file://htmls/nrel_multiset_addition.html" (* <-lang_ru;; *);;
 		*);;
-
-
+	<= nrel_using_constants:
+		...
+		 (* 
+		    ->multiset;;
+			*);;
 	*);;
 
 Definition_of_nrel_multiset_addition
@@ -30,3 +33,6 @@ Definition_of_nrel_multiset_addition
 	[Definition "multiset addition*"]
 	(* <- lang_en;;	*);;
 
+nrel_multiset_addition
+=>nrel_first_domain: multiset;
+=>nrel_second_domain: multiset;;

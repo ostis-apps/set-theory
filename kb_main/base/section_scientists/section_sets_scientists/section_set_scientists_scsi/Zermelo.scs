@@ -1,0 +1,49 @@
+Zermelo
+	=> nrel_main_idtf: 
+		[Эрнст Фридрих Фердинанд Цермело] (* <- lang_ru;; *);
+		[Ernst Friedrich Ferdinand Zermelo] (* <- lang_en;; *);
+	<- concept_scientist;
+
+		<=nrel_author: axiom_of_choice;
+			=>nrel_place_of_birth: Berlin
+		(*
+			=> nrel_main_idtf:
+				[Берлин, Германия]
+					(*
+						<-lang_ru;;
+					*);;
+			*);
+		=>nrel_year_birth: 1871
+		(*
+			<- number;;
+			*);
+		=>nrel_year_death:1953
+		(*
+			<- number;;
+			*);
+		=>nrel_years_life: ...
+		(*
+		<= nrel_combination: ...
+		(*
+			-> 1871; 1953;;
+		*);;
+		*);
+
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://htmls/Zermelo_text_ru.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/Ernst_Zermelo.jpg"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;

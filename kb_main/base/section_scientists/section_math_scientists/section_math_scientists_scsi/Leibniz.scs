@@ -1,0 +1,49 @@
+Leibniz
+	=> nrel_main_idtf: 
+		[Готфрид Вильгельм Лейбниц] (* <- lang_ru;; *);
+		[Gottfried Wilhelm Leibniz] (* <- lang_en;; *);
+		<- concept_scientist;
+
+		<= nrel_author: combination_theory;
+			=>nrel_place_of_birth: Torino
+		(*
+			=> nrel_main_idtf:
+				[Турин, Италия]
+					(*
+						<-lang_ru;;
+					*);;
+			*);
+		=>nrel_year_birth: 1736
+		(*
+			<- number;;
+			*);
+		=>nrel_year_death:1813
+		(*
+			<- number;;
+			*);
+		=>nrel_years_life: ...
+		(*
+		<= nrel_combination: ...
+		(*
+			-> 1736; 1813;;
+		*);;
+		*);
+
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://htmls/Leibniz.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/Leibniz.jpg"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;

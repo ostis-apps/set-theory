@@ -1,0 +1,122 @@
+Euler
+	
+	=> nrel_main_idtf: 
+		[Леонард Э́йлер] (* <- lang_ru;; *);
+		[Leonhard Euler] (* <- lang_en;; *);
+		=> nrel_idtf: 
+		[Э́йлер] (* <- lang_ru;; *);
+		[Euler] (* <- lang_en;; *);
+		<- concept_scientist;
+
+		<= nrel_author: formula_Eulera
+		(*
+			=> nrel_main_idtf:
+				[Понятие формулы Эйлера]
+					(*
+						<-lang_ru;;
+					*);
+				[The concept of Euler's formula]
+					(*
+						<-lang_en;;
+					*);;
+			<- concept;;
+		*);
+
+		=>nrel_place_of_birth: Basel
+		(*
+			=> nrel_main_idtf:
+				[Базель, Швейцария]
+					(*
+						<-lang_ru;;
+					*);;
+			*);
+		=>nrel_year_birth: 1707
+		(*
+			<- number;;
+			*);
+		=>nrel_year_death:1783
+		(*
+			<- number;;
+			*);
+		=>nrel_years_life: ...
+		(*
+		<= nrel_combination: ...
+		(*
+			-> 1707; 1783;;
+		*);;
+		*);
+
+
+		<= nrel_author: number_theory
+		(*
+			=> nrel_main_idtf:
+				[Понятие теории чисел]
+					(*
+						<-lang_ru;;
+					*);
+				[The concept of number theory]
+					(*
+						<-lang_en;;
+					*);;
+			<- concept;;
+		*);
+
+		<= nrel_author: formula_Eulera
+		(*
+			=> nrel_main_idtf:
+				[Понятие формулы Эйлера]
+					(*
+						<-lang_ru;;
+					*);
+				[The concept of Euler's formula]
+					(*
+						<-lang_en;;
+					*);;
+			<- concept;;
+		*);
+
+		<= nrel_author: function_Eulera
+		(*
+			=> nrel_main_idtf:
+				[Понятие функции Эйлера]
+					(*
+						<-lang_ru;;
+					*);
+				[The concept of Euler's function]
+					(*
+						<-lang_en;;
+					*);;
+			<- concept;;
+		*);
+		<= nrel_author: theorem_Eulera
+		(*
+			=> nrel_main_idtf:
+				[Понятие теоремы Эйлера]
+					(*
+						<-lang_ru;;
+					*);
+				[The concept of Euler's theorem]
+					(*
+						<-lang_en;;
+					*);;
+			<- concept;;
+		*);
+
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://htmls/Euler.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/Euler.jpg"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
