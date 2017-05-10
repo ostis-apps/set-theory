@@ -13,7 +13,7 @@ soft_set
 <- rrel_key_sc_element:
 	Definition_of_soft_set
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -22,9 +22,8 @@ soft_set
 	<= nrel_using_constants:
 		...
 		(* 
-		-> cortege;
+		-> oriented_set;
 			concept_universum;
-			element_of_set;
 			set_of_accessories;
 			set;;
 		*);;
@@ -36,7 +35,7 @@ soft_set
 <- rrel_key_sc_element:
 	Statement_of_soft_set
 	(* 
-	<- sc_explanation;;
+	<- statement;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -46,7 +45,8 @@ soft_set
 		...
 		(* 
 		-> fuzzy_set;
-			singleton;
+			singletone;
+			set_of_accessories;
 			set;;
 		*);;
 

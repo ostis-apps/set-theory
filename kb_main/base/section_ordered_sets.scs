@@ -1,7 +1,7 @@
 section_ordered_sets
 	<= nrel_section_decomposition:
 	{
-		section_cortege
+		section_oriented_set
 		(*
 		=> nrel_section_base_order: 
 			section_projection_operation;;

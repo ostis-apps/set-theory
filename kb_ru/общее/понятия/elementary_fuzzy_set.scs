@@ -5,10 +5,13 @@ elementary_fuzzy_set
 	(* <- lang_ru;;	*);;
 
 elementary_fuzzy_set
+	<= nrel_inclusion: fuzzy_set;;
+
+elementary_fuzzy_set
 <- rrel_key_sc_element:
 	Definition_of_elementary_fuzzy_set
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -19,7 +22,7 @@ elementary_fuzzy_set
 			(*
              -> set; 
                 fuzzy_set;
-                univresal_set;;
+                concept_universum;;
             *);;
 	
 	*);;
@@ -33,9 +36,9 @@ Definition_of_elementary_fuzzy_set
 elementary_fuzzy_set
 <- rrel_key_sc_element:
 
-	statement_elementary_fuzzy_set_intersection_union_negation
+	statement_elementary_fuzzy_set_intersection_combination_negation
 	(* 
-		<- sc_explanation;;
+		<- statement;;
 		<= nrel_sc_text_translation:
 			...
 			(* 
@@ -48,10 +51,9 @@ elementary_fuzzy_set
 			(*
              -> nrel_fuzzy_set_intersection; 
                 fuzzy_set;
-                univresal_set;
-                nrel_fuzzy_set_union;
-                nrel_fuzzy_set_negation;;
+                concept_universum;
+                nrel_fuzzy_set_combination;
+                nrel_fuzzy_set_complement;;
             *);;
-
 	*);;
 

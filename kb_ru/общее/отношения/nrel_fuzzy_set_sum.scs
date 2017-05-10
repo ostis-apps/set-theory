@@ -3,8 +3,6 @@ nrel_fuzzy_set_sum
 <- relation;
 <- oriented_relation;
 <- quasybinary_relation;
-<- antireflexive_relation;
-<- antitransitive_relation;
 => nrel_main_idtf:
 	[сумма нечетких множеств*]
 	(* <- lang_ru;;	*);
@@ -20,7 +18,7 @@ nrel_fuzzy_set_sum
 <- rrel_key_sc_element:
 	Definition_of_nrel_fuzzy_set_sum
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -31,7 +29,7 @@ nrel_fuzzy_set_sum
 		(* 
 		-> fuzzy_set;
 		membership_function;
-		fuzzy_subset;;
+		nrel_fuzzy_set_inclusion;;
 		*);;
 
 
@@ -44,4 +42,5 @@ Definition_of_nrel_fuzzy_set_sum
 
 nrel_fuzzy_set_sum
 =>nrel_first_domain: fuzzy_set;
-=>nrel_second_domain: fuzzy_set;;
+=>nrel_second_domain: fuzzy_set;
+=>nrel_definitional_domain: fuzzy_set;;

@@ -40,6 +40,3 @@ Definition_of_nrel_mapping_composition
 	[Определение отношения "композиция соответствий*"]
 	(* <- lang_ru;;	*);;
 
-nrel_composition
-=>nrel_first_domain: cortege;
-=>nrel_second_domain: cortege;;

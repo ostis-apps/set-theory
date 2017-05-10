@@ -3,8 +3,6 @@ nrel_fuzzy_set_intersection
 <- relation;
 <- oriented_relation;
 <- quasybinary_relation;
-<- antireflexive_relation;
-<- antitransitive_relation;
 => nrel_main_idtf:
 	[пересечение нечетких множеств*]
 	(* <- lang_ru;;	*);
@@ -18,7 +16,7 @@ nrel_fuzzy_set_intersection
 <- rrel_key_sc_element:
 	Definition_of_nrel_fuzzy_set_intersection
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -29,7 +27,7 @@ nrel_fuzzy_set_intersection
 		(* 
 		-> fuzzy_set;
 		membership_function;
-		fuzzy_subset;;
+		nrel_fuzzy_set_inclusion;;
 		*);;
 
 
@@ -61,4 +59,5 @@ Definition_of_nrel_fuzzy_set_intersection
 
 nrel_fuzzy_set_intersection
 =>nrel_first_domain: fuzzy_set;
-=>nrel_second_domain: fuzzy_set;;
+=>nrel_second_domain: fuzzy_set;
+=>nrel_definitional_domain: fuzzy_set;;

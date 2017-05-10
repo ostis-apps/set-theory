@@ -16,7 +16,7 @@
         <node type="node/const/relation" idtf="nrel_lower_approximation" shapeColor="0" id="17567360" parent="18803440" left="0" top="0" right="178.141" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1050" y="493.333" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/relation" idtf="fuzzy_subset" shapeColor="0" id="20027952" parent="18803440" left="0" top="0" right="92.5469" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="819.333" y="482.334" haveBus="false" idtf_pos="0">
+        <node type="node/const/relation" idtf="nrel_fuzzy_set_inclusion" shapeColor="0" id="20027952" parent="18803440" left="0" top="0" right="92.5469" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="819.333" y="482.334" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/var/general_node" idtf="_X" shapeColor="0" id="17097312" parent="18803440" left="0" top="0" right="23.8594" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1146.5" y="255.487" haveBus="false" idtf_pos="0">
@@ -25,7 +25,7 @@
         <node type="node/const/relation" idtf="nrel_inclusion" shapeColor="0" id="16962352" parent="18803440" left="0" top="0" right="98.75" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1185.5" y="353.153" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/group" idtf="universal_set" shapeColor="0" id="18270272" parent="18803440" left="0" top="0" right="95.0781" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1045.33" y="319.987" haveBus="false" idtf_pos="0">
+        <node type="node/const/group" idtf="concept_universum" shapeColor="0" id="18270272" parent="18803440" left="0" top="0" right="95.0781" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1045.33" y="319.987" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <arc type="arc/var/pos" idtf="" shapeColor="0" id="16960784" parent="18803440" id_b="18270272" id_e="17097312" b_x="1045.33" b_y="319.987" e_x="1146.5" e_y="255.487" dotBBalance="0" dotEBalance="0">

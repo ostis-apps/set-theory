@@ -31,7 +31,7 @@ nrel_alpha_incision
 <- rrel_key_sc_element:
 	Definition_of_nrel_alpha_incision
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -41,7 +41,7 @@ nrel_alpha_incision
 		...
 		(* 
 		-> fuzzy_set;
-		cantor_set;
+		crisp_set;
 		membership_function;
 		set;;
 		*);;
@@ -50,22 +50,22 @@ nrel_alpha_incision
 
 nrel_alpha_incision
 <- rrel_key_sc_element:
-	statement_decomposition_of_fuzzy_set_alpha_incision_union
+	statement_decomposition_of_fuzzy_set_alpha_incision_combination
 	(* 
-	<- sc_explanation;;
+	<- statement;;
 	=> nrel_main_idtf:
 		[Утв.(о декомпозиции нечеткого множества)"]
 			(* <- lang_ru;; *);;
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example: "file://htmls/statement_nrel_alpha_incision.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://htmls/statement_nrel_alpha_incision_fuzzy_set_decomposition.html" (* <-lang_ru;; *);;
 		*);;
 	<= nrel_using_constants:
 		...
 		(* 
 		-> fuzzy_set;
-		nrel_fuzzy_set_union;
+		nrel_fuzzy_set_combination;
 		membership_function;
 		nrel_alpha_incision;;
 		*);;
@@ -76,7 +76,7 @@ nrel_alpha_incision
 <- rrel_key_sc_element:
 	statement_fuzzy_set_and_alpha_incision_equality
 	(* 
-	<- sc_explanation;;
+	<- statement;;
 	=> nrel_main_idtf:
 		[Утв.(нечеткое множество, альфа-разрез*, равенство нечетких множеств*)]
 			(* <- lang_ru;; *);;
@@ -89,7 +89,7 @@ nrel_alpha_incision
 		...
 		(* 
 		-> fuzzy_set;
-		nrel_fuzzy_set_union;
+		nrel_fuzzy_set_combination;
 		membership_function;
 		nrel_alpha_incision;;
 		*);;
@@ -97,23 +97,23 @@ nrel_alpha_incision
 
 nrel_alpha_incision
 <- rrel_key_sc_element:
-	statement_fuzzy_set_and_alpha_incision_union
+	statement_fuzzy_set_and_alpha_incision_combination
 	(* 
-	<- sc_explanation;;
+	<- statement;;
 	=> nrel_main_idtf:
 		[Утв.(нечеткое множество, альфа-разрез*, объединение нечетких множеств*, объединение*)]
 			(* <- lang_ru;; *);;
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example: "file://htmls/statement_fuzzy_set_and_alpha_incision_union.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://htmls/statement_fuzzy_set_and_alpha_incision_combination.html" (* <-lang_ru;; *);;
 		*);;
 	<= nrel_using_constants:
 		...
 		(* 
 		-> fuzzy_set;
 		nrel_combination;
-		nrel_fuzzy_set_union;
+		nrel_fuzzy_set_combination;
 		nrel_alpha_incision;;
 		*);;
 	*);;
@@ -122,7 +122,7 @@ nrel_alpha_incision
 <- rrel_key_sc_element:
 	statement_fuzzy_set_and_alpha_incision_intersection
 	(* 
-	<- sc_explanation;;
+	<- statement;;
 	=> nrel_main_idtf:
 		[Утв.(нечеткое множество, альфа-разрез*, пересечение нечетких множеств*, пересечение*)]
 			(* <- lang_ru;; *);;
@@ -146,7 +146,7 @@ nrel_alpha_incision
 <- rrel_key_sc_element:
 	statement_fuzzy_set_nrel_alpha_incision_rrel_alpha_inclusion
 	(* 
-	<- sc_explanation;;
+	<- statement;;
 	=> nrel_main_idtf:
 		[Утв.(нечеткое множество, альфа-разрез*, включение*, альфа-уровень')]
 			(* <- lang_ru;; *);;
@@ -173,7 +173,7 @@ nrel_alpha_incision
 	(*
 	<- sc_illustration;;
 	=> nrel_main_idtf:
-		[Иллюстрация к понятию "альфа-разрез"]
+		[Иллюстрация к понятию "альфа-разрез*"]
 			(* <- lang_ru;; *);;
 	<= nrel_sc_text_translation:
 		...
@@ -193,4 +193,13 @@ Definition_of_nrel_alpha_incision
 
 nrel_alpha_incision
 =>nrel_first_domain: fuzzy_set;
-=>nrel_second_domain: cantor_set;;
+=>nrel_second_domain: crisp_set;
+=>nrel_definitional_domain: 
+...
+(*
+	<= nrel_combination:
+	{
+		fuzzy_set;
+		crisp_set
+	};;
+*);;

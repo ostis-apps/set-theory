@@ -8,7 +8,7 @@ n_powerful_set
 <- rrel_key_sc_element:
 	Definition_of_n_powerful_set
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -32,8 +32,7 @@ n_powerful_set
 n_powerful_set
 <- infinite_set;
 	cantor_set;
-	not_reflexive_set;
-	not_transitive_set;
+	non_reflexive_set;
 	infinite_set;;
 
 
@@ -41,16 +40,4 @@ Definition_of_n_powerful_set
 => nrel_main_idtf:
 	[Определение понятия "n-мощное множество"]
 	(* <- lang_ru;;	*);;
-
-
-n_powerful_set
-<- rrel_key_sc_element: ...
-	(*
-	<-sc_illustration;;
-	<=nrel_sc_text_translation:
-		...
-		(* 
-		-> rrel_example: [Множество <1,2,3,4,5,...,n>  является синглетоном.] (* <-lang_ru;; *);;
-		*);;
-	*);;
 

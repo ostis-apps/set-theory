@@ -1,0 +1,55 @@
+subject_domain_of_fuzzy_sets
+=> nrel_main_idtf:
+	[Предметная область нечетких множеств] 
+	(* <- lang_ru;; *);
+	[subject domain of fuzzy sets]	
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Предметная область теории нечетких множеств] 
+	(* <- lang_ru;; *);	
+	[Предметная область, объектами исследования которой являются нечеткие множества] 
+	(* <- lang_ru;; *);
+<- subject_domain;
+<= nrel_primary_elements_class_private_subject_domain: subject_domain_of_sets;
+-> rrel_not_maximum_studied_object_class:
+	convex_fuzzy_set;
+    concave_fuzzy_set;
+    elementary_fuzzy_set;
+    empty_fuzzy_set;
+    fuzzy_number;
+    non_empty_fuzzy_set;
+    normal_fuzzy_set;
+    subnormal_fuzzy_set;
+    one_point_fuzzy_set;
+    unimodal_fuzzy_set;
+-> rrel_explored_relation:
+	nrel_fuzzy_set_inclusion;
+    membership_function;
+    nrel_alpha_incision;
+    nrel_equality_of_fuzzy_sets;
+    nrel_exact_lower_approximation;
+    nrel_exact_upper_approximation;
+    nrel_upper_approximation;
+    nrel_lower_approximation;
+    nrel_fuzzy_set_combination;
+    nrel_fuzzy_set_concentration;
+    nrel_fuzzy_set_core;
+    nrel_fuzzy_set_difference;
+    nrel_fuzzy_set_intersection;
+    nrel_fuzzy_set_multiplication;
+    nrel_fuzzy_set_complement;
+    nrel_fuzzy_set_stretch;
+    nrel_fuzzy_set_sum;
+    nrel_height_of_fuzzy_set;
+    nrel_near_set;
+    nrel_pow_fuzzy_set;
+    support_of_fuzzy_set;
+    nrel_transition_point;
+    nrel_equality_degree;
+    nrel_inclusion_degree;
+-> rrel_maximum_studied_object_class: fuzzy_set;;
+
+
+
+
+

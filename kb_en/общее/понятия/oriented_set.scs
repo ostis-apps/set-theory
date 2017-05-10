@@ -1,19 +1,9 @@
 oriented_set
-<=> nrel_equivalence: cortege;
-<- sc_node_not_relation;
-<- infinite_set;
-<- antireflexive_relation;
-<- antitransitive_relation;
-=> nrel_main_idtf:
-	[oriented set]
-	(* <- lang_en;;	*);
 => nrel_idtf:
 	[N-ordered set]
 	(* <- lang_en;; *);
 	[Ordered sequence]
-	(* <- lang_en;; *);
-	[cortege]
-	(* <- lang_en;;	*);;
+	(* <- lang_en;; *);;
 
 
 oriented_set
@@ -24,20 +14,27 @@ oriented_set
 	<= nrel_sc_text_translation:
 		...
 		(*
-		-> rrel_example: [Oriented set - an ordered set of finite length.] (* <-lang_en;; *);; 
+		-> rrel_example: [Oriented set - is ordered set of finite length.] (* <-lang_en;; *);; 
 		*);;
 	<= nrel_using_constants:
 		...
 		(* 
-		-> element_of_set;
-			finite_set;;
+		-> finite_set;;
 		*);;
 
-
+ 
 	*);;
 
 Definition_of_oriented_set
 => nrel_main_idtf:
 	[Definition "oriented set"]
 	(* <- lang_en;;	*);;
+
+
+example_of_oriented_set
+
+	-> rrel_example: "file://htmls/example_oriented_set_en.html"  (* <-lang_en;; *);
+	=> nrel_main_idtf:
+		[Example of oriented set]
+		(* <-lang_ru;; *);;
 

@@ -30,7 +30,7 @@ nrel_component
 	<= nrel_using_constants:
 		...
 		(* 
-		-> cortege;
+		-> oriented_set;
 		element_of_set;;
 		*);;
 
@@ -44,4 +44,4 @@ Definition_of_nrel_component
 
 nrel_component
 =>nrel_first_domain: element_of_set;
-=>nrel_second_domain: cortege;;
+=>nrel_second_domain: oriented_set;;

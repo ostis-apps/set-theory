@@ -8,13 +8,19 @@ empty_fuzzy_set
 <- rrel_key_sc_element:
 	Definition_of_empty_fuzzy_set
 	(* 
-	<- sc_explanation;;
-	<= nrel_sc_text_translation:
-		...
-		(* 
-		-> rrel_example:"file://htmls/empty_fuzzy_set.html" (* <-lang_ru;; *);;
-		*);;
-	
+		<-definition;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example:"file://htmls/empty_fuzzy_set.html" (* <-lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			...
+			(*
+				-> fuzzy_set; 
+				membership_function;;
+			*);;
+			
 
 	*);;
 

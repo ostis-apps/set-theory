@@ -22,5 +22,3 @@ Definition_of_well_order_set
 => nrel_main_idtf:
 	[Определение понятия "вполне упорядоченное множество"]
 	(* <- lang_ru;;	*);;
-
-well_order_set <- cortege;;

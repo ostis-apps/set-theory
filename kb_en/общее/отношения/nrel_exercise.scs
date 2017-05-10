@@ -1,12 +1,4 @@
 nrel_exercise
-<- sc_node_norole_relation;
-<- relation;
-<- oriented_relation;
-<- binary_relation;
-<- cantor_set;
-<- infinite_set;
-<- antireflexive_relation;
-<-sc_const;	
 => nrel_main_idtf:
 	[exercises*] 
 	(* <- lang_en;;	*);
@@ -15,7 +7,7 @@ nrel_exercise
 <- rrel_key_sc_element:
 	...
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
