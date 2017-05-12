@@ -6,10 +6,10 @@ permutation_matrix
 	(* <- lang_en;; *);
 <-sc_node_not_relation;
 <- rrel_key_sc_element:
-	... 
+	Definition_of_permutation_matrix
 	(*
 	=> nrel_main_idtf: [Опр.(матрица перестановок)]  (* <- lang_ru;; *);;
-	<- sc_explanation;; 
+	<- definition;; 
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -77,6 +77,7 @@ permutation_matrix
 		*);;
 	*);
 -> rrel_example :
-		"file://permutation_matrix.jpeg";
+		"file://permutation_matrix.jpg";
 <= nrel_inclusion:	concept_square_matrix;
+					concept_orthogonal_matrix;
 					binary_matrix;;
