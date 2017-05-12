@@ -1,0 +1,63 @@
+latin_square
+=> nrel_main_idtf:
+	[латинский квадрат]
+	(* <-lang_ru;; *);
+	[latin square]
+	(* <- lang_en;; *);
+<- sc_node_not_relation;
+<= nrel_iclusion : concept_matrix;
+				   concept_square_matrix;;
+
+latin_square <- rrel_key_sc_element:
+	Definition_of_latin_square
+	(*
+	=> nrel_main_idtf: [Опр.(латинский квадрат)]  (* <- lang_ru;; *);;
+	<- definition;; 
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/latin_square.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+latin_square -> rrel_example :
+		"file://latin_square_example.jpg";;
+
+latin_square <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(изотопия, изотопный латинский квадрат*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://htmls/latin_square_isotopy_statement.html" (* <- lang_ru;; *);;
+		*);;
+	*);;
+
+latin_square <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(парастроф)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://htmls/latin_square_parastrof_statement.html" (* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+latin_square <- rrel_key_sc_element:
+	... 
+	(*
+	<- nrel_comment;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://htmls/latin_square_nrel_comment.html" (* <- lang_ru;; *);;
+		*);;
+	*);;

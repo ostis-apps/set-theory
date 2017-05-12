@@ -1,56 +1,38 @@
 nrel_sets_difference
-=> nrel_main_idtf:
-	[sets difference*]
-	(* <- lang_en;;	*);
 => nrel_idtf:
-	[Ratio of the difference*]
+	[ratio of the difference*]
 	(* <- lang_en;; *);
-	[Difference operation*]
+	[sets difference operation*]
 	(* <- lang_en;; *);
-	[Arithmetic difference of sets*]
+	[arithmetic difference of sets*]
 	(* <- lang_en;; *);;
 
+Definition_of_sets_difference
+=> nrel_main_idtf: 
+	[Definition of "sets difference*"]  
+		(* <- lang_en;; *);;
 
-nrel_sets_difference
-<- rrel_key_sc_element:
-	Definition_of_sets_difference
-	(* 
-		<- sc_explanation;;
-		=> nrel_main_idtf: 
-			[Definition "sets difference*"]  
-			 (* <- lang_en;; *);;
+.nrel_sets_difference_definition
+-> rrel_example:
+	"file://htmls/nrel_sets_difference/nrel_sets_difference_definition_en.html"
+		(* <-lang_en;; *);; 
 
-		<= nrel_sc_text_translation:
-			...
-			(*
-			-> rrel_example: "file://htmls/nrel_nrel_sets_difference_en.html" (* <-lang_en;; *);; 
-			*);;
+.nrel_sets_difference_statement_1
+-> rrel_example:
+	"file://htmls/nrel_sets_difference/nrel_sets_difference_statement_1_en.html"
+		(* <-lang_en;; *);;
 
-		<= nrel_using_constants:
-			...
-			(* 
-			-> set;
-				element_of_set;
-				nrel_belonging;;
-			*);;
+.nrel_sets_difference_statement_2
+-> rrel_example:
+	"file://htmls/nrel_sets_difference/nrel_sets_difference_statement_2_en.html"
+		(* <-lang_en;; *);; 
 
-	*);;
+Statement_1_sets_difference
+=> nrel_main_idtf:
+	[Stat. (sets difference*, empty set, set)]
+		(* <- lang_en;; *);;
 
-
-
-nrel_sets_difference
-<- rrel_key_sc_element:
-	...
-	(* 
-	<- sc_explanation;;
-	<= nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example: "file://htmls/statement_nrel_sets_difference_en.html" (* <-lang_en;; *);; 
-		*);;
-	=> nrel_main_idtf: [Stat. (sets difference*, empty set, set)]
-					(* <- lang_ru;; *);;
-
-
-	*);;
-
+Statement_2_sets_difference
+=> nrel_main_idtf:
+	[Stat. (sets difference*, natural numbers, even numbers, odd numbers)]
+		(* <- lang_en;; *);;

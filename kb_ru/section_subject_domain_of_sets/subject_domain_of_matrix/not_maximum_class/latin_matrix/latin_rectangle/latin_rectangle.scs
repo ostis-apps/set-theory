@@ -1,0 +1,36 @@
+latin_rectangle
+=> nrel_main_idtf:
+	[латинский прямоугольник]
+	(* <-lang_ru;; *);
+	[latin_rectangle]
+	(* <- lang_en;; *);
+<- sc_node_not_relation;
+<= nrel_inclusion: concept_matrix;;
+
+latin_rectangle
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf: [Опр. (латинский прямоугольник)] (*<-lang_ru;;*);;
+		<-sc_definition;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_definition:
+				"file://htmls/latin_rectangle.html"(*<-lang_ru;;*);;
+			*);;
+	*);;
+
+latin_rectangle 
+	<- rrel_key_sc_element:
+		... 
+			(*
+			=> nrel_main_idtf: [Утв.(латинский прямоугольник)] (* <- lang_ru;; *);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation: 
+				...
+				(*
+				-> rrel_example: 
+					"file://htmls/latin_rectangle_statement.html"(* <- lang_ru;; *);;
+				*);;
+		*);;

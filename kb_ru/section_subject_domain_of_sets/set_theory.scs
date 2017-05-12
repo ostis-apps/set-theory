@@ -1,0 +1,107 @@
+set_theory 
+=> nrel_main_idtf:
+	[теория множеств] (* <- lang_ru;; *);
+	[set theory] (* <- lang_en;; *);
+<- rrel_key_sc_element:
+	stat_set_teory
+	(*
+	=> nrel_main_idtf: 
+		[Утв. (теория множеств)] (* <- lang_ru;; *);
+		[Stat. (set theory)] (* <- lang_en;; *);;
+	<- sc_text_statement;;
+	<= nrel_sc_text_translation:	
+		...
+		(*  
+		->
+			[Теория множеств - формальная теория, изучающая всевозможные свойства множеств.]
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+	*);
+<- formal_theory;
+
+-> rrel_axiom:
+	axiom_bulk;
+	axiom_of_empty_set;
+	axiom_of_infinity;
+	axiom_of_pairing;
+	axiom_of_boolean;
+	axiom_of_union;
+	allocation_scheme;
+	conversion_circuit;
+	axiom_of_regularity;
+	axiom_of_choice;
+
+-> rrel_scientists_of_set_theory:
+	Zermelo;
+	Fraenkel;
+	Godel;
+	Cantor;
+
+-> rrel_paradoxes_of_set_theory:
+paradox_Burali_Forti;
+
+-> rrel_subject_domain:
+	subject_domain_of_sets;
+
+<- rrel_key_sc_element:
+		Cantor_theorem
+			(*
+			=> nrel_main_idtf: [Утв.(множество, мощность множества*,булеан*)] (* <- lang_ru;; *);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation: 
+				...
+				(*
+				-> rrel_theorem: 
+					"file://htmls/Сantor_theorem.html"(* <- lang_ru;; *);;
+				*);;
+		*);
+<- rrel_key_sc_element:
+		diagonal_theorem
+			(*
+			=> nrel_main_idtf: [Утв.(множество, подмножество*, область определения*, функция)] (* <- lang_ru;; *);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation: 
+				...
+				(*
+				-> rrel_theorem: 
+					"file://htmls/diagonal_theorem.html"(* <- lang_ru;; *);;
+				*);;
+		*);
+<- rrel_key_sc_element:
+		Cantor_Bernstein_theorem
+			(*
+			=> nrel_main_idtf: [Утв.(инъекция, множество, биекция)] (* <- lang_ru;; *);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation: 
+				...
+				(*
+				-> rrel_theorem: 
+					"file://htmls/Cantor_Bernstein_theorem.html"(* <- lang_ru;; *);;
+				*);;
+		*);
+<- rrel_key_sc_element:
+		Szpilrajn_theorem
+			(*
+			=> nrel_main_idtf: [Утв.(отношение частичного порядка, множество, отношение линейного порядка)] (* <- lang_ru;; *);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation: 
+				...
+				(*
+				-> rrel_theorem: 
+					"file://htmls/Szpilrajn_theorem.html"(* <- lang_ru;; *);;
+				*);;
+		*);
+<- rrel_key_sc_element:
+		Dilworth_theorem
+			(*
+			=> nrel_main_idtf: [Утв.(цепь, антицепь, частично упорядоченное множество)] (* <- lang_ru;; *);;
+			<- sc_statement;;
+			<= nrel_sc_text_translation: 
+				...
+				(*
+				-> rrel_theorem: 
+					"file://htmls/Dilworth_theorem.html"(* <- lang_ru;; *);;
+				*);;
+		*);;

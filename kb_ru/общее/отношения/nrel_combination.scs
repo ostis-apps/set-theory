@@ -1,7 +1,4 @@
 nrel_combination
-<- antireflexive_relation;
-<- antitransitive_relation;
-<- antisymmetric_relation;
 => nrel_idtf:
 	[отношение объединения*]
 	(* <- lang_ru;; *);
@@ -25,9 +22,6 @@ nrel_combination
 				-> set;
 					element_of_set;
 					nrel_belonging;;
-				=> nrel_main_idtf:
-					[Понятия, используемые в определении понятия "объединение*"]
-						(* <- lang_ru;; *);;
 			*);;
 	*);;
 

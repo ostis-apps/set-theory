@@ -1,0 +1,60 @@
+adamar_matrix
+=> nrel_main_idtf:
+	[матрица Адамара порядка n]
+	(* <-lang_ru;; *);
+	[Adamar matrix of dimension n]
+	(* <- lang_en;; *);
+<- sc_node_not_relation;
+<= nrel_inclusion:  concept_square_matrix;;
+
+adamar_matrix <- rrel_key_sc_element:
+	Definition_of_adamar_matrix
+	(*
+	=> nrel_main_idtf: [Опр.(матрица Адамара порядка n)]  (* <- lang_ru;; *);;
+	<- definition;; 
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/adamar_matrix.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+adamar_matrix -> rrel_example :
+		"file://adamar_matrix_example.jpg";;
+
+adamar_matrix <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(единичная матрица)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://htmls/adamar_matrix_ratio_statement.html" (* <- lang_ru;; *);;
+		*);;
+	*);;
+
+adamar_matrix <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(экивалентность матриц)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://htmls/equal_adamar_matrix_statement.html" (* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+nrel_row
+=> nrel_main_idtf:
+	[строка]
+	(* <-lang_ru;; *);;
+
+nrel_column
+=> nrel_main_idtf:
+	[столбец]
+	(* <-lang_ru;; *);;

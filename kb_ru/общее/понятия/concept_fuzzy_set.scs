@@ -32,36 +32,3 @@ Definition_of_universum
 	[Определение понятия "универсум"]
 	(* <- lang_ru;;	*);;
 
-
-
-empty_set
-<- rrel_key_sc_element:
-	statement
-	(* 
-	<- sc_explanation;;
-	<= nrel_sc_text_translation:
-		...
-		(* 
-		-> rrel_example: [ Любой объект, какова бы ни была его природа, является элементом универсума.] (* <-lang_ru;; *);;
-		*);;
-	=> sc_identifier:
-		...
-		(*
-		-> rrel_example: [Утв.(объект, универсум, элемент множества)] (* <-lang_ru;; *);; 
-		*);;
-
-	*);;
-
-empty_set
-<- rrel_key_sc_element: ...
-	(*
-	<-sc_illustration;;
-	<=nrel_sc_text_translation:
-		...
-		(* 
-		-> rrel_example: [Множество натуральных чисел в некоторых случаях может является универсумом.] (* <-lang_ru;; *);;
-		*);;
-	*);;
-
-
-

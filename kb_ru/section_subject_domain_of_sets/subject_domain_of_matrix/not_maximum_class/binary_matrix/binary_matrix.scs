@@ -1,0 +1,27 @@
+binary_matrix
+=> nrel_main_idtf:
+	[бинарная матрица]
+	(* <-lang_ru;; *);
+	[binary matrix]
+	(* <- lang_en;; *);
+=>nrel_idtf:
+	[двоичная матрица]
+	(* <-lang_ru;; *);
+	[(0, 1)-матрица]
+	(* <-lang_ru;; *);
+<-sc_node_not_relation;
+<= nrel_inclusion: concept_matrix;
+
+<- rrel_key_sc_element:
+	Definition_of_binary_matrix
+	(*
+	=> nrel_main_idtf: [Опр.(бинарная матрица)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://html/binary_matrix.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+binary_matrix -> rrel_example: "file://binary_matrix.jpg";;

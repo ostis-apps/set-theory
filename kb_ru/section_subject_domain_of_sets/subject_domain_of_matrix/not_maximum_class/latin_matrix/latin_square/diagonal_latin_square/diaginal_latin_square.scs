@@ -1,0 +1,37 @@
+diagonal_latin_square
+=> nrel_main_idtf:
+	[диагональный латинский квадрат]
+	(* <-lang_ru;; *);
+	[latin square]
+	(* <- lang_en;; *);
+<- sc_node_not_relation;
+<=nrel_inclusion: latin_square;
+				  concept_diagonal_matrix;;
+
+diagonal_latin_square <- rrel_key_sc_element:
+	Definition_of_diagonal_latin_square
+	(*
+	=> nrel_main_idtf: [Опр.(диагональный латинский квадрат)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/diagonal_latin_square.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+diagonal_latin_square -> rrel_example :
+		"file://diagonal_latin_square_example.jpg";;
+
+diagonal_latin_square <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(латинский квадрат)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://htmls/diagonal_latin_square_statement.html" (* <- lang_ru;; *);;
+		*);;
+	*);;

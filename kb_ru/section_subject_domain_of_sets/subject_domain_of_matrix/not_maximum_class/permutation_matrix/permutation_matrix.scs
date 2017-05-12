@@ -1,0 +1,83 @@
+permutation_matrix
+=> nrel_main_idtf:
+	[матрица перестановок]
+	(* <-lang_ru;; *);
+	[permutation matrix]
+	(* <- lang_en;; *);
+<-sc_node_not_relation;
+<- rrel_key_sc_element:
+	Definition_of_permutation_matrix
+	(*
+	=> nrel_main_idtf: [Опр.(матрица перестановок)]  (* <- lang_ru;; *);;
+	<- definition;; 
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://html/permutation_matrix.html" (* <-lang_ru;; *);;
+		*);;
+	*);
+<- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(перестановка*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://html/statement_of_permutation_matrix.html" (* <- lang_ru;; *);;
+		*);;
+	*);
+<- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(ортогональность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://html/statement_of_ortogonal_permutation_matrix.html" (* <- lang_ru;; *);;
+		*);;
+	*);
+<- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(произведение матриц, столбец)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://html/multiplication_statement_of_permutation_matrix_1.html" (* <- lang_ru;; *);;
+		*);;
+	*);
+<- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(произведение матриц, строка)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://html/multiplication_statement_of_permutation_matrix_2.html" (* <- lang_ru;; *);;
+		*);;
+	*);
+<- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(определитель*,четность матрицы)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://html/determinant_statement_of_permutation_matrix.html" (* <- lang_ru;; *);;
+		*);;
+	*);
+-> rrel_example :
+		"file://permutation_matrix.jpg";
+<= nrel_inclusion:	concept_square_matrix;
+					concept_orthogonal_matrix;
+					binary_matrix;;
