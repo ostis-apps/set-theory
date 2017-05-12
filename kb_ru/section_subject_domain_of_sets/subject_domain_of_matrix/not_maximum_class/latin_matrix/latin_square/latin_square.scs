@@ -5,13 +5,14 @@ latin_square
 	[latin square]
 	(* <- lang_en;; *);
 <- sc_node_not_relation;
-<= nrel_iclusion : concept_matrix;;
+<= nrel_iclusion : concept_matrix;
+				   concept_square_matrix;;
 
 latin_square <- rrel_key_sc_element:
-	... 
+	Definition_of_latin_square
 	(*
 	=> nrel_main_idtf: [Опр.(латинский квадрат)]  (* <- lang_ru;; *);;
-	<- sc_explanation;; 
+	<- definition;; 
 	<= nrel_sc_text_translation:
 		...
 		(* 

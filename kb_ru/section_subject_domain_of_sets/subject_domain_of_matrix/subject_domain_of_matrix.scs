@@ -35,8 +35,8 @@ subject_domain_of_matrix -> rrel_studied_relation:
 					nrel_elementary_transformations;
 					nrel_determinant;
 					nrel_transpose;
-					isomorphic_latin_square;
-					ortogonal_latin_square;
+					latin_isomorphic_square;
+					latin_ortogonal__square;
 					transposed_matrix;
 					nrel_permanent;
 					nrel_inverse_matrix;

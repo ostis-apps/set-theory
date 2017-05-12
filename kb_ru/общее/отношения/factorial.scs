@@ -4,7 +4,6 @@ factorial
 	(* <-lang_ru;; *);
 	[factorial*]
 	(* <- lang_en;; *);
-<-oriented_relation;
 <- oriented_relation;
 <- class_of_constant_connections;
 <- unary_relation;

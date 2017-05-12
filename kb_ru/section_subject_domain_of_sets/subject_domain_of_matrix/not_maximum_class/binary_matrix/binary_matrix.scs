@@ -13,7 +13,7 @@ binary_matrix
 <= nrel_inclusion: concept_matrix;
 
 <- rrel_key_sc_element:
-	... 
+	Definition_of_binary_matrix
 	(*
 	=> nrel_main_idtf: [Опр.(бинарная матрица)]  (* <- lang_ru;; *);;
 	<- sc_explanation;; 
@@ -24,5 +24,4 @@ binary_matrix
 		*);;
 	*);;
 
-binary_matrix -> rrel_example :
-		"file://binary_matrix.jpeg";;
+binary_matrix -> rrel_example: "file://binary_matrix.jpg";;
