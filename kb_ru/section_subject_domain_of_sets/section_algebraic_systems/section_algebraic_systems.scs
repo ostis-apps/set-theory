@@ -1,0 +1,44 @@
+subject_domain_of_algebraic_systems
+=> nrel_main_idtf:
+	[Предметная область алгебраических систем] 
+	(* <- lang_ru;; *);
+	[Subject domain of algebraic systems]	
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Предметная область общей алгебры] 
+	(* <- lang_ru;; *);	
+	[Предметная область, объектами исследования которой являются алгебраические системы] 
+	(* <- lang_ru;; *);
+    [Subject domain of abstract algebra] 
+	(* <- lang_en;; *);;
+
+subject_domain_of_algebraic_systems
+<- subject_domain;
+<= nrel_primary_elements_class_private_subject_domain:
+    subject_domain_of_sets;;
+
+subject_domain_of_algebraic_systems
+-> rrel_maximum_studied_object_class:
+    concept_algebraic_system;
+-> rrel_not_maximum_studied_object_class:
+	concept_algebra;
+    concept_algebraic_operation;
+    concept_groupoid;
+    concept_semigroup;
+    concept_monoid;
+    concept_commutative_monoid;
+    concept_group;
+    concept_cyclic_group;
+    concept_commutative_group;
+    concept_semiring;
+    concept_ring;
+    concept_semiring_of_sets;
+    concept_ring_of_sets;
+-> rrel_explored_relation:
+    nrel_carrier_set;
+	nrel_signature;
+    nrel_closed_set;
+    nrel_type_of_algebraic_system;
+    nrel_neutral_element;
+    nrel_inverse_element;
+    nrel_generating_set;;
