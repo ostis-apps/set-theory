@@ -6,8 +6,7 @@ partial_latin_square
 	(* <- lang_en;; *);
 <- sc_node_not_relation;
 <= nrel_inclusion: latin_square;
-					concept_matrix;
-					concept_square_matrix;;
+				    concept_square_matrix;;
 
 partial_latin_square <- rrel_key_sc_element:
 	Definition_of_partial_latin_square

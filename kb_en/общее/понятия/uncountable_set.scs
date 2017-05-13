@@ -6,7 +6,7 @@ uncountable_set
 
 uncountable_set
 <- rrel_key_sc_element:
-	Definition_of_uncuncountable_set
+	...
 	(* 
 	<- sc_explanation;;
 	<= nrel_sc_text_translation:
@@ -23,8 +23,3 @@ uncountable_set
 		*);;
 
 	*);;
-
-Definition_of_uncuncountable_set
-=> nrel_main_idtf:
-	[Definition "uncountable set"]
-	(* <- lang_en;;	*);;

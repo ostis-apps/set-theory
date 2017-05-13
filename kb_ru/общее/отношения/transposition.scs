@@ -5,6 +5,7 @@ transposition
 <- binary_relation;
 <- transitive_relation;
 <- antireflexive_relation;
+<- summetric_relation;
 => nrel_main_idtf:
 	[транспозиция*]
 	(* <- lang_ru;;	*);
@@ -14,7 +15,7 @@ transposition
 transposition <- rrel_key_sc_element:
 	... 
 	(*
-	=> nrel_main_idtf: [Опр.(транспозиция))]  (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(транспозиция)]  (* <- lang_ru;; *);;
 	<- sc_explanation;;
 	<= nrel_sc_text_translation:
 		...
