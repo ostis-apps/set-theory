@@ -5,7 +5,6 @@ subject_domain_of_combination_theory
 		[Subject domain of combination theory]	
 		(* <- lang_en;; *);
 	<- subject_domain;
-	-> rrel_maximum_studied_object_class: combination_theory;
 	-> rrel_not_maximum_studied_object_class:
 		combinatorial_object;
 		basic_rules_of_combinatorics;
@@ -106,6 +105,7 @@ topological_combinatorics
 		(* <-lang_ru;; *);
 		[topological combinatorics]
 		(* <- lang_en;; *);;
+
 
 combinatorial_object
 	=> nrel_main_idtf:
@@ -264,7 +264,14 @@ nrel_set_of_combinations
 							(* <- lang_ru;; *);; 
 						*);;
 					*);;
-		*);;
+		*);
+	<=nrel_first_domain: set;
+	<=nrel_second_domain : set_of_sets;
+	<- oriented_relation;
+	<- binary_relation;
+	<- antireflexive_relation;
+	<- antisymmetric_relation;
+	<- antitransitive_relation;;
 
 nrel_set_of_repet_combinations
 	=> nrel_main_idtf:
@@ -295,7 +302,16 @@ nrel_set_of_repet_combinations
 						"file://html/statement_for_nrel_set_of_repet_combinations.html"			
 					(* <- lang_ru;;	*);;
 				*);;
-			*);;
+			*);
+
+	<- oriented_relation;
+	<- sc_node_norole_relation;
+	<- binary_relation;
+	<- antireflexive_relation;
+	<- antisymmetric_relation;
+	<- antitransitive_relation;
+	<=nrel_first_domain: set;
+	<=nrel_second_domain : set_of_sets;;
 
 nrel_set_of_partial_permutations
 	<- sc_node_norole_relation;
@@ -347,7 +363,15 @@ nrel_set_of_partial_permutations
 							(* <- lang_ru;; *);; 
 						*);;
 					*);;
-		*);;
+		*);
+
+	<- oriented_relation;
+	<- binary_relation;
+	<- antireflexive_relation;
+	<- antisymmetric_relation;
+	<- antitransitive_relation;
+	<=nrel_first_domain: set;
+	<=nrel_second_domain : set_of_sets;;
 
 nrel_set_of_repet_partial_permutations
 	=> nrel_main_idtf:
@@ -378,7 +402,20 @@ nrel_set_of_repet_partial_permutations
 						"file://html/statement_for_nrel_set_of_repet_partial_permutations.html"			
 					(* <- lang_ru;;	*);;
 				*);;
-			*);;
+			*);
+
+	<- oriented_relation;
+	<- binary_relation;
+	<- antireflexive_relation;
+	<- sc_node_norole_relation;
+	<- antisymmetric_relation;
+	<- antitransitive_relation;
+	<=nrel_first_domain: set;
+	<=nrel_second_domain : set_of_sets;
+	-> rrel_example:"file://html/nrel_set_of_repet_partial_permutations.png";
+	<- rrel_example :
+	 [Всевозможные размещения с повторениями из трех элементов a,b,c по 2: aa,ab,ac,ba,bb,bc,ca,cb,cc.](* <- lang_ru;;	*);;
+
 
 nrel_set_of_permutations
 	<- sc_node_norole_relation;
@@ -431,7 +468,15 @@ nrel_set_of_permutations
 							(* <- lang_ru;; *);; 
 						*);;
 					*);;
-		*);;
+		*);
+
+	<- oriented_relation;
+	<- binary_relation;
+	<- antireflexive_relation;
+	<- antisymmetric_relation;
+	<- antitransitive_relation;
+	<=nrel_first_domain: set;
+	<=nrel_second_domain : set_of_sets;;
 
 nrel_set_of_repet_permutations
 	=> nrel_main_idtf:
@@ -462,7 +507,16 @@ nrel_set_of_repet_permutations
 						"file://html/statement_for_nrel_set_of_repet_permutations.html"			
 					(* <- lang_ru;;	*);;
 				*);;
-			*);;
+			*);
+
+	<- oriented_relation;
+	<- binary_relation;
+	<- antireflexive_relation;
+	<- antisymmetric_relation;
+	<- sc_node_norole_relation;
+	<- antitransitive_relation;
+	<=nrel_first_domain: set;
+	<=nrel_second_domain : set_of_sets;;
 
 bit_vector
 	<- sc_node_not_relation;
@@ -492,10 +546,10 @@ bit_vector
 				*);;
 			*);
 	-> rrel_example:
-		"file://html/bit_vector.jpeg";;
+		"file://html/bit_vector.jpg";;
 
 partition
-	<- sc_node_not_relation;
+   <- sc_node_norole_relation;
 	=> nrel_main_idtf:
 		[ pазбиение числа на неупорядоченные слагаемые*] (* <- lang_ru;; *);
 		[ partition* ] (* <- lang_en;; *);
@@ -509,13 +563,23 @@ partition
 					-> rrel_example:[ Разбиение числа на неупорядоченные слагаемые — представление числа N в виде суммы слагаемых.]
 					(*<- lang_ru;;*);;
 				*);;
-		*);;
+		*);
+
+	<- oriented_relation;
+	<- binary_relation;
+	<- antireflexive_relation;
+	<- antisymmetric_relation;
+	<- transitive_relation;
+	<=nrel_first_domain: number;
+	<=nrel_second_domain: number;	
+	<=nrel_definitional_domain : number;;
 
 partition_of_a_set
-	<- sc_node_not_relation;
+	<- sc_node_norole_relation;
 	=> nrel_main_idtf:
-		[ разбиение множества X на подмножества] (* <- lang_ru;; *);
-		[ partions of a set ] (* <- lang_en;; *);
+		[ разбиение множества X на подмножества*] (* <- lang_ru;; *);
+		[ partions of a set* ] (* <- lang_en;; *);
+
 	<- rrel_key_sc_element:
 			...
 			(* 
@@ -528,8 +592,16 @@ partition_of_a_set
 					"file://html/partition_of_a_set.html"
 					(* <- lang_ru;; *);;
 				*);;
-			*);;
+			*);
 
+	<- oriented_relation;
+	<- binary_relation;
+	<- antireflexive_relation;
+	<- antisymmetric_relation;
+	<- transitive_relation;
+	<=nrel_first_domain: set;
+	<=nrel_second_domain: set;	
+	<=nrel_definitional_domain : set;;
 
 basic_rules_of_combinatorics
 	=> nrel_main_idtf:

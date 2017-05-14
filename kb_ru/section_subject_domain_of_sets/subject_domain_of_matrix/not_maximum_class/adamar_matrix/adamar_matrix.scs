@@ -5,8 +5,7 @@ adamar_matrix
 	[Adamar matrix of dimension n]
 	(* <- lang_en;; *);
 <- sc_node_not_relation;
-<= nrel_inclusion:concept_matrix;
-				  concept_square_matrix;;
+<= nrel_inclusion:  concept_square_matrix;;
 
 adamar_matrix <- rrel_key_sc_element:
 	Definition_of_adamar_matrix

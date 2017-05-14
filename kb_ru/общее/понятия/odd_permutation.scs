@@ -6,6 +6,9 @@ odd_permutation
 => nrel_idtf:
 	[odd permutation]
 	(* <- lang_ru;;	*);
+
+<=nrel_inlusion : nrel_set_of_permutations;
+
 <- rrel_key_sc_element:
 	... 
 	(*
@@ -20,4 +23,4 @@ odd_permutation
 	
 odd_permutation
 -> rrel_example :
-		"file://content/odd_permutation.jpeg";;
+		"file://content/odd_permutation.jpg";;

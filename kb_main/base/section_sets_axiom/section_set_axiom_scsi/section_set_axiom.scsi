@@ -14,7 +14,7 @@ set_axiom
 			...
 			(*
 			-> 
-				"file://set_axiom_htmls/axiom_bulk_text_ru.html"
+				"file://axiom_bulk_text_ru/axiom_bulk_text_ru.html"
 				(*
 				<- lang_ru;;
 				*);;
@@ -31,7 +31,7 @@ set_axiom
 			...
 			(*
 			-> 
-				"file://set_axiom_htmls/axiom_of_empty_set_text_ru.html"
+				"file://axiom_of_empty_set_text_ru/axiom_of_empty_set_text_ru.html"
 				(*
 				<- lang_ru;;
 				*);;
@@ -48,7 +48,7 @@ set_axiom
 			...
 			(*
 			-> 
-				"file://set_axiom_htmls/axiom_of_infinity_text_ru.html"
+				"file://axiom_of_infinity_text_ru/axiom_of_infinity_text_ru.html"
 				(*
 				<- lang_ru;;
 				*);;
@@ -65,7 +65,7 @@ set_axiom
 			...
 			(*
 			-> 
-				"file://set_axiom_htmls/axiom_of_pairing_text_ru.html"
+				"file://axiom_of_pairing_text_ru/axiom_of_pairing_text_ru.html"
 				(*
 				<- lang_ru;;
 				*);;
@@ -82,7 +82,7 @@ set_axiom
 			...
 			(*
 			-> 
-				"file://set_axiom_htmls/axiom_of_boolean_text_ru.html"
+				"file://axiom_of_boolean_text_ru/axiom_of_boolean_text_ru.html"
 				(*
 				<- lang_ru;;
 				*);;
@@ -99,7 +99,7 @@ set_axiom
 			...
 			(*
 			-> 
-				"file://set_axiom_htmls/axiom_of_union_text_ru.html"
+				"file://axiom_of_union_text_ru/axiom_of_union_text_ru.html"
 				(*
 				<- lang_ru;;
 				*);;
@@ -116,7 +116,7 @@ set_axiom
 			...
 			(*
 			-> 
-				"file://set_axiom_htmls/allocation_scheme_text_ru.html"
+				"file://allocation_scheme_text_ru/allocation_scheme_text_ru.html"
 				(*
 				<- lang_ru;;
 				*);;
@@ -133,7 +133,7 @@ set_axiom
 			...
 			(*
 			-> 
-				"file://set_axiom_htmls/conversion_circuit_text_ru.html"
+				"file://conversion_circuit_text_ru/conversion_circuit_text_ru.html"
 				(*
 				<- lang_ru;;
 				*);;
@@ -150,7 +150,7 @@ set_axiom
 			...
 			(*
 			-> 
-				"file://set_axiom_htmls/axiom_of_regularity_text_ru.html"
+				"file://axiom_of_regularity_text_ru/axiom_of_regularity_text_ru.html"
 				(*
 				<- lang_ru;;
 				*);;
@@ -167,7 +167,7 @@ set_axiom
 			...
 			(*
 			-> 
-				"file://set_axiom_htmls/axiom_of_choice_text_ru.html"
+				"file://axiom_of_choice_text_ru/axiom_of_choice_text_ru.html"
 				(*
 				<- lang_ru;;
 				*);;
@@ -184,7 +184,7 @@ set_axiom
 			...
 			(*
 			-> 
-				"file://set_axiom_htmls/axiom_of_determinacy_text_ru.html"
+				"file://axiom_of_determinacy_text_ru/axiom_of_determinacy_text_ru.html"
 				(*
 				<- lang_ru;;
 				*);;

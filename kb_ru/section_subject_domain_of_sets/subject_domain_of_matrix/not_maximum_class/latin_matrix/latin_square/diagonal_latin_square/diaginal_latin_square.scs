@@ -5,10 +5,11 @@ diagonal_latin_square
 	[latin square]
 	(* <- lang_en;; *);
 <- sc_node_not_relation;
-<=nrel_inclusion: latin_square;;
+<=nrel_inclusion: latin_square;
+				  concept_diagonal_matrix;;
 
 diagonal_latin_square <- rrel_key_sc_element:
-	... 
+	Definition_of_diagonal_latin_square
 	(*
 	=> nrel_main_idtf: [Опр.(диагональный латинский квадрат)]  (* <- lang_ru;; *);;
 	<- sc_explanation;; 
@@ -20,7 +21,7 @@ diagonal_latin_square <- rrel_key_sc_element:
 	*);;
 
 diagonal_latin_square -> rrel_example :
-		"file://diagonal_latin_square_example.jpeg";;
+		"file://diagonal_latin_square_example.jpg";;
 
 diagonal_latin_square <- rrel_key_sc_element:
 	... 

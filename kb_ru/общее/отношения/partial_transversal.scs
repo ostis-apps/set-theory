@@ -27,7 +27,8 @@ partial_transversal
 
 partial_transversal
 =>nrel_first_domain: set;
-=>nrel_second_domain: set;;
+=>nrel_second_domain: set;
+=>nrel_definitional_domain :set;;
 
 partial_transversal <- rrel_key_sc_element:
 	... 
