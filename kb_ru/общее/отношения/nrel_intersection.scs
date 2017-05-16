@@ -7,13 +7,13 @@ nrel_intersection
 
 nrel_intersection
 <- rrel_key_sc_element:
-	Definition_of_intersection
+	Explanation_of_intersection
 	(* 
-		<- definition;;
+		<- explanation;;
 		<= nrel_sc_text_translation:
-			.nrel_intersection_definition
+			.nrel_intersection_explanation
 			(* 
-				-> rrel_example: "file://htmls/nrel_intersection/nrel_intersection_definition.html"
+				-> rrel_example: "file://htmls/nrel_intersection/nrel_intersection_explanation.html"
 					(* <- lang_ru;; *);;
 			*);;
 		<= nrel_using_constants:
@@ -25,9 +25,9 @@ nrel_intersection
 			*);;
 	*);;
 
-Definition_of_intersection
+Explanation_of_intersection
 => nrel_main_idtf:
-	[Определение понятия "пересечение*"]
+	[Пояснение к понятию "пересечение*"]
 		(* <- lang_ru;;	*);;
 
 nrel_intersection

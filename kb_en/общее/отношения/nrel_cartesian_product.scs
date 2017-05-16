@@ -7,14 +7,14 @@ nrel_cartesian_product
 	[operation of the Cartesian product of sets*]
 	(* <- lang_en;; *);;
 
-.nrel_cartesian_product_definition
+.nrel_cartesian_product_explanation
 -> rrel_example:
-	"file://htmls/nrel_cartesian_product/nrel_cartesian_product_definition_en.html"
+	"file://htmls/nrel_cartesian_product/nrel_cartesian_product_explanation_en.html"
 		(* <-lang_en;; *);; 
 
-Definition_of_cartesian_product
+Explanation_of_cartesian_product
 => nrel_main_idtf:
-	[Definition of "cartesian product*"]
+	[Explanation of "cartesian product*"]
 		(* <- lang_en;;	*);;
 
 .nrel_cartesian_product_statement_1
