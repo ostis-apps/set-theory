@@ -1,5 +1,5 @@
 concept_associative_operation
-<= sc_node_not_relation;
+<- sc_node_not_relation;
 => nrel_main_idtf:
     [ассоциативная операция]
     (* <- lang_ru;; *);

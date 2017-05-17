@@ -11,6 +11,11 @@ nrel_intersection
 	nrel_symmetric_sets_difference;;
 
 nrel_intersection
+<- concept_associative_operation;
+<- concept_commutative_operation;
+<- concept_idempotent_operation;;
+
+nrel_intersection
 <- rrel_key_sc_element:
 	Definition_of_intersection
 	(* 

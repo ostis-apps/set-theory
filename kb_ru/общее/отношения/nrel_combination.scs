@@ -10,6 +10,11 @@ nrel_combination
 	nrel_intersection;;
 
 nrel_combination
+<- concept_associative_operation;
+<- concept_commutative_operation;
+<- concept_idempotent_operation;;
+
+nrel_combination
 <- rrel_key_sc_element:
 	Definition_of_combination
 	(* 

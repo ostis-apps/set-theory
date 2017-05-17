@@ -12,6 +12,11 @@ nrel_cartesian_product
 	(* <- lang_ru;; *);;
 
 nrel_cartesian_product
+<|- concept_associative_operation;
+<|- concept_commutative_operation;
+<|- concept_idempotent_operation;;
+
+nrel_cartesian_product
 => nrel_first_domain: set;
 => nrel_second_domain: cartesian_product;
 => nrel_definitional_domain:

@@ -13,6 +13,11 @@ nrel_symmetric_sets_difference
 => nrel_definitional_domain: set;;
 
 nrel_symmetric_sets_difference
+<- concept_associative_operation;
+<- concept_commutative_operation;
+<|- concept_idempotent_operation;;
+
+nrel_symmetric_sets_difference
 <- rrel_key_sc_element:
 	Definition_of_symmetric_sets_difference
 	(* 
