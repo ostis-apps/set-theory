@@ -6,7 +6,9 @@ concept_associative_operation
     [associative operation]
     (* <- lang_en;; *);
 => nrel_idtf:
-    [операция, обладающая ассоциативностью]
+    [операция, обладающая свойством ассоциативности]
+    (* <- lang_ru;; *);
+    [операция, удовлетворяющая закону ассоциативности]
     (* <- lang_ru;; *);
     [сочетательная операция]
     (* <- lang_ru;; *);
@@ -36,6 +38,25 @@ concept_associative_operation
             ...
             (* 
                 -> concept_binary_operation;
-                    associativity;;
+                    set;;
             *);;
     *);;
+
+concept_associative_operation
+<- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		=> nrel_main_idtf:
+			[Иллюстрация к понятию "ассоциативная операция"]
+				(* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			.concept_associative_operation_illustration
+			(*
+				->rrel_example:
+                    "file://content/concept_associative_operation_illustration.png"
+                        (*
+                            => nrel_format: format_png;;
+                        *);;
+			*);;
+	*);;
