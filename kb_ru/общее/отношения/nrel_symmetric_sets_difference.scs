@@ -19,14 +19,14 @@ nrel_symmetric_sets_difference
 
 nrel_symmetric_sets_difference
 <- rrel_key_sc_element:
-	Definition_of_symmetric_sets_difference
+	Explanation_of_symmetric_sets_difference
 	(* 
-		<- definition;;
+		<- explanation;;
 		<= nrel_sc_text_translation:
-			.nrel_symmetric_sets_difference_definition
+			.nrel_symmetric_sets_difference_explanation
 			(* 
 				-> rrel_example:
-					"file://htmls/nrel_symmetric_sets_difference/nrel_symmetric_sets_difference_definition.html"
+					"file://htmls/nrel_symmetric_sets_difference/nrel_symmetric_sets_difference_explanation.html"
 						(* <-lang_ru;; *);;
 			*);;
 		<= nrel_using_constants:
@@ -39,9 +39,9 @@ nrel_symmetric_sets_difference
 			*);;
 	*);;
 
-Definition_of_symmetric_sets_difference
+Explanation_of_symmetric_sets_difference
 => nrel_main_idtf:
-	[Определение понятия "симметрическая разность множеств*"]
+	[Пояснение к понятию "симметрическая разность множеств*"]
 		(* <- lang_ru;;	*);;
 
 nrel_symmetric_sets_difference

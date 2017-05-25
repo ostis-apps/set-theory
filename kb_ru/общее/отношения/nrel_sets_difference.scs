@@ -14,18 +14,18 @@ nrel_sets_difference
 
 nrel_sets_difference
 <- rrel_key_sc_element:
-	Definition_of_sets_difference
+	Explanation_of_sets_difference
 	(* 
-		<- definition;;
+		<- explanation;;
 		=> nrel_main_idtf:
-			[Определение понятия "разность множеств*"]
+			[Пояснение к понятию "разность множеств*"]
 				(* <- lang_ru;; *);;
 		
 		<= nrel_sc_text_translation:
 			.nrel_sets_difference_definition
 			(*
 				-> rrel_example:
-					"file://htmls/nrel_sets_difference/nrel_sets_difference_definition.html"
+					"file://htmls/nrel_sets_difference/nrel_sets_difference_explanation.html"
 						(* <- lang_ru;; *);;
 			*);;
 

@@ -1,8 +1,5 @@
 empty_set
 <- sc_node_not_relation;
-=> nrel_main_idtf:
-	[пустое множество]
-	(* <- lang_ru;;	*);
 => nrel_idtf:
 	[множество без элементов]
 	(* <- lang_ru;;	*);
@@ -11,61 +8,34 @@ empty_set
 
 empty_set
 <- rrel_key_sc_element:
-	Definition_of_empty_set
+	Statement_1_empty_set
 	(* 
-	<- sc_explanation;;
-	<= nrel_sc_text_translation:
-		...
-		(* 
-		-> rrel_example: "file://htmls/empty_set.html" (* <-lang_ru;; *);;
-		*);;
-	<= nrel_using_constants:
-		...
-		(* 
-		-> set;
-			element_of_set;
-			accessory;;
-		*);;
-
+		<- statement;;
+		=> nrel_main_idtf:
+			[Утв. (пустое множество, включение*, множество)]
+					(* <- lang_ru;; *);;			
+		<= nrel_sc_text_translation:
+			.empty_set_statement_1
+			(* 
+				-> rrel_example:
+					"file://htmls/empty_set/empty_set_statement_1.html"
+						(* <-lang_ru;; *);;
+			*);;
 	*);;
-
-Definition_of_empty_set
-=> nrel_main_idtf:
-	[Определение понятия "пустое множество"]
-	(* <- lang_ru;;	*);;
-
 
 empty_set
 <- rrel_key_sc_element:
-	...
-	(* 
-	<- sc_explanation;;
-	<= nrel_sc_text_translation:
-		...
-		(* 
-		-> rrel_example: "file://htmls/statement_empty_set.html" (* <-lang_ru;; *);;
-		*);;
-	=> sc_identifier:
-		...
-		(*
-		-> rrel_example: "file://htmls/app_empty_set.html" (* <-lang_ru;; *);; 
-		*);;
-
-	*);;
-
-empty_set
-<- rrel_key_sc_element: ...
+	Illustration_empty_set
 	(*
-	<-sc_illustration;;
-	<=nrel_sc_text_translation:
-		example_empty_set
-		(* 
-		-> rrel_example: "file://htmls/example_empty_set.html" (* <-lang_ru;; *);;
-		*);;
+		<- illustration;;
+		=> nrel_main_idtf:
+			[Пример (пустого множества)]
+				(* <- lang_ru;;	*);;
+		<= nrel_sc_text_translation:
+			.empty_set_illustration
+			(*
+				-> rrel_example:
+					"file://htmls/empty_set/empty_set_example.html"
+						(* <-lang_ru;; *);;
+			*);;
 	*);;
-
-
-example_empty_set
-=> nrel_main_idtf:
-	[пример (пустого множества)]
-	(* <- lang_ru;;	*);;

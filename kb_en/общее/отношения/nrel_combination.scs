@@ -7,13 +7,13 @@ nrel_combination
 	[combination operation*]
 	(* <- lang_en;; *);;
 
-.nrel_combination_definition
--> rrel_example: "file://htmls/nrel_combination/nrel_combination_definition_en.html"
+.nrel_combination_explanation
+-> rrel_example: "file://htmls/nrel_combination/nrel_combination_explanation_en.html"
 	(* <- lang_en;; *);;
 
-Definition_of_combination
+Explanation_of_combination
 => nrel_main_idtf:
-	[Definition "combination*"]
+	[Explanation of "combination*"]
 	(* <- lang_en;;	*);;
 
 .nrel_combination_statement_1

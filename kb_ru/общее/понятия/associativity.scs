@@ -1,34 +1,59 @@
-// идентификаторы
 associativity
 <- sc_node_not_relation;
 => nrel_main_idtf:
 	[ассоциативность]
 	(* <- lang_ru;;	*);
+	[associativity]
+	(* <- lang_en;;	*);
 => nrel_idtf:
 	[свойство ассоциативности]
 	(* <- lang_ru;;	*);
-=> nrel_idtf:
 	[сочетательность]
 	(* <- lang_ru;;	*);
-=> nrel_idtf:
-	[associativity]
+	[закон ассоциативности]
+	(* <- lang_ru;;	*);
+	[associative property]
 	(* <- lang_en;;	*);;
 
-// определение
 associativity
 <- rrel_key_sc_element:
-	Definition_of_assaciativity
+	Definition_of_associativity
 	(* 
-	<- sc_explanation;;
-	=> nrel_main_idtf:
-		[Определение понятия "ассоциативность"]
-			(* <- lang_ru;;	*);;
-	<= nrel_sc_text_translation:
-		...
-		(* 
-		-> rrel_example:"file://htmls/associativity.html" (* <-lang_ru;; *);;
-		*);;
-	<= nrel_using_constants:
-		...
-			(* -> parameter; binary_operation; nrel_result;; *);;
+		<- definition;;
+		=> nrel_main_idtf:
+			[Определение понятия "ассоциативность"]
+				(* <- lang_ru;;	*);;
+		<= nrel_sc_text_translation:
+			.associativity_definition
+			(* 
+				-> rrel_example: 
+					"file://htmls/associativity/associativity_definition.html"
+						(* <-lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			...
+			(*
+				-> parameter;
+					concept_binary_operation;
+					set;
+					nrel_result;;
+			*);;
+	*);;
+
+associativity
+<- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		=> nrel_main_idtf:
+			[Иллюстрация к понятию "ассоциативность"]
+				(* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			.associativity_illustration
+			(*
+				->rrel_example: "file://content/associativity_illustration.png"
+					(*
+						=> nrel_format: format_png;;
+					*);;
+			*);;
 	*);;

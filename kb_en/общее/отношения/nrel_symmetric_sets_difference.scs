@@ -9,14 +9,14 @@ nrel_symmetric_sets_difference
 	[relation of symmetric difference*]
 	(* <- lang_en;;	*);;
 
-Definition_of_symmetric_sets_difference
+Explanation_of_symmetric_sets_difference
 => nrel_main_idtf:
-	[Definition of "symmetric sets difference*"]
+	[Explanation of "symmetric sets difference*"]
 		(* <- lang_en;;	*);;
 
-.nrel_symmetric_sets_difference_definition
+.nrel_symmetric_sets_difference_explanation
 -> rrel_example:
-    "file://htmls/nrel_symmetric_sets_difference/nrel_symmetric_sets_difference_definition_en.html"
+    "file://htmls/nrel_symmetric_sets_difference/nrel_symmetric_sets_difference_explanation_en.html"
         (* <- lang_en;; *);;
 
 Statement_1_symmetric_sets_difference

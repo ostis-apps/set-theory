@@ -7,14 +7,14 @@ nrel_sets_difference
 	[arithmetic difference of sets*]
 	(* <- lang_en;; *);;
 
-Definition_of_sets_difference
+Explanation_of_sets_difference
 => nrel_main_idtf: 
 	[Definition of "sets difference*"]  
 		(* <- lang_en;; *);;
 
-.nrel_sets_difference_definition
+.nrel_sets_difference_explanation
 -> rrel_example:
-	"file://htmls/nrel_sets_difference/nrel_sets_difference_definition_en.html"
+	"file://htmls/nrel_sets_difference/nrel_sets_difference_explanation_en.html"
 		(* <-lang_en;; *);; 
 
 .nrel_sets_difference_statement_1
