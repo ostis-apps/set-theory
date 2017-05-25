@@ -8,6 +8,8 @@ concept_commutative_operation
 => nrel_idtf:
     [операция, обладающая коммутативностью]
     (* <- lang_ru;; *);
+    [операция, удовлетворяющая закону коммутативности]
+    (* <- lang_ru;; *);
     [переместительная операция]
     (* <- lang_ru;; *);
     [operation, that satisfies the law of commutativity]
@@ -36,6 +38,24 @@ concept_commutative_operation
             ...
             (* 
                 -> concept_binary_operation;
-                    commutativity;;
+                    set;;
             *);;
     *);;
+
+concept_commutative_operation
+<- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		=> nrel_main_idtf:
+			[Иллюстрация к понятию "коммутативная операция"]
+				(* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			.concept_commutative_operation_illustration
+			(*
+				->rrel_example: "file://content/concept_commutative_operation_illustration.png"
+					(*
+						=> nrel_format: format_png;;
+					*);;
+			*);;
+	*);;
