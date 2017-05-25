@@ -8,6 +8,8 @@ concept_idempotent_operation
 => nrel_idtf:
     [операция, обладающая идемпотентностью]
     (* <- lang_ru;; *);
+    [операция, удовлетворяющая закону идемпотентности]
+    (* <- lang_ru;; *);
     [operation, that satisfies the law of idempotency]
     (* <- lang_en;; *);;
 
@@ -34,6 +36,6 @@ concept_idempotent_operation
             ...
             (* 
                 -> concept_binary_operation;
-                    idempotence;;
+                    set;;
             *);;
     *);;
