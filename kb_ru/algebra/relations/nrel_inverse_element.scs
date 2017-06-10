@@ -1,0 +1,57 @@
+nrel_inverse_element
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[обратный элемент*]
+	(* <- lang_ru;; *);
+	[inverse element*]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+    [противоположный элемент*]
+    (* <- lang_ru;; *);
+    [opposite element*]
+    (* <- lang_en;; *);;
+
+nrel_inverse_element
+<- oriented_relation;
+<- quasybinary_relation;;
+
+nrel_inverse_element
+<- rrel_key_sc_element:
+	Definition_of_inverse_element
+	(* 
+		<- definition;;
+        => nrel_main_idtf:
+            [Определение понятия "обратный элемент*"]
+                (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			.nrel_inverse_element_definition
+			(* 
+				-> rrel_example:
+                    "file://htmls/nrel_inverse_element/nrel_inverse_element_definition.html"
+					    (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			...
+			(* 
+                -> concept_binary_operation;
+                    nrel_belonging;
+                    nrel_neutral_element;;
+			*);;
+	*);;
+
+nrel_inverse_element
+<- rrel_key_sc_element:
+	Statement_1_inverse_element
+	(* 
+		<- statement;;
+		<= nrel_sc_text_translation:
+			.nrel_inverse_element_statement_1
+			(* 
+				-> rrel_example:
+                    "file://htmls/nrel_inverse_element/nrel_inverse_element_statement_1.html"
+					    (* <- lang_ru;; *);;
+			*);;
+		=> nrel_main_idtf:
+			[Утв. (обратный элемент*, действительное число)]
+				(* <-lang_ru;; *);; 
+	*);;

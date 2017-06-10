@@ -1,0 +1,105 @@
+concept_commutative_monoid
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [коммутативный моноид]
+    (* <- lang_ru;; *);
+    [commutative monoid]
+    (* <- lang_en;; *);
+=> nrel_idtf:
+    [моноид с коммутативной операцией]
+    (* <- lang_ru;; *);
+    [абелев моноид]
+    (* <- lang_ru;; *);
+    [abelian monoid]
+    (* <- lang_en;; *);
+    [monoid with commutative operation]
+    (* <- lang_en;; *);;
+
+concept_commutative_monoid
+<= nrel_strict_inclusion:
+    concept_monoid;;
+
+concept_commutative_monoid
+-> rrel_example:
+    ...
+    (*
+        => nrel_carrier_set:
+            natural_number;;
+        => nrel_signature:
+            ...
+            (*
+                <- singletone;;
+                -> nrel_multiplication_of_numbers;;
+            *);;
+        => nrel_type_of_algebraic_system:
+            ...
+            (*
+                <- pair_set;;
+                -> ...
+                    (*
+                        <- oriented_set;;
+                        -> rrel_1: 2;;           
+                    *);;
+                -> ...
+                    (*
+                        <- empty_set;;
+                    *);;
+            *);;
+    *);;
+
+concept_commutative_monoid
+<- rrel_key_sc_element:
+    Definition_of_commutative_monoid
+    (*
+        <- definition;;
+        => nrel_main_idtf:
+            [Определение понятия "коммутативный моноид"] 
+                (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            .concept_commutative_monoid_definition
+            (*
+                -> rrel_example:
+                    "file://htmls/concept_commutative_monoid/concept_commutative_monoid_definition.html"
+                        (* <- lang_ru;; *);;
+            *);;
+        <= nrel_using_constants:
+            ...
+            (* 
+                -> concept_monoid;
+                    concept_commutative_operation;;
+            *);;
+    *);;
+
+concept_commutative_monoid
+<- rrel_key_sc_element:
+    Statement_1_commutative_monoid
+    (*
+        <- statement;;
+        => nrel_main_idtf:
+            [Утв. (коммутативный моноид, булеан*, пересечение*)]
+                (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            .concept_commutative_monoid_statement_1
+            (*
+                -> rrel_example:
+                    "file://htmls/concept_commutative_monoid/concept_commutative_monoid_statement_1.html"
+                        (* <- lang_ru;; *);;
+            *);;
+    *);;
+
+concept_commutative_monoid
+<- rrel_key_sc_element:
+    Statement_2_commutative_monoid
+    (*
+        <- statement;;
+        => nrel_main_idtf:
+            [Утв. (коммутативный моноид, булеан*, объединение*)]
+                (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            .concept_commutative_monoid_statement_2
+            (*
+                -> rrel_example:
+                    "file://htmls/concept_commutative_monoid/concept_commutative_monoid_statement_2.html"
+                        (* <- lang_ru;; *);;
+            *);;
+    *);;

@@ -1,0 +1,68 @@
+concept_ring
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [кольцо]
+    (* <- lang_ru;; *);
+    [ring]
+    (* <- lang_en;; *);
+=> nrel_idtf:
+    [ассоциативное кольцо]
+    (* <- lang_ru;; *);
+    [алгебраическое кольцо]
+    (* <- lang_ru;; *);;
+
+concept_ring
+<= nrel_strict_inclusion:
+    concept_semiring;;
+
+concept_ring
+-> rrel_example:
+    ...
+    (*
+        => nrel_carrier_set:
+            integer;;
+        => nrel_signature:
+            ...
+            (*
+                -> nrel_sum_of_numbers;;
+                -> nrel_multiplication_of_numbers;;
+            *);;
+        => nrel_type_of_algebraic_system:
+            ...
+            (*
+                <- pair_set;;
+                -> ...
+                    (*
+                        <- oriented_set;;
+                        -> rrel_1: 2;
+                           rrel_2: 2;;          
+                    *);;
+                -> ...
+                    (*
+                        <- empty_set;;
+                    *);;
+            *);;
+    *);;
+
+concept_ring
+<- rrel_key_sc_element:
+    Definition_of_ring
+    (*
+        <- definition;;
+        => nrel_main_idtf:
+            [Определение понятия "кольцо"] 
+                (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            .concept_ring_definition
+            (*
+                -> rrel_example:
+                    "file://htmls/concept_ring/concept_ring_definition.html"
+                        (* <- lang_ru;; *);;
+            *);;
+        <= nrel_using_constants:
+            ...
+            (* 
+                -> concept_semiring;
+                    nrel_inverse_element;;
+            *);;
+    *);;

@@ -1,0 +1,77 @@
+nrel_signature
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[сигнатура алгебраической системы*]
+	(* <- lang_ru;; *);
+	[signature*]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+    [сигнатура*]
+    (* <- lang_ru;; *);
+    [структура алгебраической системы*]
+    (* <- lang_ru;; *);
+    [множество операций и отношений алгебраической системы*]
+    (* <- lang_ru;; *);;
+
+nrel_signature
+<- oriented_relation;
+<- binary_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- partially_transitive_relation;;
+
+nrel_signature
+=> nrel_first_domain: concept_algebraic_system;
+=> nrel_second_domain: set;
+=> nrel_definitional_domain:
+    ...
+    (*
+        <= nrel_combination:
+            ...
+            (*
+                -> concept_algebraic_system;
+                    set;;
+            *);;
+    *);;
+
+nrel_signature
+<- rrel_key_sc_element:
+	Definition_of_signature
+	(* 
+		<- definition;;
+        => nrel_main_idtf:
+            [Определение понятия "сигнатура алгебраической системы*"]
+                (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			.nrel_signature_definition
+			(* 
+				-> rrel_example:
+                    "file://htmls/nrel_signature/nrel_signature_definition.html"
+					    (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			...
+			(* 
+                -> set;
+                    concept_algebraic_operation;
+                    relation;
+                    concept_algebraic_system;;
+			*);;
+	*);;
+
+nrel_signature
+<- rrel_key_sc_element:
+	Explanation_signature
+	(* 
+		<- explanation;;
+        => nrel_main_idtf:
+			[Пояснение к понятию "сигнатура алгебраической системы*"]
+				(* <-lang_ru;; *);; 
+		<= nrel_sc_text_translation:
+			.nrel_signature_explanation
+			(* 
+				-> rrel_example:
+                    "file://htmls/nrel_signature/nrel_signature_explanation.html"
+					    (* <- lang_ru;; *);;
+			*);;
+	*);;

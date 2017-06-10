@@ -6,14 +6,23 @@ nrel_combination
 	(* <- lang_ru;; *);;
 
 nrel_combination
+=> nrel_distributivity:
+	nrel_intersection;;
+
+nrel_combination
+<- concept_associative_operation;
+<- concept_commutative_operation;
+<- concept_idempotent_operation;;
+
+nrel_combination
 <- rrel_key_sc_element:
-	Definition_of_combination
+	Explanation_of_combination
 	(* 
 		<- definition;;
 		<= nrel_sc_text_translation:
-			.nrel_combination_definition
+			.nrel_combination_explanation
 			(* 
-				-> rrel_example: "file://htmls/nrel_combination/nrel_combination_definition.html"
+				-> rrel_example: "file://htmls/nrel_combination/nrel_combination_explanation.html"
 					(* <- lang_ru;; *);;
 			*);;
 		<= nrel_using_constants:
@@ -25,9 +34,9 @@ nrel_combination
 			*);;
 	*);;
 
-Definition_of_combination
+Explanation_of_combination
 => nrel_main_idtf:
-	[Определение понятия "объединение*"]
+	[Пояснение к понятию "объединение*"]
 		(* <- lang_ru;;	*);;
 
 nrel_combination

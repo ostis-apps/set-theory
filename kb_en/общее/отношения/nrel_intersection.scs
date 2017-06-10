@@ -8,12 +8,12 @@ nrel_intersection
 	(* <- lang_en;; *);;
 
 .nrel_intersection_definition
-	-> rrel_example: "file://htmls/nrel_intersection/nrel_intersection_definition_en.html"
+	-> rrel_example: "file://htmls/nrel_intersection/nrel_intersection_explanation_en.html"
 		(* <- lang_en;; *);;
 
-Definition_of_intersection
+Explanation_of_intersection
 => nrel_main_idtf:
-	[Definition "intersection*"]
+	[Explanation "intersection*"]
 		(* <- lang_en;;	*);;
 
 .nrel_intersection_statement_1

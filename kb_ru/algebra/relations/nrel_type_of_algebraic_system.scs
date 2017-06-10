@@ -1,0 +1,56 @@
+nrel_type_of_algebraic_system
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[тип алгебраической системы*]
+	(* <- lang_ru;; *);
+	[type of algebraic system*]
+	(* <- lang_en;; *);;
+
+nrel_type_of_algebraic_system
+<- oriented_relation;
+<- binary_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;;
+
+nrel_type_of_algebraic_system
+=> nrel_first_domain: concept_algebraic_system;
+=> nrel_second_domain: pair_set;
+=> nrel_definitional_domain:
+    ...
+    (*
+        <= nrel_combination:
+            ...
+            (*
+                -> concept_algebraic_system;
+                    pair_set;;
+            *);;
+    *);;
+
+nrel_type_of_algebraic_system
+<- rrel_key_sc_element:
+	Definition_of_type_of_algebraic_system
+	(* 
+		<- definition;;
+        => nrel_main_idtf:
+            [Определение понятия "тип алгебраической системы*"]
+                (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation:
+			.nrel_type_of_algebraic_system_definition
+			(* 
+				-> rrel_example:
+                    "file://htmls/nrel_type_of_algebraic_system/nrel_type_of_algebraic_system_definition.html"
+					    (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			...
+			(* 
+                -> concept_algebraic_system;
+                    nrel_carrier_set;
+                    concept_algebraic_operation;
+					relation;
+					pair_set;
+					oriented_set;
+					arity;;
+			*);;
+	*);;

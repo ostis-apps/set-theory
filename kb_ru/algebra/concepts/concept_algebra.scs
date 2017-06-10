@@ -1,0 +1,44 @@
+concept_algebra
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [алгебра]
+    (* <- lang_ru;; *);
+    [algebra]
+    (* <- lang_en;; *);
+=> nrel_idtf:
+    [универсальная алгебра]
+    (* <- lang_ru;; *);
+    [алгебраическая система с пустым множеством отношений]
+    (* <- lang_ru;; *);;
+
+concept_algebra
+<= nrel_strict_inclusion:
+    concept_algebraic_system;;
+
+concept_algebra
+<- rrel_key_sc_element:
+    Definition_of_algebra
+    (*
+        <- definition;;
+        => nrel_main_idtf:
+            [Определение понятия "алгебра"] 
+                (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            .concept_algebra_definition
+            (*
+                -> rrel_example:
+                    "file://htmls/concept_algebra/concept_algebra_definition.html"
+                        (* <- lang_ru;; *);;
+            *);;
+        <= nrel_using_constants:
+            ...
+            (* 
+                -> set;
+                    concept_algebraic_operation;
+                    nrel_carrier_set;
+                    nrel_signature;
+                    nrel_algebraic_system;
+                    empty_set;
+                    relation;;
+            *);;
+    *);;

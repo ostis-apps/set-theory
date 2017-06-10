@@ -1,0 +1,56 @@
+concept_commutative_group
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [коммутативная группа]
+    (* <- lang_ru;; *);
+    [commutative group]
+    (* <- lang_en;; *);
+=> nrel_idtf:
+    [абелева группа]
+    (* <- lang_ru;; *);
+    [abelian group]
+    (* <- lang_en;; *);;
+
+concept_commutative_group
+<= nrel_strict_inclusion:
+    concept_group;;
+
+concept_commutative_group
+<- rrel_key_sc_element:
+    Definition_of_commutative_group
+    (*
+        <- definition;;
+        => nrel_main_idtf:
+            [Определение понятия "коммутативная группа"] 
+                (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            .concept_commutative_group_definition
+            (*
+                -> rrel_example:
+                    "file://htmls/concept_commutative_group/concept_commutative_group_definition.html"
+                        (* <- lang_ru;; *);;
+            *);;
+        <= nrel_using_constants:
+            ...
+            (* 
+                -> concept_group;
+                    concept_commutative_operation;;
+            *);;
+    *);;
+
+concept_commutative_group
+<- rrel_key_sc_element:
+    Statement_1_commutative_group
+    (*
+        <- statement;;
+        => nrel_main_idtf:
+            [Утв. (коммутативная группа, кольцо)]
+                (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            .concept_commutative_group_statement_1
+            (*
+                -> rrel_example:
+                    "file://htmls/concept_commutative_group/concept_commutative_group_statement_1.html"
+                        (* <- lang_ru;; *);;
+            *);;
+    *);;

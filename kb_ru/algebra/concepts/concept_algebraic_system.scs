@@ -1,0 +1,77 @@
+concept_algebraic_system
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+    [алгебраическая система]
+    (* <- lang_ru;; *);
+    [algebraic system]
+    (* <- lang_en;; *);
+=> nrel_idtf:
+    [алгебраическая структура]
+    (* <- lang_ru;; *);
+    [algebraic structure]
+    (* <- lang_en;; *);;
+
+concept_algebraic_system
+=> nrel_strict_inclusion:
+    set;;
+
+concept_algebraic_system
+<- rrel_key_sc_element:
+    Definition_of_algebraic_system
+    (*
+        <- definition;;
+        => nrel_main_idtf:
+            [Определение понятия "алгебраическая система"] 
+                (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            .concept_algebraic_system_definition
+            (*
+                -> rrel_example:
+                    "file://htmls/concept_algebraic_system/concept_algebraic_system_definition.html"
+                        (* <- lang_ru;; *);;
+            *);;
+        <= nrel_using_constants:
+            ...
+            (* 
+                -> set;
+                    concept_algebraic_operation;
+                    relation;
+                    nrel_carrier_set;
+                    nrel_signature;;
+            *);;
+    *);;
+
+concept_algebraic_system
+<- rrel_key_sc_element:
+    Statement_1_algebraic_system
+    (*
+        <- statement;;
+        => nrel_main_idtf:
+            [Утв. (алгебраическая система, множество)]
+                (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            .concept_algebraic_system_statement_1
+            (*
+                -> rrel_example:
+                    "file://htmls/concept_algebraic_system/concept_algebraic_system_statement_1.html"
+                        (* <- lang_ru;; *);;
+            *);;
+    *);;
+
+concept_algebraic_system
+=> nrel_comment:
+    Comment_algebraic_system
+    (*
+        => nrel_main_idtf:
+        [Комментарий к понятию "алгебраическая система"]
+            (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation:
+            .concept_algebraic_system_comment
+            (*
+                -> rrel_example:
+                    "file://htmls/concept_algebraic_system/concept_algebraic_system_comment.html"
+                        (* <- lang_ru;; *);;
+            *);;
+    *);;
+
+

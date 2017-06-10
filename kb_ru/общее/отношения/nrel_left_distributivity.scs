@@ -1,0 +1,45 @@
+nrel_left_distributivity
+<- sc_node_norole_relation;
+<- binary_relation;
+<- oriented_relation;
+=> nrel_main_idtf:
+	[дистрибутивность слева*]
+	(* <- lang_ru;; *);
+	[left-distributivity*]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[дистрибутивность слева операций*]
+	(* <- lang_ru;; *);
+	[left-distributivity of operations*]
+	(* <- lang_en;; *);;
+
+nrel_left_distributivity
+=> nrel_first_domain:
+	concept_algebraic_operation;
+=> nrel_second_domain:
+	concept_algebraic_operation;
+=> nrel_definitional_domain:
+	concept_algebraic_operation;;
+
+nrel_left_distributivity
+<- rrel_key_sc_element:
+	Definition_of_left_distributivity
+	(* 
+		<- definition;;
+        => nrel_main_idtf:
+	        [Определение понятия "дистрибутивность слева*"]
+		    (* <- lang_ru;;	*);;
+		<= nrel_sc_text_translation:
+			.nrel_left_distributivity_definition
+			(* 
+				-> rrel_example:
+                    "file://htmls/nrel_left_distributivity/nrel_left_distributivity_definition.html"
+					    (* <- lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			...
+			(* 
+				-> concept_binary_operation;
+					set;;
+			*);;
+	*);;

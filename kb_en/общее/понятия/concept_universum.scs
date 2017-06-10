@@ -39,3 +39,37 @@ Definition_of_universum
 => nrel_main_idtf:
 	[Definition "universum"]
 	(* <- lang_en;;	*);;
+
+
+
+concept_universum
+<- rrel_key_sc_element:
+	statement
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Any object, whatever its nature, is an element of the universe.] (* <-lang_en;; *);; 
+		*);;
+	=> sc_identifier:
+		...
+		(*
+		-> rrel_example: [App. (object, universum, element_of_set)] (* <-lang_en;; *);; 
+		*);;
+
+	*);;
+
+concept_universum
+<- rrel_key_sc_element: ...
+	(*
+	<-sc_illustration;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [The set of natural numbers in some cases is the universe.] (* <-lang_en;; *);; 
+		*);;
+	*);;
+
+
+

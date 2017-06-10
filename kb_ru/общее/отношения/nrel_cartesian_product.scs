@@ -1,15 +1,16 @@
 nrel_cartesian_product
 => nrel_idtf:
-	[прямое произведение множеств*]
-	(* <- lang_ru;; *);
-	[декартово произведение множеств*]
-	(* <- lang_ru;; *);
 	[отношение прямого произведения*]
 	(* <- lang_ru;; *);
 	[отношение декартова произведение*]
 	(* <- lang_ru;; *);
 	[операция декартова произведения множеств*]
 	(* <- lang_ru;; *);;
+
+nrel_cartesian_product
+<|- concept_associative_operation;
+<|- concept_commutative_operation;
+<|- concept_idempotent_operation;;
 
 nrel_cartesian_product
 => nrel_first_domain: set;
@@ -26,14 +27,14 @@ nrel_cartesian_product
 
 nrel_cartesian_product
 <- rrel_key_sc_element:
-	Definition_of_cartesian_product
+	Explanation_of_cartesian_product
 	(* 
-		<- definition;;
+		<- explanation;;
 		<= nrel_sc_text_translation:
-			.nrel_cartesian_product_definition
+			.nrel_cartesian_product_explanation
 			(* 
 				-> rrel_example:
-					"file://htmls/nrel_cartesian_product/nrel_cartesian_product_definition.html"
+					"file://htmls/nrel_cartesian_product/nrel_cartesian_product_explanation.html"
 						(* <-lang_ru;; *);;
 			*);;
 		<= nrel_using_constants:
@@ -46,9 +47,9 @@ nrel_cartesian_product
 			*);;
 	*);;
 
-Definition_of_cartesian_product
+Explanation_of_cartesian_product
 => nrel_main_idtf:
-	[Определение понятия "декартово произведение*"]
+	[Пояснение к понятию "декартово произведение*"]
 		(* <- lang_ru;;	*);;
 
 nrel_cartesian_product
