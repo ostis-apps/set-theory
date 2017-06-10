@@ -12,6 +12,10 @@ concept_binary_operation
 	(* <- lang_ru;; *);;
 
 concept_binary_operation
+<= nrel_strict_inclusion:
+	concept_algebraic_operation;;
+
+concept_binary_operation
 <- rrel_key_sc_element:
 	Definition_of_binary_operation
 	(* 
