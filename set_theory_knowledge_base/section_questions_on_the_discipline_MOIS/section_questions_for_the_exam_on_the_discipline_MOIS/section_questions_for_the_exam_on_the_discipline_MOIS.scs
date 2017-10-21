@@ -1,0 +1,512 @@
+section_questions_for_the_exam_on_the_discipline_MOIS
+=> nrel_main_idtf:
+	[Раздел. Вопросы к экзамену по дисциплине МОИС] (* <- lang_ru;; *);
+<- not_enough_formed_structure;
+<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example: "file://content/content_pdfs/Вопросы к экзамену 2015.pdf" (* <-lang_ru;; *);;
+	*);;
+
+
+section_questions_for_the_exam_on_the_discipline_MOIS
+-> rrel_key_sc_element:
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_1
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_2;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_2
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_3;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_3
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_4;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_4
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_5;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_5
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_6;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_6
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_7;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_7
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_8;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_8
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_9;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_9
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_10;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_10
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_11;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_11
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_12;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_12
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_13;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_13
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_14;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_14
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_15;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_15
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_16;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_16
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_17;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_17
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_18;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_18
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_19;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_19
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_20;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_20
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_21;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_21
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_22;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_22
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_23;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_23
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_24;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_24
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_25;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_25
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_26;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_26
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_27;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_27
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_28;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_28
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_29;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_29
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_30;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_30
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_31;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_31
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_32;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_32
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_33;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_33
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_34;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_34
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_35;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_35
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_36;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_36
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_37;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_37
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_38;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_38
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_39;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_39
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_40;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_40
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_41;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_41
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_42;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_42
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_43;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_43
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_44;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_44
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_45;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_45
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_46;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_46
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_47;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_47
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_48;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_48
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_49;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_49
+		(*
+		=> nrel_section_base_order:
+			section_questions_for_the_exam_on_the_discipline_MOIS_question_50;;
+		*);
+		section_questions_for_the_exam_on_the_discipline_MOIS_question_50
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_1;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_1
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_2;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_2
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_3;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_3
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_4;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_4
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_5;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_5
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_6;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_6
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_7;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_7
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_8;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_8
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_9;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_9
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_10;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_10
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_11;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_11
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_12;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_12
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_13;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_13
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_14;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_14
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_15;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_15
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_16;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_16
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_17;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_17
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_18;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_18
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_19;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_19
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_20;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_20
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_21;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_21
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_22;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_22
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_23;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_23
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_24;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_24
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_25;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_25
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_26;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_26
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_27;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_27
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_28;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_28
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_29;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_29
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_30;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_30
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_31;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_31
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_32;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_32
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_33;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_33
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_34;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_34
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_35;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_35
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_36;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_36
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_37;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_37
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_38;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_38
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_39;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_39
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_40;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_40
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_41;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_41
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_42;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_42
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_43;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_43
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_44;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_44
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_45;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_45
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_46;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_46
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_47;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_47
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_48;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_48
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_49;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_49
+		(*
+		=> nrel_section_base_order:
+			section_answer_for_the_exam_on_the_discipline_MOIS_answer_50;;
+		*);
+		section_answer_for_the_exam_on_the_discipline_MOIS_answer_50;;
+
+
+section_questions_for_the_exam_on_the_discipline_MOIS = [*^"file://section_questions_for_the_exam_on_the_discipline_MOIS.scsi"*];;
