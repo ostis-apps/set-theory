@@ -45,9 +45,6 @@ set_theory
 	Fraenkel;
 	Godel;
 	Cantor;
-
--> rrel_paradoxes_of_set_theory:
-paradox_Burali_Forti;
-
+	
 -> rrel_subject_domain:
 	subject_domain_of_sets;;

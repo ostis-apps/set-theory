@@ -1,0 +1,18 @@
+section_set_theory_paradox => nrel_main_idtf: 
+	[Раздел. Парадоксы теории множеств] (* <- lang_ru;; *);
+	[Partition. Set theory paradox] (* <- lang_en;; *);;
+
+section_set_theory_paradox = [*^"file://section_set_theory_paradox.scsi"*];;
+
+section_set_theory_paradox
+-> rrel_key_sc_element:
+set_theory_paradox;
+paradox_Burali_Forti;
+paradox_Cantor;
+paradox_Russel;
+paradox_doubling_ball;
+paradox_Hausdorff;
+paradox_Mirimanova;
+paradox_Galileo;
+paradox_grand_hotel;
+paradox_Tristram_shandy;;

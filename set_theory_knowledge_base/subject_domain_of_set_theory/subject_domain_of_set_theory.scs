@@ -45,9 +45,9 @@ subject_domain_of_set_theory
 		section_scientists
 		(*
 		=> nrel_section_base_order: 
-			section_paradoxes_of_set_theory;;
+			section_set_theory_paradox;;
 		*);
-		section_paradoxes_of_set_theory
+		section_set_theory_paradox
 		(*
 		=> nrel_section_base_order: 
 			section_questions_on_the_discipline_MOIS;;
