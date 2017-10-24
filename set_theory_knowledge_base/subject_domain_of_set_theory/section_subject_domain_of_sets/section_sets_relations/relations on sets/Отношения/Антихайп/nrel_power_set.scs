@@ -1,9 +1,9 @@
 nrel_power_set
 => nrel_main_idtf:
-	[мощность множества]
+	[мощность множества*]
 	(* <- lang_ru;;	*);
 => nrel_idtf:
-	[кардинальное число]
+	[кардинальное число*]
 	(* <- lang_ru;;	*);
 
 <- rrel_key_sc_element:
@@ -28,7 +28,7 @@ nrel_power_set
 
 Definition_of_power_set
 => nrel_main_idtf:
-	[Определение понятия "мощности множества"]
+	[Опр.(мощности множества*)]
 	(* <- lang_ru;;	*);;
 
 
