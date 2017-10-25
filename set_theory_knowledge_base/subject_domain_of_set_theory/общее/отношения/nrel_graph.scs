@@ -4,7 +4,7 @@ nrel_graph
 <- oriented_relation;
 <- binary_relation;
 <- transitive_relation;
-<- reflexive_relation;
+<- antireflexive_relation;
 => nrel_main_idtf:
 	[график*]
 	(* <- lang_ru;;	*);
