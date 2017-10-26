@@ -6,7 +6,7 @@ section_equivalence_relation
 
 		...
 		(* 
-		-> rrel_example: "file://section_equivalence_relation/htmls/section_equivalence_relation.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://content/content_htmls/section_equivalence_relation.html" (* <-lang_ru;; *);;
 		*);;
 
 section_ordering_relation
@@ -17,7 +17,7 @@ section_ordering_relation
 
 		...
 		(* 
-		-> rrel_example: "file://section_ordering_relation/htmls/section_ordering_relation.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://content/content_htmls/section_ordering_relation.html" (* <-lang_ru;; *);;
 		*);;
 
 
@@ -29,7 +29,7 @@ section_mappings
 
 		...
 		(* 
-		-> rrel_example: "file://section_mappings/htmls/section_mappings.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://content/content_htmls/section_mappings.html" (* <-lang_ru;; *);;
 		*);;
 
 

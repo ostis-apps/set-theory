@@ -1,0 +1,10 @@
+section_mappings_of_sets
+=> nrel_main_idtf:
+	[Раздел. Отображения множеств]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/section_mappings_of_sets.html" (* <-lang_ru;; *);;
+		*);;

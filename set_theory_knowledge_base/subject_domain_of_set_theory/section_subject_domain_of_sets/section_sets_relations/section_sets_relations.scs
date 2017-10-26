@@ -11,7 +11,7 @@ section_concept_of_relation
 
 		...
 		(* 
-		-> rrel_example: "file://htmls/section_concept_of_relation.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://content/content_htmls/section_concept_of_relation.html" (* <-lang_ru;; *);;
 		*);;
 
 section_properties_of_relations
@@ -22,8 +22,13 @@ section_properties_of_relations
 
 		...
 		(* 
-		-> rrel_example: "file://htmls/section_properties_of_relations.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://content/content_htmls/section_properties_of_relations.html" (* <-lang_ru;; *);;
 		*);;
+
+section_relations_on_multisets
+=> nrel_main_idtf:
+	[Раздел. Отношения на мультимножествах]
+	(* <- lang_ru;; *);;
 
 section_relations_operations
 => nrel_main_idtf:
@@ -33,28 +38,5 @@ section_relations_operations
 
 		...
 		(* 
-		-> rrel_example: "file://htmls/section_relations_operations.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://content/content_htmls/section_relations_operations.html" (* <-lang_ru;; *);;
 		*);;
-
-section_equivalence_relation
-=> nrel_main_idtf:
-	[Раздел. Отношение эквивалентности]
-	(* <- lang_ru;; *);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_equivalence_relation.html" (* <-lang_ru;; *);;
-		*);;
-
-section_ordering_relation
-=> nrel_main_idtf:
-	[Раздел. Отношение порядка]
-	(* <- lang_ru;; *);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_ordering_relation.html" (* <-lang_ru;; *);;
-		*);;
-

@@ -1,7 +1,0 @@
-nrel_prev
-<- sc_node_norole_relation;
-=> nrel_main_idtf:
-	[предыдущий*] 
-	(* <- lang_ru;;	*);
-<-sc_const;	
-<-sc_node_norole_relation;;
