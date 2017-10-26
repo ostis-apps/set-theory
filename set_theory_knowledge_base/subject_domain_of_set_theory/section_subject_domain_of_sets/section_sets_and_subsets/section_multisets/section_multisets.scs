@@ -1,0 +1,9 @@
+section_multisets
+=> nrel_main_idtf:
+	[Раздел. Мультимножества]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://content/section_multisets.html" (* <-lang_ru;; *);;
+	*);;

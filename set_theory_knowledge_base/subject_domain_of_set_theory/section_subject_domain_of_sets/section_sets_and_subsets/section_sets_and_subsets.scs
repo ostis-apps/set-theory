@@ -12,4 +12,9 @@ section_sets_and_subsets
 			section_ordered_sets;;
 		*);
 		section_ordered_sets
+		(*
+		=> nrel_section_base_order:
+			section_multisets;;
+		*);
+		section_multisets
 	};;
