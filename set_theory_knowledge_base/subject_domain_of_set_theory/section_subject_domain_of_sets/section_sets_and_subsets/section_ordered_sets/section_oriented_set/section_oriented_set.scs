@@ -1,0 +1,9 @@
+section_oriented_set
+=> nrel_main_idtf:
+	[Раздел. Кортеж]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/section_cortege.html" (* <-lang_ru;; *);;
+		*);;

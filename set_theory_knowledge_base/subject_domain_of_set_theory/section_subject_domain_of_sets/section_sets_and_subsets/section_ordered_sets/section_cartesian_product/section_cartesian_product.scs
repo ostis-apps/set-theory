@@ -1,0 +1,15 @@
+section_Cartesian_product
+=> nrel_main_idtf:
+	[Раздел. Декартово произведение множеств]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+		pictureCP
+		(* 
+			=> nrel_main_idtf:[рисунок 1](* <- lang_ru;; *);;
+			-> rrel_example: "file://content/cartesian_product.png" (* <-lang_ru;; *);;
+		*);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/section_Cartesian_product.html" (* <-lang_ru;; *);;
+		*);;

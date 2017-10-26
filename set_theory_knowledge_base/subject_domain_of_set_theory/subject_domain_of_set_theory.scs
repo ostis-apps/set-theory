@@ -20,11 +20,6 @@ subject_domain_of_set_theory
 		section_set_axiom
 		(*
 		=> nrel_section_base_order: 
-			section_ordered_sets;;
-		*);
-		section_ordered_sets
-		(*
-		=> nrel_section_base_order: 
 			section_sets_relations;;
 		*);
 		section_sets_relations
