@@ -7,3 +7,11 @@ section_graphics
 		(* 
 		-> rrel_example: "file://content/section_graphics.html" (* <-lang_ru;; *);;
 		*);;
+
+section_graphics = [*^"file://section_graphics.scsi"*];;
+
+section_graphics
+-> rrel_key_sc_element:
+	nrel_graph;
+	concept_injection_graph;
+	functional_graph;;

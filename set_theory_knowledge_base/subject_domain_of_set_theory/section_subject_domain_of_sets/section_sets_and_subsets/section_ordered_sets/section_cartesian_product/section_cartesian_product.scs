@@ -13,3 +13,9 @@ section_Cartesian_product
 		(* 
 		-> rrel_example: "file://content/section_Cartesian_product.html" (* <-lang_ru;; *);;
 		*);;
+
+section_Cartesian_product = [*^"file://section_cartesian_product.scsi"*];;
+
+section_Cartesian_product
+-> rrel_key_sc_element:
+	nrel_cartesian_product;;
