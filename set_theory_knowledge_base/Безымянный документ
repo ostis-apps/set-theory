@@ -1,0 +1,22 @@
+section_equivalence_relation
+=> nrel_main_idtf:
+	[Раздел. Отношение эквивалентности]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_equivalence_relation.html" (* <-lang_ru;; *);;
+		*);;
+
+section_ordering_relation
+=> nrel_main_idtf:
+	[Раздел. Отношение порядка]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_ordering_relation.html" (* <-lang_ru;; *);;
+		*);;
+

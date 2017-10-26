@@ -1,0 +1,35 @@
+section_equivalence_relation
+=> nrel_main_idtf:
+	[Раздел. Отношение эквивалентности]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://section_equivalence_relation/htmls/section_equivalence_relation.html" (* <-lang_ru;; *);;
+		*);;
+
+section_ordering_relation
+=> nrel_main_idtf:
+	[Раздел. Отношение порядка]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://section_ordering_relation/htmls/section_ordering_relation.html" (* <-lang_ru;; *);;
+		*);;
+
+
+section_mappings
+=> nrel_main_idtf:
+	[Раздел. Соответствия]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://section_mappings/htmls/section_mappings.html" (* <-lang_ru;; *);;
+		*);;
+
+

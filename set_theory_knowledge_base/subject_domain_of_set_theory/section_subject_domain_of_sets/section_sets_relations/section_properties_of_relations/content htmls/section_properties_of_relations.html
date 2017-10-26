@@ -1,0 +1,22 @@
+<p>
+Свойства <sc_element sys_idtf = "relation">отношений</sc_element>: 
+<ul>
+	<li><sc_element sys_idtf = "reflexive_relation">Рефлексивность</sc_element>: если &#8707; a &isin; A a &phi; a;</li>
+	<li><sc_element sys_idtf = "antireflexive_relation">Антирефлексивность</sc_element>: если &#8707; a &isin; A a’ &phi; a;</li>
+	<li><sc_element sys_idtf = "symmetric_relation">Симметричность</sc_element>: если &#8707; a, b &isin; A a &phi; b → b &phi; a;</li>
+	<li><sc_element sys_idtf = "antisymmetric_relation">Антисимметричность</sc_element>: если &#8707; a, b &isin; A a &phi; b & b &phi; a → a = b;</li>
+	<li><sc_element sys_idtf = "transitive_relation">Транзитивность</sc_element>: если &#8707; a, b, c &isin; A a &phi; b & b &phi; c → a &phi; c;</li>
+	<li>Полнота, или линейность: если &#8707; a, b &isin; A a &ne; b a &phi; b или b &phi; a. </li>
+</ul>
+Отношение &phi; = <Ф, М> называется <sc_element sys_idtf = "">пустым</sc_element>, если <sc_element sys_idtf = "nrel_graph">график</sc_element> Ф является <sc_element sys_idtf = "empty_set">пустым множеством</sc_element>. Т.е. &phi; = < &empty;, М>. Другими словами имеется область задания отношения, на котором не задан график отношения. <br>
+Отношение &phi; = <Ф, М> называется <sc_element sys_idtf = "">отношением равенства</sc_element>, если Ф = &Delta; М. В теоретико-множественном плане можно записать, (&forall; a, b &isin; М) (a &phi; b → a = b). Например, задано &phi; = <Ф, М>, М = {1, 2, 3}, Ф = {&lt;1, 1>, &lt;2, 2>, &lt;3, 3>}. Данное отношение является отношением равенства.<br>
+Отношение &phi; = <Ф, М> называется <sc_element sys_idtf = "">отношением неравенства</sc_element>, если Ф = М<sup>2</sup> \ &Delta; М, т.е. (&forall; a, b &isin; М) (a &phi; b → a &ne; b). Например, задано &phi; = <Ф, М>, М = {1, 2, 3}, Ф = {&lt;1, 2>, &lt;2, 3>, &lt;3, 1>}. Данное отношение является отношением неравенства. Отношения «5 > 3» и «3 &lt; 10» также являются примерами отношения неравенства.<br>
+Отношение называется <sc_element sys_idtf = "partial_order_relation">отношением частичного порядка</sc_element>, если оно рефлексивно, антисимметрично и транзитивно. <br>
+Отношение называется <sc_element sys_idtf = "total_order_relation">отношением линейного порядка</sc_element>, если оно является отношением частичного порядка и линейно. <br>
+Отношение называется <sc_element sys_idtf = "strict_order_relation">отношением строгого порядка</sc_element>, если оно антирефлексивно, антисимметрично и транзитивно. <br>
+Отношение называется <sc_element sys_idtf = "strictly_total_order_relation">отношением строгого линейного порядка</sc_element>, если оно — линейное отношение строгого порядка. <br>
+Отношение называется <sc_element sys_idtf = "equivalence_relation">отношением эквивалентности</sc_element>, если оно рефлексивно, симметрично и транзитивно. <br>
+Классом эквивалентности, порождённым элементом х, называется множество всех элементов из A, вступающих с х в отношение эквивалентности. <br>
+<sc_element sys_idtf = "nrel_quotient_set">Фактор-множеством</sc_element> множества А по отношению эквивалентности &phi; называется множество всех различных классов эквивалентности, которое обозначается A / &phi;. <br>
+Мощность фактор-множества A / &phi; называется <sc_element sys_idtf = "">индексом разбиения</sc_element>, порождённого отношением &phi; .
+</p>
