@@ -1,0 +1,12 @@
+section_equivalence_relation
+
+-> rrel_key_sc_element:
+		equal_size_multiset;
+		nrel_eqpower_set;
+		nrel_equality;
+		nrel_equality_of_fuzzy_sets;
+		nrel_equidecomposable_sets;
+		nrel_equipotent;
+		nrel_inequality;;
+		
+		
