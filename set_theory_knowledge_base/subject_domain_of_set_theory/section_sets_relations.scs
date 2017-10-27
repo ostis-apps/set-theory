@@ -12,14 +12,42 @@ section_sets_relations
 			section_relations_operations;;
 		*);
 		section_relations_operations
-		(*
-		=> nrel_section_base_order: 
-			section_equivalence_relation;;
-		*);
+	};;
+
+section_concept_of_relation
+	<= nrel_section_decomposition:
+	{
 		section_equivalence_relation
 		(*
 		=> nrel_section_base_order: 
 			section_ordering_relation;;
 		*);
 		section_ordering_relation
+		(*
+		=> nrel_section_base_order: 
+			section_mappings;;
+		*);
+		section_mappings
+	};;
+
+section_mappings	
+	<= nrel_section_decomposition:
+	{
+		section_function
+		(*
+		=> nrel_section_base_order: 
+			section_mappings_operations;;
+		*);
+		section_mappings_operations
+		(*
+		=> nrel_section_base_order: 
+			section_mappings_relations;;
+		*);
+		section_mappings_relations
+	};;
+
+section_function
+	<= nrel_section_decomposition:
+	{
+		section_mappings_of_sets
 	};;
