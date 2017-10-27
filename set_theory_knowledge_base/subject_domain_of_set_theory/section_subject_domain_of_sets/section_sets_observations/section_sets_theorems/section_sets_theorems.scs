@@ -1,9 +1,12 @@
-section_sets_teorems => nrel_main_idtf: 
+section_sets_theorems => nrel_main_idtf: 
 	[Раздел. Теоремы теории множеств] (* <- lang_ru;; *);
-	[Partition. Teorems of set theory] (* <- lang_en;; *);;
+	[Partition. Theorems of set theory] (* <- lang_en;; *);;
 
-section_sets_teorems = [*^"file://section_sets_teorems_box/section_sets_teorems.scsi"*];;
-
-rrel_key_sc_element -> (section_sets_teorems -> sets_teorems);;
-
-
+section_sets_theorems
+<- rrel_key_sc_element:
+        binomial_theorem;
+	Cantor_Bernstein_theorem;
+	Cantor_theorem;
+	diagonal_theorem;
+	Dilworth_theorem;
+	Szpilrajn_theorem;;

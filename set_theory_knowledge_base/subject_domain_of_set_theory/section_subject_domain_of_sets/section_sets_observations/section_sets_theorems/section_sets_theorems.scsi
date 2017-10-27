@@ -1,5 +1,4 @@
-sets_sets_theorems
-=> nrel_main_idtf: 
+section_sets_theorems => nrel_main_idtf: 
 	[Теоремы теории множеств] (* <- lang_ru;; *);
 	[Theorems of set theory] (* <- lang_en;; *);
 
@@ -14,7 +13,7 @@ sets_sets_theorems
 			...
 			(*
 			-> 
-				"file://binomial_theorem/binomial_theorem.html"
+				"file://content/content_html/binomial_theorem/binomial_theorem.html"
 				(*
 				<- lang_ru;;
 				*);;
@@ -31,7 +30,7 @@ sets_sets_theorems
 			...
 			(*
 			-> 
-				"file://Cantor_Bernstein_theorem/Cantor_Bernstein_theorem.html"
+				"file://content/content_html/Cantor_Bernstein_theorem/Cantor_Bernstein_theorem.html"
 				(*
 				<- lang_ru;;
 				*);;
@@ -48,7 +47,7 @@ sets_sets_theorems
 			...
 			(*
 			-> 
-				"file://Cantor_theorem/Cantor_theorem.html"
+				"file://content/content_html/Cantor_theorem/Cantor_theorem.html"
 				(*
 				<- lang_ru;;
 				*);;
@@ -65,7 +64,7 @@ sets_sets_theorems
 			...
 			(*
 			-> 
-				"file://diagonal_theorem/diagonal_theorem.html"
+				"file://content/content_html/diagonal_theorem/diagonal_theorem.html"
 				(*
 				<- lang_ru;;
 				*);;
@@ -82,24 +81,7 @@ sets_sets_theorems
 			...
 			(*
 			-> 
-				"file://Dilworth_theorem/Dilworth_theorem.html"
-				(*
-				<- lang_ru;;
-				*);;
-			*);;
-	*);
-
-	section_theorems
-	(*
-	=> nrel_main_idtf: 
-		[Теоремы раздела] (* <- lang_ru;; *);
-		[section_theorems] (* <- lang_en;; *);;
-	<- sc_text_statement;;
-	<= nrel_sc_text_translation:	
-			...
-			(*
-			-> 
-				"file://section_theorems/section_theorems.html"
+				"file://content/content_html/Dilworth_theorem/Dilworth_theorem.html"
 				(*
 				<- lang_ru;;
 				*);;
@@ -116,9 +98,9 @@ sets_sets_theorems
 			...
 			(*
 			-> 
-				"file://Szpilrajn_theorem/Szpilrajn_theorem.html"
+				"file://content/content_html/Szpilrajn_theorem/Szpilrajn_theorem.html"
 				(*
 				<- lang_ru;;
 				*);;
 			*);;
-	*);
+	*);;
