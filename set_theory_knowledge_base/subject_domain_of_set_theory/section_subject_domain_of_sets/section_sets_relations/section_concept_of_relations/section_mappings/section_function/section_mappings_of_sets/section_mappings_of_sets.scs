@@ -1,0 +1,9 @@
+section_equivalence_relation
+
+-> rrel_key_sc_element:
+		bijection;
+		functional;
+		injection;
+		surjection;;
+		
+		
