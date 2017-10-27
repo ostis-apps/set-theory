@@ -15,12 +15,10 @@ graph_of_correspondence
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://htmls/graph_of_correspondence.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/graph_of_correspondence.html" (* <-lang_ru;; *);;
 		*);;
 	
 	*);;
-
-	
 
 Definition_of_graph_of_correspondence
 => nrel_main_idtf:

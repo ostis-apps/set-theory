@@ -1,0 +1,162 @@
+narrowing_function
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[сужение функции]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[ограничение функции на множество]
+	(*<- lang_ru;;*);;
+
+narrowing_function
+<- rrel_key_sc_element:
+	Definition_of_narrowing_function
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/narrowing_function.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+Definition_of_narrowing_function
+=> nrel_main_idtf:
+	[Опр.(сужение функции)]
+	(* <- lang_ru;;	*);;
+
+
+//-----------------------------------------------------------------------------------------------
+
+
+nrel_mapping_composition
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antitransitive_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+=> nrel_main_idtf:
+	[композиция соответствий*]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[произведение соответствий*]
+	(* <- lang_ru;;	*);;
+
+nrel_mapping_composition
+<- rrel_key_sc_element:
+	Definition_of_nrel_mapping_composition
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/nrel_mapping_composition.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> nrel_mapping;
+		rrel_input_set;
+		rrel_output_set;
+		nrel_graph;;
+		*);;
+
+
+	*);;
+
+Definition_of_nrel_mapping_composition
+=> nrel_main_idtf:
+	[Определение отношения "композиция соответствий*"]
+	(* <- lang_ru;;	*);;
+
+
+
+//-----------------------------------------------------------------------------------------------
+
+
+nrel_mapping_inversion
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antitransitive_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+=> nrel_main_idtf:
+	[инверсия соответствия*]
+	(* <- lang_ru;;	*);;
+
+nrel_mapping_inversion
+<- rrel_key_sc_element:
+	Definition_of_nrel_mapping_inversion
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/nrel_mapping_inversion.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> nrel_mapping;
+		rrel_input_set;
+		rrel_output_set;
+		nrel_graph;
+		nrel_inversion;
+		nrel_set;;
+		*);;
+
+
+	*);;
+
+Definition_of_nrel_mapping_inversion
+=> nrel_main_idtf:
+	[Определение отношения "инверсия соответствия*"]
+	(* <- lang_ru;;	*);;
+
+nrel_mapping_inversion
+=>nrel_first_domain: nrel_mapping;
+=>nrel_second_domain: nrel_mapping;;
+
+
+//-----------------------------------------------------------------------------------------------
+
+
+projection
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[проекция]
+	(* <- lang_ru;;	*);;
+projection
+<- rrel_key_sc_element:
+	Definition_of_projection
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/projection.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> cartesian_product;
+		nrel_component;
+
+		element_of_set;;
+		*);;
+
+
+	*);;
+
+Definition_of_projection
+=> nrel_main_idtf:
+	[Определение понятия "проекция"]
+	(* <- lang_ru;;	*);;
+
+
+
+//-----------------------------------------------------------------------------------------------
+
