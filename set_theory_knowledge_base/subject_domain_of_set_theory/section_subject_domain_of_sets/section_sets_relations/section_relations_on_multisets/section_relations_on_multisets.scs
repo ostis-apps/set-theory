@@ -1,0 +1,6 @@
+section_relations_on_multisets
+
+-> rrel_key_sc_element:
+		
+		nrel_dimension_multiset;
+		nrel_the_peak_value_of_the_multiset;;
