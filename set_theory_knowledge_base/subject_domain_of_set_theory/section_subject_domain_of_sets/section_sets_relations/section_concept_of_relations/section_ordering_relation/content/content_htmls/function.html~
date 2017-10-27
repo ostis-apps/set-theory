@@ -1,3 +1,0 @@
-<p>
-<b><sc_element sys_idtf  = "function">функция</sc_element> - это <sc_element sys_idtf  = "nrel_compliance">соответствие</sc_element> между элементами двух <sc_element sys_idtf  = "set">множеств</sc_element>, установленное по такому правилу, что каждому элементу одного <sc_element sys_idtf  = "set">множества</sc_element> ставится в соответствие элемент из другого <sc_element sys_idtf  = "set">множества</sc_element>.
-</p>
