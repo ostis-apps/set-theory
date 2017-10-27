@@ -1,0 +1,12 @@
+section_sets_observations
+=> nrel_main_idtf:
+	[Раздел. Высказывания теории множеств]
+	(* <- lang_ru;; *);
+<- not_enough_formed_structure;
+
+section_sets_observations <= nrel_section_decomposition : 
+         {
+                section_sets_axioms; 
+                section_sets_theorems
+};;
+

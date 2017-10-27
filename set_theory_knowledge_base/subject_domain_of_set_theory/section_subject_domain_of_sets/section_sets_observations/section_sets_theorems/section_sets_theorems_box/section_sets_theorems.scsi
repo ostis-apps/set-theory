@@ -1,0 +1,124 @@
+sets_sets_theorems
+=> nrel_main_idtf: 
+	[Теоремы теории множеств] (* <- lang_ru;; *);
+	[Theorems of set theory] (* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+	binomial_theorem
+	(*
+	=> nrel_main_idtf: 
+		[Биномиальная теорема] (* <- lang_ru;; *);
+		[Binomial theorem] (* <- lang_en;; *);;
+	<- sc_text_statement;;
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://binomial_theorem/binomial_theorem.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+	*);
+
+	Cantor_Bernstein_theorem
+	(*
+	=> nrel_main_idtf: 
+		[Теорема Кантора-Бернштейна] (* <- lang_ru;; *);
+		[Cantor-Bernstein theorem] (* <- lang_en;; *);;
+	<- sc_text_statement;;
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://Cantor_Bernstein_theorem/Cantor_Bernstein_theorem.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+	*);
+
+	Cantor_theorem
+	(*
+	=> nrel_main_idtf: 
+		[Теорема Кантора] (* <- lang_ru;; *);
+		[Cantor theorem] (* <- lang_en;; *);;
+	<- sc_text_statement;;
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://Cantor_theorem/Cantor_theorem.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+	*);
+
+	diagonal_theorem
+	(*
+	=> nrel_main_idtf: 
+		[Диагональная теорема] (* <- lang_ru;; *);
+		[diagonal theorem] (* <- lang_en;; *);;
+	<- sc_text_statement;;
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://diagonal_theorem/diagonal_theorem.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+	*);
+
+	Dilworth_theorem
+	(*
+	=> nrel_main_idtf: 
+		[Теорема Дилуорса] (* <- lang_ru;; *);
+		[Dilworth theorem] (* <- lang_en;; *);;
+	<- sc_text_statement;;
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://Dilworth_theorem/Dilworth_theorem.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+	*);
+
+	section_theorems
+	(*
+	=> nrel_main_idtf: 
+		[Теоремы раздела] (* <- lang_ru;; *);
+		[section_theorems] (* <- lang_en;; *);;
+	<- sc_text_statement;;
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://section_theorems/section_theorems.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+	*);
+
+	Szpilrajn_theorem
+	(*
+	=> nrel_main_idtf: 
+		[Теорема Шпильрайна] (* <- lang_ru;; *);
+		[Szpilrajn_theorem] (* <- lang_en;; *);;
+	<- sc_text_statement;;
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://Szpilrajn_theorem/Szpilrajn_theorem.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+	*);

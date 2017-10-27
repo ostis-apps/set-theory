@@ -1,0 +1,9 @@
+section_sets_axioms => nrel_main_idtf: 
+	[Раздел. Аксиомы теории множеств] (* <- lang_ru;; *);
+	[Partition. Axioms of set theory] (* <- lang_en;; *);;
+
+section_sets_axioms = [*^"file://section_sets_axioms_box/section_sets_axioms.scsi"*];;
+
+rrel_key_sc_element -> (section_sets_axioms -> sets_axioms);;
+
+

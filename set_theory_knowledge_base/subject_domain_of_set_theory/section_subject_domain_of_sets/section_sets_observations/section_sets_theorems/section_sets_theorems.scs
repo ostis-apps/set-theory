@@ -1,0 +1,9 @@
+section_sets_teorems => nrel_main_idtf: 
+	[Раздел. Теоремы теории множеств] (* <- lang_ru;; *);
+	[Partition. Teorems of set theory] (* <- lang_en;; *);;
+
+section_sets_teorems = [*^"file://section_sets_teorems_box/section_sets_teorems.scsi"*];;
+
+rrel_key_sc_element -> (section_sets_teorems -> sets_teorems);;
+
+
