@@ -1,4 +1,4 @@
-section_Cartesian_product
+section_cartesian_product
 => nrel_main_idtf:
 	[Раздел. Декартово произведение множеств]
 	(* <- lang_ru;; *);
@@ -11,11 +11,11 @@ section_Cartesian_product
 <= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example: "file://content/section_Cartesian_product.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://content/section_cartesian_product.html" (* <-lang_ru;; *);;
 		*);;
 
-section_Cartesian_product = [*^"file://section_cartesian_product.scsi"*];;
+section_cartesian_product = [*^"file://section_cartesian_product.scsi"*];;
 
-section_Cartesian_product
+section_cartesian_product
 -> rrel_key_sc_element:
 	nrel_cartesian_product;;
