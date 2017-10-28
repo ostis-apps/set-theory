@@ -7,3 +7,11 @@ section_oriented_set
 		(* 
 		-> rrel_example: "file://content/section_cortege.html" (* <-lang_ru;; *);;
 		*);;
+
+section_oriented_set = [*^"file://section_oriented_set.scsi"*];;
+
+section_oriented_set
+-> rrel_key_sc_element:
+	oriented_set;
+	oriented_set_length;
+	empty_oriented_set;;
