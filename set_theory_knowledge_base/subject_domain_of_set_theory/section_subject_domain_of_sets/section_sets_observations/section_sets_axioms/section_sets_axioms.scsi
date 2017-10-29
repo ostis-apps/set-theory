@@ -1,7 +1,7 @@
-set_axiom 
+section_sets_axioms
 => nrel_main_idtf: 
-	[Аксиомы теории множеств] (* <- lang_ru;; *);
-	[Axioms of set theory] (* <- lang_en;; *);
+	[Раздел. Аксиомы теории множеств] (* <- lang_ru;; *);
+	[Partition. Axioms of set theory] (* <- lang_en;; *);
 
 <- rrel_key_sc_element:
 	axiom_bulk
@@ -14,7 +14,7 @@ set_axiom
 			...
 			(*
 			-> 
-				"file://axiom_bulk_text_ru/axiom_bulk_text_ru.html"
+				"file://content/content_html/axiom_bulk/axiom_bulk.html"
 				(*
 				<- lang_ru;;
 				*);;
@@ -31,7 +31,7 @@ set_axiom
 			...
 			(*
 			-> 
-				"file://axiom_of_empty_set_text_ru/axiom_of_empty_set_text_ru.html"
+				"file://content/content_html/axiom_of_empty_set/axiom_of_empty_set.html"
 				(*
 				<- lang_ru;;
 				*);;
@@ -48,7 +48,7 @@ set_axiom
 			...
 			(*
 			-> 
-				"file://axiom_of_infinity_text_ru/axiom_of_infinity_text_ru.html"
+				"file://content/content_html/axiom_of_infinity/axiom_of_infinity.html"
 				(*
 				<- lang_ru;;
 				*);;
@@ -65,7 +65,7 @@ set_axiom
 			...
 			(*
 			-> 
-				"file://axiom_of_pairing_text_ru/axiom_of_pairing_text_ru.html"
+				"file://content/content_html/axiom_of_pairing/axiom_of_pairing.html"
 				(*
 				<- lang_ru;;
 				*);;
@@ -82,7 +82,7 @@ set_axiom
 			...
 			(*
 			-> 
-				"file://axiom_of_boolean_text_ru/axiom_of_boolean_text_ru.html"
+				"file://content/content_html/axiom_of_boolean/axiom_of_boolean.html"
 				(*
 				<- lang_ru;;
 				*);;
@@ -99,7 +99,7 @@ set_axiom
 			...
 			(*
 			-> 
-				"file://axiom_of_union_text_ru/axiom_of_union_text_ru.html"
+				"file://content/content_html/axiom_of_union/axiom_of_union.html"
 				(*
 				<- lang_ru;;
 				*);;
@@ -116,7 +116,7 @@ set_axiom
 			...
 			(*
 			-> 
-				"file://allocation_scheme_text_ru/allocation_scheme_text_ru.html"
+				"file://content/content_html/allocation_scheme/allocation_scheme.html"
 				(*
 				<- lang_ru;;
 				*);;
@@ -133,7 +133,7 @@ set_axiom
 			...
 			(*
 			-> 
-				"file://conversion_circuit_text_ru/conversion_circuit_text_ru.html"
+				"file://content/content_html/conversion_circuit/conversion_circuit.html"
 				(*
 				<- lang_ru;;
 				*);;
@@ -150,7 +150,7 @@ set_axiom
 			...
 			(*
 			-> 
-				"file://axiom_of_regularity_text_ru/axiom_of_regularity_text_ru.html"
+				"file://content/content_html/axiom_of_regularity/axiom_of_regularity.html"
 				(*
 				<- lang_ru;;
 				*);;
@@ -167,7 +167,7 @@ set_axiom
 			...
 			(*
 			-> 
-				"file://axiom_of_choice_text_ru/axiom_of_choice_text_ru.html"
+				"file://content/content_html/axiom_of_choice/axiom_of_choice.html"
 				(*
 				<- lang_ru;;
 				*);;
@@ -184,7 +184,7 @@ set_axiom
 			...
 			(*
 			-> 
-				"file://axiom_of_determinacy_text_ru/axiom_of_determinacy_text_ru.html"
+				"file://content/content_html/axiom_of_determinacy/axiom_of_determinacy.html"
 				(*
 				<- lang_ru;;
 				*);;
