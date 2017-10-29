@@ -1,4 +1,15 @@
 section_operations_of_multisets
+<- rrel_key_sc_element:
+	nrel_multiset_combination;
+	nrel_multiset_intersection;
+	multiset_arithmetic_addition;
+	multiset_arithmetic_subtraction;
+	nrel_multiset_addition;
+	symmetric_multiset_difference;
+	multiset_arithmetic_product;
+	multiset_direct_product;
+	
+
 => nrel_main_idtf:
 	[Раздел. Операции]
 	(* <- lang_ru;; *);

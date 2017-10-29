@@ -1,4 +1,6 @@
 section_properties_of_operations
+-> rrel_key_sc_element:
+	 associativity; commutative;
 => nrel_main_idtf:
 	[Раздел. Свойства операций над множествами]
 	(* <- lang_ru;; *);
@@ -8,7 +10,6 @@ section_properties_of_operations
 		(* 
 		-> rrel_example: "file://content/content_htmls/section_properties_of_operations.html" (* <-lang_ru;; *);;
 		*);;
-<<<<<<< HEAD
 
 section_properties_of_operations =  [*^"file://section_properties_of_operations.scsi"*];;
 
@@ -16,5 +17,3 @@ rrel_key_sc_element -> (section_properties_of_operations -> properties_of_operat
 
 
 
-=======
->>>>>>> b07c055f9d6b34f677627dfaadc761dc59acd1fe

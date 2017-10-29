@@ -1,4 +1,12 @@
 section_operations
+-> rrel_key_sc_element:
+	nrel_addition;
+	nrel_combination;
+	nrel_intersection;
+	nrel_sets_difference;
+	nrel_symmetric_sets_difference;
+	nrel_boolean;
+	nrel_subdividing;
 => nrel_main_idtf:
 	[Раздел. Операции](* <- lang_ru;; *);
 	[Partition. Operations] (* <- lang_en;; *);

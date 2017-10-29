@@ -1,6 +1,5 @@
 section_multisets_operations
 => nrel_main_idtf:
-<<<<<<< HEAD
 	[Раздел. Операции на мультимножествах]
 	(* <- lang_ru;; *);
 
@@ -15,13 +14,3 @@ section_multisets_operations
 	section_properties_of_multisets_operations
 	
 };;
-=======
-	[Раздел. Операции над мультимножествами]
-	(* <- lang_ru;; *);
-<= nrel_sc_text_translation:
-		...
-		(* 
-		-> rrel_example: "file://content/content_htmls/section_multisets_operations.html" (* <-lang_ru;; *);;
-		*);;
-
->>>>>>> b07c055f9d6b34f677627dfaadc761dc59acd1fe
