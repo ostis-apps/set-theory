@@ -1,3 +1,0 @@
-<p>
-<b><sc_element sys_idtf = "inductive_set">Индуктивное множество</sc_element></b> - <sc_element sys_idtf = "set">множество</sc_element>, являющееся либо <sc_element sys_idtf = "empty_set">пустым</sc_element>, либо для него существует такое <sc_element sys_idtf = "integer">целое</sc_element> положительное <sc_element sys_idtf = "number">число</sc_element> n, что множество содержит в точности n <sc_element sys_idtf = "element_of_set">членов</sc_element>.
-</p>

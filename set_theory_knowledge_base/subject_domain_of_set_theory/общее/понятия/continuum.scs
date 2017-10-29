@@ -67,6 +67,6 @@ continuum <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			"file://htmls/continuum/subdividing_statement.html"(* <- lang_ru;; *);;
+			"file://../../section_subject_domain_of_sets/section_sets_operations/section_operations/content/content_htmls/subdividing_statement.html"(* <- lang_ru;; *);;
 		*);;
 	*);;

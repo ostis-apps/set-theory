@@ -1,0 +1,13 @@
+section_operations_of_multisets
+=> nrel_main_idtf:
+	[Раздел. Операции]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/section_multisets_operations.html" (* <-lang_ru;; *);;
+		*);;
+
+section_operations_of_multisets =  [*^"file://section_multisets_operations.scsi"*];;
+
+rrel_key_sc_element -> (section_operations_of_multisets -> set_multisets_operations);;

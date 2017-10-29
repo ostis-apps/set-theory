@@ -13,12 +13,4 @@ section_concept_of_multisets
 		-> rrel_example: "file://htmls/section_concept_of_multisets.html" (* <-lang_ru;; *);;
 		*);;
 
-section_multisets_operations
-=> nrel_main_idtf:
-	[Раздел. Операции над мультимножествами]
-	(* <- lang_ru;; *);
-<= nrel_sc_text_translation:
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_multisets_operations.html" (* <-lang_ru;; *);;
-		*);;
+
