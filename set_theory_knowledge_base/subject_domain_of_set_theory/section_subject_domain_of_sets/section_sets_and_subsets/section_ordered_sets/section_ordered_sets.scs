@@ -1,5 +1,8 @@
 section_ordered_sets
-	<= nrel_section_decomposition:
+=> nrel_main_idtf:
+	[Раздел. Упорядоченные множества]
+	(* <- lang_ru;; *);
+<= nrel_section_decomposition:
 	{
 		section_oriented_set
 		(*
@@ -9,9 +12,9 @@ section_ordered_sets
 		section_projection_operation
 		(*
 		=> nrel_section_base_order: 
-			section_Cartesian_product;;
+			section_cartesian_product;;
 		*);
-		section_Cartesian_product
+		section_cartesian_product
 		(*
 		=> nrel_section_base_order: 
 			section_graphics;;

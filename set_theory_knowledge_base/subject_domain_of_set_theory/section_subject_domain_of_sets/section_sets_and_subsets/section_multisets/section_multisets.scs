@@ -1,0 +1,20 @@
+section_multisets
+=> nrel_main_idtf:
+	[Раздел. Мультимножества]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://content/section_multisets.html" (* <-lang_ru;; *);;
+	*);;
+
+section_multisets = [*^"file://section_multisets.scsi"*];;
+
+section_multisets
+-> rrel_key_sc_element:
+	multiset;
+	multiset_component;
+	nrel_multiplicity_of_element;
+	instances_multiset_elements;
+	submultiset;
+	supermultiset;;

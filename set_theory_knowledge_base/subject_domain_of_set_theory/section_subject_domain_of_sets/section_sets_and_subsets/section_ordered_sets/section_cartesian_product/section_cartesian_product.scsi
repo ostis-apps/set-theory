@@ -33,7 +33,7 @@ nrel_cartesian_product
 			.nrel_cartesian_product_definition
 			(* 
 				-> rrel_example:
-					"file://htmls/nrel_cartesian_product/nrel_cartesian_product_definition.html"
+					"file://content/nrel_cartesian_product_definition.html"
 						(* <-lang_ru;; *);;
 			*);;
 		<= nrel_using_constants:
@@ -60,7 +60,7 @@ nrel_cartesian_product
 			.nrel_cartesian_product_statement_1
 			(* 
 				-> rrel_example:
-					"file://htmls/nrel_cartesian_product/nrel_cartesian_product_statement_1.html"
+					"file://content/nrel_cartesian_product_statement_1.html"
 						(* <-lang_ru;; *);;
 			*);;
 		=> nrel_main_idtf:
