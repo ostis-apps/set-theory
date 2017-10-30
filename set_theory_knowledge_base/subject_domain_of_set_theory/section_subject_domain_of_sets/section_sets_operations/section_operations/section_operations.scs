@@ -1,12 +1,4 @@
 section_operations
--> rrel_key_sc_element:
-	nrel_addition;
-	nrel_combination;
-	nrel_intersection;
-	nrel_sets_difference;
-	nrel_symmetric_sets_difference;
-	nrel_boolean;
-	nrel_subdividing;
 => nrel_main_idtf:
 	[Раздел. Операции](* <- lang_ru;; *);
 	[Partition. Operations] (* <- lang_en;; *);
@@ -55,9 +47,18 @@ section_operations
 		-> rrel_example: "file://content/content_htmls/nrel_powerset.html" (* <-lang_ru;; *);;
 		*);;
 
-section_operations =  [*^"file://section_sets_operations.scsi"*];;
+section_operations =  [*^"file://section_operations.scsi"*];;
 
-rrel_key_sc_element -> (section_operations -> set_operations);;
+section_operations
+->rrel_key_sc_element:
+	nrel_addition;
+	nrel_combination;
+	nrel_intersection;
+	nrel_sets_difference;
+	nrel_symmetric_sets_difference;
+	nrel_boolean;
+	nrel_subdividing;;
+
 
 
 
