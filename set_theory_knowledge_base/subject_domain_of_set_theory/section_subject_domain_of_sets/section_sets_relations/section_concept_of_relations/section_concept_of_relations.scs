@@ -25,6 +25,7 @@ section_concept_of_relation
 		section_mappings
 	};;
 
+section_concept_of_relation = [*^"file://section_concept_of_relations.scsi"*];;
 
 section_concept_of_relation
 -> rrel_key_sc_element:

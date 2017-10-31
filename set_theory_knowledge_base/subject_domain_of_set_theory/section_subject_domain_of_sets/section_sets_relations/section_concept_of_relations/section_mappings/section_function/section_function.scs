@@ -15,6 +15,7 @@ section_function
 		section_mappings_of_sets
 	};;
 
+section_function = [*^"file://section_function.scsi"*];;
 
 section_mappings_of_sets
 -> rrel_key_sc_element:

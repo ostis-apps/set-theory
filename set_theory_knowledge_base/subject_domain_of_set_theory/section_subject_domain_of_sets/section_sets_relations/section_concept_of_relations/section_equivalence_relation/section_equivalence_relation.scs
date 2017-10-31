@@ -9,6 +9,8 @@ section_equivalence_relation
 		-> rrel_example: "file://content/content_htmls/section_equivalence_relation.html" (* <-lang_ru;; *);;
 		*);;
 
+section_equivalence_relation = [*^"file://section_equivalence_relation.scsi"*];;
+
 section_equivalence_relation
 -> rrel_key_sc_element:
 		equal_size_multiset;
