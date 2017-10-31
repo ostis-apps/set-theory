@@ -12,23 +12,12 @@ section_function
 section_mappings_operations
 => nrel_main_idtf:
 	[Раздел. Операции на соответствиях]
-	(* <- lang_ru;; *);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://content/content_htmls/section_mappings_operations.html" (* <-lang_ru;; *);;
-		*);;
+	(* <- lang_ru;; *);;
 
 section_mappings_relations
 => nrel_main_idtf:
 	[Раздел. Отношения на соответствиях]
-	(* <- lang_ru;; *);
-<= nrel_sc_text_translation:
+	(* <- lang_ru;; *);;
 
-		...
-		(* 
-		-> rrel_example: "file://content/content_htmls/section_mappings_relations.html" (* <-lang_ru;; *);;
-		*);;
 
 

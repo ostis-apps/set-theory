@@ -6,7 +6,7 @@ section_mappings_of_sets
 
 		...
 		(* 
-		-> rrel_example: "file://content/content_htmls/section_mappings_of_sets.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://content/content_htmls/section_mapping_of_sets.html" (* <-lang_ru;; *);;
 		*);;
 
 section_mappings_of_sets

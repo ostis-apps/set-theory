@@ -24,13 +24,7 @@ section_ordering_relation
 section_mappings
 => nrel_main_idtf:
 	[Раздел. Соответствия]
-	(* <- lang_ru;; *);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://content/content_htmls/section_mappings.html" (* <-lang_ru;; *);;
-		*);;
+	(* <- lang_ru;; *);;
 
 
 section_equivalence_relation
