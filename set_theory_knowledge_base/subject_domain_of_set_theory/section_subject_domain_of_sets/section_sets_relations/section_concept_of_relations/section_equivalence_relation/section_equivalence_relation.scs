@@ -1,5 +1,15 @@
 section_equivalence_relation
+=> nrel_main_idtf:
+	[Раздел. Отношение эквивалентности]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
 
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/section_equivalence_relation.html" (* <-lang_ru;; *);;
+		*);;
+
+section_equivalence_relation
 -> rrel_key_sc_element:
 		equal_size_multiset;
 		nrel_eqpower_set;

@@ -1,6 +1,9 @@
 section_relations_on_multisets
+=> nrel_main_idtf:
+	[Раздел. Отношения на мультимножествах]
+	(* <- lang_ru;; *);;
 
--> rrel_key_sc_element:
-		
+section_relations_on_multisets
+-> rrel_key_sc_element:		
 		nrel_dimension_multiset;
 		nrel_the_peak_value_of_the_multiset;;

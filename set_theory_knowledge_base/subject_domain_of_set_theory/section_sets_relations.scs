@@ -1,5 +1,8 @@
 section_sets_relations
-	<= nrel_section_decomposition:
+=> nrel_main_idtf:
+	[Раздел. Отношения на множествах]
+	(* <- lang_ru;; *);
+<= nrel_section_decomposition:
 	{
 		section_concept_of_relation
 		(*
@@ -12,42 +15,4 @@ section_sets_relations
 			section_relations_operations;;
 		*);
 		section_relations_operations
-	};;
-
-section_concept_of_relation
-	<= nrel_section_decomposition:
-	{
-		section_equivalence_relation
-		(*
-		=> nrel_section_base_order: 
-			section_ordering_relation;;
-		*);
-		section_ordering_relation
-		(*
-		=> nrel_section_base_order: 
-			section_mappings;;
-		*);
-		section_mappings
-	};;
-
-section_mappings	
-	<= nrel_section_decomposition:
-	{
-		section_function
-		(*
-		=> nrel_section_base_order: 
-			section_mappings_operations;;
-		*);
-		section_mappings_operations
-		(*
-		=> nrel_section_base_order: 
-			section_mappings_relations;;
-		*);
-		section_mappings_relations
-	};;
-
-section_function
-	<= nrel_section_decomposition:
-	{
-		section_mappings_of_sets
 	};;

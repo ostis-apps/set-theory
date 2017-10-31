@@ -1,33 +1,32 @@
-section_equivalence_relation
+section_concept_of_relation
 => nrel_main_idtf:
-	[Раздел. Отношение эквивалентности]
+	[Раздел. Понятие отношения]
 	(* <- lang_ru;; *);
 <= nrel_sc_text_translation:
 
 		...
 		(* 
-		-> rrel_example: "file://content/content_htmls/section_equivalence_relation.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://content/content_htmls/section_concept_of_relation.html" (* <-lang_ru;; *);;
 		*);;
 
-section_ordering_relation
-=> nrel_main_idtf:
-	[Раздел. Отношение порядка]
-	(* <- lang_ru;; *);
-<= nrel_sc_text_translation:
+section_concept_of_relation
+	<= nrel_section_decomposition:
+	{
+		section_equivalence_relation
+		(*
+		=> nrel_section_base_order: 
+			section_ordering_relation;;
+		*);
+		section_ordering_relation
+		(*
+		=> nrel_section_base_order: 
+			section_mappings;;
+		*);
+		section_mappings
+	};;
 
-		...
-		(* 
-		-> rrel_example: "file://content/content_htmls/section_ordering_relation.html" (* <-lang_ru;; *);;
-		*);;
 
-
-section_mappings
-=> nrel_main_idtf:
-	[Раздел. Соответствия]
-	(* <- lang_ru;; *);;
-
-
-section_equivalence_relation
+section_concept_of_relation
 -> rrel_key_sc_element:
 		continuum;
 		element_of_set;

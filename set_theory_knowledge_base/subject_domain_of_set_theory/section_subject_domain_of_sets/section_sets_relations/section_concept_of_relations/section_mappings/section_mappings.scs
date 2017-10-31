@@ -1,23 +1,23 @@
-section_function
+section_mappings
 => nrel_main_idtf:
-	[Раздел. Функция]
-	(* <- lang_ru;; *);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://content/content_htmls/section_function.html" (* <-lang_ru;; *);;
-		*);;
-
-section_mappings_operations
-=> nrel_main_idtf:
-	[Раздел. Операции на соответствиях]
+	[Раздел. Соответствия]
 	(* <- lang_ru;; *);;
 
-section_mappings_relations
-=> nrel_main_idtf:
-	[Раздел. Отношения на соответствиях]
-	(* <- lang_ru;; *);;
+section_mappings	
+	<= nrel_section_decomposition:
+	{
+		section_function
+		(*
+		=> nrel_section_base_order: 
+			section_mappings_operations;;
+		*);
+		section_mappings_operations
+		(*
+		=> nrel_section_base_order: 
+			section_mappings_relations;;
+		*);
+		section_mappings_relations
+	};;
 
 
 
