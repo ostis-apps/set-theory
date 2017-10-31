@@ -71,7 +71,7 @@ nrel_equality
 => nrel_main_idtf: 
 	[равенство*]
 	(*
-	<- lang_ru;
+	<- lang_ru;;
 	*);
 	[equality*] 
 	(* 

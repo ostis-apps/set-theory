@@ -12,7 +12,7 @@ complex_function
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/conten_htmls/complex_function.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/complex_function.html" (* <-lang_ru;; *);;
 		*);;
 	
 	*);;
@@ -48,7 +48,7 @@ complex_valued_function
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/conten_htmls/complex_valued_function.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/complex_valued_function.html" (* <-lang_ru;; *);;
 		*);;
 	
 	*);;
@@ -80,7 +80,7 @@ composition
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/conten_htmls/composition.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/composition.html" (* <-lang_ru;; *);;
 		*);;
 	<= nrel_using_constants:
 		...
@@ -116,7 +116,7 @@ domain_of_definition
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/conten_htmls/domain_of_definition.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/domain_of_definition.html" (* <-lang_ru;; *);;
 		*);;
 	<= nrel_using_constants:
 		...
@@ -151,7 +151,7 @@ exponential_generating_function
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/conten_htmls/exponential_generating_function.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/exponential_generating_function.html" (* <-lang_ru;; *);;
 		*);;
 	
 	*);;
@@ -190,7 +190,7 @@ formal_power_series
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/conten_htmls/formal_power_series.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/formal_power_series.html" (* <-lang_ru;; *);;
 		*);;
 	
 	*);;
@@ -226,7 +226,7 @@ function
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/conten_htmls/function.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/function.html" (* <-lang_ru;; *);;
 		*);;
 	
 	*);;
@@ -271,7 +271,7 @@ functional_graph
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/conten_htmls/functional_graph.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/functional_graph.html" (* <-lang_ru;; *);;
 		*);;
 	<= nrel_using_constants:
 		...
@@ -310,7 +310,7 @@ function_argument
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/conten_htmls/function_argument.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/function_argument.html" (* <-lang_ru;; *);;
 		*);;
 	*);;
 
@@ -347,7 +347,7 @@ function_value
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/conten_htmls/function_value.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/function_value.html" (* <-lang_ru;; *);;
 		*);;
 
 	*);;
@@ -382,7 +382,7 @@ generating_function
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/conten_htmls/generating_function.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/generating_function.html" (* <-lang_ru;; *);;
 		*);;
 	
 	*);;
@@ -417,7 +417,7 @@ holomorphic_function
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/conten_htmls/holomorphic_function.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/holomorphic_function.html" (* <-lang_ru;; *);;
 		*);;
 	
 	*);;
@@ -446,7 +446,7 @@ induced_function
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/conten_htmls/induced_function.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/induced_function.html" (* <-lang_ru;; *);;
 		*);;
 	*);;
 
@@ -482,7 +482,7 @@ concept_injection_graph
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/conten_htmls/concept_injection_graph.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/concept_injection_graph.html" (* <-lang_ru;; *);;
 		*);;
 	   <= nrel_using_constants:...
 		(* 
@@ -538,7 +538,7 @@ inverse_function
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/conten_htmls/inverse_function.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/inverse_function.html" (* <-lang_ru;; *);;
 		*);;
 	*);;
 
@@ -566,7 +566,7 @@ mebious_function
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/conten_htmls/mebious_function.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/mebious_function.html" (* <-lang_ru;; *);;
 		*);;
 	
 	*);;
@@ -595,7 +595,7 @@ partial_function
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/conten_htmls/partial_function.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/partial_function.html" (* <-lang_ru;; *);;
 		*);;
 	*);;
 
@@ -623,7 +623,7 @@ riemann_zeta_function
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/conten_htmls/riemann_zeta_function.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/riemann_zeta_function.html" (* <-lang_ru;; *);;
 		*);;
 	
 	*);;
@@ -652,7 +652,7 @@ supremum_of_set
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/conten_htmls/supremum_of_set.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/supremum_of_set.html" (* <-lang_ru;; *);;
 		*);;
 	
 
@@ -683,7 +683,7 @@ taylor_series
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/conten_htmls/taylor_series.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/taylor_series.html" (* <-lang_ru;; *);;
 		*);;
 	
 	*);;
@@ -712,7 +712,7 @@ total_function
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/conten_htmls/total_function.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/total_function.html" (* <-lang_ru;; *);;
 		*);;
 	*);;
 
@@ -743,7 +743,7 @@ transformation
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/conten_htmls/transformation.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/transformation.html" (* <-lang_ru;; *);;
 		*);;
 	*);;
 
@@ -771,7 +771,7 @@ transition_to_preimages
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/conten_htmls/transition_to_preimages.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/transition_to_preimages.html" (* <-lang_ru;; *);;
 		*);;
 	*);;
 
