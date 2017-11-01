@@ -1,0 +1,10 @@
+section_mappings_relations
+=> nrel_main_idtf:
+	[Раздел. Отношения на соответствиях]
+	(* <- lang_ru;; *);;
+
+section_mappings_relations = [*^"file://section_mappings_relations.scsi"*];;
+
+graph_of_correspondence
+-> rrel_key_sc_element:
+	graph_of_correspondence;;

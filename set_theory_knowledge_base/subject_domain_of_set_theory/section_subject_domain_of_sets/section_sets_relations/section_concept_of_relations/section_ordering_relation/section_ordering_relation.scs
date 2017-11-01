@@ -1,0 +1,26 @@
+section_ordering_relation
+=> nrel_main_idtf:
+	[Раздел. Отношение порядка]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/section_ordering_relation.html" (* <-lang_ru;; *);;
+		*);;
+
+section_ordering_relation = [*^"file://section_ordering_relation.scsi"*];;
+
+section_ordering_relation
+-> rrel_key_sc_element:
+      non_trivial_subset;
+      nrel_fuzzy_set_inclusion;
+      nrel_inclusion;
+      pareto_relation;
+      partial_order_relation;
+      preorder_relation;
+      proper_subset;
+      proper_superset;
+      section_ordering_relation;
+      strict_total_order_relation;
+      total_order_relation;;

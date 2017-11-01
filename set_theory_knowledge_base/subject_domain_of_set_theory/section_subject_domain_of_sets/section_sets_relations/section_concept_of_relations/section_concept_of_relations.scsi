@@ -1,0 +1,2384 @@
+continuum
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[континуум*]
+		(* <- lang_ru;;	*);;
+
+continuum
+	<=nrel_inclusion:nrel_power_set;
+	<- rrel_key_sc_element:
+		... 
+		(*
+		=> nrel_main_idtf: [Опр.(континуум)]  (* <- lang_ru;; *);;
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content/content_htmls/continuum/continuum.html" (* <- lang_ru;; *);;
+			*);;
+	*);;
+
+continuum <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(континуальное множество)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://content/content_htmls/continuum/uncountable_set_statement.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+continuum <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(континуальное множество, множество вещественных чисел)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://content/content_htmls/continuum/continuum_statement.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+continuum <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(счетное множество, мощность множества*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://content/content_htmls/continuum/countable_set_statement.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+continuum <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(мощность множества*, разбиение*, континуальное множество] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://content/content_htmls/continuum/subdividing_statement.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+element_of_set
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[элемент множества]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[член множества]
+	(* <- lang_ru;; *);
+	[точка множества]
+	(* <- lang_ru;; *);
+	[элемент]
+	(* <- lang_ru;; *);;
+
+
+element_of_set
+<- rrel_key_sc_element:
+	Definition_of_element_of_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/element_of_set.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> set;;
+		*);;
+
+	*);;
+
+Definition_of_element_of_set
+=> nrel_main_idtf:
+	[Определение понятия "элемент множества"]
+	(* <- lang_ru;;	*);;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+empty_relation
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[пустое отношение]
+	(* <- lang_ru;;	*);;
+
+empty_relation
+<- rrel_key_sc_element:
+	Definition_of_empty_relation
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/empty_relation.html" (* <-lang_ru;; *);;
+		*);;
+
+		<= nrel_using_constants:
+		...
+		(* 
+		-> relation;;
+		-> element_of_set;;
+		-> subset;;
+		-> nrel_cartesian_product;;
+		-> set;;
+		-> empty_set;;
+		*);;
+	*);;
+
+Definition_of_empty_relation
+=> nrel_main_idtf:
+	[Определение понятия "пустое отношение"]
+	(* <- lang_ru;;	*);;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+even_permutation
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[чётная перестановка]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[even permutation]
+	(* <- lang_ru;;	*);
+<=nrel_inlusion : nrel_set_of_permutations;
+<- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(чётная перестановка)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/even_permutation.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+even_permutation
+-> rrel_example :
+		"file://content/content_images/even_permutation.jpg";;
+
+even_permutation
+	<- oriented_relation;
+	<- binary_relation;
+	<- antireflexive_relation;
+	<- antisymmetric_relation;
+	<- antitransitive_relation;
+	<=nrel_first_domain: set;
+	<=nrel_second_domain : set_of_sets;;
+
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+
+factorial
+=> nrel_main_idtf:
+	[факториал числа*]
+	(* <-lang_ru;; *);
+	[factorial*]
+	(* <- lang_en;; *);
+<- oriented_relation;
+<-class_of_constant_connections;
+<-unary_relation;
+=>nrel_first_domain: number;
+=>nrel_second_domain: number;
+=>nrel_definitional_domain : number;
+<- rrel_key_sc_element:
+		...
+		(*  <- explanation;;
+			<= nrel_sc_text_translation:	
+			...
+			(*
+				-> rrel_example:
+				"file://content/content_htmls/factorial/factorial.html"
+				(* <- lang_ru;; *);;
+			*);;
+		*);
+<- rrel_key_sc_element:
+		...
+		(*  <- statement;;
+			<= nrel_sc_text_translation:	
+			...
+			(*
+				-> rrel_example:
+				"file://content/content_htmls/factorial/domain_of_definition_statement_for_factorial.html"
+				(* <- lang_en;;*);;
+			*);;
+		*);
+<- rrel_key_sc_element:
+		...
+		(*  <- statement;;
+			<= nrel_sc_text_translation:	
+			...
+			(*
+				-> rrel_example:
+				"file://content/content_htmls/factorial/function_increase_speed_for_factorial.html"
+				(* <- lang_en;;*);;
+			*);;
+		*);
+-> rrel_example :
+		"file://content/content_images/factorial.jpg";;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+nrel_multiplicity_of_element
+<- sc_node_norole_relation;
+<- relation;
+<- ternary_relation;
+=> nrel_main_idtf:
+	[кратность элемента*]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[функция кратности*]
+	(* <- lang_ru;; *);
+	[функция числа экземпляров*]
+	(* <- lang_ru;; *);;
+
+nrel_multiplicity_of_element
+<- rrel_key_sc_element:
+	Definition_of_multiplicity_of_element
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: [ Кратность элемента множества - это количество вхождений элемента в множество.] (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> element_of_set;
+			set;;
+		*);;
+
+
+	*);;
+
+Definition_of_multiplicity_of_element
+=> nrel_main_idtf:
+	[Определение понятия "кратность элемента"]
+	(* <- lang_ru;;	*);;
+
+
+
+nrel_multiplicity_of_element
+=>nrel_first_domain: set;
+=>nrel_second_domain: element_of_set;;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+nrel_accessory
+<- sc_node_norole_relation;
+<- oriented_relation;
+<- binary_relation;
+<-antitransitive_relation;
+<-antireflexive_relation;
+=> nrel_main_idtf:
+	[принадлежность*]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[отношение принадлежности*]
+	(* <- lang_ru;; *);
+	[быть элементом данного множества*]
+	(* <- lang_ru;; *);
+	[теоретика-множественная принадлежность*]
+	(* <- lang_ru;; *);;
+
+
+nrel_accessory
+<- rrel_key_sc_element:
+	Definition_of_accessory
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: [Отношение принадлежности является понятием теории множеств, которого связывает множество и его элемент. В этом случае говорят, что существует принадлежность элемента множеству.] (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+Definition_of_accessory
+=> nrel_main_idtf:
+	[Определение понятия "принадлежность"]
+	(* <- lang_ru;;	*);;
+
+nrel_accessory
+=>nrel_first_domain: set;
+=>nrel_second_domain: set;;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+nrel_alpha_incision
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antitransitive_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+=> nrel_main_idtf:
+	[альфа-разрез*]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[альфа-срез*]
+	(* <- lang_ru;;	*);
+	[альфа-сечение*]
+	(* <- lang_ru;;	*);
+	[альфа-уровень*]
+	(* <- lang_ru;;	*);
+	[множество уровеня*]
+	(* <- lang_ru;;	*);
+	[множество альфа-уровеня*]
+	(* <- lang_ru;;	*);
+	[альфа-срез нечеткого множества*]
+	(* <- lang_ru;;	*);
+	[альфа-уровень нечеткого множества*]
+	(* <- lang_ru;;	*);
+	[альфа-разрез нечеткого множества*]
+	(* <- lang_ru;;	*);;
+
+nrel_alpha_incision
+<- rrel_key_sc_element:
+	Definition_of_nrel_alpha_incision
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/nrel_alpha_incision.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> fuzzy_set;
+		crisp_set;
+		membership_function;
+		set;;
+		*);;
+
+	*);;
+
+nrel_alpha_incision
+<- rrel_key_sc_element:
+	statement_decomposition_of_fuzzy_set_alpha_incision_combination
+	(* 
+	<- statement;;
+	=> nrel_main_idtf:
+		[Утв.(о декомпозиции нечеткого множества)"]
+			(* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/statement_nrel_alpha_incision_fuzzy_set_decomposition.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> fuzzy_set;
+		nrel_fuzzy_set_combination;
+		membership_function;
+		nrel_alpha_incision;;
+		*);;
+
+	*);;
+
+nrel_alpha_incision
+<- rrel_key_sc_element:
+	statement_fuzzy_set_and_alpha_incision_equality
+	(* 
+	<- statement;;
+	=> nrel_main_idtf:
+		[Утв.(нечеткое множество, альфа-разрез*, равенство нечетких множеств*)]
+			(* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/statement_fuzzy_set_and_alpha_incision_equality.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> fuzzy_set;
+		nrel_fuzzy_set_combination;
+		membership_function;
+		nrel_alpha_incision;;
+		*);;
+	*);;
+
+nrel_alpha_incision
+<- rrel_key_sc_element:
+	statement_fuzzy_set_and_alpha_incision_combination
+	(* 
+	<- statement;;
+	=> nrel_main_idtf:
+		[Утв.(нечеткое множество, альфа-разрез*, объединение нечетких множеств*, объединение*)]
+			(* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/statement_fuzzy_set_and_alpha_incision_combination.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> fuzzy_set;
+		nrel_combination;
+		nrel_fuzzy_set_combination;
+		nrel_alpha_incision;;
+		*);;
+	*);;
+
+nrel_alpha_incision
+<- rrel_key_sc_element:
+	statement_fuzzy_set_and_alpha_incision_intersection
+	(* 
+	<- statement;;
+	=> nrel_main_idtf:
+		[Утв.(нечеткое множество, альфа-разрез*, пересечение нечетких множеств*, пересечение*)]
+			(* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/statement_fuzzy_set_and_alpha_incision_intersection.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> fuzzy_set;
+		nrel_intersection;
+		nrel_fuzzy_set_intersection;
+		nrel_alpha_incision;;
+		*);;
+
+	*);;
+
+nrel_alpha_incision
+<- rrel_key_sc_element:
+	statement_fuzzy_set_nrel_alpha_incision_rrel_alpha_inclusion
+	(* 
+	<- statement;;
+	=> nrel_main_idtf:
+		[Утв.(нечеткое множество, альфа-разрез*, включение*, альфа-уровень')]
+			(* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/statement_fuzzy_set_nrel_alpha_incision_rrel_alpha_inclusion.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> fuzzy_set;
+		number;
+		nrel_inclusion;
+		rrel_alpha;
+		nrel_alpha_incision;;
+		*);;
+
+	*);;
+
+nrel_alpha_incision
+<- rrel_key_sc_element: 
+	Illustration_of_alpha_incision
+	(*
+	<- sc_illustration;;
+	=> nrel_main_idtf:
+		[Иллюстрация к понятию "альфа-разрез*"]
+			(* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(*
+			-> rrel_example: "file://content/content_images/fuzzy_set_alpha_incision.png"
+				(*
+					=> nrel_format: format_png;;
+				*);;
+		*);;
+	*);;
+
+
+Definition_of_nrel_alpha_incision
+=> nrel_main_idtf:
+	[Определение понятия "альфа-разрез*"]
+	(* <- lang_ru;;	*);;
+
+nrel_alpha_incision
+=>nrel_first_domain: fuzzy_set;
+=>nrel_second_domain: crisp_set;
+=>nrel_definitional_domain: 
+...
+(*
+	<= nrel_combination:
+	{
+		fuzzy_set;
+		crisp_set
+	};;
+*);;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+nrel_author
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antitransitive_relation;
+<- antireflexive_relation;
+=> nrel_main_idtf:
+	[автор*]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[author*]
+	(* <- lang_en;;	*);;
+
+nrel_author
+<- rrel_key_sc_element:
+	Definition_of_nrel_author
+	(* 
+	<- sc_explanation;;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> scientist;
+		  concept;;
+		*);;
+	
+
+	*);;
+
+
+Definition_of_nrel_author
+=> nrel_main_idtf:
+	[Определение понятия "автор*"]
+	(* <- lang_ru;;	*);;
+
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+nrel_boolean
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[булеан]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[степень множества]
+	(* <- lang_ru;; *);
+	[показательное множеств]
+	(* <- lang_ru;; *);
+	[множество частей]
+	(* <- lang_ru;; *);;
+
+nrel_boolean
+<- rrel_key_sc_element:
+	Definition_of_nrel_boolean
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/nrel_boolean.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Число подмножеств конечного множества, состоящего из n элементов, равно 2^n.] (* <-lang_ru;; *);;
+		*);;
+	*);
+<- rrel_key_sc_element:
+	... (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Если два множества равномощны, то равномощны и их булеаны.] (* <-lang_ru;; *);;
+		*);;
+	
+
+	*);;
+
+	
+
+Definition_of_nrel_boolean
+=> nrel_main_idtf:
+	[Определение понятия "булеан"]
+(* <- lang_ru;; *);;
+
+
+//---------------------------------------------------------------------------------------------------
+
+
+nrel_component
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antitransitive_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+=> nrel_main_idtf:
+	[компонента*]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[компонента кортежа*]
+	(* <- lang_ru;;	*);
+	[i-тая компонента кортежа*]
+	(* <- lang_ru;;	*);
+	[i-тая проекция кортежа*]
+	(* <- lang_ru;;	*);;
+
+nrel_component
+<- rrel_key_sc_element:
+	Definition_of_nrel_component
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/nrel_component.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> oriented_set;
+		element_of_set;;
+		*);;
+
+
+	*);;
+
+Definition_of_nrel_component
+=> nrel_main_idtf:
+	[Определение отношения "компонента*"]
+	(* <- lang_ru;;	*);;
+
+nrel_component
+=>nrel_first_domain: element_of_set;
+=>nrel_second_domain: oriented_set;;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+// идентификаторы
+nrel_diagonal
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+		[диагональ множества*]
+			(* <- lang_ru;; *);
+		[diagonal*]
+			(* <- lang_en;; *);
+=> nrel_idtf:
+		[диагональ*]
+			(* <- lang_ru;; *);
+		[диагональное отношение*]
+			(* <- lang_ru;; *);;
+
+// домены и область определения
+nrel_diagonal
+=> nrel_first_domain: set;
+=> nrel_second_domain: set;
+=> nrel_definitional_domain: set;;
+
+// свойства отношения и арность
+nrel_diagonal
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+=> nrel_arity: 2
+	(* <- number;; *);;
+
+// иллюстрация
+nrel_diagonal
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_illustration;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+			-> rrel_example: "file://content/content_images/diagonal.png"
+				(*
+					=> nrel_format: format_png;;
+				*);;
+		*);;
+	*);;
+
+// определение
+nrel_diagonal
+<- rrel_key_sc_element:
+	diagonal_definition
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf:
+		[Определение понятия "диагональ множества"]
+			(* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+			-> rrel_example:  "file://content/content_htmls/diagonal/diagonal_definition.html"  (* <- lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+			-> set; nrel_cartesian_product; pair_set; nrel_inclusion;;
+		*);;
+	*);;
+
+nrel_diagonal
+<- rrel_key_sc_element:
+
+	... // первое утверждение
+	(* 
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+				-> rrel_example: "file://content/content_htmls/diagonal/diagonal_statement_1.html" (* <- lang_ru;; *);;
+			*);;
+		=> nrel_main_idtf: [Утв. (диагональ множества*, симметричный график)]
+					(* <- lang_ru;; *);;
+
+	*);
+
+	... // второе утверждение
+	(* 
+		<- sc_explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+				-> rrel_example: "file://content/content_htmls/diagonal/diagonal_statement_2.html"  (* <- lang_ru;; *);;
+			*);;
+		=> nrel_main_idtf: [Утв. (диагональ множества*, отношение равенства*)]
+					(* <- lang_ru;; *);;
+
+	*);;
+
+// пример
+set -> example_set_1;
+	 -> example_set_2;;
+nrel_diagonal -> rrel_example: (example_set_1 => example_set_2);;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+nrel_dimension_set
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- cantor_set;
+<- infinite_set;
+<- antireflexive_relation;
+<-sc_const;	
+=> nrel_main_idtf:
+	[размерность множества*] 
+	(* <- lang_ru;;	*);
+
+
+<- rrel_key_sc_element:
+	...
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: [Размерность множества — общее число различных элементов множества.] (* <-lang_ru;; *);; 
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> number;
+		element_of_set;
+		set;;
+		*);;
+	*);;
+
+nrel_dimension_set
+=>nrel_first_domain: set;
+=>nrel_second_domain: number;;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+nrel_disjoint_set
+<- sc_node_not_relation;
+=> nrel_main_idtf: 
+	[непересекающееся множество*] 
+	(* 
+	<- lang_ru;; 
+	*);;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+nrel_equality_degree
+<- sc_node_not_relation;
+<- quasybinary_relation;
+<- relation;
+<- oriented_relation;
+=> nrel_main_idtf:
+	[степень равенства*]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[степеь равенства нечеткого множества*]
+	(* <- lang_ru;;	*);;
+	
+nrel_equality_degree
+<- rrel_key_sc_element:
+	Definition_of_nrel_equality_degree
+	(* 
+		<- definition;;
+		=> nrel_main_idtf:
+		[Определение понятия "степень равенства*"]
+		(* <- lang_ru;;	*);;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+				-> rrel_example: "file://content/content_htmls/nrel_equality_degree.html" (* <-lang_ru;; *);;
+			*);;
+		<= nrel_using_constants:
+			...
+			(* 
+				-> fuzzy_set;
+				number;
+				concept_universum;
+				membership_function;;
+			*);;
+	*);;
+
+nrel_equality_degree
+=> nrel_first_domain: fuzzy_set;
+=> nrel_second_domain: number;
+=> nrel_definitional_domain:
+...
+(*
+	<=nrel_combination:
+	{
+		fuzzy_set;
+		number
+	};;
+*);;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+nrel_exact_lower_approximation
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antireflexive_relation;
+<- antitransitive_relation;
+<- antisymmetric_relation;
+=> nrel_main_idtf:
+	[точная нижняя аппроксимация*]
+	(* <- lang_ru;; *);;
+
+nrel_exact_lower_approximation
+	<= nrel_inclusion:
+	nrel_lower_approximation;;
+
+nrel_exact_lower_approximation
+<- rrel_key_sc_element:
+	Definition_of_nrel_exact_lower_approximation
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/nrel_exact_lower_approximation.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		->  fuzzy_set;
+            nrel_inclusion;
+            concept_universum;
+            nrel_alpha_incision;
+            set_of_sets;
+            number;;
+        *);;
+	*);;
+
+
+
+Definition_of_nrel_exact_lower_approximation
+=> nrel_main_idtf:
+	[Определение понятия "точная нижняя аппроксимация*"]
+	(* <- lang_ru;;	*);;
+
+nrel_exact_lower_approximation 
+=>nrel_first_domain: set_of_sets;
+=>nrel_second_domain: fuzzy_set;
+=>nrel_definitional_domain: 
+	...
+(*
+	<= nrel_combination:
+	{
+		set_of_sets;
+		fuzzy_set
+	};;
+*);;
+
+nrel_exact_lower_approximation 
+<= nrel_inclusion:
+    nrel_lower_approximation;;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+nrel_exact_upper_approximation
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antireflexive_relation;
+<- antitransitive_relation;
+<- antisymmetric_relation;
+=> nrel_main_idtf:
+	[точная верхняя аппроксимация*]
+	(* <- lang_ru;; *);;
+
+nrel_exact_upper_approximation
+	<= nrel_inclusion:
+	nrel_upper_approximation;;
+
+nrel_exact_upper_approximation
+<- rrel_key_sc_element:
+	Definition_of_nrel_exact_upper_approximation
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/nrel_exact_upper_approximation.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		->  fuzzy_set;
+            concept_universum;
+            nrel_alpha_incision;
+            set_of_sets;
+            nrel_upper_approximation;
+            nrel_fuzzy_set_inclusion;;
+        *);;
+	*);;
+
+Definition_of_nrel_exact_upper_approximation
+=> nrel_main_idtf:
+	[Определение понятия "точная верхняя аппроксимация*"]
+	(* <- lang_ru;;	*);;
+
+nrel_exact_upper_approximation
+=>nrel_first_domain: set_of_sets;
+=>nrel_second_domain: fuzzy_set;
+=>nrel_definitional_domain: 
+	...
+(*
+	<= nrel_combination:
+	{
+		set_of_sets;
+		fuzzy_set
+	};;
+*);;
+
+nrel_exact_upper_approximation 
+<= nrel_inclusion:
+    nrel_upper_approximation;;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+nrel_exercise
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- cantor_set;
+<- infinite_set;
+<- antireflexive_relation;
+<-sc_const;	
+=> nrel_main_idtf:
+	[упражнения*] 
+	(* <- lang_ru;;	*);
+
+
+<- rrel_key_sc_element:
+	...
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: [Упражнения* — бинарное отношение, связывающее некоторый раздел с упражнениями к нему.] (* <-lang_ru;; *);; 
+		*);;
+	*);;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+nrel_fixed_point
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antitransitive_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+=> nrel_main_idtf:
+	[неподвижная точка*]
+	(* <- lang_ru;;	*);;
+
+nrel_fixed_point
+<- rrel_key_sc_element:
+	Definition_of_nrel_fixed_point
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/nrel_fixed_point.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> function;
+		element_of_set;
+		set;;
+		*);;
+
+
+	*);;
+
+Definition_of_nrel_fixed_point
+=> nrel_main_idtf:
+	[Опр.(неподвижная точка*)]
+	(* <- lang_ru;;	*);;
+
+nrel_fixed_point
+=>nrel_first_domain: element_of_set;
+=>nrel_second_domain: function;;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+nrel_fuzzy_set_core
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+	[ядро нечеткого множества*]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[ядро*]
+	(* <- lang_ru;;	*);;
+
+
+nrel_fuzzy_set_core
+<- rrel_key_sc_element:
+	Definition_of_nrel_fuzzy_set_core
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:
+	[Определение понятия "ядро нечеткого множества*"]
+	(* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/nrel_fuzzy_set_core.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> fuzzy_set; set; concept_universum; crisp_set;;
+		*);;
+	*);;
+
+nrel_fuzzy_set_core
+<- rrel_key_sc_element: 
+	Illustration_of_nrel_fuzzy_set_core
+	(*
+	<- sc_illustration;;
+	=> nrel_main_idtf:
+	[Иллюстрация к понятию "ядро нечеткого множества*"]
+	(* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:
+		...
+		(*
+			-> rrel_example: "file://content/content_images/fuzzy_set_core.png"
+				(*
+					=> nrel_format: format_png;;
+				*);;
+		*);;
+	*);;
+
+nrel_fuzzy_set_core
+<- rrel_key_sc_element:
+
+	statement_fuzzy_set_core_subnormal_set_empty_set
+	(* 
+		<- statement;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			   -> rrel_example: "file://content/content_htmls/statement_nrel_fuzzy_set_core.html" (* <- lang_ru;; *);;
+			*);;
+		=> nrel_main_idtf: [Утв. (субнормальное нечеткое множество, пустое множество, ядро нечеткого множества*)]
+					(* <- lang_ru;; *);;
+
+	*);;
+
+nrel_fuzzy_set_core
+=> nrel_first_domain: fuzzy_set;
+=> nrel_second_domain: crisp_set;
+=> nrel_definitional_domain:
+ ...
+ (*
+	<= nrel_combination:
+	{
+		fuzzy_set;
+		crisp_set
+	};;
+ *);;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+nrel_height_of_fuzzy_set
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antitransitive_relation;
+<- antireflexive_relation;
+=> nrel_main_idtf:
+	[высота нечеткого множества*]
+	(* <- lang_ru;;	*);;
+
+nrel_height_of_fuzzy_set
+<- rrel_key_sc_element:
+	Definition_of_nrel_height_of_fuzzy_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/nrel_height_of_fuzzy_set.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> supremum_of_set;
+		membership_function;
+		fuzzy_set;;
+		*);;
+
+
+	*);;
+
+Definition_of_nrel_height_of_fuzzy_set
+=> nrel_main_idtf:
+	[Определение отношения "высота нечеткого множества*"]
+	(* <- lang_ru;;	*);;
+
+nrel_height_of_fuzzy_set
+=> nrel_first_domain: fuzzy_set;
+=> nrel_second_domain: number;
+=> nrel_definitional_domain: 
+	...
+	(*
+		<= nrel_combination:
+		{
+			fuzzy_set;
+			number
+		};;
+	*);;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+nrel_inclusion_degree
+<- sc_node_not_relation;
+<- relation;
+<- oriented_relation;
+<- quasybinary_relation;
+=> nrel_main_idtf:
+	[степень включения*]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[степеь включения нечеткого множества*]
+	(* <- lang_ru;;	*);;
+
+nrel_inclusion_degree
+<- rrel_key_sc_element:
+	Definition_of_nrel_inclusion_degree
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:
+	[Определение понятия "степень включения"]
+	(* <- lang_ru;;	*);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/nrel_inclusion_degree.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> fuzzy_set;
+		concept_universum;
+		membership_function;;
+		*);;
+
+
+	*);;
+
+nrel_inclusion_degree
+=> nrel_first_domain: fuzzy_set;
+=> nrel_second_domain: number;
+=> nrel_definitional_domain: 
+	...
+	(*
+		<= nrel_combination:
+		{
+			fuzzy_set;
+			number
+		};;
+	*);;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+nrel_intersecting_set
+<- sc_node_not_relation;
+=> nrel_main_idtf: 
+	[пересекающееся множество*] 
+	(* 
+	<- lang_ru;; 
+	*);;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+nrel_lower_approximation
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antireflexive_relation;
+<- antitransitive_relation;
+<- antisymmetric_relation;
+=> nrel_main_idtf:
+	[нижняя аппроксимация*]
+	(* <- lang_ru;; *);;
+
+nrel_lower_approximation
+<- rrel_key_sc_element:
+	Definition_of_nrel_lower_approximation
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/nrel_lower_approximation.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		->  fuzzy_set;
+            nrel_inclusion;
+            concept_universum;
+            nrel_alpha_incision;
+            set_of_sets;
+            number;;
+        *);;
+	*);;
+
+nrel_lower_approximation
+<- rrel_key_sc_element:
+
+	statement_nrel_lower_approximation_fuzzy_set_combination_set_of_sets
+	(* 
+		<- statement;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example:  "file://content/content_htmls/statement_nrel_lower_approximation.html" (* <- lang_ru;; *);;
+			*);;
+		=> nrel_main_idtf: [Утв. (нижняя аппроксимация*, нечеткое множество, семейство множеств, объединение*)]
+					(* <- lang_ru;; *);;
+        <= nrel_using_constants:
+		    ...
+			(*
+             -> nrel_fuzzy_set_combination; 
+                nrel_lower_approximation;
+                fuzzy_set;
+                univresal_set;
+                set_of_sets;
+                nrel_alpha_incision;;
+            *);;
+
+	*);;
+
+Definition_of_nrel_lower_approximation
+=> nrel_main_idtf:
+	[Определение понятия "нижняя аппроксимация*"]
+	(* <- lang_ru;;	*);;
+
+nrel_lower_approximation
+=> nrel_first_domain: set_of_sets;
+=> nrel_second_domain: fuzzy_set;
+=> nrel_definitional_domain: 
+ ...
+ (*
+	<= nrel_combination:
+	{
+		fuzzy_set;
+		set_of_sets
+	};;
+ *);;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+nrel_near_set
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antireflexive_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+	[ближайшее множество*]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[ближайшее четкое можество*];;
+
+nrel_near_set
+<- rrel_key_sc_element:
+	Definition_of_nrel_near_set
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/nrel_near_set.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> fuzzy_set;
+			membership_function;
+			nrel_be_more;
+			nrel_equal_numbers;
+			crisp_set;;
+		*);;
+	*);;
+
+nrel_near_set
+<- rrel_key_sc_element: 
+	Illustration_of_nrel_near_set
+	(*
+	<- sc_illustration;;
+	=> nrel_main_idtf:
+		[Иллюстрация к понятию "ближайшее множество*"]
+			(* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(*
+			-> rrel_example: "file://content/content_images/near_set.jpg"
+				(*
+					=> nrel_format: format_jpg;;
+				*);;
+		*);;
+	*);;
+
+Definition_of_nrel_near_set
+=> nrel_main_idtf:
+	[Определение понятия "ближайшее множество*"]
+	(* <- lang_ru;;	*);;
+
+nrel_near_set
+=>nrel_first_domain: fuzzy_set;
+=>nrel_second_domain: crisp_set;
+=> nrel_definitional_domain: 
+ ...
+ (*
+	<= nrel_combination:
+	{
+		fuzzy_set;
+		crisp_set
+	};;
+ *);;
+
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+nrel_next
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[следующий раздел*] 
+	(* <- lang_ru;;	*);
+<-sc_const;	
+<-sc_node_norole_relation;;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+nrel_power_set
+=> nrel_main_idtf:
+	[мощность множества*]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[кардинальное число*]
+	(* <- lang_ru;;	*);
+
+<- rrel_key_sc_element:
+	Definition_of_power_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/nrel_power_set.html"
+		(* <-lang_ru;; *);;
+		*);; 
+	<= nrel_using_constants:
+		...
+		(* 
+		-> set;
+			element_of_set;
+			accessory;;
+		*);;
+
+	*);;
+
+Definition_of_power_set
+=> nrel_main_idtf:
+	[Опр.(мощности множества*)]
+	(* <- lang_ru;;	*);;
+
+
+nrel_power_set
+<- rrel_key_sc_element:
+	statement
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/statement_nrel_power_set.html" (* <-lang_ru;; *);;
+		*);;
+	=> sc_identifier:
+		...
+		(*
+		-> rrel_example: "file://content/content_htmls/app_nrel_power_set.html" (* <-lang_ru;; *);; 
+		*);;
+
+	*);;
+
+nrel_power_set
+=>nrel_first_domain: set;
+=>nrel_second_domain: number;;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+nrel_prev
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[предыдущий*] 
+	(* <- lang_ru;;	*);
+<-sc_const;	
+<-sc_node_norole_relation;;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+nrel_sourse
+<- sc_node_norole_relation;
+<- binary_relation;
+=> nrel_main_idtf: 
+	[источник*] (* <- lang_ru;; *);
+	[sourse*] (* <- lang_en;; *);;
+
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+nrel_to_be
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- unary_relation;
+
+=> nrel_main_idtf:
+		[являться*]
+		(* <- lang_ru;;	*);
+=> nrel_idtf:
+		[быть*]
+		(* <- lang_ru;;	*);
+		[оказываться*]
+		(* <- lang_ru;;	*);
+		[представлять*]
+		(* <- lang_ru;;	*);
+		[быть кем-либо*]
+		(* <- lang_ru;;	*);
+		[быть каким-либо*]
+		(* <- lang_ru;;	*);
+		[to be*]
+		(* <- lang_en;;	*);;
+
+nrel_to_be
+=> nrel_first_domain:...
+	(*
+		<= nrel_combination:
+			...
+			(*
+				-> set;
+					number;
+					concept_geometric_point;;
+			*);;
+		<= nrel_second_domain:
+		nrel_to_be;;
+	*);;
+
+nrel_to_be
+<- rrel_key_sc_element:
+		...
+		(*
+		<- sc_definition;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: [Лексическое значение глагола являться - оказываться, представлять, быть кем-либо, каким-либо] (* <-lang_ru;; *);;  
+			*);;
+		<= nrel_using_constants:
+		...
+		 (* 
+		       ->concept_lexical_meaning;;
+			->concept_verb;;
+			->nrel_to_prove;;
+		*);;
+		*);
+
+        => nrel_main_idtf:
+	    [Опр. (являться*)]
+	    (* <- lang_ru;; *);;
+
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+nrel_to_be_part_of
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- unary_relation;
+
+=> nrel_main_idtf:
+		[принадлежать*]
+		(* <- lang_ru;;	*);
+=> nrel_idtf:
+		[относиться к категории*]
+		(* <- lang_ru;;	*);
+		[относиться к разряду*]
+		(* <- lang_ru;;	*);
+		[относиться к числу*]
+		(* <- lang_ru;;	*);
+		[иметь*]
+		(* <- lang_ru;;	*);
+		[to be part of*]
+		(* <- lang_en;;	*);;
+
+nrel_to_be_par_of
+=> nrel_first_domain:...
+	(*
+		<= nrel_combination:
+			...
+			(*
+				-> set;
+					number;
+					concept_geometric_point;;
+			*);;
+		<= nrel_second_domain: nrel_to_be;;
+	*);;
+
+nrel_to_be_part_of
+<- rrel_key_sc_element:
+		...
+		(*
+		<- sc_definition;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: [Лексическое значение глагола принадлежать - относиться к какому-л. разряду, группе и т.п., быть составной частью или участником чего-л] (* <-lang_ru;; *);;  
+			*);;
+		<= nrel_using_constants:
+		...
+		 (* 
+		       ->concept_lexical_meaning;;
+			->concept_verb;;
+			->nrel_to_prove;;
+		*);;
+		*);
+
+        => nrel_main_idtf:
+	    [Опр. (принадлежать*)]
+	    (* <- lang_ru;; *);;
+
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+nrel_transition_point
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antitransitive_relation;
+<- antireflexive_relation;
+=> nrel_main_idtf:
+	[точка перехода*]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[точка перехода нечеткого множества*]
+	(* <- lang_ru;;	*);;
+
+nrel_transition_point
+<- rrel_key_sc_element:
+	Definition_of_nrel_transition_point
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/nrel_transition_point.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> fuzzy_set;
+		concept_universum;
+		membership_function;;
+		*);;
+
+
+	*);;
+
+Definition_of_nrel_transition_point
+=> nrel_main_idtf:
+	[Определение отношения "точка перехода*"]
+	(* <- lang_ru;;	*);;
+
+nrel_transition_point
+=>nrel_first_domain: sc_element;
+=>nrel_second_domain: fuzzy_set;
+=>nrel_definitional_domain:
+...
+(*
+	<=nrel_combination:
+	{
+		sc_element;
+		fuzzy_set
+	};;
+*);;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+nrel_upper_approximation
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antireflexive_relation;
+<- antitransitive_relation;
+<- antisymmetric_relation;
+=> nrel_main_idtf:
+	[верхняя аппроксимация*]
+	(* <- lang_ru;; *);;
+
+nrel_upper_approximation
+<- rrel_key_sc_element:
+	Definition_of_nrel_upper_approximation
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/nrel_upper_approximation.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		->  fuzzy_set;
+            nrel_inclusion;
+            concept_universum;
+            nrel_alpha_incision;
+            set_of_sets;
+            number;;
+        *);;
+	*);;
+
+nrel_upper_approximation
+<- rrel_key_sc_element:
+
+	statement_nrel_upper_approximation_intersection_fuzzy_set_set_of_sets
+	(* 
+		<- statement;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example:  "file://content/content_htmls/statement_nrel_upper_approximation.html" (* <- lang_ru;; *);;
+			*);;
+		=> nrel_main_idtf: [Утв. (верхняя аппроксимация*, нечеткое множество, семейство множеств, пересечение*)]
+					(* <- lang_ru;; *);;
+        <= nrel_using_constants:
+		    ...
+			(*
+             -> nrel_fuzzy_set_intersection; 
+                nrel_upper_approximation;
+                fuzzy_set;
+                univresal_set;
+                set_of_sets;
+                nrel_alpha_incision;;
+            *);;
+
+	*);;
+
+Definition_of_nrel_upper_approximation
+=> nrel_main_idtf:
+	[Определение понятия "верхняя аппроксимация*"]
+	(* <- lang_ru;;	*);;
+
+nrel_upper_approximation
+=>nrel_first_domain: set_of_sets;
+=>nrel_second_domain: fuzzy_set;
+=>nrel_definitional_domain: 
+	...
+(*
+	<= nrel_combination:
+	{
+		set_of_sets;
+		fuzzy_set
+	};;
+*);;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+nrel_year_birth
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antitransitive_relation;
+<- antireflexive_relation;
+	=> nrel_main_idtf:
+				[год рождения]
+				(*
+						<-lang_ru;;
+					*);; 
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+nrel_place_of_birth
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antitransitive_relation;
+<- antireflexive_relation;
+=> nrel_main_idtf:
+				[место рождения]
+					(*
+						<-lang_ru;;
+					*);;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+nrel_year_death
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antitransitive_relation;
+<- antireflexive_relation;
+	=> nrel_main_idtf:
+				[год смерти]
+					(*
+						<-lang_ru;;
+					*);;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+nrel_years_life
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antitransitive_relation;
+<- antireflexive_relation;
+ => nrel_main_idtf:
+				[годы жизни]
+					(*
+						<-lang_ru;;
+					*);;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+odd_permutation
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[нечётная перестановка]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[odd permutation]
+	(* <- lang_ru;;	*);
+
+<=nrel_inlusion : nrel_set_of_permutations;
+
+<- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(нечётная перестановка)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/odd_permutation.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+	
+odd_permutation
+-> rrel_example :
+		"file://content/content_images/odd_permutation.jpg";;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+oriented_set_length
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antitransitive_relation;
+<- antireflexive_relation;
+=> nrel_main_idtf:
+	[длина кортежа*]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[размерность кортежа*]
+	(* <- lang_ru;;	*);;
+
+oriented_set_length
+<- rrel_key_sc_element:
+	Definition_of_oriented_set_length
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/oriented_set_length.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> number;
+		  oriented_set;
+		nrel_component;;
+
+		*);;
+	
+
+	*);;
+
+
+Definition_of_oriented_set_length
+=> nrel_main_idtf:
+	[Определение понятия "длина кортежа*"]
+	(* <- lang_ru;;	*);;
+
+oriented_set_length
+=>nrel_first_domain: number;
+=>nrel_second_domain: oriented_set;;
+
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+// идентификаторы
+parity_of_permutation
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+=> nrel_main_idtf:
+		[четность перестановки*]
+			(* <- lang_ru;; *);
+		[parity of permutation*]
+		(* <- lang_en;; *);;
+
+parity_of_permutation
+=> nrel_definitional_domain:nrel_set_of_permutations;;
+
+
+parity_of_permutation
+<- rrel_key_sc_element:
+	...
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+			-> rrel_example:  "file://content/content_htmls/parity_of_permutation/parity_of_permutation.html"  (* <- lang_ru;; *);;
+		*);;
+	*);
+<- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(элемент)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://content/content_htmls/parity_of_permutation/element_statement_of_parity_of_permutation.html" (* <- lang_ru;; *);;
+		*);;
+	*);
+<- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(факториал*. транспозиция)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://content/content_htmls/parity_of_permutation/transpose_statement_of_parity_of_permutation.html" (* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+partial_transversal
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- transitive_relation;
+<- antireflexive_relation;
+=> nrel_main_idtf:
+	[частичная трансверсаль*]
+	(* <- lang_ru;;	*);
+	[partial transversal*]
+	(* <- lang_en;; *);;
+
+partial_transversal
+ <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(частичная трансверсаль*))]  (* <- lang_ru;; *);;
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: 
+			"file://content/content_htmls/partial_transversal/partial_transversal.html" (* <- lang_ru;; *);;
+		*);;
+*);;
+
+partial_transversal
+=>nrel_first_domain: set;
+=>nrel_second_domain: set;
+=>nrel_definitional_domain :set;;
+
+partial_transversal <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(биекция, трансверсаль*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://content/content_htmls/partial_transversal/transversal_and_bijection_statement.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+partial_transversal 
+<- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(трансверсаль, cемейство, подсемейство*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://content/content_htmls/partial_transversal/transversal_statement.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+partial_transversal 
+<- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(трансверсаль, подмножество*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://content/content_htmls/partial_transversal/transversal_and_subset_statement.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+rrel_alpha
+<- sc_node_role_relation;;
+
+rrel_alpha
+=> nrel_main_idtf:
+	[альфа-уровень']
+	(* <- lang_ru;;	*);;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+support_of_fuzzy_set
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- reflexive_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+	[носитель нечёткого множества*]
+	(* <- lang_ru;;	*);;
+
+support_of_fuzzy_set
+<- rrel_key_sc_element:
+	Definition_of_support_of_fuzzy_set
+	(* 
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/support_of_fuzzy_set.html" (* <-lang_ru;; *);;
+		*);;	
+	*);;
+
+Definition_of_support_of_fuzzy_set
+=> nrel_main_idtf:
+	[Определение понятия "носитель нечёткого множества*"]
+	(* <- lang_ru;;	*);;
+
+support_of_fuzzy_set
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- illustration;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+			-> rrel_example: "file://content/content_images/fuzzy_set_support.png"
+				(*
+					=> nrel_format: format_png;;
+				*);;
+		*);;
+	*);;
+
+support_of_fuzzy_set
+<- rrel_key_sc_element:
+
+	statement_support_of_fuzzy_set_empty_set_empty_fuzzy_set
+	(* 
+		<- statement;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+				-> rrel_example: "file://content/content_htmls/statement_support_of_fuzzy_set.html" (* <- lang_ru;; *);;
+			*);;
+		=> nrel_main_idtf: [Утв. (носитель*, нечеткое множество, пустое множество, множество, пустое нечеткое множество)]
+					(* <- lang_ru;; *);;
+	<= nrel_using_constants:
+		...
+		(* 
+			-> support_of_fuzzy_set; set; fuzzy_set; empty_set; empty_fuzzy_set;;
+		*);;
+
+	*);;
+
+support_of_fuzzy_set
+=> nrel_first_domain: crisp_set;
+=> nrel_second_domain: fuzzy_set;
+=> nrel_definitional_domain:
+...
+(*
+	<= nrel_combination:
+	{
+		crisp_set;
+		fuzzy_set
+	};;
+*);;
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+transposition
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- transitive_relation;
+<- antireflexive_relation;
+<- summetric_relation;
+=> nrel_main_idtf:
+	[транспозиция*]
+	(* <- lang_ru;;	*);
+	[transposition*]
+	(* <- lang_en;; *);;
+
+transposition <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(транспозиция)]  (* <- lang_ru;; *);;
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: 
+			"file://content/content_htmls/transposition/transposition.html" (* <- lang_ru;; *);;
+		*);;
+*);;
+
+transposition
+=>nrel_first_domain: set;
+=>nrel_second_domain: set;;
+
+transposition <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(перестановка, конечное множество)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://content/content_htmls/transposition/permutation_statement.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+transposition 
+<- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(цикл)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://content/content_htmls/transposition/cycle_statement.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+transposition
+		-> rrel_example: 
+			"file://content/content_htmls/transposition/example.html"(* <- lang_ru;; *);;
+
+transposition 
+<- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(композиция, перестановка)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://content/content_htmls/transposition/composiion_statement.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+//--------------------------------------------------------------------------------------------------
+
+
+transversal
+<- sc_node_norole_relation;
+<- oriented_relation;
+<- binary_relation;
+<- antisymmetric_relation;
+<- antitransitive_relation;
+<- antireflexive_relation;
+=> nrel_main_idtf:
+	[трансверсаль*]
+	(* <- lang_ru;;	*);
+	[transversal*]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[система различных представителей*]
+	(* <- lang_ru;;	*);;
+
+transversal <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(трансверсаль))]  (* <- lang_ru;; *);;
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: 
+			"file://content/content_htmls/transversal/transversal.html" (* <- lang_ru;; *);;
+		*);;
+*);;
+
+transversal
+=>nrel_first_domain: set_of_sets;
+=>nrel_second_domain: set;
+=> nrel_definitional_domain:...
+(*
+    <= nrel_combination: ...
+    (* 
+        -> set_of_sets; set;;
+    *);;
+*);;
+
+transversal <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(инъекция, частичная трансверсаль)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://content/content_htmls/transversal/partial_transversal_and_injection_statement.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+transversal 
+<- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(частичная трансверсаль, cемейство, подсемейство*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://content/content_htmls/transversal/partial_transversal_statement.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+transversal 
+<- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(частичная трансверсаль, подмножество*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://content/content_htmls/transversal/partial_transversal_and_subset_statement.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+transversal 
+<- rrel_key_sc_element:
+ ...
+	(*
+	<-sc_illustration;;
+	<=nrel_sc_text_translation:
+		example_transversal
+		(* 
+		-> rrel_example: "file://content/content_htmls/transversal/example_transversal.html"(* <-lang_ru;; *);;
+		*);;
+	*);;

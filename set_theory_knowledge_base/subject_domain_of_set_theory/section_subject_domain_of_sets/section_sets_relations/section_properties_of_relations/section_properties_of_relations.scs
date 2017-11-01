@@ -1,0 +1,16 @@
+section_properties_of_relations
+=> nrel_main_idtf:
+	[Раздел. Свойства отношений]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/section_properties_of_relations.html" (* <-lang_ru;; *);;
+		*);;
+
+section_properties_of_relations = [*^"file://section_properties_of_relations.scsi"*];;
+
+section_properties_of_relations
+-> rrel_key_sc_element:	
+		unambiguity;;

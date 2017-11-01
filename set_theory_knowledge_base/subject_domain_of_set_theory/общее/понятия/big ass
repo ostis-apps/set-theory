@@ -1,7 +1,0 @@
-Автослияние kb_main/base/section_subject_domain_of_sets.scs
-Автослияние kb_main/base/section_sets_axiom/section_set_axiom_scsi/section_set_axiom.scsi
-Автослияние kb_main/base/section_scientists/section_sets_scientists/section_set_scientists_scsi/htmls/Zermelo_text_ru.html
-Автослияние kb_main/base/section_scientists/section_sets_scientists/section_set_scientists_scsi/htmls/Sierpinski_text_ru.html
-Автослияние kb_main/base/section_scientists/section_sets_scientists/section_set_scientists_scsi/htmls/Georg_cantor_text_ru.html
-КОНФЛИКТ (содержимое): Конфликт слияния в kb_main/base/section_scientists/section_sets_scientists/section_set_scientists_scsi/htmls/Georg_cantor_text_ru.html
-КОНФЛИКТ (изменение/удаление): kb_en/общее/понятия/concept_fuzzy_set.scs удалено в HEAD и изменено в kurs. Версия kurs из kb_en/общее/понятия/concept_fuzzy_set.scs оставлена в дереве.

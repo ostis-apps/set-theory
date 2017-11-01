@@ -1,0 +1,136 @@
+bijection
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[биекция]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[взаимно-однозначное отображение]
+	(* <- lang_ru;; *);
+	[одно-однозначное отображение]
+	(* <- lang_ru;; *);;
+
+bijection
+<- rrel_key_sc_element:
+	Definition_of_bijection
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/bijection.html" (* <-lang_ru;; *);;
+		*);;
+	*);
+<- rrel_key_sc_element:
+	...(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[При биективном отображении каждому элементу одного множества соответствует ровно один элемент другого множества, при этом определено обратное отображение, которое обладает тем же свойством.] (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+Definition_of_bijection
+=> nrel_main_idtf:
+	[Определение понятия "биекция"]
+	(* <- lang_ru;;	*);;
+bijection
+<= nrel_using_constants:
+		...
+			(* -> function; injection; surjection;; *);;
+
+
+//-------------------------------------------------------------------------------------------------
+
+functional
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[функционал]
+	(* <- lang_ru;;	*);;
+
+functional
+<- rrel_key_sc_element:
+	Definition_of_functional
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/functional.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+Definition_of_functional
+=> nrel_main_idtf:
+	[Определение понятия "функционал"]
+	(* <- lang_ru;;	*);;
+
+functional
+<= nrel_using_constants:
+		...
+		(* 
+		-> function;;
+		-> set;;
+		-> range_of_value;;
+		*);;
+
+
+//-------------------------------------------------------------------------------------------------
+
+injection
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[инъекция]
+	(* <- lang_ru;;	*);;
+
+injection
+<- rrel_key_sc_element:
+	Definition_of_injection
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/injection.html" (* <-lang_ru;; *);;
+		*);;
+	
+
+	*);;
+
+
+Definition_of_injection
+=> nrel_main_idtf:
+	[Определение понятия "инъекция"]
+	(* <- lang_ru;;	*);;
+
+
+//-------------------------------------------------------------------------------------------------
+
+
+surjection
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[сюръекция]
+	(* <- lang_ru;;	*);;
+
+surjection
+<- rrel_key_sc_element:
+	Definition_of_surjection
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/surjection.html" (* <-lang_ru;; *);;
+		*);;
+	
+
+	*);;
+
+
+Definition_of_surjection
+=> nrel_main_idtf:
+	[Определение понятия "сюръекция"]
+	(* <- lang_ru;;	*);;
+
+

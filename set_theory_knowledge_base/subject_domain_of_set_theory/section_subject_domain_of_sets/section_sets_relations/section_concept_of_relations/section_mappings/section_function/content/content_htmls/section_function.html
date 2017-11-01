@@ -1,0 +1,48 @@
+<p>Понятие <sc_element sys_idtf = "function">«функции»</sc_element> является одним из основополагающих в математике. В дан­ном случае подразумеваются прежде всего функции, отображающие одно <sc_element sys_idtf = "finite_set">конеч­ное множество</sc_element> объектов в другое конечное множество. Мы избегаем использо­вания термина «отображение» и предпочитаем слово «функция» в расчете на постоянное сопоставление читателем математического понятия функции с поня­тием функции в языках программирования.<br>
+Пусть f — <sc_element sys_idtf = "relation">отношение</sc_element> из А в В, такое что
+<ul>
+	<li>&forall; a (a, b) &isin; f & (а, с) &isin; f => b = с.</li>
+</ul>
+Такое свойство отношения называется <sc_element sys_idtf = "unambiguity">однозначностью</sc_element>, или функциональностью, а само отношение называется функцией из А в В и обозначается следующим образом: f: A &rarr; В. Если f: A &rarr; В, то обычно используется префиксная форма записи:
+<ul>
+	<li>b = f(a) = (a,b) &isin; f.</li>
+</ul>
+Если b = f(a), то а называют <sc_element sys_idtf = "function_argument">аргументом</sc_element>, а b — <sc_element sys_idtf = "function_value">значением функции</sc_element>.<br>
+Пусть f: A &rarr; В, тогда
+<ul>
+	<li><sc_element sys_idtf = "domain_of_definition">область определения функции</sc_element>:  f<sub>A</sub> = {a &isin; А | &#8707; b &isin; В b= f(а)};</li>
+	<li><sc_element sys_idtf = "range_of_value">область значений функции</sc_element>: f<sub>B</sub> = {b &isin; В| &#8707; а &isin; A b = f(а)}.</li>
+</ul>
+Если f<sub>A</sub> = A, то функция называется <sc_element sys_idtf = "total_function">тотальной</sc_element>, а если f<sub>A</sub> &ne; A — <sc_element sys_idtf = "partial_function">частичной</sc_element>. <sc_element sys_idtf = "narrowing_function">Сужением функции</sc_element> f: A &rarr; В на множество М &sub; А называется функция f|<sub>M</sub>, определяемая следующим образом:
+<ul>
+	<li>f|<sub>M</sub> = {(а, b) | (а, b) &isin; f & а  &isin; М}</li>
+</ul>
+Для тотальной функции f = f|<sub>fA</sub>.<br>
+Функция f: A<sub>1</sub> × ... × А<sub>n</sub> &rarr; В называется функцией n аргументов, или n-местной функцией.<br>
+Пусть f: A &rarr; В. Тогда функция f называется:
+<ul>
+	<li><sc_element sys_idtf = "injection">инъективной</sc_element>,      если b = f(a<sub>1</sub>) & b = f(a<sub>2</sub>) => a<sub>1</sub> = a<sub>2</sub>; </li>
+	<li><sc_element sys_idtf = "surjection">сюръективной</sc_element>,    если &forall; b &isin; В &#8707; a &isin; А b = f(а); </li>
+	<li><sc_element sys_idtf = "bijection">биективной</sc_element>,      если она инъективная и сюръективная.</li>
+</ul>
+Биективную функцию также называют взаимнооднозначной.<br>
+<b>Теорема. </b> Если f: A &rarr; В — тотальная биекция (f<sub>A</sub> = А), то отношение f<sup>-1</sup> &sub; В × А (обратная функция) является биекцией.<br>
+Доказательство.<br>
+<ul>
+	<li>Поскольку f — биекция, имеем (b<sub>1</sub> = f(a) & b<sub>2</sub> = f(a) => b<sub>1</sub> = b<sub>2</sub>) & (b= f(a<sub>1</sub>) & b = f(а<sub>2</sub>) => a<sub>1</sub> = a<sub>2</sub>) & (&forall; b &isin; В &#8707; a &isin; А b = f(а)).</li>
+	<li>Покажем, что f<sup>-1</sup> — функция. f<sup>-1</sup> = {(b,а) | a &isin; А & b &isin; В & b = f(а)}.</li>
+	<li>Пусть a<sub>1</sub> = f<sup>-1</sup>(b) & а<sub>2</sub> = f<sup>-1</sup>(b). </li>
+	<li>Тогда b = f(a<sub>1</sub>) & b = f (а<sub>2</sub>) => a<sub>1</sub> = a<sub>2</sub>.</li>
+	<li>Покажем, что f<sup>-1</sup> — инъекция. Пусть a<sub>1</sub> = f<sup>-1</sup>(b<sub>1</sub>) & а<sub>2</sub> = f<sup>-1</sup>(b<sub>2</sub>). Тогда b<sub>1</sub>= f(a) & b<sub>2</sub> = f(a) => b<sub>1</sub> = b<sub>2</sub>. </li>
+	<li>Покажем от противного, что f<sup>-1</sup> — сюръекция. Пусть &#8707; a &isin; А &rceil;&#8707; b &isin; В a = f<sup>-1</sup>(b). Тогда &#8707; a &isin; А &forall; b &isin; В a &ne; f<sup>-1</sup>(b). Обозначим этот элемент a<sub>0</sub>. Имеем &forall; b a<sub>0</sub> &ne; f<sup>-1</sup>(b) => &forall; b b &ne; f(a<sub>0</sub>) => a<sub>0</sub> &notin; f<sub>A</sub> &sub; А => a<sub>0</sub> &notin; А. </li>
+<li>Пусть f: A &rarr; В  и пусть А<sub>1</sub> &sub; A, В<sub>1</sub> &sub; В. Тогда множество F(А<sub>1</sub>) = {b &isin; В | &#8707; а &isin; А<sub>1</sub> b = f(а)} называется <sc_element sys_idtf = "rrel_image_of_mapping">образом</sc_element> множества А<sub>1</sub>, а множество F<sup>-1</sup>(В<sub>1</sub>) = {а &isin; А | &#8707; b &isin; В<sub>1</sub> b = f(а)} <sc_element sys_idtf = "rrel_preimage_of_mapping">прообразом</sc_element> множества В<sub>1</sub>. Заметим, что F является отношением из множества 2<sup>fA</sup> в множество 2<sup>fB</sup>: 
+<ul>
+	<li>F = {(A<sub>1</sub>, B<sub>1</sub>) | А<sub>1</sub> &sub; A & В<sub>1</sub> &sub; В &  В<sub>1</sub> = F(А<sub>1</sub>)}.</li>
+</ul></li>
+</ul>
+<b>Теорема. </b> Если f: A &rarr; В функция, то F: 2<sup>fA</sup>  &rarr;  2<sup>fB</sup> и  F<sup>-1</sup>: 2<sup>fB</sup>  &rarr;  2<sup>fA</sup> – тоже функции.<br>
+F называется <sc_element sys_idtf = "induced_function">индуцированной функцией</sc_element>, а F<sup>-1</sup> — <sc_element sys_idtf = "transition_to_preimages">переходом к прообразам</sc_element>.<br>
+<b>Принцип Дирихле.</b> Пусть f: X &rarr; Y – функция, причем Х и Y – конечные множества. Если |Х| > |Y|, то по крайней мере одно значение f встретится более одного раза. <br>
+Неформально, принцип Дирихле можно например записать следующим образом:<br>
+Если Х – множество белок, а Y – множество клеток, и |Х| = 12, а |Y| =11, то 12 белок нельзя посадить в 11 клеток так, чтобы в каждой клетке находилась одна белка.
+</p>

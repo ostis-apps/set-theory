@@ -1,0 +1,21 @@
+section_mappings_of_sets
+=> nrel_main_idtf:
+	[Раздел. Отображения множеств]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/section_mapping_of_sets.html" (* <-lang_ru;; *);;
+		*);;
+
+section_mappings_of_sets = [*^"file://section_mappings_of_sets.scsi"*];;
+
+section_equivalence_relation
+-> rrel_key_sc_element:
+		bijection;
+		functional;
+		injection;
+		surjection;;
+		
+		

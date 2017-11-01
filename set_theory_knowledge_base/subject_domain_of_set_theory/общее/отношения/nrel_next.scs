@@ -1,7 +1,0 @@
-nrel_next
-<- sc_node_norole_relation;
-=> nrel_main_idtf:
-	[следующий раздел*] 
-	(* <- lang_ru;;	*);
-<-sc_const;	
-<-sc_node_norole_relation;;
