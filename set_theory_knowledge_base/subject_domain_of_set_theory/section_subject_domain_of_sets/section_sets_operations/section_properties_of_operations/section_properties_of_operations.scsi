@@ -1,0 +1,73 @@
+associativity
+		=> nrel_main_idtf:
+			[ассоциативность]
+			(* <- lang_ru;;	*);
+		=> nrel_idtf:
+			[свойство ассоциативности]
+			(* <- lang_ru;;	*);
+			[сочетательность]
+			(* <- lang_ru;;	*);
+			[associativity]
+			(*<- lang_en;; *);;
+
+associativity <-rrel_key_sc_element:
+		   Definition_of_associativity
+			(* 
+				=> nrel_main_idtf:
+					[Опр. (ассоциативность)]
+				(* <- lang_ru;;	*);;
+				<- definition;;
+
+			<= nrel_sc_text_translation:
+				.associativity_definition
+				(* 
+					-> rrel_example:"file://content/content_htmls/associativity.html" 
+				(* <-lang_ru;; *);;
+				*);;
+
+			<= nrel_using_constants:
+				...
+					(*
+					 -> parameter; 
+					    binary_operation;
+					    nrel_result;; 
+					*);;
+			*);;
+
+commutative
+		=> nrel_main_idtf:
+			[коммутативность]
+			(* <- lang_ru;;	*);
+		=> nrel_idtf:
+			[свойство коммутативности]
+			(* <- lang_ru;; *);
+			[переместительность]
+			(* <- lang_ru;; *);
+			[commutative]
+			(* <- lang_en;; *);
+			[commutative property]
+			(* <- lang_en;; *);;
+
+commutative<- rrel_key_sc_element:
+			Definition_of_commutative
+			(* 
+				=> nrel_main_idtf:
+					[Опр. (коммутативность).]
+					(* <- lang_ru;; *);;
+				<- definition;;
+				<= nrel_sc_text_translation:
+					.commutative_definition
+					(* 
+						-> rrel_example:"file://content/content_htmls/commutative.html" (* <-lang_ru;; *);;
+					*);;
+				<= nrel_using_constants:
+				...
+				(* 
+					-> parameter; 
+					binary_operation; 
+					nrel_result; 
+					rrel_argument_of_action;; 
+				*);;
+			*);;
+
+	

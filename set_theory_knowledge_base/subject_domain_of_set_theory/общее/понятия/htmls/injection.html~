@@ -1,3 +1,0 @@
-<p>
-<b><sc_element sys_idtf  = "injection">Инъекция</sc_element></b> - <sc_element sys_idtf  = "function">отображение</sc_element>, при котором разные <sc_element sys_idtf  = "element_of_set">элементы одного множества</sc_element> переводятся в разные элементы другого <sc_element sys_idtf  = "set">множества</sc_element> У то есть, если два образа при <sc_element sys_idtf  = "function">отображении</sc_element> совпадают, то совпадают и прообразы.
-</p>

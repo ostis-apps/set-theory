@@ -1,107 +1,20 @@
 section_sets_operations
 => nrel_main_idtf:
 	[Раздел. Операции над множествами]
-	(* <- lang_ru;; *);;
-
-section_sets_comparison
-=> nrel_main_idtf:
-	[Раздел. Сравнение множеств]
 	(* <- lang_ru;; *);
-<= nrel_sc_text_translation:
 
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_sets_comparison.html" (* <-lang_ru;; *);;
-		*);;
-
-section_operations
-=> nrel_main_idtf:
-	[Раздел. Операции]
-	(* <- lang_ru;; *);
-<= nrel_sc_text_translation:
-		Venn_diagramm_combination
-		(* 
-			=> nrel_main_idtf:[Диаграмма Венна (объединение)](* <- lang_ru;; *);;
-			-> rrel_example: "file://htmls/union.png" (* <-lang_ru;; *);;
-		*);
-<= nrel_sc_text_translation:
-		Venn_diagramm_intersection
-		(* 
-			=> nrel_main_idtf:[Диаграмма Венна (пересечение)](* <- lang_ru;; *);;
-			-> rrel_example: "file://htmls/intersection.png" (* <-lang_ru;; *);;
-		*);
-<= nrel_sc_text_translation:
-		Venn_diagramm_difference
-		(* 
-			=> nrel_main_idtf:[Диаграмма Венна (разность)](* <- lang_ru;; *);;
-			-> rrel_example: "file://htmls/dif.png" (* <-lang_ru;; *);;
-		*);
-<= nrel_sc_text_translation:
-		Venn_diagramm_symmetric_difference
-		(* 
-			=> nrel_main_idtf:[Диаграмма Венна (симметрическая разность)](* <- lang_ru;; *);;
-			-> rrel_example: "file://htmls/simdif.png" (* <-lang_ru;; *);;
-		*);
-<= nrel_sc_text_translation:
-		Venn_diagramm_complementation
-		(* 
-			=> nrel_main_idtf:[Диаграмма Венна (дополнение)](* <- lang_ru;; *);;
-			-> rrel_example: "file://htmls/add.png" (* <-lang_ru;; *);;
-		*);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_operations.html" (* <-lang_ru;; *);;
-		*);;
-
-section_properties_of_operations
-=> nrel_main_idtf:
-	[Раздел. Свойства операций над множествами]
-	(* <- lang_ru;; *);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_properties_of_operations.html" (* <-lang_ru;; *);;
-		*);;
-
-section_evidence_of_set_theory
-=> nrel_main_idtf:
-	[Раздел. Примеры доказательства тождеств с множествами]
-	(* <- lang_ru;; *);
-<= nrel_sc_text_translation:
-		picture1
-		(* 
-			=> nrel_main_idtf:[рисунок 1](* <- lang_ru;; *);;
-			-> rrel_example: "file://htmls/pic.1.png" (* <-lang_ru;; *);;
-		*);
-<= nrel_sc_text_translation:
-		picture2
-		(* 
-			=> nrel_main_idtf:[рисунок 2](* <- lang_ru;; *);;
-			-> rrel_example: "file://htmls/pic.2.png" (* <-lang_ru;; *);;
-		*);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_evidence_of_set_theory.html" (* <-lang_ru;; *);;
-		*);;
-
-section_powerset
-=> nrel_main_idtf:
-	[Раздел. Булеан]
-	(* <- lang_ru;; *);
-<= nrel_sc_text_translation:
-
-		...
-		(* 
-		-> rrel_example: "file://htmls/section_powerset.html" (* <-lang_ru;; *);;
-		*);;
-
-
-
-
-
-
+<= nrel_section_decomposition:
+{
+	
+	section_operations
+	(*
+	=> nrel_section_base_order: 
+		section_properties_of_operations;;
+	*);
+	section_properties_of_operations
+	(*
+	=> nrel_section_base_order: 
+		section_multisets_operations;;
+	*);
+	section_multisets_operations
+};;

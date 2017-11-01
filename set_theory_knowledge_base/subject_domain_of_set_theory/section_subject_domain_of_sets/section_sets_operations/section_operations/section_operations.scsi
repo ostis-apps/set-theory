@@ -1,0 +1,454 @@
+nrel_addition
+	=> nrel_main_idtf:
+		[дополнение*] (* <- lang_ru;;	*);
+	=> nrel_idtf:
+		[дополнение множества*] (* <- lang_ru;; *);
+		[отношение дополнения*] (* <- lang_ru;; *);
+		[операция дополнения*] (* <- lang_ru;; *);
+	=> nrel_first_domain:
+		set;
+	=> nrel_second_domain:
+		set;
+	=> nrel_definitional_domain:
+		set;
+	<- norole_relation;
+	<- oriented_relation;
+	<- ternary_relation;;
+
+nrel_addition<- rrel_key_sc_element:
+		Definition_of_addition
+		(* 
+			=> nrel_main_idtf:
+				[Опр. (дополнение*)]
+				(* <- lang_ru;;	*);;
+
+			<- definition;;
+
+			<= nrel_sc_text_translation:
+				.nrel_addition_definition
+				(* 
+					-> rrel_example: "file://content/content_htmls/nrel_addition_definition.html"
+						(* <-lang_ru;; *);;
+				*);;
+
+			<= nrel_using_constants:
+				...
+				(* 
+					-> set;
+					concept_universum;
+					element_of_set;
+					nrel_belonging;
+					nrel_sets_difference;;
+				*);;
+		*);
+
+		Statement_1_addition
+		(* 
+			<- statement;;
+			<= nrel_sc_text_translation:
+				.nrel_addition_statement_1
+				(* 
+					-> rrel_example: "file://content/content_htmls/nrel_addition_statement_1.html"
+						(* <-lang_ru;; *);;
+				*);;
+			=> nrel_main_idtf:
+				[Утв. (дополнение*, объединение*, универсум)]
+					(* <-lang_ru;; *);;
+		*);
+
+		...
+		(*
+			<- illustration;;
+			<= nrel_sc_text_translation:
+				.nrel_addition_illustration
+				(*
+					-> rrel_example: "file://content/content_images/addition(1).png"
+						(*
+							=> nrel_format: format_png;;
+						*);;
+					-> rrel_example: "file://content/content_images/addition(2).png"
+						(*
+							=> nrel_format: format_png;;
+						*);;
+				*);;
+			=> nrel_main_idtf:
+				[Иллюстрация к понятию "дополнение*"]
+					(* <- lang_ru;; *);;
+		*);;
+
+
+
+nrel_combination
+	=> nrel_idtf:
+		[отношение объединения*]
+		(* <- lang_ru;; *);
+		[операция объединения*]
+		(* <- lang_ru;; *);
+
+	<- norole_relation;
+	<- nooriented_relation;
+	<- ternary_relation;
+
+	=> nrel_first_domain:
+		set;
+	=> nrel_second_domain:
+		set;
+	=> nrel_definitional_domain:
+		set;;
+
+nrel_combination<- rrel_key_sc_element:
+		Definition_of_combination
+		(*
+			=> nrel_main_idtf:
+				[Опр. (объединение*)]
+				(* <- lang_ru;;	*);;
+			<- definition;;
+			<= nrel_sc_text_translation:
+				.nrel_combination_definition
+				(* 
+					-> rrel_example: "file://content/content_htmls/nrel_combination_definition.html"
+						(* <- lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(* 
+					-> set;
+					element_of_set;
+					nrel_belonging;;
+				*);;
+		*);
+
+		Statement_1_combination
+		(* 
+			<- statement;;
+			<= nrel_sc_text_translation:
+				.nrel_combination_statement_1
+				(* 
+					-> rrel_example: "file://content/content_htmls/nrel_combination_statement_1.html"
+						(* <- lang_ru;; *);;
+				*);;
+			=> nrel_main_idtf: [Утв. (объединение*, пустое множество)]
+				(* <- lang_ru;; *);;
+		*);
+
+		...
+		(*
+			<- illustration;;
+			=> nrel_main_idtf:
+				[Иллюстрация к понятию "объединение*"]
+					(* <- lang_ru;; *);;
+			<= nrel_sc_text_translation:
+				.nrel_combination_illustration
+				(*
+					->rrel_example: "file://content/content_images/combination.png"
+						(*
+							=> nrel_format: format_png;;
+						*);;
+				*);;
+		*);;
+
+	
+nrel_intersection
+	=> nrel_idtf:
+		[отношение пересечения*]
+		(* <- lang_ru;; *);
+		[операция пересечения*]
+		(* <- lang_ru;; *);
+
+	=> nrel_first_domain: set;
+	=> nrel_second_domain: set;
+	=> nrel_definitional_domain: set;
+
+	<- norole_relation;
+	<- nooriented_relation;
+	<- ternary_relation;;
+
+nrel_intersection<- rrel_key_sc_element:
+		Definition_of_intersection
+		(* 
+			=> nrel_main_idtf:
+				[Опр. (пересечение*)]
+				(* <- lang_ru;;	*);;
+			<- definition;;
+			<= nrel_sc_text_translation:
+				.nrel_intersection_definition
+				(* 
+					-> rrel_example: "file://content/content_htmls/nrel_intersection_definition.html"
+						(* <- lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(* 
+					-> set;
+					element_of_set;
+					nrel_belonging;;
+				*);;
+		*);
+
+		Statement_1_intersection
+		(* 
+			<- statement;;
+			<= nrel_sc_text_translation:
+				.nrel_intersection_statement_1
+				(* 
+					-> rrel_example: "file://content/content_htmls/nrel_intersection_statement_1.html"
+						(* <- lang_ru;; *);;
+				*);;
+			=> nrel_main_idtf:
+				[Утв. (пересечение*, пустое множество)]
+					(* <-lang_ru;; *);; 
+		*);
+
+		Statement_2_intersection
+		(* 
+			<- statement;;
+			<= nrel_sc_text_translation:
+				.nrel_intersection_statement_2
+				(* 
+					-> rrel_example: "file://content/content_htmls/nrel_intersection_statement_2.html"
+						(* <- lang_ru;; *);;
+				*);;
+			=> nrel_main_idtf:
+				[Утв. (пересечение*, синглетон)]
+					(* <-lang_ru;; *);; 
+		*);
+
+		...
+		(*
+			<- illustration;;
+			=> nrel_main_idtf:
+				[Иллюстрация к понятию "пересечение*"]
+					(* <- lang_ru;; *);;
+			<= nrel_sc_text_translation:
+				.nrel_intersection_illustration
+				(*
+					->rrel_example: "file://content/content_images/intersection.png"
+						(*
+							=> nrel_format: format_png;;
+						*);;
+				*);;
+		*);;
+
+
+nrel_sets_difference
+	=> nrel_idtf:
+		[отношение разности*]
+		(* <- lang_ru;; *);
+		[операция разность множеств*]
+		(* <- lang_ru;; *);
+		[арифметическая разность множеств*]
+		(* <- lang_ru;; *);
+
+	=> nrel_first_domain: set;
+	=> nrel_second_domain: set;
+	=> nrel_definitional_domain: set;
+
+	<- norole_relation;
+	<- oriented_relation;
+	<- ternary_relation;;
+
+nrel_sets_difference<- rrel_key_sc_element:
+		Definition_of_sets_difference
+		(* 
+			<- definition;;
+			=> nrel_main_idtf:
+				[Опр. (разность множеств*)]
+					(* <- lang_ru;; *);;
+		
+			<= nrel_sc_text_translation:
+				.nrel_sets_difference_definition
+				(*
+					-> rrel_example:
+						"file://content/content_htmls/nrel_sets_difference_definition.html"
+							(* <- lang_ru;; *);;
+				*);;
+
+			<= nrel_using_constants:
+				...
+				(* 
+					-> set;
+						element_of_set;
+						nrel_belonging;;
+				*);;
+		*);
+
+		Statement_1_sets_difference
+		(* 
+			<- statement;;
+			<= nrel_sc_text_translation:
+				.nrel_sets_difference_statement_1
+				(* 
+					-> rrel_example:
+						"file://content/content_htmls/nrel_sets_difference_statement_1.html"
+							(* <-lang_ru;; *);;
+				*);;
+			=> nrel_main_idtf:
+				[Утв. (разность множеств*, пустое множество, множество)]
+					(* <- lang_ru;; *);;
+		*);
+
+		Statement_2_sets_difference
+		(* 
+			<- statement;;
+			<= nrel_sc_text_translation:
+				.nrel_sets_difference_statement_2
+				(* 
+					-> rrel_example:
+						"file://content/content_htmls/nrel_sets_difference_statement_2.html"
+							(* <-lang_ru;; *);;
+				*);;
+			=> nrel_main_idtf:
+				[Утв. (разность множеств*, натуральные числа, четные числа, нечетные числа)]
+					(* <- lang_ru;; *);;
+		*);
+
+		...
+		(*
+			<- illustration;;
+			<= nrel_sc_text_translation:
+				.nrel_sets_difference_illustration
+				(*
+					->rrel_example:
+						"file://content/content_images/sets difference.png"
+						(*
+							=> nrel_format: format_png;;
+						*);;
+				*);;
+			=> nrel_main_idtf:
+				[Иллюстрация к понятию "разность множеств*"]
+					(* <- lang_ru;; *);;
+		*);;
+
+nrel_symmetric_sets_difference
+	=> nrel_idtf:
+		[симметрическая разность*]
+		(* <- lang_ru;;	*);
+		[операция симметрическая разность множеств*]
+		(* <- lang_ru;;	*);
+		[отношение симметрической разности*]
+		(* <- lang_ru;;	*);
+
+	=> nrel_first_domain: set;
+	=> nrel_second_domain: set;
+	=> nrel_definitional_domain: set;
+
+	<- norole_relation;
+	<- nooriented_relation;
+	<- ternary_relation;;
+
+nrel_symmetric_sets_difference<- rrel_key_sc_element:
+		Definition_of_symmetric_sets_difference
+		(* 
+			=> nrel_main_idtf:
+			[Опр. (симметрическая разность множеств*)]
+				(* <- lang_ru;;	*);;
+			<- definition;;
+			<= nrel_sc_text_translation:
+				.nrel_symmetric_sets_difference_definition
+				(* 
+					-> rrel_example:
+						"file://content/content_htmls/nrel_symmetric_sets_difference_definition.html"
+							(* <-lang_ru;; *);;
+				*);;
+			<= nrel_using_constants:
+				...
+				(*
+					-> set;
+					element_of_set;
+					nrel_belonging;
+					nrel_intersection;;
+				*);;
+		*);	
+
+		Statement_1_symmetric_sets_difference
+		(*
+			<- statement;;
+			<= nrel_sc_text_translation:
+				.nrel_symmetric_sets_difference_statement_1
+				(* 
+					-> rrel_example:
+						"file://content/content_htmls/nrel_symmetric_sets_difference_statement_1.html"
+							(* <-lang_ru;; *);;
+				*);;
+			=> nrel_main_idtf:
+				[Утв. (симметрическая разность множеств*, пустое множество)]
+					(* <- lang_ru;; *);;
+		*);
+
+		...
+		(*
+			<- illustration;;
+			=> nrel_main_idtf:
+				[Иллюстрация к понятию "симметрическая разность множеств*"]
+					(* <- lang_ru;; *);;
+			<= nrel_sc_text_translation:
+				.nrel_symmetric_sets_difference_illustration
+				(*
+					->rrel_example: "file://content/content_images/symmetric difference.png"
+						(*
+							=> nrel_format: format_png;;
+						*);;
+				*);;
+		*);;
+
+
+nrel_boolean
+	->norole_relation;
+		
+	=> nrel_main_idtf:
+		[булеан]
+		(* <- lang_ru;;	*);
+	=> nrel_idtf:
+		[степень множества]
+		(* <- lang_ru;; *);
+		[показательное множеств]
+		(* <- lang_ru;; *);
+		[множество частей]
+		(* <- lang_ru;; *);;
+
+nrel_boolean<- rrel_key_sc_element:
+		Definition_of_nrel_boolean
+		(* 
+		=> nrel_main_idtf:
+			[Опр. (булеан)]
+			(* <- lang_ru;; *);;
+		<- explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example:"file://content/content_htmls/nrel_boolean.html" (* <-lang_ru;; *);;
+			*);;
+	
+		*);
+
+		... 
+		(*
+		<- explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example:[Число подмножеств конечного множества, состоящего из n элементов, равно 2^n.] (* <-lang_ru;; *);;
+			*);;
+		*);
+
+		... 
+		(*
+	
+		<- explanation;;
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example:[Если два множества равномощны, то равномощны и их булеаны.] (* <-lang_ru;; *);;
+			*);;
+	
+
+		*);;
+
+
+	
+
+set_of_even_numbers
+=> nrel_main_idtf: [множество четных чисел] (* <- lang_ru;; *);;
+
+set_of_odd_numbers
+=> nrel_main_idtf: [множество нечетных чисел] (* <- lang_ru;; *);;
