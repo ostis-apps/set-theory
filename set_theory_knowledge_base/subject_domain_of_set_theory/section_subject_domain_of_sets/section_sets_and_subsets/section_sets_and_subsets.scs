@@ -1,15 +1,13 @@
 section_sets_and_subsets
 => nrel_main_idtf:
-	[Раздел. Множества и подмножества]
-	(* <- lang_ru;; *);;
+	[Раздел. Множества и подмножества] (* <- lang_ru;; *);;
 
 <= nrel_section_decomposition:
-{
-	
-	section_elements_os_the_set
-	(*
-	=> nrel_section_base_order: 
-		section_describing_sets;;
-	*);
-	section_describing_sets
-};;
+	{
+		section_elements_os_the_set
+		(*
+		=> nrel_section_base_order: 
+			section_describing_sets;;
+		*);
+		section_describing_sets
+	};;
