@@ -1,0 +1,31 @@
+section_documentation_of_set_theory
+=> nrel_main_idtf:
+	[Раздел. Документация по интеллектуальной системе по теории множеств]
+	(* <- lang_ru;; *);
+	[Documentation. Set theory knowledge base ]
+	(* <- lang_en;; *);
+<- not_enough_formed_structure;
+<= nrel_section_decomposition:
+	{
+		justification_of_development_set_theory_knowledge_base
+		(*
+		=> nrel_section_base_order: 
+			justification_of_the_choice_platform_implementation_of_set_theory_knowledge_base;;
+		*);
+		justification_of_the_choice_platform_implementation_of_set_theory_knowledge_base
+		(*
+		=> nrel_section_base_order: 
+			structure_set_theory_knowledge_base;;
+		*);
+		structure_set_theory_knowledge_base
+		(*
+		=> nrel_section_base_order: 
+			structure_machine_knowledge_processing_set_theory_knowledge_base;;
+		*);
+		structure_machine_knowledge_processing_set_theory_knowledge_base
+		(*
+		=> nrel_section_base_order: 
+			structure_set_theory_knowledge_base_user_interface;;
+		*);
+		structure_set_theory_knowledge_base_user_interface
+	};;

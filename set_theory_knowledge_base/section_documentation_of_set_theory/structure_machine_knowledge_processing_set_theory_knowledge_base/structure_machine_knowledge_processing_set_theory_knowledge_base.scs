@@ -1,0 +1,7 @@
+structure_machine_knowledge_processing_set_theory_knowledge_base
+=> nrel_main_idtf:
+	[Структура. Машина обработки знаний по теории множеств]
+	(* <- lang_ru;; *);
+	[Structure. Set theory knowledge processing machine]
+	(* <- lang_en;; *);
+<- unformed_structure;;
