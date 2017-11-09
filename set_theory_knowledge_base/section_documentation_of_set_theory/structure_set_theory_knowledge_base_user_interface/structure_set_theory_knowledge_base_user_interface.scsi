@@ -1,0 +1,30 @@
+set_theory_knowledge_base_user_interface
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Пользовательский интерфейс интеллектуальной системы по теории множеств]
+	(* <- lang_ru;; *);
+	[Set theory knowledge base user interface]
+	(* <- lang_en;; *);
+<- sc_model_computer_system_interface;;
+
+input_set_field 
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Поле для ввода множеств]
+	(* <- lang_ru;; *);
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example: "file://htmls/input_set_field.html" (* <-lang_ru;; *);;
+	*);;
+
+set_theory_solver
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Окно решателя]
+	(* <- lang_ru;; *);
+	<= nrel_sc_text_translation:
+	...
+	(*
+	-> rrel_example: "file://htmls/set_theory_solver.html" (* <-lang_ru;; *);;
+	*);;

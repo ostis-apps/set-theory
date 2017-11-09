@@ -1,0 +1,15 @@
+section_type_purpose_and_structure_of_set_theory_knowledge_base
+=> nrel_main_idtf:
+	[Раздел. Тип, назначение и состав интеллектуальной системы по теории множеств]
+	(* <- lang_ru;; *);
+	[Section. Type, purpose and structure of set theory knowledge base]
+	(* <- lang_en;; *);
+<- not_enough_formed_structure;
+...
+	(* 
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://section_type_purpose_and_structure_of_set_theory_knowledge_base.html" (* <-lang_ru;; *);;
+		*);;
+	*);;

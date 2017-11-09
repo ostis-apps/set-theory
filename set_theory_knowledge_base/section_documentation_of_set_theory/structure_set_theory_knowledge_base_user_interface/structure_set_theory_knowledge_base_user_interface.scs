@@ -1,0 +1,16 @@
+structure_set_theory_knowledge_base_user_interface
+=> nrel_main_idtf:
+	[Структура. Пользовательский интерфейс интеллектулаьной системы по теории множеств]
+	(* <- lang_ru;; *);
+	[Structure. Set theory user interface]
+	(* <- lang_en;; *);
+<- not_enough_formed_structure;
+-> rrel_key_sc_element:
+	set_theory_knowledge_base_user_interface;;
+
+structure_set_theory_knowledge_base_user_interface = [*^"file://structure_set_theory_knowledge_base_user_interface.scsi"*];;
+
+structure_set_theory_knowledge_base_user_interface
+-> rrel_key_sc_element:
+		input_set_field;
+		set_theory_solver;;
