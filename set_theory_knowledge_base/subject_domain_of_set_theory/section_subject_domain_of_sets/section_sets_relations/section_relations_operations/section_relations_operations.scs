@@ -1,0 +1,10 @@
+section_relations_operations
+=> nrel_main_idtf:
+	[Раздел. Операции над отношениями]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/section_relations_operations.html" (* <-lang_ru;; *);;
+		*);;

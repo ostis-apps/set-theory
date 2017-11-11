@@ -1,0 +1,18 @@
+justification_of_the_choice_platform_implementation_of_set_theory_knowledge_base
+=> nrel_main_idtf:
+	[Обоснование выбора. Платформа реализации интеллектулаьной системы по теории множеств]
+	(* <- lang_ru;; *);
+	[Justification of the choice. Platform implementation of set theory knowledge base]
+	(* <- lang_en;; *);
+<- not_enough_formed_structure;
+-> rrel_key_sc_element:
+	ostis_system;
+	concept;
+...
+	(* 
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://justification_of_the_choice_platform_implementation_of_set_theory_knowledge_base.html" (* <-lang_ru;; *);;
+		*);;
+	*);;

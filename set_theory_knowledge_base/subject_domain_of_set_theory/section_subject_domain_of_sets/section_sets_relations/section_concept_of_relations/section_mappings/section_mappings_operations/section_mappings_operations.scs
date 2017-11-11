@@ -1,0 +1,13 @@
+section_mappings_operations
+=> nrel_main_idtf:
+	[Раздел. Операции на соответствиях]
+	(* <- lang_ru;; *);;
+
+section_mappings_operations = [*^"file://section_mappings_operations.scsi"*];;
+
+section_mappings_operations
+-> rrel_key_sc_element:
+		narrowing_function;
+		nrel_mapping_composition;
+		nrel_mapping_inversion;
+		projection;;

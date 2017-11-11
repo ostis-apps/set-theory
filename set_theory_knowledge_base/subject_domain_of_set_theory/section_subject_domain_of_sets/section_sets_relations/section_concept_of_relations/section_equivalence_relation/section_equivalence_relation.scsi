@@ -1,0 +1,296 @@
+equal_size_multiset
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[равноразмерность мультимножества]
+	(* <- lang_ru;;	*);;
+equal_size_multiset
+<- rrel_key_sc_element:
+	Definition_of_equal_size_multiset
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/equal_size_multiset.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+Definition_of_equal_size_multiset
+=> nrel_main_idtf:
+	[Определение понятия "равноразмерность мультимножества"]
+	(* <- lang_ru;;	*);;
+equal_size_multiset
+	<= nrel_using_constants:
+		...
+		(* 
+		-> nrel_dimension_set;;
+		-> multiset;;
+		*);;
+
+
+//-------------------------------------------------------------------------------------------------
+
+
+nrel_eqpower_set
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[равномощность множеств*]
+	(* <- lang_ru;;	*);;
+
+nrel_eqpower_set
+<- rrel_key_sc_element:
+	Definition_of_nrel_eqpower_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/nrel_eqpower_set.html" (* <-lang_ru;; *);;
+		*);;
+	
+
+	*);;
+
+Definition_of_nrel_eqpower_set
+=> nrel_main_idtf:
+	[Определение понятия "равномощность множеств*"]
+	(* <- lang_ru;;	*);;
+
+
+nrel_eqpower_set
+<-binary_relation;
+<-non_oriented_relation;
+<-transitive_relation;;
+
+
+//-------------------------------------------------------------------------------------------------
+
+
+nrel_equality
+<- sc_node_not_relation;
+=> nrel_main_idtf: 
+	[равенство*]
+	(*
+	<- lang_ru;;
+	*);
+	[equality*] 
+	(* 
+	<- lang_en;; 
+	*);;
+
+
+//-------------------------------------------------------------------------------------------------
+
+
+nrel_equality_of_fuzzy_sets
+<- sc_node_norole_relation;
+<- relation;
+<- non_oriented_relation;
+<- binary_relation;
+<- reflexive_relation;
+<- symmetric_relation;
+<- transitive_relation;
+=> nrel_main_idtf:
+		[равенство нечетких множеств*]
+			(* <- lang_ru;; *);
+		[equality of fuzzy sets]
+		(* <- lang_en;; *);
+=> nrel_idtf:
+		[быть равными нечеткими множествами*]
+			(* <- lang_ru;; *);;
+
+
+nrel_equality_of_fuzzy_sets
+=> nrel_first_domain: fuzzy_set;
+=> nrel_second_domain: fuzzy_set;
+=> nrel_definitional_domain: fuzzy_set;;
+
+
+// иллюстрация
+nrel_equality_of_fuzzy_sets
+<- rrel_key_sc_element: 
+	Illustration_of_equality_of_fuzzy_sets
+	(*
+	<- sc_illustration;;
+	=> nrel_main_idtf:
+		[Иллюстрация к понятию "равенство нечетких множеств"]
+			(* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(*
+			-> rrel_example: "file://content/content_images/equality_of_fuzzy_sets.png"
+				(*
+					=> nrel_format: format_png;;
+				*);;
+		*);;
+	*);;
+
+// определение
+nrel_equality_of_fuzzy_sets
+<- rrel_key_sc_element:
+	Definition_of_equality_of_fuzzy_sets
+	(* 
+	<- definition;;
+	=> nrel_main_idtf:
+		[Определение понятия "равенство нечетких множеств"]
+			(* <- lang_ru;; *);;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+			-> rrel_example:  "file://content/content_htmls/nrel_equality_of_fuzzy_sets.html"  (* <- lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+			-> fuzzy_set; concept_universum;;
+		*);;
+	*);;
+
+nrel_equality_of_fuzzy_sets
+<= nrel_inclusion: nrel_equality;;
+
+
+//-------------------------------------------------------------------------------------------------
+
+
+nrel_equidecomposable_sets
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[равносоставленность*]
+	(* <- lang_ru;;	*);;
+
+nrel_equidecomposable_sets
+<- rrel_key_sc_element:
+	Definition_of_nrel_equidecomposable_sets
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/nrel_equidecomposable_sets.html" (* <-lang_ru;; *);;
+		*);;
+
+	*);;
+
+
+Definition_of_nrel_equidecomposable_sets
+=> nrel_main_idtf:
+	[Определение понятия "равносоставленность множеств*"]
+	(* <- lang_ru;;	*);;
+
+
+nrel_equidecomposable_sets
+<-binary_relation;
+<-non_oriented_relation;
+<-transitive_relation;;
+
+
+//-------------------------------------------------------------------------------------------------
+
+
+nrel_equipotent
+<- sc_node_norole_relation;
+<- relation;
+<- non_oriented_relation;
+<- binary_relation;
+<- transitive_relation;
+<- reflexive_relation;
+=> nrel_main_idtf:
+	[равномощность*]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[быть равномощным*]
+	(* <- lang_ru;;	*);
+	[отношение равномощности*]
+	(* <- lang_ru;;	*);;
+
+nrel_equipotent
+<- rrel_key_sc_element:
+	Definition_of_nrel_equipotent
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/nrel_equipotent.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> element_of_set;
+			nrel_power_set;
+			set;;
+		*);;
+
+
+	*);;
+
+nrel_equipotent
+<- rrel_key_sc_element:
+	Statement_of_nrel_equipotent (*
+	
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:[Множества А и В называются равномощными, если существует взаимно однозначное отображение f: A->B.] (* <-lang_ru;; *);;
+		-> rrel_example:[Множество N натуральных чисел и множество Z целых чисел равномощны.] (* <-lang_ru;; *);;
+		-> rrel_example:[Каково бы ни было множество A, множество его подмножеств P(A) неравномощно самому множеству A.] (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+
+
+
+
+Definition_of_nrel_equipotent
+=> nrel_main_idtf:
+	[Определение отношения "равномощность*"]
+	(* <- lang_ru;;	*);;
+
+Statement_of_nrel_equipotent
+=> nrel_main_idtf:
+	[Утвержедния об отношении равномощность*]
+	(* <- lang_ru;;	*);;
+
+nrel_equipotent
+=>nrel_first_domain: set;
+=>nrel_second_domain: set;;
+
+
+//-------------------------------------------------------------------------------------------------
+
+
+nrel_inequality
+<- sc_node_norole_relation;
+=> nrel_main_idtf: 
+	[неравенство*] 
+	(* 
+	<- lang_ru;; 
+	*);;
+nrel_equality
+<- rrel_key_sc_element:
+Definition_of_nrel_inequality
+	(* 
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/nrel_inequality.html" (* <-lang_ru;; *);;///
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> relation;;
+		*);;
+	*);;
+Definition_of_nrel_inequality
+=> nrel_main_idtf:
+	[Определение понятия "отношение неравенства"]
+	(* <- lang_ru;;	*);;
+
+
+//-------------------------------------------------------------------------------------------------
+
+
+

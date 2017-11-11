@@ -1,0 +1,19 @@
+section_properties_of_operations
+=> nrel_main_idtf:
+	[Раздел. Свойства операций над множествами]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/section_properties_of_operations.html" (* <-lang_ru;; *);;
+		*);;
+
+section_properties_of_operations =  [*^"file://section_properties_of_operations.scsi"*];;
+section_properties_of_operations
+-> rrel_key_sc_element:
+	 associativity; 
+	 commutative;;
+
+
+

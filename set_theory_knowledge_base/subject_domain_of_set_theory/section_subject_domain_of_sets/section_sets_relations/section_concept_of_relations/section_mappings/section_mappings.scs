@@ -1,0 +1,23 @@
+section_mappings
+=> nrel_main_idtf:
+	[Раздел. Соответствия]
+	(* <- lang_ru;; *);;
+
+section_mappings	
+	<= nrel_section_decomposition:
+	{
+		section_function
+		(*
+		=> nrel_section_base_order: 
+			section_mappings_operations;;
+		*);
+		section_mappings_operations
+		(*
+		=> nrel_section_base_order: 
+			section_mappings_relations;;
+		*);
+		section_mappings_relations
+	};;
+
+
+

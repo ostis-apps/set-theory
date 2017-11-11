@@ -16,5 +16,10 @@ set_theory_knowledge_base
 		=> nrel_section_base_order: 
 			section_questions_on_the_discipline_MOIS;;
 		*);	
-		section_questions_on_the_discipline_MOIS		
+		section_questions_on_the_discipline_MOIS
+		(*
+		=> nrel_section_base_order: 
+			section_documentation_of_set_theory;;
+		*);	
+		section_documentation_of_set_theory		
 	};;

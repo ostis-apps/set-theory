@@ -1,0 +1,21 @@
+section_cartesian_product
+=> nrel_main_idtf:
+	[Раздел. Декартово произведение множеств]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+		pictureCP
+		(* 
+			=> nrel_main_idtf:[рисунок 1](* <- lang_ru;; *);;
+			-> rrel_example: "file://content/cartesian_product.png" (* <-lang_ru;; *);;
+		*);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/section_cartesian_product.html" (* <-lang_ru;; *);;
+		*);;
+
+section_cartesian_product = [*^"file://section_cartesian_product.scsi"*];;
+
+section_cartesian_product
+-> rrel_key_sc_element:
+	nrel_cartesian_product;;

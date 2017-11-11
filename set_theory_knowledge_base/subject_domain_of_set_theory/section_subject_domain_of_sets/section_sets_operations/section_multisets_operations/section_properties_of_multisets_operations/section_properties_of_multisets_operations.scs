@@ -1,0 +1,11 @@
+section_properties_of_multisets_operations
+=> nrel_main_idtf:
+	[Раздел. Свойства операций на мультимножествах]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/section_properties_of_multisets_operations.html" (* <-lang_ru;; *);;
+		*);;
+
+
