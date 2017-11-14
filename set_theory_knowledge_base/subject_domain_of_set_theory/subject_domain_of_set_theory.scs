@@ -15,9 +15,9 @@ subject_domain_of_set_theory
 		section_sets_operations
 		(*
 		=> nrel_section_base_order: 
-			section_set_axiom;;
+			section_sets_observations;;
 		*);
-		section_set_axiom
+		section_sets_observations
 		(*
 		=> nrel_section_base_order: 
 			section_sets_relations;;

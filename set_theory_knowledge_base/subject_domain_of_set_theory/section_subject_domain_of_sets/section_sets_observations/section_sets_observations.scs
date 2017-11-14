@@ -1,0 +1,11 @@
+section_sets_observations => nrel_main_idtf:
+	[Раздел. Высказывания теории множеств](* <- lang_ru;; *);
+	[Partition. Observations of set theory](* <- lang_en;; *);;
+
+
+section_sets_observations <= nrel_section_decomposition : 
+         {
+                section_sets_axioms; 
+                section_sets_theorems
+};;
+

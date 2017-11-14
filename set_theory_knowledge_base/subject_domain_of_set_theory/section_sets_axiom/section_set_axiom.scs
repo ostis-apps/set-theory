@@ -1,7 +1,0 @@
-section_set_axiom => nrel_main_idtf: 
-	[Раздел. Аксиомы теории множеств] (* <- lang_ru;; *);
-	[Partition. Axioms of set theory] (* <- lang_en;; *);;
-
-section_set_axiom = [*^"file://section_set_axiom_scsi/section_set_axiom.scsi"*];;
-
-rrel_key_sc_element -> (section_set_axiom -> set_axiom);;

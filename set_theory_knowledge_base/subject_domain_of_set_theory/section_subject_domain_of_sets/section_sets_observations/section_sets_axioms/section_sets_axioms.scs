@@ -1,0 +1,21 @@
+section_sets_axioms => nrel_main_idtf: 
+	[Раздел. Аксиомы теории множеств] (* <- lang_ru;; *);
+	[Partition. Axioms of set theory] (* <- lang_en;; *);;
+
+section_sets_axioms = [*^"file://section_sets_axioms.scsi"*];;
+
+section_sets_axioms
+<- rrel_key_sc_element:
+	axiom_bulk;
+	axiom_of_empty_set;
+	axiom_of_infinity;
+	axiom_of_pairing;
+	axiom_of_boolean;
+	axiom_of_union;
+	allocation_scheme;
+	conversion_circuit;
+	axiom_of_regularity;
+	axiom_of_choice;
+	axiom_of_determinacy;;
+
+
