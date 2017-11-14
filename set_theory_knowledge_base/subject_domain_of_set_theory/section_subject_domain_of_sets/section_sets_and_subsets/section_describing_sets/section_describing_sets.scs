@@ -1,0 +1,9 @@
+section_describing_sets
+=> nrel_main_idtf:
+	[Раздел. Способы задания множеств]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/section_describing_sets.html" (* <-lang_ru;; *);;
+		*);;
