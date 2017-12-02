@@ -9,12 +9,23 @@ scp_program -> proc_of_finding_multisets_sum
 	(*
     	-> rrel_1: rrel_in: _multiset_1;;
     	-> rrel_2: rrel_in: _multiset_2;;
+
     	-> rrel_3: rrel_out: _multiset_3;;
   	*);;
   
 	-> rrel_operators: ...
 	(*
-		-> rrel_init: .proc_of_finding_multisets_sum_operator_gen_result_multiset
+
+		-> rrel_init: .proc_of_finding_multisets_sum_operator_print_start
+		(*
+			<- printNl;;
+
+			-> rrel_1: rrel_scp_const: [Начало. Процедура нахождения арифметической суммы двух мультимножеств];;
+
+			=> nrel_goto: .proc_of_finding_multisets_sum_operator_gen_result_multiset;;
+   		*);;
+
+		-> .proc_of_finding_multisets_sum_operator_gen_result_multiset
 		(*
 			<- genEl;;
 
@@ -24,7 +35,7 @@ scp_program -> proc_of_finding_multisets_sum
 		*);;
 
 ////////////////////////////////////////////////////////////////////
-// Часть I. Добавление в результирующее множество элементов первого мультимножества
+// Часть I. Добавление в результирующее мультимножество элементов первого мультимножества
 
 		-> .proc_of_finding_multisets_sum_operator_get_multiset_1_elements
 		(*
@@ -36,13 +47,14 @@ scp_program -> proc_of_finding_multisets_sum
 
 			-> rrel_set_3: rrel_assign: rrel_scp_var: _multiset_1_element_set;;
 
-			=> nrel_then: .proc_of_finding_multisets_sum_operator_loop_start;;
+			=> nrel_then: .proc_of_finding_multisets_sum_operator_get_multiset_1_element;;
 			=> nrel_else: .proc_of_finding_multisets_sum_operator_get_multiset_2_elements;;
 		*);;
 
 ////////////////////////////////////////////////////////////////////
+// цикл по всем элементам первого мультимножества
 
-		-> .proc_of_finding_multisets_sum_operator_loop_start
+		-> .proc_of_finding_multisets_sum_operator_get_multiset_1_element
 		(*
 			<- searchElStr3;;
 
@@ -50,20 +62,20 @@ scp_program -> proc_of_finding_multisets_sum
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _belonging_arc;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _multiset_1_element;;
 
-			=> nrel_then: .proc_of_finding_multisets_sum_operator_loop_erase_arc;;
+			=> nrel_then: .proc_of_finding_multisets_sum_operator_erase_multiset_1_element_arc;;
 			=> nrel_else: .proc_of_finding_multisets_sum_operator_get_multiset_2_elements;;
 		*);;
 
-		-> .proc_of_finding_multisets_sum_operator_loop_erase_arc
+		-> .proc_of_finding_multisets_sum_operator_erase_multiset_1_element_arc
 		(*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _belonging_arc;;
 
-			=> nrel_goto: .proc_of_finding_multisets_sum_operator_loop_get_multiset_1_multiplicity;;
+			=> nrel_goto: .proc_of_finding_multisets_sum_operator_get_multiset_1_element_multiplicity_1;;
 		*);;
 
-		-> .proc_of_finding_multisets_sum_operator_loop_get_multiset_1_multiplicity
+		-> .proc_of_finding_multisets_sum_operator_get_multiset_1_element_multiplicity_1
 		(*
 			<- call;;
 
@@ -72,23 +84,24 @@ scp_program -> proc_of_finding_multisets_sum
 			(*
 					-> rrel_1: rrel_fixed: rrel_scp_var: _multiset_1;;
 					-> rrel_2: rrel_fixed: rrel_scp_var: _multiset_1_element;;
+
 					-> rrel_3: rrel_assign: rrel_scp_var: _multiset_1_multiplicity;;
 			*);;
 			-> rrel_3: rrel_assign: rrel_scp_var: _proc_descriptor;;
 
-			=> nrel_goto: .proc_of_finding_multisets_sum_operator_loop_wait_return_1;;
+			=> nrel_goto: .proc_of_finding_multisets_sum_operator_get_multiset_1_element_multiplicity_1_ret;;
 		*);;
 
-		-> .proc_of_finding_multisets_sum_operator_loop_wait_return_1
+		-> .proc_of_finding_multisets_sum_operator_get_multiset_1_element_multiplicity_1_ret
 		(*
 			<- waitReturn;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _proc_descriptor;;
 
-			=> nrel_goto: .proc_of_finding_multisets_sum_operator_loop_get_multiset_2_multiplicity;;
+			=> nrel_goto: .proc_of_finding_multisets_sum_operator_get_multiset_1_element_multiplicity_2;;
 		*);;
 
-		-> .proc_of_finding_multisets_sum_operator_loop_get_multiset_2_multiplicity
+		-> .proc_of_finding_multisets_sum_operator_get_multiset_1_element_multiplicity_2
 		(*
 			<- call;;
 
@@ -97,23 +110,24 @@ scp_program -> proc_of_finding_multisets_sum
 			(*
 					-> rrel_1: rrel_fixed: rrel_scp_var: _multiset_2;;
 					-> rrel_2: rrel_fixed: rrel_scp_var: _multiset_1_element;;
+
 					-> rrel_3: rrel_assign: rrel_scp_var: _multiset_2_multiplicity;;
 			*);;
 			-> rrel_3: rrel_assign: rrel_scp_var: _proc_descriptor;;
 
-			=> nrel_goto: .proc_of_finding_multisets_sum_operator_loop_wait_return_2;;
+			=> nrel_goto: .proc_of_finding_multisets_sum_operator_get_multiset_1_element_multiplicity_2_ret;;
 		*);;
 
-		-> .proc_of_finding_multisets_sum_operator_loop_wait_return_2
+		-> .proc_of_finding_multisets_sum_operator_get_multiset_1_element_multiplicity_2_ret
 		(*
 			<- waitReturn;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _proc_descriptor;;
 
-			=> nrel_goto: .proc_of_finding_multisets_sum_operator_loop_multiplicity_sum;;
+			=> nrel_goto: .proc_of_finding_multisets_sum_operator_multiplicity_sum_1;;
 		*);;
 
-		-> .proc_of_finding_multisets_sum_operator_loop_multiplicity_sum
+		-> .proc_of_finding_multisets_sum_operator_multiplicity_sum_1
 		(*
 			<- contAdd;;
 
@@ -121,10 +135,10 @@ scp_program -> proc_of_finding_multisets_sum
 			-> rrel_2: rrel_fixed: rrel_scp_var: _multiset_1_multiplicity;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _multiset_2_multiplicity;;
 
-			=> nrel_goto: .proc_of_finding_multisets_sum_operator_loop_add_element_to_multiset;;
+			=> nrel_goto: .proc_of_finding_multisets_sum_operator_add_multiset_1_element_to_result;;
 		*);;
 
-		-> .proc_of_finding_multisets_sum_operator_loop_add_element_to_multiset
+		-> .proc_of_finding_multisets_sum_operator_add_multiset_1_element_to_result
 		(*
 			<- call;;
 
@@ -137,16 +151,16 @@ scp_program -> proc_of_finding_multisets_sum
 			*);;
 			-> rrel_3: rrel_assign: rrel_scp_var: _proc_descriptor;;
 
-			=> nrel_goto: .proc_of_finding_multisets_sum_operator_loop_add_element_to_multiset_return;;
+			=> nrel_goto: .proc_of_finding_multisets_sum_operator_add_multiset_1_element_to_result_ret;;
 		*);;
 
-		-> .proc_of_finding_multisets_sum_operator_loop_add_element_to_multiset_return
+		-> .proc_of_finding_multisets_sum_operator_add_multiset_1_element_to_result_ret
 		(*
 			<- waitReturn;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _proc_descriptor;;
 
-			=> nrel_goto: .proc_of_finding_multisets_sum_operator_loop_start;;
+			=> nrel_goto: .proc_of_finding_multisets_sum_operator_get_multiset_1_element;;
 		*);;
 
 ////////////////////////////////////////////////////////////////////
@@ -167,13 +181,14 @@ scp_program -> proc_of_finding_multisets_sum
 
 			-> rrel_set_3: rrel_assign: rrel_scp_var: _multiset_2_element_set;;
 
-			=> nrel_then: .proc_of_finding_multisets_sum_operator_loop_2_start;;
-			=> nrel_else: .proc_of_finding_multisets_sum_operator_return;;
+			=> nrel_then: .proc_of_finding_multisets_sum_operator_get_multiset_2_element;;
+			=> nrel_else: .proc_of_finding_multisets_sum_operator_print_end;;
 		*);;
 
 ////////////////////////////////////////////////////////////////////
+// цикл по всем элементам второго мультимножества
 
-		-> .proc_of_finding_multisets_sum_operator_loop_2_start
+		-> .proc_of_finding_multisets_sum_operator_get_multiset_2_element
 		(*
 			<- searchElStr3;;
 
@@ -181,20 +196,20 @@ scp_program -> proc_of_finding_multisets_sum
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _belonging_arc;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _multiset_2_element;;
 
-			=> nrel_then: .proc_of_finding_multisets_sum_operator_loop_2_erase_arc;;
-			=> nrel_else: .proc_of_finding_multisets_sum_operator_return;;
+			=> nrel_then: .proc_of_finding_multisets_sum_operator_erase_multiset_2_element_arc;;
+			=> nrel_else: .proc_of_finding_multisets_sum_operator_print_end;;
 		*);;
 
-		-> .proc_of_finding_multisets_sum_operator_loop_2_erase_arc
+		-> .proc_of_finding_multisets_sum_operator_erase_multiset_2_element_arc
 		(*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _belonging_arc;;
 
-			=> nrel_goto: .proc_of_finding_multisets_sum_operator_loop_2_check_belonging;;
+			=> nrel_goto: .proc_of_finding_multisets_sum_operator_check_belonging_of_multiset_2_element;;
 		*);;
 
-		-> .proc_of_finding_multisets_sum_operator_loop_2_check_belonging
+		-> .proc_of_finding_multisets_sum_operator_check_belonging_of_multiset_2_element
 		(*
 			<- searchElStr3;;
 
@@ -202,11 +217,11 @@ scp_program -> proc_of_finding_multisets_sum
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _belonging_arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _multiset_2_element;;
 
-			=> nrel_then: .proc_of_finding_multisets_sum_operator_loop_2_start;;
-			=> nrel_else: .proc_of_finding_multisets_sum_operator_loop_2_get_multiset_1_multiplicity;;
+			=> nrel_then: .proc_of_finding_multisets_sum_operator_get_multiset_2_element;;
+			=> nrel_else: .proc_of_finding_multisets_sum_operator_get_multiset_2_element_multiplicity_1;;
 		*);;
 
-		-> .proc_of_finding_multisets_sum_operator_loop_2_get_multiset_1_multiplicity
+		-> .proc_of_finding_multisets_sum_operator_get_multiset_2_element_multiplicity_1
 		(*
 			<- call;;
 
@@ -215,23 +230,24 @@ scp_program -> proc_of_finding_multisets_sum
 			(*
 					-> rrel_1: rrel_fixed: rrel_scp_var: _multiset_1;;
 					-> rrel_2: rrel_fixed: rrel_scp_var: _multiset_2_element;;
+
 					-> rrel_3: rrel_assign: rrel_scp_var: _multiset_1_multiplicity;;
 			*);;
 			-> rrel_3: rrel_assign: rrel_scp_var: _proc_descriptor;;
 
-			=> nrel_goto: .proc_of_finding_multisets_sum_operator_loop_2_wait_return_1;;
+			=> nrel_goto: .proc_of_finding_multisets_sum_operator_get_multiset_2_element_multiplicity_1_ret;;
 		*);;
 
-		-> .proc_of_finding_multisets_sum_operator_loop_2_wait_return_1
+		-> .proc_of_finding_multisets_sum_operator_get_multiset_2_element_multiplicity_1_ret
 		(*
 			<- waitReturn;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _proc_descriptor;;
 
-			=> nrel_goto: .proc_of_finding_multisets_sum_operator_loop_2_get_multiset_2_multiplicity;;
+			=> nrel_goto: .proc_of_finding_multisets_sum_operator_get_multiset_2_element_multiplicity_2;;
 		*);;
 
-		-> .proc_of_finding_multisets_sum_operator_loop_2_get_multiset_2_multiplicity
+		-> .proc_of_finding_multisets_sum_operator_get_multiset_2_element_multiplicity_2
 		(*
 			<- call;;
 
@@ -240,23 +256,24 @@ scp_program -> proc_of_finding_multisets_sum
 			(*
 					-> rrel_1: rrel_fixed: rrel_scp_var: _multiset_2;;
 					-> rrel_2: rrel_fixed: rrel_scp_var: _multiset_2_element;;
+
 					-> rrel_3: rrel_assign: rrel_scp_var: _multiset_2_multiplicity;;
 			*);;
 			-> rrel_3: rrel_assign: rrel_scp_var: _proc_descriptor;;
 
-			=> nrel_goto: .proc_of_finding_multisets_sum_operator_loop_2_wait_return_2;;
+			=> nrel_goto: .proc_of_finding_multisets_sum_operator_get_multiset_2_element_multiplicity_2_ret;;
 		*);;
 
-		-> .proc_of_finding_multisets_sum_operator_loop_2_wait_return_2
+		-> .proc_of_finding_multisets_sum_operator_get_multiset_2_element_multiplicity_2_ret
 		(*
 			<- waitReturn;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _proc_descriptor;;
 
-			=> nrel_goto: .proc_of_finding_multisets_sum_operator_loop_2_multiplicity_sum;;
+			=> nrel_goto: .proc_of_finding_multisets_sum_operator_multiplicity_sum_2;;
 		*);;
 
-		-> .proc_of_finding_multisets_sum_operator_loop_2_multiplicity_sum
+		-> .proc_of_finding_multisets_sum_operator_multiplicity_sum_2
 		(*
 			<- contAdd;;
 
@@ -264,10 +281,10 @@ scp_program -> proc_of_finding_multisets_sum
 			-> rrel_2: rrel_fixed: rrel_scp_var: _multiset_1_multiplicity;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _multiset_2_multiplicity;;
 
-			=> nrel_goto: .proc_of_finding_multisets_sum_operator_loop_2_add_element_to_multiset;;
+			=> nrel_goto: .proc_of_finding_multisets_sum_operator_add_multiset_2_element_to_result;;
 		*);;
 
-		-> .proc_of_finding_multisets_sum_operator_loop_2_add_element_to_multiset
+		-> .proc_of_finding_multisets_sum_operator_add_multiset_2_element_to_result
 		(*
 			<- call;;
 
@@ -280,19 +297,28 @@ scp_program -> proc_of_finding_multisets_sum
 			*);;
 			-> rrel_3: rrel_assign: rrel_scp_var: _proc_descriptor;;
 
-			=> nrel_goto: .proc_of_finding_multisets_sum_operator_loop_2_add_element_to_multiset_return;;
+			=> nrel_goto: .proc_of_finding_multisets_sum_operator_add_multiset_2_element_to_result_ret;;
 		*);;
 
-		-> .proc_of_finding_multisets_sum_operator_loop_2_add_element_to_multiset_return
+		-> .proc_of_finding_multisets_sum_operator_add_multiset_2_element_to_result_ret
 		(*
 			<- waitReturn;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _proc_descriptor;;
 
-			=> nrel_goto: .proc_of_finding_multisets_sum_operator_return;;
+			=> nrel_goto: .proc_of_finding_multisets_sum_operator_print_end;;
 		*);;
 
 ////////////////////////////////////////////////////////////////////
+
+		-> .proc_of_finding_multisets_sum_operator_print_end
+		(*
+			<- printNl;;
+
+			-> rrel_1: rrel_scp_const: [Конец. Процедура нахождения арифметической суммы двух мультимножеств];;
+
+			=> nrel_goto: .proc_of_finding_multisets_sum_operator_return;;
+   		*);;
 
 	    -> .proc_of_finding_multisets_sum_operator_return
 	    (*

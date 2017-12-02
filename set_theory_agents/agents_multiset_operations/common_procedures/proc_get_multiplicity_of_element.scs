@@ -1,15 +1,32 @@
+proc_get_multiplicity_of_element
+=> nrel_main_idtf:
+	[Процедура нахождения кратности вхождения элемента в мультимножество]
+		(* <- lang_ru;; *);;
+
 scp_program -> proc_get_multiplicity_of_element
 (*
 	-> rrel_params: ...
 	(*
 		-> rrel_1: rrel_in: _multiset;;
 		-> rrel_2: rrel_in: _element;;
+
+		// кратность вхождения элемента _element в мультимножество _multiset
+		// sc-ссылка с числовым содержимым
 		-> rrel_3: rrel_out: _multiplicity;;
 	*);;
 
 	-> rrel_operators: ...
 	(*
-		-> rrel_init: .proc_get_multiplicity_of_element_operator_gen_multiplicity
+		-> rrel_init: .proc_get_multiplicity_of_element_operator_print_start
+		(*
+			<- printNl;;
+
+			-> rrel_1: rrel_scp_const: [Начало. Процедура нахождения кратности вхождения элемента в мультимножество];;
+
+			=> nrel_goto: .proc_get_multiplicity_of_element_operator_gen_multiplicity;;
+   		*);;
+
+		-> .proc_get_multiplicity_of_element_operator_gen_multiplicity
 		(*
 			<- genEl;;
 
@@ -47,6 +64,7 @@ scp_program -> proc_get_multiplicity_of_element
 		*);;
 
 /////////////////////////////////////////////////////////////////////////////
+// цикл по всем кандидатам в класс кратности принадлежности
 
 		-> .proc_get_multiplicity_of_element_operator_get_attribute
 		(*
@@ -130,9 +148,12 @@ scp_program -> proc_get_multiplicity_of_element
 			-> rrel_1: rrel_assign: rrel_scp_var: _multiplicity;;
 			-> rrel_2: rrel_fixed: rrel_scp_var: _number_idtf;;
 
-			=> nrel_goto: .proc_get_multiplicity_of_element_operator_return;;
+			=> nrel_goto: .proc_get_multiplicity_of_element_operator_print_end;;
 		*);;
 
+		// в случае, если элемент не принадлежит мультимножеству,
+		// или не была найдена корректная конструкция с кратностью принадлежности,
+		// то кратность вхождения принимается равной нулю
 		-> .proc_get_multiplicity_of_element_operator_zero_multiplicity
 		(*
 			<- contAssign;;
@@ -140,8 +161,17 @@ scp_program -> proc_get_multiplicity_of_element
 			-> rrel_1: rrel_assign: rrel_scp_var: _multiplicity;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
 
-			=> nrel_goto: .proc_get_multiplicity_of_element_operator_return;;
+			=> nrel_goto: .proc_get_multiplicity_of_element_operator_print_end;;
 		*);;
+
+		-> .proc_get_multiplicity_of_element_operator_print_end
+		(*
+			<- printNl;;
+
+			-> rrel_1: rrel_scp_const: [Конец. Процедура нахождения кратности вхождения элемента в мультимножество];;
+
+			=> nrel_goto: .proc_get_multiplicity_of_element_operator_return;;
+   		*);;
 
 		-> .proc_get_multiplicity_of_element_operator_return
 		(*

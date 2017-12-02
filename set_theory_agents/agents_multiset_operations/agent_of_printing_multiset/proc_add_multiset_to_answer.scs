@@ -9,11 +9,11 @@ scp_program -> proc_add_multiset_to_answer
     -> rrel_operators: ...
     (*
     	
-        -> rrel_init: .proc_add_multiset_to_answer_operator_print
+        -> rrel_init: .proc_add_multiset_to_answer_operator_print_start
         (*
             <- printNl;;
 
-            -> rrel_1: rrel_scp_const: [Процедура нахождения элементов мультимножества];;
+            -> rrel_1: rrel_scp_const: [Начало. Процедура добавления мультимножества в ответ];;
 
             => nrel_goto: .proc_add_multiset_to_answer_operator_generate_answer;;
         *);;
@@ -298,10 +298,19 @@ scp_program -> proc_add_multiset_to_answer
 
             -> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _multiplicity_set;;
 
-            => nrel_goto: .proc_add_multiset_to_answer_operator_return;;
+            => nrel_goto: .proc_add_multiset_to_answer_operator_print_end;;
         *);;
 
 ///////////////////////////////////////////////////////////////////////////////////
+
+        -> .proc_add_multiset_to_answer_operator_print_end
+        (*
+            <- printNl;;
+
+            -> rrel_1: rrel_scp_const: [Конец. Процедура добавления мультимножества в ответ];;
+
+            => nrel_goto: .proc_add_multiset_to_answer_operator_return;;
+        *);;
 
     	-> .proc_add_multiset_to_answer_operator_return
     	(*

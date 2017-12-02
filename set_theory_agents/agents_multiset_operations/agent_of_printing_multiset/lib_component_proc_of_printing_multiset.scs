@@ -1,4 +1,4 @@
-lib_component_proc_of_printing_multiset
+lib_component_proc_add_multiset_to_answer
 => nrel_main_idtf:
 	[Компонент библиотеки. scp-программа нахождения элементов мультимножества]
 		(* <- lang_ru;; *);
@@ -11,4 +11,4 @@ lib_component_proc_of_printing_multiset
 -> rrel_key_sc_element: 
 	proc_add_multiset_to_answer;;
 
-lib_component_proc_of_printing_multiset = [*^"file://proc_of_printing_multiset.scs"*];;
+lib_component_proc_add_multiset_to_answer = [*^"file://proc_add_multiset_to_answer.scs"*];;
