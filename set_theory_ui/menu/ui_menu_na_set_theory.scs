@@ -8,5 +8,6 @@ ui_menu_na_set_theory
 {
     ui_menu_na_mappings;
     ui_menu_na_relations;
-    ui_menu_na_sets
+    ui_menu_na_sets;
+    ui_menu_na_multisets
 };;

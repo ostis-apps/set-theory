@@ -1,0 +1,21 @@
+ui_menu_file_for_printing_multiset 
+	<- 	ui_user_command_class_atom; 
+		ui_user_command_class_view_kb;
+	=> nrel_main_idtf: 
+		[Какие элементы содержит мультимножество?]
+			(* <- lang_ru;; *);
+		[What elements does multiset contain?]
+			(* <- lang_en;; *);
+	=> ui_nrel_command_template:
+		[*
+		question_printing_multiset _-> ._question_printing_multiset_instance
+			(*
+				_-> rrel_1:: ui_arg_1;;
+			*);;
+		._question_printing_multiset_instance _<- question;;
+		*];
+	=> ui_nrel_command_lang_template: 
+		[Запрос нахождения элементов мультимножества: $ui_arg_1] 
+			(* <- lang_ru;; *);
+		[Request to find multiset elements: $ui_arg_1]
+			(* <- lang_en;; *);;
