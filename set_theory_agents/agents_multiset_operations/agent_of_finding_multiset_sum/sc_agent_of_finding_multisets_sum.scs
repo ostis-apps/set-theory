@@ -26,12 +26,11 @@ sc_agent_of_finding_multisets_sum
 	<- platform_independent_abstract_sc_agent;;
 	<= nrel_sc_agent_program: 
 		{
-		// TODO: check all procedures
 		agent_of_finding_multisets_sum;
 		proc_of_finding_multisets_sum;
-		proc_add_el_set_answer;
-		proc_of_finding_add_param;
-		proc_search_of_sets_new
+		proc_get_multiplicity_of_element;
+		proc_add_element_to_multiset;
+		proc_add_multiset_to_answer
 		};;
 	-> sc_agent_of_finding_multisets_sum_scp (* <- active_sc_agent;; *);;
 	*);;
