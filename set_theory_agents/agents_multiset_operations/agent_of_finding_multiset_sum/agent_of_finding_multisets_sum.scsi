@@ -194,7 +194,7 @@ scp_program -> agent_of_finding_multisets_sum
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _binary_arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _multiset_3;;
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
-			-> rrel_5: rrel_fixed: rrel_scp_const: multiset_arithmetic_addition;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_multiset_arithmetic_sum;;
 
 			=> nrel_goto: .agent_of_finding_multisets_sum_operator_add_tuple_relation_arcs_to_answer;;
 		*);;
@@ -207,7 +207,7 @@ scp_program -> agent_of_finding_multisets_sum
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _binary_arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _multiset_3;;
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
-			-> rrel_5: rrel_fixed: rrel_scp_const: multiset_arithmetic_addition;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_multiset_arithmetic_sum;;
 
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
@@ -221,7 +221,7 @@ scp_program -> agent_of_finding_multisets_sum
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: multiset_arithmetic_addition;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_multiset_arithmetic_sum;;
 
 			=> nrel_goto: .agent_of_finding_multisets_sum_operator_generate_answer_relation;;
 		*);;
