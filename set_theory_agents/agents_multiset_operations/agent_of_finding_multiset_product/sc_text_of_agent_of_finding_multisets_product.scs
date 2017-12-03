@@ -1,0 +1,13 @@
+sc_text_of_agent_of_finding_multisets_product
+-> rrel_key_sc_element:
+	agent_of_finding_multisets_product;
+
+<- scp_program_sc_text;
+
+=> nrel_main_idtf: 
+	[sc-текст агентной scp-программы нахождения арифметического произведения мультимножеств] 
+	(* <- lang_ru;; *);
+	[sc-text scp-agent based program finding arithmetic product of multisets] 
+	(* <- lang_en;; *);;
+
+sc_text_of_agent_of_finding_multisets_product = [*^"file://agent_of_finding_multisets_product.scsi"*];;
