@@ -1,0 +1,69 @@
+.number_1
+<- number;
+=> nrel_idtf: [1] (* <- lang_ru;; *);;
+
+.number_2
+<- number;
+=> nrel_idtf: [2] (* <- lang_ru;; *);;
+
+.number_3
+<- number;
+=> nrel_idtf: [3] (* <- lang_ru;; *);;
+
+.number_4
+<- number;
+=> nrel_idtf: [4] (* <- lang_ru;; *);;
+
+.number_5
+<- number;
+=> nrel_idtf: [5] (* <- lang_ru;; *);;
+
+
+.multiplicity_1
+<- multiplicity_of_belonging;
+=> nrel_measurement:
+    .number_1;;
+
+.multiplicity_2
+<- multiplicity_of_belonging;
+=> nrel_measurement:
+    .number_2;;
+
+.multiplicity_3
+<- multiplicity_of_belonging;
+=> nrel_measurement:
+    .number_3;;
+
+.multiplicity_4
+<- multiplicity_of_belonging;
+=> nrel_measurement:
+    .number_4;;
+
+.multiplicity_5
+<- multiplicity_of_belonging;
+=> nrel_measurement:
+    .number_5;;
+
+
+multiset_A
+<- multiset;
+=> nrel_main_idtf:
+    [мультимножество A]
+        (* <- lang_ru;; *);;
+
+.multiplicity_2 -> (multiset_A -> a);;
+.multiplicity_4 -> (multiset_A -> b);;
+.multiplicity_3 -> (multiset_A -> c);;
+.multiplicity_1 -> (multiset_A -> d);;
+
+
+multiset_B
+<- multiset;
+=> nrel_main_idtf:
+    [мультимножество B]
+        (* <- lang_ru;; *);;
+
+.multiplicity_3 -> (multiset_B -> b);;
+.multiplicity_5 -> (multiset_B -> c);;
+.multiplicity_2 -> (multiset_B -> d);;
+.multiplicity_4 -> (multiset_B -> e);;
