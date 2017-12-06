@@ -21,7 +21,7 @@ latin_diagonal_square <- rrel_key_sc_element:
 	*);;
 
 latin_diagonal_square -> rrel_example :
-		"file://latin_diagonal_square_example.jpg";;
+		"file://diagonal_latin_square_example.jpg";;
 
 latin_diagonal_square <- rrel_key_sc_element:
 	... 
