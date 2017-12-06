@@ -15,7 +15,7 @@ section_operations_of_multisets
 	nrel_multiset_combination;
 	nrel_multiset_intersection;
 	nrel_multiset_arithmetic_sum;
-	nrel_multiset_arithmetic_subtraction;
+	nrel_multiset_arithmetic_difference;
 	nrel_multiset_complement;
 	nrel_symmetric_multiset_difference;
 	nrel_multiset_arithmetic_product;
