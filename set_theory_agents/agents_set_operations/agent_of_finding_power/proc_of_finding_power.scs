@@ -27,7 +27,7 @@ scp_program -> proc_of_finding_power (*
          -> .proc_of_finding_power_operator2 (*
             <- ifEq;;
             -> rrel_1: rrel_fixed: rrel_scp_var: _i;;
-            -> rrel_2: rrel_fixed: rrel_scp_const: [infinity];;
+            -> rrel_2: rrel_fixed: rrel_scp_const: [infinite];;
 
             => nrel_then: .proc_of_finding_power_operator9;;
             => nrel_else: .proc_of_finding_power_operator31;;
@@ -117,10 +117,118 @@ scp_program -> proc_of_finding_power (*
 			<- eraseEl;;
 		-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _set_temp;;
 
-		=> nrel_goto: .proc_of_finding_power_operator_empty;;
+		=> nrel_goto: .proc_of_finding_power_operator_infinite;;
 		*);;
 
 
+
+		-> .proc_of_finding_power_operator_infinite (*
+
+           <- ifEq;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _i;;
+            -> rrel_2: rrel_fixed: rrel_scp_const: [infinite];;
+
+			=> nrel_then: .proc_of_finding_power_operator_infinite_0;;
+			=> nrel_else: .proc_of_finding_power_operator_finit;;
+
+        *);;
+
+ 		-> .proc_of_finding_power_operator_infinite_0(*
+			<- searchElStr3;;
+
+          -> rrel_1: rrel_fixed: rrel_scp_const: infinite_set;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _set;;
+
+		  => nrel_then: .proc_of_finding_power_operator_uncountable;;
+      	  => nrel_else: .proc_of_finding_power_operator_infinite_1;;
+		*);;
+
+
+		-> .proc_of_finding_power_operator_infinite_1(*
+			<- genElStr3;;
+
+          -> rrel_1: rrel_fixed: rrel_scp_const: infinite_set;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _set;;
+
+		  => nrel_goto: .proc_of_finding_power_operator_uncountable;;
+		*);;
+
+        
+ 		-> .proc_of_finding_power_operator_uncountable(*
+			<- searchElStr3;;
+
+          -> rrel_1: rrel_fixed: rrel_scp_const: uncountable_set;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _set;;
+
+		  => nrel_then: .proc_of_finding_power_operator_empty;;
+      	  => nrel_else: .proc_of_finding_power_operator_uncountable_1;;
+		*);;
+
+
+		-> .proc_of_finding_power_operator_uncountable_1(*
+			<- genElStr3;;
+
+          -> rrel_1: rrel_fixed: rrel_scp_const: uncountable_set;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _set;;
+
+		  => nrel_goto: .proc_of_finding_power_operator_empty;;
+		*);;
+
+
+
+
+
+	-> .proc_of_finding_power_operator_finit(*
+			<- searchElStr3;;
+
+          -> rrel_1: rrel_fixed: rrel_scp_const: finite_set;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _set;;
+
+		  => nrel_then: .proc_of_finding_power_operator_countable;;
+      	  => nrel_else: .proc_of_finding_power_operator_finit_1;;
+		*);;
+
+
+		-> .proc_of_finding_power_operator_finit_1(*
+			<- genElStr3;;
+
+          -> rrel_1: rrel_fixed: rrel_scp_const: finite_set;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _set;;
+
+		  => nrel_goto: .proc_of_finding_power_operator_countable;;
+		*);;
+
+        
+ 		-> .proc_of_finding_power_operator_countable(*
+			<- searchElStr3;;
+
+          -> rrel_1: rrel_fixed: rrel_scp_const: countable_set;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _set;;
+
+		  => nrel_then: .proc_of_finding_power_operator_empty;;
+      	  => nrel_else: .proc_of_finding_power_operator_countable_1;;
+		*);;
+
+
+		-> .proc_of_finding_power_operator_countable_1(*
+			<- genElStr3;;
+
+          -> rrel_1: rrel_fixed: rrel_scp_const: countable_set;;
+		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+		  -> rrel_3: rrel_fixed: rrel_scp_var: _set;;
+
+		  => nrel_goto: .proc_of_finding_power_operator_empty;;
+		*);;
+
+    
 
 
 		-> .proc_of_finding_power_operator_empty (*
@@ -160,7 +268,7 @@ scp_program -> proc_of_finding_power (*
 		(*
 			<- printNl;;
 
-			-> rrel_1: rrel_scp_const: [Добавляем связь];;
+			-> rrel_1: rrel_scp_const: [Добавить принадлежность к классу пустых множеств];;
 
 			=> nrel_goto: .proc_of_finding_power_operator_empty_2;;
    		*);;
@@ -213,7 +321,7 @@ scp_program -> proc_of_finding_power (*
         (*
             <- printNl;;
 
-            -> rrel_1: rrel_scp_const: [Добавляем связь];;
+            -> rrel_1: rrel_scp_const: [Добавляем принадлежность к классу синглтон];;
 
             => nrel_goto: .proc_of_finding_power_operator_singletone_2;;
         *);;
@@ -266,7 +374,7 @@ scp_program -> proc_of_finding_power (*
 		(*
 			<- printNl;;
 
-			-> rrel_1: rrel_scp_const: [Добавляем связь];;
+			-> rrel_1: rrel_scp_const: [Добавляем принадлежность к классу пар];;
 
 			=> nrel_goto: .proc_of_finding_power_operator_pair_2;;
    		*);;
@@ -290,10 +398,19 @@ scp_program -> proc_of_finding_power (*
 			-> rrel_1: rrel_fixed: rrel_scp_var: _i;;
             -> rrel_2: rrel_fixed: rrel_scp_const: [3];;
 
-			=> nrel_then: .proc_of_finding_power_operator_triple_1;;
+			=> nrel_then: .proc_of_finding_power_operator_triple_1_0;;
 			=> nrel_else: .proc_of_finding_power_operator_return;;
 
         *);;
+
+         -> .proc_of_finding_power_operator_triple_1_0
+		(*
+			<- printNl;;
+
+			-> rrel_1: rrel_scp_const: [Мощность = 3];;
+
+			=> nrel_goto: .proc_of_finding_power_operator_triple_1;;
+   		*);;
 
  		-> .proc_of_finding_power_operator_triple_1 (*
 			<- searchElStr3;;
@@ -303,8 +420,18 @@ scp_program -> proc_of_finding_power (*
 		  -> rrel_3: rrel_fixed: rrel_scp_var: _set;;
 
 		  => nrel_then: .proc_of_finding_power_operator_return;;
-      	  => nrel_else: .proc_of_finding_power_operator_triple_2;;
+      	  => nrel_else: .proc_of_finding_power_operator_triple_2_0;;
 		*);;
+
+		 -> .proc_of_finding_power_operator_triple_2_0
+		(*
+			<- printNl;;
+
+			-> rrel_1: rrel_scp_const: [Добавляем принадлежность к классу троек];;
+
+			=> nrel_goto: .proc_of_finding_power_operator_triple_2;;
+   		*);;
+
 
 		-> .proc_of_finding_power_operator_triple_2 (*
 			<- genElStr3;;

@@ -20,7 +20,7 @@ scp_program -> proc_of_finding_multisets_union
 		(*
 			<- printNl;;
 
-			-> rrel_1: rrel_scp_const: [Начало. Процедура нахождения арифметической суммы двух мультимножеств];;
+			-> rrel_1: rrel_scp_const: [Начало. Процедура нахождения объединения двух мультимножеств];;
 
 			=> nrel_goto: .proc_of_finding_multisets_union_operator_gen_result_multiset;;
    		*);;
@@ -355,7 +355,7 @@ scp_program -> proc_of_finding_multisets_union
 		(*
 			<- printNl;;
 
-			-> rrel_1: rrel_scp_const: [Конец. Процедура нахождения арифметической суммы двух мультимножеств];;
+			-> rrel_1: rrel_scp_const: [Конец. Процедура нахождения объединения двух мультимножеств];;
 
 			=> nrel_goto: .proc_of_finding_multisets_union_operator_return;;
    		*);;
