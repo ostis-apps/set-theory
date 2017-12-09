@@ -1,5 +1,5 @@
 section_math_scientists => nrel_main_idtf: 
-	[Раздел. Учёные математики и комбинаторики] (* <- lang_ru;; *);
+	[Раздел. Учёные математики] (* <- lang_ru;; *);
 	[Partition. Scientists of math] (* <- lang_en;; *);;
 section_math_scientists = [*^"file://section_math_scientists_scsi/section_scientists_of_math.scsi"*];;
 rrel_key_sc_element -> (section_math_scientists -> math_scientists);;

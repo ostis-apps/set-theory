@@ -535,7 +535,7 @@ bit_vector
 				*);;
 			*);
 	-> rrel_example:
-		"file://html/bit_vector.jpg";;
+		"file://html/bit_vector.jpeg";;
 
 partition
    <- sc_node_norole_relation;
