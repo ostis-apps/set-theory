@@ -84,21 +84,12 @@ scp_program -> proc_add_multiset_peak_value_to_answer
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _peak_value;;
 
-			//=> nrel_goto: .proc_add_multiset_peak_value_to_answer_operator_check_value;;
             => nrel_goto: .proc_add_multiset_peak_value_to_answer_operator_form_answer;;
 		*);;
 
 ///////////////////////////////////////////////////////////////////////////////////
 // добавление сгенерированной конструкции в ответ
 
-
-		->.proc_add_multiset_peak_value_to_answer_operator_check_value (*
-            <- ifEq;;
-            -> rrel_1: rrel_fixed: rrel_scp_var: _peak_value;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
-			=> nrel_then: .proc_add_multiset_peak_value_to_answer_operator_form_answer;;
-            => nrel_else: .proc_add_multiset_peak_value_to_answer_operator_add_multiset_peak_value;;
-        *);;
 
 		->.proc_add_multiset_peak_value_to_answer_operator_form_answer (*
             <- genElStr3;;
@@ -107,29 +98,6 @@ scp_program -> proc_add_multiset_peak_value_to_answer
 			-> rrel_3: rrel_fixed: rrel_scp_var: _multiset;;
 			=> nrel_goto: .proc_add_multiset_peak_value_to_answer_operator_add_relation;;
         *);;
-    -> .proc_add_multiset_peak_value_to_answer_operator_add_multiset_peak_value
-		(*
-			<- call;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: proc_add_multiset_to_answer;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: ...
-			(*
-					-> rrel_1: rrel_fixed: rrel_scp_var: _multiset;;
-					-> rrel_2: rrel_assign: rrel_scp_var: _answer;;
-			*);;
-			-> rrel_3: rrel_assign: rrel_scp_var: _proc_descriptor;;
-
-			=> nrel_goto: .proc_add_multiset_peak_value_to_answer_operator_add_multiset_peak_value_return;;
-		*);;
-
-		-> .proc_add_multiset_peak_value_to_answer_operator_add_multiset_peak_value_return
-		(*
-			<- waitReturn;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _proc_descriptor;;
-
-			=> nrel_goto: .proc_add_multiset_peak_value_to_answer_operator_add_relation;;
-		*);;
         
         -> .proc_add_multiset_peak_value_to_answer_operator_add_relation
         (*
