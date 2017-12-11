@@ -1,0 +1,13 @@
+sc_text_of_agent_of_finding_multiset_peak_value
+-> rrel_key_sc_element:
+	agent_of_finding_multiset_peak_value;
+
+<- scp_program_sc_text;
+
+=> nrel_main_idtf: 
+	[sc-текст агентной scp-программы нахождения высоты мультимножества] 
+	(* <- lang_ru;; *);
+	[sc-text scp-agent based program finding the peak value of multiset] 
+	(* <- lang_en;; *);;
+
+sc_text_of_agent_of_finding_multiset_peak_value = [*^"file://agent_of_finding_multiset_peak_value.scsi"*];;

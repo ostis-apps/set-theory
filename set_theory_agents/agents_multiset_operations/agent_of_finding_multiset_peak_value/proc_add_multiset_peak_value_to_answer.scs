@@ -1,0 +1,225 @@
+scp_program -> proc_add_multiset_peak_value_to_answer
+(*
+    -> rrel_params: ...
+    (*
+        -> rrel_1: rrel_in: _multiset;;
+        -> rrel_2: rrel_in: _peak_value;;
+        -> rrel_3: rrel_out: _answer;;
+    *);;
+
+    -> rrel_operators: ...
+    (*
+    	
+        -> rrel_init: .proc_add_multiset_peak_value_to_answer_operator_print_start
+        (*
+            <- printNl;;
+
+            -> rrel_1: rrel_scp_const: [Начало. Процедура добавления высоты мультимножества в ответ];;
+
+            => nrel_goto: .proc_add_multiset_peak_value_to_answer_operator_generate_answer;;
+        *);;
+
+        -> .proc_add_multiset_peak_value_to_answer_operator_generate_answer
+        (*
+            <- genEl;;
+
+            -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _answer;;
+
+            => nrel_goto: .proc_add_multiset_peak_value_to_answer_operator_generate_peak_number;;
+        *);;
+
+	 
+		
+       /////////////формирование отношения
+	 -> .proc_add_multiset_peak_value_to_answer_operator_generate_peak_number
+        (*
+            <- genEl;;
+
+            -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _peak_value_number;;
+
+            => nrel_goto: .proc_add_multiset_peak_value_to_answer_generate_relation;;
+        *);;
+       -> .proc_add_multiset_peak_value_to_answer_generate_relation
+		(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _multiset;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _binary_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _peak_value_number;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_the_peak_value_of_the_multiset;;
+
+			=> nrel_goto: .proc_add_multiset_peak_value_to_answer_generate_number_connection;;
+		*);;
+
+        -> .proc_add_multiset_peak_value_to_answer_generate_number_connection
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: number;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _peak_value_number;;
+
+			=> nrel_goto: .proc_add_multiset_peak_value_to_answer_generate_number_idtf;;
+		*);;
+
+        -> .proc_add_multiset_peak_value_to_answer_generate_number_idtf
+		(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _peak_value_number;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _binary_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _peak_value;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_idtf;;
+
+			=> nrel_goto: .proc_add_multiset_peak_value_to_answer_generate_lang_link;;
+		*);;
+
+        -> .proc_add_multiset_peak_value_to_answer_generate_lang_link
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: lang_ru;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _peak_value;;
+
+            => nrel_goto: .proc_add_multiset_peak_value_to_answer_operator_form_answer;;
+		*);;
+
+///////////////////////////////////////////////////////////////////////////////////
+// добавление сгенерированной конструкции в ответ
+
+
+		->.proc_add_multiset_peak_value_to_answer_operator_form_answer (*
+            <- genElStr3;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _multiset;;
+			=> nrel_goto: .proc_add_multiset_peak_value_to_answer_operator_add_relation;;
+        *);;
+        
+        -> .proc_add_multiset_peak_value_to_answer_operator_add_relation
+        (*
+            <- searchSetStr5;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _multiset;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _binary_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _peak_value_number;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_the_peak_value_of_the_multiset;;
+
+            -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+            -> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+            -> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
+
+            => nrel_then: .proc_add_multiset_peak_value_to_answer_operator_add_number;;
+        *);;
+
+        -> .proc_add_multiset_peak_value_to_answer_operator_add_number
+		(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: number;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _peak_value_number;;
+
+            -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .proc_add_multiset_peak_value_to_answer_add_number_idtf;;
+		*);;
+
+        -> .proc_add_multiset_peak_value_to_answer_add_number_idtf
+		(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _peak_value_number;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _binary_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _peak_value_link;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _idtf_arc;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_idtf;;
+
+            -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+            -> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+            -> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .proc_add_multiset_peak_value_to_answer_add_lang_link;;
+		*);;
+
+        -> .proc_add_multiset_peak_value_to_answer_add_lang_link
+		(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: lang_ru;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _peak_value;;
+
+            -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .proc_add_multiset_peak_value_to_answer_operator_add_nrel_peak_value;;
+		*);;
+        // добавление в ответ отношения "пиковое значение мультимножества*"
+        -> .proc_add_multiset_peak_value_to_answer_operator_add_nrel_peak_value
+        (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_from_answer;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: nrel_the_peak_value_of_the_multiset;;
+
+            => nrel_goto: .proc_add_multiset_peak_value_to_answer_operator_add_lang_to_answer;;
+        *);;
+
+        // добавление в ответ класса языка
+        -> .proc_add_multiset_peak_value_to_answer_operator_add_lang_to_answer
+        (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_from_answer;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: lang_ru;;
+
+            => nrel_goto: .proc_add_multiset_peak_value_to_answer_operator_add_number_to_answer;;
+        *);;
+
+        // добавление в ответ класса "число"
+        -> .proc_add_multiset_peak_value_to_answer_operator_add_number_to_answer
+        (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_from_answer;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: number;;
+
+            => nrel_goto: .proc_add_multiset_peak_value_to_answer_operator_add_idtf_to_answer;;
+        *);;
+
+        // добавление в ответ отношения "идентификатор*"
+        -> .proc_add_multiset_peak_value_to_answer_operator_add_idtf_to_answer
+        (*
+            <- genElStr3;;
+
+            -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_from_answer;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: nrel_idtf;;
+
+            => nrel_goto: .proc_add_multiset_peak_value_to_answer_operator_print_end;;
+        *);;
+
+///////////////////////////////////////////////////////////////////////////////////
+
+        -> .proc_add_multiset_peak_value_to_answer_operator_print_end
+        (*
+            <- printNl;;
+
+            -> rrel_1: rrel_scp_const: [Конец. Процедура добавления пикового значения мультимножества в ответ];;
+
+            => nrel_goto: .proc_add_multiset_peak_value_to_answer_operator_return;;
+        *);;
+
+    	-> .proc_add_multiset_peak_value_to_answer_operator_return
+    	(*
+    		<- return;;
+    	*);;
+    *);;
+*);;

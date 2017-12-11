@@ -1,0 +1,19 @@
+ui_menu_file_for_finding_multiset_peak_value
+	<- 	ui_user_command_class_atom; 
+		ui_user_command_class_view_kb;
+	=> nrel_main_idtf: 
+		[Какова высота мультимножества?] (* <- lang_ru;; *);
+		[What is peak value of the multiset?] (* <- lang_en;; *);
+	=> ui_nrel_command_template:
+		[*
+		question_finding_multiset_peak_value _-> ._question_finding_multiset_peak_value_instance
+			(*
+				_-> ui_arg_1;;
+			*);;
+		._question_finding_multiset_peak_value_instance _<- question;;
+		*];
+	=> ui_nrel_command_lang_template: 
+		[Запрос нахождения высоты мультимножества: $ui_arg_1] 
+		(* <- lang_ru;; *);
+		[What is peak value of $ui_arg_1] 
+		(* <- lang_en;; *);;
