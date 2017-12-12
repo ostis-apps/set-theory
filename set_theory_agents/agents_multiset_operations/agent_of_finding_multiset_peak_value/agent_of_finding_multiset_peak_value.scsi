@@ -1,0 +1,127 @@
+agent_of_finding_multiset_peak_value
+=> nrel_main_idtf:
+	[агентная scp-программа нахождения высоты мультимножества] 
+	(* <- lang_ru;; *);
+	[agent scp-program of finding peak value of multiset] 
+	(* <- lang_en;; *);
+<- agent_scp_program;;
+
+scp_program -> agent_of_finding_multiset_peak_value (*
+    //множество параметров агентной scp-программы
+	-> rrel_params: .agent_of_finding_multiset_peak_value_params (*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+    //множество операторов
+	-> rrel_operators: .agent_of_finding_multiset_peak_value_set (*
+        //первый исполняемый оператор
+		-> rrel_init: .agent_of_finding_multiset_peak_value1 (*
+			<- searchElStr3;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+			=>nrel_goto: .agent_of_finding_multiset_peak_value2;;
+		*);;
+
+        //активация агента запросом
+		-> .agent_of_finding_multiset_peak_value2 (*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: question_finding_multiset_peak_value;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+			=>nrel_then: .agent_of_finding_multiset_peak_value3;;
+			=>nrel_else: .agent_of_finding_multiset_peak_value_return;;
+		*);;
+
+		-> .agent_of_finding_multiset_peak_value3 (*
+			<- printNl;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: [агент нахождения высоты мультимножества];;
+			=> nrel_goto: .agent_of_finding_multiset_peak_value4;;
+   		*);;
+
+        //определение входных параметров от пользователя
+   		-> .agent_of_finding_multiset_peak_value4 (*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _multiset;;
+			=>nrel_then: .agent_of_finding_multiset_peak_value5;;
+			=>nrel_else: .agent_of_finding_multiset_peak_value_return;;
+		*);;
+
+	//поиск высоты мультимножества
+		-> .agent_of_finding_multiset_peak_value5 (*
+            <- call;;
+            -> rrel_1: rrel_fixed: rrel_scp_const: proc_of_finding_multiset_peak_value;;
+            -> rrel_2: ... (*
+                -> rrel_1: rrel_fixed: rrel_scp_var: _multiset;;
+                -> rrel_2: rrel_assign: rrel_scp_var: _peak_value;;
+            *);;
+            -> rrel_3: rrel_assign: rrel_scp_var: _proc_descriptor;;
+            => nrel_goto: .agent_of_finding_multiset_peak_value6;;
+        *);;
+
+        ->.agent_of_finding_multiset_peak_value6 (*
+            <- waitReturn;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _proc_descriptor;;
+            => nrel_goto: .agent_of_finding_multiset_peak_value_operator_generate_and_add_to_answer;;
+        *);;
+
+		
+
+///////////////////////////////////////////////////////////////////////////////////////////
+// создание связки отношения "пиковое значение мультимножества*" и добавление ее в ответ
+
+-> .agent_of_finding_multiset_peak_value_operator_generate_and_add_to_answer
+		(*
+			<- call;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_add_multiset_peak_value_to_answer;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ...
+			(*
+					-> rrel_1: rrel_fixed: rrel_scp_var: _multiset;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _peak_value;;
+					-> rrel_3: rrel_assign: rrel_scp_var: _answer;;
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _proc_descriptor;;
+
+			=> nrel_goto: .agent_of_finding_multiset_peak_value_operator_generate_and_add_to_answer_return;;
+		*);;
+
+		-> .agent_of_finding_multiset_peak_value_operator_generate_and_add_to_answer_return
+		(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _proc_descriptor;;
+
+			=> nrel_goto: .agent_of_finding_multiset_peak_value_operator_bind_q_and_a;;
+		*);;
+		-> .agent_of_finding_multiset_peak_value_operator_bind_q_and_a
+		(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_const: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+			
+			=> nrel_goto: .agent_of_finding_multiset_peak_value_operator_print_end;;
+		*);;
+	
+       -> .agent_of_finding_multiset_peak_value_operator_print_end
+		(*
+			<- printNl;;
+
+			-> rrel_1: rrel_scp_const: [Конец. Агент нахождения высоты мультимножества];;
+
+			=> nrel_goto: .agent_of_finding_multiset_peak_value_operator_return;;
+   		*);;
+
+	
+		-> .agent_of_finding_multiset_peak_value_operator_return (*
+			<- return;;
+		*);;
+	*);;
+*);;

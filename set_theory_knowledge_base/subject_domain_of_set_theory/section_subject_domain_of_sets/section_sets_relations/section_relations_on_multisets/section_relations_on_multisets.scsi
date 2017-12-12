@@ -63,6 +63,11 @@ nrel_the_peak_value_of_the_multiset
 		...
 		(*
 		<- sc_definition;;
+
+        => nrel_main_idtf:
+	    [Опр. (пиковое значение мультимножества*)]
+	    (* <- lang_ru;; *);;
+
 		<= nrel_sc_text_translation:
 			...
 			(*
@@ -75,11 +80,7 @@ nrel_the_peak_value_of_the_multiset
 			->element_of_set;;
 			->nrel_the_multiplicity_of_the_element;;
 		*);;
-		*);
-
-        => nrel_main_idtf:
-	    [Опр. (кратность мультимножества*)]
-	    (* <- lang_ru;; *);;
+		*);;
 
 nrel_the_peak_value_of_the_multiset
 <- rrel_key_sc_element:

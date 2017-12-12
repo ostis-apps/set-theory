@@ -10,5 +10,6 @@ ui_menu_na_multisets
     ui_menu_file_for_finding_multisets_product;
     ui_menu_file_for_finding_multisets_union;
     ui_menu_file_for_finding_multisets_difference;
+    ui_menu_file_for_finding_multiset_peak_value;
 	ui_menu_file_for_printing_multiset
 };;
