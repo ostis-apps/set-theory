@@ -9,5 +9,6 @@ ui_menu_na_multisets
     ui_menu_file_for_finding_multisets_sum;
     ui_menu_file_for_finding_multisets_product;
     ui_menu_file_for_finding_multisets_union;
+    ui_menu_file_for_finding_multisets_difference;
 	ui_menu_file_for_printing_multiset
 };;
