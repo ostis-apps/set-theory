@@ -1,0 +1,5 @@
+section_combinatorics_scientists => nrel_main_idtf: 
+	[Раздел. Учёные комбинаторики] (* <- lang_ru;; *);
+	[Partition. Scientists of combinatorics] (* <- lang_en;; *);;
+section_combinatorics_scientists = [*^"file://section_combinatorics_scientists_scsi/section_scientists_of_combinatorics.scsi"*];;
+rrel_key_sc_element -> (section_combinatorics_scientists -> combinatorics_scientists);;

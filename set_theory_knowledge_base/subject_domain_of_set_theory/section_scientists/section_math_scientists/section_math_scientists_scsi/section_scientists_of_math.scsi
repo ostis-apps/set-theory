@@ -3,9 +3,6 @@ math_scientists
 	[Учёные, которые внесли вклад в развитие математики и комбинаторики] (* <- lang_ru;; *);
 	[Scientists of math] (* <- lang_en;; *);
 <- rrel_key_sc_element:
-	Ezra;
-	Euler;
-	Leibniz;
 	Moore;
 	Dirichlet;
 	Cardano;	
