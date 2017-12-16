@@ -2036,9 +2036,12 @@ oriented_set_length
 
 oriented_set_length
 <- rrel_key_sc_element:
-	Definition_of_oriented_set_length
+	.Definition_of_oriented_set_length
 	(* 
 	<- definition;;
+	=> nrel_main_idtf:
+		[Опр.(длина кортежа*)]
+			(* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -2048,23 +2051,25 @@ oriented_set_length
 		...
 		(* 
 		-> number;
-		  oriented_set;
-		nrel_component;;
-
+		   oriented_set;
+		   nrel_component;;
 		*);;
 	
 
 	*);;
 
-
-Definition_of_oriented_set_length
-=> nrel_main_idtf:
-	[Определение понятия "длина кортежа*"]
-	(* <- lang_ru;;	*);;
-
 oriented_set_length
 =>nrel_first_domain: number;
-=>nrel_second_domain: oriented_set;;
+=>nrel_second_domain: oriented_set;
+=>nrel_definitional_domain:
+...
+(*
+	<=nrel_combination:
+	{
+		number;
+		oriented_set
+	};;
+*);;
 
 
 
