@@ -1573,9 +1573,12 @@ nrel_power_set
 	(* <- lang_ru;;	*);
 
 <- rrel_key_sc_element:
-	Definition_of_power_set
+	.Definition_of_power_set
 	(* 
-	<- sc_explanation;;
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр.(мощности множества*)]
+			(* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -1592,17 +1595,11 @@ nrel_power_set
 
 	*);;
 
-Definition_of_power_set
-=> nrel_main_idtf:
-	[Опр.(мощности множества*)]
-	(* <- lang_ru;;	*);;
-
-
 nrel_power_set
 <- rrel_key_sc_element:
-	statement
+	.statement_of_power_set
 	(* 
-	<- sc_explanation;;
+	<- statement;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -1618,7 +1615,17 @@ nrel_power_set
 
 nrel_power_set
 =>nrel_first_domain: set;
-=>nrel_second_domain: number;;
+=>nrel_second_domain: number;
+=> nrel_definitional_domain: 
+ ...
+ (*
+	<= nrel_combination:
+	{
+		set;
+		number
+	};;
+ *);;
+
 
 
 //----------------------------------------------------------------------------------------------------
