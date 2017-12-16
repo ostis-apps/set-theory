@@ -1290,9 +1290,12 @@ nrel_height_of_fuzzy_set
 
 nrel_height_of_fuzzy_set
 <- rrel_key_sc_element:
-	Definition_of_nrel_height_of_fuzzy_set
+	.Definition_of_nrel_height_of_fuzzy_set
 	(* 
-	<- sc_explanation;;
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр.(высота нечеткого множества*)]
+			(* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -1305,14 +1308,7 @@ nrel_height_of_fuzzy_set
 		membership_function;
 		fuzzy_set;;
 		*);;
-
-
 	*);;
-
-Definition_of_nrel_height_of_fuzzy_set
-=> nrel_main_idtf:
-	[Определение отношения "высота нечеткого множества*"]
-	(* <- lang_ru;;	*);;
 
 nrel_height_of_fuzzy_set
 => nrel_first_domain: fuzzy_set;
