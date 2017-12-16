@@ -755,9 +755,7 @@ nrel_diagonal
 <- binary_relation;
 <- antireflexive_relation;
 <- antisymmetric_relation;
-<- antitransitive_relation;
-=> nrel_arity: 2
-	(* <- number;; *);;
+<- antitransitive_relation;;
 
 // иллюстрация
 nrel_diagonal
@@ -778,11 +776,11 @@ nrel_diagonal
 // определение
 nrel_diagonal
 <- rrel_key_sc_element:
-	diagonal_definition
+	.diagonal_definition
 	(* 
-	<- sc_explanation;;
+	<- definition;;
 	=> nrel_main_idtf:
-		[Определение понятия "диагональ множества"]
+		[Опр.(диагональ множества*)]
 			(* <- lang_ru;; *);;
 	<= nrel_sc_text_translation:
 		...
@@ -801,7 +799,7 @@ nrel_diagonal
 
 	... // первое утверждение
 	(* 
-		<- sc_explanation;;
+		<- statement;;
 		<= nrel_sc_text_translation:
 			...
 			(* 
@@ -814,7 +812,7 @@ nrel_diagonal
 
 	... // второе утверждение
 	(* 
-		<- sc_explanation;;
+		<- statement;;
 		<= nrel_sc_text_translation:
 			...
 			(* 
