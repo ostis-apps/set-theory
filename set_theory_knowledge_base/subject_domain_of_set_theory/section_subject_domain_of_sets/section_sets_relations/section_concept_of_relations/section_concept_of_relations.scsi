@@ -1494,9 +1494,12 @@ nrel_near_set
 
 nrel_near_set
 <- rrel_key_sc_element:
-	Definition_of_nrel_near_set
+	.Definition_of_nrel_near_set
 	(* 
 	<- definition;;
+	=> nrel_main_idtf:
+		[Опр.(ближайшее множество*)]
+			(* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -1515,7 +1518,7 @@ nrel_near_set
 
 nrel_near_set
 <- rrel_key_sc_element: 
-	Illustration_of_nrel_near_set
+	.Illustration_of_nrel_near_set
 	(*
 	<- sc_illustration;;
 	=> nrel_main_idtf:
@@ -1530,11 +1533,6 @@ nrel_near_set
 				*);;
 		*);;
 	*);;
-
-Definition_of_nrel_near_set
-=> nrel_main_idtf:
-	[Определение понятия "ближайшее множество*"]
-	(* <- lang_ru;;	*);;
 
 nrel_near_set
 =>nrel_first_domain: fuzzy_set;
