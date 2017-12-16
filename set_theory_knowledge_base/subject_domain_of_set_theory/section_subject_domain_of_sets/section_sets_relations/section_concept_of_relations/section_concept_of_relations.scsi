@@ -2141,33 +2141,42 @@ partial_transversal
 => nrel_main_idtf:
 	[частичная трансверсаль*]
 	(* <- lang_ru;;	*);
-	[partial transversal*]
-	(* <- lang_en;; *);;
 
 partial_transversal
  <- rrel_key_sc_element:
 	... 
 	(*
-	=> nrel_main_idtf: [Опр.(частичная трансверсаль*))]  (* <- lang_ru;; *);;
-	<- sc_explanation;;
+	=> nrel_main_idtf: 
+		[Опр.(частичная трансверсаль*))]  
+			(* <- lang_ru;; *);;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(*
 		-> rrel_example: 
 			"file://content/content_htmls/partial_transversal/partial_transversal.html" (* <- lang_ru;; *);;
 		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> injection;;
+		-> nrel_set_of_subsets;;
+		-> set;;
+		*);;
 *);;
 
 partial_transversal
 =>nrel_first_domain: set;
 =>nrel_second_domain: set;
-=>nrel_definitional_domain :set;;
+=>nrel_definitional_domain: set;;
 
 partial_transversal <- rrel_key_sc_element:
 	... 
 	(*
-	=> nrel_main_idtf: [Утв.(биекция, трансверсаль*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	=> nrel_main_idtf: 
+		[Утв.(биекция, трансверсаль*)] 
+			(* <- lang_ru;; *);;
+	<- statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -2180,8 +2189,10 @@ partial_transversal
 <- rrel_key_sc_element:
 	... 
 	(*
-	=> nrel_main_idtf: [Утв.(трансверсаль, cемейство, подсемейство*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	=> nrel_main_idtf:
+		[Утв.(трансверсаль, cемейство, подсемейство*)] 
+			(* <- lang_ru;; *);;
+	<- statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -2194,8 +2205,10 @@ partial_transversal
 <- rrel_key_sc_element:
 	... 
 	(*
-	=> nrel_main_idtf: [Утв.(трансверсаль, подмножество*)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	=> nrel_main_idtf: 
+		[Утв.(трансверсаль, подмножество*)] 
+			(* <- lang_ru;; *);;
+	<- statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
