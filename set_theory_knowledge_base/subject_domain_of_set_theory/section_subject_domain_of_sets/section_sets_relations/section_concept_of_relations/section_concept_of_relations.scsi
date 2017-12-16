@@ -379,9 +379,12 @@ nrel_alpha_incision
 
 nrel_alpha_incision
 <- rrel_key_sc_element:
-	Definition_of_nrel_alpha_incision
+	.Definition_of_nrel_alpha_incision
 	(* 
 	<- definition;;
+	=> nrel_main_idtf:
+		[Опр.(альфа-разрез*)]
+			(* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -400,7 +403,7 @@ nrel_alpha_incision
 
 nrel_alpha_incision
 <- rrel_key_sc_element:
-	statement_decomposition_of_fuzzy_set_alpha_incision_combination
+	.statement_decomposition_of_fuzzy_set_alpha_incision_combination
 	(* 
 	<- statement;;
 	=> nrel_main_idtf:
@@ -411,7 +414,7 @@ nrel_alpha_incision
 		(* 
 		-> rrel_example: "file://content/content_htmls/statement_nrel_alpha_incision_fuzzy_set_decomposition.html" (* <-lang_ru;; *);;
 		*);;
-	<= nrel_using_constants:
+	<- rrel_key_sc_element:
 		...
 		(* 
 		-> fuzzy_set;
@@ -424,7 +427,7 @@ nrel_alpha_incision
 
 nrel_alpha_incision
 <- rrel_key_sc_element:
-	statement_fuzzy_set_and_alpha_incision_equality
+	.statement_fuzzy_set_and_alpha_incision_equality
 	(* 
 	<- statement;;
 	=> nrel_main_idtf:
@@ -435,7 +438,7 @@ nrel_alpha_incision
 		(* 
 		-> rrel_example: "file://content/content_htmls/statement_fuzzy_set_and_alpha_incision_equality.html" (* <-lang_ru;; *);;
 		*);;
-	<= nrel_using_constants:
+	<- rrel_key_sc_element:
 		...
 		(* 
 		-> fuzzy_set;
@@ -447,7 +450,7 @@ nrel_alpha_incision
 
 nrel_alpha_incision
 <- rrel_key_sc_element:
-	statement_fuzzy_set_and_alpha_incision_combination
+	.statement_fuzzy_set_and_alpha_incision_combination
 	(* 
 	<- statement;;
 	=> nrel_main_idtf:
@@ -458,7 +461,7 @@ nrel_alpha_incision
 		(* 
 		-> rrel_example: "file://content/content_htmls/statement_fuzzy_set_and_alpha_incision_combination.html" (* <-lang_ru;; *);;
 		*);;
-	<= nrel_using_constants:
+	<- rrel_key_sc_element:
 		...
 		(* 
 		-> fuzzy_set;
@@ -470,7 +473,7 @@ nrel_alpha_incision
 
 nrel_alpha_incision
 <- rrel_key_sc_element:
-	statement_fuzzy_set_and_alpha_incision_intersection
+	.statement_fuzzy_set_and_alpha_incision_intersection
 	(* 
 	<- statement;;
 	=> nrel_main_idtf:
@@ -481,7 +484,7 @@ nrel_alpha_incision
 		(* 
 		-> rrel_example: "file://content/content_htmls/statement_fuzzy_set_and_alpha_incision_intersection.html" (* <-lang_ru;; *);;
 		*);;
-	<= nrel_using_constants:
+	<- rrel_key_sc_element:
 		...
 		(* 
 		-> fuzzy_set;
@@ -494,7 +497,7 @@ nrel_alpha_incision
 
 nrel_alpha_incision
 <- rrel_key_sc_element:
-	statement_fuzzy_set_nrel_alpha_incision_rrel_alpha_inclusion
+	.statement_fuzzy_set_nrel_alpha_incision_rrel_alpha_inclusion
 	(* 
 	<- statement;;
 	=> nrel_main_idtf:
@@ -505,7 +508,7 @@ nrel_alpha_incision
 		(* 
 		-> rrel_example: "file://content/content_htmls/statement_fuzzy_set_nrel_alpha_incision_rrel_alpha_inclusion.html" (* <-lang_ru;; *);;
 		*);;
-	<= nrel_using_constants:
+	<- rrel_key_sc_element:
 		...
 		(* 
 		-> fuzzy_set;
@@ -519,7 +522,7 @@ nrel_alpha_incision
 
 nrel_alpha_incision
 <- rrel_key_sc_element: 
-	Illustration_of_alpha_incision
+	.Illustration_of_alpha_incision
 	(*
 	<- sc_illustration;;
 	=> nrel_main_idtf:
@@ -534,12 +537,6 @@ nrel_alpha_incision
 				*);;
 		*);;
 	*);;
-
-
-Definition_of_nrel_alpha_incision
-=> nrel_main_idtf:
-	[Определение понятия "альфа-разрез*"]
-	(* <- lang_ru;;	*);;
 
 nrel_alpha_incision
 =>nrel_first_domain: fuzzy_set;
