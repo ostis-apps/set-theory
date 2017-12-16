@@ -214,7 +214,7 @@ factorial
 <- rrel_key_sc_element:
 		...
 		(* 
-			<- explanation;;
+			<- definition;;
 			=> nrel_main_idtf: [Опр.(факториал числа*)]  (* <- lang_ru;; *);;
 			<= nrel_sc_text_translation:	
 			...
@@ -223,6 +223,14 @@ factorial
 				"file://content/content_htmls/factorial/factorial.html"
 				(* <- lang_ru;; *);;
 			*);;
+
+			<= nrel_using_constants:
+				...
+				(* 
+				-> nrel_multiplication_of_numbers;;
+				-> natural_number;;
+				-> nrel_inclusion;;
+				*);;
 		*);
 <- rrel_key_sc_element:
 		...
