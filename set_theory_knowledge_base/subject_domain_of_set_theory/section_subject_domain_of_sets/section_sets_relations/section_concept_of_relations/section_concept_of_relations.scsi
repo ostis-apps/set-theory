@@ -963,9 +963,12 @@ nrel_exact_lower_approximation
 
 nrel_exact_lower_approximation
 <- rrel_key_sc_element:
-	Definition_of_nrel_exact_lower_approximation
+	.Definition_of_nrel_exact_lower_approximation
 	(* 
 	<- definition;;
+	=> nrel_main_idtf:
+		[Опр.(точная нижняя аппроксимация*)]
+			(* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -975,20 +978,13 @@ nrel_exact_lower_approximation
 		...
 		(* 
 		->  fuzzy_set;
-            nrel_inclusion;
-            concept_universum;
-            nrel_alpha_incision;
-            set_of_sets;
-            number;;
-        *);;
+            	nrel_inclusion;
+            	concept_universum;
+            	nrel_alpha_incision;
+            	set_of_sets;
+            	number;;
+        	*);;
 	*);;
-
-
-
-Definition_of_nrel_exact_lower_approximation
-=> nrel_main_idtf:
-	[Определение понятия "точная нижняя аппроксимация*"]
-	(* <- lang_ru;;	*);;
 
 nrel_exact_lower_approximation 
 =>nrel_first_domain: set_of_sets;
@@ -1002,10 +998,6 @@ nrel_exact_lower_approximation
 		fuzzy_set
 	};;
 *);;
-
-nrel_exact_lower_approximation 
-<= nrel_inclusion:
-    nrel_lower_approximation;;
 
 
 //----------------------------------------------------------------------------------------------------
