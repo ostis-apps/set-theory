@@ -130,9 +130,12 @@ empty_relation
 
 empty_relation
 <- rrel_key_sc_element:
-	Definition_of_empty_relation
+	.Definition_of_empty_relation
 	(* 
-	<- sc_explanation;;
+	=> nrel_main_idtf:
+		[Опр.(пустое отношение)]
+			(* <- lang_ru;;	*);;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -150,11 +153,6 @@ empty_relation
 		-> empty_set;;
 		*);;
 	*);;
-
-Definition_of_empty_relation
-=> nrel_main_idtf:
-	[Определение понятия "пустое отношение"]
-	(* <- lang_ru;;	*);;
 
 
 //----------------------------------------------------------------------------------------------------
@@ -280,9 +278,12 @@ nrel_multiplicity_of_element
 
 nrel_multiplicity_of_element
 <- rrel_key_sc_element:
-	Definition_of_multiplicity_of_element
+	.Definition_of_multiplicity_of_element
 	(* 
-	<- sc_explanation;;
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр.(кратность элемента*)]
+			(* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -294,20 +295,20 @@ nrel_multiplicity_of_element
 		-> element_of_set;
 			set;;
 		*);;
-
-
 	*);;
-
-Definition_of_multiplicity_of_element
-=> nrel_main_idtf:
-	[Определение понятия "кратность элемента"]
-	(* <- lang_ru;;	*);;
-
-
 
 nrel_multiplicity_of_element
 =>nrel_first_domain: set;
-=>nrel_second_domain: element_of_set;;
+=>nrel_second_domain: element_of_set;
+=>nrel_definitional_domain: 
+...
+(*
+	<= nrel_combination:
+	{
+		set;
+		element_of_set
+	};;
+*);;
 
 
 //----------------------------------------------------------------------------------------------------
@@ -487,7 +488,15 @@ nrel_alpha_incision
 	=> nrel_main_idtf:
 		[Утв.(нечеткое множество, альфа-разрез*, пересечение нечетких множеств*, пересечение*)]
 			(* <- lang_ru;; *);;
-	<= nrel_sc_text_translation:
+	<= nrel_sc_text_translation:=>nrel_definitional_domain: 
+...
+(*
+	<= nrel_combination:
+	{
+		fuzzy_set;
+		crisp_set
+	};;
+*);;
 		...
 		(* 
 		-> rrel_example: "file://content/content_htmls/statement_fuzzy_set_and_alpha_incision_intersection.html" (* <-lang_ru;; *);;
