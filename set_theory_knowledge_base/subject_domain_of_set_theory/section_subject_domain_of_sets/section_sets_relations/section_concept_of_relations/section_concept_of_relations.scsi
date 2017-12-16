@@ -1166,12 +1166,12 @@ nrel_fuzzy_set_core
 
 nrel_fuzzy_set_core
 <- rrel_key_sc_element:
-	Definition_of_nrel_fuzzy_set_core
+	.Definition_of_nrel_fuzzy_set_core
 	(* 
 	<- definition;;
 	=> nrel_main_idtf:
-	[Определение понятия "ядро нечеткого множества*"]
-	(* <- lang_ru;;	*);;
+		[Опр.(ядро нечеткого множества*)]
+			(* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -1180,18 +1180,21 @@ nrel_fuzzy_set_core
 	<= nrel_using_constants:
 		...
 		(* 
-		-> fuzzy_set; set; concept_universum; crisp_set;;
+		-> fuzzy_set; 
+		set; 
+		concept_universum; 
+		crisp_set;;
 		*);;
 	*);;
 
 nrel_fuzzy_set_core
 <- rrel_key_sc_element: 
-	Illustration_of_nrel_fuzzy_set_core
+	.Illustration_of_nrel_fuzzy_set_core
 	(*
 	<- sc_illustration;;
 	=> nrel_main_idtf:
-	[Иллюстрация к понятию "ядро нечеткого множества*"]
-	(* <- lang_ru;;	*);;
+		[Иллюстрация к понятию "ядро нечеткого множества*"]
+			(* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation:
 		...
 		(*
@@ -1204,18 +1207,17 @@ nrel_fuzzy_set_core
 
 nrel_fuzzy_set_core
 <- rrel_key_sc_element:
-
-	statement_fuzzy_set_core_subnormal_set_empty_set
+	.statement_fuzzy_set_core_subnormal_set_empty_set
 	(* 
 		<- statement;;
+		=> nrel_main_idtf: 
+			[Утв. (субнормальное нечеткое множество, пустое множество, ядро нечеткого множества*)]
+				(* <- lang_ru;; *);;
 		<= nrel_sc_text_translation:
 			...
 			(* 
 			   -> rrel_example: "file://content/content_htmls/statement_nrel_fuzzy_set_core.html" (* <- lang_ru;; *);;
 			*);;
-		=> nrel_main_idtf: [Утв. (субнормальное нечеткое множество, пустое множество, ядро нечеткого множества*)]
-					(* <- lang_ru;; *);;
-
 	*);;
 
 nrel_fuzzy_set_core
