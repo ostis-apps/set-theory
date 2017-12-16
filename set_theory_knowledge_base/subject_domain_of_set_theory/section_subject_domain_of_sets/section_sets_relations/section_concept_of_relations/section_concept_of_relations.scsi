@@ -1075,16 +1075,18 @@ nrel_exercise
 <- cantor_set;
 <- infinite_set;
 <- antireflexive_relation;
-<-sc_const;	
+<- sc_const;	
 => nrel_main_idtf:
 	[упражнения*] 
 	(* <- lang_ru;;	*);
 
-
 <- rrel_key_sc_element:
 	...
 	(* 
-	<- sc_explanation;;
+	=> nrel_main_idtf:
+		[Опр.(упражнения*)]
+			(* <- lang_ru;;	*);;
+	<- definition;;
 	<= nrel_sc_text_translation:
 		...
 		(* 
