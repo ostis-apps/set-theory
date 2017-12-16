@@ -2238,7 +2238,6 @@ same_name_component
 <- relation;
 <- oriented_relation;
 <- ternary_relation;
-<- antireflexive_relation;
 => nrel_main_idtf:
 	[одноименная компонента кортежей*]
 	(* <- lang_ru;;	*);
@@ -2248,9 +2247,12 @@ same_name_component
 
 same_name_component
 <- rrel_key_sc_element:
-	Definition_of_same_name_component
+	.Definition_of_same_name_component
 	(* 
-	<- sc_explanation;;
+	<- definition;;
+	=> nrel_main_idtf:
+		[Опр.(одноименная компонента кортежей*)]
+			(* <- lang_ru;;	*);;
 	<= nrel_sc_text_translation:
 		...
 		(* 
@@ -2260,25 +2262,24 @@ same_name_component
 		...
 		(* 
 		-> oriented_set_length;
-		  oriented_set;
-		nrel_component;;
-
+		   oriented_set;
+		   nrel_component;;
 		*);;
-	
-
 	*);;
-
-
-Definition_of_same_name_component
-=> nrel_main_idtf:
-	[Определение понятия "одноименная компонента кортежей*"]
-	(* <- lang_ru;;	*);;
 
 same_name_component
 =>nrel_first_domain: element_of_set;
 =>nrel_second_domain: oriented_set;
-=>nrel_third_domain: oriented_set;;
-
+=>nrel_third_domain: oriented_set;
+=>nrel_definitional_domain:
+...
+(*
+	<=nrel_combination:
+	{
+		element_of_set;
+		oriented_set
+	};;
+*);;
 
 
 //----------------------------------------------------------------------------------------------------
