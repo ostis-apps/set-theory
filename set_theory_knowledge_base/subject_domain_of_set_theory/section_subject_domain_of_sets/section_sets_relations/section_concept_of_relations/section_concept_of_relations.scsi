@@ -488,16 +488,8 @@ nrel_alpha_incision
 	=> nrel_main_idtf:
 		[Утв.(нечеткое множество, альфа-разрез*, пересечение нечетких множеств*, пересечение*)]
 			(* <- lang_ru;; *);;
-	<= nrel_sc_text_translation:=>nrel_definitional_domain: 
-...
-(*
-	<= nrel_combination:
-	{
-		fuzzy_set;
-		crisp_set
-	};;
-*);;
-		...
+	<= nrel_sc_text_translation:
+			...
 		(* 
 		-> rrel_example: "file://content/content_htmls/statement_fuzzy_set_and_alpha_incision_intersection.html" (* <-lang_ru;; *);;
 		*);;
@@ -2140,7 +2132,7 @@ partial_transversal
 <- antireflexive_relation;
 => nrel_main_idtf:
 	[частичная трансверсаль*]
-	(* <- lang_ru;;	*);
+	(* <- lang_ru;;	*);;
 
 partial_transversal
  <- rrel_key_sc_element:
