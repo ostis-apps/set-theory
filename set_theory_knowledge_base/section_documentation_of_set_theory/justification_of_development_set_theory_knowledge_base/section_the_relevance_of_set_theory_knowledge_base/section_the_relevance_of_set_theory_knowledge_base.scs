@@ -1,0 +1,15 @@
+section_the_relevance_of_set_theory_knowledge_base
+=> nrel_main_idtf:
+	[Раздел. Актуальность интеллектуальной системы по теории множеств]
+	(* <- lang_ru;; *);
+	[Section. The relevance of set theory knowledge base]
+	(* <- lang_en;; *);
+<- not_enough_formed_structure;
+	...
+	(* 
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://section_the_relevance_of_set_theory_knowledge_base.html" (* <-lang_ru;; *);;
+		*);;
+	*);;

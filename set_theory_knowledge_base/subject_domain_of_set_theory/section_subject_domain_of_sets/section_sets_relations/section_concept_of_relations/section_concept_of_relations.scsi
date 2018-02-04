@@ -1223,57 +1223,6 @@ nrel_fuzzy_set_core
 //----------------------------------------------------------------------------------------------------
 
 
-nrel_graph
-<- sc_node_norole_relation;
-<- relation;
-<- oriented_relation;
-<- binary_relation;
-<- transitive_relation;
-<- antireflexive_relation;
-=> nrel_main_idtf:
-	[график*]
-	(* <- lang_ru;;	*);
-=> nrel_idtf:
-	[быть графиком*]
-	(* <- lang_ru;;	*);;
-
-nrel_graph
-<- rrel_key_sc_element:
-	Definition_of_nrel_graph
-	(* 
-	<- sc_explanation;;
-	<= nrel_sc_text_translation:
-		...
-		(* 
-		-> rrel_example: "file://content/content_htmls/nrel_graph.html" (* <-lang_ru;; *);;
-		*);;
-	<= nrel_using_constants:
-		...
-		(* 
-		-> function;
-			cartesian_product;
-			nrel_inclusion;
-			set;;
-		*);;
-
-
-	*);;
-
-
-Definition_of_nrel_graph
-=> nrel_main_idtf:
-	[Определение отношения график*]
-	(* <- lang_ru;;	*);;
-
-
-nrel_graph
-=>nrel_first_domain: function;
-=>nrel_second_domain: set;;
-
-
-//----------------------------------------------------------------------------------------------------
-
-
 nrel_height_of_fuzzy_set
 <- sc_node_norole_relation;
 <- relation;
@@ -2220,58 +2169,6 @@ rrel_alpha
 => nrel_main_idtf:
 	[альфа-уровень']
 	(* <- lang_ru;;	*);;
-
-
-//---------------------------------------------------------------------------------------------------
-
-
-same_name_component
-<- sc_node_norole_relation;
-<- relation;
-<- oriented_relation;
-<- ternary_relation;
-=> nrel_main_idtf:
-	[одноименная компонента кортежей*]
-	(* <- lang_ru;;	*);
-=> nrel_idtf:
-	[одноименная компонента*]
-	(* <- lang_ru;;	*);;
-
-same_name_component
-<- rrel_key_sc_element:
-	.Definition_of_same_name_component
-	(* 
-	<- definition;;
-	=> nrel_main_idtf:
-		[Опр.(одноименная компонента кортежей*)]
-			(* <- lang_ru;;	*);;
-	<= nrel_sc_text_translation:
-		...
-		(* 
-		-> rrel_example:"file://content/content_htmls/same_name_component.html" (* <-lang_ru;; *);;
-		*);;
-	<= nrel_using_constants:
-		...
-		(* 
-		-> oriented_set_length;
-		   oriented_set;
-		   nrel_component;;
-		*);;
-	*);;
-
-same_name_component
-=>nrel_first_domain: element_of_set;
-=>nrel_second_domain: oriented_set;
-=>nrel_third_domain: oriented_set;
-=>nrel_definitional_domain:
-...
-(*
-	<=nrel_combination:
-	{
-		element_of_set;
-		oriented_set
-	};;
-*);;
 
 
 //----------------------------------------------------------------------------------------------------

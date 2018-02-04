@@ -1,0 +1,89 @@
+binomial_theorem
+=> nrel_main_idtf: 
+	[Биномиальная теорема] (* <- lang_ru;; *);
+	[Binomial theorem] (* <- lang_en;; *);
+<- observation;
+<= nrel_sc_text_translation:	
+		...
+		(*
+		-> 
+			"file://content/content_html/binomial_theorem.html"
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+
+Cantor_Bernstein_theorem
+=> nrel_main_idtf: 
+	[Теорема Кантора-Бернштейна] (* <- lang_ru;; *);
+	[Cantor-Bernstein theorem] (* <- lang_en;; *);
+<- observation;
+<= nrel_sc_text_translation:	
+		...
+		(*
+		-> 
+			"file://content/content_html/Cantor_Bernstein_theorem.html"
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+
+Cantor_theorem
+=> nrel_main_idtf: 
+	[Теорема Кантора] (* <- lang_ru;; *);
+	[Cantor theorem] (* <- lang_en;; *);
+<- observation;
+<= nrel_sc_text_translation:	
+		...
+		(*
+		-> 
+			"file://content/content_html/Cantor_theorem.html"
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+
+diagonal_theorem
+=> nrel_main_idtf: 
+	[Диагональная теорема] (* <- lang_ru;; *);
+	[diagonal theorem] (* <- lang_en;; *);
+<- observation;
+<= nrel_sc_text_translation:	
+		...
+		(*
+		-> 
+			"file://content/content_html/diagonal_theorem.html"
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+
+Dilworth_theorem
+=> nrel_main_idtf: 
+	[Теорема Дилуорса] (* <- lang_ru;; *);
+	[Dilworth theorem] (* <- lang_en;; *);
+<- observation;
+<= nrel_sc_text_translation:	
+		...
+		(*
+		-> 
+			"file://content/content_html/Dilworth_theorem.html"
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+
+Szpilrajn_theorem
+=> nrel_main_idtf: 
+	[Теорема Шпильрайна] (* <- lang_ru;; *);
+	[Szpilrajn_theorem] (* <- lang_en;; *);
+<- observation;
+<= nrel_sc_text_translation:	
+		...
+		(*
+		-> 
+			"file://content/content_html/Szpilrajn_theorem.html"
+			(*
+			<- lang_ru;;
+			*);;
+		*);;

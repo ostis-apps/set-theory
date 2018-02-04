@@ -1,0 +1,181 @@
+proc_get_multiplicity_of_element
+=> nrel_main_idtf:
+	[Процедура нахождения кратности вхождения элемента в мультимножество]
+		(* <- lang_ru;; *);;
+
+scp_program -> proc_get_multiplicity_of_element
+(*
+	-> rrel_params: ...
+	(*
+		-> rrel_1: rrel_in: _multiset;;
+		-> rrel_2: rrel_in: _element;;
+
+		// кратность вхождения элемента _element в мультимножество _multiset
+		// sc-ссылка с числовым содержимым
+		-> rrel_3: rrel_out: _multiplicity;;
+	*);;
+
+	-> rrel_operators: ...
+	(*
+		-> rrel_init: .proc_get_multiplicity_of_element_operator_print_start
+		(*
+			<- printNl;;
+
+			-> rrel_1: rrel_scp_const: [Начало. Процедура нахождения кратности вхождения элемента в мультимножество];;
+
+			=> nrel_goto: .proc_get_multiplicity_of_element_operator_gen_multiplicity;;
+   		*);;
+
+		-> .proc_get_multiplicity_of_element_operator_gen_multiplicity
+		(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _multiplicity;;
+
+			=> nrel_goto: .proc_get_multiplicity_of_element_operator_check_belonging;;
+		*);;
+
+		-> .proc_get_multiplicity_of_element_operator_check_belonging
+		(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _multiset;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _belonging_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _element;;
+
+			=> nrel_then: .proc_get_multiplicity_of_element_operator_get_all_arc_attributes;;
+			=> nrel_else: .proc_get_multiplicity_of_element_operator_zero_multiplicity;;
+		*);;
+
+		-> .proc_get_multiplicity_of_element_operator_get_all_arc_attributes
+		(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _multiset;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _belonging_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _element;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _multiplicity_arc;;
+			-> rrel_5: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _attribute;;
+
+			-> rrel_set_5: rrel_assign: rrel_scp_var: _attribute_set;;
+
+			=> nrel_then: .proc_get_multiplicity_of_element_operator_get_attribute;;
+			=> nrel_else: .proc_get_multiplicity_of_element_operator_zero_multiplicity;;
+		*);;
+
+/////////////////////////////////////////////////////////////////////////////
+// цикл по всем кандидатам в класс кратности принадлежности
+
+		-> .proc_get_multiplicity_of_element_operator_get_attribute
+		(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _attribute_set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _attribute_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _attribute;;
+
+			=> nrel_then: .proc_get_multiplicity_of_element_operator_erase_attribute_arc;;
+			=> nrel_else: .proc_get_multiplicity_of_element_operator_zero_multiplicity;;
+		*);;
+
+		-> .proc_get_multiplicity_of_element_operator_erase_attribute_arc
+		(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _attribute_arc;;
+
+			=> nrel_goto: .proc_get_multiplicity_of_element_operator_check_if_attribute_is_multiplicity_class;;
+		*);;
+
+		-> .proc_get_multiplicity_of_element_operator_check_if_attribute_is_multiplicity_class
+		(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: multiplicity_of_belonging;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _multiplicity_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _attribute;;
+
+			=> nrel_then: .proc_get_multiplicity_of_element_operator_find_value;;
+			=> nrel_else: .proc_get_multiplicity_of_element_operator_get_attribute;;
+		*);;
+
+/////////////////////////////////////////////////////////////////////////////
+
+		-> .proc_get_multiplicity_of_element_operator_find_value
+		(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _attribute;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _value_binary_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _value;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _measurement_arc;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_measurement;;
+
+			=> nrel_then: .proc_get_multiplicity_of_element_operator_check_if_value_is_number;;
+			=> nrel_else: .proc_get_multiplicity_of_element_operator_zero_multiplicity;;
+		*);;
+
+		-> .proc_get_multiplicity_of_element_operator_check_if_value_is_number
+		(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: number;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _number_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _value;;
+
+			=> nrel_then: .proc_get_multiplicity_of_element_operator_get_number_idtf;;
+			=> nrel_else: .proc_get_multiplicity_of_element_operator_zero_multiplicity;;
+		*);;
+
+		-> .proc_get_multiplicity_of_element_operator_get_number_idtf
+		(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _value;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _idtf_binary_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _number_idtf;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _idtf_arc;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_idtf;;
+
+			=> nrel_then: .proc_get_multiplicity_of_element_operator_assign_multiplicity;;
+			=> nrel_else: .proc_get_multiplicity_of_element_operator_zero_multiplicity;;
+		*);;
+
+		-> .proc_get_multiplicity_of_element_operator_assign_multiplicity
+		(*
+			<- contAssign;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _multiplicity;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _number_idtf;;
+
+			=> nrel_goto: .proc_get_multiplicity_of_element_operator_print_end;;
+		*);;
+
+		// в случае, если элемент не принадлежит мультимножеству,
+		// или не была найдена корректная конструкция с кратностью принадлежности,
+		// то кратность вхождения принимается равной нулю
+		-> .proc_get_multiplicity_of_element_operator_zero_multiplicity
+		(*
+			<- contAssign;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _multiplicity;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+
+			=> nrel_goto: .proc_get_multiplicity_of_element_operator_print_end;;
+		*);;
+
+		-> .proc_get_multiplicity_of_element_operator_print_end
+		(*
+			<- printNl;;
+
+			-> rrel_1: rrel_scp_const: [Конец. Процедура нахождения кратности вхождения элемента в мультимножество];;
+
+			=> nrel_goto: .proc_get_multiplicity_of_element_operator_return;;
+   		*);;
+
+		-> .proc_get_multiplicity_of_element_operator_return
+		(*
+        	<- return;;
+        *);;
+	*);;
+*);;

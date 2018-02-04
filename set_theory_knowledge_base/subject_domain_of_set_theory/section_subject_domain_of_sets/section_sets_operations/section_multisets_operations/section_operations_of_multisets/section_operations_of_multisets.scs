@@ -1,0 +1,22 @@
+section_operations_of_multisets
+=> nrel_main_idtf:
+	[Раздел. Операции]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/section_multisets_operations.html" (* <-lang_ru;; *);;
+		*);;
+
+section_operations_of_multisets =  [*^"file://section_operations_of_multisets.scsi"*];;
+
+section_operations_of_multisets
+->rrel_key_sc_element:
+	nrel_multiset_combination;
+	nrel_multiset_intersection;
+	nrel_multiset_arithmetic_sum;
+	nrel_multiset_arithmetic_difference;
+	nrel_multiset_complement;
+	nrel_symmetric_multiset_difference;
+	nrel_multiset_arithmetic_product;
+	nrel_multiset_direct_product;;

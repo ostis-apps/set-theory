@@ -15,5 +15,10 @@ section_sets_relations
 			section_relations_operations;;
 		*);
 		section_relations_operations
+		(*
+		=> nrel_section_base_order:
+			section_relations_on_multisets;;
+		*);
+		section_relations_on_multisets
 	};;
 

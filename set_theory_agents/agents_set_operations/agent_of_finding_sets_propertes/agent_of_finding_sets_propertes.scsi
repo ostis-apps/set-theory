@@ -40,11 +40,28 @@ scp_program -> agent_of_finding_sets_propertes
 			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _param;;
-			=>nrel_then: .agent_of_finding_sets_propertes_operator5;;
+			=>nrel_then: .agent_of_finding_sets_propertes_operator4;;
 			=>nrel_else: .agent_of_finding_sets_propertes_operator_return;;
 		*);;
-		
-		-> .agent_of_finding_sets_propertes_operator5 (*
+
+		-> .agent_of_finding_sets_propertes_operator4 (*
+            <- call;;
+            -> rrel_1: rrel_fixed: rrel_scp_const: proc_of_finding_power;;
+            -> rrel_2: ... (*
+                -> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+                -> rrel_2: rrel_assign: rrel_scp_var: _current;;
+            *);;
+            -> rrel_3: rrel_assign: rrel_scp_var: _argument;;
+            => nrel_goto: .agent_of_finding_sets_propertes_operator4_0;;
+        *);;
+
+        ->.agent_of_finding_sets_propertes_operator4_0 (*
+            <- waitReturn;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _argument;;
+            => nrel_goto: .agent_of_finding_sets_propertes_operator5;;
+        *);;
+
+        -> .agent_of_finding_sets_propertes_operator5 (*
 			<- call;; 
 			-> rrel_1: rrel_fixed: rrel_scp_const:  proc_of_finding_sets_propertes ;;
 			->rrel_2:rrel_fixed:rrel_scp_const: 

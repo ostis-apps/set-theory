@@ -1,0 +1,167 @@
+///////////////////////////////////////////////////////////
+// projection
+
+projection
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[проекция]
+	(* <- lang_ru;;	*);
+<- rrel_key_sc_element:
+	Definition_of_projection
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: "file://content/projection.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(*
+		-> cartesian_product;
+		nrel_component;
+		element_of_set;;
+		*);;
+	*);;
+
+Definition_of_projection
+=> nrel_main_idtf:
+	[Определение понятия "проекция"]
+	(* <- lang_ru;;	*);;
+
+///////////////////////////////////////////////////////////
+// nrel_projection_of_set
+
+nrel_projection_of_set
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antitransitive_relation;
+<- antireflexive_relation;
+=> nrel_main_idtf:
+	[проекция множества*]
+	(* <- lang_ru;;	*);;
+
+nrel_projection_of_set
+<- rrel_key_sc_element:
+	Definition_of_nrel_projection_of_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/nrel_projection_of_set.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> set;
+		  oriented_set;
+		  oriented_set_length;
+		  projection;;
+		*);;
+	*);;
+
+Definition_of_nrel_projection_of_set
+=> nrel_main_idtf:
+	[Определение понятия "проекция множества*"]
+	(* <- lang_ru;;	*);;
+
+nrel_projection_of_set
+=>nrel_first_domain: set;
+=>nrel_second_domain: set;;
+
+///////////////////////////////////////////////////////////
+// nrel_component
+
+nrel_component
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- antitransitive_relation;
+<- antireflexive_relation;
+<- antisymmetric_relation;
+=> nrel_main_idtf:
+	[компонента*]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[компонента кортежа*]
+	(* <- lang_ru;;	*);
+	[i-тая компонента кортежа*]
+	(* <- lang_ru;;	*);
+	[i-тая проекция кортежа*]
+	(* <- lang_ru;;	*);;
+
+nrel_component
+<- rrel_key_sc_element:
+	Definition_of_nrel_component
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/nrel_component.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> oriented_set;
+		element_of_set;;
+		*);;
+	*);;
+
+Definition_of_nrel_component
+=> nrel_main_idtf:
+	[Определение отношения "компонента*"]
+	(* <- lang_ru;;	*);;
+
+nrel_component
+=>nrel_first_domain: element_of_set;
+=>nrel_second_domain: oriented_set;;
+
+///////////////////////////////////////////////////////////
+// same_name_component
+
+same_name_component
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- ternary_relation;
+<- antireflexive_relation;
+=> nrel_main_idtf:
+	[одноименная компонента кортежей*]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[одноименная компонента*]
+	(* <- lang_ru;;	*);;
+
+same_name_component
+<- rrel_key_sc_element:
+	Definition_of_same_name_component
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/same_name_component.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> oriented_set_length;
+		   oriented_set;
+		   nrel_component;;
+		*);;
+	*);;
+
+Definition_of_same_name_component
+=> nrel_main_idtf:
+	[Определение понятия "одноименная компонента кортежей*"]
+	(* <- lang_ru;;	*);;
+
+same_name_component
+=>nrel_first_domain: element_of_set;
+=>nrel_second_domain: oriented_set;
+=>nrel_third_domain: oriented_set;;

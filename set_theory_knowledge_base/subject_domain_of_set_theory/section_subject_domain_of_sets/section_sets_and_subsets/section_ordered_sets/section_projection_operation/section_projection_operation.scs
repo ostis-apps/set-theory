@@ -1,0 +1,18 @@
+section_projection_operation
+=> nrel_main_idtf:
+	[Раздел. Операция проекции]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/section_projection_operation.html" (* <-lang_ru;; *);;
+		*);;
+
+section_projection_operation = [*^"file://section_projection_operation.scsi"*];;
+
+section_projection_operation
+-> rrel_key_sc_element:
+	projection;
+	nrel_projection_of_set;
+	nrel_component;
+	same_name_component;;

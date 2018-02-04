@@ -156,18 +156,7 @@ combinatorial_object
 				*);;
 		*);
 	 <- rrel_key_sc_element:
-		... 
-		(*
-		=> nrel_sys_idtf: binomial_theorem;;
-		=> nrel_main_idtf: [Утв.(бином Ньютона)] (* <- lang_ru;; *);;
-		<- sc_statement;;
-		<= nrel_sc_text_translation: 
-			...
-			(*		-> rrel_example:
-					"file://html/binomial_theorem.html"
-					(* <- lang_ru;; *);;
-				*);;
-		*);
+		binomial_theorem; 
 	 <- rrel_key_sc_element:
 		... 
 		(*
@@ -546,7 +535,7 @@ bit_vector
 				*);;
 			*);
 	-> rrel_example:
-		"file://html/bit_vector.jpg";;
+		"file://html/bit_vector.jpeg";;
 
 partition
    <- sc_node_norole_relation;

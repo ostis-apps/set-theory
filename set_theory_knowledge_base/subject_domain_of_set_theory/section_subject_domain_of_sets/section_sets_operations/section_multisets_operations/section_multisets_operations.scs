@@ -1,0 +1,16 @@
+section_multisets_operations
+=> nrel_main_idtf:
+	[Раздел. Операции на мультимножествах]
+	(* <- lang_ru;; *);
+
+<= nrel_section_decomposition:
+{
+	
+	section_operations_of_multisets
+	(*
+	=> nrel_section_base_order: 
+		section_properties_of_multisets_operations;;
+	*);
+	section_properties_of_multisets_operations
+	
+};;

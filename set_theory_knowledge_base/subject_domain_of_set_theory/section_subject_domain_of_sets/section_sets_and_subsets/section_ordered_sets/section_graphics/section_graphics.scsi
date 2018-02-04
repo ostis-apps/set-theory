@@ -1,0 +1,140 @@
+///////////////////////////////////////////////////////////
+// nrel_graph
+
+nrel_graph
+<- sc_node_norole_relation;
+<- relation;
+<- oriented_relation;
+<- binary_relation;
+<- transitive_relation;
+<- reflexive_relation;
+=> nrel_main_idtf:
+	[график*]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[быть графиком*]
+	(* <- lang_ru;;	*);;
+
+nrel_graph
+<- rrel_key_sc_element:
+	Definition_of_nrel_graph
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/nrel_graph.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> function;
+			cartesian_product;
+			nrel_inclusion;
+			set;;
+		*);;
+
+
+	*);;
+
+Definition_of_nrel_graph
+=> nrel_main_idtf:
+	[Определение отношения график*]
+	(* <- lang_ru;;	*);;
+
+nrel_graph
+=>nrel_first_domain: function;
+=>nrel_second_domain: set;;
+
+///////////////////////////////////////////////////////////
+// concept_injection_graph
+
+concept_injection_graph
+=> nrel_main_idtf:
+	[инъективный график](* <-lang_ru;; *);
+	[injection graph](* <- lang_en;; *);
+=> nrel_idtf:
+	[embedding graph](* <- lang_en;; *);
+	[injection graph](* <- lang_en;; *);;
+
+concept_injection_graph
+ <= nrel_inclusion:concept_graph;;
+
+concept_injection_graph
+<- rrel_key_sc_element:
+	Definition_of_concept_injection_graph
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/concept_injection_graph.html" (* <-lang_ru;; *);;
+		*);;
+	   <= nrel_using_constants:...
+		(* 
+		->concept_schedule;concept_function;concept_equation;;
+		*);;
+	*);;
+
+Definition_of_concept_injection_graph
+=> nrel_main_idtf:
+	[Определение понятия "инъективный график"]
+	(* <- lang_ru;;	*);;
+
+concept_injection_graph
+<- rrel_key_sc_element:...
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf: [Утв. (инъективный график, композиция, инъективность)] (*<-lang_ru;;*);;
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example: [Композиция инъективных графиков инъективна.] (* <-lang_ru;; *);;
+		*);;
+	*);
+<- rrel_key_sc_element:...
+	(* 
+	<- sc_explanation;;
+	=> nrel_main_idtf: [Утв.(инверсия, функциональный график,инъективный график)] (* <-lang_ru;; *);; 
+	<= nrel_sc_text_translation:...
+		(* 
+		-> rrel_example: [Инверсия переводит функциональный график в инъективный и наоборот.] (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+///////////////////////////////////////////////////////////
+// functional_graph
+
+functional_graph
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[функциональный график]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[functional graph]
+	(* <- lang_en;; *);;
+
+functional_graph
+<- rrel_key_sc_element:
+	Definition_of_functional_graph
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/functional_graph.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> graph_of_correspondence;;
+		-> pair_set;;
+		-> element_of_set;;
+		-> rrel_input_set;;
+		*);;
+	*);;
+
+Definition_of_functional_graph
+=> nrel_main_idtf:
+	[Определение понятия "функциональный график"]
+	(* <- lang_ru;;	*);;
+
