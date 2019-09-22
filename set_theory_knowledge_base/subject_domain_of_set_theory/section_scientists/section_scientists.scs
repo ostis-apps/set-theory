@@ -1,0 +1,18 @@
+section_scientists
+=> nrel_main_idtf:
+	[Раздел. Ученые]
+	(* <- lang_ru;; *);;
+section_scientists
+	<= nrel_section_decomposition:
+	{
+section_set_scientists
+(*		=> nrel_section_base_order:
+			section_math_scientists;;
+		*);
+section_math_scientists
+(*
+	=> nrel_section_base_order:
+			section_combinatorics_scientists;;
+		*);
+section_combinatorics_scientists
+};;

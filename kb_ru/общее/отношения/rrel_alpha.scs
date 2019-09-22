@@ -1,7 +1,0 @@
-rrel_alpha
-<- sc_node_role_relation;;
-
-rrel_alpha
-=> nrel_main_idtf:
-	[альфа-уровень']
-	(* <- lang_ru;;	*);;

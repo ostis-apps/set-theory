@@ -1,0 +1,689 @@
+complex_function
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[комплексная функция]
+	(* <- lang_ru;;	*);;
+
+complex_function
+<- rrel_key_sc_element:
+	Definition_of_complex_function
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/complex_function.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);;
+
+
+Definition_of_complex_function
+=> nrel_main_idtf:
+	[Определение понятия "комплексная функция"]
+	(* <- lang_ru;;	*);;
+
+
+
+//-----------------------------------------------------------------------------------------------
+
+
+complex_valued_function
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[комплекснозначная функция]
+	(* <- lang_ru;;	*);;
+
+complex_valued_function
+<= nrel_subdividing: 
+	{
+	complex_function
+	};;
+
+complex_valued_function
+<- rrel_key_sc_element:
+	Definition_of_complex_valued_function
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/complex_valued_function.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);;
+
+
+Definition_of_complex_valued_function
+=> nrel_main_idtf:
+	[Определение понятия "комплекснозначная функция"]
+	(* <- lang_ru;;	*);;
+
+
+//-----------------------------------------------------------------------------------------------
+
+
+composition
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[композиция функций]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[суперпозиция функций]
+	(*<- lang_ru;;*);;
+
+composition
+<- rrel_key_sc_element:
+	Definition_of_composition
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/composition.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> function;;
+		*);;
+	*);;
+
+Definition_of_composition
+=> nrel_main_idtf:
+	[Определение понятия "композиция функций"]
+	(* <- lang_ru;;	*);;
+
+
+
+//-----------------------------------------------------------------------------------------------
+
+
+domain_of_definition
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[область определения функции]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[domain of definition]
+	(* <- lang_en;; *);;
+
+domain_of_definition
+<- rrel_key_sc_element:
+	Definition_of_domain_of_definition
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/domain_of_definition.html" (* <-lang_ru;; *);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> function_argument;;
+		-> set;;
+		*);;
+	*);;
+
+
+Definition_of_domain_of_definition
+=> nrel_main_idtf:
+	[Определение понятия "область определения функции"]
+	(* <- lang_ru;;	*);;
+
+
+
+//-----------------------------------------------------------------------------------------------
+
+
+exponential_generating_function
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[экспоненциальная производящая функция]
+	(* <- lang_ru;;	*);;
+
+exponential_generating_function
+<- rrel_key_sc_element:
+	Definition_of_exponential_generating_function
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/exponential_generating_function.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);;
+
+
+Definition_of_exponential_generating_function
+=> nrel_main_idtf:
+	[Определение понятия "экспоненциальная производящая функция"]
+	(* <- lang_ru;;	*);;
+
+
+//-----------------------------------------------------------------------------------------------
+
+
+formal_power_series
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[формальный степенной ряд]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[формальный ряд]
+	(* <- lang_ru;;	*);;
+
+formal_power_series
+<= nrel_subdividing: 
+	{
+	dirichlet_series;
+	taylor_series
+	};;
+
+formal_power_series
+<- rrel_key_sc_element:
+	Definition_of_formal_power_series
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/formal_power_series.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);;
+
+
+Definition_of_formal_power_series
+=> nrel_main_idtf:
+	[Определение понятия "формальный степенной ряд"]
+	(* <- lang_ru;;	*);;
+
+
+//-----------------------------------------------------------------------------------------------
+
+
+function
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[функция]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[отображение]
+	(* <- lang_ru;; *);
+	[оператор]
+	(* <- lang_ru;; *);
+	[преобразование]
+	(* <- lang_ru;; *);;
+
+function
+<- rrel_key_sc_element:
+	Definition_of_function
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/function.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);;
+
+
+Definition_of_function
+=> nrel_main_idtf:
+	[Определение понятия "функция"]
+	(* <- lang_ru;;	*);;
+
+subdividing_to_the_presence_of_image
+	=>nrel_main_idtf:
+		[Разбиение по признаку образа] (* <-lang_ru;; *);;
+function
+	<= nrel_subdividing: 
+	subdividing_to_the_presence_of_image
+	(*
+		->injection;
+		surjection;
+		bijection;;
+		
+	*);;
+
+
+//-----------------------------------------------------------------------------------------------
+
+
+function_argument
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[аргумент функции]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[аргумент отображения]
+	(* <- lang_ru;; *);;
+
+function_argument
+<- rrel_key_sc_element:
+	Definition_of_function_argument
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/function_argument.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+Definition_of_function_argument
+=> nrel_main_idtf:
+	[Определение понятия "аргумент функции"]
+	(* <- lang_ru;;	*);;
+
+function_argument
+	<= nrel_using_constants:
+		...
+		(* 
+		-> function_value;;
+		*);;
+
+
+//-----------------------------------------------------------------------------------------------
+
+
+function_value
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[значение функции]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[зависимая переменная]
+	(* <- lang_ru;; *);;
+
+function_value
+<- rrel_key_sc_element:
+	Definition_of_function_value
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/function_value.html" (* <-lang_ru;; *);;
+		*);;
+
+	*);;
+
+Definition_of_function_value
+=> nrel_main_idtf:
+	[Определение понятия "значение функции"]
+	(* <- lang_ru;;	*);;
+
+function_value
+	<= nrel_using_constants:
+		...
+		(* 
+		-> function_argument;;
+		*);;
+
+
+//-----------------------------------------------------------------------------------------------
+
+
+generating_function
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[производящая функция]
+	(* <- lang_ru;;	*);;
+
+generating_function
+<- rrel_key_sc_element:
+	Definition_of_generating_function
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/generating_function.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);;
+
+
+Definition_of_generating_function
+=> nrel_main_idtf:
+	[Определение понятия "производящая функция"]
+	(* <- lang_ru;;	*);;
+
+
+//-----------------------------------------------------------------------------------------------
+
+
+holomorphic_function
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[голоморфная функция]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[аналитическая функция]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	[регулярная функция]
+	(* <- lang_ru;; *);;
+
+holomorphic_function
+<- rrel_key_sc_element:
+	Definition_of_holomorphic_function
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/holomorphic_function.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);;
+
+
+Definition_of_holomorphic_function
+=> nrel_main_idtf:
+	[Определение понятия "голоморфная функция"]
+	(* <- lang_ru;;	*);;
+
+
+//-----------------------------------------------------------------------------------------------
+
+
+induced_function
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[индуцированная функция]
+	(* <- lang_ru;;	*);;
+
+induced_function
+<- rrel_key_sc_element:
+	Definition_of_induced_function
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/induced_function.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+Definition_of_induced_function
+=> nrel_main_idtf:
+	[Определение понятия "индуцированная функция"]
+	(* <- lang_ru;;	*);;
+
+
+//-----------------------------------------------------------------------------------------------
+
+
+inverse_function
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[обратная функция]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[обратное отображение]
+	(*<- lang_ru;;*);;
+
+inverse_function
+<- rrel_key_sc_element:
+	Definition_of_inverse_function
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/inverse_function.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+Definition_of_inverse_function
+=> nrel_main_idtf:
+	[Определение понятия "обратная функций"]
+	(* <- lang_ru;;	*);;
+
+
+
+//-----------------------------------------------------------------------------------------------
+
+
+mebious_function
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[функция Мёбиуса]
+	(* <- lang_ru;;	*);;
+
+mebious_function
+<- rrel_key_sc_element:
+	Definition_of_mebious_function
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/mebious_function.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);;
+
+
+Definition_of_mebious_function
+=> nrel_main_idtf:
+	[Определение понятия "функция Мёбиуса"]
+	(* <- lang_ru;;	*);;
+
+
+//-----------------------------------------------------------------------------------------------
+
+
+partial_function
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[частичная функция]
+	(* <- lang_ru;;	*);;
+
+partial_function
+<- rrel_key_sc_element:
+	Definition_of_partial_function
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/partial_function.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+Definition_of_partial_function
+=> nrel_main_idtf:
+	[Определение понятия "частичная функция"]
+	(* <- lang_ru;;	*);;
+
+
+
+//-----------------------------------------------------------------------------------------------
+
+
+riemann_zeta_function
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[дзета-функция Римана]
+	(* <- lang_ru;;	*);;
+
+riemann_zeta_function
+<- rrel_key_sc_element:
+	Definition_of_riemann_zeta_function
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/riemann_zeta_function.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);;
+
+
+Definition_of_riemann_zeta_function
+=> nrel_main_idtf:
+	[Определение понятия "дзета-функция Римана"]
+	(* <- lang_ru;;	*);;
+
+
+//-----------------------------------------------------------------------------------------------
+
+
+supremum_of_set
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[супремум функции]
+	(* <- lang_ru;;	*);;
+
+supremum_of_set
+<- rrel_key_sc_element:
+	Definition_of_supremum_of_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/supremum_of_set.html" (* <-lang_ru;; *);;
+		*);;
+	
+
+	*);;
+
+
+Definition_of_supremum_of_set
+=> nrel_main_idtf:
+	[Определение понятия "супремум функции"]
+	(* <- lang_ru;;	*);;
+
+
+
+//-----------------------------------------------------------------------------------------------
+
+
+taylor_series
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[ряд Тейлора]
+	(* <- lang_ru;;	*);;
+
+taylor_series
+<- rrel_key_sc_element:
+	Definition_of_taylor_series
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/taylor_series.html" (* <-lang_ru;; *);;
+		*);;
+	
+	*);;
+
+
+Definition_of_taylor_series
+=> nrel_main_idtf:
+	[Определение понятия "ряд Тейлора"]
+	(* <- lang_ru;;	*);;
+
+
+//-----------------------------------------------------------------------------------------------
+
+
+total_function
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[тотальная функция]
+	(* <- lang_ru;;	*);;
+
+total_function
+<- rrel_key_sc_element:
+	Definition_of_total_function
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/total_function.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+Definition_of_total_function
+=> nrel_main_idtf:
+	[Определение понятия "тотальная функция"]
+	(* <- lang_ru;;	*);;
+
+
+
+//-----------------------------------------------------------------------------------------------
+
+
+transformation
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[преобразование]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[transformation]
+	(*<- lang_en;;*);;
+
+transformation
+<- rrel_key_sc_element:
+	Definition_of_transformation
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/transformation.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+Definition_of_transformation
+=> nrel_main_idtf:
+	[Определение понятия "преобразование"]
+	(* <- lang_ru;;	*);;
+
+
+
+//-----------------------------------------------------------------------------------------------
+
+
+transition_to_preimages
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[переход к прообразам]
+	(* <- lang_ru;;	*);;
+
+transition_to_preimages
+<- rrel_key_sc_element:
+	Definition_of_transition_to_preimages
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/transition_to_preimages.html" (* <-lang_ru;; *);;
+		*);;
+	*);;
+
+Definition_of_transition_to_preimages
+=> nrel_main_idtf:
+	[Определение понятия "переход к прообразам"]
+	(* <- lang_ru;;	*);;
+
+
+
+//-----------------------------------------------------------------------------------------------
+
+
+
+
+

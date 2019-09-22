@@ -1,3 +1,0 @@
-<p>
-<b><sc_element sys_idtf = "nrel_condensation_point">Точка конденсации</sc_element></b><sc_element sys_idtf = "set">множества</sc_element> X, лежащего в евклидовом пространстве &real;<sup>n</sup> - точка из &real;<sup>n</sup>, в любой окрестности которой содержится <sc_element sys_idtf = "uncountable_set"несчетное множество</sc_element> точек множества X.
-</p>

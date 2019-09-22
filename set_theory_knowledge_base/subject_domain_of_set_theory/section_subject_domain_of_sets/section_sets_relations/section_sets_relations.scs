@@ -1,0 +1,24 @@
+section_sets_relations
+=> nrel_main_idtf:
+	[Раздел. Отношения на множествах]
+	(* <- lang_ru;; *);
+<= nrel_section_decomposition:
+	{
+		section_concept_of_relation
+		(*
+		=> nrel_section_base_order: 
+			section_properties_of_relations;;
+		*);
+		section_properties_of_relations
+		(*
+		=> nrel_section_base_order: 
+			section_relations_operations;;
+		*);
+		section_relations_operations
+		(*
+		=> nrel_section_base_order:
+			section_relations_on_multisets;;
+		*);
+		section_relations_on_multisets
+	};;
+

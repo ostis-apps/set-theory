@@ -1,0 +1,15 @@
+section_elements_of_the_set
+=> nrel_main_idtf:
+	[Раздел. Элементы и множества]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/section_elements_of_the_set.html" (* <-lang_ru;; *);;
+		*);;
+
+section_elements_of_the_set =  [*^"file://section_elements_of_the_set.scsi"*];;
+
+section_elements_of_the_set
+-> rrel_key_sc_element:
+	element_of_set;;

@@ -1,0 +1,54 @@
+sc_agent_of_finding_multisets_intersection
+=> nrel_main_idtf:
+	[sc-агент нахождения пересечения мультимножеств] 
+		(* <- lang_ru;; *);
+	[sc-agent of finding intersection of multisets] 
+		(* <- lang_en;; *);
+
+<- abstract_sc_agent;
+
+=> nrel_primary_initiation_condition: 
+		(sc_event_add_output_arc => question_initiated);
+
+=> nrel_initiation_condition_and_result: 
+		(..sc_agent_of_finding_buildings_condition_multisets_intersection => ..sc_agent_of_finding_buildings_result);
+
+<= nrel_sc_agent_key_sc_elements:
+	{
+	question_initiated;
+	question;
+	question_finding_multisets_intersection
+	};
+
+=> nrel_inclusion: 
+	.platform_independent_realization_of_sc_agent_of_finding_multisets_intersection
+	(*
+	<- platform_independent_abstract_sc_agent;;
+	<= nrel_sc_agent_program: 
+		{
+		// TODO: check all procedures
+		agent_of_finding_multisets_intersection;
+		proc_of_finding_multisets_intersection;
+		proc_add_el_set_answer;
+		proc_of_finding_add_param;
+		proc_search_of_sets_new
+		};;
+	-> sc_agent_of_finding_multisets_intersection_scp (* <- active_sc_agent;; *);;
+	*);;
+
+..sc_agent_of_finding_buildings_condition_multisets_intersection
+= [*
+	question_finding_multisets_intersection _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> .._parameter;;
+*];;
+
+..sc_agent_of_finding_buildings_result
+= [*
+	question_finding_multisets_intersection _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._answer;;
+	.._question _-> .._parameter;;
+*];;

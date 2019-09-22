@@ -1,0 +1,22 @@
+ui_menu_file_for_finding_multisets_union 
+	<- 	ui_user_command_class_atom; 
+		ui_user_command_class_view_kb;
+	=> nrel_main_idtf: 
+		[Каково объединение данных мультимножеств?]
+			(* <- lang_ru;; *);
+		[What is the result of union of given multisets?]
+			(* <- lang_en;; *);
+	=> ui_nrel_command_template:
+		[*
+		question_finding_multisets_union _-> ._question_finding_multisets_union_instance
+			(*
+				_-> rrel_1:: ui_arg_1;;
+				_-> rrel_2:: ui_arg_2;;
+			*);;
+		._question_finding_multisets_union_instance _<- question;;
+		*];
+	=> ui_nrel_command_lang_template: 
+		[Запрос нахождения объединения мультимножеств: $ui_arg_1 и $ui_arg_2] 
+			(* <- lang_ru;; *);
+		[Request to find the  union of multisets: $ui_arg_1 и $ui_arg_2]
+			(* <- lang_en;; *);;

@@ -1,0 +1,15 @@
+ui_menu_na_multisets
+<- ui_user_command_class_noatom;
+=> nrel_main_idtf:
+	[Команды для работы с мультимножествами] (* <- lang_ru;; *);
+	[Commands for working with multisets] (* <- lang_en;; *);
+
+<= nrel_ui_commands_decomposition:
+{
+    ui_menu_file_for_finding_multisets_sum;
+    ui_menu_file_for_finding_multisets_product;
+    ui_menu_file_for_finding_multisets_union;
+    ui_menu_file_for_finding_multisets_difference;
+    ui_menu_file_for_finding_multiset_peak_value;
+	ui_menu_file_for_printing_multiset
+};;

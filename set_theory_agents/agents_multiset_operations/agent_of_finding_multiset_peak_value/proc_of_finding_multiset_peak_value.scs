@@ -1,0 +1,167 @@
+scp_program -> proc_of_finding_multiset_peak_value (*
+    -> rrel_params: ... (*
+        -> rrel_1: rrel_in: _multiset;;
+        -> rrel_2: rrel_out: _peak_value;;
+    *);;
+
+    -> rrel_operators: ... (*
+        -> rrel_init: .proc_of_finding_multiset_peak_value_start
+		(*
+			<- printNl;;
+
+			-> rrel_1: rrel_scp_const: [Начало. Процедура нахождения высоты мультимножества];;
+
+			=> nrel_goto: .proc_of_finding_multiset_peak_value_gen_result;;
+   		*);;
+
+	    -> .proc_of_finding_multiset_peak_value_gen_result
+		(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _peak_value;;
+
+			=> nrel_goto: .proc_of_finding_multiset_peak_value_assign_value;;
+		*);;
+
+        -> .proc_of_finding_multiset_peak_value_assign_value
+		(*
+			<- contAssign;;
+            -> rrel_1: rrel_assign: rrel_scp_var: _peak_value;;
+            -> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+            => nrel_goto: .proc_of_finding_multiset_peak_value_gen_links_set;;
+		*);;
+        -> .proc_of_finding_multiset_peak_value_gen_links_set
+		(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _links_set;;
+
+			=> nrel_goto: .proc_of_finding_multiset_peak_value_copy_multiset;;
+		*);;
+        
+		-> .proc_of_finding_multiset_peak_value_copy_multiset
+		(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _multiset;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _belonging_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _multiset_element;;
+
+			-> rrel_set_3: rrel_assign: rrel_scp_var: _multiset_element_set;;
+
+			=> nrel_then: .proc_of_finding_multiset_peak_value_operator1;;
+			=> nrel_else: .proc_of_finding_multiset_peak_value_operator_return;;
+		*);;
+        -> .proc_of_finding_multiset_peak_value_operator1
+		(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _multiset_element_set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _belonging_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _multiset_element;;
+
+			=> nrel_then: .proc_of_finding_multiset_peak_value_erase_multiset_element_arc;;
+			=> nrel_else: .proc_of_finding_multiset_peak_value_operator2;;
+		*);;
+
+		-> .proc_of_finding_multiset_peak_value_erase_multiset_element_arc
+		(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _belonging_arc;;
+
+			=> nrel_goto: .proc_of_finding_multiset_peak_value_get_element_multiplicity;;
+		*);;
+
+		-> .proc_of_finding_multiset_peak_value_get_element_multiplicity
+		(*
+			<- call;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_get_multiplicity_of_element;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ...
+			(*
+					-> rrel_1: rrel_fixed: rrel_scp_var: _multiset;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _multiset_element;;
+
+					-> rrel_3: rrel_assign: rrel_scp_var: _element_multiplicity;;
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _proc_descriptor;;
+
+			=> nrel_goto: .proc_of_finding_multiset_peak_value_get_element_multiplicity_return;;
+		*);;
+
+		-> .proc_of_finding_multiset_peak_value_get_element_multiplicity_return
+		(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _proc_descriptor;;
+
+			=> nrel_goto: .proc_of_finding_multiset_peak_value_add_to_links_set;;
+		*);;
+
+        // добавление найденной кратности элемента во множество ссылок
+
+        -> .proc_of_finding_multiset_peak_value_add_to_links_set
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _links_set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _belonging_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _element_multiplicity;;
+
+			=> nrel_goto: .proc_of_finding_multiset_peak_value_operator1;;
+		*);;
+        
+        // цикл по множеству ссылок
+        -> .proc_of_finding_multiset_peak_value_operator2
+		(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _links_set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _link_belonging_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _current_link;;
+
+			=> nrel_then: .proc_of_finding_multiset_peak_value_erase_multiset_link_belonging_arc;;
+			=> nrel_else: .proc_of_finding_multiset_peak_value_print_peak_value;;
+		*);;
+
+        -> .proc_of_finding_multiset_peak_value_erase_multiset_link_belonging_arc
+		(*
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _link_belonging_arc;;
+
+			=> nrel_goto: .proc_of_finding_multiset_peak_value_compare_current_link_and_peak;;
+		*);;
+
+        -> .proc_of_finding_multiset_peak_value_compare_current_link_and_peak
+		(*
+			<- ifGr;;
+            -> rrel_1: rrel_scp_var: _current_link;;
+            -> rrel_2: rrel_scp_var: _peak_value;;
+            => nrel_then: .proc_of_finding_multiset_peak_value_assign_current_link_to_peak;;
+            => nrel_else: .proc_of_finding_multiset_peak_value_operator2;;
+		*);;
+
+        -> .proc_of_finding_multiset_peak_value_assign_current_link_to_peak
+		(*
+			<- contAssign;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _peak_value;;
+            -> rrel_2: rrel_fixed: rrel_scp_var: _current_link;;
+            => nrel_goto: .proc_of_finding_multiset_peak_value_operator2;;
+		*);;
+
+
+        -> .proc_of_finding_multiset_peak_value_print_peak_value (*
+                <- printNl;;
+                -> rrel_1: rrel_fixed: rrel_scp_var:  _peak_value;;
+                => nrel_goto: .proc_of_finding_multiset_peak_value_operator_return;;
+        *);;
+
+         -> .proc_of_finding_multiset_peak_value_operator_return(*
+    	  <- return;;
+        *);;
+
+
+    *);;
+*);;

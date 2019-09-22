@@ -1,0 +1,639 @@
+subject_domain_of_combination_theory
+	=> nrel_main_idtf:
+		[Предметная область комбинаторики] 
+		(* <- lang_ru;; *);
+		[Subject domain of combination theory]	
+		(* <- lang_en;; *);
+	<- subject_domain;
+	-> rrel_not_maximum_studied_object_class:
+		combinatorial_object;
+		basic_rules_of_combinatorics;
+	-> rrel_explored_relation: 
+		nrel_set_of_permutations;
+		nrel_set_of_repet_permutations;
+		nrel_set_of_partial_permutations;
+		nrel_set_of_repet_partial_permutations;
+		nrel_set_of_combinations;
+		nrel_set_of_repet_combinations;
+		bit_vector;
+		partition; 
+		partition_of_a_set;;
+
+combination_theory
+	=> nrel_main_idtf:
+		[комбинаторика]
+		(* <-lang_ru;; *);
+		[combination theory]
+		(* <- lang_en;; *);
+	=> nrel_idtf:
+		[комбинаторный анализ]
+		(* <-lang_ru;; *);
+		[combinatorial analysis]
+		(* <- lang_en;; *);
+	=> nrel_inclusion : 
+		{
+			enumerative_combinatorics;
+			extreme_combinatorics;
+			infinitary_combinatorics;
+			probabilistic_combinatorics;
+			ramsey_theory;
+			structural_combinatorics;
+			topological_combinatorics
+		};
+	<- rrel_key_sc_element:
+		... 
+		(*
+		=> nrel_main_idtf: [Опр.(комбинаторика)]  (* <- lang_ru;; *);;
+		<- sc_explanation;; 
+		<= nrel_sc_text_translation:
+			...
+			(* 
+			-> rrel_example: "file://html/combination_theory.html" (* <-lang_ru;; *);;
+			*);;
+		*);
+	<- rrel_key_sc_element:
+			...
+			(*  <- nrel_comment;;
+				<= nrel_sc_text_translation:	
+				...
+				(*
+					-> rrel_example:
+					"file://html/combination_theory_nrel_comment.html"
+					(* <- lang_ru;; *);;
+				*);;
+			*);;
+
+enumerative_combinatorics
+		=> nrel_main_idtf:
+		[перечислительная комбинаторика]
+		(* <-lang_ru;; *);
+		[enumerative combinatorics]
+		(* <- lang_en;; *);;
+extreme_combinatorics
+		=> nrel_main_idtf:
+		[экстримальная комбинаторика]
+		(* <-lang_ru;; *);
+		[extreme combinatorics]
+		(* <- lang_en;; *);;
+infinitary_combinatorics
+		=> nrel_main_idtf:
+		[инфинитарная комбинаторика]
+		(* <-lang_ru;; *);
+		[infinitary combinatorics]
+		(* <- lang_en;; *);;
+probabilistic_combinatorics
+		=> nrel_main_idtf:
+		[вероятностная комбинаторика]
+		(* <-lang_ru;; *);
+		[probabilistic combinatorics]
+		(* <- lang_en;; *);;
+ramsey_theory
+		=> nrel_main_idtf:
+		[теория Рамсея]
+		(* <-lang_ru;; *);
+		[ramsey theory]
+		(* <- lang_en;; *);;
+structural_combinatorics
+		=> nrel_main_idtf:
+		[структурная комбинаторика]
+		(* <-lang_ru;; *);
+		[structural combinatorics]
+		(* <- lang_en;; *);;
+topological_combinatorics
+		=> nrel_main_idtf:
+		[топологическая комбинаторика]
+		(* <-lang_ru;; *);
+		[topological combinatorics]
+		(* <- lang_en;; *);;
+
+
+combinatorial_object
+	=> nrel_main_idtf:
+		[комбинаторный объект]
+		(* <-lang_ru;; *);
+		[combinatorial object]
+		(* <- lang_en;; *);
+	=>nrel_idtf : 
+		[комбинаторная конфигурация]
+		(* <- lang_ru;;*);
+	<- rrel_key_sc_element:
+			...
+			(* 
+				 => nrel_main_idtf: [Опр.(комбинаторный объект)]  (* <- lang_ru;; *);;
+				<- sc_explanation;; 
+				<= nrel_sc_text_translation:	
+				...
+				(*
+					-> rrel_example:
+					"file://html/combinatorial_object.html"
+					(* <- lang_ru;; *);;
+				*);;
+			*);
+	 <- rrel_key_sc_element:
+		... 
+		(*
+		=> nrel_sys_idtf: combinatorial_object_sequence_statement;;
+		=> nrel_main_idtf: [Утв.(сумма)] ;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: 
+			...
+			(*		-> rrel_example:
+					"file://html/combinatorial_object_sequence_statement.html"
+					(* <- lang_ru;; *);;
+				*);;
+		*);
+	 <- rrel_key_sc_element:
+		... 
+		(*
+		=> nrel_sys_idtf: combinatorial_object_summ_statement;;
+		=> nrel_main_idtf: [Утв.(сумма, факториал)] (* <- lang_ru;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: 
+			...
+			(*		-> rrel_example:
+					"file://html/combinatorial_object_summ_statement.html"
+					(* <- lang_ru;; *);;
+				*);;
+		*);
+	 <- rrel_key_sc_element:
+		binomial_theorem; 
+	 <- rrel_key_sc_element:
+		... 
+		(*
+		=> nrel_main_idtf: [Утв.(упорядоченный комбинаторный объект)] (* <- lang_ru;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: 
+			...
+			(*		-> rrel_example:
+					"file://html/combinatorial_object_statement.html"
+					(* <- lang_ru;; *);;
+				*);;
+		*);
+	=> nrel_inclusion:
+		nrel_set_of_permutations;
+		nrel_set_of_repet_permutations;
+		nrel_set_of_partial_permutations;
+		nrel_set_of_repet_partial_permutations;
+		nrel_set_of_combinations;
+		nrel_set_of_repet_combinations;
+		bit_vector;
+		partition; 
+		partition_of_a_set;
+	<= nrel_inclusion : set;;
+
+nrel_set_of_combinations
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[множество сочетаний*] (* <- lang_ru;; *);
+		[set of combinations*] (* <- lang_en;; *);
+	=> nrel_idtf:
+		[множество всевозможных сочетаний*] (* <- lang_ru;; *);
+	=> nrel_idtf:
+		[множество всевозможных сочетаний заданной арности из элементов заданного множества*] (* <- lang_ru;; *);
+	=> nrel_idtf:
+		[множество всех неориентированных связок заданной арности*] (* <- lang_ru;; *);
+	=> nrel_idtf:
+		[множество всех подмножеств заданной мощности*] (* <- lang_ru;; *);
+	=> nrel_idtf:
+		[семейство всевозможных сочетаний*] (* <- lang_ru;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			<= nrel_sc_text_translation:
+			...
+				(*
+					-> rrel_example:
+						"file://html/definition_for_nrel_set_of_combinations.html"
+						(*<- lang_ru;;*);;
+				*);;
+		*);
+	<- rrel_key_sc_element:
+		...
+			(*  
+				<- statement;;
+				<= nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example:
+						"file://html/statement_for_nrel_set_of_combinations.html"			
+					(* <- lang_ru;;	*);;
+				*);;
+			*);
+	<- rrel_key_sc_element:
+		...
+			(*  
+				<- statement;;
+				<= nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example:
+						"file://html/Pascal_statement.html"			
+					(* <- lang_ru;;	*);;
+				*);;
+			*);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- description_of_a_typical_instance;;
+			<= nrel_sc_text_translation:
+			...
+				(*
+					-> rrel_example:
+						"file://html/image_for_nrel_set_of_combinations.png";;
+				*);;
+				=> nrel_comment:
+				...
+					(*
+						<= nrel_sc_text_translation:
+						...
+						(*
+							-> rrel_example:
+							"file://html/comment_for_nrel_set_of_combinations.html"
+							(* <- lang_ru;; *);; 
+						*);;
+					*);;
+		*);
+	<=nrel_first_domain: set;
+	<=nrel_second_domain : set_of_sets;
+	<- oriented_relation;
+	<- binary_relation;
+	<- antireflexive_relation;
+	<- antisymmetric_relation;
+	<- antitransitive_relation;;
+
+nrel_set_of_repet_combinations
+	=> nrel_main_idtf:
+		[множество сочетаний с повторами*]
+		(* <-lang_ru;; *);
+		[set of repet combinations*]
+		(* <- lang_en;; *);
+	<= nrel_inclusion : nrel_set_of_combinations;
+	<- rrel_key_sc_element:
+			...
+			(*  <- explanation;;
+				<= nrel_sc_text_translation:	
+				...
+				(*
+					-> rrel_example:
+					"file://html/nrel_set_of_repet_combinations.html"
+					(* <- lang_ru;; *);;
+				*);;
+			*);
+	<- rrel_key_sc_element:
+			...
+			(*
+				<- statement;;
+				<= nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example:
+						"file://html/statement_for_nrel_set_of_repet_combinations.html"			
+					(* <- lang_ru;;	*);;
+				*);;
+			*);
+
+	<- oriented_relation;
+	<- sc_node_norole_relation;
+	<- binary_relation;
+	<- antireflexive_relation;
+	<- antisymmetric_relation;
+	<- antitransitive_relation;
+	<=nrel_first_domain: set;
+	<=nrel_second_domain : set_of_sets;;
+
+nrel_set_of_partial_permutations
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[множество размещений*] (* <- lang_ru;; *);
+		[set of partial permutations*] (* <- lang_en;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			<= nrel_sc_text_translation:
+			...
+				(*
+					-> rrel_example:
+						"file://html/definition_for_nrel_set_of_partial_permutations.html"
+						(*<- lang_ru;;*);;
+				*);;
+		*);
+	<- rrel_key_sc_element:
+		...
+			(*
+				<- statement;;
+				<= nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example:
+						"file://html/statement_for_nrel_set_of_partial_permutations.html"			
+					(* <- lang_ru;;	*);;
+				*);;
+			*);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- description_of_a_typical_instance;;
+			<= nrel_sc_text_translation:
+			...
+				(*
+					-> rrel_example:
+						"file://html/image_for_nrel_set_of_partial_permutations.png";;
+				*);;
+				=> nrel_comment:
+				...
+					(*
+						<= nrel_sc_text_translation:
+						...
+						(*
+							-> rrel_example:
+							"file://html/comment_for_nrel_set_of_partial_permutations.html"
+							(* <- lang_ru;; *);; 
+						*);;
+					*);;
+		*);
+
+	<- oriented_relation;
+	<- binary_relation;
+	<- antireflexive_relation;
+	<- antisymmetric_relation;
+	<- antitransitive_relation;
+	<=nrel_first_domain: set;
+	<=nrel_second_domain : set_of_sets;;
+
+nrel_set_of_repet_partial_permutations
+	=> nrel_main_idtf:
+		[множество размещений с повторами*]
+		(* <-lang_ru;; *);
+		[set of repet partial permutations*]
+		(* <- lang_en;; *);
+	<= nrel_inclusion : nrel_set_of_partial_permutations;
+	<- rrel_key_sc_element:
+			...
+			(*  <- explanation;;
+				<= nrel_sc_text_translation:	
+				...
+				(*
+					-> rrel_example:
+					"file://html/nrel_set_of_repet_partial_permutations.html"
+					(* <- lang_ru;; *);;
+				*);;
+			*);
+	<- rrel_key_sc_element:
+			...
+			(*
+				<- statement;;
+				<= nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example:
+						"file://html/statement_for_nrel_set_of_repet_partial_permutations.html"			
+					(* <- lang_ru;;	*);;
+				*);;
+			*);
+
+	<- oriented_relation;
+	<- binary_relation;
+	<- antireflexive_relation;
+	<- sc_node_norole_relation;
+	<- antisymmetric_relation;
+	<- antitransitive_relation;
+	<=nrel_first_domain: set;
+	<=nrel_second_domain : set_of_sets;
+	-> rrel_example:"file://html/nrel_set_of_repet_partial_permutations.png";
+	<- rrel_example :
+	 [Всевозможные размещения с повторениями из трех элементов a,b,c по 2: aa,ab,ac,ba,bb,bc,ca,cb,cc.](* <- lang_ru;;	*);;
+
+
+nrel_set_of_permutations
+	<- sc_node_norole_relation;
+	<= nrel_strict_inclusion: nrel_set_of_partial_permutations;
+	=> nrel_main_idtf:
+		[множество перестановок*] (* <- lang_ru;; *);
+		[set of permutations*] (* <- lang_en;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			<= nrel_sc_text_translation:
+			...
+				(*
+					-> rrel_example:
+						"file://html/definition_for_nrel_set_of_permutations.html"
+						(*<- lang_ru;;*);;
+				*);;
+		*);
+	<- rrel_key_sc_element:
+		...
+			(*
+				<- statement;;
+				<= nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example:
+						"file://html/statement_for_nrel_set_of_permutations.html"			
+					(* <- lang_ru;;	*);;
+				*);;
+			*);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- description_of_a_typical_instance;;
+			<= nrel_sc_text_translation:
+			...
+				(*
+					-> rrel_example:
+						"file://html/image_for_nrel_set_of_permutations.png";;
+				*);;
+				=> nrel_comment:
+				...
+					(*
+						<= nrel_sc_text_translation:
+						...
+						(*
+							-> rrel_example:
+							"file://html/comment_for_nrel_set_of_permutations.html"
+							(* <- lang_ru;; *);; 
+						*);;
+					*);;
+		*);
+
+	<- oriented_relation;
+	<- binary_relation;
+	<- antireflexive_relation;
+	<- antisymmetric_relation;
+	<- antitransitive_relation;
+	<=nrel_first_domain: set;
+	<=nrel_second_domain : set_of_sets;;
+
+nrel_set_of_repet_permutations
+	=> nrel_main_idtf:
+		[множество перестановок с повторами*]
+		(* <-lang_ru;; *);
+		[set of repet permutations*]
+		(* <- lang_en;; *);
+	<= nrel_inclusion : nrel_set_of_permutations;
+	<- rrel_key_sc_element:
+			...
+			(*  <- explanation;;
+				<= nrel_sc_text_translation:	
+				...
+				(*
+					-> rrel_example:
+					"file://html/nrel_set_of_repet_permutations.html"
+					(* <- lang_ru;; *);;
+				*);;
+			*);
+	<- rrel_key_sc_element:
+			...
+			(*
+				<- statement;;
+				<= nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example:
+						"file://html/statement_for_nrel_set_of_repet_permutations.html"			
+					(* <- lang_ru;;	*);;
+				*);;
+			*);
+
+	<- oriented_relation;
+	<- binary_relation;
+	<- antireflexive_relation;
+	<- antisymmetric_relation;
+	<- sc_node_norole_relation;
+	<- antitransitive_relation;
+	<=nrel_first_domain: set;
+	<=nrel_second_domain : set_of_sets;;
+
+bit_vector
+	<- sc_node_not_relation;
+	=> nrel_main_idtf:
+		[битовый вектор] (* <- lang_ru;; *);
+		[bit vector] (* <- lang_en;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			<= nrel_sc_text_translation:
+			...
+				(*
+					-> rrel_example:[Битовый вектор — последовательность нулей и единиц заданной длины.](*<- lang_ru;;*);;
+				*);;
+		*);
+	<- rrel_key_sc_element:
+			...
+			(*
+				<- statement;;
+				<= nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example:
+						"file://html/statement_for_bit_vector.html"			
+					(* <- lang_ru;;	*);;
+				*);;
+			*);
+	-> rrel_example:
+		"file://html/bit_vector.jpeg";;
+
+partition
+   <- sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[ pазбиение числа на неупорядоченные слагаемые*] (* <- lang_ru;; *);
+		[ partition* ] (* <- lang_en;; *);
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- definition;;
+			<= nrel_sc_text_translation:
+			...
+				(*
+					-> rrel_example:[ Разбиение числа на неупорядоченные слагаемые — представление числа N в виде суммы слагаемых.]
+					(*<- lang_ru;;*);;
+				*);;
+		*);
+
+	<- oriented_relation;
+	<- binary_relation;
+	<- antireflexive_relation;
+	<- antisymmetric_relation;
+	<- transitive_relation;
+	<=nrel_first_domain: number;
+	<=nrel_second_domain: number;	
+	<=nrel_definitional_domain : number;;
+
+partition_of_a_set
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf:
+		[ разбиение множества X на подмножества*] (* <- lang_ru;; *);
+		[ partions of a set* ] (* <- lang_en;; *);
+
+	<- rrel_key_sc_element:
+			...
+			(* 
+				 => nrel_main_idtf: [Опр.(разбиение множества X на подмножества)]  (* <- lang_ru;; *);;
+				<- sc_explanation;; 
+				<= nrel_sc_text_translation:	
+				...
+				(*
+					-> rrel_example:
+					"file://html/partition_of_a_set.html"
+					(* <- lang_ru;; *);;
+				*);;
+			*);
+
+	<- oriented_relation;
+	<- binary_relation;
+	<- antireflexive_relation;
+	<- antisymmetric_relation;
+	<- transitive_relation;
+	<=nrel_first_domain: set;
+	<=nrel_second_domain: set;	
+	<=nrel_definitional_domain : set;;
+
+basic_rules_of_combinatorics
+	=> nrel_main_idtf:
+		[основные правила комбинаторики]
+		(* <-lang_ru;; *);
+		[basic rules of combinatorics]
+		(* <- lang_en;; *);
+	=> nrel_inclusion:
+		addition_rule;
+		multiplication_rule;;
+
+addition_rule
+	=> nrel_main_idtf:
+		[правило сложения]
+		(* <-lang_ru;; *);
+		[addition rule]
+		(* <- lang_en;; *);
+	<- rrel_key_sc_element:
+			...
+			(*  <- explanation;;
+				<= nrel_sc_text_translation:	
+				...
+				(*
+					-> rrel_example:
+					"file://html/addition_rule.html"
+					(* <- lang_ru;; *);;
+				*);;
+			*);;
+
+multiplication_rule
+	=> nrel_main_idtf:
+		[правило умножения]
+		(* <-lang_ru;; *);
+		[multiplication rule]
+		(* <- lang_en;; *);
+	<- rrel_key_sc_element:
+			...
+			(*  <- explanation;;
+				<= nrel_sc_text_translation:	
+				...
+				(*
+					-> rrel_example:
+					"file://html/multiplication_rule.html"
+					(* <- lang_ru;; *);;
+				*);;
+			*);;

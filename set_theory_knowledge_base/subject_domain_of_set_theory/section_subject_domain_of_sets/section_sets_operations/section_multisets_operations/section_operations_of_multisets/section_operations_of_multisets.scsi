@@ -1,0 +1,360 @@
+////////////////////////////////////////////////////////////
+// nrel_multiset_combination
+
+nrel_multiset_combination
+    <- norole_relation;
+    <- relation;
+    <- oriented_relation;
+    <- quasybinary_relation;
+    <- antireflexive_relation;
+    <- antitransitive_relation;
+    => nrel_first_domain: multiset;
+    => nrel_second_domain: multiset;
+
+    => nrel_main_idtf:
+        [объединение мультимножеств*]
+        (* <- lang_ru;;	*);
+        [multiset combination*]
+        (* <- lang_en;;	*);
+    => nrel_idtf:
+        [отношение объединения мультимножеств*]
+        (* <- lang_ru;; *);
+        [операция объединения мультимножеств*]
+        (* <- lang_ru;; *);
+        [Сombination of multiset*]
+        (* <- lang_en;; *);;
+   
+
+nrel_multiset_combination <- rrel_key_sc_element:
+        Definition_of_nrel_multiset_combination
+        (* 
+            => nrel_main_idtf:
+            [Опр. (объединение мультимножеств*)]
+            (* <- lang_ru;;	*);
+            [Definition " multiset combination*"]
+            (* <- lang_en;; *);;
+
+            <- explanation;;
+
+            <= nrel_sc_text_translation:
+                ...
+                (* 
+                -> rrel_example:
+                    "file://content/content_htmls/nrel_multiset_combination.html"
+                        (* <-lang_ru;; *);;
+                *);;
+
+            <= nrel_using_constants:
+                ...
+                (* 
+                ->multiset;;
+                *);;
+        *);;
+
+////////////////////////////////////////////////////////////
+// nrel_multiset_intersection
+
+nrel_multiset_intersection
+    <- norole_relation;
+    <- oriented_relation;
+    <- quasybinary_relation;
+    <- antireflexive_relation;
+
+    => nrel_main_idtf:
+        [пересечение мультимножеств*]
+        (* <- lang_ru;;	*);
+        [multiset intersection*]
+        (* <- lang_en;;	*);
+
+    => nrel_first_domain: multiset;
+    => nrel_second_domain: multiset;
+
+    => nrel_idtf:
+        [пересечение мультимножеств*]
+        (* <- lang_ru;; *);
+        [отношение пересечения мультимножеств*]
+        (* <- lang_ru;; *);
+        [операция пересечения мультимножеств*]
+        (* <- lang_ru;; *);
+        [Ratio of the multiset intersection*]
+        (* <- lang_en;; *);
+        [Intersection of multiset*]
+        (* <- lang_en;; *);;
+
+ 
+nrel_multiset_intersection  <- rrel_key_sc_element:
+        Definition_of_nrel_multiset_intersection
+        (* 
+        => nrel_main_idtf:
+            [Опр. (пересечение мультимножеств*)]
+            (* <- lang_ru;;	*);
+            [Definition "multiset intersection*"]
+            (* <- lang_en;;	*);;
+        <- explanation;;
+        <= nrel_sc_text_translation:
+            ...
+            (* 
+            -> rrel_example:
+                "file://content/content_htmls/nrel_multiset_intersection.html"
+                    (* <-lang_ru;; *);;
+            *);;
+        <= nrel_using_constants:
+            ...
+            (* 
+            ->multiset;;
+            *);;
+
+        *);;
+
+////////////////////////////////////////////////////////////
+// nrel_multiset_arithmetic_sum
+
+nrel_multiset_arithmetic_sum
+    <- norole_relation;
+    <- relation;
+    <- oriented_relation;
+    <- quasybinary_relation;
+
+    => nrel_main_idtf:
+        [арифметическая сумма мультимножеств*]
+        (* <- lang_ru;; *);
+        [arithmetic sum of multisets*]
+        (* <- lang_en;; *);
+    => nrel_idtf:
+        [арифметическое сложение мультимножеств*]
+        (* <- lang_ru;;	*);
+        [multiset arithmetic addition*]
+        (* <- lang_en;;	*);
+
+    => nrel_first_domain: multiset;
+    => nrel_second_domain: multiset;;
+
+
+nrel_multiset_arithmetic_sum  <- rrel_key_sc_element:
+        Definition_of_nrel_multiset_arithmetic_addition
+        (* 
+        => nrel_main_idtf:
+            [Опр. (арифметическое сложение мультимножеств*)]
+            (* <- lang_ru;;	*);
+            [Definition of multiset arithmetic addition*"]
+            (* <- lang_en;;	*);;
+        <- explanation;;
+        <= nrel_sc_text_translation:
+            ...
+            (* 
+            -> rrel_example:
+                "file://content/content_htmls/nrel_multiset_arithmetic_sum.html" 
+                    (* <-lang_ru;; *);;
+            *);;
+        <= nrel_using_constants:
+            ...
+            (* 
+            -> multiset;;
+            -> nrel_belonging;;
+            -> multiplicity_of_belonging;;
+            *);;
+        *);;
+
+////////////////////////////////////////////////////////////
+// nrel_multiset_arithmetic_difference
+
+nrel_multiset_arithmetic_difference
+    <- norole_relation;
+    <- relation;
+    <- oriented_relation;
+    <- quasybinary_relation;
+
+    => nrel_main_idtf:
+        [арифметическая разность мультимножеств*]
+        (* <- lang_ru;;	*);
+        [arithmetic difference of multisets*]
+        (* <- lang_en;;	*);
+    => nrel_idtf:
+        [арифметическое вычитание мультимножеств*]
+        (* <- lang_ru;; *);
+        [multiset arithmetic subtraction*]
+        (* <- lang_en;; *);
+
+    => nrel_first_domain: multiset;
+    => nrel_second_domain: multiset;;
+
+nrel_multiset_arithmetic_difference <- rrel_key_sc_element:
+        Definition_of_nrel_multiset_arithmetic_difference
+        (* 
+        => nrel_main_idtf:
+            [Опр. (арифметическая разность мультимножеств*)]
+            (* <- lang_ru;;	*);
+            [Definition "arithmetic difference of multisets*"]
+            (* <- lang_en;;	*);;
+        <- explanation;;
+        <= nrel_sc_text_translation:
+            ...
+            (* 
+            -> rrel_example:
+                "file://content/content_htmls/nrel_multiset_arithmetic_difference.html" 
+                    (* <-lang_ru;; *);;
+            *);;
+        <= nrel_using_constants:
+            ...
+            (* 
+            -> multiset;;
+            -> nrel_belonging;;
+            -> multiplicity_of_belonging;;
+            *);;    
+        *);;        
+
+////////////////////////////////////////////////////////////
+// nrel_multiset_complement
+
+nrel_multiset_complement
+    <- norole_relation;
+    <- oriented_relation;
+    <- nrel_addition;
+    <- antireflexive_relation;
+
+    => nrel_first_domain: multiset;
+    => nrel_second_domain: multiset;
+
+    => nrel_main_idtf:
+        [дополнение мультимножества*]
+        (* <- lang_ru;;	*);
+        [multiset addition*]
+        (* <- lang_en;;	*);;
+
+
+nrel_multiset_complement <- rrel_key_sc_element:
+        Definition_of_nrel_multiset_complement
+        (* 
+        => nrel_main_idtf:
+            [Опр. (дополнение мультимножества*)]
+            (* <- lang_ru;;	*);
+            [Definition "multiset addition*"]
+            (* <- lang_en;;	*);;
+        <- explanation;;
+        <= nrel_sc_text_translation:
+            ...
+            (* 
+            -> rrel_example:
+                "file://content/content_htmls/nrel_multiset_complement.html"
+                    (* <-lang_ru;; *);;
+            *);;
+        <= nrel_using_constants:
+            ...
+            (* 
+            ->multiset;;
+            *);;
+        *);;
+
+////////////////////////////////////////////////////////////
+// nrel_symmetric_multiset_difference
+
+nrel_symmetric_multiset_difference
+    <- norole_relation;
+    <- relation;
+    <- oriented_relation;
+    <- quasybinary_relation;
+
+    => nrel_main_idtf:
+        [cимметрическая разность мультимножеств*]
+        (* <- lang_ru;;	*);
+        [multiset symmetric difference*]
+        (* <- lang_en;;	*);;
+
+nrel_symmetric_multiset_difference <- rrel_key_sc_element:
+        Definition_of_nrel_symmetric_multiset_difference
+        (* 
+        => nrel_main_idtf:
+            [Опр. (cимметрическая разность мультимножеств*)]
+            (* <- lang_ru;;	*);
+            [Definition "multiset symmetric difference*"]
+            (* <- lang_en;;	*);;
+        <- explanation;;
+        <= nrel_sc_text_translation:
+            ...
+            (* 
+            -> rrel_example:
+                "file://content/content_htmls/nrel_symmetric_multiset_difference.html"
+                    (* <-lang_ru;; *);;
+            *);;
+        <= nrel_using_constants:
+            ...
+            (* 
+            ->multiset;;
+            *);;    
+        *);;        
+
+////////////////////////////////////////////////////////////
+// nrel_multiset_arithmetic_product
+
+nrel_multiset_arithmetic_product
+    <- norole_relation;
+    <- relation;
+    <- oriented_relation;
+    <- binary_relation;
+
+    => nrel_main_idtf:
+        [арифметическое произведение мультимножеств*]
+        (* <- lang_ru;;	*);
+        [multiset arithmetic product*]
+        (* <- lang_en;;	*);;
+
+nrel_multiset_arithmetic_product <- rrel_key_sc_element:
+        Definition_of_nrel_multiset_arithmetic_product
+        (* 
+        => nrel_main_idtf:
+            [Опр. (арифметическое произведение мультимножеств*)]
+            (* <- lang_ru;;	*);
+            [Definition "multiset arithmetic product*"]
+            (* <- lang_en;;	*);;
+        <- explanation;;
+        <= nrel_sc_text_translation:
+            ...
+            (* 
+            -> rrel_example:
+                "file://content/content_htmls/nrel_multiset_arithmetic_product.html"
+                    (* <-lang_ru;; *);;
+            *);;
+        <= nrel_using_constants:
+            ...
+            (* 
+            ->multiset;;
+            *);;    
+        *);;        
+
+////////////////////////////////////////////////////////////
+// nrel_multiset_direct_product
+
+nrel_multiset_direct_product
+    <- norole_relation;
+    <- relation;
+    <- oriented_relation;
+    <- quasybinary_relation;
+
+    => nrel_main_idtf:
+        [прямое произведение мультимножеств*]
+        (* <- lang_ru;;	*);
+        [multiset direct product*]
+        (* <- lang_en;;	*);;
+
+nrel_multiset_direct_product  <- rrel_key_sc_element:
+        Definition_of_nrel_multiset_direct_product
+        (* 
+        => nrel_main_idtf:
+            [Опр. (прямое произведение мультимножеств*)]
+            (* <- lang_ru;;	*);
+            [Definition "nrel_multiset_direct_product*"]
+            (* <- lang_en;;	*);;
+        <- explanation;;
+        <= nrel_sc_text_translation:
+            ...
+            (* 
+            -> rrel_example:
+                "file://content/content_htmls/nrel_multiset_direct_product.html"
+                    (* <-lang_ru;; *);;
+            *);;
+        <= nrel_using_constants:
+            ...
+            (* 
+            ->multiset;;
+            *);;    
+        *);;        

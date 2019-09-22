@@ -1,5 +1,0 @@
-rrel_subject_domain
-	<- sc_node_role_relation;
-=> nrel_main_idtf:
-	[предметная область'] (* <- lang_ru;; *);
-	[subject domain'] (* <- lang_en;; *);;

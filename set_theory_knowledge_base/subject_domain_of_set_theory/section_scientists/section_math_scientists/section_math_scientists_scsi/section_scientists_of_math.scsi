@@ -1,0 +1,18 @@
+math_scientists
+=> nrel_main_idtf: 
+	[Учёные, которые внесли вклад в развитие математики и комбинаторики] (* <- lang_ru;; *);
+	[Scientists of math] (* <- lang_en;; *);
+<- rrel_key_sc_element:
+	Moore;
+	Dirichlet;
+	Cardano;	
+	Riman;
+	Galileo;
+	Kronecker;
+	Taylor;
+	Dalamber;
+	Lagrange;
+	Cauchy;
+	Russell;;
+
+

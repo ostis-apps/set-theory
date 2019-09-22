@@ -1,0 +1,258 @@
+agent_of_finding_multisets_difference
+=> nrel_main_idtf:
+	[агентная scp-программа нахождения арифметической разности мультимножеств] 
+		(* <- lang_ru;; *);
+	[agent scp-program of finding arithmetic difference of multisets]
+		(* <- lang_en;; *);
+<- agent_scp_program;;
+
+scp_program -> agent_of_finding_multisets_difference
+(*
+
+	-> rrel_params: .agent_of_finding_multisets_difference_operator_params
+	(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+	*);;
+
+	-> rrel_operators: .agent_of_finding_multisets_difference_operators_set
+	(*
+		-> rrel_init: .agent_of_finding_multisets_difference_operator_get_question
+		(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _question;;
+
+			=> nrel_goto: .agent_of_finding_multisets_difference_operator_check_question_type;;
+		*);;
+
+		-> .agent_of_finding_multisets_difference_operator_check_question_type
+		(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: question_finding_multisets_difference;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _question;;
+
+			=> nrel_then: .agent_of_finding_multisets_difference_operator_print_start;;
+			=> nrel_else: .agent_of_finding_multisets_difference_operator_return;;
+		*);;
+
+		-> .agent_of_finding_multisets_difference_operator_print_start
+		(*
+			<- printNl;;
+
+			-> rrel_1: rrel_scp_const: [Начало. Агент нахождения арифметической разности мультимножеств];;
+
+			=> nrel_goto: .agent_of_finding_multisets_difference_operator_find_multiset_1;;
+   		*);;
+
+/////////////////////////////////////////////////////////////////////////////
+// нахождение двух исходных мультимножеств
+
+		-> .agent_of_finding_multisets_difference_operator_find_multiset_1
+		(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _question;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _multiset_1;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+
+			=> nrel_then: .agent_of_finding_multisets_difference_operator_find_multiset_2;;
+			=> nrel_else: .agent_of_finding_multisets_difference_operator_print_end;;
+		*);;
+
+		-> .agent_of_finding_multisets_difference_operator_find_multiset_2
+		(*
+			<- searchElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _question;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _multiset_2;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_2;;
+
+			=> nrel_then: .agent_of_finding_multisets_difference_operator_find_difference;;
+			=> nrel_else: .agent_of_finding_multisets_difference_operator_print_end;;
+		*);;
+
+/////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////
+// нахождение разности мультимножеств и добавление получившегося мультимножества в ответ
+
+		-> .agent_of_finding_multisets_difference_operator_find_difference
+		(*
+			<- call;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_finding_multisets_difference;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ...
+			(*
+					-> rrel_1: rrel_fixed: rrel_scp_var: _multiset_1;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _multiset_2;;
+					-> rrel_3: rrel_assign: rrel_scp_var: _multiset_3;;
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _proc_descriptor;;
+
+			=> nrel_goto: .agent_of_finding_multisets_difference_operator_find_difference_return;;
+		*);;
+
+		-> .agent_of_finding_multisets_difference_operator_find_difference_return
+		(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _proc_descriptor;;
+
+			=> nrel_goto: .agent_of_finding_multisets_difference_operator_add_difference_to_answer;;
+		*);;
+
+		-> .agent_of_finding_multisets_difference_operator_add_difference_to_answer
+		(*
+			<- call;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_add_multiset_to_answer;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ...
+			(*
+					-> rrel_1: rrel_fixed: rrel_scp_var: _multiset_3;;
+					-> rrel_2: rrel_assign: rrel_scp_var: _answer;;
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _proc_descriptor;;
+
+			=> nrel_goto: .agent_of_finding_multisets_difference_operator_add_difference_to_answer_return;;
+		*);;
+
+		-> .agent_of_finding_multisets_difference_operator_add_difference_to_answer_return
+		(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _proc_descriptor;;
+
+			=> nrel_goto: .agent_of_finding_multisets_difference_operator_generate_tuple;;
+		*);;
+
+/////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////
+// создание связки отношения "арифметическая разность мультимножеств*" и добавление всей конструкции в ответ
+
+		-> .agent_of_finding_multisets_difference_operator_generate_tuple
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: rrel_not_binary_tuple: rrel_const: _difference_tuple;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _multiset_1;;
+
+			=> nrel_goto: .agent_of_finding_multisets_difference_operator_add_multiset_2_to_tuple;;
+		*);;
+
+		-> .agent_of_finding_multisets_difference_operator_add_multiset_2_to_tuple
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _difference_tuple;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _multiset_2;;
+
+			=> nrel_goto: .agent_of_finding_multisets_difference_operator_add_tuple_to_answer;;
+		*);;
+
+		-> .agent_of_finding_multisets_difference_operator_add_tuple_to_answer
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _difference_tuple;;
+
+			=> nrel_goto: .agent_of_finding_multisets_difference_operator_add_tuple_arcs_to_answer;;
+		*);;
+
+		-> .agent_of_finding_multisets_difference_operator_add_tuple_arcs_to_answer
+		(*
+			<- searchSetStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _difference_tuple;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _multiset;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .agent_of_finding_multisets_difference_operator_generate_relation;;
+		*);;
+
+		-> .agent_of_finding_multisets_difference_operator_generate_relation
+		(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _difference_tuple;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _binary_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _multiset_3;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_multiset_arithmetic_difference;;
+
+			=> nrel_goto: .agent_of_finding_multisets_difference_operator_add_tuple_relation_arcs_to_answer;;
+		*);;
+
+		-> .agent_of_finding_multisets_difference_operator_add_tuple_relation_arcs_to_answer
+		(*
+			<- searchSetStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _difference_tuple;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _binary_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _multiset_3;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_multiset_arithmetic_difference;;
+
+			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
+
+			=> nrel_goto: .agent_of_finding_multisets_difference_operator_add_relation_to_answer;;
+		*);;
+
+		-> .agent_of_finding_multisets_difference_operator_add_relation_to_answer
+		(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_multiset_arithmetic_difference;;
+
+			=> nrel_goto: .agent_of_finding_multisets_difference_operator_generate_answer_relation;;
+		*);;
+
+/////////////////////////////////////////////////////////////////////////////
+
+		-> .agent_of_finding_multisets_difference_operator_generate_answer_relation
+		(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _question;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_const: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+			
+			=> nrel_goto: .agent_of_finding_multisets_difference_operator_print_end;;
+		*);;
+	
+		-> .agent_of_finding_multisets_difference_operator_print_end
+		(*
+			<- printNl;;
+
+			-> rrel_1: rrel_scp_const: [Конец. Агент нахождения арифметической разности мультимножеств];;
+
+			=> nrel_goto: .agent_of_finding_multisets_difference_operator_return;;
+   		*);;
+
+		-> .agent_of_finding_multisets_difference_operator_return
+		(*
+			<- return;;
+		*);;
+	*);;
+*);;

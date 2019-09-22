@@ -1,0 +1,19 @@
+structure_set_theory_knowledge_base
+=> nrel_main_idtf:
+	[Структура. Интеллектуальная система по теории множеств]
+	(* <- lang_ru;; *);
+	[Structure.Set theory knowledge base]
+	(* <- lang_en;; *);
+<- not_enough_formed_structure;
+-> rrel_key_sc_element:
+        subject_domain_of_set_theory
+		(*
+		=> nrel_section_base_order: 
+			section_questions_on_the_discipline_MOIS;;
+		*);	
+		section_questions_on_the_discipline_MOIS
+		(*
+		=> nrel_section_base_order: 
+			section_documentation_of_set_theory;;
+		*);
+		section_documentation_of_set_theory;;

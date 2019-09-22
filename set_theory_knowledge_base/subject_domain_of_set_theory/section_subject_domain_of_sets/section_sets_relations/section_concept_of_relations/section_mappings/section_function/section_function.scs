@@ -1,0 +1,46 @@
+section_function
+=> nrel_main_idtf:
+	[Раздел. Функция]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/section_function.html" (* <-lang_ru;; *);;
+		*);;
+
+section_function
+	<= nrel_section_decomposition:
+	{
+		section_mappings_of_sets
+	};;
+
+section_function = [*^"file://section_function.scsi"*];;
+
+section_mappings_of_sets
+-> rrel_key_sc_element:
+		complex_function;
+		complex_valued_function;
+		composition;
+		domain_of_definition;
+		exponential_generating_function;
+		formal_power_series;
+		function;
+		functional_graph;
+		function_argument;
+		function_value;
+		generating_function;
+		holomorphic_function;
+		induced_function;
+		concept_injection_graph;
+		inverse_function;
+		mebious_function;
+		partial_function;
+		riemann_zeta_function;
+		supremum_of_set;
+		taylor_series;
+		total_function;
+		transformation;
+		transition_to_preimages;;
+		
+		

@@ -1,0 +1,23 @@
+set_theory_paradox
+<- sc_node_not_relation;
+<- section_set_theory_paradox;
+=> nrel_main_idtf:
+	[парадокс теории множеств]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[set theory paradox]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	[антиномия]
+	(* <- lang_ru;; *);;
+
+set_theory_paradox
+<- rrel_key_sc_element:
+	...
+	(*
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:...
+		(*
+		-> rrel_example:"file://htmls/set_theory_paradox.html" (* <-lang_ru;; *);;
+		*);;
+	*);;

@@ -1,0 +1,142 @@
+set_theory_paradox
+=> nrel_main_idtf: 
+	[парадокс теории множеств] (* <- lang_ru;; *);
+	[paradox of set theory] (* <- lang_en;; *);;
+
+
+paradox_Burali_Forti
+	=> nrel_main_idtf: 
+		[Парадокс Бурали-Форти] (* <- lang_ru;; *);
+		[Paradox Burali-Forti] (* <- lang_en;; *);
+	<- sc_text_statement;
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://html/paradox_Burali_Forti_text_ru.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+paradox_Cantor
+	=> nrel_main_idtf: 
+		[Парадокс Кантора] (* <- lang_ru;; *);
+		[Cantor's Paradox] (* <- lang_en;; *);
+	<- sc_text_statement;
+	<= nrel_sc_text_translation:	
+		...
+		(*
+		-> 
+			"file://html/paradox_Cantor_text_ru.html"
+			(*
+			<- lang_ru;;
+			*);;
+		*);;
+
+paradox_Russel
+	=> nrel_main_idtf:
+		[Парадокс Рассела] (* <- lang_ru;; *);
+		[Russell's paradox] (* <- lang_en;; *);
+	<- sc_text_statement;
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://html/paradox_Russell_text_ru.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+paradox_doubling_ball
+	=> nrel_main_idtf: 
+		[Парадокс удвоения шара] (* <- lang_ru;; *);
+		[Doubling Ball Paradox] (* <- lang_en;; *);
+	<- sc_text_statement;
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://html/paradox_doubling_ball_text_ru.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+paradox_Hausdorff
+	=> nrel_main_idtf: 
+		[Парадокс Хаусдорфа] (* <- lang_ru;; *);
+		[Теорема Хаусдорфа] (* <- lang_ru;; *);
+		[Hausdorff's Paradox] (* <- lang_en;; *);
+	<- sc_text_statement;
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://html/paradox_Hausdorff_text_ru.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+paradox_Mirimanova
+	=> nrel_main_idtf: 
+		[Парадокс Мириманова] (* <- lang_ru;; *);
+		[Mirimanov's Paradox] (* <- lang_en;; *);
+	<- sc_text_statement;
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://html/paradox_Mirimanova_text_ru.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+paradox_Galileo
+	=> nrel_main_idtf: 
+		[Парадокс Галилео] (* <- lang_ru;; *);
+		[Galileo's Paradox] (* <- lang_en;; *);
+	<- sc_text_statement;
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://html/paradox_Galileo_text_ru.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+paradox_grand_hotel
+	=> nrel_main_idtf: 
+		[Парадокс «Гранд-отель»] (* <- lang_ru;; *);
+		[The Paradox of "Grand Hotel"] (* <- lang_en;; *);
+	<- sc_text_statement;
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://html/paradox_grand_hotel_text_ru.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;
+
+
+paradox_Tristram_shandy
+	=> nrel_main_idtf: 
+		[Парадокс Тристрама Шенди] (* <- lang_ru;; *);
+		[The Tristram Shandy Paradox] (* <- lang_en;; *);
+	<- sc_text_statement;
+	<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://html/tristram_shandy_paradox_text_ru.html"
+				(*
+				<- lang_ru;;
+				*);;
+			*);;

@@ -1,0 +1,27 @@
+justification_of_development_set_theory_knowledge_base
+=> nrel_main_idtf:
+	[Обоснование разработки. Интеллектуальная система по теории множеств]
+	(* <- lang_ru;; *);
+	[Justification of development. Set theory knowledge base]
+	(* <- lang_en;; *);
+<- not_enough_formed_structure;
+
+<= nrel_section_decomposition:
+	{
+		section_type_purpose_and_structure_of_set_theory_knowledge_base
+		(*
+		=> nrel_section_base_order: 
+			section_the_relevance_of_set_theory_knowledge_base;;
+		*);
+		section_the_relevance_of_set_theory_knowledge_base
+		(*
+		=> nrel_section_base_order: 
+			section_set_theory_knowledge_base_analogues_and_their_shortcomings;;
+		*);
+		section_set_theory_knowledge_base_analogues_and_their_shortcomings
+		(*
+		=> nrel_section_base_order: 
+			section_attempts_to_address_the_shortcomings_analogues_set_theory_knowledge_base;;
+		*);
+		section_attempts_to_address_the_shortcomings_analogues_set_theory_knowledge_base
+	};;

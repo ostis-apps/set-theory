@@ -1,0 +1,81 @@
+section_concept_of_relation
+=> nrel_main_idtf:
+	[Раздел. Понятие отношения]
+	(* <- lang_ru;; *);
+<= nrel_sc_text_translation:
+
+		...
+		(* 
+		-> rrel_example: "file://content/content_htmls/section_concept_of_relation.html" (* <-lang_ru;; *);;
+		*);;
+
+section_concept_of_relation
+	<= nrel_section_decomposition:
+	{
+		section_equivalence_relation
+		(*
+		=> nrel_section_base_order: 
+			section_ordering_relation;;
+		*);
+		section_ordering_relation
+		(*
+		=> nrel_section_base_order: 
+			section_mappings;;
+		*);
+		section_mappings
+	};;
+
+section_concept_of_relation = [*^"file://section_concept_of_relations.scsi"*];;
+
+section_concept_of_relation
+-> rrel_key_sc_element:
+		continuum;
+		element_of_set;
+		empty_relation;
+		even_permutation;
+		factorial;
+		membership_function;
+		nrel_multiplicity_of_element;
+		nrel_accessory;
+		nrel_alpha_incision;
+		nrel_author;
+		nrel_boolean;
+		nrel_component;
+		nrel_diagonal;
+		nrel_dimension_set;
+		nrel_disjoint_set;
+		nrel_equality_degree;
+		nrel_exact_lower_approximation;
+		nrel_exact_upper_approximation;
+		nrel_exercise;
+		nrel_fixed_point;
+		nrel_fuzzy_set_core;
+		nrel_graph;
+		nrel_height_of_fuzzy_set;
+		nrel_inclusion_degree;
+		nrel_intersecting_set;
+		nrel_lower_approximation;
+		nrel_near_set;
+		nrel_next;
+		nrel_power_set;
+		nrel_prev;
+		nrel_sourse;
+		nrel_to_be;
+		nrel_to_be_part_of;
+		nrel_transition_point;
+		nrel_upper_approximation;
+		nrel_place_of_birth;
+		nrel_year_birth;
+		nrel_year_death;
+		nrel_years_life;
+		odd_permutation;
+		oriented_set_length;
+		parity_of_permutation;
+		partial_transversal;
+		rrel_alpha;
+		same_name_component;
+		support_of_fuzzy_set;
+		transposition;
+		transversal;;
+		
+
