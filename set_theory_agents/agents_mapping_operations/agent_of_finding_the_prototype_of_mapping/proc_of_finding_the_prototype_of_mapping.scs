@@ -1,20 +1,21 @@
 scp_program -> proc_of_finding_the_prototype_of_mapping (*
 
 	-> rrel_params: ...(*
-    	-> rrel_1: rrel_in: _map;;
-    	-> rrel_2: rrel_out: rrel_assign: rrel_scp_var: _set;;
+    		-> rrel_1: rrel_in: _map;;
+    		-> rrel_2: rrel_out: rrel_assign: rrel_scp_var: _set;;
   	*);;
   
 	-> rrel_operators: ...(*
     	
-    	-> rrel_init: .proc_of_finding_the_prototype_of_mapping_step_begin (*
+    	-> rrel_init: ..proc_of_finding_the_prototype_of_mapping_step_begin (*
     		<- genEl;;
 
     		-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _set;;
 
-    		=> nrel_goto: .proc_of_finding_the_prototype_oe_mapping_step_1;;
+    		=> nrel_goto: ..proc_of_finding_the_prototype_of_mapping_step_1a;;
     	*);; 
-    	-> .proc_of_finding_the_prototype_oe_mapping_step_1 (*
+
+    	-> ..proc_of_finding_the_prototype_of_mapping_step_1a (*
 			<- searchElStr5;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _map;;
@@ -23,11 +24,11 @@ scp_program -> proc_of_finding_the_prototype_of_mapping (*
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_4;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_3;;
 
-			=> nrel_then: .proc_of_finding_the_prototype_of_mapping_step_2;;
-      		=> nrel_else: .proc_of_finding_the_prototype_of_mapping_return;;
+			=> nrel_then: ..proc_of_finding_the_prototype_of_mapping_step_2;;
+      			=> nrel_else: ..proc_of_finding_the_prototype_of_mapping_return;;
 		*);;
 
-		-> .proc_of_finding_the_prototype_of_mapping_step_2 (*
+		-> ..proc_of_finding_the_prototype_of_mapping_step_2 (*
 			<- searchSetStr5;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: _element_from_X;;
@@ -40,62 +41,64 @@ scp_program -> proc_of_finding_the_prototype_of_mapping (*
 			-> rrel_set_1: rrel_assign: rrel_scp_var: _marked_elements;; 
 
 
-			=> nrel_then: .proc_of_finding_the_prototype_of_mapping_step_3;;
-      	  	=> nrel_else: .proc_of_finding_the_prototype_of_mapping_return;;
+			=> nrel_then: ..proc_of_finding_the_prototype_of_mapping_step_3;;
+      	  		=> nrel_else: ..proc_of_finding_the_prototype_of_mapping_return;;
 
 		*);;
 
-		-> .proc_of_finding_the_prototype_of_mapping_step_3 (*
+		-> ..proc_of_finding_the_prototype_of_mapping_step_3 (*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _marked_elements;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _marked_arc_2;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _element;;
 
-			=> nrel_then: .proc_of_finding_the_prototype_of_mapping_step_4;;
-			=> nrel_else: .proc_of_finding_the_prototype_of_mapping_step_7;;
+			=> nrel_then: ..proc_of_finding_the_prototype_of_mapping_step_4;;
+			=> nrel_else: ..proc_of_finding_the_prototype_of_mapping_step_7;;
 		*);;
 
-		-> .proc_of_finding_the_prototype_of_mapping_step_4 (*
+		-> ..proc_of_finding_the_prototype_of_mapping_step_4 (*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _set_arc_2;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _element;;
 
-			=> nrel_then: .proc_of_finding_the_prototype_of_mapping_step_6;;
-			=> nrel_else: .proc_of_finding_the_prototype_of_mapping_step_5;;
+			=> nrel_then: ..proc_of_finding_the_prototype_of_mapping_step_6;;
+			=> nrel_else: ..proc_of_finding_the_prototype_of_mapping_step_5;;
 		*);;
 
-		-> .proc_of_finding_the_prototype_of_mapping_step_5 (*
+		-> ..proc_of_finding_the_prototype_of_mapping_step_5 (*
 			<- genElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _new_arc_2;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _element;;
 
-			=> nrel_goto: .proc_of_finding_the_prototype_of_mapping_step_6;;
+			=> nrel_goto: ..proc_of_finding_the_prototype_of_mapping_step_6;;
 		*);;
 
-		-> .proc_of_finding_the_prototype_of_mapping_step_6 (*
+		-> ..proc_of_finding_the_prototype_of_mapping_step_6 (*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _marked_arc_2;;
 
-			=> nrel_goto: .proc_of_finding_the_prototype_of_mapping_step_3;;
+			=> nrel_goto: ..proc_of_finding_the_prototype_of_mapping_step_3;;
 		*);;
 
-		-> .proc_of_finding_the_prototype_of_mapping_step_7 (* 
+		-> ..proc_of_finding_the_prototype_of_mapping_step_7 (* 
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _marked_elements;;
 
-			=> nrel_goto: .proc_of_finding_the_prototype_of_mapping_return;;
+			=> nrel_goto: ..proc_of_finding_the_prototype_of_mapping_return;;
 
 		*);;
 
-	    -> .proc_of_finding_the_prototype_of_mapping_return(*
-    	  <- return;;
-    *);;
+		
+
+	    -> ..proc_of_finding_the_prototype_of_mapping_return(*
+    	 	 <- return;;
+   		 *);;
   *);;
 *);;

@@ -117,20 +117,9 @@ scp_program -> proc_of_finding_mapping_union(*
 
 			-> rrel_1: rrel_assign: rrel_node: rrel_const: rrel_scp_var: _otprav_result;;
 			
-             => nrel_goto: .proc_of_finding_map_union_operator10A;;
+             => nrel_goto: .proc_of_finding_map_union_operator10;;
 			*);; 
 
-		-> .proc_of_finding_map_union_operator10A (* 
-			<- genElStr5;;
-
-            -> rrel_1: rrel_fixed: rrel_scp_var: _otprav_result;;
-            -> rrel_2: rrel_scp_var: rrel_assign: rrel_common: rrel_const: _arc2;;
-            -> rrel_3: rrel_scp_const: rrel_fixed: [departure result];;
-            -> rrel_4: rrel_scp_var: rrel_assign: rrel_pos_const_perm: _arc;;
-            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_system_identifier;;
-
-            => nrel_goto: .proc_of_finding_map_union_operator10;;
-        *);;
 
 		-> .proc_of_finding_map_union_operator10
 		(*
@@ -162,20 +151,9 @@ scp_program -> proc_of_finding_mapping_union(*
 
 			-> rrel_1: rrel_assign: rrel_node: rrel_const: rrel_scp_var: _prib_result;;
 			
-             => nrel_goto: .proc_of_finding_map_union_operator13A;;
+             => nrel_goto: .proc_of_finding_map_union_operator13;;
 			*);; 
 
-		-> .proc_of_finding_map_union_operator13A (*
-             <- genElStr5;;
-
-            -> rrel_1: rrel_fixed: rrel_scp_var: _prib_result;;
-            -> rrel_2: rrel_scp_var: rrel_assign: rrel_common: rrel_const: _arc2;;
-            -> rrel_3: rrel_scp_const: rrel_fixed: [arr result];;
-            -> rrel_4: rrel_scp_var: rrel_assign: rrel_pos_const_perm: _arc;;
-            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_system_identifier;;
-
-            => nrel_goto: .proc_of_finding_map_union_operator13;;
-        *);;
 
 		-> .proc_of_finding_map_union_operator13
 		(*
@@ -209,19 +187,9 @@ scp_program -> proc_of_finding_mapping_union(*
 
 			-> rrel_1: rrel_assign: rrel_node: rrel_const: rrel_scp_var: _Z_result;;
 			
-             => nrel_goto: .proc_of_finding_map_union_operator15B;;
+             => nrel_goto: .proc_of_finding_map_union_operator15;;
 			*);; 
 
-		-> .proc_of_finding_map_union_operator15B (*
-             <- genElStr5;;
-            -> rrel_1: rrel_fixed: rrel_scp_var: _Z_result;;
-            -> rrel_2: rrel_scp_var: rrel_assign: rrel_common: rrel_const: _arc2;;
-            -> rrel_3: rrel_scp_const: rrel_fixed: [unionmapping];;
-            -> rrel_4: rrel_scp_var: rrel_assign: rrel_pos_const_perm: _arc;;
-            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_system_identifier;;
-
-            => nrel_goto: .proc_of_finding_map_union_operator15;; //15c
-        *);;
 		-> .proc_of_finding_map_union_operator15
 		(*
 			<- searchElStr5;;

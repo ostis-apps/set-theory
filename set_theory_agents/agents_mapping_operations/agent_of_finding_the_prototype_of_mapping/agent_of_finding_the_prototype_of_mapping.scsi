@@ -8,53 +8,53 @@ agent_of_finding_the_prototype_of_mapping
 
 scp_program -> agent_of_finding_the_prototype_of_mapping (*
 
-	-> rrel_params: .agent_of_finding_the_prototype_of_mapping_params (*
+	-> rrel_params: ..agent_of_finding_the_prototype_of_mapping_params (*
 		-> rrel_1: rrel_in: _event;;
 		-> rrel_2: rrel_in: _input_arc;;
 		*);;
 
-	-> rrel_operators: .agent_of_finding_the_prototype_of_mapping_operator (*
+	-> rrel_operators: ..agent_of_finding_the_prototype_of_mapping_operator (*
 
-		-> rrel_init: .agent_of_finding_the_prototype_of_mapping_step_1 (*
+		-> rrel_init: ..agent_of_finding_the_prototype_of_mapping_step_1 (*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
 			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
 
-			=>nrel_goto: .agent_of_finding_the_prototype_of_mapping_step_2;;
+			=>nrel_goto: ..agent_of_finding_the_prototype_of_mapping_step_2a;;
 		*);;
 
-		-> .agent_of_finding_the_prototype_of_mapping_step_2 (*
+		-> ..agent_of_finding_the_prototype_of_mapping_step_2a (*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: question_finding_the_prototype_of_mapping;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
 
-			=>nrel_then: .agent_of_finding_the_prototype_of_mapping_step_3;;
-			=>nrel_else: .agent_of_finding_the_prototype_of_mapping_return;;
+			=>nrel_then: ..agent_of_finding_the_prototype_of_mapping_step_3;;
+			=>nrel_else: ..agent_of_finding_the_prototype_of_mapping_return;;
 		*);;
 
-		-> .agent_of_finding_the_prototype_of_mapping_step_3 (*
+		-> ..agent_of_finding_the_prototype_of_mapping_step_3 (*
 			<- printNl;;
 			-> rrel_1: rrel_scp_const: [агент нахождения прообраза соответствия];;
 
-			=> nrel_goto: .agent_of_finding_the_prototype_of_mapping_step_4;;
+			=> nrel_goto: ..agent_of_finding_the_prototype_of_mapping_step_4;;
    		*);;
 
-   		-> .agent_of_finding_the_prototype_of_mapping_step_4 (*
+   		-> ..agent_of_finding_the_prototype_of_mapping_step_4 (*
 			<- searchElStr3;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _map;;
 
-			=>nrel_then: .agent_of_finding_the_prototype_of_mapping_step_5;;
-			=>nrel_else: .agent_of_finding_the_prototype_of_mapping_return;;
+			=>nrel_then: ..agent_of_finding_the_prototype_of_mapping_step_5;;
+			=>nrel_else: ..agent_of_finding_the_prototype_of_mapping_return;;
 		*);;
 
-		-> .agent_of_finding_the_prototype_of_mapping_step_5 (*
+		-> ..agent_of_finding_the_prototype_of_mapping_step_5 (*
             <- call;;
 
             -> rrel_1: rrel_fixed: rrel_scp_const: proc_of_finding_the_prototype_of_mapping;;
@@ -64,10 +64,10 @@ scp_program -> agent_of_finding_the_prototype_of_mapping (*
             *);;
             -> rrel_3: rrel_assign: rrel_scp_var: _descr;;
 
-            => nrel_goto: .agent_of_finding_the_prototype_of_mapping_step_6;;
+            => nrel_goto: ..agent_of_finding_the_prototype_of_mapping_step_6;;
         *);;
-
-        ->.agent_of_finding_the_prototype_of_mapping_step_6 (*
+//it's ok
+        ->..agent_of_finding_the_prototype_of_mapping_step_6 (*
             <- waitReturn;;
 
             -> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
@@ -75,8 +75,14 @@ scp_program -> agent_of_finding_the_prototype_of_mapping (*
             => nrel_goto: .agent_of_finding_the_prototype_of_mapping_step_7;;
         *);;
 
+	-> .agent_of_finding_the_prototype_of_mapping_step_7 (*
+			<- printNl;;
+			-> rrel_1: rrel_scp_const: [агент нахождения прообраза соответствия];;
 
-        -> .agent_of_finding_the_prototype_of_mapping_step_7 (*
+			=> nrel_goto: .agent_of_finding_the_prototype_of_mapping_step_7a;;
+   		*);;
+
+        -> .agent_of_finding_the_prototype_of_mapping_step_7a (*
             <- varAssign;;
 
             -> rrel_1: rrel_assign: rrel_scp_var: _var_nrel;;
@@ -121,19 +127,16 @@ scp_program -> agent_of_finding_the_prototype_of_mapping (*
         *);;
 
  		-> .agent_of_finding_the_prototype_of_mapping_step_11 (*
-		 	 <- searchSetStr5;;
+		 	 <- searchElStr5;;
 
 		  	-> rrel_1: rrel_fixed: rrel_scp_var: _map;;
 		  	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
-		  	-> rrel_3: rrel_assign: rrel_scp_var: _Z;;
+		  	-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _Z;;
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_3;;
 
-          	-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
-          	-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
-          	-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
-
-		  	=> nrel_goto: .agent_of_finding_the_prototype_of_mapping_step_12;;
+		  	=> nrel_then: .agent_of_finding_the_prototype_of_mapping_step_12;;
+			=> nrel_else: ..agent_of_finding_the_prototype_of_mapping_return;;
 		*);;
 
 		-> .agent_of_finding_the_prototype_of_mapping_step_12 (*
@@ -143,14 +146,12 @@ scp_program -> agent_of_finding_the_prototype_of_mapping (*
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _common;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _element_from_Y;;
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc_4;;
-			-> rrel_5: rrel_fixed: rrel_scp_var: _Z;;
+			-> rrel_5: rrel_fixed: rrel_scp_var: rrel_node: _Z;;
 
 			-> rrel_set_1: rrel_fixed: rrel_scp_var: _answer;;
-			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
-          	-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
-          	-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
 
-		  	=> nrel_goto: .agent_of_finding_the_prototype_of_mapping_step_13;;
+		  	=> nrel_then: .agent_of_finding_the_prototype_of_mapping_step_13;;
+			=>nrel_else: ..agent_of_finding_the_prototype_of_mapping_return;;
 		*);;
 
 		-> .agent_of_finding_the_prototype_of_mapping_step_13 (*
@@ -164,23 +165,9 @@ scp_program -> agent_of_finding_the_prototype_of_mapping (*
 			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
 
 
-			=> nrel_goto: .agent_of_finding_the_prototype_of_mapping_step_14;;
+			=> nrel_then: .agent_of_finding_the_prototype_of_mapping_step_15;;
+			=>nrel_else: ..agent_of_finding_the_prototype_of_mapping_return;;
 		*);;
-
-		-> .agent_of_finding_the_prototype_of_mapping_step_14 (*
-			<- genElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: rrel_3;;
-
-			=>nrel_goto: .agent_of_finding_the_prototype_of_mapping_step_15;;
-		*);;
-
-
-
-
-
 
 		-> .agent_of_finding_the_prototype_of_mapping_step_15 (*
 			<- genElStr5;;
@@ -191,10 +178,19 @@ scp_program -> agent_of_finding_the_prototype_of_mapping (*
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
 
-			=>nrel_goto: .agent_of_finding_operator_power_return;;
+			=>nrel_goto: .agent_of_finding_the_prototype_of_mapping_return;;
+		*);;
+
+		-> ..proc_of_finding_the_prototype_of_mapping_step_7 (* 
+			<- eraseEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _prototype;;
+
+			=> nrel_goto: ..agent_of_finding_the_prototype_of_mapping_return;;
+
 		*);;
 	
-		-> .agent_of_finding_operator_power_return (*
+		-> ..agent_of_finding_the_prototype_of_mapping_return (*
 			<- return;;
 		*);;
 	*);;

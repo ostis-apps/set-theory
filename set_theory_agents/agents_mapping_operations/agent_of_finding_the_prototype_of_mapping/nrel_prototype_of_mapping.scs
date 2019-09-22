@@ -1,0 +1,12 @@
+nrel_prototype_of_mapping
+<- sc_node_norole_relation;
+=> nrel_main_idtf: 
+	[прообраз соответствия*] 
+	(* 
+	<- lang_ru;; 
+	*);
+=> nrel_main_en_idtf: 
+	[prototype of mapping*] 
+	(* 
+	<- lang_en;; 
+	*);;
