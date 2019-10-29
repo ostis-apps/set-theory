@@ -1,2 +1,2 @@
 # set-theory
-Разыскиваются желающие взять на себя управление репозиторием.
+Knowledge base and agents for OSTIS Set Theory project
