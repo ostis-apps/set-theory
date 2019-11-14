@@ -8,36 +8,36 @@ agent_of_finding_descartes_multiplication
 
 scp_program -> agent_of_finding_descartes_multiplication (*
 
-	-> rrel_params: .agent_of_finding_operator_descartes_multiplication_params (*
+	-> rrel_params: ..agent_of_finding_operator_descartes_multiplication_params (*
 		-> rrel_1: rrel_in: _event;;
 		-> rrel_2: rrel_in: _input_arc;;
 		*);;
 
-	-> rrel_operators: .agent_of_finding_operator_descartes_multiplication_set (*
-		-> rrel_init: .agent_of_finding_operator_descartes_multiplication1 (*
+	-> rrel_operators: ..agent_of_finding_operator_descartes_multiplication_set (*
+		-> rrel_init: ..agent_of_finding_operator_descartes_multiplication1 (*
 			<- searchElStr3;;
 			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
 			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
-			=>nrel_goto: .agent_of_finding_operator_descartes_multiplication2;;
+			=>nrel_goto: ..agent_of_finding_operator_descartes_multiplication2;;
 		*);;
 
-		-> .agent_of_finding_operator_descartes_multiplication2 (*
+		-> ..agent_of_finding_operator_descartes_multiplication2 (*
 			<- searchElStr3;;
 			-> rrel_1: rrel_fixed: rrel_scp_const: question_finding_descartes_multiplication;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
-			=>nrel_then: .agent_of_finding_operator_descartes_multiplication3;;
-			=>nrel_else: .agent_of_finding_operator_descartes_multiplication_return;;
+			=>nrel_then: ..agent_of_finding_operator_descartes_multiplication3;;
+			=>nrel_else: ..agent_of_finding_operator_descartes_multiplication_return;;
 		*);;
 
-		-> .agent_of_finding_operator_descartes_multiplication3 (*
+		-> ..agent_of_finding_operator_descartes_multiplication3 (*
 			<- printNl;;
 			-> rrel_1: rrel_fixed: rrel_scp_const: [агент нахождения декартового произведения множеств];;
-			=> nrel_goto: .agent_of_finding_operator_descartes_multiplication4;;
+			=> nrel_goto: ..agent_of_finding_operator_descartes_multiplication4;;
    		*);;
 
-		-> .agent_of_finding_operator_descartes_multiplication4 (*
+		-> ..agent_of_finding_operator_descartes_multiplication4 (*
 			<- call;;
 			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_finding_add_param;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
@@ -47,23 +47,23 @@ scp_program -> agent_of_finding_descartes_multiplication (*
     				-> rrel_4: rrel_assign: rrel_scp_var: _answer;;
 				*);;
 			-> rrel_3: rrel_assign: rrel_scp_var: _wait_pr;;
-			=> nrel_goto: .agent_of_finding_operator_descartes_multiplication5;;
+			=> nrel_goto: ..agent_of_finding_operator_descartes_multiplication5;;
 		*);;
 
-		-> .agent_of_finding_operator_descartes_multiplication5 (*
+		-> ..agent_of_finding_operator_descartes_multiplication5 (*
 			<- waitReturn;;
 			-> rrel_1: rrel_fixed: rrel_scp_var: _wait_pr;;
-			=> nrel_goto: .agent_of_finding_operator_descartes_multiplication6;;
+			=> nrel_goto: ..agent_of_finding_operator_descartes_multiplication6;;
 		*);;
 
-		-> .agent_of_finding_operator_descartes_multiplication6 (*
+		-> ..agent_of_finding_operator_descartes_multiplication6 (*
 			<- varAssign;;
 			-> rrel_1: rrel_assign: rrel_scp_var: _var_nrel;;
 		    -> rrel_2: rrel_fixed: rrel_scp_const: nrel_cartesian_product;;
-			=> nrel_goto: .agent_of_finding_operator_descartes_multiplication9;;
+			=> nrel_goto: ..agent_of_finding_operator_descartes_multiplication9;;
 		*);;
 
-		-> .agent_of_finding_operator_descartes_multiplication9 (*
+		-> ..agent_of_finding_operator_descartes_multiplication9 (*
 			<- call;;
 			-> rrel_1: rrel_fixed: rrel_scp_const: proc_search_of_sets_new_2;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
@@ -74,16 +74,16 @@ scp_program -> agent_of_finding_descartes_multiplication (*
 					-> rrel_5: rrel_assign: rrel_scp_var: _set3;;
 				*);;
 			-> rrel_3: rrel_assign: rrel_scp_var: _wait_prog_set2;;
-			=> nrel_goto: .agent_of_finding_operator_descartes_multiplication10;;
+			=> nrel_goto: ..agent_of_finding_operator_descartes_multiplication10;;
 		*);;
 
-		-> .agent_of_finding_operator_descartes_multiplication10 (*
+		-> ..agent_of_finding_operator_descartes_multiplication10 (*
 			<- waitReturn;;
 			-> rrel_1: rrel_fixed: rrel_scp_var: _wait_prog_set2;;
-			=> nrel_goto: .agent_of_finding_operator_descartes_multiplication11;;
+			=> nrel_goto: ..agent_of_finding_operator_descartes_multiplication11;;
 		*);;
 
-		-> .agent_of_finding_operator_descartes_multiplication11 (*
+		-> ..agent_of_finding_operator_descartes_multiplication11 (*
             <- call;;
             -> rrel_1: rrel_fixed: rrel_scp_const: proc_of_finding_descartes_multiplication;;
             -> rrel_2: ... (*
@@ -92,16 +92,17 @@ scp_program -> agent_of_finding_descartes_multiplication (*
                 -> rrel_3: rrel_fixed: rrel_scp_var: _set3;;
             *);;
             -> rrel_3: rrel_assign: rrel_scp_var: _argument;;
-            => nrel_goto: .agent_of_finding_operator_descartes_multiplication12;;
+            => nrel_goto: ..agent_of_finding_operator_descartes_multiplication12;;
         *);;
 
-        ->.agent_of_finding_operator_descartes_multiplication12 (*
+        ->..agent_of_finding_operator_descartes_multiplication12 (*
             <- waitReturn;;
             -> rrel_1: rrel_fixed: rrel_scp_var: _argument;;
-            => nrel_goto: .agent_of_finding_operator_descartes_multiplication13;;
+            => nrel_goto: ..agent_of_finding_operator_descartes_multiplication13;;
         *);;
 
-		-> .agent_of_finding_operator_descartes_multiplication13 (*
+	-> ..agent_of_finding_operator_descartes_multiplication13 
+	(*
             <- searchSetStr5;;
             -> rrel_1: rrel_scp_var: rrel_assign: _el1;;
             -> rrel_2: rrel_scp_var: rrel_assign: rrel_common: _arc11;;
@@ -111,10 +112,10 @@ scp_program -> agent_of_finding_descartes_multiplication (*
 
             -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
             -> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
-            => nrel_goto: .agent_of_finding_operator_descartes_multiplication14;;
+            => nrel_goto: ..agent_of_finding_operator_descartes_multiplication14;;
         *);;
 
-        -> .agent_of_finding_operator_descartes_multiplication14 (*
+        -> ..agent_of_finding_operator_descartes_multiplication14 (*
             <- call;;
             -> rrel_1: rrel_fixed: rrel_scp_const: proc_of_finding_union;;
             -> rrel_2: ... (*
@@ -123,16 +124,16 @@ scp_program -> agent_of_finding_descartes_multiplication (*
                 -> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
             *);;
             -> rrel_3: rrel_assign: rrel_scp_var: _argument2;;
-            => nrel_goto: .agent_of_finding_operator_descartes_multiplication15;;
+            => nrel_goto: ..agent_of_finding_operator_descartes_multiplication15;;
         *);;
 
-        ->.agent_of_finding_operator_descartes_multiplication15 (*
+        ->..agent_of_finding_operator_descartes_multiplication15 (*
             <- waitReturn;;
             -> rrel_1: rrel_fixed: rrel_scp_var: _argument2;;
-            => nrel_goto: .agent_of_finding_operator_descartes_multiplication16;;
+            => nrel_goto: ..agent_of_finding_operator_descartes_multiplication16;;
         *);;
 
-        -> .agent_of_finding_operator_descartes_multiplication16 (*
+        -> ..agent_of_finding_operator_descartes_multiplication16 (*
             <- call;;
             -> rrel_1: rrel_fixed: rrel_scp_const: proc_add_set;;
             -> rrel_2: ... (*
@@ -141,26 +142,26 @@ scp_program -> agent_of_finding_descartes_multiplication (*
                 -> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
             *);;
             -> rrel_3: rrel_assign: rrel_scp_var: _argument2;;
-            => nrel_goto: .agent_of_finding_operator_descartes_multiplication17;;
+            => nrel_goto: ..agent_of_finding_operator_descartes_multiplication17;;
         *);;
 
-        ->.agent_of_finding_operator_descartes_multiplication17 (*
+        ->..agent_of_finding_operator_descartes_multiplication17 (*
             <- waitReturn;;
             -> rrel_1: rrel_fixed: rrel_scp_var: _argument2;;
-            => nrel_goto: .agent_of_finding_operator_descartes_multiplication18;;
+            => nrel_goto: ..agent_of_finding_operator_descartes_multiplication18;;
         *);;
 
-		-> .agent_of_finding_operator_descartes_multiplication18 (*
+		-> ..agent_of_finding_operator_descartes_multiplication18 (*
 			<- genElStr5;;
 			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
 			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_const: rrel_scp_var: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
-			=>nrel_goto: .agent_of_finding_operator_descartes_multiplication_return;;
+			=>nrel_goto: ..agent_of_finding_operator_descartes_multiplication_return;;
 		*);;
 	
-		-> .agent_of_finding_operator_descartes_multiplication_return (*
+		-> ..agent_of_finding_operator_descartes_multiplication_return (*
 			<- return;;
 		*);;
 	*);;
