@@ -6,113 +6,134 @@ agent_of_finding_power
 	(* <- lang_en;; *);
 <- agent_scp_program;;
 
-scp_program -> agent_of_finding_power (*
+scp_program -> agent_of_finding_power 
+	(*
+		-> rrel_params: ..agent_of_finding_operator_power_params 
+			(*
+				-> rrel_1: rrel_in: _event;;
+				-> rrel_2: rrel_in: _input_arc;;
+			*);;
+		-> rrel_operators: ..agent_of_finding_operator_power_set 
+			(*
+		-> rrel_init: ..agent_of_finding_operator_power1 
+			(*
+				<- searchElStr3;;
 
-	-> rrel_params: .agent_of_finding_operator_power_params (*
-		-> rrel_1: rrel_in: _event;;
-		-> rrel_2: rrel_in: _input_arc;;
-		*);;
+				-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
 
-	-> rrel_operators: .agent_of_finding_operator_power_set (*
-		-> rrel_init: .agent_of_finding_operator_power1 (*
-			<- searchElStr3;;
-			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
-			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
-			=>nrel_goto: .agent_of_finding_operator_power2;;
-		*);;
+				=>nrel_goto: ..agent_of_finding_operator_power2;;
+			*);;
+		-> ..agent_of_finding_operator_power2 
+			(*
+				<- searchElStr3;;
 
-		-> .agent_of_finding_operator_power2 (*
-			<- searchElStr3;;
-			-> rrel_1: rrel_fixed: rrel_scp_const: question_finding_power;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
-			=>nrel_then: .agent_of_finding_operator_power3;;
-			=>nrel_else: .agent_of_finding_operator_power_return;;
-		*);;
+				-> rrel_1: rrel_fixed: rrel_scp_const: question_finding_power;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
 
-		-> .agent_of_finding_operator_power3 (*
-			<- printNl;;
-			-> rrel_1: rrel_fixed: rrel_scp_const: [агент нахождения мощности множества];;
-			=> nrel_goto: .agent_of_finding_operator_power4;;
-   		*);;
+				=>nrel_then: ..agent_of_finding_operator_power3;;
+				=>nrel_else: ..agent_of_finding_operator_power_return;;
+			*);;
+		-> ..agent_of_finding_operator_power3 
+			(*
+				<- printNl;;
 
-   		-> .agent_of_finding_operator_power4 (*
-			<- searchElStr3;;
-			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _set1;;
-			=>nrel_then: .agent_of_finding_operator_power5;;
-			=>nrel_else: .agent_of_finding_operator_power_return;;
-		*);;
+				-> rrel_1: rrel_fixed: rrel_scp_const: [агент нахождения мощности множества];;
 
-		-> .agent_of_finding_operator_power5 (*
-            <- call;;
-            -> rrel_1: rrel_fixed: rrel_scp_const: proc_of_finding_power;;
-            -> rrel_2: ... (*
-                -> rrel_1: rrel_fixed: rrel_scp_var: _set1;;
-                -> rrel_2: rrel_assign: rrel_scp_var: _current;;
-            *);;
-            -> rrel_3: rrel_assign: rrel_scp_var: _argument;;
-            => nrel_goto: .agent_of_finding_operator_power6;;
-        *);;
+				=> nrel_goto: ..agent_of_finding_operator_power4;;
+	   		*);;
+   		-> ..agent_of_finding_operator_power4 
+			(*
+				<- searchElStr3;;
 
-        ->.agent_of_finding_operator_power6 (*
-            <- waitReturn;;
-            -> rrel_1: rrel_fixed: rrel_scp_var: _argument;;
-            => nrel_goto: .agent_of_finding_operator_power7;;
-        *);;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _set1;;
 
-        -> .agent_of_finding_operator_power7 (*
-            <- varAssign;;
-            -> rrel_1: rrel_assign: rrel_scp_var: _var_nrel;;
-            -> rrel_2: rrel_fixed: rrel_scp_const: nrel_power_set;;
-            => nrel_goto: .agent_of_finding_operator_power8;;
-        *);;
+				=>nrel_then: ..agent_of_finding_operator_power4A;;
+				=>nrel_else: ..agent_of_finding_operator_power_return;;
+			*);;
+		-> ..agent_of_finding_operator_power4A
+			(*
+				<- contAssign;;
 
-        -> .agent_of_finding_operator_power8 (*
-            <- call;;
-            -> rrel_1: rrel_fixed: rrel_scp_const: proc_add_five_elements;;
-            -> rrel_2: ... (*
-                -> rrel_1: rrel_fixed: rrel_scp_var: _set1;;
-                -> rrel_2: rrel_fixed: rrel_scp_var: _var_nrel;;
-                -> rrel_3: rrel_fixed: rrel_scp_var: _current;;
-                -> rrel_4: rrel_assign: rrel_scp_var: _answer;;
-            *);;
-            -> rrel_3: rrel_assign: rrel_scp_var: _argumentq;;
-            => nrel_goto: .agent_of_finding_operator_power9;;
-        *);;
+				-> rrel_1: rrel_assign: rrel_scp_var: _current;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+					 	
+				=> nrel_goto: ..agent_of_finding_operator_power5;;
+			*);;		
+		-> ..agent_of_finding_operator_power5 
+			(*
+				<- call;;
 
-        ->.agent_of_finding_operator_power9 (*
-            <- waitReturn;;
-            -> rrel_1: rrel_fixed: rrel_scp_var: _argumentq;;
-            => nrel_goto: .agent_of_finding_operator_power10A;;
-        *);;
+			   	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_finding_power;;
+			    	-> rrel_2: ... 
+					(*
+						-> rrel_1: rrel_fixed: rrel_scp_var: _set1;;
+						-> rrel_2: rrel_fixed: rrel_scp_var: _current;;
+				 	*);;
+			    	-> rrel_3: rrel_assign: rrel_scp_var: _argument;;
 
-        -> .agent_of_finding_operator_power10A (*
-		  <- searchSetStr3;;
-		  -> rrel_1: rrel_fixed: rrel_scp_var: _set1;;
-		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
-		  -> rrel_3: rrel_assign: rrel_scp_var: _els;;
+			    	=> nrel_goto: ..agent_of_finding_operator_power6;;
+			*);;
+        	->..agent_of_finding_operator_power6 
+			(*
+			    	<- waitReturn;;
 
-          -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
-          -> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
+			    	-> rrel_1: rrel_fixed: rrel_scp_var: _argument;;
 
-		  => nrel_goto: .agent_of_finding_operator_power10;;
-		*);;
+			    	=> nrel_goto: ..agent_of_finding_operator_power7;;
+			*);;
+		-> ..agent_of_finding_operator_power7 
+			(*
+			   	<- varAssign;;
 
-		-> .agent_of_finding_operator_power10 (*
-			<- genElStr5;;
-			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
-			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_const: rrel_scp_var: _arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
-			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
-			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
-			=>nrel_goto: .agent_of_finding_operator_power_return;;
-		*);;
-	
-		-> .agent_of_finding_operator_power_return (*
-			<- return;;
+				-> rrel_1: rrel_assign: rrel_scp_var: _var_nrel;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: nrel_power_set;;
+
+				=> nrel_goto: ..agent_of_finding_operator_power8;;
+			*);;
+        	-> ..agent_of_finding_operator_power8 
+			(*
+			    	<- call;;
+
+			    	-> rrel_1: rrel_fixed: rrel_scp_const: proc_add_decimal_numeral_system;;
+			    	-> rrel_2: ... 
+					(*
+						-> rrel_1: rrel_fixed: rrel_scp_var: _set1;;
+						-> rrel_2: rrel_fixed: rrel_scp_var: _var_nrel;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _current;;
+						-> rrel_4: rrel_assign: rrel_scp_var: _answer;;
+					*);;
+            			-> rrel_3: rrel_assign: rrel_scp_var: _argumentq;;
+
+            			=> nrel_goto: ..agent_of_finding_operator_power9;;
+        		*);;
+        	->..agent_of_finding_operator_power9 
+			(*
+			        <- waitReturn;;
+
+		            	-> rrel_1: rrel_fixed: rrel_scp_var: _argumentq;;
+
+            			=> nrel_goto: ..agent_of_finding_operator_power10;;
+        		*);;
+		-> ..agent_of_finding_operator_power10
+			(*
+				<- genElStr5;;
+
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_const: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+				-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+				-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+				=>nrel_goto: ..agent_of_finding_operator_power_return;;
+			*);;	
+		-> ..agent_of_finding_operator_power_return 
+			(*
+				<- return;;
+			*);;
 		*);;
 	*);;
-*);;

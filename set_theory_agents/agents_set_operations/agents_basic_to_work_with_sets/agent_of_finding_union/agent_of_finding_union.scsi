@@ -8,36 +8,36 @@ agent_of_finding_union
 
 scp_program -> agent_of_finding_union (*
 
-	-> rrel_params: .agent_of_finding_union_operator_params (*
+	-> rrel_params: ..agent_of_finding_union_operator_params (*
 		-> rrel_1: rrel_in: _event;;
 		-> rrel_2: rrel_in: _input_arc;;
 		*);;
 
-	-> rrel_operators: .agent_of_finding_union_operator_set (*
-		-> rrel_init: .agent_of_finding_union_operator1 (*
+	-> rrel_operators: ..agent_of_finding_union_operator_set (*
+		-> rrel_init: ..agent_of_finding_union_operator1 (*
 			<- searchElStr3;;
 			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
 			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
-			=>nrel_goto: .agent_of_finding_union_operator2;;
+			=>nrel_goto: ..agent_of_finding_union_operator2;;
 		*);;
 
-		-> .agent_of_finding_union_operator2 (*
+		-> ..agent_of_finding_union_operator2 (*
 			<- searchElStr3;;
 			-> rrel_1: rrel_fixed: rrel_scp_const: question_finding_union;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
-			=>nrel_then: .agent_of_finding_union_operator_print;;
-			=>nrel_else: .agent_of_finding_union_operator_return;;
+			=>nrel_then: ..agent_of_finding_union_operator_print;;
+			=>nrel_else: ..agent_of_finding_union_operator_return;;
 		*);;
 
-		-> .agent_of_finding_union_operator_print (*
+		-> ..agent_of_finding_union_operator_print (*
 			<- printNl;;
 			-> rrel_1: rrel_fixed: rrel_scp_const: [агент нахождения объединения множеств];;
-			=> nrel_goto: .agent_of_finding_union_operator3;;
+			=> nrel_goto: ..agent_of_finding_union_operator3;;
    		*);;
 
-		-> .agent_of_finding_union_operator3 (*
+		-> ..agent_of_finding_union_operator3 (*
 			<- call;;
 			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_finding_add_param;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
@@ -47,25 +47,23 @@ scp_program -> agent_of_finding_union (*
     				-> rrel_4: rrel_assign: rrel_scp_var: _answer;;
 				*);;
 			-> rrel_3: rrel_assign: rrel_scp_var: _wait_pr;;
-			=> nrel_goto: .agent_of_finding_union_operator4;;
+			=> nrel_goto: ..agent_of_finding_union_operator4;;
 		*);;
 
-		-> .agent_of_finding_union_operator4 (*
+		-> ..agent_of_finding_union_operator4 (*
 			<- waitReturn;;
 			-> rrel_1: rrel_fixed: rrel_scp_var: _wait_pr;;
-			=> nrel_goto: .agent_of_finding_union_operator_link;;
+			=> nrel_goto: ..agent_of_finding_union_operator_link;;
 		*);;
 
-		-> .agent_of_finding_union_operator_link (*
+		-> ..agent_of_finding_union_operator_link (*
 			<- varAssign;;
 			-> rrel_1: rrel_assign: rrel_scp_var: _var_nrel;;
 		    -> rrel_2: rrel_fixed: rrel_scp_const: nrel_combination;;
-			=> nrel_goto: .agent_of_finding_union_operator8;;
+			=> nrel_goto: ..agent_of_finding_union_operator8;;
 		*);;
 
-//=============================================
-//
-		-> .agent_of_finding_union_operator6 (*
+		-> ..agent_of_finding_union_operator6 (*
 			<- call;;
 			-> rrel_1: rrel_fixed: rrel_scp_const: proc_add_el_set_answer;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
@@ -74,18 +72,16 @@ scp_program -> agent_of_finding_union (*
 					-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
 				*);;
 			-> rrel_3: rrel_assign: rrel_scp_var: _wait_prog_set1;;
-			=> nrel_goto: .agent_of_finding_union_operator7;;
+			=> nrel_goto: ..agent_of_finding_union_operator7;;
 		*);;
 
-		-> .agent_of_finding_union_operator7 (*
+		-> ..agent_of_finding_union_operator7 (*
 			<- waitReturn;;
 			-> rrel_1: rrel_fixed: rrel_scp_var: _wait_prog_set1;;
-			=> nrel_goto: .agent_of_finding_union_operator8;;
+			=> nrel_goto: ..agent_of_finding_union_operator8;;
 		*);;
-//
-//==============================================
 
-		-> .agent_of_finding_union_operator8 (*
+		-> ..agent_of_finding_union_operator8 (*
 			<- call;;
 			-> rrel_1: rrel_fixed: rrel_scp_const: proc_search_of_sets_new;;
 			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
@@ -96,16 +92,16 @@ scp_program -> agent_of_finding_union (*
 					-> rrel_5: rrel_assign: rrel_scp_var: _set3;;
 				*);;
 			-> rrel_3: rrel_assign: rrel_scp_var: _wait_prog_set2;;
-			=> nrel_goto: .agent_of_finding_union_operator9;;
+			=> nrel_goto: ..agent_of_finding_union_operator9;;
 		*);;
 
-		-> .agent_of_finding_union_operator9 (*
+		-> ..agent_of_finding_union_operator9 (*
 			<- waitReturn;;
 			-> rrel_1: rrel_fixed: rrel_scp_var: _wait_prog_set2;;
-			=> nrel_goto: .agent_of_finding_union_operator10;;
+			=> nrel_goto: ..agent_of_finding_union_operator10;;
 		*);;
 
-		-> .agent_of_finding_union_operator10 (*
+		-> ..agent_of_finding_union_operator10 (*
             <- call;;
             -> rrel_1: rrel_fixed: rrel_scp_const: proc_of_finding_union;;
             -> rrel_2: ... (*
@@ -114,26 +110,26 @@ scp_program -> agent_of_finding_union (*
                 -> rrel_3: rrel_fixed: rrel_scp_var: _set3;;
             *);;
             -> rrel_3: rrel_assign: rrel_scp_var: _argument;;
-            => nrel_goto: .agent_of_finding_union_operator11;;
+            => nrel_goto: ..agent_of_finding_union_operator11;;
         *);;
 
-        -> .agent_of_finding_union_operator11 (*
+        -> ..agent_of_finding_union_operator11 (*
             <- waitReturn;;
             -> rrel_1: rrel_fixed: rrel_scp_var: _argument;;
-            => nrel_goto: .agent_of_finding_union_operator12;;
+            => nrel_goto: ..agent_of_finding_union_operator12;;
         *);;
 
-		-> .agent_of_finding_union_operator12 (*
+		-> ..agent_of_finding_union_operator12 (*
             <- searchSetStr3;;
             -> rrel_1: rrel_fixed: rrel_scp_var: _set3;;
             -> rrel_2: rrel_scp_var: rrel_assign: rrel_pos_const_perm: _arc;;
             -> rrel_3: rrel_scp_var: rrel_assign: rrel_node: _el;;
             -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
             -> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;; // добавлено
-            => nrel_goto: .agent_of_finding_union_operator13;;
+            => nrel_goto: ..agent_of_finding_union_operator13;;
         *);;
 
-        -> .agent_of_finding_union_operator13 (*
+        -> ..agent_of_finding_union_operator13 (*
             <- call;;
             -> rrel_1: rrel_fixed: rrel_scp_const: proc_add_set;;
             -> rrel_2: ... (*
@@ -142,26 +138,26 @@ scp_program -> agent_of_finding_union (*
                 -> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
             *);;
             -> rrel_3: rrel_assign: rrel_scp_var: _argument;;
-            => nrel_goto: .agent_of_finding_union_operator14;;
+            => nrel_goto: ..agent_of_finding_union_operator14;;
         *);;
 
-        -> .agent_of_finding_union_operator14 (*
+        -> ..agent_of_finding_union_operator14 (*
             <- waitReturn;;
             -> rrel_1: rrel_fixed: rrel_scp_var: _argument;;
-            => nrel_goto: .agent_of_finding_union_operator15;;
+            => nrel_goto: ..agent_of_finding_union_operator15;;
         *);;
 
-		-> .agent_of_finding_union_operator15 (*
+		-> ..agent_of_finding_union_operator15 (*
 			<- genElStr5;;
 			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
 			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_const: rrel_scp_var: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
-			=>nrel_goto: .agent_of_finding_union_operator_return;;
+			=>nrel_goto: ..agent_of_finding_union_operator_return;;
 		*);;
 	
-		-> .agent_of_finding_union_operator_return (*
+		-> ..agent_of_finding_union_operator_return (*
 			<- return;;
 		*);;
 	*);;
