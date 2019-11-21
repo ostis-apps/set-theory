@@ -6,14 +6,14 @@ scp_program -> proc_of_finding_union (*
   	*);;
   
 	-> rrel_operators: ...(*
-    	-> rrel_init: .proc_of_finding_union_operator0 (*
+    	-> rrel_init: ..proc_of_finding_union_operator0 (*
 			<- genEl;;
 		-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _setel;;
 
-		=> nrel_goto: .proc_of_finding_union_operator1;;
+		=> nrel_goto: ..proc_of_finding_union_operator1;;
 		*);;
 
-    	-> .proc_of_finding_union_operator1 (*
+    	-> ..proc_of_finding_union_operator1 (*
 			<- searchSetStr3;;
 		-> rrel_1: rrel_fixed: rrel_scp_var: _s1;;
 		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arcweui;;
@@ -21,47 +21,47 @@ scp_program -> proc_of_finding_union (*
 
 		-> rrel_set_3: rrel_fixed: rrel_scp_var: _setel;;
 
-		=> nrel_then: .proc_of_finding_union_operator2;;
-      	=> nrel_else: .proc_of_finding_union_operator13;;
+		=> nrel_then: ..proc_of_finding_union_operator2;;
+      	=> nrel_else: ..proc_of_finding_union_operator13;;
 		*);;
 
-		-> .proc_of_finding_union_operator2 (*
+		-> ..proc_of_finding_union_operator2 (*
 			<- searchElStr3;;
 		-> rrel_1: rrel_fixed: rrel_scp_var: _setel;;
 		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
 		-> rrel_3: rrel_assign: rrel_scp_var: _el;;
 
-		=> nrel_then: .proc_of_finding_union_operator3;;
-      	=> nrel_else: .proc_of_finding_union_operator13;;
+		=> nrel_then: ..proc_of_finding_union_operator3;;
+      	=> nrel_else: ..proc_of_finding_union_operator13;;
 		*);;
 
-		-> .proc_of_finding_union_operator3 (*
+		-> ..proc_of_finding_union_operator3 (*
 		 <- eraseEl;;
 		 -> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc;;
 
-		 => nrel_goto: .proc_of_finding_union_operator4;;
+		 => nrel_goto: ..proc_of_finding_union_operator4;;
 		 *);;
 
-		-> .proc_of_finding_union_operator4 (*
+		-> ..proc_of_finding_union_operator4 (*
 			<- searchElStr3;;
 		-> rrel_1: rrel_fixed: rrel_scp_var: _s3;;
 		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arct;;
 		-> rrel_3: rrel_fixed: rrel_scp_var: _el;;
 
-		=> nrel_then: .proc_of_finding_union_operator2;;
-      	=> nrel_else: .proc_of_finding_union_operator5;;
+		=> nrel_then: ..proc_of_finding_union_operator2;;
+      	=> nrel_else: ..proc_of_finding_union_operator5;;
 		*);;
 
-		-> .proc_of_finding_union_operator5 (*
+		-> ..proc_of_finding_union_operator5 (*
 			<- genElStr3;;
 		-> rrel_1: rrel_fixed: rrel_scp_var: _s3;;
 		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
 		-> rrel_3: rrel_fixed: rrel_scp_var: _el;;
 
-		=> nrel_goto: .proc_of_finding_union_operator2;;
+		=> nrel_goto: ..proc_of_finding_union_operator2;;
 		*);;
 		
-		-> .proc_of_finding_union_operator13 (*
+		-> ..proc_of_finding_union_operator13 (*
 			<- searchSetStr3;;
 		  -> rrel_1: rrel_fixed: rrel_scp_var: _s2;;
 		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
@@ -69,55 +69,55 @@ scp_program -> proc_of_finding_union (*
 
 		  -> rrel_set_3: rrel_fixed: rrel_scp_var: _setel;;
 
-		  => nrel_then: .proc_of_finding_union_operator14;;
-      	  => nrel_else: .proc_of_finding_union_operator_erase;;
+		  => nrel_then: ..proc_of_finding_union_operator14;;
+      	  => nrel_else: ..proc_of_finding_union_operator_erase;;
 		*);;
 
 		// Поиск элемента во 2 контуре
-		-> .proc_of_finding_union_operator14 (*
+		-> ..proc_of_finding_union_operator14 (*
 			<- searchElStr3;;
 		-> rrel_1: rrel_fixed: rrel_scp_var: _setel;;
 		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		-> rrel_3: rrel_assign: rrel_scp_var: _temp_el;;
 
-      	=> nrel_then: .proc_of_finding_union_operator15;;
-      	=> nrel_else: .proc_of_finding_union_operator_erase;;
+      	=> nrel_then: ..proc_of_finding_union_operator15;;
+      	=> nrel_else: ..proc_of_finding_union_operator_erase;;
 		*);;
 
-		-> .proc_of_finding_union_operator15 (*
+		-> ..proc_of_finding_union_operator15 (*
 		 <- eraseEl;;
 		 -> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc1;;
 
-		 => nrel_goto: .proc_of_finding_union_operator16;;
+		 => nrel_goto: ..proc_of_finding_union_operator16;;
 		 *);;
 
-		-> .proc_of_finding_union_operator16 (*
+		-> ..proc_of_finding_union_operator16 (*
 			<- searchElStr3;;
 		-> rrel_1: rrel_fixed: rrel_scp_var: _s3;;
 		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 		-> rrel_3: rrel_fixed: rrel_scp_var: _temp_el;;
 
-      	=> nrel_then: .proc_of_finding_union_operator14;;
-      	=> nrel_else: .proc_of_finding_union_operator17;;
+      	=> nrel_then: ..proc_of_finding_union_operator14;;
+      	=> nrel_else: ..proc_of_finding_union_operator17;;
 		*);;
 
-		-> .proc_of_finding_union_operator17 (*
+		-> ..proc_of_finding_union_operator17 (*
 			<- genElStr3;;
 		-> rrel_1: rrel_fixed: rrel_scp_var: _s3;;
 		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
 		-> rrel_3: rrel_fixed: rrel_scp_var: _temp_el;;
 
-      	=> nrel_goto: .proc_of_finding_union_operator14;;
+      	=> nrel_goto: ..proc_of_finding_union_operator14;;
 		*);;
 
-		-> .proc_of_finding_union_operator_erase (*
+		-> ..proc_of_finding_union_operator_erase (*
 		 <- eraseEl;;
 		 -> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _setel;;
 
-		 => nrel_goto: .proc_of_finding_union_operator_return;;
+		 => nrel_goto: ..proc_of_finding_union_operator_return;;
 		 *);;
 
-	    -> .proc_of_finding_union_operator_return(*
+	    -> ..proc_of_finding_union_operator_return(*
     	  <- return;;
     *);;
   *);;

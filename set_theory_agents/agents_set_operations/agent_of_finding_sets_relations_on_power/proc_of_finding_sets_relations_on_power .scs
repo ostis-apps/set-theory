@@ -1,130 +1,147 @@
 scp_program -> proc_of_finding_sets_relations_on_power 
 	(*	
-	-> rrel_params: .proc_of_finding_sets_relations_on_power_params 
+	-> rrel_params: ..proc_of_finding_sets_relations_on_power_params 
 		(*
 		-> rrel_1: rrel_in: _A;;
 		-> rrel_2: rrel_in: _B;;
 		-> rrel_3: rrel_in: _answer;;
 		*);;
 
-	-> rrel_operators: .proc_of_finding_sets_relations_on_power_operator_set 
+	-> rrel_operators: ..proc_of_finding_sets_relations_on_power_operator_set 
 		(*
-		-> rrel_init: .proc_of_finding_sets_relations_on_power_operator0
+		-> rrel_init: ..proc_of_finding_sets_relations_on_power_operator0
 			(*
 			<- genElStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _A;;
 
-                 	=> nrel_goto: .proc_of_finding_sets_relations_on_power_operator1;;
+                 	=> nrel_goto: ..proc_of_finding_sets_relations_on_power_operator1;;
                  	*);;
 
-		->.proc_of_finding_sets_relations_on_power_operator1
+		->..proc_of_finding_sets_relations_on_power_operator1
 			(*
 			<- genElStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _B;;
 
-                 	=> nrel_goto: .proc_of_finding_sets_relations_on_power_operator2;;
+                 	=> nrel_goto: ..proc_of_finding_sets_relations_on_power_operator2;;
                  	*);;
 
-		->.proc_of_finding_sets_relations_on_power_operator2
+		->..proc_of_finding_sets_relations_on_power_operator2
 			(*
 			<- genElStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
 			-> rrel_3: rrel_assign: rrel_node: rrel_const: rrel_scp_var: _X;;
 
-                 	=> nrel_goto: .proc_of_finding_sets_relations_on_power_operator3;;
+                 	=> nrel_goto: ..proc_of_finding_sets_relations_on_power_operator3;;
                  	*);;
 
-		->.proc_of_finding_sets_relations_on_power_operator3
+		->..proc_of_finding_sets_relations_on_power_operator3
 			(*
 			<- genElStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _X;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arcA;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _A;;
 
-                 	=> nrel_goto: .proc_of_finding_sets_relations_on_power_operator4;;
+                 	=> nrel_goto: ..proc_of_finding_sets_relations_on_power_operator4;;
                  	*);;
 
-		->.proc_of_finding_sets_relations_on_power_operator4
+		->..proc_of_finding_sets_relations_on_power_operator4
 			(*
 			<- genElStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _X;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arcB;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _B;;
 
-                 	=> nrel_goto: .proc_of_finding_sets_relations_on_power_operator5;;
+                 	=> nrel_goto: ..proc_of_finding_sets_relations_on_power_operator5;;
                  	*);;
 
-		->.proc_of_finding_sets_relations_on_power_operator5
+		->..proc_of_finding_sets_relations_on_power_operator5
 			(*
 			<- genElStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
 			-> rrel_3: rrel_fixed: rrel_pos_const_perm: rrel_scp_var: _arcA;;
 
-                 	=> nrel_goto: .proc_of_finding_sets_relations_on_power_operator6;;
+                 	=> nrel_goto: ..proc_of_finding_sets_relations_on_power_operator6;;
                  	*);;
 
-		->.proc_of_finding_sets_relations_on_power_operator6
+		->..proc_of_finding_sets_relations_on_power_operator6
 			(*
 			<- genElStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
 			-> rrel_3: rrel_fixed: rrel_pos_const_perm: rrel_scp_var: _arcB;;
 
-                 	=> nrel_goto: .proc_of_finding_sets_relations_on_power_operator7;;
+                 	=> nrel_goto: ..proc_of_finding_sets_relations_on_power_operator6A;;
                  	*);;
-		->.proc_of_finding_sets_relations_on_power_operator7
+		->..proc_of_finding_sets_relations_on_power_operator6A
+			(*
+				<- contAssign;;
+
+				-> rrel_1: rrel_assign: rrel_scp_var: _powerA;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+					 	
+				=> nrel_goto: ..proc_of_finding_sets_relations_on_power_operator7;;
+			*);;
+		->..proc_of_finding_sets_relations_on_power_operator7
 			(* 
 			<- call;;
 			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_finding_power;;
 			-> rrel_2: ... (*
 				-> rrel_1: rrel_fixed: rrel_scp_var: _A;;
-				-> rrel_2: rrel_assign: rrel_scp_var: _powerA;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _powerA;;
 				*);;
 			-> rrel_3: rrel_assign: rrel_scp_var: _argument;;
-			=> nrel_goto: .proc_of_finding_sets_relations_on_power_operator8;;
+			=> nrel_goto: ..proc_of_finding_sets_relations_on_power_operator8;;
 			*);;
 
-		->.proc_of_finding_sets_relations_on_power_operator8 (*
+		->..proc_of_finding_sets_relations_on_power_operator8 (*
 			<- waitReturn;;
 			-> rrel_1: rrel_fixed: rrel_scp_var: _argument;;
-			=> nrel_goto: .proc_of_finding_sets_relations_on_power_operator9;;
+			=> nrel_goto: ..proc_of_finding_sets_relations_on_power_operator8AA;;
 			*);;
+		->..proc_of_finding_sets_relations_on_power_operator8AA
+			(*
+				<- contAssign;;
 
-		->.proc_of_finding_sets_relations_on_power_operator9
+				-> rrel_1: rrel_assign: rrel_scp_var: _powerB;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+					 	
+				=> nrel_goto: ..proc_of_finding_sets_relations_on_power_operator9;;
+			*);;		
+		->..proc_of_finding_sets_relations_on_power_operator9
 			(* 
 			<- call;;
 			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_finding_power;;
 			-> rrel_2: ... (*
 				-> rrel_1: rrel_fixed: rrel_scp_var: _B;;
-				-> rrel_2: rrel_assign: rrel_scp_var: _powerB;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _powerB;;
 			    *);;
 			-> rrel_3: rrel_assign: rrel_scp_var: _argument;;
-			=> nrel_goto: .proc_of_finding_sets_relations_on_power_operator10;;
+			=> nrel_goto: ..proc_of_finding_sets_relations_on_power_operator10;;
 			*);;
 
-		->.proc_of_finding_sets_relations_on_power_operator10 (*
+		->..proc_of_finding_sets_relations_on_power_operator10 (*
 			<- waitReturn;;
 			-> rrel_1: rrel_fixed: rrel_scp_var: _argument;;
-			=> nrel_goto: .proc_of_finding_sets_relations_on_power_operator11;;
+			=> nrel_goto: ..proc_of_finding_sets_relations_on_power_operator11;;
 			*);;
 
-		 ->.proc_of_finding_sets_relations_on_power_operator11
+		 ->..proc_of_finding_sets_relations_on_power_operator11
 			(*
 			<- ifEq;;
 			-> rrel_1: rrel_fixed: rrel_scp_var: _powerA;;
 			-> rrel_2: rrel_fixed: rrel_scp_var: _powerB;;
 
-                 	=> nrel_then: .proc_of_finding_sets_relations_on_power_operator12;;
-                 	=> nrel_else: .proc_of_finding_sets_relations_on_power_operator_case1;;
+                 	=> nrel_then: ..proc_of_finding_sets_relations_on_power_operator12;;
+                 	=> nrel_else: ..proc_of_finding_sets_relations_on_power_operator_case1;;
                  	*);;
 
-		->.proc_of_finding_sets_relations_on_power_operator12
+		->..proc_of_finding_sets_relations_on_power_operator12
 			(*
 			<- searchSetStr3;;
 			-> rrel_1: rrel_fixed: rrel_scp_var: _A;;
@@ -133,40 +150,40 @@ scp_program -> proc_of_finding_sets_relations_on_power
 
 		  	-> rrel_set_3: rrel_assign: rrel_scp_var: _not_checkedA;;
 
-                 	=> nrel_then: .proc_of_finding_sets_relations_on_power_operator777;;
-                 	=> nrel_else: .proc_of_finding_sets_relations_on_power_operator7x;;
+                 	=> nrel_then: ..proc_of_finding_sets_relations_on_power_operator13;;
+                 	=> nrel_else: ..proc_of_finding_sets_relations_on_power_operator20;;
 			*);; 
 
-		->.proc_of_finding_sets_relations_on_power_operator777
+		->..proc_of_finding_sets_relations_on_power_operator13
 			(*
 			<- searchElStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _not_checkedA;;
 			-> rrel_2: rrel_assign: rrel_scp_var: _arc_for_delA;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _elemA;;
 
-                 	=> nrel_then: .proc_of_finding_sets_relations_on_power_operator7777;;
-                 	=> nrel_else: .proc_of_finding_sets_relations_on_power_operator88;;
+                 	=> nrel_then: ..proc_of_finding_sets_relations_on_power_operator14;;
+                 	=> nrel_else: ..proc_of_finding_sets_relations_on_power_operator16;; // 88 - 16
                  	*);;
 
-		-> .proc_of_finding_sets_relations_on_power_operator7777
+		-> ..proc_of_finding_sets_relations_on_power_operator14
 			(*
 			<- searchElStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _B;;
 			-> rrel_2: rrel_assign: rrel_scp_var: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _elemA;;
 
-                 	=> nrel_then: .proc_of_finding_sets_relations_on_power_operator77777;;
-                 	=> nrel_else: .proc_of_finding_sets_relations_on_power_operator_case2;;
+                 	=> nrel_then: ..proc_of_finding_sets_relations_on_power_operator15;;
+                 	=> nrel_else: ..proc_of_finding_sets_relations_on_power_operator_case2;;
                  	*);;
 
-		->.proc_of_finding_sets_relations_on_power_operator77777
+		->..proc_of_finding_sets_relations_on_power_operator15
 			(*
 			<- eraseEl;;
 		 	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc_for_delA;;
-                 	=> nrel_goto: .proc_of_finding_sets_relations_on_power_operator777;;
+                 	=> nrel_goto: ..proc_of_finding_sets_relations_on_power_operator13;;
 			*);;
 
-				->.proc_of_finding_sets_relations_on_power_operator88
+		->..proc_of_finding_sets_relations_on_power_operator16
 			(*
 			<- searchSetStr3;;
 			-> rrel_1: rrel_fixed: rrel_scp_var: _B;;
@@ -175,63 +192,63 @@ scp_program -> proc_of_finding_sets_relations_on_power
 
 		  	-> rrel_set_3: rrel_assign: rrel_scp_var: _not_checkedB;;
 
-                 	=> nrel_then: .proc_of_finding_sets_relations_on_power_operator888;;
-                 	=> nrel_else: .proc_of_finding_sets_relations_on_power_operator_case2;;
+                 	=> nrel_then: ..proc_of_finding_sets_relations_on_power_operator17;; // 888 - 17
+                 	=> nrel_else: ..proc_of_finding_sets_relations_on_power_operator_case2;;
 			*);; 
 
-		->.proc_of_finding_sets_relations_on_power_operator888
+		->..proc_of_finding_sets_relations_on_power_operator17
 			(*
 			<- searchElStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _not_checkedB;;
 			-> rrel_2: rrel_assign: rrel_scp_var: _arc_for_delB;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _elemB;;
 
-                 	=> nrel_then: .proc_of_finding_sets_relations_on_power_operator8888;;
-                 	=> nrel_else: .proc_of_finding_sets_relations_on_power_operator_case3;;
+                 	=> nrel_then: ..proc_of_finding_sets_relations_on_power_operator18;;
+                 	=> nrel_else: ..proc_of_finding_sets_relations_on_power_operator_case3;;
                  	*);;
 
-		-> .proc_of_finding_sets_relations_on_power_operator8888
+		-> ..proc_of_finding_sets_relations_on_power_operator18
 			(*
 			<- searchElStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _A;;
 			-> rrel_2: rrel_assign: rrel_scp_var: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _elemB;;
 
-                 	=> nrel_then: .proc_of_finding_sets_relations_on_power_operator88888;;
-                 	=> nrel_else: .proc_of_finding_sets_relations_on_power_operator_case2;;
+                 	=> nrel_then: ..proc_of_finding_sets_relations_on_power_operator19;;
+                 	=> nrel_else: ..proc_of_finding_sets_relations_on_power_operator_case2;;
                  	*);;
 
-		->.proc_of_finding_sets_relations_on_power_operator88888
+		->..proc_of_finding_sets_relations_on_power_operator19
 			(*
 			<- eraseEl;;
 		 	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc_for_delB;;
-                 	=> nrel_goto: .proc_of_finding_sets_relations_on_power_operator888;;
+                 	=> nrel_goto: ..proc_of_finding_sets_relations_on_power_operator17;;
 			*);;
 
-		->.proc_of_finding_sets_relations_on_power_operator7x
+		->..proc_of_finding_sets_relations_on_power_operator20
 			(*
 			<- searchElStr3;;
 			-> rrel_1: rrel_fixed: rrel_scp_var: _B;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
 			-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _el;;
 
-                 	=> nrel_then: .proc_of_finding_sets_relations_on_power_operator22;;
-                 	=> nrel_else: .proc_of_finding_sets_relations_on_power_operator_case3;;
+                 	=> nrel_then: ..proc_of_finding_sets_relations_on_power_operator22;;
+                 	=> nrel_else: ..proc_of_finding_sets_relations_on_power_operator_case3;;
 			*);;
 		
-		->.proc_of_finding_sets_relations_on_power_operator_case1
+		->..proc_of_finding_sets_relations_on_power_operator_case1
 			(*
 			<- genElStr5;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _X;;
 			-> rrel_2: rrel_assign: rrel_common: rrel_const: rrel_scp_var: _arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: [Множества не равномощны.];;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [Множества не равномощны..];;
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_sc_text_translation;;
 
-                 	=> nrel_goto: .proc_of_finding_sets_relations_on_power_operator_case1.1;;
+                 	=> nrel_goto: ..proc_of_finding_sets_relations_on_power_operator_case1_1;;
                  	*);;
 
-		->.proc_of_finding_sets_relations_on_power_operator_case1.1
+		->..proc_of_finding_sets_relations_on_power_operator_case1_1
 			(*
 			<- searchSetStr5;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _X;;
@@ -245,22 +262,22 @@ scp_program -> proc_of_finding_sets_relations_on_power
 			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_set_5: rrel_fixed: rrel_scp_var: _answer;;
 
-                 	=> nrel_goto: .proc_of_finding_sets_relations_on_power_operator_return;;
+                 	=> nrel_goto: ..proc_of_finding_sets_relations_on_power_operator_return;;
                  	*);;
 
-		->.proc_of_finding_sets_relations_on_power_operator_case2
+		->..proc_of_finding_sets_relations_on_power_operator_case2
 			(*
 			<- genElStr5;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _X;;
 			-> rrel_2: rrel_assign: rrel_common: rrel_const: rrel_scp_var: _arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: [Множества равномощны.];;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [Множества равномощны..];;
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_sc_text_translation;;
 
-                 	=> nrel_goto: .proc_of_finding_sets_relations_on_power_operator_case2.1;;
+                 	=> nrel_goto: ..proc_of_finding_sets_relations_on_power_operator_case2_1;;
                  	*);;
 
-		->.proc_of_finding_sets_relations_on_power_operator_case2.1
+		->..proc_of_finding_sets_relations_on_power_operator_case2_1
 			(*
 			<- searchSetStr5;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _X;;
@@ -274,22 +291,22 @@ scp_program -> proc_of_finding_sets_relations_on_power
 			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_set_5: rrel_fixed: rrel_scp_var: _answer;;
 
-                 	=> nrel_goto: .proc_of_finding_sets_relations_on_power_operator_return;;
+                 	=> nrel_goto: ..proc_of_finding_sets_relations_on_power_operator_return;;
                  	*);;
 
-		->.proc_of_finding_sets_relations_on_power_operator_case3
+		->..proc_of_finding_sets_relations_on_power_operator_case3
 			(*
 			<- genElStr5;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _X;;
 			-> rrel_2: rrel_assign: rrel_common: rrel_const: rrel_scp_var: _arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: [Множества равны.];;
+			-> rrel_3: rrel_fixed: rrel_scp_const: [Множества равны..];;
 			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_sc_text_translation;;
 
-                 	=> nrel_goto: .proc_of_finding_sets_relations_on_power_operator_case3.1;;
+                 	=> nrel_goto: ..proc_of_finding_sets_relations_on_power_operator_case3_1;;
                  	*);;
 
-		->.proc_of_finding_sets_relations_on_power_operator_case3.1
+		->..proc_of_finding_sets_relations_on_power_operator_case3_1
 			(*
 			<- searchSetStr5;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _X;;
@@ -303,10 +320,10 @@ scp_program -> proc_of_finding_sets_relations_on_power
 			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_set_5: rrel_fixed: rrel_scp_var: _answer;;
 
-                 	=> nrel_goto: .proc_of_finding_sets_relations_on_power_operator_return;;
+                 	=> nrel_goto: ..proc_of_finding_sets_relations_on_power_operator_return;;
                  	*);;
 
-		-> .proc_of_finding_sets_relations_on_power_operator_return 
+		-> ..proc_of_finding_sets_relations_on_power_operator_return 
 			(*
 			<- return;;
 			*);;
