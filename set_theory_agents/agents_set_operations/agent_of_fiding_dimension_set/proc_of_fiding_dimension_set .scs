@@ -1,109 +1,210 @@
 scp_program -> proc_of_finding_dimension_set 
 	(*	
-	-> rrel_params: .proc_of_finding_dimension_set_params 
+	-> rrel_params: ..proc_of_finding_dimension_set_params 
 		(*
-		-> rrel_1: rrel_in: _A;;
-		-> rrel_2: rrel_out: rrel_assign: rrel_scp_var: _counter;;
+			-> rrel_1: rrel_in: _A;;
+			-> rrel_2: rrel_in: _counter;;
 		*);;
-
-	-> rrel_operators: .proc_of_finding_dimension_set_operator_set 
+	-> rrel_operators: ..proc_of_finding_dimension_set_operator_set 
 		(*
-		-> rrel_init: .proc_of_finding_dimension_set_operator00 
-			(*
-			<- searchElStr5;;
-		 	-> rrel_1: rrel_fixed: rrel_scp_var: _A;;
-			-> rrel_2: rrel_assign: rrel_common: rrel_const: rrel_scp_var: _arcA;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _counter;;
-			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arcAA;;
-			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_dimension_set;;
+			-> rrel_init: ..proc_of_finding_dimension_set_operator0
+				(*
+					<- contAssign;;
+			
+					-> rrel_1: rrel_fixed: rrel_scp_var: rrel_link: _counter;;
+					-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+				 	
+				 	=> nrel_goto: ..proc_of_finding_dimension_set_operator1;;
+				*);;
+			->..proc_of_finding_dimension_set_operator1
+				(*
+					<- searchSetStr3;;
+				
+					-> rrel_1: rrel_fixed: rrel_scp_var: _A;;
+					-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+					-> rrel_3: rrel_assign: rrel_scp_var: _el;;
 
-                 	=> nrel_then: .proc_of_finding_dimension_set_operator01;;
-                 	=> nrel_else: .proc_of_finding_dimension_set_operator02;;
-			*);;
+				  	-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_node: _not_checkedA;;
 
-		-> .proc_of_finding_dimension_set_operator01
-			(*
-			<- contAssign;;
-			-> rrel_1: rrel_fixed: rrel_scp_var: _counter;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
-                 	
-                 	=> nrel_goto: .proc_of_finding_dimension_set_operator1;;
-			*);;
+				 	=> nrel_then: ..proc_of_finding_dimension_set_operator1A;;
+				 	=> nrel_else: ..proc_of_finding_dimension_set_operator4;;
+				*);; 	
+			->..proc_of_finding_dimension_set_operator1A
+				(*
+					<- searchSetStr3;;
+	
+					-> rrel_1: rrel_fixed: rrel_scp_var: _A;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+					-> rrel_3: rrel_assign: rrel_scp_var: _els;;
+	
+					-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_node: _num_of_nodes;;
+			
+					=> nrel_then: ..proc_of_finding_dimension_set_operator1B;;
+					=> nrel_else: ..proverka1;;
+				*);;
+			->..proc_of_finding_dimension_set_operator1B
+				(*
+					<- searchElStr3;;
 
-		-> .proc_of_finding_dimension_set_operator02
-			(*
-			<- contAssign;;
-			-> rrel_1: rrel_assign: rrel_scp_var: _counter;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
-                 	
-                 	=> nrel_goto: .proc_of_finding_dimension_set_operator03;;
-			*);;
+					-> rrel_1: rrel_fixed: rrel_scp_var: rrel_node: _num_of_nodes;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+					-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _node;;
+	
+					=> nrel_then: ..proc_of_finding_dimension_set_operator1C;;
+					=> nrel_else: ..proc_of_finding_dimension_set_operator1Bdel;;
+				*);;
+			->..proc_of_finding_dimension_set_operator1Bdel
+				(*
+					<- eraseEl;;
 
-		->.proc_of_finding_dimension_set_operator03
-			(*
-			<- genElStr5;;
-		 	-> rrel_1: rrel_fixed: rrel_scp_var: _A;;
-			-> rrel_2: rrel_assign: rrel_common: rrel_const: rrel_scp_var: _arcA;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _counter;;
-			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arcAA;;
-			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_dimension_set;;
+					-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _num_of_nodes;;
 
-                 	=> nrel_goto: .proc_of_finding_dimension_set_operator1;;
-			*);; 
+					=> nrel_goto: ..proc_of_finding_dimension_set_operator2;;
+				*);; 
+			-> ..proc_of_finding_dimension_set_operator1C
+				(*
+					<- eraseEl;;
 
-		->.proc_of_finding_dimension_set_operator1
-			(*
-			<- searchSetStr3;;
-			-> rrel_1: rrel_fixed: rrel_scp_var: _A;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _el;;
+					-> rrel_1: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arc1 ;;
 
-		  	-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _not_checkedA;;
+					=> nrel_goto: ..proc_of_finding_dimension_set_operator1D ;;
+				*);;
+			->..proc_of_finding_dimension_set_operator1D
+				(*	
+					<- contAssign;;
 
-                 	=> nrel_then: .proc_of_finding_dimension_set_operator2;;
-                 	=> nrel_else: .proc_of_finding_dimension_set_operator4;;
-			*);; 
+					-> rrel_1: rrel_assign: rrel_scp_var: _num_of_edge;;
+					-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
 
-		->.proc_of_finding_dimension_set_operator2 
-			(*
-			<- searchElStr3;;
-		 	-> rrel_1: rrel_fixed: rrel_scp_var: _not_checkedA;;
-			-> rrel_2: rrel_assign: rrel_scp_var: _arc_for_delA;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _elemA;;
+					=> nrel_goto: ..proc_of_finding_dimension_set_operator1E;;
+				*);;
+			->..proc_of_finding_dimension_set_operator1E
+				(*
+					<- searchSetStr3;;
 
-                 	=> nrel_then: .proc_of_finding_dimension_set_operator2A;;
-                 	=> nrel_else: .proc_of_finding_dimension_set_operator_erase_not_checkedA;;
-                 	*);;
+					-> rrel_1: rrel_fixed: rrel_scp_var: _not_checkedA;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+					-> rrel_3: rrel_fixed: rrel_scp_var: _node;;
 
-        -> .proc_of_finding_dimension_set_operator2A
-        	(*
-			<- eraseEl;;
-			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc_for_delA;;
+					-> rrel_set_2: rrel_assign: rrel_scp_var: _edges;;
 
-					=> nrel_goto: .proc_of_finding_dimension_set_operator3;;
-					*);;
+					=> nrel_goto: ..proc_of_finding_dimension_set_operator1F ;;
+				*);;
+			->..proc_of_finding_dimension_set_operator1F
+				(*
+					<- searchElStr3;;
+	
+					-> rrel_1: rrel_fixed: rrel_scp_var: _edges;;
+					-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+					-> rrel_3: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+	
+					=> nrel_then: ..proc_of_finding_dimension_set_operator1G;;
+					=> nrel_else: ..proc_of_finding_dimension_set_operator1Fdel;; 
+				*);;
+			->..proc_of_finding_dimension_set_operator1Fdel
+				(*
+					<- eraseEl;;
 
-		-> .proc_of_finding_dimension_set_operator3
-			(*
-			<- contAdd;;
-		 	-> rrel_1: rrel_fixed: rrel_scp_var: _counter;;
-			-> rrel_2: rrel_fixed: rrel_scp_var: _counter;;
-			-> rrel_3: rrel_fixed: rrel_scp_const: [1];;
+					-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _edges;;
 
-                 	=> nrel_goto: .proc_of_finding_dimension_set_operator2;;
-                 	*);;
+					=> nrel_goto: ..proc_of_finding_dimension_set_operator1B;;
+				*);;
+			->..proc_of_finding_dimension_set_operator1G
+				(*
+					<- contAdd;;
+	
+					-> rrel_1: rrel_fixed: rrel_scp_var: _num_of_edge;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _num_of_edge;;
+					-> rrel_3: rrel_fixed: rrel_scp_const: [1];;
+			
+					=> nrel_goto: ..proc_of_finding_dimension_set_operator1H;;
+				*);;
+			->..proc_of_finding_dimension_set_operator1H
+				(*
+					<- ifEq;;
 
-        -> .proc_of_finding_dimension_set_operator_erase_not_checkedA
-        	(*
-			<- eraseEl;;
-			-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _not_checkedA;;
+					-> rrel_1: rrel_fixed: rrel_scp_var: _num_of_edge;;
+					-> rrel_2: rrel_fixed: rrel_scp_const: [2];;
 
-					=> nrel_goto: .proc_of_finding_dimension_set_operator_return;;
-					*);;
+					=> nrel_then: ..proc_of_finding_dimension_set_operator1Htrue1;;
+					=> nrel_else: ..proc_of_finding_dimension_set_operator1Hfalse;;
+				*);;
+		
+			->..proc_of_finding_dimension_set_operator1Htrue1
+				(*
+					<- eraseEl;;
 
-		-> .proc_of_finding_dimension_set_operator_return 
-			(*
-			<- return;;
-			*);;
+					-> rrel_1: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arc1;;
+				
+					=> nrel_goto: ..proc_of_finding_dimension_set_operator1Htrue2;;
+				*);;
+			->..proc_of_finding_dimension_set_operator1Htrue2
+				(*
+					<- contAssign;;
+			
+					-> rrel_1: rrel_assign: rrel_scp_var: _num_of_edge;;
+					-> rrel_2: rrel_fixed: rrel_scp_const: [1];;
+
+					=> nrel_goto: ..proc_of_finding_dimension_set_operator1F;;
+				*);;
+			->..proc_of_finding_dimension_set_operator1Hfalse
+				(*
+					<- eraseEl;;
+
+					-> rrel_1: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: rrel_erase: _arc;;
+				
+					=> nrel_goto: ..proc_of_finding_dimension_set_operator1F;;
+				*);;
+		
+			->..proc_of_finding_dimension_set_operator2 
+				(*
+					<- searchElStr3;;
+		
+				 	-> rrel_1: rrel_fixed: rrel_scp_var: _not_checkedA;;
+					-> rrel_2: rrel_assign: rrel_scp_var: _arc_for_delA;;
+					-> rrel_3: rrel_assign: rrel_scp_var: _elemA;;
+
+				 	=> nrel_then: ..proc_of_finding_dimension_set_operator2A;;
+				 	=> nrel_else: ..proc_of_finding_dimension_set_operator_erase_not_checkedA;;
+			 	*);;
+        		-> ..proc_of_finding_dimension_set_operator2A
+        			(*
+					<- eraseEl;;
+			
+					-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc_for_delA;;
+
+					=> nrel_goto: ..proc_of_finding_dimension_set_operator3;;
+				*);;
+			-> ..proc_of_finding_dimension_set_operator3
+				(*
+					<- contAdd;;
+
+				 	-> rrel_1: rrel_fixed: rrel_scp_var: _counter;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _counter;;
+					-> rrel_3: rrel_fixed: rrel_scp_const: [1];;
+
+				 	=> nrel_goto: ..proc_of_finding_dimension_set_operator2;;
+			 	*);;
+			-> ..proc_of_finding_dimension_set_operator4
+				(*
+					<- contAssign;;
+
+					-> rrel_1: rrel_fixed: rrel_scp_var: _counter;;
+					-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+				 	
+				 	=> nrel_goto: ..proc_of_finding_dimension_set_operator_return;;
+				*);;
+        		-> ..proc_of_finding_dimension_set_operator_erase_not_checkedA
+        			(*
+					<- eraseEl;;
+					
+					-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _not_checkedA;;
+
+					=> nrel_goto: ..proc_of_finding_dimension_set_operator_return;;
+				*);;	
+			-> ..proc_of_finding_dimension_set_operator_return 
+				(*
+					<- return;;
+				*);;
 		*);;
 	*);;	

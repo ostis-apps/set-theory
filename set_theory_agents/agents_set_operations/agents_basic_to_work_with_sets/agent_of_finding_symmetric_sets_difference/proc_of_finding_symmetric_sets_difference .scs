@@ -1,21 +1,21 @@
 scp_program -> proc_of_finding_symmetric_sets_difference 
 	(*	
-	-> rrel_params: .proc_of_finding_symmetric_sets_difference_params 
+	-> rrel_params: ..proc_of_finding_symmetric_sets_difference_params 
 		(*
 		-> rrel_1: rrel_in: _A;;
 		-> rrel_2: rrel_in: _B;;
 		-> rrel_3: rrel_in: _answer;;
 		*);;
 
-	-> rrel_operators: .proc_of_finding_symmetric_sets_difference_operator_set 
+	-> rrel_operators: ..proc_of_finding_symmetric_sets_difference_operator_set 
 		(*
-		-> rrel_init: .proc_of_finding_symmetric_sets_difference_operator0
+		-> rrel_init: ..proc_of_finding_symmetric_sets_difference_operator0
 			(*
 			<- genEl;;
 			-> rrel_1: rrel_assign: rrel_node: rrel_const: rrel_scp_var: _ans;;
-                 	=> nrel_goto: .proc_of_finding_symmetric_sets_difference_operator1;;
+                 	=> nrel_goto: ..proc_of_finding_symmetric_sets_difference_operator1;;
 			*);; 
-		->.proc_of_finding_symmetric_sets_difference_operator1
+		->..proc_of_finding_symmetric_sets_difference_operator1
 			(*
 			<- searchSetStr3;;
 			-> rrel_1: rrel_fixed: rrel_scp_var: _A;;
@@ -24,51 +24,51 @@ scp_program -> proc_of_finding_symmetric_sets_difference
 
 		  	-> rrel_set_3: rrel_assign: rrel_scp_var: _not_checkedA;;
 
-                 	=> nrel_then: .proc_of_finding_symmetric_sets_difference_operator2;;
-                 	=> nrel_else: .proc_of_finding_symmetric_sets_difference_operator6;;
+                 	=> nrel_then: ..proc_of_finding_symmetric_sets_difference_operator2;;
+                 	=> nrel_else: ..proc_of_finding_symmetric_sets_difference_operator6;;
 			*);; 
 
-		->.proc_of_finding_symmetric_sets_difference_operator2 
+		->..proc_of_finding_symmetric_sets_difference_operator2 
 			(*
 			<- searchElStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _not_checkedA;;
 			-> rrel_2: rrel_assign: rrel_scp_var: _arc_for_delA;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _elemA;;
 
-                 	=> nrel_then: .proc_of_finding_symmetric_sets_difference_operator3;;
-                 	=> nrel_else: .proc_of_finding_symmetric_sets_difference_operator01;;
+                 	=> nrel_then: ..proc_of_finding_symmetric_sets_difference_operator3;;
+                 	=> nrel_else: ..proc_of_finding_symmetric_sets_difference_operator01;;
                  	*);;
 
-		-> .proc_of_finding_symmetric_sets_difference_operator3
+		-> ..proc_of_finding_symmetric_sets_difference_operator3
 			(*
 			<- searchElStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _B;;
 			-> rrel_2: rrel_assign: rrel_scp_var: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _elemA;;
 
-                 	=> nrel_then: .proc_of_finding_symmetric_sets_difference_operator5;;
-                 	=> nrel_else: .proc_of_finding_symmetric_sets_difference_operator4;;
+                 	=> nrel_then: ..proc_of_finding_symmetric_sets_difference_operator5;;
+                 	=> nrel_else: ..proc_of_finding_symmetric_sets_difference_operator4;;
                  	*);;
 
-		-> .proc_of_finding_symmetric_sets_difference_operator4 
+		-> ..proc_of_finding_symmetric_sets_difference_operator4 
 			(*
 			<- genElStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _ans;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc0;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _elemA;;
 
-                 	=> nrel_goto: .proc_of_finding_symmetric_sets_difference_operator5;;
+                 	=> nrel_goto: ..proc_of_finding_symmetric_sets_difference_operator5;;
 			*);;
 
-		->.proc_of_finding_symmetric_sets_difference_operator5 
+		->..proc_of_finding_symmetric_sets_difference_operator5 
 			(*
 			<- eraseEl;;
 		 	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc_for_delA;;
 
 
-                 	=> nrel_goto: .proc_of_finding_symmetric_sets_difference_operator2;;
+                 	=> nrel_goto: ..proc_of_finding_symmetric_sets_difference_operator2;;
 			*);;
-		->.proc_of_finding_symmetric_sets_difference_operator01
+		->..proc_of_finding_symmetric_sets_difference_operator01
 			(*
 			<- searchSetStr3;;
 			-> rrel_1: rrel_fixed: rrel_scp_var: _B;;
@@ -77,133 +77,133 @@ scp_program -> proc_of_finding_symmetric_sets_difference
 
 		  	-> rrel_set_3: rrel_assign: rrel_scp_var: _not_checkedB;;
 
-                 	=> nrel_then: .proc_of_finding_symmetric_sets_difference_operator02;;
-                 	=> nrel_else: .proc_of_finding_symmetric_sets_difference_operator6;;
+                 	=> nrel_then: ..proc_of_finding_symmetric_sets_difference_operator02;;
+                 	=> nrel_else: ..proc_of_finding_symmetric_sets_difference_operator6;;
 			*);; 
 
-		->.proc_of_finding_symmetric_sets_difference_operator02 
+		->..proc_of_finding_symmetric_sets_difference_operator02 
 			(*
 			<- searchElStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _not_checkedB;;
 			-> rrel_2: rrel_assign: rrel_scp_var: _arc_for_delB;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _elemB;;
 
-                 	=> nrel_then: .proc_of_finding_symmetric_sets_difference_operator03;;
-                 	=> nrel_else: .proc_of_finding_symmetric_sets_difference_operator6;;
+                 	=> nrel_then: ..proc_of_finding_symmetric_sets_difference_operator03;;
+                 	=> nrel_else: ..proc_of_finding_symmetric_sets_difference_operator6;;
                  	*);;
 
-		-> .proc_of_finding_symmetric_sets_difference_operator03
+		-> ..proc_of_finding_symmetric_sets_difference_operator03
 			(*
 			<- searchElStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _A;;
 			-> rrel_2: rrel_assign: rrel_scp_var: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _elemB;;
 
-                 	=> nrel_then: .proc_of_finding_symmetric_sets_difference_operator05;;
-                 	=> nrel_else: .proc_of_finding_symmetric_sets_difference_operator04;;
+                 	=> nrel_then: ..proc_of_finding_symmetric_sets_difference_operator05;;
+                 	=> nrel_else: ..proc_of_finding_symmetric_sets_difference_operator04;;
                  	*);;
 
-		-> .proc_of_finding_symmetric_sets_difference_operator04 
+		-> ..proc_of_finding_symmetric_sets_difference_operator04 
 			(*
 			<- genElStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _ans;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc0;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _elemB;;
 
-                 	=> nrel_goto: .proc_of_finding_symmetric_sets_difference_operator05;;
+                 	=> nrel_goto: ..proc_of_finding_symmetric_sets_difference_operator05;;
 			*);;
 
-		->.proc_of_finding_symmetric_sets_difference_operator05 
+		->..proc_of_finding_symmetric_sets_difference_operator05 
 			(*
 			<- eraseEl;;
 		 	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc_for_delB;;
 
 
-                 	=> nrel_goto: .proc_of_finding_symmetric_sets_difference_operator02;;
+                 	=> nrel_goto: ..proc_of_finding_symmetric_sets_difference_operator02;;
 			*);;
 
-		->.proc_of_finding_symmetric_sets_difference_operator6 
+		->..proc_of_finding_symmetric_sets_difference_operator6 
 			(*
 			<- genElStr3;;
 		 	-> rrel_1: rrel_assign: rrel_node: rrel_const: rrel_scp_var: _dif;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arcA;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _A;;
 
-                 	=> nrel_goto: .proc_of_finding_symmetric_sets_difference_operator7;;
+                 	=> nrel_goto: ..proc_of_finding_symmetric_sets_difference_operator7;;
 			*);;
 
-		->.proc_of_finding_symmetric_sets_difference_operator7 
+		->..proc_of_finding_symmetric_sets_difference_operator7 
 			(*
 			<- genElStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _dif;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arcB;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _B;;
 
-                 	=> nrel_goto: .proc_of_finding_symmetric_sets_difference_operator8;;
+                 	=> nrel_goto: ..proc_of_finding_symmetric_sets_difference_operator8;;
 			*);;
 
-		->.proc_of_finding_symmetric_sets_difference_operator8 
+		->..proc_of_finding_symmetric_sets_difference_operator8 
 			(*
 			<- genElStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc0;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _A;;
 
-                 	=> nrel_goto: .proc_of_finding_symmetric_sets_difference_operator9;;
+                 	=> nrel_goto: ..proc_of_finding_symmetric_sets_difference_operator9;;
 			*);;
 
-		->.proc_of_finding_symmetric_sets_difference_operator9 
+		->..proc_of_finding_symmetric_sets_difference_operator9 
 			(*
 			<- genElStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc0;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _B;;
 
-                 	=> nrel_goto: .proc_of_finding_symmetric_sets_difference_operator10;;
+                 	=> nrel_goto: ..proc_of_finding_symmetric_sets_difference_operator10;;
 			*);;
 
-		->.proc_of_finding_symmetric_sets_difference_operator10 
+		->..proc_of_finding_symmetric_sets_difference_operator10 
 			(*
 			<- genElStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc0;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _arcA;;
 
-                 	=> nrel_goto: .proc_of_finding_symmetric_sets_difference_operator11;;
+                 	=> nrel_goto: ..proc_of_finding_symmetric_sets_difference_operator11;;
 			*);;
 
-		->.proc_of_finding_symmetric_sets_difference_operator11 
+		->..proc_of_finding_symmetric_sets_difference_operator11 
 			(*
 			<- genElStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc0;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _arcB;;
 
-                 	=> nrel_goto: .proc_of_finding_symmetric_sets_difference_operator12;;
+                 	=> nrel_goto: ..proc_of_finding_symmetric_sets_difference_operator12;;
 			*);;
 
-		->.proc_of_finding_symmetric_sets_difference_operator12 
+		->..proc_of_finding_symmetric_sets_difference_operator12 
 			(*
 			<- genElStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc0;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _dif;;
 
-                 	=> nrel_goto: .proc_of_finding_symmetric_sets_difference_operator13;;
+                 	=> nrel_goto: ..proc_of_finding_symmetric_sets_difference_operator13;;
 			*);;
 
-		-> .proc_of_finding_symmetric_sets_difference_operator13 
+		-> ..proc_of_finding_symmetric_sets_difference_operator13 
 			(*
 			<- searchElStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _ans;;
 			-> rrel_2: rrel_assign: rrel_scp_var: _arc1;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _el;;
 
-                 	=> nrel_then: .proc_of_finding_symmetric_sets_difference_operator14;;
-                 	=> nrel_else: .proc_of_finding_symmetric_sets_difference_operator18;;
+                 	=> nrel_then: ..proc_of_finding_symmetric_sets_difference_operator14;;
+                 	=> nrel_else: ..proc_of_finding_symmetric_sets_difference_operator18;;
 			*);;
 
-		->.proc_of_finding_symmetric_sets_difference_operator14 
+		->..proc_of_finding_symmetric_sets_difference_operator14 
 			(*
 			<- searchSetStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _ans;;
@@ -212,12 +212,12 @@ scp_program -> proc_of_finding_symmetric_sets_difference
 
 			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
 
-                 	=> nrel_then: .proc_of_finding_symmetric_sets_difference_operator15;;
-			=> nrel_else: .proc_of_finding_symmetric_sets_difference_operator18;;
+                 	=> nrel_then: ..proc_of_finding_symmetric_sets_difference_operator15;;
+			=> nrel_else: ..proc_of_finding_symmetric_sets_difference_operator18;;
 			*);;
 
 
-		->.proc_of_finding_symmetric_sets_difference_operator15 
+		->..proc_of_finding_symmetric_sets_difference_operator15 
 			(*
 			<- genElStr5;;
 		  	-> rrel_1: rrel_fixed: rrel_scp_var: _dif;;
@@ -225,11 +225,11 @@ scp_program -> proc_of_finding_symmetric_sets_difference
 		  	-> rrel_3: rrel_fixed: rrel_scp_var: _ans;;
 		  	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 		  	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_symmetric_sets_difference;;
-                 	=> nrel_goto: .proc_of_finding_symmetric_sets_difference_operator151;;
+                 	=> nrel_goto: ..proc_of_finding_symmetric_sets_difference_operator151;;
 			*);;
 
 
-		->.proc_of_finding_symmetric_sets_difference_operator151 
+		->..proc_of_finding_symmetric_sets_difference_operator151 
 			(*
 			<- searchSetStr5;;
 		  	-> rrel_1: rrel_fixed: rrel_scp_var: _dif;;
@@ -240,20 +240,20 @@ scp_program -> proc_of_finding_symmetric_sets_difference
 
 			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_set_5: rrel_fixed: rrel_scp_var: _answer;;
-                 	=> nrel_goto: .proc_of_finding_symmetric_sets_difference_operator16 ;;
+                 	=> nrel_goto: ..proc_of_finding_symmetric_sets_difference_operator16 ;;
 			*);;
 
-		->.proc_of_finding_symmetric_sets_difference_operator16 
+		->..proc_of_finding_symmetric_sets_difference_operator16 
 			(*
 			<- genElStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc0;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _ans;;
 
-                 	=> nrel_goto: .proc_of_finding_symmetric_sets_difference_operator16.1;;
+                 	=> nrel_goto: ..proc_of_finding_symmetric_sets_difference_operator16..1;;
 			*);;
 
-		-> .proc_of_finding_symmetric_sets_difference_operator16.1
+		-> ..proc_of_finding_symmetric_sets_difference_operator16..1
 			(*
 			<- searchSetStr3;;
 			-> rrel_1: rrel_fixed: rrel_scp_var: _ans;;
@@ -262,21 +262,21 @@ scp_program -> proc_of_finding_symmetric_sets_difference
 			
 			-> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
 
-			=> nrel_goto: .proc_of_finding_symmetric_sets_difference_operator17;;
+			=> nrel_goto: ..proc_of_finding_symmetric_sets_difference_operator17;;
 			*);;
 
-		->.proc_of_finding_symmetric_sets_difference_operator17 
+		->..proc_of_finding_symmetric_sets_difference_operator17 
 			(*
 			<- genElStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc0;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _arcAdd;;
 
-                 	=> nrel_goto: .proc_of_finding_symmetric_sets_difference_operator_return;;
+                 	=> nrel_goto: ..proc_of_finding_symmetric_sets_difference_operator_return;;
 			*);;
 
 
-		-> .proc_of_finding_symmetric_sets_difference_operator18
+		-> ..proc_of_finding_symmetric_sets_difference_operator18
 			(*
 			<- genElStr5;;
 		  	-> rrel_1: rrel_fixed: rrel_scp_var: _dif;;
@@ -284,20 +284,20 @@ scp_program -> proc_of_finding_symmetric_sets_difference
 		  	-> rrel_3: rrel_fixed: rrel_scp_const: [По данному запросу ничего не найдено];;
 		  	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 		  	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_sc_text_translation;;
-		  	=> nrel_goto: .proc_of_finding_symmetric_sets_difference_operator19.1;;
+		  	=> nrel_goto: ..proc_of_finding_symmetric_sets_difference_operator19..1;;
 			*);;
 
-		->.proc_of_finding_symmetric_sets_difference_operator19.1 
+		->..proc_of_finding_symmetric_sets_difference_operator19..1 
 			(*
 			<- genElStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc0;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_sc_text_translation;;
 
-                 	=> nrel_goto: .proc_of_finding_symmetric_sets_difference_operator19;;
+                 	=> nrel_goto: ..proc_of_finding_symmetric_sets_difference_operator19;;
 			*);;
 			
-		-> .proc_of_finding_symmetric_sets_difference_operator19
+		-> ..proc_of_finding_symmetric_sets_difference_operator19
 			(*
 			<- searchSetStr5;;
 			-> rrel_1: rrel_fixed: rrel_scp_var: _dif;;
@@ -310,10 +310,10 @@ scp_program -> proc_of_finding_symmetric_sets_difference
 			-> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
 
-			=> nrel_goto: .proc_of_finding_symmetric_sets_difference_operator_return;;
+			=> nrel_goto: ..proc_of_finding_symmetric_sets_difference_operator_return;;
 			*);;
 
-		-> .proc_of_finding_symmetric_sets_difference_operator_return 
+		-> ..proc_of_finding_symmetric_sets_difference_operator_return 
 			(*
 			<- return;;
 			*);;

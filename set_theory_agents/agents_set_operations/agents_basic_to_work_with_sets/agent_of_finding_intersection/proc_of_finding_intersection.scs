@@ -1,4 +1,3 @@
-// Процедура добавления выбранного узла в ответ
 scp_program -> proc_of_finding_intersection (*
 	-> rrel_params: ...(*
     	-> rrel_1: rrel_in: _s1;;
@@ -7,7 +6,7 @@ scp_program -> proc_of_finding_intersection (*
   	*);;
   
 	-> rrel_operators: ...(*
-    	-> rrel_init: .proc_of_finding_intersection_operator12 (*
+    	-> rrel_init: ..proc_of_finding_intersection_operator12 (*
 			<- searchSetStr3;;
 		-> rrel_1: rrel_fixed: rrel_scp_var: _s1;;
 		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
@@ -15,11 +14,11 @@ scp_program -> proc_of_finding_intersection (*
 
 		-> rrel_set_3: rrel_assign: rrel_scp_var: _setel1;;
 
-		=> nrel_then: .proc_of_finding_intersection_operator13;;
-      	=> nrel_else: .proc_of_finding_intersection_operator_return;;
+		=> nrel_then: ..proc_of_finding_intersection_operator13;;
+      	=> nrel_else: ..proc_of_finding_intersection_operator_return;;
 		*);;
 		
-		-> .proc_of_finding_intersection_operator13 (*
+		-> ..proc_of_finding_intersection_operator13 (*
 			<- searchSetStr3;;
 		  -> rrel_1: rrel_fixed: rrel_scp_var: _s2;;
 		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
@@ -27,66 +26,65 @@ scp_program -> proc_of_finding_intersection (*
 
 		  -> rrel_set_3: rrel_assign: rrel_scp_var: rrel_node: _setel2;;
 
-		  => nrel_then: .proc_of_finding_intersection_operator14;;
-      	  => nrel_else: .proc_of_finding_intersection_operator_return;;
+		  => nrel_then: ..proc_of_finding_intersection_operator14;;
+      	  => nrel_else: ..proc_of_finding_intersection_operator_return;;
 		*);;
-//-------------------------------------------------------------------
 
 		// Поиск элемента в 1 контуре
-		-> .proc_of_finding_intersection_operator14 (*
+		-> ..proc_of_finding_intersection_operator14 (*
 			<- searchElStr3;;
 		-> rrel_1: rrel_fixed: rrel_scp_var: _setel1;;
 		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 		-> rrel_3: rrel_assign: rrel_scp_var: _temp_el;;
 
-      	=> nrel_then: .proc_of_finding_intersection_operator15;;
-      	=> nrel_else: .proc_of_finding_intersection_operator_return;;
+      	=> nrel_then: ..proc_of_finding_intersection_operator15;;
+      	=> nrel_else: ..proc_of_finding_intersection_operator_return;;
 		*);;
 
-		-> .proc_of_finding_intersection_operator15 (*
+		-> ..proc_of_finding_intersection_operator15 (*
 		 <- eraseEl;;
 		 -> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc1;;
 
-		 => nrel_goto: .proc_of_finding_intersection_operator16;;
+		 => nrel_goto: ..proc_of_finding_intersection_operator16;;
 		 *);;
 
-		-> .proc_of_finding_intersection_operator16 (*
+		-> ..proc_of_finding_intersection_operator16 (*
 			<- searchElStr3;;
 		-> rrel_1: rrel_fixed: rrel_scp_var: _setel2;;
 		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 		-> rrel_3: rrel_fixed: rrel_scp_var: _temp_el;;
 
-      	=> nrel_then: .proc_of_finding_intersection_operator17;;
-      	=> nrel_else: .proc_of_finding_intersection_operator14;;
+      	=> nrel_then: ..proc_of_finding_intersection_operator17;;
+      	=> nrel_else: ..proc_of_finding_intersection_operator14;;
 		*);;
 
-		-> .proc_of_finding_intersection_operator17 (*
+		-> ..proc_of_finding_intersection_operator17 (*
 		 	<- eraseEl;;
 		-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc2;;
 
-		=> nrel_goto: .proc_of_finding_intersection_operator18;;
+		=> nrel_goto: ..proc_of_finding_intersection_operator18;;
 		*);;
 
-		-> .proc_of_finding_intersection_operator18 (*
+		-> ..proc_of_finding_intersection_operator18 (*
 			<- searchElStr3;;
 		-> rrel_1: rrel_fixed: rrel_scp_var: _s3;;
 		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arcdw3;;
 		-> rrel_3: rrel_fixed: rrel_scp_var: _temp_el;;
 
-		=> nrel_then: .proc_of_finding_intersection_operator14;;
-      	=> nrel_else: .proc_of_finding_intersection_operator19;;
+		=> nrel_then: ..proc_of_finding_intersection_operator14;;
+      	=> nrel_else: ..proc_of_finding_intersection_operator19;;
 		*);;
 
-		-> .proc_of_finding_intersection_operator19 (*
+		-> ..proc_of_finding_intersection_operator19 (*
 			<- genElStr3;;
 		-> rrel_1: rrel_fixed: rrel_scp_var: _s3;;
 		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
 		-> rrel_3: rrel_fixed: rrel_scp_var: _temp_el;;
 
-      	=> nrel_goto: .proc_of_finding_intersection_operator14;;
+      	=> nrel_goto: ..proc_of_finding_intersection_operator14;;
 		*);;
 
-	    -> .proc_of_finding_intersection_operator_return(*
+	    -> ..proc_of_finding_intersection_operator_return(*
     	  <- return;;
     *);;
   *);;
