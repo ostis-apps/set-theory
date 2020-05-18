@@ -1,0 +1,101 @@
+scp_program -> proc_search_idtf (*
+    -> rrel_params: ... (*
+
+        // элемент, для которого нужно найти ссылку
+        -> rrel_1: rrel_in: rrel_fixed: rrel_scp_var: _element;;
+
+        // возвращаемая ссылка
+        -> rrel_2: rrel_out: rrel_assign: rrel_scp_var: _link_idtf;;
+    *);;
+
+    -> rrel_operators: ... (*
+        -> rrel_init: .proc_search_idtf_operator0 (*
+            <- printNl;;
+            -> rrel_1: rrel_fixed: rrel_scp_const: [процедура возврата ссылки];;
+            => nrel_goto: .proc_search_idtf_operator1;;
+        *);;
+
+        // формируем множество ссылок
+        -> .proc_search_idtf_operator1 (*
+            <- searchSetStr5;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _element;;
+            -> rrel_2: rrel_scp_var: rrel_assign: rrel_common: rrel_const: _arc2;;
+            -> rrel_3: rrel_scp_var: rrel_assign: _set;;
+            -> rrel_4: rrel_scp_var: rrel_assign: rrel_pos_const_perm: _arc;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+            
+            -> rrel_set_3: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _set_links;;
+
+            => nrel_then: .proc_search_idtf_operator2;;
+            => nrel_else: .proc_search_idtf_operator6;;
+        *);;
+
+        // находим любую из них
+        -> .proc_search_idtf_operator2 (*
+            <- searchElStr3;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _set_links;;
+            -> rrel_2: rrel_scp_var: rrel_assign: rrel_pos_const_perm: _arc;;
+            -> rrel_3: rrel_scp_var: rrel_assign: _link_idtf;;
+            
+            => nrel_then: .proc_search_idtf_operator3;;
+            => nrel_else: .proc_search_idtf_operator5;;
+        *);;
+
+        // удаляем дугу
+        -> .proc_search_idtf_operator3 (*
+            <- eraseEl;;
+            -> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _arc;;
+            => nrel_goto: .proc_search_idtf_operator4;;
+        *);;
+
+        // если найденная ссылка принадлежит нашему языку
+        -> .proc_search_idtf_operator4 (*
+            <- searchElStr3;;
+            -> rrel_1: rrel_fixed: rrel_scp_const: lang_en;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _link_idtf;;
+            
+            => nrel_then: .proc_search_idtf_operator5;;
+            => nrel_else: .proc_search_idtf_operator2;;
+        *);;
+
+        // удаляем множество ссылок
+        -> .proc_search_idtf_operator5 (*
+            <- eraseEl;;
+            -> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_links;;
+            => nrel_goto: .proc_search_idtf_operator_return;;
+        *);;
+
+        // ищем системный идентификатор
+        -> .proc_search_idtf_operator6 (*
+            <- searchElStr5;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _element;;
+            -> rrel_2: rrel_scp_var: rrel_assign: rrel_common: rrel_const: _arc2;;
+            -> rrel_3: rrel_scp_var: rrel_assign: _link_idtf;;
+            -> rrel_4: rrel_scp_var: rrel_assign: rrel_pos_const_perm: _arc;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_system_identifier;;
+            
+            => nrel_then: .proc_search_idtf_operator_return;;
+            => nrel_else: .proc_search_idtf_operator7;;
+        *);;
+
+        // создаем узел без ссылки
+        -> .proc_search_idtf_operator7 (*
+            <- genEl;;
+            -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _el;;
+            => nrel_goto: .proc_search_idtf_operator8;;
+        *);;
+
+        // присваиваем узел переменной
+        -> .proc_search_idtf_operator8 (*
+            <- varAssign;;
+            -> rrel_1: rrel_assign: rrel_scp_var: _link_idtf;;
+            -> rrel_2: rrel_fixed: rrel_scp_var: _el;;
+            => nrel_goto: .proc_search_idtf_operator_return;;
+        *);;
+
+        -> .proc_search_idtf_operator_return (*
+            <- return;;
+        *);;
+    *);;
+*);;
