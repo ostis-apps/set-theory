@@ -1,0 +1,199 @@
+scp_program -> proc_add_decimal_numeral_system
+	(*
+		-> rrel_params: ...
+			(*
+			    	-> rrel_1: rrel_in: _set;;
+			    	-> rrel_2: rrel_in: _link_nrel;;
+			    	-> rrel_3: rrel_in: _curr;;
+			    	-> rrel_4: rrel_out: rrel_assign: rrel_scp_var: _result;;
+		  	*);;  
+		-> rrel_operators: ...
+			(*    	
+			    	-> rrel_init: .proc_add_decimal_numeral_system1 
+					(*
+						<- genEl;;
+
+						-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _result;;
+
+						=> nrel_goto: .proc_add_decimal_numeral_system2;;
+					*);;	
+				-> .proc_add_decimal_numeral_system2
+					(*
+						<- genElStr5;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _com1;;
+						-> rrel_3: rrel_assign: rrel_scp_var: _num;;
+			      	  		-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+						-> rrel_5: rrel_fixed: rrel_scp_var: _link_nrel;;
+
+						=> nrel_goto: .proc_add_decimal_numeral_system3;;
+					*);;			
+				-> .proc_add_decimal_numeral_system3 
+					(*
+						<- genElStr3;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: number;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _num;;
+
+						=> nrel_goto: .proc_add_decimal_numeral_system4;;
+					*);;	
+				-> .proc_add_decimal_numeral_system4
+					(*
+						<- genElStr5;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _num;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: rrel_const: _com2;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _curr;;
+			      	  		-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+						-> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+
+						=> nrel_goto: .proc_add_decimal_numeral_system5;;
+					*);;
+				-> .proc_add_decimal_numeral_system5 
+					(*
+						<- genElStr3;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_const: decimal_numeral_system;;
+						-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc4;;
+						-> rrel_3: rrel_fixed: rrel_scp_var: _curr;;
+
+						=> nrel_goto: .proc_add_decimal_numeral_system6A;;
+					*);;	
+				-> .proc_add_decimal_numeral_system6A
+					(*
+						<- genElStr3;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+			      	  		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+					  	-> rrel_3: rrel_fixed: rrel_scp_var: _set;;
+
+					  	=> nrel_goto: .proc_add_decimal_numeral_system6B;;
+					*);;
+				-> .proc_add_decimal_numeral_system6B
+					(*
+						<- genElStr3;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+			      	  		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+					  	-> rrel_3: rrel_fixed: rrel_scp_var: rrel_common: rrel_const: _com1;;
+
+					  	=> nrel_goto: .proc_add_decimal_numeral_system6C;;
+					*);;
+				-> .proc_add_decimal_numeral_system6C
+					(*
+						<- genElStr3;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+			      	  		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+					  	-> rrel_3: rrel_fixed: rrel_scp_var: _num;;
+
+					  	=> nrel_goto: .proc_add_decimal_numeral_system6D;;
+					*);;
+				-> .proc_add_decimal_numeral_system6D
+					(*
+						<- genElStr3;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+			      	  		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+					  	-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+
+					  	=> nrel_goto: .proc_add_decimal_numeral_system6E;;
+					*);;
+				-> .proc_add_decimal_numeral_system6E
+					(*
+						<- genElStr3;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+			      	  		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+					  	-> rrel_3: rrel_fixed: rrel_scp_var: _link_nrel;;
+
+					  	=> nrel_goto: .proc_add_decimal_numeral_system6F;;
+					*);;
+				-> .proc_add_decimal_numeral_system6F
+					(*
+						<- genElStr3;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+			      	  		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+					  	-> rrel_3: rrel_fixed: rrel_scp_const: number;;
+
+					  	=> nrel_goto: .proc_add_decimal_numeral_system6G;;
+					*);;
+				-> .proc_add_decimal_numeral_system6G
+					(*
+						<- genElStr3;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+			      	  		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+					  	-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+
+					  	=> nrel_goto: .proc_add_decimal_numeral_system6H;;
+					*);;
+				-> .proc_add_decimal_numeral_system6H
+					(*
+						<- genElStr3;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+			      	  		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+					  	-> rrel_3: rrel_fixed: rrel_scp_var: rrel_common: rrel_const: _com2;;
+
+					  	=> nrel_goto: .proc_add_decimal_numeral_system6I;;
+					*);;
+				-> .proc_add_decimal_numeral_system6I
+					(*
+						<- genElStr3;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+			      	  		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+					  	-> rrel_3: rrel_fixed: rrel_scp_var: _curr;;
+
+					  	=> nrel_goto: .proc_add_decimal_numeral_system6J;;
+					*);;
+				-> .proc_add_decimal_numeral_system6J
+					(*
+						<- genElStr3;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+			      	  		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+					  	-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc3;;
+
+					  	=> nrel_goto: .proc_add_decimal_numeral_system6K;;
+					*);;
+				-> .proc_add_decimal_numeral_system6K
+					(*
+						<- genElStr3;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+			      	  		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+					  	-> rrel_3: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
+
+					  	=> nrel_goto: .proc_add_decimal_numeral_system6L;;
+					*);;
+				-> .proc_add_decimal_numeral_system6L
+					(*
+						<- genElStr3;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+			      	  		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+					  	-> rrel_3: rrel_fixed: rrel_scp_const: decimal_numeral_system;;
+
+					  	=> nrel_goto: .proc_add_decimal_numeral_system6M;;
+					*);;
+				-> .proc_add_decimal_numeral_system6M
+					(*
+						<- genElStr3;;
+
+						-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+			      	  		-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+					  	-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc4;;
+
+					  	=> nrel_goto: .proc_add_decimal_numeral_system_return;;
+					*);;
+				-> .proc_add_decimal_numeral_system_return
+					(*
+			    	  		<- return;;
+			    		*);;
+			  *);;
+		*);;

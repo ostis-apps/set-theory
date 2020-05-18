@@ -19,7 +19,7 @@ element_of_set
 		(* 
 		-> rrel_example: "file://content/element_of_set.html" (* <-lang_ru;; *);;
 		*);;
-	<= nrel_using_constants:
+	=> nrel_using_constants:
 		...
 		(* 
 		-> set;;
