@@ -78,17 +78,19 @@ Dedekind
 			(*
 			-> 
 				"file://htmls/Dedekind_text_ru.html"
-				(*
-				<- lang_ru;;
-				*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 			*);
 	<= nrel_sc_text_translation:	
 			...
 			(*
 			-> 
 				"file://images/Dedekind.jpg"
-				(*
-				<- lang_ru;;
-				*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_jpg;
+*);;
 			*);;
 	

@@ -56,7 +56,10 @@ nrel_multiset_combination <- rrel_key_sc_element:
                 (* 
                 -> rrel_example:
                     "file://content/content_htmls/nrel_multiset_combination.html"
-                        (* <-lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
                 *);;
 
             <= nrel_using_constants:
@@ -111,7 +114,10 @@ nrel_multiset_intersection  <- rrel_key_sc_element:
             (* 
             -> rrel_example:
                 "file://content/content_htmls/nrel_multiset_intersection.html"
-                    (* <-lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
             *);;
         <= nrel_using_constants:
             ...
@@ -158,8 +164,11 @@ nrel_multiset_arithmetic_sum  <- rrel_key_sc_element:
             ...
             (* 
             -> rrel_example:
-                "file://content/content_htmls/nrel_multiset_arithmetic_sum.html" 
-                    (* <-lang_ru;; *);;
+                "file://content/content_htmls/nrel_multiset_arithmetic_sum.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
             *);;
         <= nrel_using_constants:
             ...
@@ -206,8 +215,11 @@ nrel_multiset_arithmetic_difference <- rrel_key_sc_element:
             ...
             (* 
             -> rrel_example:
-                "file://content/content_htmls/nrel_multiset_arithmetic_difference.html" 
-                    (* <-lang_ru;; *);;
+                "file://content/content_htmls/nrel_multiset_arithmetic_difference.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
             *);;
         <= nrel_using_constants:
             ...
@@ -251,7 +263,10 @@ nrel_multiset_complement <- rrel_key_sc_element:
             (* 
             -> rrel_example:
                 "file://content/content_htmls/nrel_multiset_complement.html"
-                    (* <-lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
             *);;
         <= nrel_using_constants:
             ...
@@ -289,7 +304,10 @@ nrel_symmetric_multiset_difference <- rrel_key_sc_element:
             (* 
             -> rrel_example:
                 "file://content/content_htmls/nrel_symmetric_multiset_difference.html"
-                    (* <-lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
             *);;
         <= nrel_using_constants:
             ...
@@ -327,7 +345,10 @@ nrel_multiset_arithmetic_product <- rrel_key_sc_element:
             (* 
             -> rrel_example:
                 "file://content/content_htmls/nrel_multiset_arithmetic_product.html"
-                    (* <-lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
             *);;
         <= nrel_using_constants:
             ...
@@ -365,7 +386,10 @@ nrel_multiset_direct_product  <- rrel_key_sc_element:
             (* 
             -> rrel_example:
                 "file://content/content_htmls/nrel_multiset_direct_product.html"
-                    (* <-lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
             *);;
         <= nrel_using_constants:
             ...

@@ -82,7 +82,10 @@ combination_theory
 				(*
 					-> rrel_example:
 					"file://html/combination_theory_nrel_comment.html"
-					(* <- lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 			*);;
 
@@ -149,7 +152,10 @@ combinatorial_object
 				(*
 					-> rrel_example:
 					"file://html/combinatorial_object.html"
-					(* <- lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 			*);
 	 <- rrel_key_sc_element:
@@ -162,7 +168,10 @@ combinatorial_object
 			...
 			(*		-> rrel_example:
 					"file://html/combinatorial_object_sequence_statement.html"
-					(* <- lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 		*);
 	 <- rrel_key_sc_element:
@@ -175,7 +184,10 @@ combinatorial_object
 			...
 			(*		-> rrel_example:
 					"file://html/combinatorial_object_summ_statement.html"
-					(* <- lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 		*);
 	 <- rrel_key_sc_element:
@@ -189,7 +201,10 @@ combinatorial_object
 			...
 			(*		-> rrel_example:
 					"file://html/combinatorial_object_statement.html"
-					(* <- lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 		*);
 	=> nrel_inclusion:
@@ -228,7 +243,10 @@ nrel_set_of_combinations
 				(*
 					-> rrel_example:
 						"file://html/definition_for_nrel_set_of_combinations.html"
-						(*<- lang_ru;;*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 		*);
 	<- rrel_key_sc_element:
@@ -239,8 +257,11 @@ nrel_set_of_combinations
 				...
 				(*
 				-> rrel_example:
-						"file://html/statement_for_nrel_set_of_combinations.html"			
-					(* <- lang_ru;;	*);;
+						"file://html/statement_for_nrel_set_of_combinations.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 			*);
 	<- rrel_key_sc_element:
@@ -251,8 +272,11 @@ nrel_set_of_combinations
 				...
 				(*
 				-> rrel_example:
-						"file://html/Pascal_statement.html"			
-					(* <- lang_ru;;	*);;
+						"file://html/Pascal_statement.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 			*);
 	<- rrel_key_sc_element:
@@ -273,7 +297,10 @@ nrel_set_of_combinations
 						(*
 							-> rrel_example:
 							"file://html/comment_for_nrel_set_of_combinations.html"
-							(* <- lang_ru;; *);; 
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);; 
 						*);;
 					*);;
 		*);
@@ -300,7 +327,10 @@ nrel_set_of_repet_combinations
 				(*
 					-> rrel_example:
 					"file://html/nrel_set_of_repet_combinations.html"
-					(* <- lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 			*);
 	<- rrel_key_sc_element:
@@ -311,8 +341,11 @@ nrel_set_of_repet_combinations
 				...
 				(*
 				-> rrel_example:
-						"file://html/statement_for_nrel_set_of_repet_combinations.html"			
-					(* <- lang_ru;;	*);;
+						"file://html/statement_for_nrel_set_of_repet_combinations.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 			*);
 
@@ -339,7 +372,10 @@ nrel_set_of_partial_permutations
 				(*
 					-> rrel_example:
 						"file://html/definition_for_nrel_set_of_partial_permutations.html"
-						(*<- lang_ru;;*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 		*);
 	<- rrel_key_sc_element:
@@ -350,8 +386,11 @@ nrel_set_of_partial_permutations
 				...
 				(*
 				-> rrel_example:
-						"file://html/statement_for_nrel_set_of_partial_permutations.html"			
-					(* <- lang_ru;;	*);;
+						"file://html/statement_for_nrel_set_of_partial_permutations.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 			*);
 	<- rrel_key_sc_element:
@@ -372,7 +411,10 @@ nrel_set_of_partial_permutations
 						(*
 							-> rrel_example:
 							"file://html/comment_for_nrel_set_of_partial_permutations.html"
-							(* <- lang_ru;; *);; 
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);; 
 						*);;
 					*);;
 		*);
@@ -400,7 +442,10 @@ nrel_set_of_repet_partial_permutations
 				(*
 					-> rrel_example:
 					"file://html/nrel_set_of_repet_partial_permutations.html"
-					(* <- lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 			*);
 	<- rrel_key_sc_element:
@@ -411,8 +456,11 @@ nrel_set_of_repet_partial_permutations
 				...
 				(*
 				-> rrel_example:
-						"file://html/statement_for_nrel_set_of_repet_partial_permutations.html"			
-					(* <- lang_ru;;	*);;
+						"file://html/statement_for_nrel_set_of_repet_partial_permutations.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 			*);
 
@@ -444,7 +492,10 @@ nrel_set_of_permutations
 				(*
 					-> rrel_example:
 						"file://html/definition_for_nrel_set_of_permutations.html"
-						(*<- lang_ru;;*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 		*);
 	<- rrel_key_sc_element:
@@ -455,8 +506,11 @@ nrel_set_of_permutations
 				...
 				(*
 				-> rrel_example:
-						"file://html/statement_for_nrel_set_of_permutations.html"			
-					(* <- lang_ru;;	*);;
+						"file://html/statement_for_nrel_set_of_permutations.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 			*);
 	<- rrel_key_sc_element:
@@ -477,7 +531,10 @@ nrel_set_of_permutations
 						(*
 							-> rrel_example:
 							"file://html/comment_for_nrel_set_of_permutations.html"
-							(* <- lang_ru;; *);; 
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);; 
 						*);;
 					*);;
 		*);
@@ -505,7 +562,10 @@ nrel_set_of_repet_permutations
 				(*
 					-> rrel_example:
 					"file://html/nrel_set_of_repet_permutations.html"
-					(* <- lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 			*);
 	<- rrel_key_sc_element:
@@ -516,8 +576,11 @@ nrel_set_of_repet_permutations
 				...
 				(*
 				-> rrel_example:
-						"file://html/statement_for_nrel_set_of_repet_permutations.html"			
-					(* <- lang_ru;;	*);;
+						"file://html/statement_for_nrel_set_of_repet_permutations.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 			*);
 
@@ -553,8 +616,11 @@ bit_vector
 				...
 				(*
 				-> rrel_example:
-						"file://html/statement_for_bit_vector.html"			
-					(* <- lang_ru;;	*);;
+						"file://html/statement_for_bit_vector.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 			*);
 	-> rrel_example:
@@ -602,7 +668,10 @@ partition_of_a_set
 				(*
 					-> rrel_example:
 					"file://html/partition_of_a_set.html"
-					(* <- lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 			*);
 
@@ -639,7 +708,10 @@ addition_rule
 				(*
 					-> rrel_example:
 					"file://html/addition_rule.html"
-					(* <- lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 			*);;
 
@@ -657,7 +729,10 @@ multiplication_rule
 				(*
 					-> rrel_example:
 					"file://html/multiplication_rule.html"
-					(* <- lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 			*);;
 *];;

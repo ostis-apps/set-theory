@@ -13,9 +13,10 @@ axiom_bulk
 		(*
 		-> 
 			"file://content/content_html/axiom_bulk.html"
-			(*
-			<- lang_ru;;
-			*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 
 axiom_of_empty_set
@@ -28,9 +29,10 @@ axiom_of_empty_set
 		(*
 		-> 
 			"file://content/content_html/axiom_of_empty_set.html"
-			(*
-			<- lang_ru;;
-			*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 
 axiom_of_infinity
@@ -43,9 +45,10 @@ axiom_of_infinity
 		(*
 		-> 
 			"file://content/content_html/axiom_of_infinity.html"
-			(*
-			<- lang_ru;;
-			*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 
 axiom_of_pairing
@@ -58,9 +61,10 @@ axiom_of_pairing
 		(*
 		-> 
 			"file://content/content_html/axiom_of_pairing.html"
-			(*
-			<- lang_ru;;
-			*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 
 axiom_of_boolean
@@ -73,9 +77,10 @@ axiom_of_boolean
 		(*
 		-> 
 			"file://content/content_html/axiom_of_boolean.html"
-			(*
-			<- lang_ru;;
-			*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 
 axiom_of_union
@@ -88,9 +93,10 @@ axiom_of_union
 		(*
 		-> 
 			"file://content/content_html/axiom_of_union.html"
-			(*
-			<- lang_ru;;
-			*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 
 allocation_scheme
@@ -103,9 +109,10 @@ allocation_scheme
 		(*
 		-> 
 			"file://content/content_html/allocation_scheme.html"
-			(*
-			<- lang_ru;;
-			*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 
 conversion_circuit
@@ -118,9 +125,10 @@ conversion_circuit
 		(*
 		-> 
 			"file://content/content_html/conversion_circuit.html"
-			(*
-			<- lang_ru;;
-			*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 
 axiom_of_regularity
@@ -133,9 +141,10 @@ axiom_of_regularity
 		(*
 		-> 
 			"file://content/content_html/axiom_of_regularity.html"
-			(*
-			<- lang_ru;;
-			*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 
 axiom_of_choice
@@ -148,9 +157,10 @@ axiom_of_choice
 		(*
 		-> 
 			"file://content/content_html/axiom_of_choice.html"
-			(*
-			<- lang_ru;;
-			*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 
 axiom_of_determinacy
@@ -163,9 +173,10 @@ axiom_of_determinacy
 		(*
 		-> 
 			"file://content/content_html/axiom_of_determinacy.html"
-			(*
-			<- lang_ru;;
-			*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 *];;
 

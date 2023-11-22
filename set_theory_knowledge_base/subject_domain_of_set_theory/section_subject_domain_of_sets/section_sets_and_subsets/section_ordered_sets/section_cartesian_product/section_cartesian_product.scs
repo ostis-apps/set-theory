@@ -59,7 +59,10 @@ nrel_cartesian_product
 			(* 
 				-> rrel_example:
 					"file://content/nrel_cartesian_product_definition.html"
-						(* <-lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 			*);;
 		<= nrel_using_constants:
 			...
@@ -86,7 +89,10 @@ nrel_cartesian_product
 			(* 
 				-> rrel_example:
 					"file://content/nrel_cartesian_product_statement_1.html"
-						(* <-lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 			*);;
 		=> nrel_main_idtf:
 			[Утв. (декартово произведение*, пустое множество)]

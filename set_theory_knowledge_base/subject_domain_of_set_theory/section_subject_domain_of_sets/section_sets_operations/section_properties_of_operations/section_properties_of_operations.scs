@@ -37,8 +37,11 @@ associativity <-rrel_key_sc_element:
 			<= nrel_sc_text_translation:
 				.associativity_definition
 				(* 
-					-> rrel_example:"file://content/content_htmls/associativity.html" 
-				(* <-lang_ru;; *);;
+					-> rrel_example:"file://content/content_htmls/associativity.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 
 			<= nrel_using_constants:

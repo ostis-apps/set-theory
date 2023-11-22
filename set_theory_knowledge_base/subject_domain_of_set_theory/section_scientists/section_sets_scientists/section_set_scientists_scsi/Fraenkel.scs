@@ -39,17 +39,19 @@ Fraenkel
 			(*
 			-> 
 				"file://htmls/Fraenkel_text_ru.html"
-				(*
-				<- lang_ru;;
-				*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 			*);
 	<= nrel_sc_text_translation:	
 			...
 			(*
 			-> 
 				"file://images/Abraham_Fraenkel.jpg"
-				(*
-				<- lang_ru;;
-				*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_jpg;
+*);;
 			*);;
 	

@@ -11,7 +11,11 @@ section_basic_concepts_of_correspondence
 		pictureGr
 		(* 
 			=> nrel_main_idtf:[соответствие, заданное в графическом виде](* <- lang_ru;; *);;
-			-> rrel_example: "file://htmls/graph.jpg" (* <-lang_ru;; *);;
+			-> rrel_example: "file://htmls/graph.jpg"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_jpg;
+*);;
 		*);
 <= nrel_sc_text_translation:
 		...
@@ -31,7 +35,11 @@ section_correspondence_operations
 		pictureGrOp
 		(* 
 			=> nrel_main_idtf:[пример соответствия](* <- lang_ru;; *);;
-			-> rrel_example: "file://htmls/graphOp.jpg" (* <-lang_ru;; *);;
+			-> rrel_example: "file://htmls/graphOp.jpg"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_jpg;
+*);;
 		*);
 <= nrel_sc_text_translation:
 		...
@@ -101,7 +109,11 @@ section_function
 		pictureFun
 		(* 
 			=> nrel_main_idtf:[функции](* <- lang_ru;; *);;
-			-> rrel_example: "file://htmls/fun.jpg" (* <-lang_ru;; *);;
+			-> rrel_example: "file://htmls/fun.jpg"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_jpg;
+*);;
 		*);
 <= nrel_sc_text_translation:
 

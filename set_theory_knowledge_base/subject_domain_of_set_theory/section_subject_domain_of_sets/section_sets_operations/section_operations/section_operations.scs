@@ -106,7 +106,10 @@ nrel_addition<- rrel_key_sc_element:
 				.nrel_addition_definition
 				(* 
 					-> rrel_example: "file://content/content_htmls/nrel_addition_definition.html"
-						(* <-lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 
 			<= nrel_using_constants:
@@ -127,7 +130,10 @@ nrel_addition<- rrel_key_sc_element:
 				.nrel_addition_statement_1
 				(* 
 					-> rrel_example: "file://content/content_htmls/nrel_addition_statement_1.html"
-						(* <-lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 			=> nrel_main_idtf:
 				[Утв. (дополнение*, объединение*, универсум)]
@@ -185,7 +191,10 @@ nrel_combination<- rrel_key_sc_element:
 				.nrel_combination_definition
 				(* 
 					-> rrel_example: "file://content/content_htmls/nrel_combination_definition.html"
-						(* <- lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 			<= nrel_using_constants:
 				...
@@ -203,7 +212,10 @@ nrel_combination<- rrel_key_sc_element:
 				.nrel_combination_statement_1
 				(* 
 					-> rrel_example: "file://content/content_htmls/nrel_combination_statement_1.html"
-						(* <- lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 			=> nrel_main_idtf: [Утв. (объединение*, пустое множество)]
 				(* <- lang_ru;; *);;
@@ -252,7 +264,10 @@ nrel_intersection<- rrel_key_sc_element:
 				.nrel_intersection_definition
 				(* 
 					-> rrel_example: "file://content/content_htmls/nrel_intersection_definition.html"
-						(* <- lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 			<= nrel_using_constants:
 				...
@@ -270,7 +285,10 @@ nrel_intersection<- rrel_key_sc_element:
 				.nrel_intersection_statement_1
 				(* 
 					-> rrel_example: "file://content/content_htmls/nrel_intersection_statement_1.html"
-						(* <- lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 			=> nrel_main_idtf:
 				[Утв. (пересечение*, пустое множество)]
@@ -284,7 +302,10 @@ nrel_intersection<- rrel_key_sc_element:
 				.nrel_intersection_statement_2
 				(* 
 					-> rrel_example: "file://content/content_htmls/nrel_intersection_statement_2.html"
-						(* <- lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 			=> nrel_main_idtf:
 				[Утв. (пересечение*, синглетон)]
@@ -338,7 +359,10 @@ nrel_sets_difference<- rrel_key_sc_element:
 				(*
 					-> rrel_example:
 						"file://content/content_htmls/nrel_sets_difference_definition.html"
-							(* <- lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 
 			<= nrel_using_constants:
@@ -358,7 +382,10 @@ nrel_sets_difference<- rrel_key_sc_element:
 				(* 
 					-> rrel_example:
 						"file://content/content_htmls/nrel_sets_difference_statement_1.html"
-							(* <-lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 			=> nrel_main_idtf:
 				[Утв. (разность множеств*, пустое множество, множество)]
@@ -373,7 +400,10 @@ nrel_sets_difference<- rrel_key_sc_element:
 				(* 
 					-> rrel_example:
 						"file://content/content_htmls/nrel_sets_difference_statement_2.html"
-							(* <-lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 			=> nrel_main_idtf:
 				[Утв. (разность множеств*, натуральные числа, четные числа, нечетные числа)]
@@ -426,7 +456,10 @@ nrel_symmetric_sets_difference<- rrel_key_sc_element:
 				(* 
 					-> rrel_example:
 						"file://content/content_htmls/nrel_symmetric_sets_difference_definition.html"
-							(* <-lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 			<= nrel_using_constants:
 				...
@@ -446,7 +479,10 @@ nrel_symmetric_sets_difference<- rrel_key_sc_element:
 				(* 
 					-> rrel_example:
 						"file://content/content_htmls/nrel_symmetric_sets_difference_statement_1.html"
-							(* <-lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 			=> nrel_main_idtf:
 				[Утв. (симметрическая разность множеств*, пустое множество)]

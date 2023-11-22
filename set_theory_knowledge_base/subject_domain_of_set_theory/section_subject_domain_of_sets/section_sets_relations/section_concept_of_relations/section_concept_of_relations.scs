@@ -283,7 +283,10 @@ factorial
 			(*
 				-> rrel_example:
 				"file://content/content_htmls/factorial/factorial.html"
-				(* <- lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 			*);;
 
 			<= nrel_using_constants:
@@ -304,7 +307,10 @@ factorial
 			(*
 				-> rrel_example:
 				"file://content/content_htmls/factorial/domain_of_definition_statement_for_factorial.html"
-				(* <- lang_en;;*);;
+(*
+	<- lang_en;;
+	=> nrel_format: format_html;;
+*);;
 			*);;
 		*);
 <- rrel_key_sc_element:
@@ -317,7 +323,10 @@ factorial
 			(*
 				-> rrel_example:
 				"file://content/content_htmls/factorial/function_increase_speed_for_factorial.html"
-				(* <- lang_en;;*);;
+(*
+	<- lang_en;;
+	=> nrel_format: format_html;;
+*);;
 			*);;
 		*);
 -> rrel_example :
@@ -1673,7 +1682,10 @@ nrel_power_set
 		...
 		(* 
 		-> rrel_example: "file://content/content_htmls/nrel_power_set.html"
-		(* <-lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);; 
 	<= nrel_using_constants:
 		...

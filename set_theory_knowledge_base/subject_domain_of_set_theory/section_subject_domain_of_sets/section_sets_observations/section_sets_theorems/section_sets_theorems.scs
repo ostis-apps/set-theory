@@ -13,9 +13,10 @@ binomial_theorem
 		(*
 		-> 
 			"file://content/content_html/binomial_theorem.html"
-			(*
-			<- lang_ru;;
-			*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 
 Cantor_Bernstein_theorem
@@ -28,9 +29,10 @@ Cantor_Bernstein_theorem
 		(*
 		-> 
 			"file://content/content_html/Cantor_Bernstein_theorem.html"
-			(*
-			<- lang_ru;;
-			*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 
 Cantor_theorem
@@ -43,9 +45,10 @@ Cantor_theorem
 		(*
 		-> 
 			"file://content/content_html/Cantor_theorem.html"
-			(*
-			<- lang_ru;;
-			*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 
 diagonal_theorem
@@ -58,9 +61,10 @@ diagonal_theorem
 		(*
 		-> 
 			"file://content/content_html/diagonal_theorem.html"
-			(*
-			<- lang_ru;;
-			*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 
 Dilworth_theorem
@@ -73,9 +77,10 @@ Dilworth_theorem
 		(*
 		-> 
 			"file://content/content_html/Dilworth_theorem.html"
-			(*
-			<- lang_ru;;
-			*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 
 Szpilrajn_theorem
@@ -88,9 +93,10 @@ Szpilrajn_theorem
 		(*
 		-> 
 			"file://content/content_html/Szpilrajn_theorem.html"
-			(*
-			<- lang_ru;;
-			*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 *];;
 

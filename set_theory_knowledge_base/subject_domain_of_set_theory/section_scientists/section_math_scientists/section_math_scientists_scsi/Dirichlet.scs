@@ -55,16 +55,18 @@ Dirichlet
 			(*
 			-> 
 				"file://htmls/Dirichlet.html"
-				(*
-				<- lang_ru;;
-				*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 			*);
 	<= nrel_sc_text_translation:	
 			...
 			(*
 			-> 
 				"file://images/Dirichlet.jpg"
-				(*
-				<- lang_ru;;
-				*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_jpg;
+*);;
 			*);;

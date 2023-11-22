@@ -19,9 +19,10 @@ paradox_Burali_Forti
 			(*
 			-> 
 				"file://html/paradox_Burali_Forti_text_ru.html"
-				(*
-				<- lang_ru;;
-				*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 			*);;
 
 paradox_Cantor
@@ -34,9 +35,10 @@ paradox_Cantor
 		(*
 		-> 
 			"file://html/paradox_Cantor_text_ru.html"
-			(*
-			<- lang_ru;;
-			*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 
 paradox_Russel
@@ -49,9 +51,10 @@ paradox_Russel
 			(*
 			-> 
 				"file://html/paradox_Russell_text_ru.html"
-				(*
-				<- lang_ru;;
-				*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 			*);;
 
 paradox_doubling_ball
@@ -64,9 +67,10 @@ paradox_doubling_ball
 			(*
 			-> 
 				"file://html/paradox_doubling_ball_text_ru.html"
-				(*
-				<- lang_ru;;
-				*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 			*);;
 
 paradox_Hausdorff
@@ -80,9 +84,10 @@ paradox_Hausdorff
 			(*
 			-> 
 				"file://html/paradox_Hausdorff_text_ru.html"
-				(*
-				<- lang_ru;;
-				*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 			*);;
 
 paradox_Mirimanova
@@ -95,9 +100,10 @@ paradox_Mirimanova
 			(*
 			-> 
 				"file://html/paradox_Mirimanova_text_ru.html"
-				(*
-				<- lang_ru;;
-				*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 			*);;
 
 paradox_Galileo
@@ -110,9 +116,10 @@ paradox_Galileo
 			(*
 			-> 
 				"file://html/paradox_Galileo_text_ru.html"
-				(*
-				<- lang_ru;;
-				*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 			*);;
 
 paradox_grand_hotel
@@ -125,9 +132,10 @@ paradox_grand_hotel
 			(*
 			-> 
 				"file://html/paradox_grand_hotel_text_ru.html"
-				(*
-				<- lang_ru;;
-				*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 			*);;
 
 
@@ -141,9 +149,10 @@ paradox_Tristram_shandy
 			(*
 			-> 
 				"file://html/tristram_shandy_paradox_text_ru.html"
-				(*
-				<- lang_ru;;
-				*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 			*);;
 *];;
 
