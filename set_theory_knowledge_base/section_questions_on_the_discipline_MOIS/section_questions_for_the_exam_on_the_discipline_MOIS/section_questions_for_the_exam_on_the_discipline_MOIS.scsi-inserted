@@ -8,7 +8,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_1
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_1.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_1.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_2
@@ -17,7 +21,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_2
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_2.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_2.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_3
@@ -26,7 +34,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_3
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_3.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_3.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_4
@@ -35,7 +47,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_4
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_4.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_4.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_5
@@ -44,7 +60,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_5
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_5.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_5.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_6
@@ -53,7 +73,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_6
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_6.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_6.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_7
@@ -62,7 +86,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_7
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_7.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_7.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_8
@@ -71,7 +99,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_8
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_8.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_8.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_9
@@ -80,7 +112,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_9
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_9.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_9.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_10
@@ -89,7 +125,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_10
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_10.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_10.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_11
@@ -98,7 +138,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_11
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_11.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_11.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_12
@@ -107,7 +151,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_12
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_12.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_12.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_13
@@ -116,7 +164,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_13
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_13.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_13.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_14
@@ -125,7 +177,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_14
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_14.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_14.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_15
@@ -134,7 +190,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_15
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_15.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_15.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_16
@@ -143,7 +203,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_16
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_16.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_16.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_17
@@ -152,7 +216,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_17
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_17.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_17.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_18
@@ -161,7 +229,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_18
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_18.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_18.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_19
@@ -170,7 +242,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_19
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_19.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_19.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_20
@@ -179,7 +255,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_20
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_20.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_20.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_21
@@ -188,7 +268,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_21
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_21.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_21.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_22
@@ -197,7 +281,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_22
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_22.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_22.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_23
@@ -206,7 +294,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_23
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_23.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_23.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_24
@@ -215,7 +307,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_24
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_24.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_24.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_25
@@ -224,7 +320,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_25
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_25.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_25.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_26
@@ -233,7 +333,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_26
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_26.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_26.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_27
@@ -242,7 +346,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_27
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_27.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_27.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_28
@@ -251,7 +359,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_28
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_28.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_28.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_29
@@ -260,7 +372,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_29
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_29.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_29.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_30
@@ -269,7 +385,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_30
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_30.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_30.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_31
@@ -278,7 +398,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_31
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_31.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_31.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_32
@@ -287,7 +411,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_32
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_3.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_3.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_33
@@ -296,7 +424,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_33
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_33.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_33.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_34
@@ -305,7 +437,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_34
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_34.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_34.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_35
@@ -314,7 +450,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_35
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_35.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_35.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_36
@@ -323,7 +463,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_36
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_36.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_36.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_37
@@ -332,7 +476,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_37
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_37.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_37.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_38
@@ -341,7 +489,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_38
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_38.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_38.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_39
@@ -350,7 +502,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_39
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_39.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_39.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_40
@@ -359,7 +515,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_40
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_40.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_40.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_41
@@ -368,7 +528,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_41
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_41.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_41.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_42
@@ -377,7 +541,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_42
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_42.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_42.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_43
@@ -386,7 +554,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_43
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_43.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_43.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_44
@@ -395,7 +567,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_44
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_44.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_44.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_45
@@ -404,7 +580,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_45
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_45.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_45.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_46
@@ -413,7 +593,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_46
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_46.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_46.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_47
@@ -422,7 +606,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_47
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_47.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_47.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_48
@@ -431,7 +619,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_48
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_48.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_48.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_49
@@ -440,7 +632,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_49
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_49.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_49.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_questions_for_the_exam_on_the_discipline_MOIS_question_50
@@ -449,7 +645,11 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_50
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_50.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/questions/section_questions_for_the_exam_on_the_discipline_MOIS_question_50.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 
@@ -816,8 +1016,16 @@ section_questions_for_the_exam_on_the_discipline_MOIS_question_50
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_1.html" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question1.png" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_1.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+	-> rrel_example: "file://content/content_images/question1.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_2
@@ -829,17 +1037,37 @@ section_answer_for_the_exam_on_the_discipline_MOIS_answer_2
 			<- lang_ru;;
 			=> nrel_sourse: [База знаний IMS OSTIS] (* <-lang_ru;; *);;
 		*);;
-	-> rrel_example: "file://content/content_images/question2.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question2_1.png" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_images/question2.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question2_1.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_3
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_3.html" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question3_1.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question3_2.png" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_3.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+	-> rrel_example: "file://content/content_images/question3_1.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question3_2.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_4
@@ -862,180 +1090,420 @@ section_answer_for_the_exam_on_the_discipline_MOIS_answer_4
 			=> nrel_sourse: [База знаний IMS OSTIS] (* <-lang_ru;; *);;
 		*);;
 
-	-> rrel_example: "file://content/content_images/question4.png" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_images/question4.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_5
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_5.html" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question5_1.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question5_2.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question5_3.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question5_4.png" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_5.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+	-> rrel_example: "file://content/content_images/question5_1.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question5_2.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question5_3.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question5_4.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_6
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_6.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_6.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_7
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_7.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_7.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_8
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_8.html" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question8.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question8_2.png" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_8.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+	-> rrel_example: "file://content/content_images/question8.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question8_2.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_9
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_9.html" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question9.png" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_9.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+	-> rrel_example: "file://content/content_images/question9.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_10
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_10.html" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question10.png" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_10.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+	-> rrel_example: "file://content/content_images/question10.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_11
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_11.html" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question11.png" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_11.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+	-> rrel_example: "file://content/content_images/question11.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_12
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_12.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_12.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_13
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_13.html" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question13_1.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question13_2.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question13_3.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question13_4.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question13_5.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question13_6.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question13_7.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question13_8.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question13_9.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question13_10.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question13_11.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question13_12.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question13_13.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question13_14.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question13_15.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question13_16.png" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_13.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+	-> rrel_example: "file://content/content_images/question13_1.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question13_2.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question13_3.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question13_4.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question13_5.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question13_6.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question13_7.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question13_8.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question13_9.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question13_10.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question13_11.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question13_12.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question13_13.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question13_14.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question13_15.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question13_16.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_14
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_14.html" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question14.png" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_14.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+	-> rrel_example: "file://content/content_images/question14.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_15
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_15.html" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question15_1.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question15.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question15_2.png" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_15.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+	-> rrel_example: "file://content/content_images/question15_1.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question15.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question15_2.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_16
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_16.html" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question16_1.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question16_2.png" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_16.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+	-> rrel_example: "file://content/content_images/question16_1.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question16_2.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_17
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_17.html" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question17.png" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_17.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+	-> rrel_example: "file://content/content_images/question17.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_18
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_18.html" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question18.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question18_2.png" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_18.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+	-> rrel_example: "file://content/content_images/question18.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question18_2.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_19
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_19.html" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question19_1.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question19_2.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question19_3.png" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_19.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+	-> rrel_example: "file://content/content_images/question19_1.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question19_2.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question19_3.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_20
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_20.html" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question20.png" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_20.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+	-> rrel_example: "file://content/content_images/question20.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_21
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_21.html" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question21_1.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question21_2.png" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_21.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+	-> rrel_example: "file://content/content_images/question21_1.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question21_2.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_22
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_22.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_22.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_23
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_23.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_23.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_2
@@ -1043,192 +1511,336 @@ section_answer_for_the_exam_on_the_discipline_MOIS_answer_2
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_24.html" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question24.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question24_2.png" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_24.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+	-> rrel_example: "file://content/content_images/question24.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question24_2.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_25
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_25.html" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question25_1.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question25_2.png" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_25.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+	-> rrel_example: "file://content/content_images/question25_1.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question25_2.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_26
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_26.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_26.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_27
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_27.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_27.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_28
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_28.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_28.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_29
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_29.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_29.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_30
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_30.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_30.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_31
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_31.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_31.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_32
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_32.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_32.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_33
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_33.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_33.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_34
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_34.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_34.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_35
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_35.html" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question35.png" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_35.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+	-> rrel_example: "file://content/content_images/question35.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_36
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_36.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_36.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_37
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_37.html" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question37.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question37_2.png" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_37.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+	-> rrel_example: "file://content/content_images/question37.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question37_2.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_38
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_38.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_38.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_39
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_39.html" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question39.png" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_39.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+	-> rrel_example: "file://content/content_images/question39.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_40
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_40.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_40.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_41
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_41.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_41.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_42
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_42.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_42.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_43
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_43.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_43.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_44
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_44.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_44.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_45
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_45.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_45.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_46
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_46.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_46.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_47
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_47.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_47.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_48
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_48.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_48.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_49
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_49.html" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question49_1.png" (* <-lang_ru;; *);;
-	-> rrel_example: "file://content/content_images/question49_2.png" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_49.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+	-> rrel_example: "file://content/content_images/question49_1.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
+	-> rrel_example: "file://content/content_images/question49_2.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
 	*);;
 
 section_answer_for_the_exam_on_the_discipline_MOIS_answer_50

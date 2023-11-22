@@ -6,10 +6,45 @@ section_properties_of_relations
 
 		...
 		(* 
-		-> rrel_example: "file://content/content_htmls/section_properties_of_relations.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://content/content_htmls/section_properties_of_relations.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 
-section_properties_of_relations = [*^"file://section_properties_of_relations.scsi"*];;
+section_properties_of_relations = [*
+unambiguity
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[однозначность]
+	(* <- lang_ru;;	*);
+=> nrel_idtf:
+	[функциональность]
+	(*<- lang_ru;;*);;
+
+unambiguity
+<- rrel_key_sc_element:
+	Definition_of_unambiguity
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example:"file://content/content_htmls/unambiguity.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+	*);;
+
+Definition_of_unambiguity
+=> nrel_main_idtf:
+	[Определение понятия "однозначность"]
+	(* <- lang_ru;;	*);;
+
+*];;
 
 section_properties_of_relations
 -> rrel_key_sc_element:	

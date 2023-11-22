@@ -15,7 +15,11 @@ graph_of_correspondence
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/content_htmls/graph_of_correspondence.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/graph_of_correspondence.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	
 	*);;

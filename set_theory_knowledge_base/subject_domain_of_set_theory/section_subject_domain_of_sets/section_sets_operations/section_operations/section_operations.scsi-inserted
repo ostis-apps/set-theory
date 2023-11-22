@@ -416,7 +416,11 @@ nrel_boolean<- rrel_key_sc_element:
 		<= nrel_sc_text_translation:
 			...
 			(* 
-			-> rrel_example:"file://content/content_htmls/nrel_boolean.html" (* <-lang_ru;; *);;
+			-> rrel_example:"file://content/content_htmls/nrel_boolean.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 			*);;
 	
 		*);

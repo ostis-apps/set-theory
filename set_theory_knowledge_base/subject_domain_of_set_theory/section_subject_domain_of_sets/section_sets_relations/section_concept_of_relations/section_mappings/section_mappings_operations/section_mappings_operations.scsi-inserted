@@ -15,7 +15,11 @@ narrowing_function
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/content_htmls/narrowing_function.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/narrowing_function.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	*);;
 
@@ -51,7 +55,11 @@ nrel_mapping_composition
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example: "file://content/content_htmls/nrel_mapping_composition.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://content/content_htmls/nrel_mapping_composition.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	<= nrel_using_constants:
 		...
@@ -95,7 +103,11 @@ nrel_mapping_inversion
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example: "file://content/content_htmls/nrel_mapping_inversion.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://content/content_htmls/nrel_mapping_inversion.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	<= nrel_using_constants:
 		...
@@ -137,7 +149,11 @@ projection
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example: "file://content/content_htmls/projection.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://content/content_htmls/projection.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	<= nrel_using_constants:
 		...

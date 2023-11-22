@@ -6,5 +6,9 @@ section_relations_operations
 
 		...
 		(* 
-		-> rrel_example: "file://content/content_htmls/section_relations_operations.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://content/content_htmls/section_relations_operations.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;

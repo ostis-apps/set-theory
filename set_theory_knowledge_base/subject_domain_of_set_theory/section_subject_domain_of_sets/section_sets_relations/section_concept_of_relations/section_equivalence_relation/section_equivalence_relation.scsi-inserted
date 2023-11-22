@@ -11,7 +11,11 @@ equal_size_multiset
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example: "file://content/content_htmls/equal_size_multiset.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://content/content_htmls/equal_size_multiset.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	*);;
 
@@ -45,7 +49,11 @@ nrel_eqpower_set
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/content_htmls/nrel_eqpower_set.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/nrel_eqpower_set.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	
 
@@ -137,7 +145,11 @@ nrel_equality_of_fuzzy_sets
 	<= nrel_sc_text_translation:
 		...
 		(* 
-			-> rrel_example:  "file://content/content_htmls/nrel_equality_of_fuzzy_sets.html"  (* <- lang_ru;; *);;
+			-> rrel_example:  "file://content/content_htmls/nrel_equality_of_fuzzy_sets.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	<= nrel_using_constants:
 		...
@@ -167,7 +179,11 @@ nrel_equidecomposable_sets
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/content_htmls/nrel_equidecomposable_sets.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/nrel_equidecomposable_sets.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 
 	*);;
@@ -212,7 +228,11 @@ nrel_equipotent
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example: "file://content/content_htmls/nrel_equipotent.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://content/content_htmls/nrel_equipotent.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	<= nrel_using_constants:
 		...
@@ -276,7 +296,11 @@ Definition_of_nrel_inequality
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/content_htmls/nrel_inequality.html" (* <-lang_ru;; *);;///
+		-> rrel_example:"file://content/content_htmls/nrel_inequality.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;///
 		*);;
 	<= nrel_using_constants:
 		...

@@ -21,7 +21,11 @@ oriented_set
 	
 	example_of_oriented_set
 	(* 
-		-> rrel_example: "file://content/example_oriented_set.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://content/example_oriented_set.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 
 		=> nrel_main_idtf:
 		[Пример ориентированного множества]
@@ -61,7 +65,11 @@ oriented_set_length
   <= nrel_sc_text_translation: 
     ... 
     (*  
-    -> rrel_example:"file://content/oriented_set_length.html" (* <-lang_ru;; *);; 
+    -> rrel_example:"file://content/oriented_set_length.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);; 
     *);; 
   <= nrel_using_constants: 
     ... 
@@ -102,7 +110,11 @@ empty_oriented_set
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/empty_oriented_set.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/empty_oriented_set.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	<= nrel_using_constants:
 		...

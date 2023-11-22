@@ -12,7 +12,11 @@ pareto_relation
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/content_htmls/pareto_relation.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/pareto_relation.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	*);;
 
@@ -45,7 +49,11 @@ partial_order_relation
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/content_htmls/partial_order_relation.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/partial_order_relation.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	*);;
 Definition_of_partial_order_relation
@@ -178,7 +186,11 @@ preorder_relation
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/content_htmls/preorder_relation.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/preorder_relation.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	*);;
 
@@ -209,7 +221,11 @@ strict_total_order_relation
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/content_htmls/strict_total_order_relation.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/strict_total_order_relation.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	
 
@@ -245,7 +261,11 @@ total_order_relation
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/content_htmls/total_order_relation.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/total_order_relation.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	
 
@@ -280,7 +300,11 @@ proper_superset
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/content_htmls/proper_superset.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/proper_superset.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	
 
@@ -313,7 +337,11 @@ proper_subset
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/content_htmls/proper_subset.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/proper_subset.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	
 
@@ -365,7 +393,11 @@ nrel_inclusion
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example: "file://content/content_htmls/nrel_inclusion.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://content/content_htmls/nrel_inclusion.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	<= nrel_using_constants:
 		...
@@ -392,7 +424,11 @@ nrel_inclusion
 	<=nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example: "file://content/content_htmls/example_nrel_power_set.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://content/content_htmls/example_nrel_power_set.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);
 		illustration
 		(*
@@ -427,7 +463,11 @@ nrel_fuzzy_set_inclusion
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example: "file://content/content_htmls/nrel_fuzzy_set_inclusion.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://content/content_htmls/nrel_fuzzy_set_inclusion.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	<= nrel_using_constants:
 		...
@@ -470,7 +510,11 @@ non_trivial_subset
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/content_htmls/non_trivial_subset.html"(* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/non_trivial_subset.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	*);;
 

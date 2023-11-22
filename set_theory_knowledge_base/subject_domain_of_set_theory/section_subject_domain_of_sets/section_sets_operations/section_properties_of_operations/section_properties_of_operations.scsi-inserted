@@ -58,7 +58,11 @@ commutative<- rrel_key_sc_element:
 				<= nrel_sc_text_translation:
 					.commutative_definition
 					(* 
-						-> rrel_example:"file://content/content_htmls/commutative.html" (* <-lang_ru;; *);;
+						-> rrel_example:"file://content/content_htmls/commutative.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 					*);;
 				<= nrel_using_constants:
 				...

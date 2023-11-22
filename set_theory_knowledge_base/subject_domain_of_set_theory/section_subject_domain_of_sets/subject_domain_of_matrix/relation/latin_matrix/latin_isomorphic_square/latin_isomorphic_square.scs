@@ -19,7 +19,11 @@ latin_isomorphic_square
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example: "file://htmls/latin_isomorphic_square.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://htmls/latin_isomorphic_square.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 
 

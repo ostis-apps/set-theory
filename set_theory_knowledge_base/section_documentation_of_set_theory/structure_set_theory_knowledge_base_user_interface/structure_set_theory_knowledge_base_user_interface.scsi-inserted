@@ -15,7 +15,11 @@ input_set_field
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://htmls/input_set_field.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://htmls/input_set_field.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;
 
 set_theory_solver
@@ -26,5 +30,9 @@ set_theory_solver
 	<= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://htmls/set_theory_solver.html" (* <-lang_ru;; *);;
+	-> rrel_example: "file://htmls/set_theory_solver.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 	*);;

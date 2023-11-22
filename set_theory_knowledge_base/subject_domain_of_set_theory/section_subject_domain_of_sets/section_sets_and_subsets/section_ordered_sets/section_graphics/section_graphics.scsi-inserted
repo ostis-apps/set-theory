@@ -23,7 +23,11 @@ nrel_graph
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example: "file://content/nrel_graph.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://content/nrel_graph.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	<= nrel_using_constants:
 		...
@@ -68,7 +72,11 @@ concept_injection_graph
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/concept_injection_graph.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/concept_injection_graph.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	   <= nrel_using_constants:...
 		(* 
@@ -121,7 +129,11 @@ functional_graph
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/functional_graph.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/functional_graph.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	<= nrel_using_constants:
 		...

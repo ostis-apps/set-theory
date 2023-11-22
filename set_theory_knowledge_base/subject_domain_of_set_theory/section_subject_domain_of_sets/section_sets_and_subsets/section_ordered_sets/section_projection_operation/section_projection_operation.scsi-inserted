@@ -13,7 +13,11 @@ projection
 	<= nrel_sc_text_translation:
 		...
 		(*
-		-> rrel_example: "file://content/projection.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://content/projection.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	<= nrel_using_constants:
 		...
@@ -51,7 +55,11 @@ nrel_projection_of_set
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/nrel_projection_of_set.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/nrel_projection_of_set.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	<= nrel_using_constants:
 		...
@@ -102,7 +110,11 @@ nrel_component
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example: "file://content/nrel_component.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://content/nrel_component.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	<= nrel_using_constants:
 		...
@@ -145,7 +157,11 @@ same_name_component
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/same_name_component.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/same_name_component.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	<= nrel_using_constants:
 		...

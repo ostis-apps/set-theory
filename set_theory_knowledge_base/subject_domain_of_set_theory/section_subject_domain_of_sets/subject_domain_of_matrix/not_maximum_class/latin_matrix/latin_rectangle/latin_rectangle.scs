@@ -17,7 +17,11 @@ latin_rectangle
 			...
 			(*
 			-> rrel_definition:
-				"file://htmls/latin_rectangle.html"(*<-lang_ru;;*);;
+				"file://htmls/latin_rectangle.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 			*);;
 	*);;
 
@@ -31,6 +35,10 @@ latin_rectangle
 				...
 				(*
 				-> rrel_example: 
-					"file://htmls/latin_rectangle_statement.html"(* <- lang_ru;; *);;
+					"file://htmls/latin_rectangle_statement.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 				*);;
 		*);;

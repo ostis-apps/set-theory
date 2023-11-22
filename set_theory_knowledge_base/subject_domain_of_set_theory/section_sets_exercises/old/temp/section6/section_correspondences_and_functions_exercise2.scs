@@ -5,5 +5,9 @@ section_correspondences_and_functions_exercise2
 <= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example: "file://htmls/section_correspondences_and_functions_exercise2_ru.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://htmls/section_correspondences_and_functions_exercise2_ru.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;

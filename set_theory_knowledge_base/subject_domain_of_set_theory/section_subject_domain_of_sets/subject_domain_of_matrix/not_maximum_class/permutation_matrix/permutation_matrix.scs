@@ -13,7 +13,11 @@ permutation_matrix
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example: "file://html/permutation_matrix.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://html/permutation_matrix.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	*);
 <- rrel_key_sc_element:
@@ -25,7 +29,11 @@ permutation_matrix
 		...
 		(*
 		-> rrel_example: 
-			"file://html/statement_of_permutation_matrix.html" (* <- lang_ru;; *);;
+			"file://html/statement_of_permutation_matrix.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	*);
 <- rrel_key_sc_element:
@@ -37,7 +45,11 @@ permutation_matrix
 		...
 		(*
 		-> rrel_example: 
-			"file://html/statement_of_ortogonal_permutation_matrix.html" (* <- lang_ru;; *);;
+			"file://html/statement_of_ortogonal_permutation_matrix.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	*);
 <- rrel_key_sc_element:
@@ -49,7 +61,11 @@ permutation_matrix
 		...
 		(*
 		-> rrel_example: 
-			"file://html/multiplication_statement_of_permutation_matrix_1.html" (* <- lang_ru;; *);;
+			"file://html/multiplication_statement_of_permutation_matrix_1.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	*);
 <- rrel_key_sc_element:
@@ -61,7 +77,11 @@ permutation_matrix
 		...
 		(*
 		-> rrel_example: 
-			"file://html/multiplication_statement_of_permutation_matrix_2.html" (* <- lang_ru;; *);;
+			"file://html/multiplication_statement_of_permutation_matrix_2.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	*);
 <- rrel_key_sc_element:
@@ -73,7 +93,11 @@ permutation_matrix
 		...
 		(*
 		-> rrel_example: 
-			"file://html/determinant_statement_of_permutation_matrix.html" (* <- lang_ru;; *);;
+			"file://html/determinant_statement_of_permutation_matrix.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	*);
 -> rrel_example :

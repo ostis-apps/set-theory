@@ -20,7 +20,11 @@ binary_matrix
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example: "file://html/binary_matrix.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://html/binary_matrix.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	*);;
 

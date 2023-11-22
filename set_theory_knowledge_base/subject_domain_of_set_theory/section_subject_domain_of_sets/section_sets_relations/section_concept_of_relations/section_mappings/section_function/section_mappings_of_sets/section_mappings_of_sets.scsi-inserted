@@ -17,7 +17,11 @@ bijection
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/content_htmls/bijection.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/bijection.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	*);
 <- rrel_key_sc_element:
@@ -56,7 +60,11 @@ functional
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/content_htmls/functional.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/functional.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	*);;
 
@@ -91,7 +99,11 @@ injection
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/content_htmls/injection.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/injection.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	
 
@@ -121,7 +133,11 @@ surjection
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/content_htmls/surjection.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/content_htmls/surjection.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	
 

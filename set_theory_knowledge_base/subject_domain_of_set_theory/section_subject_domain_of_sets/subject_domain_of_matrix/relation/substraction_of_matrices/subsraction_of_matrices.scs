@@ -67,4 +67,8 @@ nrel_subtraction_of_matrices <= nrel_second_domain: concept_matrix;;
 nrel_subtraction_of_matrices <= nrel_third_domain: concept_matrix;;
 
 nrel_subtraction_of_matrices -> rrel_example :
-		"file://substraction_of_matrices_example.png"(* <- lang_en;; *);;
+		"file://substraction_of_matrices_example.png"
+(*
+	<- lang_en;;
+	=> nrel_format: format_png;;
+*);;

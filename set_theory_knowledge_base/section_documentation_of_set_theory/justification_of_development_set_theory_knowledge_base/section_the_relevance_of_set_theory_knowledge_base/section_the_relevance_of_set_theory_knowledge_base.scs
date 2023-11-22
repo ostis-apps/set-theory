@@ -10,6 +10,10 @@ section_the_relevance_of_set_theory_knowledge_base
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://section_the_relevance_of_set_theory_knowledge_base.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://section_the_relevance_of_set_theory_knowledge_base.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	*);;

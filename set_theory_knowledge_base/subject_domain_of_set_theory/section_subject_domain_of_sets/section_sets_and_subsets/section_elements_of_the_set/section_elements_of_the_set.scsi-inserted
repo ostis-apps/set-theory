@@ -17,7 +17,11 @@ element_of_set
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example: "file://content/element_of_set.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://content/element_of_set.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	<= nrel_using_constants:
 		...

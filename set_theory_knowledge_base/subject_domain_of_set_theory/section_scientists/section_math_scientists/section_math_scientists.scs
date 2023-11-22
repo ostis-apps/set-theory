@@ -1,5 +1,24 @@
 section_math_scientists => nrel_main_idtf: 
 	[Раздел. Учёные математики] (* <- lang_ru;; *);
 	[Partition. Scientists of math] (* <- lang_en;; *);;
-section_math_scientists = [*^"file://section_math_scientists_scsi/section_scientists_of_math.scsi"*];;
+section_math_scientists = [*
+math_scientists
+=> nrel_main_idtf: 
+	[Учёные, которые внесли вклад в развитие математики и комбинаторики] (* <- lang_ru;; *);
+	[Scientists of math] (* <- lang_en;; *);
+<- rrel_key_sc_element:
+	Moore;
+	Dirichlet;
+	Cardano;	
+	Riman;
+	Galileo;
+	Kronecker;
+	Taylor;
+	Dalamber;
+	Lagrange;
+	Cauchy;
+	Russell;;
+
+
+*];;
 rrel_key_sc_element -> (section_math_scientists -> math_scientists);;

@@ -16,7 +16,11 @@ section_basic_concepts_of_correspondence
 <= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example: "file://htmls/section_basic_concepts_of_correspondence.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://htmls/section_basic_concepts_of_correspondence.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 
 section_correspondence_operations
@@ -32,7 +36,11 @@ section_correspondence_operations
 <= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example: "file://htmls/section_correspondence_operations.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://htmls/section_correspondence_operations.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 
 section_properties_of_correspondence
@@ -43,7 +51,11 @@ section_properties_of_correspondence
 <= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example: "file://htmls/section_properties_of_correspondence.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://htmls/section_properties_of_correspondence.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 
 section_mapping_of_sets
@@ -54,19 +66,31 @@ section_mapping_of_sets
 		picturePr1
 		(* 
 			=> nrel_main_idtf:[отображение](* <- lang_ru;; *);;
-			-> rrel_example: "file://htmls/Pr1.png" (* <-lang_ru;; *);;
+			-> rrel_example: "file://htmls/Pr1.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
 		*);
 <= nrel_sc_text_translation:
 		picturePr2
 		(* 
 			=> nrel_main_idtf:[отображения](* <- lang_ru;; *);;
-			-> rrel_example: "file://htmls/Pr2.png" (* <-lang_ru;; *);;
+			-> rrel_example: "file://htmls/Pr2.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
 		*);
 <= nrel_sc_text_translation:
 
 		...
 		(* 
-		-> rrel_example: "file://htmls/section_mapping_of_sets.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://htmls/section_mapping_of_sets.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 
 section_function
@@ -83,6 +107,10 @@ section_function
 
 		...
 		(* 
-		-> rrel_example: "file://htmls/section_function.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://htmls/section_function.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 

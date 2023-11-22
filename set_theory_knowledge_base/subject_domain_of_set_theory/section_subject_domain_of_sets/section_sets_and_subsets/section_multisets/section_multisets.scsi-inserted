@@ -14,7 +14,11 @@ multiset_component
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example: "file://content/multiset_component.html"(* <-lang_ru;; *);;
+		-> rrel_example: "file://content/multiset_component.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	*);;
 
@@ -85,7 +89,11 @@ instances_multiset_elements
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example: "file://content/instances_multiset_elements.html"(* <-lang_ru;; *);;
+		-> rrel_example: "file://content/instances_multiset_elements.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	*);;
 
@@ -114,7 +122,11 @@ submultiset
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example:"file://content/submultiset.html"(* <-lang_ru;; *);;
+		-> rrel_example:"file://content/submultiset.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	*);;
 
@@ -154,7 +166,11 @@ supermultiset
 	<- sc_explanation;;
 	<= nrel_sc_text_translation:...
 		(*
-		-> rrel_example:"file://content/supermultiset.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://content/supermultiset.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	*);;
 
