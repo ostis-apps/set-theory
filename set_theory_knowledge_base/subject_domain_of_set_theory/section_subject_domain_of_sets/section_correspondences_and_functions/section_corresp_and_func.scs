@@ -14,7 +14,7 @@ section_basic_concepts_of_correspondence
 			-> rrel_example: "file://htmls/graph.jpg"
 (*
 	<- lang_ru;;
-	=> nrel_format: format_jpg;
+	=> nrel_format: format_jpg;;
 *);;
 		*);
 <= nrel_sc_text_translation:
@@ -38,7 +38,7 @@ section_correspondence_operations
 			-> rrel_example: "file://htmls/graphOp.jpg"
 (*
 	<- lang_ru;;
-	=> nrel_format: format_jpg;
+	=> nrel_format: format_jpg;;
 *);;
 		*);
 <= nrel_sc_text_translation:
@@ -112,7 +112,7 @@ section_function
 			-> rrel_example: "file://htmls/fun.jpg"
 (*
 	<- lang_ru;;
-	=> nrel_format: format_jpg;
+	=> nrel_format: format_jpg;;
 *);;
 		*);
 <= nrel_sc_text_translation:

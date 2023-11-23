@@ -46,6 +46,6 @@ Leibniz
 				"file://images/Leibniz.jpg"
 (*
 	<- lang_ru;;
-	=> nrel_format: format_jpg;
+	=> nrel_format: format_jpg;;
 *);;
 			*);;

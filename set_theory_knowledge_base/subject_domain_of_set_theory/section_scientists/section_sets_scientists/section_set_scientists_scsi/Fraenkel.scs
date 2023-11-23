@@ -51,7 +51,7 @@ Fraenkel
 				"file://images/Abraham_Fraenkel.jpg"
 (*
 	<- lang_ru;;
-	=> nrel_format: format_jpg;
+	=> nrel_format: format_jpg;;
 *);;
 			*);;
 	
