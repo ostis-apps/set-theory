@@ -287,7 +287,7 @@ nrel_set_of_combinations
 			...
 				(*
 					-> rrel_example:
-						"file://html/image_for_nrel_set_of_combinations.png";;
+						"file://html/image_for_nrel_set_of_combinations.png"(*=> nrel_format: format_png;;*);;
 				*);;
 				=> nrel_comment:
 				...
@@ -401,7 +401,7 @@ nrel_set_of_partial_permutations
 			...
 				(*
 					-> rrel_example:
-						"file://html/image_for_nrel_set_of_partial_permutations.png";;
+						"file://html/image_for_nrel_set_of_partial_permutations.png"(*=> nrel_format: format_png;;*);;
 				*);;
 				=> nrel_comment:
 				...
@@ -472,7 +472,7 @@ nrel_set_of_repet_partial_permutations
 	<- antitransitive_relation;
 	<=nrel_first_domain: set;
 	<=nrel_second_domain : set_of_sets;
-	-> rrel_example:"file://html/nrel_set_of_repet_partial_permutations.png";
+	-> rrel_example:"file://html/nrel_set_of_repet_partial_permutations.png"(*=> nrel_format: format_png;;*);
 	<- rrel_example :
 	 [Всевозможные размещения с повторениями из трех элементов a,b,c по 2: aa,ab,ac,ba,bb,bc,ca,cb,cc.](* <- lang_ru;;	*);;
 
@@ -521,7 +521,7 @@ nrel_set_of_permutations
 			...
 				(*
 					-> rrel_example:
-						"file://html/image_for_nrel_set_of_permutations.png";;
+						"file://html/image_for_nrel_set_of_permutations.png"(*=> nrel_format: format_png;;*);;
 				*);;
 				=> nrel_comment:
 				...

@@ -61,5 +61,5 @@ concept_antihermitian_matrix <- rrel_key_sc_element:
 	
 //пример
 concept_antihermitian_matrix -> rrel_example :
-		"file://antihermitian_matrix_example.png";;
+		"file://antihermitian_matrix_example.png"(*=> nrel_format: format_png;;*);;
 

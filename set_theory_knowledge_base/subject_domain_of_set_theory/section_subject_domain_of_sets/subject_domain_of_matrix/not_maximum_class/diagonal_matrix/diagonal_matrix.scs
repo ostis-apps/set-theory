@@ -19,7 +19,7 @@ concept_diagonal_matrix <- rrel_key_sc_element:
 
 
 concept_diagonal_matrix-> rrel_example :
-	"file://image033.png";;
+	"file://image033.png"(*=> nrel_format: format_png;;*);;
 
 concept_diagonal_matrix <- rrel_key_sc_element:
 	... 

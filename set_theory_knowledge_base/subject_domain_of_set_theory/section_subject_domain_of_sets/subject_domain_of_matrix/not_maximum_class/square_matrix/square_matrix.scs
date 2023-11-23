@@ -32,4 +32,4 @@ concept_square_matrix <- rrel_key_sc_element:
 	*);;
 
 concept_square_matrix -> rrel_example :
-	"file://square_matrix.png";;
+	"file://square_matrix.png"(*=> nrel_format: format_png;;*);;

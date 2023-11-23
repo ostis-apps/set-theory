@@ -56,7 +56,7 @@ nrel_hermitian_conjugate_matrix <- rrel_key_sc_element:
 	
 
 nrel_hermitian_conjugate_matrix -> rrel_example :
-		"file://hermitian_conjugate_matrix_example.png";;
+		"file://hermitian_conjugate_matrix_example.png"(*=> nrel_format: format_png;;*);;
 
 nrel_hermitian_conjugate_matrix <- binary_relation;;
 nrel_hermitian_conjugate_matrix => nrel_first_domain: concept_matrix;;

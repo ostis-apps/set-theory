@@ -35,7 +35,7 @@ concept_matrix <- rrel_key_sc_element:
 *);;
 
 concept_matrix-> rrel_example :
-	"file://matrix.png";;
+	"file://matrix.png"(*=> nrel_format: format_png;;*);;
 
 concept_matrix <- rrel_key_sc_element:
 	... 

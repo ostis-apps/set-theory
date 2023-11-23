@@ -71,4 +71,4 @@ concept_hermitian_matrix <- rrel_key_sc_element:
 
 //пример
 concept_hermitian_matrix -> rrel_example :
-		"file://concept_hermitian_matrix_example.png";;
+		"file://concept_hermitian_matrix_example.png"(*=> nrel_format: format_png;;*);;
