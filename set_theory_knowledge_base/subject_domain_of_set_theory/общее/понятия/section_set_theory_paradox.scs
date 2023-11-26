@@ -1,5 +1,5 @@
 set_theory_paradox
-<- sc_node_not_relation;
+<- sc_node_class;
 <- section_set_theory_paradox;
 => nrel_main_idtf:
 	[парадокс теории множеств]

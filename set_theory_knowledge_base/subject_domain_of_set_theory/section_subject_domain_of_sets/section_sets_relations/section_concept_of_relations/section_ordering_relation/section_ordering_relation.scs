@@ -15,7 +15,7 @@ section_ordering_relation
 
 section_ordering_relation = [*
 pareto_relation
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[отношение Парето*]
 	(* <- lang_ru;;	*);;
@@ -52,7 +52,7 @@ pareto_relation
 
 
 partial_order_relation
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[отношение частичного порядка]
 	(* <- lang_ru;;	*);;
@@ -189,7 +189,7 @@ incomparable_elements
 
 
 preorder_relation
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[отношение предпорядка]
 	(* <- lang_ru;;	*);;
@@ -224,7 +224,7 @@ preorder_relation
 
 
 strict_total_order_relation
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[отношение строгого линейного порядка]
 	(* <- lang_ru;;	*);;
@@ -264,7 +264,7 @@ strict_total_order_relation
 
 
 total_order_relation
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[отношение линейного порядка]
 	(* <- lang_ru;;	*);;
@@ -303,7 +303,7 @@ total_order_relation
 
 
 proper_superset
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[собственное надмножество*]
 	(* <- lang_ru;;	*);;
@@ -340,7 +340,7 @@ proper_superset
    oriented_relation;;
 
 proper_subset
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[собственное подмножество*]
 	(* <- lang_ru;;	*);;
@@ -508,7 +508,7 @@ nrel_fuzzy_set_inclusion
 
 
 non_trivial_subset
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[нетривиальное подмножество*]
 	(* <- lang_ru;;	*);;

@@ -31,7 +31,7 @@ section_concept_of_relation
 
 section_concept_of_relation = [*
 continuum
-	<- sc_node_not_relation;
+	<- sc_node_class;
 	=> nrel_main_idtf:
 		[континуум*]
 		(* <- lang_ru;;	*);;
@@ -134,7 +134,7 @@ continuum <- rrel_key_sc_element:
 
 
 element_of_set
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[элемент множества]
 	(* <- lang_ru;;	*);
@@ -179,7 +179,7 @@ Definition_of_element_of_set
 
 
 empty_relation
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[пустое отношение]
 	(* <- lang_ru;;	*);;
@@ -219,7 +219,7 @@ empty_relation
 
 
 even_permutation
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[чётная перестановка]
 	(* <- lang_ru;;	*);
@@ -990,7 +990,7 @@ nrel_dimension_set
 
 
 nrel_disjoint_set
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf: 
 	[непересекающееся множество*] 
 	(* 
@@ -1473,7 +1473,7 @@ nrel_inclusion_degree
 
 
 nrel_intersecting_set
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf: 
 	[пересекающееся множество*] 
 	(* 
@@ -2112,7 +2112,7 @@ nrel_years_life
 
 
 odd_permutation
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[нечётная перестановка]
 	(* <- lang_ru;;	*);

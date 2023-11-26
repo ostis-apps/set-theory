@@ -14,7 +14,7 @@ section_elements_of_the_set
 
 section_elements_of_the_set =  [*
 element_of_set
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[элемент множества] (* <- lang_ru;;	*);
 => nrel_idtf:

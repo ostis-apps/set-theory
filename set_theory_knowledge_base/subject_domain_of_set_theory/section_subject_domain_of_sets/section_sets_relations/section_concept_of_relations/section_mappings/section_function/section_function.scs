@@ -21,7 +21,7 @@ section_function
 
 section_function = [*
 complex_function
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[комплексная функция]
 	(* <- lang_ru;;	*);;
@@ -55,7 +55,7 @@ Definition_of_complex_function
 
 
 complex_valued_function
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[комплекснозначная функция]
 	(* <- lang_ru;;	*);;
@@ -94,7 +94,7 @@ Definition_of_complex_valued_function
 
 
 composition
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[композиция функций]
 	(* <- lang_ru;;	*);
@@ -134,7 +134,7 @@ Definition_of_composition
 
 
 domain_of_definition
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[область определения функции]
 	(* <- lang_ru;;	*);
@@ -176,7 +176,7 @@ Definition_of_domain_of_definition
 
 
 exponential_generating_function
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[экспоненциальная производящая функция]
 	(* <- lang_ru;;	*);;
@@ -209,7 +209,7 @@ Definition_of_exponential_generating_function
 
 
 formal_power_series
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[формальный степенной ряд]
 	(* <- lang_ru;;	*);
@@ -252,7 +252,7 @@ Definition_of_formal_power_series
 
 
 function
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[функция]
 	(* <- lang_ru;;	*);
@@ -305,7 +305,7 @@ function
 
 
 function_argument
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[аргумент функции]
 	(* <- lang_ru;;	*);
@@ -346,7 +346,7 @@ function_argument
 
 
 function_value
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[значение функции]
 	(* <- lang_ru;;	*);
@@ -388,7 +388,7 @@ function_value
 
 
 generating_function
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[производящая функция]
 	(* <- lang_ru;;	*);;
@@ -421,7 +421,7 @@ Definition_of_generating_function
 
 
 holomorphic_function
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[голоморфная функция]
 	(* <- lang_ru;;	*);
@@ -460,7 +460,7 @@ Definition_of_holomorphic_function
 
 
 induced_function
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[индуцированная функция]
 	(* <- lang_ru;;	*);;
@@ -491,7 +491,7 @@ Definition_of_induced_function
 
 
 inverse_function
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[обратная функция]
 	(* <- lang_ru;;	*);
@@ -526,7 +526,7 @@ Definition_of_inverse_function
 
 
 mebious_function
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[функция Мёбиуса]
 	(* <- lang_ru;;	*);;
@@ -559,7 +559,7 @@ Definition_of_mebious_function
 
 
 partial_function
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[частичная функция]
 	(* <- lang_ru;;	*);;
@@ -591,7 +591,7 @@ Definition_of_partial_function
 
 
 riemann_zeta_function
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[дзета-функция Римана]
 	(* <- lang_ru;;	*);;
@@ -624,7 +624,7 @@ Definition_of_riemann_zeta_function
 
 
 supremum_of_set
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[супремум функции]
 	(* <- lang_ru;;	*);;
@@ -659,7 +659,7 @@ Definition_of_supremum_of_set
 
 
 taylor_series
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[ряд Тейлора]
 	(* <- lang_ru;;	*);;
@@ -692,7 +692,7 @@ Definition_of_taylor_series
 
 
 total_function
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[тотальная функция]
 	(* <- lang_ru;;	*);;
@@ -724,7 +724,7 @@ Definition_of_total_function
 
 
 transformation
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[преобразование]
 	(* <- lang_ru;;	*);
@@ -759,7 +759,7 @@ Definition_of_transformation
 
 
 transition_to_preimages
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[переход к прообразам]
 	(* <- lang_ru;;	*);;

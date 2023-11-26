@@ -10,7 +10,7 @@ structure_set_theory_knowledge_base_user_interface
 
 structure_set_theory_knowledge_base_user_interface = [*
 set_theory_knowledge_base_user_interface
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[Пользовательский интерфейс интеллектуальной системы по теории множеств]
 	(* <- lang_ru;; *);
@@ -19,7 +19,7 @@ set_theory_knowledge_base_user_interface
 <- sc_model_computer_system_interface;;
 
 input_set_field 
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[Поле для ввода множеств]
 	(* <- lang_ru;; *);
@@ -34,7 +34,7 @@ input_set_field
 	*);;
 
 set_theory_solver
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[Окно решателя]
 	(* <- lang_ru;; *);

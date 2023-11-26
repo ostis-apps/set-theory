@@ -15,7 +15,7 @@ section_equivalence_relation
 
 section_equivalence_relation = [*
 equal_size_multiset
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[равноразмерность мультимножества]
 	(* <- lang_ru;;	*);;
@@ -52,7 +52,7 @@ equal_size_multiset
 
 
 nrel_eqpower_set
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[равномощность множеств*]
 	(* <- lang_ru;;	*);;
@@ -181,7 +181,7 @@ nrel_equality_of_fuzzy_sets
 
 
 nrel_equidecomposable_sets
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[равносоставленность*]
 	(* <- lang_ru;;	*);;

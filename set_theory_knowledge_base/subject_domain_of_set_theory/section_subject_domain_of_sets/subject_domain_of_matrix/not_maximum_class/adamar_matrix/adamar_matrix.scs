@@ -4,7 +4,7 @@ adamar_matrix
 	(* <-lang_ru;; *);
 	[Adamar matrix of dimension n]
 	(* <- lang_en;; *);
-<- sc_node_not_relation;
+<- sc_node_class;
 <= nrel_inclusion:  concept_square_matrix;;
 
 adamar_matrix <- rrel_key_sc_element:

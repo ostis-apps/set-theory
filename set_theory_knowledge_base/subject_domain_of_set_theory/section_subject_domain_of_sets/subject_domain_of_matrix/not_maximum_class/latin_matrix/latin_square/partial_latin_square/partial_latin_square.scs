@@ -4,7 +4,7 @@ partial_latin_square
 	(* <-lang_ru;; *);
 	[partial latin square]
 	(* <- lang_en;; *);
-<- sc_node_not_relation;
+<- sc_node_class;
 <= nrel_inclusion: latin_square;
 				    concept_square_matrix;;
 

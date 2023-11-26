@@ -4,7 +4,7 @@ latin_rectangle
 	(* <-lang_ru;; *);
 	[latin_rectangle]
 	(* <- lang_en;; *);
-<- sc_node_not_relation;
+<- sc_node_class;
 <= nrel_inclusion: concept_matrix;;
 
 latin_rectangle

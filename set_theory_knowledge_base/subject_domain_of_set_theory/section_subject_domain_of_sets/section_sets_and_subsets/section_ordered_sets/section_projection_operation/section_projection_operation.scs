@@ -17,7 +17,7 @@ section_projection_operation = [*
 // projection
 
 projection
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[проекция]
 	(* <- lang_ru;;	*);

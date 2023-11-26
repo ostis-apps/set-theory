@@ -5,7 +5,7 @@ section_mappings_operations
 
 section_mappings_operations = [*
 narrowing_function
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[сужение функции]
 	(* <- lang_ru;;	*);
@@ -143,7 +143,7 @@ nrel_mapping_inversion
 
 
 projection
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[проекция]
 	(* <- lang_ru;;	*);;

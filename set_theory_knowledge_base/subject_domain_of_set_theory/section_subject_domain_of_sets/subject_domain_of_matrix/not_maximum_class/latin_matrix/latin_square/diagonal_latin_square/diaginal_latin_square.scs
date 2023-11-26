@@ -4,7 +4,7 @@ diagonal_latin_square
 	(* <-lang_ru;; *);
 	[latin square]
 	(* <- lang_en;; *);
-<- sc_node_not_relation;
+<- sc_node_class;
 <=nrel_inclusion: latin_square;
 				  concept_diagonal_matrix;;
 

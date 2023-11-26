@@ -17,7 +17,7 @@ section_multisets = [*
 // multiset_component
 
 multiset_component
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[компонента мультимножества]
 	(* <- lang_ru;;	*);
@@ -89,7 +89,7 @@ nrel_multiplicity_of_element
 // instances_multiset_elements
 
 instances_multiset_elements
-<- sc_node_not_relation;;
+<- sc_node_class;;
 
 instances_multiset_elements
 => nrel_main_idtf:
@@ -121,7 +121,7 @@ Definition_of_instances_multiset_elements
 // submultiset
 
 submultiset
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[подмультимножество*]
 	(* <- lang_ru;;	*);
@@ -162,7 +162,7 @@ Definition_of_submultiset
 // supermultiset
 
 supermultiset
-<- sc_node_not_relation;
+<- sc_node_class;
 => nrel_main_idtf:
 	[надмультимножество*]
 	(* <- lang_ru;;	*);

@@ -594,7 +594,7 @@ nrel_set_of_repet_permutations
 	<=nrel_second_domain : set_of_sets;;
 
 bit_vector
-	<- sc_node_not_relation;
+	<- sc_node_class;
 	=> nrel_main_idtf:
 		[битовый вектор] (* <- lang_ru;; *);
 		[bit vector] (* <- lang_en;; *);
