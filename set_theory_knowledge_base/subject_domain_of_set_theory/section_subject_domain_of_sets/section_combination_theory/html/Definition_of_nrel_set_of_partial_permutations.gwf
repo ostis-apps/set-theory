@@ -13,7 +13,7 @@
         <node type="node/var/perm/general" idtf="_с" shapeColor="0" id="1916949004496" parent="1916946313584" left="0" top="0" right="21" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="1015.17" y="704.833" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/relation" idtf="power_of_set_st" shapeColor="0" id="1916949003872" parent="1916946313584" left="0" top="0" right="83" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="931.667" y="667" haveBus="false" idtf_pos="3">
+        <node type="node/const/perm/relation" idtf="nrel_power_of_set" shapeColor="0" id="1916949003872" parent="1916946313584" left="0" top="0" right="83" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="931.667" y="667" haveBus="false" idtf_pos="3">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/perm/general" idtf="" shapeColor="0" id="1916949324480" parent="1916946313584" x="956" y="726.667" haveBus="false" idtf_pos="0">
@@ -88,7 +88,7 @@
                 <point x="1014.67" y="1217.33"/>
             </points>
         </contour>
-        <node type="node/const/perm/relation" idtf="power_of_set_st" shapeColor="0" id="1916949003040" parent="1916946313776" left="0" top="0" right="83" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="943.055" y="952" haveBus="false" idtf_pos="3">
+        <node type="node/const/perm/relation" idtf="nrel_power_of_set" shapeColor="0" id="1916949003040" parent="1916946313776" left="0" top="0" right="83" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="943.055" y="952" haveBus="false" idtf_pos="3">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/var/perm/relation" idtf="_A" shapeColor="0" id="1916949005120" parent="1916946313776" left="0" top="0" right="24" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="948.888" y="863.5" haveBus="false" idtf_pos="0">

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GWF version="2.0">
     <staticSector>
-        <node type="node/const/perm/relation" idtf="power_of_set_st" shapeColor="0" id="2297615789680" parent="2297616595344" left="0" top="0" right="83" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="918.667" y="674" haveBus="false" idtf_pos="3">
+        <node type="node/const/perm/relation" idtf="nrel_power_of_set" shapeColor="0" id="2297615789680" parent="2297616595344" left="0" top="0" right="83" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="918.667" y="674" haveBus="false" idtf_pos="3">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/perm/group" idtf="number" shapeColor="0" id="2297616255008" parent="2297616595344" left="0" top="0" right="50" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="885.333" y="813.333" haveBus="false" idtf_pos="0">
@@ -88,7 +88,7 @@
                 <point x="1014.67" y="1217.33"/>
             </points>
         </contour>
-        <node type="node/const/perm/relation" idtf="power_of_set_st" shapeColor="0" id="2297615783440" parent="2297616597648" left="0" top="0" right="83" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="945.055" y="948" haveBus="false" idtf_pos="3">
+        <node type="node/const/perm/relation" idtf="nrel_power_of_set" shapeColor="0" id="2297615783440" parent="2297616597648" left="0" top="0" right="83" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="945.055" y="948" haveBus="false" idtf_pos="3">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/var/perm/relation" idtf="_A" shapeColor="0" id="2297615785104" parent="2297616597648" left="0" top="0" right="24" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman" font_size="10" x="941.888" y="865.5" haveBus="false" idtf_pos="0">
