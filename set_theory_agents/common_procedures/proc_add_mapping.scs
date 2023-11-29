@@ -6,42 +6,42 @@ scp_program -> proc_add_mapping (*
   
 	-> rrel_operators: ...(*
     	
-    	-> rrel_init: .proc_add_mapping_operator_init
+    	-> rrel_init: _proc_add_mapping_operator_init
 		(*
 			<- genEl;;
 		 	-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _temp;;
 
-            => nrel_goto: .proc_add_mapping_operator_0;;
+            => nrel_goto: _proc_add_mapping_operator_0;;
 		*);;
 
-    	-> .proc_add_mapping_operator_0
+    	-> _proc_add_mapping_operator_0
 		(*
 			<- genElStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc0;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: rrel_1;;
 
-            => nrel_goto: .proc_add_mapping_operator_01;;
+            => nrel_goto: _proc_add_mapping_operator_01;;
 		*);;
-		-> .proc_add_mapping_operator_01
+		-> _proc_add_mapping_operator_01
 		(*
 			<- genElStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc0;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: rrel_2;;
 
-            => nrel_goto: .proc_add_mapping_operator_02;;
+            => nrel_goto: _proc_add_mapping_operator_02;;
 		*);;
-		-> .proc_add_mapping_operator_02
+		-> _proc_add_mapping_operator_02
 		(*
 			<- genElStr3;;
 		 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc0;;
 			-> rrel_3: rrel_fixed: rrel_scp_const: rrel_3;;
 
-            => nrel_goto: .proc_add_mapping_operator_1;;
+            => nrel_goto: _proc_add_mapping_operator_1;;
 		*);;
-    	-> .proc_add_mapping_operator_1 (*
+    	-> _proc_add_mapping_operator_1 (*
 		  <- searchSetStr5;;
 		  -> rrel_1: rrel_fixed: rrel_scp_var: _map1;;
 		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
@@ -53,10 +53,10 @@ scp_program -> proc_add_mapping (*
           -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
           -> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
 
-		  => nrel_goto: .proc_add_mapping_operator_3;; //2
+		  => nrel_goto: _proc_add_mapping_operator_3;; //2
 		*);;
 
-	 	-> .proc_add_mapping_operator_3 (*
+	 	-> _proc_add_mapping_operator_3 (*
 		  <- searchSetStr3;;
 		  -> rrel_1: rrel_fixed: rrel_scp_var: _otprav1;;
 		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_add;;
@@ -65,10 +65,10 @@ scp_program -> proc_add_mapping (*
           -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
           -> rrel_set_3: rrel_fixed: rrel_scp_var: _temp;;
 
-		  => nrel_goto: .proc_add_mapping_operator_4;;
+		  => nrel_goto: _proc_add_mapping_operator_4;;
 		*);;
 
-	-> .proc_add_mapping_operator_4 (*
+	-> _proc_add_mapping_operator_4 (*
 		  <- searchSetStr5;;
 		  -> rrel_1: rrel_fixed: rrel_scp_var: _map1;;
 		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
@@ -80,10 +80,10 @@ scp_program -> proc_add_mapping (*
           -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
            -> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
 
-		  => nrel_goto: .proc_add_mapping_operator_6;; //5
+		  => nrel_goto: _proc_add_mapping_operator_6;; //5
 		*);;
 
-	 	-> .proc_add_mapping_operator_6 (*
+	 	-> _proc_add_mapping_operator_6 (*
 		  <- searchSetStr3;;
 		  -> rrel_1: rrel_fixed: rrel_scp_var: _prib1;;
 		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
@@ -93,10 +93,10 @@ scp_program -> proc_add_mapping (*
           -> rrel_set_3: rrel_fixed: rrel_scp_var:  _temp;;
 		 
 
-		  => nrel_goto: .proc_add_mapping_operator_7A;;
+		  => nrel_goto: _proc_add_mapping_operator_7A;;
 		*);;
 
-	-> .proc_add_mapping_operator_7A (*
+	-> _proc_add_mapping_operator_7A (*
 		  <- searchSetStr5;;
 		  -> rrel_1: rrel_fixed: rrel_scp_var: _map1;;
 		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
@@ -108,45 +108,45 @@ scp_program -> proc_add_mapping (*
           -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
           -> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
 
-		  => nrel_goto: .proc_add_mapping_operator_7;; //7B
+		  => nrel_goto: _proc_add_mapping_operator_7;; //7B
 		*);;
 
-		-> .proc_add_mapping_operator_7 (*
+		-> _proc_add_mapping_operator_7 (*
 		  <- searchElStr3;;
 		  -> rrel_1: rrel_fixed: rrel_scp_var: _temp;;
 		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
 		  -> rrel_3: rrel_assign: rrel_scp_var: _el;;
 
-		  => nrel_then: .proc_add_mapping_operator_8;;
-		  => nrel_else: .proc_add_mapping_operator_14;;
+		  => nrel_then: _proc_add_mapping_operator_8;;
+		  => nrel_else: _proc_add_mapping_operator_14;;
 		*);;
 
-		-> .proc_add_mapping_operator_8 (*
+		-> _proc_add_mapping_operator_8 (*
             <- eraseEl;;
             -> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc;;
-            => nrel_goto: .proc_add_mapping_operator_9;;
+            => nrel_goto: _proc_add_mapping_operator_9;;
         *);;
 
-        -> .proc_add_mapping_operator_9 (*
+        -> _proc_add_mapping_operator_9 (*
 		  <- searchElStr3;;
 		  -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
 		  -> rrel_3: rrel_fixed: rrel_scp_var: _el;;
 
-		  => nrel_then: .proc_add_mapping_operator_11;; //7
-		  => nrel_else: .proc_add_mapping_operator_10;;
+		  => nrel_then: _proc_add_mapping_operator_11;; //7
+		  => nrel_else: _proc_add_mapping_operator_10;;
 		*);;
 
-		-> .proc_add_mapping_operator_10 (*
+		-> _proc_add_mapping_operator_10 (*
 		  <- genElStr3;;
 		  -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
 		  -> rrel_3: rrel_fixed: rrel_scp_var: _el;;
 
-		  => nrel_goto: .proc_add_mapping_operator_11;;
+		  => nrel_goto: _proc_add_mapping_operator_11;;
 		*);;
 
- 	-> .proc_add_mapping_operator_11(*
+ 	-> _proc_add_mapping_operator_11(*
 		  <- searchElStr5;;
 		  -> rrel_1: rrel_fixed: rrel_scp_var: _el;;
 		  -> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc_common;;
@@ -155,38 +155,38 @@ scp_program -> proc_add_mapping (*
 		  -> rrel_5: rrel_fixed: rrel_scp_var: _nrel_Z;;
 
 
-		  => nrel_then: .proc_add_mapping_operator_12A;;
-		  => nrel_else: .proc_add_mapping_operator_7;;
+		  => nrel_then: _proc_add_mapping_operator_12A;;
+		  => nrel_else: _proc_add_mapping_operator_7;;
 		*);;
 
-	-> .proc_add_mapping_operator_12A (*
+	-> _proc_add_mapping_operator_12A (*
 		  <- searchElStr3;;
 		  -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
 		  -> rrel_3: rrel_fixed: rrel_scp_var: _el2;;
 
-		  => nrel_then: .proc_add_mapping_operator_12C;;
-		  => nrel_else: .proc_add_mapping_operator_12B;;
+		  => nrel_then: _proc_add_mapping_operator_12C;;
+		  => nrel_else: _proc_add_mapping_operator_12B;;
 		*);;
 
-		-> .proc_add_mapping_operator_12B (*
+		-> _proc_add_mapping_operator_12B (*
 		  <- genElStr3;;
 		  -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
 		  -> rrel_3: rrel_fixed: rrel_scp_var: _el2;;
 
-		  => nrel_goto: .proc_add_mapping_operator_12C1;;
+		  => nrel_goto: _proc_add_mapping_operator_12C1;;
 		*);;
-	-> .proc_add_mapping_operator_12C1 (*
+	-> _proc_add_mapping_operator_12C1 (*
 		  <- searchElStr3;;
 		  -> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
 		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
 		  -> rrel_3: rrel_fixed: rrel_scp_var: _arc_common;;
 
-		  => nrel_then: .proc_add_mapping_operator_7;;
-		  => nrel_else: .proc_add_mapping_operator_12C;;
+		  => nrel_then: _proc_add_mapping_operator_7;;
+		  => nrel_else: _proc_add_mapping_operator_12C;;
 		*);;
-		-> .proc_add_mapping_operator_12C (*
+		-> _proc_add_mapping_operator_12C (*
 		  <- searchSetStr5;;
 		  -> rrel_1: rrel_fixed: rrel_scp_var: _el;;
 		  -> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc2;;
@@ -197,16 +197,16 @@ scp_program -> proc_add_mapping (*
 		  -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
 		  -> rrel_set_4: rrel_fixed: rrel_scp_var: _answer;;
 
-		  => nrel_goto: .proc_add_mapping_operator_7;;
+		  => nrel_goto: _proc_add_mapping_operator_7;;
 		*);;
 		
-	-> .proc_add_mapping_operator_14 (*
+	-> _proc_add_mapping_operator_14 (*
             <- eraseEl;;
             -> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _temp;;
-            => nrel_goto: .proc_add_mapping_operator_return;;
+            => nrel_goto: _proc_add_mapping_operator_return;;
         *);;
 
-	    -> .proc_add_mapping_operator_return(*
+	    -> _proc_add_mapping_operator_return(*
     	  <- return;;
     *);;
   *);;

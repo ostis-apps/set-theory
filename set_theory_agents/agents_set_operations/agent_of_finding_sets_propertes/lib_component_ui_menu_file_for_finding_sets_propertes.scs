@@ -9,4 +9,24 @@ lib_component_ui_menu_file_for_finding_sets_propertes
 <- atomic_reusable_component_OSTIS;
 <- reusable_knowledge_base_sc_model_component;;
 
-lib_component_ui_menu_file_for_finding_sets_propertes = [*^"file://ui_menu_file_for_finding_sets_propertes.scsi"*];; 
+lib_component_ui_menu_file_for_finding_sets_propertes = [*
+ui_menu_file_for_finding_sets_propertes 
+	<- 	ui_user_command_class_atom; 
+		ui_user_command_class_view_kb;
+	=> nrel_main_idtf: 
+		[Какими свойствами обладает множество?] (* <- lang_ru;; *);
+		[What are the propertes of the set?] (* <- lang_en;; *);
+	=> ui_nrel_command_template:
+		[*
+		question_finding_sets_propertes _-> ._question_finding_sets_propertes_instance
+			(*
+				_-> ui_arg_1;;
+			*);;
+		._question_finding_sets_propertes_instance _<- question;;
+		*];
+	=> ui_nrel_command_lang_template: 
+		[Запрос нахождения свойств множества: $ui_arg_1] 
+		(* <- lang_ru;; *);
+		[What are the propertes of the set of $ui_arg_1] 
+		(* <- lang_en;; *);;
+*];; 

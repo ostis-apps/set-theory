@@ -10,17 +10,19 @@ Russell
 			(*
 			-> 
 				"file://htmls/Russell.html"
-				(*
-				<- lang_ru;;
-				*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 			*);
 	<= nrel_sc_text_translation:	
 			...
 			(*
 			-> 
 				"file://images/Russell.jpg"
-				(*
-				<- lang_ru;;
-				*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_jpg;;
+*);;
 			*);;
 

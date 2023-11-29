@@ -9,4 +9,27 @@ lib_component_ui_menu_file_for_finding_union
 <- atomic_reusable_component_OSTIS;
 <- reusable_knowledge_base_sc_model_component;;
 
-lib_component_ui_menu_file_for_finding_union = [*^"file://ui_menu_file_for_finding_union.scsi"*];; 
+lib_component_ui_menu_file_for_finding_union = [*
+ui_menu_file_for_finding_union 
+	<- 	ui_user_command_class_atom; 
+		ui_user_command_class_view_kb;
+	=> nrel_main_idtf: 
+		[Каков результат объединения двух множеств?] (* <- lang_ru;; *);
+		[What is the result of the union of given sets?] (* <- lang_en;; *);
+	=> ui_nrel_command_template:
+		[*
+		question_finding_union _-> ._question_finding_union_instance
+			(*
+				_-> rrel_1:: ui_arg_1;;
+				_-> rrel_2:: ... (*
+					_-> rrel_1:: ui_arg_2;;
+				*);;
+			*);;
+		._question_finding_union_instance _<- question;;
+		*];
+	=> ui_nrel_command_lang_template: 
+		[Запрос нахождения объединения множеств: $ui_arg_1 и $ui_arg_2] 
+		(* <- lang_ru;; *);
+		[What is the result of the union of $ui_arg_1 and $ui_arg_2] 
+		(* <- lang_en;; *);;
+*];; 

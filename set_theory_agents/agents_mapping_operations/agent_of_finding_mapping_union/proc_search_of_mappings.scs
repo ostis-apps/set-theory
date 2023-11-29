@@ -9,31 +9,31 @@ scp_program -> proc_search_of_mappings (*
 
     -> rrel_operators: ... (*
         
-        ->rrel_init: .proc_search_of_mappings_operator0 (*
+        ->rrel_init: _proc_search_of_mappings_operator0 (*
             <- genElStr3;;
           
 	    -> rrel_1: rrel_fixed: rrel_scp_var: _result;;
             -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arcnwuei;;
             -> rrel_3: rrel_fixed: rrel_scp_var: _nrel;;
             
-            => nrel_goto: .proc_search_of_mappings_operator1;;
+            => nrel_goto: _proc_search_of_mappings_operator1;;
         *);;
 
-        -> .proc_search_of_mappings_operator1 (*
+        -> _proc_search_of_mappings_operator1 (*
             <- printNl;;
             -> rrel_1: rrel_fixed: rrel_scp_const: [процедура нахождения узлов соответствия];;
-            => nrel_goto: .proc_search_of_mappings_operator2;;
+            => nrel_goto: _proc_search_of_mappings_operator2;;
         *);;
 
-        -> .proc_search_of_mappings_operator2 (*
+        -> _proc_search_of_mappings_operator2 (*
             <- genEl;;
 
             -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _set_swiazka;;
 
-            => nrel_goto: .proc_search_of_mappings_operator3a;;
+            => nrel_goto: _proc_search_of_mappings_operator3a;;
         *);;
 
-        -> .proc_search_of_mappings_operator3a (*
+        -> _proc_search_of_mappings_operator3a (*
             <- genElStr3;;
 
             -> rrel_1: rrel_fixed: rrel_scp_var: _result;;
@@ -42,10 +42,10 @@ scp_program -> proc_search_of_mappings (*
 
             
 
-            => nrel_goto: .proc_search_of_mappings_operator3A;;
+            => nrel_goto: _proc_search_of_mappings_operator3A;;
         *);;
 
-	 -> .proc_search_of_mappings_operator3A (*
+	 -> _proc_search_of_mappings_operator3A (*
             <- genElStr3;;
 
             -> rrel_1: rrel_fixed: rrel_scp_var: _result;;
@@ -53,10 +53,10 @@ scp_program -> proc_search_of_mappings (*
             -> rrel_3: rrel_fixed: rrel_scp_var: _mapSecond;;
 
 
-            => nrel_goto: .proc_search_of_mappings_operator3B;;
+            => nrel_goto: _proc_search_of_mappings_operator3B;;
         *);;
 
-	 -> .proc_search_of_mappings_operator3B (*
+	 -> _proc_search_of_mappings_operator3B (*
             <- genElStr3;;
 
             -> rrel_1: rrel_fixed: rrel_scp_var: _result;;
@@ -64,10 +64,10 @@ scp_program -> proc_search_of_mappings (*
             -> rrel_3: rrel_fixed: rrel_scp_var: _set_swiazka;;
 
 
-            => nrel_goto: .proc_search_of_mappings_operator3C;;
+            => nrel_goto: _proc_search_of_mappings_operator3C;;
         *);;
 
-	 -> .proc_search_of_mappings_operator3C (*
+	 -> _proc_search_of_mappings_operator3C (*
             <- genElStr3;;
 
             -> rrel_1: rrel_fixed: rrel_scp_var: _set_swiazka;;
@@ -75,10 +75,10 @@ scp_program -> proc_search_of_mappings (*
             -> rrel_3: rrel_fixed: rrel_scp_var: _mapFirst;;
 
 
-            => nrel_goto: .proc_search_of_mappings_operator3D;;
+            => nrel_goto: _proc_search_of_mappings_operator3D;;
         *);;
 
-	 -> .proc_search_of_mappings_operator3D (*
+	 -> _proc_search_of_mappings_operator3D (*
             <- genElStr3;;
 
             -> rrel_1: rrel_fixed: rrel_scp_var: _set_swiazka;;
@@ -86,10 +86,10 @@ scp_program -> proc_search_of_mappings (*
             -> rrel_3: rrel_fixed: rrel_scp_var: _mapSecond;;
 
 
-            => nrel_goto: .proc_search_of_mappings_operator3E;;
+            => nrel_goto: _proc_search_of_mappings_operator3E;;
         *);;
 
-	 -> .proc_search_of_mappings_operator3E (*
+	 -> _proc_search_of_mappings_operator3E (*
             <- genElStr3;;
 
             -> rrel_1: rrel_fixed: rrel_scp_var: _result;;
@@ -97,10 +97,10 @@ scp_program -> proc_search_of_mappings (*
             -> rrel_3: rrel_fixed: rrel_pos_const_perm: rrel_scp_var: _arc1;;
 
 
-            => nrel_goto: .proc_search_of_mappings_operator3F;;
+            => nrel_goto: _proc_search_of_mappings_operator3F;;
         *);;
 
-	 -> .proc_search_of_mappings_operator3F (*
+	 -> _proc_search_of_mappings_operator3F (*
             <- genElStr3;;
 
             -> rrel_1: rrel_fixed: rrel_scp_var: _result;;
@@ -108,10 +108,10 @@ scp_program -> proc_search_of_mappings (*
             -> rrel_3: rrel_fixed: rrel_pos_const_perm: rrel_scp_var: _arc2;;
 
 
-            => nrel_goto: .proc_search_of_mappings_operator3G;;
+            => nrel_goto: _proc_search_of_mappings_operator3G;;
         *);;
 
-	-> .proc_search_of_mappings_operator3G (*
+	-> _proc_search_of_mappings_operator3G (*
             <- genElStr5;;
 
             -> rrel_1: rrel_fixed: rrel_scp_var: _set_swiazka;;
@@ -120,54 +120,54 @@ scp_program -> proc_search_of_mappings (*
 	    -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arcnorm;;
 	    -> rrel_5: rrel_fixed: rrel_scp_var: _nrel;;
 
-            => nrel_goto: .proc_search_of_mappings_operator3H;;
+            => nrel_goto: _proc_search_of_mappings_operator3H;;
         *);;	
 
-	-> .proc_search_of_mappings_operator3H (*
+	-> _proc_search_of_mappings_operator3H (*
             <- genElStr3;;
 
             -> rrel_1: rrel_fixed: rrel_scp_var: _result;;
             -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
             -> rrel_3: rrel_fixed: rrel_common: rrel_scp_var: _commarc;;
 
-            => nrel_goto: .proc_search_of_mappings_operator3I;;
+            => nrel_goto: _proc_search_of_mappings_operator3I;;
         *);;
 
-	-> .proc_search_of_mappings_operator3I (*
+	-> _proc_search_of_mappings_operator3I (*
             <- genElStr3;;
 
             -> rrel_1: rrel_fixed: rrel_scp_var: _result;;
             -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
             -> rrel_3: rrel_fixed: rrel_pos_const_perm: rrel_scp_var: _arcnorm;;
 
-            => nrel_goto: .proc_search_of_mappings_operator3I1;;
+            => nrel_goto: _proc_search_of_mappings_operator3I1;;
         *);;
 
-	-> .proc_search_of_mappings_operator3I1 (*
+	-> _proc_search_of_mappings_operator3I1 (*
             <- genElStr3;;
 
             -> rrel_1: rrel_fixed: rrel_scp_var: _result;;
             -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
             -> rrel_3: rrel_fixed: rrel_scp_var: _nrel;;
 
-            => nrel_goto: .proc_search_of_mappings_operator3J;;
+            => nrel_goto: _proc_search_of_mappings_operator3J;;
         *);;
 
-	-> .proc_search_of_mappings_operator3J (*
+	-> _proc_search_of_mappings_operator3J (*
             <- genElStr3;;
 
             -> rrel_1: rrel_fixed: rrel_scp_var: _result;;
             -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
             -> rrel_3: rrel_fixed: rrel_scp_var: _map3;;
 
-            => nrel_goto: .proc_search_of_mappings_operator_return;;
+            => nrel_goto: _proc_search_of_mappings_operator_return;;
         *);;
 
         
 
        
 
-        -> .proc_search_of_mappings_operator_return (*
+        -> _proc_search_of_mappings_operator_return (*
             <- return;;
         *);;
     *);;

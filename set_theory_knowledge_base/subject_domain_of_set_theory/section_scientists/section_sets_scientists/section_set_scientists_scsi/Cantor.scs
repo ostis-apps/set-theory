@@ -51,16 +51,18 @@ Cantor
 			(*
 			-> 
 				"file://htmls/Georg_cantor_text_ru.html"
-				(*
-				<- lang_ru;;
-				*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 			*);
 	<= nrel_sc_text_translation:	
 			...
 			(*
 			-> 
 				"file://images/Georg_cantor.jpg"
-				(*
-				<- lang_ru;;
-				*);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_jpg;;
+*);;
 			*);;

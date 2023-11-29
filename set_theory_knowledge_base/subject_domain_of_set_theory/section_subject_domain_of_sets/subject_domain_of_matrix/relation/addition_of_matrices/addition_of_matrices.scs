@@ -79,6 +79,10 @@ nrel_addition_of_matrices -> rrel_example :
 		...
 		(*
 		-> rrel_example: 
-		"file://addition_of_matrices_example.png"(* <- lang_en;; *);;
+		"file://addition_of_matrices_example.png"
+(*
+	<- lang_en;;
+	=> nrel_format: format_png;;
+*);;
 		*);;
 	*);;

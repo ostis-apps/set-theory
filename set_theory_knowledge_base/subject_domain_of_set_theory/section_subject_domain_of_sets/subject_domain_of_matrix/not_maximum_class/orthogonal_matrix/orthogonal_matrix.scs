@@ -58,4 +58,4 @@ concept_orthogonal_matrix <- rrel_key_sc_element:
 
 
 concept_orthogonal_matrix -> rrel_example :
-		"file://orthogonal_matrix_example.png";;
+		"file://orthogonal_matrix_example.png"(*=> nrel_format: format_png;;*);;

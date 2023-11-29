@@ -72,4 +72,4 @@ concept_unitary_matrix <- rrel_key_sc_element:
 	
 //пример
 concept_unitary_matrix -> rrel_example :
-		"file://unitary_matrix_example.png";;
+		"file://unitary_matrix_example.png"(*=> nrel_format: format_png;;*);;

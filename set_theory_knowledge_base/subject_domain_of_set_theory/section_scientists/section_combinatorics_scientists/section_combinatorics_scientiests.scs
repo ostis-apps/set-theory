@@ -1,5 +1,13 @@
 section_combinatorics_scientists => nrel_main_idtf: 
 	[Раздел. Учёные комбинаторики] (* <- lang_ru;; *);
 	[Partition. Scientists of combinatorics] (* <- lang_en;; *);;
-section_combinatorics_scientists = [*^"file://section_combinatorics_scientists_scsi/section_scientists_of_combinatorics.scsi"*];;
+section_combinatorics_scientists = [*                                                                                                                                                                                                                                                                                                                                                                    combinatorics_scientists
+=> nrel_main_idtf: 
+	[Учёные, которые внесли вклад в развитие комбинаторики] (* <- lang_ru;; *);
+	[Scientists of combinatorics] (* <- lang_en;; *);
+<- rrel_key_sc_element:
+	Ezra;
+	Euler;
+	Leibniz;;
+*];;
 rrel_key_sc_element -> (section_combinatorics_scientists -> combinatorics_scientists);;

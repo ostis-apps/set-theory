@@ -28,7 +28,11 @@ latin_ortogonal_square <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			"file://htmls/latin_ortogonal_square.html" (* <- lang_ru;; *);;
+			"file://htmls/latin_ortogonal_square.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 *);;
 
@@ -46,7 +50,11 @@ latin_ortogonal_square <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			"file://htmls/latin_ortogonal_square_existence.html"(* <- lang_ru;; *);;
+			"file://htmls/latin_ortogonal_square_existence.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	*);;
 
@@ -59,7 +67,11 @@ latin_ortogonal_square <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			"file://htmls/latin_ortogonal_square_transversal_statement.html"(* <- lang_ru;; *);;
+			"file://htmls/latin_ortogonal_square_transversal_statement.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	*);;
 

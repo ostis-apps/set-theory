@@ -96,4 +96,4 @@ concept_zero_matrix <- rrel_key_sc_element:
 	*);;
 
 concept_zero_matrix-> rrel_example :
-	"file://zero_matrix.png";;
+	"file://zero_matrix.png"(*=> nrel_format: format_png;;*);;

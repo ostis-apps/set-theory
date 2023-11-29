@@ -64,4 +64,4 @@ nrel_elementary_transformations <= nrel_first_domain:  concept_matrix;;
 nrel_elementary_transformations <= nrel_second_domain: concept_matrix;;
 
 nrel_elementary_transformations -> rrel_example :
-		"file://elementary_transformations_example.png";;
+		"file://elementary_transformations_example.png"(*=> nrel_format: format_png;;*);;

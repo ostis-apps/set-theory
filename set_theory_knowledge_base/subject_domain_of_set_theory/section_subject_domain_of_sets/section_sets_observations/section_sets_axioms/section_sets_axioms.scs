@@ -2,7 +2,183 @@ section_sets_axioms => nrel_main_idtf:
 	[Раздел. Аксиомы теории множеств] (* <- lang_ru;; *);
 	[Partition. Axioms of set theory] (* <- lang_en;; *);;
 
-section_sets_axioms = [*^"file://section_sets_axioms.scsi"*];;
+section_sets_axioms = [*
+axiom_bulk
+=> nrel_main_idtf: 
+	[Аксиома объемности] (* <- lang_ru;; *);
+	[Axiom bulk] (* <- lang_en;; *);
+<- observation;
+<= nrel_sc_text_translation:	
+		...
+		(*
+		-> 
+			"file://content/content_html/axiom_bulk.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+
+axiom_of_empty_set
+=> nrel_main_idtf: 
+	[Аксиома пустого множества] (* <- lang_ru;; *);
+	[Axiom of empty set] (* <- lang_en;; *);
+<- observation;
+<= nrel_sc_text_translation:	
+		...
+		(*
+		-> 
+			"file://content/content_html/axiom_of_empty_set.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+
+axiom_of_infinity
+=> nrel_main_idtf: 
+	[Аксиома бесконечности] (* <- lang_ru;; *);
+	[Axiom of infinity] (* <- lang_en;; *);
+<- observation;
+<= nrel_sc_text_translation:	
+		...
+		(*
+		-> 
+			"file://content/content_html/axiom_of_infinity.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+
+axiom_of_pairing
+=> nrel_main_idtf: 
+	[Аксиома пары] (* <- lang_ru;; *);
+	[Axiom of pairing] (* <- lang_en;; *);
+<- observation;
+<= nrel_sc_text_translation:	
+		...
+		(*
+		-> 
+			"file://content/content_html/axiom_of_pairing.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+
+axiom_of_boolean
+=> nrel_main_idtf: 
+	[Аксиома булеана] (* <- lang_ru;; *);
+	[Axiom of boolean] (* <- lang_en;; *);
+<- observation;
+<= nrel_sc_text_translation:	
+		...
+		(*
+		-> 
+			"file://content/content_html/axiom_of_boolean.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+
+axiom_of_union
+=> nrel_main_idtf: 
+	[Аксиома объединения] (* <- lang_ru;; *);
+	[Axiom_of_union] (* <- lang_en;; *);
+<- observation;
+<= nrel_sc_text_translation:	
+		...
+		(*
+		-> 
+			"file://content/content_html/axiom_of_union.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+
+allocation_scheme
+=> nrel_main_idtf: 
+	[Аксиома выделения] (* <- lang_ru;; *);
+	[Allocation scheme] (* <- lang_en;; *);
+<- observation;
+<= nrel_sc_text_translation:	
+		...
+		(*
+		-> 
+			"file://content/content_html/allocation_scheme.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+
+conversion_circuit
+=> nrel_main_idtf: 
+	[Аксиома преобразования] (* <- lang_ru;; *);
+	[Conversion circuit] (* <- lang_en;; *);
+<- observation;
+<= nrel_sc_text_translation:	
+		...
+		(*
+		-> 
+			"file://content/content_html/conversion_circuit.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+
+axiom_of_regularity
+=> nrel_main_idtf: 
+	[Аксиома регулярности] (* <- lang_ru;; *);
+	[Axiom of regularity] (* <- lang_en;; *);
+<- observation;
+<= nrel_sc_text_translation:	
+		...
+		(*
+		-> 
+			"file://content/content_html/axiom_of_regularity.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+
+axiom_of_choice
+=> nrel_main_idtf: 
+	[Аксиома выбора] (* <- lang_ru;; *);
+	[Axiom of choice] (* <- lang_en;; *);
+<- observation;
+<= nrel_sc_text_translation:	
+		...
+		(*
+		-> 
+			"file://content/content_html/axiom_of_choice.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+
+axiom_of_determinacy
+=> nrel_main_idtf: 
+	[Аксиома детерминированности] (* <- lang_ru;; *);
+	[Axiom of determinacy] (* <- lang_en;; *);
+<- observation;
+<= nrel_sc_text_translation:	
+		...
+		(*
+		-> 
+			"file://content/content_html/axiom_of_determinacy.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+*];;
 
 section_sets_axioms
 <- rrel_key_sc_element:
@@ -17,5 +193,4 @@ section_sets_axioms
 	axiom_of_regularity;
 	axiom_of_choice;
 	axiom_of_determinacy;;
-
 

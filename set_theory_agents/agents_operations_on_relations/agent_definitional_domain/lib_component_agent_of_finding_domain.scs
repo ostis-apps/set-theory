@@ -23,8 +23,11 @@ lib_component_agent_of_domain
 		...
 		(*
 		-> rrel_example:
-			"file://htmls/Agent_Definitional_domain.html"
-				(* <- lang_ru;; *);; 
+			"file://htmls/Agent_Definitional_domain_html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);; 
 		*);;
 	*);;
 

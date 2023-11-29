@@ -18,7 +18,7 @@ concept_unit_matrix <- rrel_key_sc_element:
 *);;
 
 concept_unit_matrix -> rrel_example :
-	"file://unit_matrix1.png";;
+	"file://unit_matrix1.png"(*=> nrel_format: format_png;;*);;
 
 concept_unit_matrix <- rrel_key_sc_element:
 	... 

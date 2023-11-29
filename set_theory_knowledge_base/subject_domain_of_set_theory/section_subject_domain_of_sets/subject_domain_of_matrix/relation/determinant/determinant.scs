@@ -117,7 +117,11 @@ nrel_determinant <- rrel_key_sc_element:
 		...
 		(* 
 		->rrel_example:
-			"file://determinant.png"(*<-lang_ru;;*);;
+			"file://determinant.png"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_png;;
+*);;
 		*);;
 	*);
 ...
@@ -137,5 +141,5 @@ nrel_determinant <= nrel_first_domain:  concept_matrix;;
 nrel_determinant <= nrel_second_domain: concept_polynomial;;
 
 nrel_determinant -> rrel_example :
-		"file://determinant_example.png";;
+		"file://determinant_example.png"(*=> nrel_format: format_png;;*);;
 

@@ -1,5 +1,5 @@
 set_theory_paradox
-<- sc_node_not_relation;
+<- sc_node_class;
 <- section_set_theory_paradox;
 => nrel_main_idtf:
 	[парадокс теории множеств]
@@ -18,6 +18,10 @@ set_theory_paradox
 	<- sc_explanation;;
 	<= nrel_sc_text_translation:...
 		(*
-		-> rrel_example:"file://htmls/set_theory_paradox.html" (* <-lang_ru;; *);;
+		-> rrel_example:"file://htmls/set_theory_paradox.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	*);;

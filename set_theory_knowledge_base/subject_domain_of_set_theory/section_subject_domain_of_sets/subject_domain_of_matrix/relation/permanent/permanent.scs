@@ -74,5 +74,5 @@ nrel_permanent <= nrel_first_domain:  concept_matrix;;
 nrel_permanent <= nrel_second_domain: concept_number;;
 
 nrel_permanent -> rrel_example :
-		"file://permanent_example.png";;
+		"file://permanent_example.png"(*=> nrel_format: format_png;;*);;
 

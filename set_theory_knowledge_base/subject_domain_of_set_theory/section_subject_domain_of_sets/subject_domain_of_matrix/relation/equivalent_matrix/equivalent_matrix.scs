@@ -52,5 +52,5 @@ nrel_equivalent_matrix <- binary_relation;;
 nrel_equivalent_matrix <= nrel_first_domain:  concept_matrix;;
 nrel_equivalent_matrix <= nrel_second_domain: concept_matrix;;
 nrel_equivalent_matrix -> rrel_example :
-		"file://equivalent_matrix_example.png";;
+		"file://equivalent_matrix_example.png"(*=> nrel_format: format_png;;*);;
 

@@ -9,7 +9,7 @@ binary_matrix
 	(* <-lang_ru;; *);
 	[(0, 1)-матрица]
 	(* <-lang_ru;; *);
-<-sc_node_not_relation;
+<-sc_node_class;
 <= nrel_inclusion: concept_matrix;
 
 <- rrel_key_sc_element:
@@ -20,7 +20,11 @@ binary_matrix
 	<= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example: "file://html/binary_matrix.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://html/binary_matrix.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 	*);;
 

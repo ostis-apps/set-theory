@@ -11,4 +11,495 @@ lib_component_proc_of_finding_relations_symmetric_propertes
 -> rrel_key_sc_element: 
 	proc_of_finding_relations_symmetric_propertes;;
 
-lib_component_proc_of_finding_relations_symmetric_propertes = [*^"file://proc_of_finding_relations_symmetric_propertes.scs"*];;
+lib_component_proc_of_finding_relations_symmetric_propertes = [*
+scp_program -> proc_of_finding_relations_symmetric_propertes 
+	(*	
+	-> rrel_params: ..proc_of_finding_relations_symmetric_propertes_params 
+		(*
+		-> rrel_1: rrel_in: _A;;
+		-> rrel_2: rrel_out: _answer;;
+		*);;
+
+	-> rrel_operators: ..proc_of_finding_relations_symmetric_propertes_operator_set 
+		(*
+			-> rrel_init: _proc_of_finding_relations_symmetric_propertes_operator0 (*
+				<- printNl;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: [агент нахождения симметричных свойств отношения];;
+				=> nrel_goto: _proc_of_finding_relations_symmetric_propertes_operator1;;
+	   		*);;
+
+	    	-> _proc_of_finding_relations_symmetric_propertes_operator1 (*
+				<- genEl;;
+				-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _result;;
+				=> nrel_goto: _proc_of_finding_relations_symmetric_propertes_operator_check_binary;;
+			*);;
+
+			-> _proc_of_finding_relations_symmetric_propertes_operator_check_binary (*
+				<- searchElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: binary_relation;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arcA;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _A;;
+
+	            => nrel_then: _proc_of_finding_relations_symmetric_propertes_operator2;;
+	            => nrel_else: _proc_of_finding_relations_symmetric_propertes_operator_check_binary_error;;
+			*);; 
+
+			-> _proc_of_finding_relations_symmetric_propertes_operator_check_binary_error (*
+			 	<- printNl;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: [Данный элемент не является бинарным отношением.];;
+
+			  	=> nrel_goto: _proc_of_finding_relations_symmetric_propertes_operator_return;;
+			*);;
+
+			-> _proc_of_finding_relations_symmetric_propertes_operator2 (*
+				<- searchElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: symmetric_relation;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arcA;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _A;;
+
+	            => nrel_then: _proc_of_finding_relations_symmetric_propertes_operator5;;
+	            => nrel_else: _proc_of_finding_relations_symmetric_propertes_operator6;;
+			*);; 
+
+			-> _proc_of_finding_relations_symmetric_propertes_operator5 (*
+			 	<- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_const: symmetric_relation;;
+
+			  	=> nrel_goto: _proc_of_finding_relations_symmetric_propertes_operator46;;
+			*);;
+
+			->_proc_of_finding_relations_symmetric_propertes_operator6 (*
+				<- searchElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: antisymmetric_relation;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arcA;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _A;;
+
+	            => nrel_then: _proc_of_finding_relations_symmetric_propertes_operator7;;
+	            => nrel_else: _proc_of_finding_relations_symmetric_propertes_operator8;;
+			*);; 
+
+			-> _proc_of_finding_relations_symmetric_propertes_operator7 (*
+			 	<- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_const: antisymmetric_relation;;
+
+			  	=> nrel_goto: _proc_of_finding_relations_symmetric_propertes_operator46;;
+			*);;
+
+			->_proc_of_finding_relations_symmetric_propertes_operator8 (*
+				<- searchElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: asymmetric_relation;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arcA;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _A;;
+
+	            => nrel_then: _proc_of_finding_relations_symmetric_propertes_operator9;;
+	            => nrel_else: _proc_of_finding_relations_symmetric_propertes_operator010;;
+			*);; 
+
+			-> _proc_of_finding_relations_symmetric_propertes_operator9 (*
+			 	<- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_const: asymmetric_relation;;
+
+			  	=> nrel_goto: _proc_of_finding_relations_symmetric_propertes_operator46;;
+			*);;
+
+			->_proc_of_finding_relations_symmetric_propertes_operator010 (*
+				<- searchElStr5;;
+				-> rrel_1: rrel_assign: rrel_scp_var: _el1;;
+				-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _el2;;
+				-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+				-> rrel_5: rrel_fixed: rrel_scp_var: _A;;
+
+	            => nrel_then: _proc_of_finding_relations_symmetric_propertes_operator0000;;
+	            => nrel_else: _proc_of_finding_relations_symmetric_propertes_operator0000000;;
+			*);; 
+
+			-> _proc_of_finding_relations_symmetric_propertes_operator0000000 (*
+			 	<- printNl;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: [Данный элемент не является бинарным отношением.];;
+
+			  	=> nrel_goto: _proc_of_finding_relations_symmetric_propertes_operator_return;;
+			*);;
+
+			->_proc_of_finding_relations_symmetric_propertes_operator0000 (*
+				<- searchSetStr5;;
+				-> rrel_1: rrel_assign: rrel_scp_var: _element1;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _element2;;
+				-> rrel_4: rrel_assign: rrel_scp_var: _arc1;;
+				-> rrel_5: rrel_fixed: rrel_scp_var: _A;;
+
+		  		-> rrel_set_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _not_checkedA;;		  	
+		  		-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _not_checkedB;;
+
+	             => nrel_then: _proc_of_finding_relations_symmetric_propertes_operator0001;;
+	             => nrel_else: _proc_of_finding_relations_symmetric_propertes_operator46;;
+			*);; 
+			
+			-> _proc_of_finding_relations_symmetric_propertes_operator0001 (*
+				<- searchElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _not_checkedA;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _arc_for_delA;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _element1;;
+
+	            => nrel_then: _proc_of_finding_relations_symmetric_propertes_operator0002;;
+	            => nrel_else: _proc_of_finding_relations_symmetric_propertes_operator0008;;
+			*);;
+
+        	-> _proc_of_finding_relations_symmetric_propertes_operator0002(*
+				<- eraseEl;;
+				-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc_for_delA;;
+
+				=> nrel_goto: _proc_of_finding_relations_symmetric_propertes_operator0003;;
+			*);;	
+
+        	-> _proc_of_finding_relations_symmetric_propertes_operator0003 (*
+				<- searchElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _not_checkedB;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _arc_for_delA;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _element2;;
+
+	            => nrel_then: _proc_of_finding_relations_symmetric_propertes_operator0004;;
+	            => nrel_else: _proc_of_finding_relations_symmetric_propertes_operator0005;;
+			*);;
+
+        	-> _proc_of_finding_relations_symmetric_propertes_operator0004(*
+				<- eraseEl;;
+				-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc_for_delA;;
+
+				=> nrel_goto: _proc_of_finding_relations_symmetric_propertes_operator0006;;
+			*);;
+
+        	->_proc_of_finding_relations_symmetric_propertes_operator0005 (*
+				<- searchSetStr5;;
+				-> rrel_1: rrel_assign: rrel_scp_var: _el1;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _el2;;
+				-> rrel_4: rrel_assign: rrel_scp_var: _arc1;;
+				-> rrel_5: rrel_fixed: rrel_scp_var: _A;;
+		  	
+		  		-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _not_checkedB;;
+
+	             => nrel_then: _proc_of_finding_relations_symmetric_propertes_operator0001;;
+	             => nrel_else: _proc_of_finding_relations_symmetric_propertes_operator46;;
+			*);; 
+
+			->_proc_of_finding_relations_symmetric_propertes_operator0006 (*
+				<- searchElStr5;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _element1;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _arcA;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _element2;;
+				-> rrel_4: rrel_assign: rrel_scp_var: _arcA;;
+				-> rrel_5: rrel_fixed: rrel_scp_var: _A;;
+
+	            => nrel_then: _proc_of_finding_relations_symmetric_propertes_operator0007;;
+	            => nrel_else: _proc_of_finding_relations_symmetric_propertes_operator0003;;
+			*);; 
+
+			->_proc_of_finding_relations_symmetric_propertes_operator0007 (*
+				<- searchElStr5;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _element2;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _arcA;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _element1;;
+				-> rrel_4: rrel_assign: rrel_scp_var: _arcA;;
+				-> rrel_5: rrel_fixed: rrel_scp_var: _A;;
+
+	            => nrel_then: _proc_of_finding_relations_symmetric_propertes_operator0003;;
+	            => nrel_else: _proc_of_finding_relations_symmetric_propertes_operator00000;;
+			*);; 
+
+			-> _proc_of_finding_relations_symmetric_propertes_operator0008 (*
+			 	<- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_const: symmetric_relation;;
+
+			  	=> nrel_goto: _proc_of_finding_relations_symmetric_propertes_operator0009;;
+			*);;
+
+			-> _proc_of_finding_relations_symmetric_propertes_operator0009 (*
+			 	<- genElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: symmetric_relation;;			 	
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _A;;
+
+			  	=> nrel_goto: _proc_of_finding_relations_symmetric_propertes_operator46;;
+			*);;
+
+			->_proc_of_finding_relations_symmetric_propertes_operator00000 (*
+				<- searchSetStr5;;
+				-> rrel_1: rrel_assign: rrel_scp_var: _element1;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _element2;;
+				-> rrel_4: rrel_assign: rrel_scp_var: _arc1;;
+				-> rrel_5: rrel_fixed: rrel_scp_var: _A;;
+
+		  		-> rrel_set_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _not_checkedA;;		  	
+		  		-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _not_checkedB;;
+
+	             => nrel_then: _proc_of_finding_relations_symmetric_propertes_operator00001;;
+	             => nrel_else: _proc_of_finding_relations_symmetric_propertes_operator46;;
+			*);; 
+			
+			-> _proc_of_finding_relations_symmetric_propertes_operator00001 (*
+				<- searchElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _not_checkedA;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _arc_for_delA;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _element1;;
+
+	            => nrel_then: _proc_of_finding_relations_symmetric_propertes_operator00002;;
+	            => nrel_else: _proc_of_finding_relations_symmetric_propertes_operator000011;;
+			*);;
+
+        	-> _proc_of_finding_relations_symmetric_propertes_operator00002(*
+				<- eraseEl;;
+				-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc_for_delA;;
+
+				=> nrel_goto: _proc_of_finding_relations_symmetric_propertes_operator00003;;
+			*);;	
+
+        	-> _proc_of_finding_relations_symmetric_propertes_operator00003 (*
+				<- searchElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _not_checkedB;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _arc_for_delA;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _element2;;
+
+	            => nrel_then: _proc_of_finding_relations_symmetric_propertes_operator00004;;
+	            => nrel_else: _proc_of_finding_relations_symmetric_propertes_operator00005;;
+			*);;
+
+        	-> _proc_of_finding_relations_symmetric_propertes_operator00004(*
+				<- eraseEl;;
+				-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc_for_delA;;
+
+				=> nrel_goto: _proc_of_finding_relations_symmetric_propertes_operator00006;;
+			*);;
+
+        	->_proc_of_finding_relations_symmetric_propertes_operator00005 (*
+				<- searchSetStr5;;
+				-> rrel_1: rrel_assign: rrel_scp_var: _el1;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _el2;;
+				-> rrel_4: rrel_assign: rrel_scp_var: _arc1;;
+				-> rrel_5: rrel_fixed: rrel_scp_var: _A;;
+		  	
+		  		-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _not_checkedB;;
+
+	             => nrel_then: _proc_of_finding_relations_symmetric_propertes_operator00001;;
+	             => nrel_else: _proc_of_finding_relations_symmetric_propertes_operator46;;
+			*);; 
+
+			->_proc_of_finding_relations_symmetric_propertes_operator00006 (*
+				<- searchElStr5;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _element1;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _arcA;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _element2;;
+				-> rrel_4: rrel_assign: rrel_scp_var: _arcA;;
+				-> rrel_5: rrel_fixed: rrel_scp_var: _A;;
+
+	            => nrel_then: _proc_of_finding_relations_symmetric_propertes_operator00007;;
+	            => nrel_else: _proc_of_finding_relations_symmetric_propertes_operator00003;;
+			*);; 
+
+			->_proc_of_finding_relations_symmetric_propertes_operator00007 (*
+				<- searchElStr5;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _element2;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _arcA;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _element1;;
+				-> rrel_4: rrel_assign: rrel_scp_var: _arcA;;
+				-> rrel_5: rrel_fixed: rrel_scp_var: _A;;
+
+	            => nrel_then: _proc_of_finding_relations_symmetric_propertes_operator000010;;
+	            => nrel_else: _proc_of_finding_relations_symmetric_propertes_operator00003;;
+			*);; 
+
+			->_proc_of_finding_relations_symmetric_propertes_operator000010 (*
+				<- ifCoin;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _element2;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _element1;;
+
+	            => nrel_then: _proc_of_finding_relations_symmetric_propertes_operator00003;;
+	            => nrel_else: _proc_of_finding_relations_symmetric_propertes_operator000000;;
+			*);; 
+
+			-> _proc_of_finding_relations_symmetric_propertes_operator000011 (*
+			 	<- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_const: antisymmetric_relation;;
+
+			  	=> nrel_goto: _proc_of_finding_relations_symmetric_propertes_operator000012;;
+			*);;
+
+			-> _proc_of_finding_relations_symmetric_propertes_operator000012 (*
+			 	<- genElStr3;;
+
+				-> rrel_1: rrel_fixed: rrel_scp_const: antisymmetric_relation;;			 	
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _A;;
+
+			  	=> nrel_goto: _proc_of_finding_relations_symmetric_propertes_operator46;;
+			*);;
+
+			->_proc_of_finding_relations_symmetric_propertes_operator000000 (*
+				<- searchSetStr5;;
+				-> rrel_1: rrel_assign: rrel_scp_var: _element1;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _element2;;
+				-> rrel_4: rrel_assign: rrel_scp_var: _arc1;;
+				-> rrel_5: rrel_fixed: rrel_scp_var: _A;;
+
+		  		-> rrel_set_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _not_checkedA;;		  	
+		  		-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _not_checkedB;;
+
+	            => nrel_then: _proc_of_finding_relations_symmetric_propertes_operator000001;;
+	            => nrel_else: _proc_of_finding_relations_symmetric_propertes_operator46;;
+			*);; 
+			
+			-> _proc_of_finding_relations_symmetric_propertes_operator000001 (*
+				<- searchElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _not_checkedA;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _arc_for_delA;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _element1;;
+
+	            => nrel_then: _proc_of_finding_relations_symmetric_propertes_operator000002;;
+	            => nrel_else: _proc_of_finding_relations_symmetric_propertes_operator0000010;;
+			*);;
+
+        	-> _proc_of_finding_relations_symmetric_propertes_operator000002(*
+				<- eraseEl;;
+				-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc_for_delA;;
+
+				=> nrel_goto: _proc_of_finding_relations_symmetric_propertes_operator000003;;
+			*);;	
+
+        	-> _proc_of_finding_relations_symmetric_propertes_operator000003 (*
+				<- searchElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _not_checkedB;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _arc_for_delA;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _element2;;
+
+	            => nrel_then: _proc_of_finding_relations_symmetric_propertes_operator000004;;
+	            => nrel_else: _proc_of_finding_relations_symmetric_propertes_operator000005;;
+			*);;
+
+        	-> _proc_of_finding_relations_symmetric_propertes_operator000004(*
+				<- eraseEl;;
+				-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc_for_delA;;
+
+				=> nrel_goto: _proc_of_finding_relations_symmetric_propertes_operator000006;;
+			*);;	
+
+        	->_proc_of_finding_relations_symmetric_propertes_operator000005 (*
+				<- searchSetStr5;;
+				-> rrel_1: rrel_assign: rrel_scp_var: _el1;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _el2;;
+				-> rrel_4: rrel_assign: rrel_scp_var: _arc1;;
+				-> rrel_5: rrel_fixed: rrel_scp_var: _A;;
+		  	
+		  		-> rrel_set_3: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _not_checkedB;;
+
+	            => nrel_then: _proc_of_finding_relations_symmetric_propertes_operator000001;;
+	            => nrel_else: _proc_of_finding_relations_symmetric_propertes_operator46;;
+			*);; 
+
+			->_proc_of_finding_relations_symmetric_propertes_operator000006 (*
+				<- searchElStr5;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _element1;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _arcA;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _element2;;
+				-> rrel_4: rrel_assign: rrel_scp_var: _arcA;;
+				-> rrel_5: rrel_fixed: rrel_scp_var: _A;;
+
+	            => nrel_then: _proc_of_finding_relations_symmetric_propertes_operator000007;;
+	            => nrel_else: _proc_of_finding_relations_symmetric_propertes_operator000008;;
+			*);; 
+
+			->_proc_of_finding_relations_symmetric_propertes_operator000007 (*
+				<- searchElStr5;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _element2;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _arcA;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _element1;;
+				-> rrel_4: rrel_assign: rrel_scp_var: _arcA;;
+				-> rrel_5: rrel_fixed: rrel_scp_var: _A;;
+
+	            => nrel_then: _proc_of_finding_relations_symmetric_propertes_operator46;;
+	            => nrel_else: _proc_of_finding_relations_symmetric_propertes_operator000003;;
+			*);; 
+
+			->_proc_of_finding_relations_symmetric_propertes_operator000008 (*
+				<- searchElStr5;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _element2;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _arcA;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _element1;;
+				-> rrel_4: rrel_assign: rrel_scp_var: _arcA;;
+				-> rrel_5: rrel_fixed: rrel_scp_var: _A;;
+
+	            => nrel_then: _proc_of_finding_relations_symmetric_propertes_operator000009;;
+	            => nrel_else: _proc_of_finding_relations_symmetric_propertes_operator000003;;
+			*);; 
+
+			->_proc_of_finding_relations_symmetric_propertes_operator000009 (*
+				<- searchElStr5;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _element1;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _arcA;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _element2;;
+				-> rrel_4: rrel_assign: rrel_scp_var: _arcA;;
+				-> rrel_5: rrel_fixed: rrel_scp_var: _A;;
+
+	            => nrel_then: _proc_of_finding_relations_symmetric_propertes_operator46;;
+	            => nrel_else: _proc_of_finding_relations_symmetric_propertes_operator000003;;
+			*);; 
+
+			-> _proc_of_finding_relations_symmetric_propertes_operator0000010 (*
+			 	<- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_const: asymmetric_relation;;
+
+			  	=> nrel_goto: _proc_of_finding_relations_symmetric_propertes_operator0000011;;
+			*);;
+
+			-> _proc_of_finding_relations_symmetric_propertes_operator0000011 (*
+			 	<- genElStr3;;
+			 	
+				-> rrel_1: rrel_fixed: rrel_scp_const: asymmetric_relation;;			 	
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _A;;
+
+			  	=> nrel_goto: _proc_of_finding_relations_symmetric_propertes_operator46;;
+			*);;
+
+			-> _proc_of_finding_relations_symmetric_propertes_operator46 (*
+				<- call;; 
+				-> rrel_1: rrel_fixed: rrel_scp_const:  proc_add_three_elements;;
+				->rrel_2:rrel_fixed:rrel_scp_const: 
+				_proc_of_finding_relations_symmetric_propertes_operator46_params (*
+					-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+					-> rrel_2: rrel_fixed: rrel_scp_var: _A;;
+					-> rrel_3: rrel_assign: rrel_scp_var: _answer;;
+				*);;
+				-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+				=>nrel_goto: _proc_of_finding_relations_symmetric_propertes_operator47;;
+			*);;
+
+			-> _proc_of_finding_relations_symmetric_propertes_operator47 (*
+				<- waitReturn;;
+				-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+				=>nrel_goto: _proc_of_finding_relations_symmetric_propertes_operator_return;;
+			*);;
+
+			-> _proc_of_finding_relations_symmetric_propertes_operator_return 
+			(*
+				<- return;;
+			*);;
+		*);;
+	*);;
+*];;
