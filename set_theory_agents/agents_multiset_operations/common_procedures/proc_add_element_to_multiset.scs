@@ -17,16 +17,16 @@ scp_program -> proc_add_element_to_multiset
 
 	-> rrel_operators: ...
 	(*
-		-> rrel_init: .proc_add_element_to_multiset_operator_print_start
+		-> rrel_init: _proc_add_element_to_multiset_operator_print_start
 		(*
 			<- printNl;;
 
 			-> rrel_1: rrel_scp_const: [Начало. Процедура добавления элемента в мультимножество];;
 
-			=> nrel_goto: .proc_add_element_to_multiset_operator_check_belonging;;
+			=> nrel_goto: _proc_add_element_to_multiset_operator_check_belonging;;
    		*);;
 
-		-> .proc_add_element_to_multiset_operator_check_belonging
+		-> _proc_add_element_to_multiset_operator_check_belonging
 		(*
 			<- searchElStr3;;
 
@@ -34,14 +34,14 @@ scp_program -> proc_add_element_to_multiset
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _belonging_arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _element;;
 
-			=> nrel_then: .proc_add_element_to_multiset_operator_print_end;;
-			=> nrel_else: .proc_add_element_to_multiset_operator_find_all_numbers;;
+			=> nrel_then: _proc_add_element_to_multiset_operator_print_end;;
+			=> nrel_else: _proc_add_element_to_multiset_operator_find_all_numbers;;
 		*);;
 
 ////////////////////////////////////////////////////////////////////////////////////
 // Часть I. Поиск/создание нужного числа
 
-		-> .proc_add_element_to_multiset_operator_find_all_numbers
+		-> _proc_add_element_to_multiset_operator_find_all_numbers
 		(*
 			<- searchSetStr3;;
 
@@ -51,14 +51,14 @@ scp_program -> proc_add_element_to_multiset
 
 			-> rrel_set_3: rrel_assign: rrel_scp_var: _number_set;;
 
-			=> nrel_then: .proc_add_element_to_multiset_operator_get_number;;
-			=> nrel_else: .proc_add_element_to_multiset_operator_generate_number;;
+			=> nrel_then: _proc_add_element_to_multiset_operator_get_number;;
+			=> nrel_else: _proc_add_element_to_multiset_operator_generate_number;;
 		*);;
 
 ////////////////////////////////////////////////////////////////////////////////////
 // цикл по всем найденным числам
 
-		-> .proc_add_element_to_multiset_operator_get_number
+		-> _proc_add_element_to_multiset_operator_get_number
 		(*
 			<- searchElStr3;;
 
@@ -66,20 +66,20 @@ scp_program -> proc_add_element_to_multiset
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _number_set_arc;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _number;;
 
-			=> nrel_then: .proc_add_element_to_multiset_operator_remove_number_from_set;;
-			=> nrel_else: .proc_add_element_to_multiset_operator_generate_number;;
+			=> nrel_then: _proc_add_element_to_multiset_operator_remove_number_from_set;;
+			=> nrel_else: _proc_add_element_to_multiset_operator_generate_number;;
 		*);;
 
-		-> .proc_add_element_to_multiset_operator_remove_number_from_set
+		-> _proc_add_element_to_multiset_operator_remove_number_from_set
 		(*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _number_set_arc;;
 
-			=> nrel_goto: .proc_add_element_to_multiset_operator_get_number_value;;
+			=> nrel_goto: _proc_add_element_to_multiset_operator_get_number_value;;
 		*);;
 
-		-> .proc_add_element_to_multiset_operator_get_number_value
+		-> _proc_add_element_to_multiset_operator_get_number_value
 		(*
 			<- searchElStr5;;
 
@@ -89,19 +89,19 @@ scp_program -> proc_add_element_to_multiset
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _idtf_arc;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_idtf;;
 
-			=> nrel_then: .proc_add_element_to_multiset_operator_compare_number_values;;
-			=> nrel_else: .proc_add_element_to_multiset_operator_get_number;;
+			=> nrel_then: _proc_add_element_to_multiset_operator_compare_number_values;;
+			=> nrel_else: _proc_add_element_to_multiset_operator_get_number;;
 		*);;
 
-		-> .proc_add_element_to_multiset_operator_compare_number_values
+		-> _proc_add_element_to_multiset_operator_compare_number_values
 		(*
 			<- ifEq;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: _number_value;;
 			-> rrel_2: rrel_fixed: rrel_scp_var: _multiplicity;;
 
-			=> nrel_then: .proc_add_element_to_multiset_operator_print_number_found;;
-			=> nrel_else: .proc_add_element_to_multiset_operator_get_number;;
+			=> nrel_then: _proc_add_element_to_multiset_operator_print_number_found;;
+			=> nrel_else: _proc_add_element_to_multiset_operator_get_number;;
 		*);;
 
 ////////////////////////////////////////////////////////////////////////////////////
@@ -109,17 +109,17 @@ scp_program -> proc_add_element_to_multiset
 ////////////////////////////////////////////////////////////////////////////////////
 // создание нужного числа
 
-		-> .proc_add_element_to_multiset_operator_generate_number
+		-> _proc_add_element_to_multiset_operator_generate_number
 		(*
 			<- contAssign;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: _number_value;;
 			-> rrel_2: rrel_fixed: rrel_scp_var: _multiplicity;;
 
-			=> nrel_goto: .proc_add_element_to_multiset_operator_generate_number_idtf;;
+			=> nrel_goto: _proc_add_element_to_multiset_operator_generate_number_idtf;;
 		*);;
 
-		-> .proc_add_element_to_multiset_operator_generate_number_idtf
+		-> _proc_add_element_to_multiset_operator_generate_number_idtf
 		(*
 			<- genElStr5;;
 
@@ -129,10 +129,10 @@ scp_program -> proc_add_element_to_multiset
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _idtf_arc;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_idtf;;
 
-			=> nrel_goto: .proc_add_element_to_multiset_operator_generate_language_arc;;
+			=> nrel_goto: _proc_add_element_to_multiset_operator_generate_language_arc;;
 		*);;
 
-		-> .proc_add_element_to_multiset_operator_generate_language_arc
+		-> _proc_add_element_to_multiset_operator_generate_language_arc
 		(*
 			<- genElStr3;;
 
@@ -140,10 +140,10 @@ scp_program -> proc_add_element_to_multiset
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _lang_arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _number_value;;
 
-			=> nrel_goto: .proc_add_element_to_multiset_operator_generate_number_arc;;
+			=> nrel_goto: _proc_add_element_to_multiset_operator_generate_number_arc;;
 		*);;
 
-		-> .proc_add_element_to_multiset_operator_generate_number_arc
+		-> _proc_add_element_to_multiset_operator_generate_number_arc
 		(*
 			<- genElStr3;;
 
@@ -151,27 +151,27 @@ scp_program -> proc_add_element_to_multiset
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _number_arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _number;;
 
-			=> nrel_goto: .proc_add_element_to_multiset_operator_print_number_generated;;
+			=> nrel_goto: _proc_add_element_to_multiset_operator_print_number_generated;;
 		*);;
 
-		-> .proc_add_element_to_multiset_operator_print_number_generated
+		-> _proc_add_element_to_multiset_operator_print_number_generated
 		(*
 			<- printNl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: [Нужное число сгенерировано];;
 
-			=> nrel_goto: .proc_add_element_to_multiset_operator_generate_multiplicity_class;;
+			=> nrel_goto: _proc_add_element_to_multiset_operator_generate_multiplicity_class;;
 		*);;
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-		-> .proc_add_element_to_multiset_operator_print_number_found
+		-> _proc_add_element_to_multiset_operator_print_number_found
 		(*
 			<- printNl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: [Нужное число найдено];;
 
-			=> nrel_goto: .proc_add_element_to_multiset_operator_find_multiplicity_class;;
+			=> nrel_goto: _proc_add_element_to_multiset_operator_find_multiplicity_class;;
 		*);;
 
 // Часть I
@@ -180,7 +180,7 @@ scp_program -> proc_add_element_to_multiset
 ////////////////////////////////////////////////////////////////////////////////////
 // Часть IIa. Поиск класса кратности принадлежности
 
-		-> .proc_add_element_to_multiset_operator_find_multiplicity_class
+		-> _proc_add_element_to_multiset_operator_find_multiplicity_class
 		(*
 			<- searchSetStr5;;
 
@@ -192,14 +192,14 @@ scp_program -> proc_add_element_to_multiset
 
 			-> rrel_set_1: rrel_assign: rrel_scp_var: _multiplicity_set;;
 
-			=> nrel_then: .proc_add_element_to_multiset_operator_get_multiplicity_class;;
-			=> nrel_else: .proc_add_element_to_multiset_operator_generate_multiplicity_class;;
+			=> nrel_then: _proc_add_element_to_multiset_operator_get_multiplicity_class;;
+			=> nrel_else: _proc_add_element_to_multiset_operator_generate_multiplicity_class;;
 		*);;
 
 ////////////////////////////////////////////////////////////////////////////////////
 // цикл по всем кандидатам в кратность принадлежности
 
-		-> .proc_add_element_to_multiset_operator_get_multiplicity_class
+		-> _proc_add_element_to_multiset_operator_get_multiplicity_class
 		(*
 			<- searchElStr3;;
 
@@ -207,20 +207,20 @@ scp_program -> proc_add_element_to_multiset
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _multiplicity_set_arc;;
 			-> rrel_3: rrel_assign: rrel_scp_var: _multiplicity_class;;
 
-			=> nrel_then: .proc_add_element_to_multiset_operator_remove_multiplicity_from_set;;
-			=> nrel_else: .proc_add_element_to_multiset_operator_generate_multiplicity_class;;
+			=> nrel_then: _proc_add_element_to_multiset_operator_remove_multiplicity_from_set;;
+			=> nrel_else: _proc_add_element_to_multiset_operator_generate_multiplicity_class;;
 		*);;
 
-		-> .proc_add_element_to_multiset_operator_remove_multiplicity_from_set
+		-> _proc_add_element_to_multiset_operator_remove_multiplicity_from_set
 		(*
 			<- eraseEl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _multiplicity_set_arc;;
 
-			=> nrel_goto: .proc_add_element_to_multiset_operator_check_multiplicity_class;;
+			=> nrel_goto: _proc_add_element_to_multiset_operator_check_multiplicity_class;;
 		*);;
 
-		-> .proc_add_element_to_multiset_operator_check_multiplicity_class
+		-> _proc_add_element_to_multiset_operator_check_multiplicity_class
 		(*
 			<- searchElStr3;;
 
@@ -228,21 +228,21 @@ scp_program -> proc_add_element_to_multiset
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _multiplicity_class;;
 
-			=> nrel_then: .proc_add_element_to_multiset_operator_print_multiplicity_found;;
-			=> nrel_else: .proc_add_element_to_multiset_operator_get_multiplicity_class;;
+			=> nrel_then: _proc_add_element_to_multiset_operator_print_multiplicity_found;;
+			=> nrel_else: _proc_add_element_to_multiset_operator_get_multiplicity_class;;
 		*);;
 
 ////////////////////////////////////////////////////////////////////////////////////
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-		-> .proc_add_element_to_multiset_operator_print_multiplicity_found
+		-> _proc_add_element_to_multiset_operator_print_multiplicity_found
 		(*
 			<- printNl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: [Нужный класс кратности принадлежности найден];;
 
-			=> nrel_goto: .proc_add_element_to_multiset_operator_add_element_to_multiset;;
+			=> nrel_goto: _proc_add_element_to_multiset_operator_add_element_to_multiset;;
 		*);;
 
 
@@ -252,7 +252,7 @@ scp_program -> proc_add_element_to_multiset
 ////////////////////////////////////////////////////////////////////////////////////
 // Часть IIb. Генерация нового класса кратности принадлежности
 
-		-> .proc_add_element_to_multiset_operator_generate_multiplicity_class
+		-> _proc_add_element_to_multiset_operator_generate_multiplicity_class
 		(*
 			<- genElStr5;;
 
@@ -262,10 +262,10 @@ scp_program -> proc_add_element_to_multiset
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _measurement_arc;;
 			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_measurement;;
 
-			=> nrel_goto: .proc_add_element_to_multiset_operator_generate_multiplicity_arc;;
+			=> nrel_goto: _proc_add_element_to_multiset_operator_generate_multiplicity_arc;;
 		*);;
 
-		-> .proc_add_element_to_multiset_operator_generate_multiplicity_arc
+		-> _proc_add_element_to_multiset_operator_generate_multiplicity_arc
 		(*
 			<- genElStr3;;
 
@@ -273,16 +273,16 @@ scp_program -> proc_add_element_to_multiset
 			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _multiplicity_arc;;
 			-> rrel_3: rrel_fixed: rrel_scp_var: _multiplicity_class;;
 
-			=> nrel_goto: .proc_add_element_to_multiset_operator_print_multiplicty_class_generated;;
+			=> nrel_goto: _proc_add_element_to_multiset_operator_print_multiplicty_class_generated;;
 		*);;
 
-		-> .proc_add_element_to_multiset_operator_print_multiplicty_class_generated
+		-> _proc_add_element_to_multiset_operator_print_multiplicty_class_generated
 		(*
 			<- printNl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: [Нужный класс кратности принадлежности сгенерирован];;
 
-			=> nrel_goto: .proc_add_element_to_multiset_operator_add_element_to_multiset;;
+			=> nrel_goto: _proc_add_element_to_multiset_operator_add_element_to_multiset;;
 		*);;
 
 // Часть IIb
@@ -291,7 +291,7 @@ scp_program -> proc_add_element_to_multiset
 ////////////////////////////////////////////////////////////////////////////////////
 // Часть III. Добавление элемента в мультимножество
 
-		-> .proc_add_element_to_multiset_operator_add_element_to_multiset
+		-> _proc_add_element_to_multiset_operator_add_element_to_multiset
 		(*
 			<- genElStr5;;
 
@@ -301,19 +301,19 @@ scp_program -> proc_add_element_to_multiset
 			-> rrel_4: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _multiplicity_arc;;
 			-> rrel_5: rrel_fixed: rrel_scp_var: _multiplicity_class;;
 
-			=> nrel_goto: .proc_add_element_to_multiset_operator_print_end;;
+			=> nrel_goto: _proc_add_element_to_multiset_operator_print_end;;
 		*);;
 
-		-> .proc_add_element_to_multiset_operator_print_end
+		-> _proc_add_element_to_multiset_operator_print_end
 		(*
 			<- printNl;;
 
 			-> rrel_1: rrel_fixed: rrel_scp_const: [Конец. Процедура добавления элемента в мультимножество];;
 
-			=> nrel_goto: .proc_add_element_to_multiset_operator_return;;
+			=> nrel_goto: _proc_add_element_to_multiset_operator_return;;
 		*);;
 
-		-> .proc_add_element_to_multiset_operator_return
+		-> _proc_add_element_to_multiset_operator_return
 		(*
 			<- return;;
 		*);;
