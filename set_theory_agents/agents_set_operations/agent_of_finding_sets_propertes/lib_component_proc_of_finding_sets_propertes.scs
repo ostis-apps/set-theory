@@ -11,4 +11,456 @@ lib_component_proc_of_finding_sets_propertes
 -> rrel_key_sc_element: 
 	proc_of_finding_sets_propertes;;
 
-lib_component_proc_of_finding_sets_propertes = [*^"file://proc_of_finding_sets_propertes.scs"*];;
+lib_component_proc_of_finding_sets_propertes = [*
+scp_program -> proc_of_finding_sets_propertes 
+	(*	
+	-> rrel_params: ..proc_of_finding_sets_propertes_params 
+		(*
+		-> rrel_1: rrel_in: _A;;
+		-> rrel_2: rrel_in: _result;;
+		*);;
+
+	-> rrel_operators: ..proc_of_finding_sets_propertes_operator_set 
+		(*
+		-> rrel_init: _proc_of_finding_sets_propertes_operator_type_of_agent (*
+				<- printNl;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: [агент нахождения свойств множества];;
+				=> nrel_goto: _proc_of_finding_sets_propertes_operator0;;
+	   		*);;
+
+			-> _proc_of_finding_sets_propertes_operator0 (*
+			 	<- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_const: _A;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator1A;;
+			*);;
+
+	   		->_proc_of_finding_sets_propertes_operator1A (*
+				<- searchElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: set;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _A;;
+
+	                 	=> nrel_then: _proc_of_finding_sets_propertes_operator1B;;
+	                 	=> nrel_else: _proc_of_finding_sets_propertes_operator2A;;
+			*);; 
+
+			-> _proc_of_finding_sets_propertes_operator1B (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_const: set;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator1C;;
+			*);;
+
+			-> _proc_of_finding_sets_propertes_operator1C (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator2A;;
+			*);;
+
+			->_proc_of_finding_sets_propertes_operator2A (*
+				<- searchElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: pair_set;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _A;;
+
+	                 	=> nrel_then: _proc_of_finding_sets_propertes_operator2B;;
+	                 	=> nrel_else: _proc_of_finding_sets_propertes_operator3A;;
+			*);; 
+
+			-> _proc_of_finding_sets_propertes_operator2B (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_const: pair_set;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator6;;
+			*);;
+
+			-> _proc_of_finding_sets_propertes_operator2C (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator3A;;
+			*);;
+
+			->_proc_of_finding_sets_propertes_operator3A (*
+				<- searchElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: empty_set;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _A;;
+
+	                 	=> nrel_then: _proc_of_finding_sets_propertes_operator3B;;
+	                 	=> nrel_else: _proc_of_finding_sets_propertes_operator4A;;
+			*);; 
+
+			-> _proc_of_finding_sets_propertes_operator3B (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_const: empty_set;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator3C;;
+			*);;
+
+			-> _proc_of_finding_sets_propertes_operator3C (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator4A;;
+			*);;
+
+			->_proc_of_finding_sets_propertes_operator4A (*
+				<- searchElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: set_of_sets;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _A;;
+
+	                 	=> nrel_then: _proc_of_finding_sets_propertes_operator4B;;
+	                 	=> nrel_else: _proc_of_finding_sets_propertes_operator5A;;
+			*);; 
+
+			-> _proc_of_finding_sets_propertes_operator4B (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_const: set_of_sets;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator4C;;
+			*);;
+
+			-> _proc_of_finding_sets_propertes_operator4C (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator5A;;
+			*);;
+
+			->_proc_of_finding_sets_propertes_operator5A (*
+				<- searchElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: singletone_set;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _A;;
+
+	                 	=> nrel_then: _proc_of_finding_sets_propertes_operator5B;;
+	                 	=> nrel_else: _proc_of_finding_sets_propertes_operator6A;;
+			*);; 
+
+			-> _proc_of_finding_sets_propertes_operator5B (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_const: singletone_set;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator5C;;
+			*);;
+
+			-> _proc_of_finding_sets_propertes_operator5C (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator6A;;
+			*);;
+
+			->_proc_of_finding_sets_propertes_operator6A (*
+				<- searchElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: oriented_set;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _A;;
+
+	                 	=> nrel_then: _proc_of_finding_sets_propertes_operator6B;;
+	                 	=> nrel_else: _proc_of_finding_sets_propertes_operator7A;;
+			*);; 
+
+			-> _proc_of_finding_sets_propertes_operator6B (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_const: oriented_set;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator6C;;
+			*);;
+
+			-> _proc_of_finding_sets_propertes_operator6C (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator7A;;
+			*);;
+
+			->_proc_of_finding_sets_propertes_operator7A (*
+				<- searchElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: finite_set;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _A;;
+
+	                 	=> nrel_then: _proc_of_finding_sets_propertes_operator7B;;
+	                 	=> nrel_else: _proc_of_finding_sets_propertes_operator8A;;
+			*);; 
+
+			-> _proc_of_finding_sets_propertes_operator7B (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_const: finite_set;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator7C;;
+			*);;
+
+			-> _proc_of_finding_sets_propertes_operator7C (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator8A;;
+			*);;
+
+			->_proc_of_finding_sets_propertes_operator8A (*
+				<- searchElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: infinite_set;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _A;;
+
+	                 	=> nrel_then: _proc_of_finding_sets_propertes_operator8B;;
+	                 	=> nrel_else: _proc_of_finding_sets_propertes_operator9A;;
+			*);; 
+
+			-> _proc_of_finding_sets_propertes_operator8B (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_const: infinite_set;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator8C;;
+			*);;
+
+			-> _proc_of_finding_sets_propertes_operator8C (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator9A;;
+			*);;
+
+			->_proc_of_finding_sets_propertes_operator9A (*
+				<- searchElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: reflexive_set;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _A;;
+
+	                 	=> nrel_then: _proc_of_finding_sets_propertes_operator9B;;
+	                 	=> nrel_else: _proc_of_finding_sets_propertes_operator10A;;
+			*);; 
+
+			-> _proc_of_finding_sets_propertes_operator9B (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_const: reflexive_set;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator9C;;
+			*);;
+
+			-> _proc_of_finding_sets_propertes_operator9C (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator10A;;
+			*);;
+
+			->_proc_of_finding_sets_propertes_operator10A (*
+				<- searchElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: triple_set;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _A;;
+
+	                 	=> nrel_then: _proc_of_finding_sets_propertes_operator10B;;
+	                 	=> nrel_else: _proc_of_finding_sets_propertes_operator11A;;
+			*);; 
+
+			-> _proc_of_finding_sets_propertes_operator10B (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_const: triple_set;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator10C;;
+			*);;
+
+			-> _proc_of_finding_sets_propertes_operator10C (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator11A;;
+			*);;
+
+			->_proc_of_finding_sets_propertes_operator11A (*
+				<- searchElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: multiset;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _A;;
+
+	                 	=> nrel_then: _proc_of_finding_sets_propertes_operator11B;;
+	                 	=> nrel_else: _proc_of_finding_sets_propertes_operator12A;;
+			*);; 
+
+			-> _proc_of_finding_sets_propertes_operator11B (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_const: multiset;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator11C;;
+			*);;
+
+			-> _proc_of_finding_sets_propertes_operator11C (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator12A;;
+			*);;
+
+			->_proc_of_finding_sets_propertes_operator12A (*
+				<- searchElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: cantor_set;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _A;;
+
+	                 	=> nrel_then: _proc_of_finding_sets_propertes_operator12B;;
+	                 	=> nrel_else: _proc_of_finding_sets_propertes_operator13A;;
+			*);; 
+
+			-> _proc_of_finding_sets_propertes_operator12B (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_const: cantor_set;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator12C;;
+			*);;
+
+			-> _proc_of_finding_sets_propertes_operator12C (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator13A;;
+			*);;
+
+			->_proc_of_finding_sets_propertes_operator13A (*
+				<- searchElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: countable_set;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _A;;
+
+	                 	=> nrel_then: _proc_of_finding_sets_propertes_operator13B;;
+	                 	=> nrel_else: _proc_of_finding_sets_propertes_operator14A;;
+			*);; 
+
+			-> _proc_of_finding_sets_propertes_operator13B (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_const: countable_set;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator13C;;
+			*);;
+
+			-> _proc_of_finding_sets_propertes_operator13C (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator14A;;
+			*);;
+
+			->_proc_of_finding_sets_propertes_operator14A (*
+				<- searchElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: uncountable_set;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _A;;
+
+	                 	=> nrel_then: _proc_of_finding_sets_propertes_operator14B;;
+	                 	=> nrel_else: _proc_of_finding_sets_propertes_operator15A;;
+			*);; 
+
+			-> _proc_of_finding_sets_propertes_operator14B (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_const: uncountable_set;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator14C;;
+			*);;
+
+			-> _proc_of_finding_sets_propertes_operator14C (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator15A;;
+			*);;
+
+			->_proc_of_finding_sets_propertes_operator15A (*
+				<- searchElStr3;;
+				-> rrel_1: rrel_fixed: rrel_scp_const: n_powerful_set;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _A;;
+
+	                 	=> nrel_then: _proc_of_finding_sets_propertes_operator15B;;
+	                 	=> nrel_else: _proc_of_finding_sets_propertes_operator_return;;
+			*);; 
+
+			-> _proc_of_finding_sets_propertes_operator15B (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_const: n_powerful_set;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator15C;;
+			*);;
+
+			-> _proc_of_finding_sets_propertes_operator15C (*
+			 <- genElStr3;;
+			 	-> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _arc;;
+
+			  => nrel_goto: _proc_of_finding_sets_propertes_operator_return;;
+			*);;
+
+			-> _proc_of_finding_sets_propertes_operator_return 
+				(*
+				<- return;;
+			*);;
+		*);;
+	*);;
+*];;

@@ -22,27 +22,27 @@
 .multiplicity_1
 <- multiplicity_of_belonging;
 => nrel_measurement:
-    .number_1;;
+    _number_1;;
 
 .multiplicity_2
 <- multiplicity_of_belonging;
 => nrel_measurement:
-    .number_2;;
+    _number_2;;
 
 .multiplicity_3
 <- multiplicity_of_belonging;
 => nrel_measurement:
-    .number_3;;
+    _number_3;;
 
 .multiplicity_4
 <- multiplicity_of_belonging;
 => nrel_measurement:
-    .number_4;;
+    _number_4;;
 
 .multiplicity_5
 <- multiplicity_of_belonging;
 => nrel_measurement:
-    .number_5;;
+    _number_5;;
 
 
 multiset_A
