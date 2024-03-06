@@ -1,101 +1,104 @@
-scp_program -> proc_search_idtf (*
-    -> rrel_params: ... (*
+proc_search_idtf
+=> nrel_main_idtf:
+	[] (* <- lang_ru;; *);
+	[] (* <- lang_en;; *);
+<- scp_program;
+-> rrel_key_sc_element: .._process1;;
 
-        // элемент, для которого нужно найти ссылку
-        -> rrel_1: rrel_in: rrel_fixed: rrel_scp_var: _element;;
+proc_search_idtf = [*
+.._process1
+_<- scp_process;
 
-        // возвращаемая ссылка
-        -> rrel_2: rrel_out: rrel_assign: rrel_scp_var: _link_idtf;;
-    *);;
+_-> rrel_1:: rrel_fixed:: rrel_in:: rrel_scp_const:: _element;
+_-> rrel_2:: rrel_assign:: rrel_out:: rrel_scp_var:: _link_idtf;
+_<= nrel_decomposition_of_action:: .._actions (*
 
-    -> rrel_operators: ... (*
-        -> rrel_init: _proc_search_idtf_operator0 (*
-            <- printNl;;
-            -> rrel_1: rrel_fixed: rrel_scp_const: [процедура возврата ссылки];;
-            => nrel_goto: _proc_search_idtf_operator1;;
-        *);;
+	_-> rrel_1:: .._proc_search_idtf_operator0 (*
+		_<- printNl;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: [процедура возврата ссылки];;
 
-        // формируем множество ссылок
-        -> _proc_search_idtf_operator1 (*
-            <- searchSetStr5;;
-            -> rrel_1: rrel_fixed: rrel_scp_var: _element;;
-            -> rrel_2: rrel_scp_var: rrel_assign: rrel_common: rrel_const: _arc2;;
-            -> rrel_3: rrel_scp_var: rrel_assign: _set;;
-            -> rrel_4: rrel_scp_var: rrel_assign: rrel_pos_const_perm: _arc;;
-            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_main_idtf;;
-            
-            -> rrel_set_3: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _set_links;;
+		_=> nrel_goto:: .._proc_search_idtf_operator1;;
+	*);;
 
-            => nrel_then: _proc_search_idtf_operator2;;
-            => nrel_else: _proc_search_idtf_operator6;;
-        *);;
+	_-> .._proc_search_idtf_operator1 (*
+		_<- searchSetStr5;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: _element;;
+		_-> rrel_2:: rrel_assign:: rrel_common:: rrel_const:: rrel_scp_var:: _arc2;;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _set;;
+		_-> rrel_4:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc;;
+		_-> rrel_5:: rrel_fixed:: rrel_scp_const:: nrel_main_idtf;;
+		_-> rrel_set_3:: rrel_assign:: rrel_const:: rrel_node:: rrel_scp_var:: _set_links;;
 
-        // находим любую из них
-        -> _proc_search_idtf_operator2 (*
-            <- searchElStr3;;
-            -> rrel_1: rrel_fixed: rrel_scp_var: _set_links;;
-            -> rrel_2: rrel_scp_var: rrel_assign: rrel_pos_const_perm: _arc;;
-            -> rrel_3: rrel_scp_var: rrel_assign: _link_idtf;;
-            
-            => nrel_then: _proc_search_idtf_operator3;;
-            => nrel_else: _proc_search_idtf_operator5;;
-        *);;
+		_=> nrel_else:: .._proc_search_idtf_operator6;;
+		_=> nrel_then:: .._proc_search_idtf_operator2;;
+	*);;
 
-        // удаляем дугу
-        -> _proc_search_idtf_operator3 (*
-            <- eraseEl;;
-            -> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _arc;;
-            => nrel_goto: _proc_search_idtf_operator4;;
-        *);;
+	_-> .._proc_search_idtf_operator2 (*
+		_<- searchElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _set_links;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc;;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _link_idtf;;
 
-        // если найденная ссылка принадлежит нашему языку
-        -> _proc_search_idtf_operator4 (*
-            <- searchElStr3;;
-            -> rrel_1: rrel_fixed: rrel_scp_const: lang_en;;
-            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
-            -> rrel_3: rrel_fixed: rrel_scp_var: _link_idtf;;
-            
-            => nrel_then: _proc_search_idtf_operator5;;
-            => nrel_else: _proc_search_idtf_operator2;;
-        *);;
+		_=> nrel_else:: .._proc_search_idtf_operator5;;
+		_=> nrel_then:: .._proc_search_idtf_operator3;;
+	*);;
 
-        // удаляем множество ссылок
-        -> _proc_search_idtf_operator5 (*
-            <- eraseEl;;
-            -> rrel_1: rrel_erase: rrel_fixed: rrel_scp_var: _set_links;;
-            => nrel_goto: _proc_search_idtf_operator_return;;
-        *);;
+	_-> .._proc_search_idtf_operator6 (*
+		_<- searchElStr5;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: _element;;
+		_-> rrel_2:: rrel_assign:: rrel_common:: rrel_const:: rrel_scp_var:: _arc2;;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _link_idtf;;
+		_-> rrel_4:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc;;
+		_-> rrel_5:: rrel_fixed:: rrel_scp_const:: nrel_system_identifier;;
 
-        // ищем системный идентификатор
-        -> _proc_search_idtf_operator6 (*
-            <- searchElStr5;;
-            -> rrel_1: rrel_fixed: rrel_scp_var: _element;;
-            -> rrel_2: rrel_scp_var: rrel_assign: rrel_common: rrel_const: _arc2;;
-            -> rrel_3: rrel_scp_var: rrel_assign: _link_idtf;;
-            -> rrel_4: rrel_scp_var: rrel_assign: rrel_pos_const_perm: _arc;;
-            -> rrel_5: rrel_fixed: rrel_scp_const: nrel_system_identifier;;
-            
-            => nrel_then: _proc_search_idtf_operator_return;;
-            => nrel_else: _proc_search_idtf_operator7;;
-        *);;
+		_=> nrel_else:: .._proc_search_idtf_operator7;;
+		_=> nrel_then:: .._proc_search_idtf_operator_return;;
+	*);;
 
-        // создаем узел без ссылки
-        -> _proc_search_idtf_operator7 (*
-            <- genEl;;
-            -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _el;;
-            => nrel_goto: _proc_search_idtf_operator8;;
-        *);;
+	_-> .._proc_search_idtf_operator_return (*
+		_<- return;;
 
-        // присваиваем узел переменной
-        -> _proc_search_idtf_operator8 (*
-            <- varAssign;;
-            -> rrel_1: rrel_assign: rrel_scp_var: _link_idtf;;
-            -> rrel_2: rrel_fixed: rrel_scp_var: _el;;
-            => nrel_goto: _proc_search_idtf_operator_return;;
-        *);;
+	*);;
 
-        -> _proc_search_idtf_operator_return (*
-            <- return;;
-        *);;
-    *);;
+	_-> .._proc_search_idtf_operator7 (*
+		_<- genEl;;
+		_-> rrel_1:: rrel_assign:: rrel_const:: rrel_node:: rrel_scp_var:: _el;;
+
+		_=> nrel_goto:: .._proc_search_idtf_operator8;;
+	*);;
+
+	_-> .._proc_search_idtf_operator8 (*
+		_<- varAssign;;
+		_-> rrel_1:: rrel_assign:: rrel_scp_var:: _link_idtf;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_var:: _el;;
+
+		_=> nrel_goto:: .._proc_search_idtf_operator_return;;
+	*);;
+
+	_-> .._proc_search_idtf_operator3 (*
+		_<- eraseEl;;
+		_-> rrel_1:: rrel_erase:: rrel_fixed:: rrel_scp_var:: _arc;;
+
+		_=> nrel_goto:: .._proc_search_idtf_operator4;;
+	*);;
+
+	_-> .._proc_search_idtf_operator5 (*
+		_<- eraseEl;;
+		_-> rrel_1:: rrel_erase:: rrel_fixed:: rrel_scp_var:: _set_links;;
+
+		_=> nrel_goto:: .._proc_search_idtf_operator_return;;
+	*);;
+
+	_-> .._proc_search_idtf_operator4 (*
+		_<- searchElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: lang_en;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _link_idtf;;
+
+		_=> nrel_else:: .._proc_search_idtf_operator2;;
+		_=> nrel_then:: .._proc_search_idtf_operator5;;
+	*);;
+
 *);;
+
+*];;

@@ -1,108 +1,112 @@
-scp_program -> proc_add_three_elements (*
-	-> rrel_params: ...(*
-    	-> rrel_1: rrel_in: _set;;
-    	-> rrel_2: rrel_in: _elem;;
-    	-> rrel_3: rrel_out: _answer;;
-  	*);;
-  
-	-> rrel_operators: ...(*
-    	
-			-> rrel_init: _proc_add_three_elements_operator_0 (*
-					<- printNl;;
-					-> rrel_1: rrel_fixed: rrel_scp_const: [add elements];;
-					=> nrel_goto: _proc_add_three_elements_operator_01;;
-		   		*);;
+proc_add_three_elements
+=> nrel_main_idtf:
+	[] (* <- lang_ru;; *);
+	[] (* <- lang_en;; *);
+<- scp_program;
+-> rrel_key_sc_element: .._process1;;
 
-		   		->_proc_add_three_elements_operator_01
-				(*
-				<- genEl;;
-			 	-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer;;
+proc_add_three_elements = [*
+.._process1
+_<- scp_process;
 
-	                 => nrel_goto: _proc_add_three_elements_operator_1;;
-                 *);;
+_-> rrel_1:: rrel_in:: _set;
+_-> rrel_2:: rrel_in:: _elem;
+_-> rrel_3:: rrel_out:: _answer;
+_<= nrel_decomposition_of_action:: .._actions (*
 
-				->_proc_add_three_elements_operator_1
-				(*
-				<- searchSetStr3;;
-				-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
-				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
-				-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _el;;
+	_-> rrel_1:: .._proc_add_three_elements_operator_0 (*
+		_<- printNl;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: [add elements];;
 
-			  	-> rrel_set_3: rrel_assign: rrel_scp_var: _not_checked_sets;;
+		_=> nrel_goto:: .._proc_add_three_elements_operator_01;;
+	*);;
 
-	                 	=> nrel_then: _proc_add_three_elements_operator_02;;
-	                 	=> nrel_else: _proc_add_three_elements_operator_6;;
-				*);; 
+	_-> .._proc_add_three_elements_operator_01 (*
+		_<- genEl;;
+		_-> rrel_1:: rrel_assign:: rrel_const:: rrel_node:: rrel_scp_var:: _answer;;
 
+		_=> nrel_goto:: .._proc_add_three_elements_operator_1;;
+	*);;
 
-			-> _proc_add_three_elements_operator_02 (*
-				 <- genElStr3;;
-				-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
-				-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-				-> rrel_3: rrel_fixed: rrel_scp_var: _elem;;
+	_-> .._proc_add_three_elements_operator_1 (*
+		_<- searchSetStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: _set;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc;;
+		_-> rrel_3:: rrel_assign:: rrel_node:: rrel_scp_var:: _el;;
+		_-> rrel_set_3:: rrel_assign:: rrel_scp_var:: _not_checked_sets;;
 
-				 => nrel_goto: _proc_add_three_elements_operator_2;;
-			*);;
+		_=> nrel_else:: .._proc_add_three_elements_operator_6;;
+		_=> nrel_then:: .._proc_add_three_elements_operator_02;;
+	*);;
 
-				-> _proc_add_three_elements_operator_2
-				(*
-				<- searchElStr3;;
-			 	-> rrel_1: rrel_fixed: rrel_scp_var: _not_checked_sets;;
-				-> rrel_2: rrel_assign: rrel_scp_var: _arc_for_delA;;
-				-> rrel_3: rrel_assign: rrel_scp_var: _elemA;;
+	_-> .._proc_add_three_elements_operator_02 (*
+		_<- genElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _answer;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc1;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_const:: _elem;;
 
-	                 	=> nrel_then: _proc_add_three_elements_operator_3;;
-	                 	=> nrel_else: _proc_add_three_elements_operator_return;;
-	             *);;
+		_=> nrel_goto:: .._proc_add_three_elements_operator_2;;
+	*);;
 
-				-> _proc_add_three_elements_operator_3 
-				(*
-				<- eraseEl;;
-			 	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc_for_delA;;
-	                 	=> nrel_goto: _proc_add_three_elements_operator_4;;
-				*);;
+	_-> .._proc_add_three_elements_operator_6 (*
+		_<- genElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _answer;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc_add1;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_const:: [Система не имеет необходимых знаний об этом элементе.];;
 
-				->_proc_add_three_elements_operator_4
-				(*
-					<- searchElStr3;;
-					-> rrel_1: rrel_fixed: rrel_scp_var: _elemA;;
-					-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_for_Add;;
-					-> rrel_3: rrel_fixed: rrel_scp_var: rrel_node: _elem;;
+		_=> nrel_goto:: .._proc_add_three_elements_operator_return;;
+	*);;
 
-		                 	=> nrel_then: _proc_add_three_elements_operator_06;;
-		                 	=> nrel_else: _proc_add_three_elements_operator_return;;
-				*);; 
+	_-> .._proc_add_three_elements_operator_return (*
+		_<- return;;
 
-				-> _proc_add_three_elements_operator_5 (*
-				 <- genElStr3;;
-				 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
-					-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-					-> rrel_3: rrel_fixed: rrel_scp_var: _arc_for_Add;;
+	*);;
 
-				  => nrel_goto: _proc_add_three_elements_operator_2;;
-				*);;
+	_-> .._proc_add_three_elements_operator_2 (*
+		_<- searchElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _not_checked_sets;;
+		_-> rrel_2:: rrel_assign:: rrel_scp_var:: _arc_for_delA;;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _elemA;;
 
-				-> _proc_add_three_elements_operator_06 (*
-				 <- genElStr3;;
-				 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
-					-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-					-> rrel_3: rrel_fixed: rrel_scp_var: _elemA;;
+		_=> nrel_else:: .._proc_add_three_elements_operator_return;;
+		_=> nrel_then:: .._proc_add_three_elements_operator_3;;
+	*);;
 
-				  => nrel_goto: _proc_add_three_elements_operator_5;;
-				*);;
+	_-> .._proc_add_three_elements_operator_3 (*
+		_<- eraseEl;;
+		_-> rrel_1:: rrel_erase:: rrel_fixed:: rrel_scp_var:: _arc_for_delA;;
 
-				->_proc_add_three_elements_operator_6
-				(*
-					<- genElStr3;;
-				 	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
-					-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_add1;;
-					-> rrel_3: rrel_fixed: rrel_scp_const: [Система не имеет необходимых знаний об этом элементе.];;
+		_=> nrel_goto:: .._proc_add_three_elements_operator_4;;
+	*);;
 
-	                 	=> nrel_goto: _proc_add_three_elements_operator_return;;
-	             *);;
+	_-> .._proc_add_three_elements_operator_4 (*
+		_<- searchElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _elemA;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc_for_Add;;
+		_-> rrel_3:: rrel_fixed:: rrel_node:: rrel_scp_const:: _elem;;
 
-			    -> _proc_add_three_elements_operator_return(*
-		    	  <- return;;
-	   		 *);;
-  	*);;
+		_=> nrel_else:: .._proc_add_three_elements_operator_return;;
+		_=> nrel_then:: .._proc_add_three_elements_operator_06;;
+	*);;
+
+	_-> .._proc_add_three_elements_operator_06 (*
+		_<- genElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _answer;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc1;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _elemA;;
+
+		_=> nrel_goto:: .._proc_add_three_elements_operator_5;;
+	*);;
+
+	_-> .._proc_add_three_elements_operator_5 (*
+		_<- genElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _answer;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc1;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _arc_for_Add;;
+
+		_=> nrel_goto:: .._proc_add_three_elements_operator_2;;
+	*);;
+
 *);;
+
+*];;
