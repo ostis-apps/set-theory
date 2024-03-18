@@ -47,7 +47,7 @@ scp_program -> agent_of_finding_power
 				-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
 
 				=>nrel_then: _agent_of_finding_operator_power3;;
-				=>nrel_else: _agent_of_finding_operator_power_return;;
+				=>nrel_else: _agent_of_finding_operator_power3/*_agent_of_finding_operator_power_return*/;;
 			*);;
 		-> _agent_of_finding_operator_power3 
 			(*

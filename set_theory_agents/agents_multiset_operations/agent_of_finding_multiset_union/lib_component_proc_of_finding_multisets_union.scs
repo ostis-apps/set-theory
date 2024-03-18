@@ -23,7 +23,6 @@ scp_program -> proc_of_finding_multisets_union
 	(*
     	-> rrel_1: rrel_in: _multiset_1;;
     	-> rrel_2: rrel_in: _multiset_2;;
-
     	-> rrel_3: rrel_out: _multiset_3;;
   	*);;
   
@@ -153,7 +152,7 @@ scp_program -> proc_of_finding_multisets_union
 
 		-> _proc_of_finding_multisets_union_operator_multiplicity_union_0_1
 		(*
-			<- contAssign;;
+			<- varAssign;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: _result_multiplicity;;
 			-> rrel_2: rrel_fixed: rrel_scp_var: _multiset_1_multiplicity;;
@@ -163,7 +162,7 @@ scp_program -> proc_of_finding_multisets_union
 
 		-> _proc_of_finding_multisets_union_operator_multiplicity_union_0_2
 		(*
-			<- contAssign;;
+			<- varAssign;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: _result_multiplicity;;
 			-> rrel_2: rrel_fixed: rrel_scp_var: _multiset_2_multiplicity;;
@@ -320,7 +319,7 @@ scp_program -> proc_of_finding_multisets_union
 
 		-> _proc_of_finding_multisets_union_operator_multiplicity_union_1
 		(*
-			<- contAssign;;
+			<- varAssign;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: _result_multiplicity;;
 			-> rrel_2: rrel_fixed: rrel_scp_var: _multiset_1_multiplicity;;
@@ -330,7 +329,7 @@ scp_program -> proc_of_finding_multisets_union
 
 		-> _proc_of_finding_multisets_union_operator_multiplicity_union_2
 		(*
-			<- contAssign;;
+			<- varAssign;;
 
 			-> rrel_1: rrel_assign: rrel_scp_var: _result_multiplicity;;
 			-> rrel_2: rrel_fixed: rrel_scp_var: _multiset_2_multiplicity;;
