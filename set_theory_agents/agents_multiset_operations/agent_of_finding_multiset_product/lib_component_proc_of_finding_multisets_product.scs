@@ -11,196 +11,156 @@ lib_component_proc_of_finding_multisets_product
 -> rrel_key_sc_element: 
 	proc_of_finding_multisets_product;;
 
-lib_component_proc_of_finding_multisets_product = [*
-proc_of_finding_multisets_product
+lib_component_proc_of_finding_multisets_product = [*proc_of_finding_multisets_product
 => nrel_main_idtf:
-	[Процедура нахождения арифметического произведения двух мультимножеств]
-		(* <- lang_ru;; *);;
+	[Процедура нахождения арифметического произведения двух мультимножеств] (* <- lang_ru;; *);
+	[] (* <- lang_en;; *);
+<- scp_program;
+-> rrel_key_sc_element: .._process1;;
 
-scp_program -> proc_of_finding_multisets_product
-(*
-	-> rrel_params: ...
-	(*
-    	-> rrel_1: rrel_in: _multiset_1;;
-    	-> rrel_2: rrel_in: _multiset_2;;
+proc_of_finding_multisets_product = [*
+.._process1
+_<- scp_process;
 
-    	-> rrel_3: rrel_out: _multiset_3;;
-  	*);;
-  
-	-> rrel_operators: ...
-	(*
+_-> rrel_1:: rrel_in:: _multiset_1;
+_-> rrel_2:: rrel_in:: _multiset_2;
+_-> rrel_3:: rrel_out:: _multiset_3;
+_<= nrel_decomposition_of_action:: .._actions (*
 
-		-> rrel_init: _proc_of_finding_multisets_prod_operator_print_start
-		(*
-			<- printNl;;
+	_-> rrel_1:: .._proc_of_finding_multisets_prod_operator_print_start (*
+		_<- printNl;;
+		_-> rrel_1:: rrel_scp_const:: [Начало. Процедура нахождения арифметического произведения двух мультимножеств];;
 
-			-> rrel_1: rrel_scp_const: [Начало. Процедура нахождения арифметического произведения двух мультимножеств];;
-
-			=> nrel_goto: _proc_of_finding_multisets_prod_operator_gen_result_multiset;;
-   		*);;
-
-		-> _proc_of_finding_multisets_prod_operator_gen_result_multiset
-		(*
-			<- genEl;;
-
-			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _multiset_3;;
-
-			=> nrel_goto: _proc_of_finding_multisets_prod_operator_get_multiset_1_elements;;
-		*);;
-
-		-> _proc_of_finding_multisets_prod_operator_get_multiset_1_elements
-		(*
-			<- searchSetStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _multiset_1;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _belonging_arc;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _multiset_1_element;;
-
-			-> rrel_set_3: rrel_assign: rrel_scp_var: _multiset_1_element_set;;
-
-			=> nrel_then: _proc_of_finding_multisets_prod_operator_get_multiset_1_element;;
-			=> nrel_else: _proc_of_finding_multisets_prod_operator_print_end;;
-		*);;
-
-////////////////////////////////////////////////////////////////////
-// цикл по всем элементам первого мультимножества
-
-		-> _proc_of_finding_multisets_prod_operator_get_multiset_1_element
-		(*
-			<- searchElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _multiset_1_element_set;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _belonging_arc;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _multiset_1_element;;
-
-			=> nrel_then: _proc_of_finding_multisets_prod_operator_erase_multiset_1_element_arc;;
-			=> nrel_else: _proc_of_finding_multisets_prod_operator_print_end;;
-		*);;
-
-		-> _proc_of_finding_multisets_prod_operator_erase_multiset_1_element_arc
-		(*
-			<- eraseEl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _belonging_arc;;
-
-			=> nrel_goto: _proc_of_finding_multisets_prod_operator_multiset_1_element_check_belonging;;
-		*);;
-
-		-> _proc_of_finding_multisets_prod_operator_multiset_1_element_check_belonging
-		(*
-			<- searchElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _multiset_2;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _belonging_arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _multiset_1_element;;
-
-			=> nrel_then: _proc_of_finding_multisets_prod_operator_get_multiset_1_element_multiplicity_1;;
-			=> nrel_else: _proc_of_finding_multisets_prod_operator_get_multiset_1_element;;
-		*);;
-
-		-> _proc_of_finding_multisets_prod_operator_get_multiset_1_element_multiplicity_1
-		(*
-			<- call;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: proc_get_multiplicity_of_element;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: ...
-			(*
-					-> rrel_1: rrel_fixed: rrel_scp_var: _multiset_1;;
-					-> rrel_2: rrel_fixed: rrel_scp_var: _multiset_1_element;;
-
-					-> rrel_3: rrel_assign: rrel_scp_var: _multiset_1_multiplicity;;
-			*);;
-			-> rrel_3: rrel_assign: rrel_scp_var: _proc_descriptor;;
-
-			=> nrel_goto: _proc_of_finding_multisets_prod_operator_get_multiset_1_element_multiplicity_1_ret;;
-		*);;
-
-		-> _proc_of_finding_multisets_prod_operator_get_multiset_1_element_multiplicity_1_ret
-		(*
-			<- waitReturn;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _proc_descriptor;;
-
-			=> nrel_goto: _proc_of_finding_multisets_prod_operator_get_multiset_1_element_multiplicity_2;;
-		*);;
-
-		-> _proc_of_finding_multisets_prod_operator_get_multiset_1_element_multiplicity_2
-		(*
-			<- call;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: proc_get_multiplicity_of_element;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: ...
-			(*
-					-> rrel_1: rrel_fixed: rrel_scp_var: _multiset_2;;
-					-> rrel_2: rrel_fixed: rrel_scp_var: _multiset_1_element;;
-
-					-> rrel_3: rrel_assign: rrel_scp_var: _multiset_2_multiplicity;;
-			*);;
-			-> rrel_3: rrel_assign: rrel_scp_var: _proc_descriptor;;
-
-			=> nrel_goto: _proc_of_finding_multisets_prod_operator_get_multiset_1_element_multiplicity_2_ret;;
-		*);;
-
-		-> _proc_of_finding_multisets_prod_operator_get_multiset_1_element_multiplicity_2_ret
-		(*
-			<- waitReturn;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _proc_descriptor;;
-
-			=> nrel_goto: _proc_of_finding_multisets_prod_operator_multiplicity_product_1;;
-		*);;
-
-		-> _proc_of_finding_multisets_prod_operator_multiplicity_product_1
-		(*
-			<- contMult;;
-
-			-> rrel_1: rrel_assign: rrel_scp_var: _result_multiplicity;;
-			-> rrel_2: rrel_fixed: rrel_scp_var: _multiset_1_multiplicity;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _multiset_2_multiplicity;;
-
-			=> nrel_goto: _proc_of_finding_multisets_prod_operator_add_multiset_1_element_to_result;;
-		*);;
-
-		-> _proc_of_finding_multisets_prod_operator_add_multiset_1_element_to_result
-		(*
-			<- call;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: proc_add_element_to_multiset;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: ...
-			(*
-					-> rrel_1: rrel_fixed: rrel_scp_var: _multiset_1_element;;
-					-> rrel_2: rrel_fixed: rrel_scp_var: _multiset_3;;
-					-> rrel_3: rrel_fixed: rrel_scp_var: _result_multiplicity;;
-			*);;
-			-> rrel_3: rrel_assign: rrel_scp_var: _proc_descriptor;;
-
-			=> nrel_goto: _proc_of_finding_multisets_prod_operator_add_multiset_1_element_to_result_ret;;
-		*);;
-
-		-> _proc_of_finding_multisets_prod_operator_add_multiset_1_element_to_result_ret
-		(*
-			<- waitReturn;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _proc_descriptor;;
-
-			=> nrel_goto: _proc_of_finding_multisets_prod_operator_get_multiset_1_element;;
-		*);;
-
-////////////////////////////////////////////////////////////////////
-
-		-> _proc_of_finding_multisets_prod_operator_print_end
-		(*
-			<- printNl;;
-
-			-> rrel_1: rrel_scp_const: [Конец. Процедура нахождения арифметического произведения двух мультимножеств];;
-
-			=> nrel_goto: _proc_of_finding_multisets_prod_operator_return;;
-   		*);;
-
-	    -> _proc_of_finding_multisets_prod_operator_return
-	    (*
-	  		<- return;;
-    	*);;
+		_=> nrel_goto:: .._proc_of_finding_multisets_prod_operator_gen_result_multiset;;
 	*);;
+
+	_-> .._proc_of_finding_multisets_prod_operator_gen_result_multiset (*
+		_<- genEl;;
+		_-> rrel_1:: rrel_assign:: rrel_const:: rrel_node:: rrel_scp_var:: _multiset_3;;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_prod_operator_get_multiset_1_elements;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_prod_operator_get_multiset_1_elements (*
+		_<- searchSetStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: _multiset_1;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _belonging_arc;;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _multiset_1_element;;
+		_-> rrel_set_3:: rrel_assign:: rrel_scp_var:: _multiset_1_element_set;;
+
+		_=> nrel_else:: .._proc_of_finding_multisets_prod_operator_print_end;;
+		_=> nrel_then:: .._proc_of_finding_multisets_prod_operator_get_multiset_1_element;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_prod_operator_get_multiset_1_element (*
+		_<- searchElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _multiset_1_element_set;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _belonging_arc;;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _multiset_1_element;;
+
+		_=> nrel_else:: .._proc_of_finding_multisets_prod_operator_print_end;;
+		_=> nrel_then:: .._proc_of_finding_multisets_prod_operator_erase_multiset_1_element_arc;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_prod_operator_print_end (*
+		_<- printNl;;
+		_-> rrel_1:: rrel_scp_const:: [Конец. Процедура нахождения арифметического произведения двух мультимножеств];;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_prod_operator_return;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_prod_operator_return (*
+		_<- return;;
+
+	*);;
+
+	_-> .._proc_of_finding_multisets_prod_operator_erase_multiset_1_element_arc (*
+		_<- eraseEl;;
+		_-> rrel_1:: rrel_erase:: rrel_fixed:: rrel_scp_var:: _belonging_arc;;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_prod_operator_multiset_1_element_check_belonging;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_prod_operator_multiset_1_element_check_belonging (*
+		_<- searchElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: _multiset_2;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _belonging_arc;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _multiset_1_element;;
+
+		_=> nrel_else:: .._proc_of_finding_multisets_prod_operator_get_multiset_1_element;;
+		_=> nrel_then:: .._proc_of_finding_multisets_prod_operator_get_multiset_1_element_multiplicity_1;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_prod_operator_get_multiset_1_element_multiplicity_1 (*
+		_<- call;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: proc_get_multiplicity_of_element;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_const:: .._proc_of_finding_multisets_product_param0 (*
+			_-> rrel_1:: rrel_fixed:: rrel_scp_const:: _multiset_1;;
+			_-> rrel_2:: rrel_fixed:: rrel_scp_var:: _multiset_1_element;;
+			_-> rrel_3:: rrel_assign:: rrel_scp_var:: _multiset_1_multiplicity;;
+		*);;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _proc_descriptor;;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_prod_operator_get_multiset_1_element_multiplicity_1_ret;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_prod_operator_get_multiset_1_element_multiplicity_1_ret (*
+		_<- waitReturn;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _proc_descriptor;;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_prod_operator_get_multiset_1_element_multiplicity_2;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_prod_operator_get_multiset_1_element_multiplicity_2 (*
+		_<- call;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: proc_get_multiplicity_of_element;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_const:: .._proc_of_finding_multisets_product_param1 (*
+			_-> rrel_1:: rrel_fixed:: rrel_scp_const:: _multiset_2;;
+			_-> rrel_2:: rrel_fixed:: rrel_scp_var:: _multiset_1_element;;
+			_-> rrel_3:: rrel_assign:: rrel_scp_var:: _multiset_2_multiplicity;;
+		*);;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _proc_descriptor;;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_prod_operator_get_multiset_1_element_multiplicity_2_ret;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_prod_operator_get_multiset_1_element_multiplicity_2_ret (*
+		_<- waitReturn;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _proc_descriptor;;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_prod_operator_multiplicity_product_1;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_prod_operator_multiplicity_product_1 (*
+		_<- contMult;;
+		_-> rrel_1:: rrel_assign:: rrel_scp_var:: _result_multiplicity;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_var:: _multiset_1_multiplicity;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _multiset_2_multiplicity;;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_prod_operator_add_multiset_1_element_to_result;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_prod_operator_add_multiset_1_element_to_result (*
+		_<- call;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: proc_add_element_to_multiset;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_const:: .._proc_of_finding_multisets_product_param2 (*
+			_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _multiset_1_element;;
+			_-> rrel_2:: rrel_fixed:: rrel_scp_var:: _multiset_3;;
+			_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _result_multiplicity;;
+		*);;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _proc_descriptor;;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_prod_operator_add_multiset_1_element_to_result_ret;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_prod_operator_add_multiset_1_element_to_result_ret (*
+		_<- waitReturn;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _proc_descriptor;;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_prod_operator_get_multiset_1_element;;
+	*);;
+
 *);;
+
+*];;
 *];;

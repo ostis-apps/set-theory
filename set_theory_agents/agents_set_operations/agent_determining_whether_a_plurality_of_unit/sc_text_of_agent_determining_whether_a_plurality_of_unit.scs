@@ -10,278 +10,250 @@ sc_text_of_agent_determining_whether_a_plurality_of_unit
 	[sc-text scp-agent based program determining whether a plurality of unit] 
 	(* <- lang_en;; *);;
 
-sc_text_of_agent_determining_whether_a_plurality_of_unit = [*
-agent_determining_whether_a_plurality_of_unit
+sc_text_of_agent_determining_whether_a_plurality_of_unit = [*agent_determining_whether_a_plurality_of_unit
 => nrel_main_idtf:
-	[агентная scp-программа определения является ли данный узел множеством] 
-	(* <- lang_ru;; *);
-	[agent scp-program of determining whether a plurality of unit] 
-	(* <- lang_en;; *);
-<- agent_scp_program;;
+	[агентная scp-программа определения является ли данный узел множеством] (* <- lang_ru;; *);
+	[agent scp-program of determining whether a plurality of unit] (* <- lang_en;; *);
+<- scp_program;
+<- agent_scp_program;
+-> rrel_key_sc_element: .._process1;;
 
-scp_program -> agent_determining_whether_a_plurality_of_unit 
-(*
-	-> rrel_params: ..agent_determining_whether_a_plurality_of_unit_operator_params 
-		(*
-			-> rrel_1: rrel_in: _event;;
-			-> rrel_2: rrel_in: _input_arc;;
-		*);;
-	-> rrel_operators: ..agent_determining_whether_a_plurality_of_unit_operator_set 
-		(*
-			-> rrel_init: _agent_determining_whether_a_plurality_of_unit_operator1 
-				(*
-					<- searchElStr3;;
+agent_determining_whether_a_plurality_of_unit = [*
+.._process1
+_<- scp_process;
 
-					-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
-					-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
-					-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+_-> rrel_1:: rrel_in:: _event;
+_-> rrel_2:: rrel_in:: _input_arc;
+_<= nrel_decomposition_of_action:: .._actions (*
 
-					=>nrel_goto: _agent_determining_whether_a_plurality_of_unit_operator2;;
-				*);;
-			-> _agent_determining_whether_a_plurality_of_unit_operator2 
-				(*
-					<- searchElStr3;;
+	_-> rrel_1:: .._agent_determining_whether_a_plurality_of_unit_operator1 (*
+		_<- searchElStr3;;
+		_-> rrel_1:: rrel_assign:: rrel_scp_var:: _temp;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_const:: _input_arc;;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _quest;;
 
-					-> rrel_1: rrel_fixed: rrel_scp_const: question_determining_whether_a_plurality_of_unit;;
-					-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
-					-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
-
-					=>nrel_then: _agent_determining_whether_a_plurality_of_unit_operator3;;
-					=>nrel_else: _agent_determining_whether_a_plurality_of_unit_operator_return;;
-				*);;
-			-> _agent_determining_whether_a_plurality_of_unit_operator3 
-				(*
-					<- printNl;;
-
-					-> rrel_1: rrel_fixed: rrel_scp_const: [агент определения является ли данный узел множеством];;
-
-					=> nrel_goto: _agent_determining_whether_a_plurality_of_unit_operator4;;
-		   		*);;
-   			-> _agent_determining_whether_a_plurality_of_unit_operator4 
-				(*
-					<- searchElStr3;;
-
-					-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
-					-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
-					-> rrel_3: rrel_assign: rrel_scp_var: _set1;;
-
-					=>nrel_then: _agent_determining_whether_a_plurality_of_unit_operator4A;;
-					=>nrel_else: _agent_determining_whether_a_plurality_of_unit_operator_return;;
-				*);;
-			-> _agent_determining_whether_a_plurality_of_unit_operator4A
-					(*
-						<- contAssign;;
-
-						-> rrel_1: rrel_assign: rrel_scp_var: _current1;;
-						-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
-					 	
-					 	=> nrel_goto: _agent_determining_whether_a_plurality_of_unit_operator5;;
-					*);;
-			-> _agent_determining_whether_a_plurality_of_unit_operator5 
-				(*
-				    	<- call;;
-
-				    	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_finding_power;;
-				    	-> rrel_2: ... 
-						(*
-							-> rrel_1: rrel_fixed: rrel_scp_var: _set1;;
-							-> rrel_2: rrel_fixed: rrel_scp_var: _current1;;
-				    		*);;
-				    	-> rrel_3: rrel_assign: rrel_scp_var: _argument;;
-
-				    	=> nrel_goto: _agent_determining_whether_a_plurality_of_unit_operator6;;
-				*);;
-		        ->_agent_determining_whether_a_plurality_of_unit_operator6 
-				(*
-				    	<- waitReturn;;
-
-				    	-> rrel_1: rrel_fixed: rrel_scp_var: _argument;;
-
-				    	=> nrel_goto: _agent_determining_whether_a_plurality_of_unit_operator6A;;
-				*);;
-			-> _agent_determining_whether_a_plurality_of_unit_operator6A
-					(*
-						<- contAssign;;
-
-						-> rrel_1: rrel_assign: rrel_scp_var: _current2;;
-						-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
-					 	
-					 	=> nrel_goto: _agent_determining_whether_a_plurality_of_unit_operator7;;
-					*);;
-        		-> _agent_determining_whether_a_plurality_of_unit_operator7 
-				(*
-				    	<- call;;
-
-				    	-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_finding_dimension_set;;
-				    	-> rrel_2: ... 
-						(*
-							-> rrel_1: rrel_fixed: rrel_scp_var: _set1;;
-							-> rrel_2: rrel_fixed: rrel_scp_var: _current2;;
-				    		*);;
-				    	-> rrel_3: rrel_assign: rrel_scp_var: _argument;;
-
-				    	=> nrel_goto: _agent_determining_whether_a_plurality_of_unit_operator8;;
-				*);;
-
-		        ->_agent_determining_whether_a_plurality_of_unit_operator8 
-				(*
-					<- waitReturn;;
-
-					-> rrel_1: rrel_fixed: rrel_scp_var: _argument;;
-
-					=> nrel_goto: _agent_determining_whether_a_plurality_of_unit_operator9;;
-				*);;
-			-> _agent_determining_whether_a_plurality_of_unit_operator9 
-				(*
-				    	<- ifEq;;
-
-				    	-> rrel_1: rrel_fixed: rrel_scp_var: _current1;;
-				    	-> rrel_2: rrel_fixed: rrel_scp_var: _current2;;
-
-				    	=>nrel_then: _agent_determining_whether_a_plurality_of_unit_operator9A;;
-					=>nrel_else: _agent_determining_whether_a_plurality_of_unit_operator10B;;
-				*);;			
-			-> _agent_determining_whether_a_plurality_of_unit_operator9A 
-				(*
-				    	<- ifEq;;
-
-				    	-> rrel_1: rrel_fixed: rrel_scp_var: _current1;;
-				    	-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
-
-				    	=>nrel_then: _agent_determining_whether_a_plurality_of_unit_operator10C;;
-					=>nrel_else: _agent_determining_whether_a_plurality_of_unit_operator10A;;
-				*);;
-			-> _agent_determining_whether_a_plurality_of_unit_operator10A 
-				(*
-					<- searchElStr3;;
-
-					-> rrel_1: rrel_fixed: rrel_scp_const: set;;
-					-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arcq;;
-					-> rrel_3: rrel_fixed: rrel_scp_var: _set1;;
-
-					=>nrel_then: _agent_determining_whether_a_plurality_of_unit_operator11A;;
-					=>nrel_else: _agent_determining_whether_a_plurality_of_unit_operator10A_1;;
-				*);;
-
-		        -> _agent_determining_whether_a_plurality_of_unit_operator10A_1
-				(*
-					<- genElStr3;;
-
-					-> rrel_1: rrel_fixed: rrel_scp_const: set;;
-					-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arcq;;
-					-> rrel_3: rrel_fixed: rrel_scp_var: _set1;;
-
-					=>nrel_goto: _agent_determining_whether_a_plurality_of_unit_operator11A;;
-				*);;
-			-> _agent_determining_whether_a_plurality_of_unit_operator10B 
-				(*
-					<- searchElStr3;;
-
-					-> rrel_1: rrel_fixed: rrel_scp_const: multiset;;
-					-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arcq;;
-					-> rrel_3: rrel_fixed: rrel_scp_var: _set1;;
-
-					=>nrel_then: _agent_determining_whether_a_plurality_of_unit_operator11B;;
-					=>nrel_else: _agent_determining_whether_a_plurality_of_unit_operator10B_1;;
-				*);;
-			-> _agent_determining_whether_a_plurality_of_unit_operator10B_1 
-				(*
-					<- genElStr3;;
-
-					-> rrel_1: rrel_fixed: rrel_scp_const: multiset;;
-					-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arcq;;
-					-> rrel_3: rrel_fixed: rrel_scp_var: _set1;;
-
-					=>nrel_goto: _agent_determining_whether_a_plurality_of_unit_operator11B;;
-				*);;
-			-> _agent_determining_whether_a_plurality_of_unit_operator10C 
-				(*
-					<- searchElStr3;;
-
-					-> rrel_1: rrel_fixed: rrel_scp_const: empty_set;;
-					-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arcq;;
-					-> rrel_3: rrel_fixed: rrel_scp_var: _set1;;
-
-					=>nrel_then: _agent_determining_whether_a_plurality_of_unit_operator11C;;
-					=>nrel_else: _agent_determining_whether_a_plurality_of_unit_operator10C_1;;
-				*);;
-
-		        -> _agent_determining_whether_a_plurality_of_unit_operator10C_1
-				(*
-					<- genElStr3;;
-
-					-> rrel_1: rrel_fixed: rrel_scp_const: empty_set;;
-					-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arcq;;
-					-> rrel_3: rrel_fixed: rrel_scp_var: _set1;;
-
-					=>nrel_goto: _agent_determining_whether_a_plurality_of_unit_operator11C;;
-				*);;
-			-> _agent_determining_whether_a_plurality_of_unit_operator11A 
-				(*
-					<- genElStr3;;
-
-					-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _answer;;
-					-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
-					-> rrel_3: rrel_fixed: rrel_scp_const: set;;
-
-					=>nrel_goto: _agent_determining_whether_a_plurality_of_unit_operator12;;
-				*);;
-			-> _agent_determining_whether_a_plurality_of_unit_operator11B 
-				(*
-					<- genElStr3;;
-
-					-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _answer;;
-					-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
-					-> rrel_3: rrel_fixed: rrel_scp_const: multiset;;
-
-					=>nrel_goto: _agent_determining_whether_a_plurality_of_unit_operator12;;
-				*);;
-			-> _agent_determining_whether_a_plurality_of_unit_operator11C 
-				(*
-					<- genElStr3;;
-
-					-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _answer;;
-					-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
-					-> rrel_3: rrel_fixed: rrel_scp_const: empty_set;;
-
-					=>nrel_goto: _agent_determining_whether_a_plurality_of_unit_operator12;;
-				*);;
-			-> _agent_determining_whether_a_plurality_of_unit_operator12 
-				(*
-					<- genElStr3;;
-
-					-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
-					-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
-					-> rrel_3: rrel_fixed: rrel_scp_var: _set1;;
-
-					=>nrel_goto: _agent_determining_whether_a_plurality_of_unit_operator13;;
-				*);;
-			-> _agent_determining_whether_a_plurality_of_unit_operator13 
-				(*
-					<- genElStr3;;
-					
-					-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
-					-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
-					-> rrel_3: rrel_fixed: rrel_scp_var: _arcq;;
-
-					=>nrel_goto: _agent_determining_whether_a_plurality_of_unit_operator14;;
-				*);;
-			-> _agent_determining_whether_a_plurality_of_unit_operator14 
-				(*
-					<- genElStr5;;
-
-					-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
-					-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc;;
-					-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
-					-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
-					-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
-
-					=>nrel_goto: _agent_determining_whether_a_plurality_of_unit_operator_return;;
-				*);;	
-			-> _agent_determining_whether_a_plurality_of_unit_operator_return 
-				(*
-					<- return;;
-				*);;
-		*);;
+		_=> nrel_goto:: .._agent_determining_whether_a_plurality_of_unit_operator2;;
 	*);;
+
+	_-> .._agent_determining_whether_a_plurality_of_unit_operator2 (*
+		_<- searchElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: question_determining_whether_a_plurality_of_unit;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _quest;;
+
+		_=> nrel_else:: .._agent_determining_whether_a_plurality_of_unit_operator_return;;
+		_=> nrel_then:: .._agent_determining_whether_a_plurality_of_unit_operator3;;
+	*);;
+
+	_-> .._agent_determining_whether_a_plurality_of_unit_operator3 (*
+		_<- printNl;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: [агент определения является ли данный узел множеством];;
+
+		_=> nrel_goto:: .._agent_determining_whether_a_plurality_of_unit_operator4;;
+	*);;
+
+	_-> .._agent_determining_whether_a_plurality_of_unit_operator_return (*
+		_<- return;;
+
+	*);;
+
+	_-> .._agent_determining_whether_a_plurality_of_unit_operator4 (*
+		_<- searchElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _quest;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc;;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _set1;;
+
+		_=> nrel_else:: .._agent_determining_whether_a_plurality_of_unit_operator_return;;
+		_=> nrel_then:: .._agent_determining_whether_a_plurality_of_unit_operator4A;;
+	*);;
+
+	_-> .._agent_determining_whether_a_plurality_of_unit_operator4A (*
+		_<- varAssign;;
+		_-> rrel_1:: rrel_assign:: rrel_scp_var:: _current1;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_const:: [0];;
+
+		_=> nrel_goto:: .._agent_determining_whether_a_plurality_of_unit_operator5;;
+	*);;
+
+	_-> .._agent_determining_whether_a_plurality_of_unit_operator5 (*
+		_<- call;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: proc_of_finding_power;;
+		_-> rrel_2:: .._agent_determining_whether_a_plurality_of_unit_param0 (*
+			_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _set1;;
+			_-> rrel_2:: rrel_fixed:: rrel_scp_var:: _current1;;
+		*);;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _argument;;
+
+		_=> nrel_goto:: .._agent_determining_whether_a_plurality_of_unit_operator6;;
+	*);;
+
+	_-> .._agent_determining_whether_a_plurality_of_unit_operator6 (*
+		_<- waitReturn;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _argument;;
+
+		_=> nrel_goto:: .._agent_determining_whether_a_plurality_of_unit_operator6A;;
+	*);;
+
+	_-> .._agent_determining_whether_a_plurality_of_unit_operator6A (*
+		_<- varAssign;;
+		_-> rrel_1:: rrel_assign:: rrel_scp_var:: _current2;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_const:: [0];;
+
+		_=> nrel_goto:: .._agent_determining_whether_a_plurality_of_unit_operator7;;
+	*);;
+
+	_-> .._agent_determining_whether_a_plurality_of_unit_operator7 (*
+		_<- call;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: proc_of_finding_dimension_set;;
+		_-> rrel_2:: .._agent_determining_whether_a_plurality_of_unit_param1 (*
+			_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _set1;;
+			_-> rrel_2:: rrel_fixed:: rrel_scp_var:: _current2;;
+		*);;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _argument;;
+
+		_=> nrel_goto:: .._agent_determining_whether_a_plurality_of_unit_operator8;;
+	*);;
+
+	_-> .._agent_determining_whether_a_plurality_of_unit_operator8 (*
+		_<- waitReturn;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _argument;;
+
+		_=> nrel_goto:: .._agent_determining_whether_a_plurality_of_unit_operator9;;
+	*);;
+
+	_-> .._agent_determining_whether_a_plurality_of_unit_operator9 (*
+		_<- ifEq;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _current1;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_var:: _current2;;
+
+		_=> nrel_else:: .._agent_determining_whether_a_plurality_of_unit_operator10B;;
+		_=> nrel_then:: .._agent_determining_whether_a_plurality_of_unit_operator9A;;
+	*);;
+
+	_-> .._agent_determining_whether_a_plurality_of_unit_operator9A (*
+		_<- ifEq;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _current1;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_const:: [0];;
+
+		_=> nrel_else:: .._agent_determining_whether_a_plurality_of_unit_operator10A;;
+		_=> nrel_then:: .._agent_determining_whether_a_plurality_of_unit_operator10C;;
+	*);;
+
+	_-> .._agent_determining_whether_a_plurality_of_unit_operator10B (*
+		_<- searchElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: multiset;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arcq;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _set1;;
+
+		_=> nrel_else:: .._agent_determining_whether_a_plurality_of_unit_operator10B_1;;
+		_=> nrel_then:: .._agent_determining_whether_a_plurality_of_unit_operator11B;;
+	*);;
+
+	_-> .._agent_determining_whether_a_plurality_of_unit_operator11B (*
+		_<- genElStr3;;
+		_-> rrel_1:: rrel_assign:: rrel_const:: rrel_node:: rrel_scp_var:: _answer;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_const:: multiset;;
+
+		_=> nrel_goto:: .._agent_determining_whether_a_plurality_of_unit_operator12;;
+	*);;
+
+	_-> .._agent_determining_whether_a_plurality_of_unit_operator10B_1 (*
+		_<- genElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: multiset;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arcq;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _set1;;
+
+		_=> nrel_goto:: .._agent_determining_whether_a_plurality_of_unit_operator11B;;
+	*);;
+
+	_-> .._agent_determining_whether_a_plurality_of_unit_operator12 (*
+		_<- genElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _answer;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _set1;;
+
+		_=> nrel_goto:: .._agent_determining_whether_a_plurality_of_unit_operator13;;
+	*);;
+
+	_-> .._agent_determining_whether_a_plurality_of_unit_operator13 (*
+		_<- genElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _answer;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _arcq;;
+
+		_=> nrel_goto:: .._agent_determining_whether_a_plurality_of_unit_operator14;;
+	*);;
+
+	_-> .._agent_determining_whether_a_plurality_of_unit_operator14 (*
+		_<- genElStr5;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _quest;;
+		_-> rrel_2:: rrel_assign:: rrel_common:: rrel_const:: rrel_scp_var:: _arc;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _answer;;
+		_-> rrel_4:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc2;;
+		_-> rrel_5:: rrel_fixed:: rrel_scp_const:: nrel_answer;;
+
+		_=> nrel_goto:: .._agent_determining_whether_a_plurality_of_unit_operator_return;;
+	*);;
+
+	_-> .._agent_determining_whether_a_plurality_of_unit_operator10C (*
+		_<- searchElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: empty_set;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arcq;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _set1;;
+
+		_=> nrel_else:: .._agent_determining_whether_a_plurality_of_unit_operator10C_1;;
+		_=> nrel_then:: .._agent_determining_whether_a_plurality_of_unit_operator11C;;
+	*);;
+
+	_-> .._agent_determining_whether_a_plurality_of_unit_operator10A (*
+		_<- searchElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: set;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arcq;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _set1;;
+
+		_=> nrel_else:: .._agent_determining_whether_a_plurality_of_unit_operator10A_1;;
+		_=> nrel_then:: .._agent_determining_whether_a_plurality_of_unit_operator11A;;
+	*);;
+
+	_-> .._agent_determining_whether_a_plurality_of_unit_operator11A (*
+		_<- genElStr3;;
+		_-> rrel_1:: rrel_assign:: rrel_const:: rrel_node:: rrel_scp_var:: _answer;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_const:: set;;
+
+		_=> nrel_goto:: .._agent_determining_whether_a_plurality_of_unit_operator12;;
+	*);;
+
+	_-> .._agent_determining_whether_a_plurality_of_unit_operator10A_1 (*
+		_<- genElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: set;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arcq;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _set1;;
+
+		_=> nrel_goto:: .._agent_determining_whether_a_plurality_of_unit_operator11A;;
+	*);;
+
+	_-> .._agent_determining_whether_a_plurality_of_unit_operator11C (*
+		_<- genElStr3;;
+		_-> rrel_1:: rrel_assign:: rrel_const:: rrel_node:: rrel_scp_var:: _answer;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_const:: empty_set;;
+
+		_=> nrel_goto:: .._agent_determining_whether_a_plurality_of_unit_operator12;;
+	*);;
+
+	_-> .._agent_determining_whether_a_plurality_of_unit_operator10C_1 (*
+		_<- genElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: empty_set;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arcq;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _set1;;
+
+		_=> nrel_goto:: .._agent_determining_whether_a_plurality_of_unit_operator11C;;
+	*);;
+
+*);;
+
+*];;
+
 *];;

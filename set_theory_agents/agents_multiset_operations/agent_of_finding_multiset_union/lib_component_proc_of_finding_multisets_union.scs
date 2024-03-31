@@ -11,372 +11,285 @@ lib_component_proc_of_finding_multisets_union
 -> rrel_key_sc_element: 
 	proc_of_finding_multisets_union;;
 
-lib_component_proc_of_finding_multisets_union = [*
-proc_of_finding_multisets_union
+lib_component_proc_of_finding_multisets_union = [*proc_of_finding_multisets_union
 => nrel_main_idtf:
-	[Процедура нахождения объединения двух мультимножеств]
-		(* <- lang_ru;; *);;
-
-scp_program -> proc_of_finding_multisets_union
-(*
-	-> rrel_params: ...
-	(*
-    	-> rrel_1: rrel_in: _multiset_1;;
-    	-> rrel_2: rrel_in: _multiset_2;;
-    	-> rrel_3: rrel_out: _multiset_3;;
-  	*);;
-  
-	-> rrel_operators: ...
-	(*
-
-		-> rrel_init: _proc_of_finding_multisets_union_operator_print_start
-		(*
-			<- printNl;;
-
-			-> rrel_1: rrel_scp_const: [Начало. Процедура нахождения объединения двух мультимножеств];;
-
-			=> nrel_goto: _proc_of_finding_multisets_union_operator_gen_result_multiset;;
-   		*);;
-
-		-> _proc_of_finding_multisets_union_operator_gen_result_multiset
-		(*
-			<- genEl;;
-
-			-> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _multiset_3;;
-
-			=> nrel_goto: _proc_of_finding_multisets_union_operator_get_multiset_1_elements;;
-		*);;
-
-////////////////////////////////////////////////////////////////////
-// Часть I. Добавление в результирующее мультимножество элементов первого мультимножества
-
-		-> _proc_of_finding_multisets_union_operator_get_multiset_1_elements
-		(*
-			<- searchSetStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _multiset_1;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _belonging_arc;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _multiset_1_element;;
-
-			-> rrel_set_3: rrel_assign: rrel_scp_var: _multiset_1_element_set;;
-
-			=> nrel_then: _proc_of_finding_multisets_union_operator_get_multiset_1_element;;
-			=> nrel_else: _proc_of_finding_multisets_union_operator_get_multiset_2_elements;;
-		*);;
-
-////////////////////////////////////////////////////////////////////
-// цикл по всем элементам первого мультимножества
-
-		-> _proc_of_finding_multisets_union_operator_get_multiset_1_element
-		(*
-			<- searchElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _multiset_1_element_set;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _belonging_arc;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _multiset_1_element;;
-
-			=> nrel_then: _proc_of_finding_multisets_union_operator_erase_multiset_1_element_arc;;
-			=> nrel_else: _proc_of_finding_multisets_union_operator_get_multiset_2_elements;;
-		*);;
-
-		-> _proc_of_finding_multisets_union_operator_erase_multiset_1_element_arc
-		(*
-			<- eraseEl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _belonging_arc;;
-
-			=> nrel_goto: _proc_of_finding_multisets_union_operator_get_multiset_1_element_multiplicity_1;;
-		*);;
-
-		-> _proc_of_finding_multisets_union_operator_get_multiset_1_element_multiplicity_1
-		(*
-			<- call;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: proc_get_multiplicity_of_element;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: ...
-			(*
-					-> rrel_1: rrel_fixed: rrel_scp_var: _multiset_1;;
-					-> rrel_2: rrel_fixed: rrel_scp_var: _multiset_1_element;;
-					-> rrel_3: rrel_assign: rrel_scp_var: _multiset_1_multiplicity;;
-			*);;
-			-> rrel_3: rrel_assign: rrel_scp_var: _proc_descriptor;;
-
-			=> nrel_goto: _proc_of_finding_multisets_union_operator_get_multiset_1_element_multiplicity_1_ret;;
-		*);;
-
-		-> _proc_of_finding_multisets_union_operator_get_multiset_1_element_multiplicity_1_ret
-		(*
-			<- waitReturn;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _proc_descriptor;;
-
-			=> nrel_goto: _proc_of_finding_multisets_union_operator_get_multiset_1_element_multiplicity_2;;
-		*);;
-
-		-> _proc_of_finding_multisets_union_operator_get_multiset_1_element_multiplicity_2
-		(*
-			<- call;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: proc_get_multiplicity_of_element;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: ...
-			(*
-					-> rrel_1: rrel_fixed: rrel_scp_var: _multiset_2;;
-					-> rrel_2: rrel_fixed: rrel_scp_var: _multiset_1_element;;
-					-> rrel_3: rrel_assign: rrel_scp_var: _multiset_2_multiplicity;;
-			*);;
-			-> rrel_3: rrel_assign: rrel_scp_var: _proc_descriptor;;
-
-			=> nrel_goto: _proc_of_finding_multisets_union_operator_get_multiset_1_element_multiplicity_2_ret;;
-		*);;
-
-		-> _proc_of_finding_multisets_union_operator_get_multiset_1_element_multiplicity_2_ret
-		(*
-			<- waitReturn;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _proc_descriptor;;
-
-			=> nrel_goto: _proc_of_finding_multisets_union_operator_multiplicity_union_0;;
-		*);;
-
-		-> _proc_of_finding_multisets_union_operator_multiplicity_union_0
-		(*
-			<- ifGr;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _multiset_1_multiplicity;;
-			-> rrel_2: rrel_fixed: rrel_scp_var: _multiset_2_multiplicity;;
-
-			=> nrel_then: _proc_of_finding_multisets_union_operator_multiplicity_union_0_1;;
-			=> nrel_else: _proc_of_finding_multisets_union_operator_multiplicity_union_0_2;;
-		*);;
-
-
-		-> _proc_of_finding_multisets_union_operator_multiplicity_union_0_1
-		(*
-			<- varAssign;;
-
-			-> rrel_1: rrel_assign: rrel_scp_var: _result_multiplicity;;
-			-> rrel_2: rrel_fixed: rrel_scp_var: _multiset_1_multiplicity;;
-
-			=> nrel_goto: _proc_of_finding_multisets_union_operator_add_multiset_1_element_to_result;;
-		*);;
-
-		-> _proc_of_finding_multisets_union_operator_multiplicity_union_0_2
-		(*
-			<- varAssign;;
-
-			-> rrel_1: rrel_assign: rrel_scp_var: _result_multiplicity;;
-			-> rrel_2: rrel_fixed: rrel_scp_var: _multiset_2_multiplicity;;
-
-			=> nrel_goto: _proc_of_finding_multisets_union_operator_add_multiset_1_element_to_result;;
-		*);;
-
-		-> _proc_of_finding_multisets_union_operator_add_multiset_1_element_to_result
-		(*
-			<- call;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: proc_add_element_to_multiset;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: ...
-			(*
-					-> rrel_1: rrel_fixed: rrel_scp_var: _multiset_1_element;;
-					-> rrel_2: rrel_fixed: rrel_scp_var: _multiset_3;;
-					-> rrel_3: rrel_fixed: rrel_scp_var: _result_multiplicity;;
-			*);;
-			-> rrel_3: rrel_assign: rrel_scp_var: _proc_descriptor;;
-
-			=> nrel_goto: _proc_of_finding_multisets_union_operator_add_multiset_1_element_to_result_ret;;
-		*);;
-
-		-> _proc_of_finding_multisets_union_operator_add_multiset_1_element_to_result_ret
-		(*
-			<- waitReturn;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _proc_descriptor;;
-
-			=> nrel_goto: _proc_of_finding_multisets_union_operator_get_multiset_1_element;;
-		*);;
-
-////////////////////////////////////////////////////////////////////
-
-// Часть I
-////////////////////////////////////////////////////////////////////
-
-////////////////////////////////////////////////////////////////////
-// Часть II. Добавление в результирующее множество элементов второго мультимножества
-
-		-> _proc_of_finding_multisets_union_operator_get_multiset_2_elements
-		(*
-			<- searchSetStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _multiset_2;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _belonging_arc;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _multiset_2_element;;
-
-			-> rrel_set_3: rrel_assign: rrel_scp_var: _multiset_2_element_set;;
-
-			=> nrel_then: _proc_of_finding_multisets_union_operator_get_multiset_2_element;;
-			=> nrel_else: _proc_of_finding_multisets_union_operator_print_end;;
-		*);;
-
-////////////////////////////////////////////////////////////////////
-// цикл по всем элементам второго мультимножества
-
-		-> _proc_of_finding_multisets_union_operator_get_multiset_2_element
-		(*
-			<- searchElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _multiset_2_element_set;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _belonging_arc;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _multiset_2_element;;
-
-			=> nrel_then: _proc_of_finding_multisets_union_operator_erase_multiset_2_element_arc;;
-			=> nrel_else: _proc_of_finding_multisets_union_operator_print_end;;
-		*);;
-
-		-> _proc_of_finding_multisets_union_operator_erase_multiset_2_element_arc
-		(*
-			<- eraseEl;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _belonging_arc;;
-
-			=> nrel_goto: _proc_of_finding_multisets_union_operator_check_belonging_of_multiset_2_element;;
-		*);;
-
-		-> _proc_of_finding_multisets_union_operator_check_belonging_of_multiset_2_element
-		(*
-			<- searchElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _multiset_3;;
-			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _belonging_arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _multiset_2_element;;
-
-			=> nrel_then: _proc_of_finding_multisets_union_operator_get_multiset_2_element;;
-			=> nrel_else: _proc_of_finding_multisets_union_operator_get_multiset_2_element_multiplicity_1;;
-		*);;
-
-		-> _proc_of_finding_multisets_union_operator_get_multiset_2_element_multiplicity_1
-		(*
-			<- call;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: proc_get_multiplicity_of_element;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: ...
-			(*
-					-> rrel_1: rrel_fixed: rrel_scp_var: _multiset_1;;
-					-> rrel_2: rrel_fixed: rrel_scp_var: _multiset_2_element;;
-
-					-> rrel_3: rrel_assign: rrel_scp_var: _multiset_1_multiplicity;;
-			*);;
-			-> rrel_3: rrel_assign: rrel_scp_var: _proc_descriptor;;
-
-			=> nrel_goto: _proc_of_finding_multisets_union_operator_get_multiset_2_element_multiplicity_1_ret;;
-		*);;
-
-		-> _proc_of_finding_multisets_union_operator_get_multiset_2_element_multiplicity_1_ret
-		(*
-			<- waitReturn;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _proc_descriptor;;
-
-			=> nrel_goto: _proc_of_finding_multisets_union_operator_get_multiset_2_element_multiplicity_2;;
-		*);;
-
-		-> _proc_of_finding_multisets_union_operator_get_multiset_2_element_multiplicity_2
-		(*
-			<- call;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: proc_get_multiplicity_of_element;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: ...
-			(*
-					-> rrel_1: rrel_fixed: rrel_scp_var: _multiset_2;;
-					-> rrel_2: rrel_fixed: rrel_scp_var: _multiset_2_element;;
-
-					-> rrel_3: rrel_assign: rrel_scp_var: _multiset_2_multiplicity;;
-			*);;
-			-> rrel_3: rrel_assign: rrel_scp_var: _proc_descriptor;;
-
-			=> nrel_goto: _proc_of_finding_multisets_union_operator_get_multiset_2_element_multiplicity_2_ret;;
-		*);;
-
-		-> _proc_of_finding_multisets_union_operator_get_multiset_2_element_multiplicity_2_ret
-		(*
-			<- waitReturn;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _proc_descriptor;;
-
-			=> nrel_goto: _proc_of_finding_multisets_union_operator_multiplicity_union;;
-		*);;
-
-		-> _proc_of_finding_multisets_union_operator_multiplicity_union
-		(*
-			<- ifGr;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _multiset_1_multiplicity;;
-			-> rrel_2: rrel_fixed: rrel_scp_var: _multiset_2_multiplicity;;
-
-			=> nrel_then: _proc_of_finding_multisets_union_operator_multiplicity_union_1;;
-			=> nrel_else: _proc_of_finding_multisets_union_operator_multiplicity_union_2;;
-		*);;
-
-
-		-> _proc_of_finding_multisets_union_operator_multiplicity_union_1
-		(*
-			<- varAssign;;
-
-			-> rrel_1: rrel_assign: rrel_scp_var: _result_multiplicity;;
-			-> rrel_2: rrel_fixed: rrel_scp_var: _multiset_1_multiplicity;;
-
-			=> nrel_goto: _proc_of_finding_multisets_union_operator_add_multiset_2_element_to_result;;
-		*);;
-
-		-> _proc_of_finding_multisets_union_operator_multiplicity_union_2
-		(*
-			<- varAssign;;
-
-			-> rrel_1: rrel_assign: rrel_scp_var: _result_multiplicity;;
-			-> rrel_2: rrel_fixed: rrel_scp_var: _multiset_2_multiplicity;;
-
-			=> nrel_goto: _proc_of_finding_multisets_union_operator_add_multiset_2_element_to_result;;
-		*);;
-
-		-> _proc_of_finding_multisets_union_operator_add_multiset_2_element_to_result
-		(*
-			<- call;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: proc_add_element_to_multiset;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: ...
-			(*
-					-> rrel_1: rrel_fixed: rrel_scp_var: _multiset_2_element;;
-					-> rrel_2: rrel_fixed: rrel_scp_var: _multiset_3;;
-					-> rrel_3: rrel_fixed: rrel_scp_var: _result_multiplicity;;
-			*);;
-			-> rrel_3: rrel_assign: rrel_scp_var: _proc_descriptor;;
-
-			=> nrel_goto: _proc_of_finding_multisets_union_operator_add_multiset_2_element_to_result_ret;;
-		*);;
-
-		-> _proc_of_finding_multisets_union_operator_add_multiset_2_element_to_result_ret
-		(*
-			<- waitReturn;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _proc_descriptor;;
-
-			=> nrel_goto: _proc_of_finding_multisets_union_operator_print_end;;
-		*);;
-
-////////////////////////////////////////////////////////////////////
-
-		-> _proc_of_finding_multisets_union_operator_print_end
-		(*
-			<- printNl;;
-
-			-> rrel_1: rrel_scp_const: [Конец. Процедура нахождения объединения двух мультимножеств];;
-
-			=> nrel_goto: _proc_of_finding_multisets_union_operator_return;;
-   		*);;
-
-	    -> _proc_of_finding_multisets_union_operator_return
-	    (*
-	  		<- return;;
-    	*);;
+	[Процедура нахождения объединения двух мультимножеств] (* <- lang_ru;; *);
+	[] (* <- lang_en;; *);
+<- scp_program;
+-> rrel_key_sc_element: .._process1;;
+
+proc_of_finding_multisets_union = [*
+.._process1
+_<- scp_process;
+
+_-> rrel_1:: rrel_in:: _multiset_1;
+_-> rrel_2:: rrel_in:: _multiset_2;
+_-> rrel_3:: rrel_out:: _multiset_3;
+_<= nrel_decomposition_of_action:: .._actions (*
+
+	_-> rrel_1:: .._proc_of_finding_multisets_union_operator_print_start (*
+		_<- printNl;;
+		_-> rrel_1:: rrel_scp_const:: [Начало. Процедура нахождения объединения двух мультимножеств];;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_union_operator_gen_result_multiset;;
 	*);;
+
+	_-> .._proc_of_finding_multisets_union_operator_gen_result_multiset (*
+		_<- genEl;;
+		_-> rrel_1:: rrel_assign:: rrel_const:: rrel_node:: rrel_scp_var:: _multiset_3;;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_union_operator_get_multiset_1_elements;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_union_operator_get_multiset_1_elements (*
+		_<- searchSetStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: _multiset_1;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _belonging_arc;;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _multiset_1_element;;
+		_-> rrel_set_3:: rrel_assign:: rrel_scp_var:: _multiset_1_element_set;;
+
+		_=> nrel_else:: .._proc_of_finding_multisets_union_operator_get_multiset_2_elements;;
+		_=> nrel_then:: .._proc_of_finding_multisets_union_operator_get_multiset_1_element;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_union_operator_get_multiset_1_element (*
+		_<- searchElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _multiset_1_element_set;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _belonging_arc;;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _multiset_1_element;;
+
+		_=> nrel_else:: .._proc_of_finding_multisets_union_operator_get_multiset_2_elements;;
+		_=> nrel_then:: .._proc_of_finding_multisets_union_operator_erase_multiset_1_element_arc;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_union_operator_get_multiset_2_elements (*
+		_<- searchSetStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: _multiset_2;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _belonging_arc;;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _multiset_2_element;;
+		_-> rrel_set_3:: rrel_assign:: rrel_scp_var:: _multiset_2_element_set;;
+
+		_=> nrel_else:: .._proc_of_finding_multisets_union_operator_print_end;;
+		_=> nrel_then:: .._proc_of_finding_multisets_union_operator_get_multiset_2_element;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_union_operator_get_multiset_2_element (*
+		_<- searchElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _multiset_2_element_set;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _belonging_arc;;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _multiset_2_element;;
+
+		_=> nrel_else:: .._proc_of_finding_multisets_union_operator_print_end;;
+		_=> nrel_then:: .._proc_of_finding_multisets_union_operator_erase_multiset_2_element_arc;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_union_operator_print_end (*
+		_<- printNl;;
+		_-> rrel_1:: rrel_scp_const:: [Конец. Процедура нахождения объединения двух мультимножеств];;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_union_operator_return;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_union_operator_return (*
+		_<- return;;
+
+	*);;
+
+	_-> .._proc_of_finding_multisets_union_operator_erase_multiset_2_element_arc (*
+		_<- eraseEl;;
+		_-> rrel_1:: rrel_erase:: rrel_fixed:: rrel_scp_var:: _belonging_arc;;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_union_operator_check_belonging_of_multiset_2_element;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_union_operator_check_belonging_of_multiset_2_element (*
+		_<- searchElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _multiset_3;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _belonging_arc;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _multiset_2_element;;
+
+		_=> nrel_else:: .._proc_of_finding_multisets_union_operator_get_multiset_2_element_multiplicity_1;;
+		_=> nrel_then:: .._proc_of_finding_multisets_union_operator_get_multiset_2_element;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_union_operator_get_multiset_2_element_multiplicity_1 (*
+		_<- call;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: proc_get_multiplicity_of_element;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_const:: .._proc_of_finding_multisets_union_param0 (*
+			_-> rrel_1:: rrel_fixed:: rrel_scp_const:: _multiset_1;;
+			_-> rrel_2:: rrel_fixed:: rrel_scp_var:: _multiset_2_element;;
+			_-> rrel_3:: rrel_assign:: rrel_scp_var:: _multiset_1_multiplicity;;
+		*);;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _proc_descriptor;;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_union_operator_get_multiset_2_element_multiplicity_1_ret;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_union_operator_get_multiset_2_element_multiplicity_1_ret (*
+		_<- waitReturn;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _proc_descriptor;;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_union_operator_get_multiset_2_element_multiplicity_2;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_union_operator_get_multiset_2_element_multiplicity_2 (*
+		_<- call;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: proc_get_multiplicity_of_element;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_const:: .._proc_of_finding_multisets_union_param1 (*
+			_-> rrel_1:: rrel_fixed:: rrel_scp_const:: _multiset_2;;
+			_-> rrel_2:: rrel_fixed:: rrel_scp_var:: _multiset_2_element;;
+			_-> rrel_3:: rrel_assign:: rrel_scp_var:: _multiset_2_multiplicity;;
+		*);;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _proc_descriptor;;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_union_operator_get_multiset_2_element_multiplicity_2_ret;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_union_operator_get_multiset_2_element_multiplicity_2_ret (*
+		_<- waitReturn;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _proc_descriptor;;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_union_operator_multiplicity_union;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_union_operator_multiplicity_union (*
+		_<- ifGr;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _multiset_1_multiplicity;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_var:: _multiset_2_multiplicity;;
+
+		_=> nrel_else:: .._proc_of_finding_multisets_union_operator_multiplicity_union_2;;
+		_=> nrel_then:: .._proc_of_finding_multisets_union_operator_multiplicity_union_1;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_union_operator_multiplicity_union_1 (*
+		_<- varAssign;;
+		_-> rrel_1:: rrel_assign:: rrel_scp_var:: _result_multiplicity;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_var:: _multiset_1_multiplicity;;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_union_operator_add_multiset_2_element_to_result;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_union_operator_multiplicity_union_2 (*
+		_<- varAssign;;
+		_-> rrel_1:: rrel_assign:: rrel_scp_var:: _result_multiplicity;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_var:: _multiset_2_multiplicity;;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_union_operator_add_multiset_2_element_to_result;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_union_operator_add_multiset_2_element_to_result (*
+		_<- call;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: proc_add_element_to_multiset;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_const:: .._proc_of_finding_multisets_union_param2 (*
+			_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _multiset_2_element;;
+			_-> rrel_2:: rrel_fixed:: rrel_scp_var:: _multiset_3;;
+			_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _result_multiplicity;;
+		*);;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _proc_descriptor;;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_union_operator_add_multiset_2_element_to_result_ret;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_union_operator_add_multiset_2_element_to_result_ret (*
+		_<- waitReturn;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _proc_descriptor;;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_union_operator_print_end;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_union_operator_erase_multiset_1_element_arc (*
+		_<- eraseEl;;
+		_-> rrel_1:: rrel_erase:: rrel_fixed:: rrel_scp_var:: _belonging_arc;;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_union_operator_get_multiset_1_element_multiplicity_1;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_union_operator_get_multiset_1_element_multiplicity_1 (*
+		_<- call;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: proc_get_multiplicity_of_element;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_const:: .._proc_of_finding_multisets_union_param3 (*
+			_-> rrel_1:: rrel_fixed:: rrel_scp_const:: _multiset_1;;
+			_-> rrel_2:: rrel_fixed:: rrel_scp_var:: _multiset_1_element;;
+			_-> rrel_3:: rrel_assign:: rrel_scp_var:: _multiset_1_multiplicity;;
+		*);;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _proc_descriptor;;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_union_operator_get_multiset_1_element_multiplicity_1_ret;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_union_operator_get_multiset_1_element_multiplicity_1_ret (*
+		_<- waitReturn;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _proc_descriptor;;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_union_operator_get_multiset_1_element_multiplicity_2;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_union_operator_get_multiset_1_element_multiplicity_2 (*
+		_<- call;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: proc_get_multiplicity_of_element;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_const:: .._proc_of_finding_multisets_union_param4 (*
+			_-> rrel_1:: rrel_fixed:: rrel_scp_const:: _multiset_2;;
+			_-> rrel_2:: rrel_fixed:: rrel_scp_var:: _multiset_1_element;;
+			_-> rrel_3:: rrel_assign:: rrel_scp_var:: _multiset_2_multiplicity;;
+		*);;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _proc_descriptor;;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_union_operator_get_multiset_1_element_multiplicity_2_ret;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_union_operator_get_multiset_1_element_multiplicity_2_ret (*
+		_<- waitReturn;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _proc_descriptor;;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_union_operator_multiplicity_union_0;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_union_operator_multiplicity_union_0 (*
+		_<- ifGr;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _multiset_1_multiplicity;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_var:: _multiset_2_multiplicity;;
+
+		_=> nrel_else:: .._proc_of_finding_multisets_union_operator_multiplicity_union_0_2;;
+		_=> nrel_then:: .._proc_of_finding_multisets_union_operator_multiplicity_union_0_1;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_union_operator_multiplicity_union_0_1 (*
+		_<- varAssign;;
+		_-> rrel_1:: rrel_assign:: rrel_scp_var:: _result_multiplicity;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_var:: _multiset_1_multiplicity;;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_union_operator_add_multiset_1_element_to_result;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_union_operator_multiplicity_union_0_2 (*
+		_<- varAssign;;
+		_-> rrel_1:: rrel_assign:: rrel_scp_var:: _result_multiplicity;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_var:: _multiset_2_multiplicity;;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_union_operator_add_multiset_1_element_to_result;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_union_operator_add_multiset_1_element_to_result (*
+		_<- call;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: proc_add_element_to_multiset;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_const:: .._proc_of_finding_multisets_union_param5 (*
+			_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _multiset_1_element;;
+			_-> rrel_2:: rrel_fixed:: rrel_scp_var:: _multiset_3;;
+			_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _result_multiplicity;;
+		*);;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _proc_descriptor;;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_union_operator_add_multiset_1_element_to_result_ret;;
+	*);;
+
+	_-> .._proc_of_finding_multisets_union_operator_add_multiset_1_element_to_result_ret (*
+		_<- waitReturn;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _proc_descriptor;;
+
+		_=> nrel_goto:: .._proc_of_finding_multisets_union_operator_get_multiset_1_element;;
+	*);;
+
 *);;
+
+*];;
 *];;
