@@ -43,7 +43,7 @@ _<= nrel_decomposition_of_action:: .._actions (*
 		_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _quest;;
 
 		_=> nrel_else:: .._agent_of_finding_power_operator2;;
-		_=> nrel_then:: .._agent_of_finding_power_operator3;;
+		_=> nrel_then:: .._agent_of_finding_power_operator3_1;;
 	*);;
 
 	_-> .._agent_of_finding_power_operator3 (*
@@ -51,6 +51,13 @@ _<= nrel_decomposition_of_action:: .._actions (*
 		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: [агент нахождения мощности множества];;
 
 		_=> nrel_goto:: .._agent_step_set_power;;
+	*);;
+
+	_-> .._agent_of_finding_power_operator3_1 (*
+		_<- genEl;;
+		_-> rrel_1:: rrel_assign:: rrel_const:: rrel_node:: rrel_scp_var:: _answer;;
+
+		_=> nrel_goto:: .._agent_of_finding_power_operator3;;
 	*);;
 
 	_-> .._agent_of_finding_power_operator2 (*
@@ -65,14 +72,35 @@ _<= nrel_decomposition_of_action:: .._actions (*
 		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _question;;
 
 		_=> nrel_else:: .._agent_of_finding_power_operator2;;
-		_=> nrel_then:: .._agent_of_finding_power_operator4;;
+		_=> nrel_then:: .._agent_step_set_power_1;;
+	*);;
+
+	_-> .._agent_step_set_power_1 (*
+		_<- searchElStr5;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _quest;;
+		_-> rrel_2:: rrel_assign:: rrel_common:: rrel_const:: rrel_scp_var:: _arc;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _answer;;
+		_-> rrel_4:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc2;;
+		_-> rrel_5:: rrel_fixed:: rrel_scp_const:: nrel_answer;;
+
+		_=> nrel_then:: .._agent_step_set_power_2;;
+		_=> nrel_else:: .._agent_of_finding_power_operator4;;
+	*);;
+
+	_-> .._agent_step_set_power_2 (*
+		_<- eraseEl;;
+		_-> rrel_1:: rrel_erase:: rrel_fixed:: rrel_scp_var:: _arc;;
+
+		_=> nrel_goto:: .._agent_of_finding_power_operator4;;
 	*);;
 
 	_-> .._agent_of_finding_power_operator4 (*
-		_<- searchElStr3;;
+		_<- searchElStr5;;
 		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _question;;
 		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc;;
 		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _set1;;
+		_-> rrel_4:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc2;;
+		_-> rrel_5:: rrel_fixed:: rrel_scp_const:: rrel_1;;
 
 		_=> nrel_else:: .._agent_of_finding_power_operator2;;
 		_=> nrel_then:: .._agent_of_finding_power_operator5;;
@@ -102,18 +130,45 @@ _<= nrel_decomposition_of_action:: .._actions (*
 		_<- waitReturn;;
 		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _argument;;
 
+		_=> nrel_goto:: .._agent_of_finding_power_operator_answer_001;;
+	*);;
+
+	_-> .._agent_of_finding_power_operator_answer_001 (*
+		_<- genEl;;
+		_-> rrel_1:: rrel_assign:: rrel_const:: rrel_node:: rrel_scp_var:: rrel_struct:: _rez;;
+
+		_=> nrel_goto:: .._agent_of_finding_power_operator_answer_01;;
+	*);;
+
+	_-> .._agent_of_finding_power_operator_answer_01 (*
+		_<- genElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _rez;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _ar;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_const:: _current;;
+
 		_=> nrel_goto:: .._agent_of_finding_power_operator_answer_1;;
 	*);;
 
 	_-> .._agent_of_finding_power_operator_answer_1 (*
 		_<- genElStr5;;
-		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _set1;;
-		_-> rrel_2:: rrel_assign:: rrel_common:: rrel_const:: rrel_scp_var:: _arc;;
-		_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _current;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _answer;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _rez;;
 		_-> rrel_4:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc2;;
-		_-> rrel_5:: rrel_fixed:: rrel_scp_const:: nrel_power_set;;
+		_-> rrel_5:: rrel_fixed:: rrel_scp_const:: rrel_1;;
 
-		_=> nrel_goto:: .._agent_of_finding_power_operator2;;
+		_=> nrel_goto:: .._agent_of_finding_power_operator_answer_2;;
+	*);;
+
+	_-> .._agent_of_finding_power_operator_answer_2 (*
+		_<- genElStr5;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _quest;;
+		_-> rrel_2:: rrel_assign:: rrel_common:: rrel_const:: rrel_scp_var:: _arc;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _answer;;
+		_-> rrel_4:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc2;;
+		_-> rrel_5:: rrel_fixed:: rrel_scp_const:: nrel_answer;;
+
+		_=> nrel_goto:: .._agent_using_binary_operation_operator20;;
 	*);;
 
 *);;
