@@ -9,6 +9,12 @@ lib_component_ui_menu_file_for_finding_power
 <- atomic_reusable_component_OSTIS;
 <- reusable_knowledge_base_sc_model_component;;
 
+
+ui_main_menu <= nrel_ui_commands_decomposition: ...
+(*
+  -> ui_menu_file_for_finding_power;;
+*);;
+
 lib_component_ui_menu_file_for_finding_power = [*
 ui_menu_file_for_finding_power 
 	<- 	ui_user_command_class_atom; 

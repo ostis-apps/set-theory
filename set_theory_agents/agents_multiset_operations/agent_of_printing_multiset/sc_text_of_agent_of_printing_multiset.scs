@@ -10,113 +10,96 @@ sc_text_of_agent_of_printing_multiset
 	[sc-text scp-agent based program finding multiset elements] 
 	(* <- lang_en;; *);;
 
-sc_text_of_agent_of_printing_multiset = [*
-agent_of_printing_multiset
+sc_text_of_agent_of_printing_multiset = [*agent_of_printing_multiset
 => nrel_main_idtf:
-	[агентная scp-программа нахождения элементов мультимножества] 
-		(* <- lang_ru;; *);
-	[agent scp-program of finding multiset elements]
-		(* <- lang_en;; *);
-<- agent_scp_program;;
+	[агентная scp-программа нахождения элементов мультимножества] (* <- lang_ru;; *);
+	[agent scp-program of finding multiset elements] (* <- lang_en;; *);
+<- scp_program;
+<- agent_scp_program;
+-> rrel_key_sc_element: .._process1;;
 
-scp_program -> agent_of_printing_multiset
-(*
+agent_of_printing_multiset = [*
+.._process1
+_<- scp_process;
 
-	-> rrel_params: .agent_of_printing_multiset_operator_params
-	(*
-		-> rrel_1: rrel_in: _event;;
-		-> rrel_2: rrel_in: _input_arc;;
+_-> rrel_1:: rrel_in:: _event;
+_-> rrel_2:: rrel_in:: _input_arc;
+_<= nrel_decomposition_of_action:: .._actions (*
+
+	_-> rrel_1:: .._agent_of_printing_multiset_operator1 (*
+		_<- searchElStr3;;
+		_-> rrel_1:: rrel_assign:: rrel_scp_var:: _temp;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_const:: _input_arc;;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _quest;;
+
+		_=> nrel_goto:: .._agent_of_printing_multiset_operator2;;
 	*);;
 
-	-> rrel_operators: .agent_of_printing_multiset_operators_set
-	(*
-		-> rrel_init: _agent_of_printing_multiset_operator1
-		(*
-			<- searchElStr3;;
+	_-> .._agent_of_printing_multiset_operator2 (*
+		_<- searchElStr3;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: question_printing_multiset;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _quest;;
 
-			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
-			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
-
-			=> nrel_goto: _agent_of_printing_multiset_operator2;;
-		*);;
-
-		-> _agent_of_printing_multiset_operator2
-		(*
-			<- searchElStr3;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: question_printing_multiset;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
-
-			=> nrel_then: _agent_of_printing_multiset_operator3;;
-			=> nrel_else: _agent_of_printing_multiset_operator_return;;
-		*);;
-
-		-> _agent_of_printing_multiset_operator3
-		(*
-			<- printNl;;
-
-			-> rrel_1: rrel_scp_const: [Агент нахождения элементов мультимножества];;
-
-			=> nrel_goto: _agent_of_printing_multiset_operator4;;
-   		*);;
-
-		-> _agent_of_printing_multiset_operator4
-		(*
-			<- searchElStr5;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
-			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_to_multiset;;
-			-> rrel_3: rrel_assign: rrel_scp_var: _multiset;;
-			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_rrel;;
-			-> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
-
-			=> nrel_then: _agent_of_printing_multiset_operator5;;
-			=> nrel_else: _agent_of_printing_multiset_operator_return;;
-		*);;
-
-		-> _agent_of_printing_multiset_operator5
-		(*
-			<- call;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_const: proc_add_multiset_to_answer;;
-			-> rrel_2: rrel_fixed: rrel_scp_const: ...
-			(*
-					-> rrel_1: rrel_fixed: rrel_scp_var: _multiset;;
-					-> rrel_2: rrel_assign: rrel_scp_var: _answer;;
-			*);;
-			-> rrel_3: rrel_assign: rrel_scp_var: _proc_descriptor;;
-
-			=> nrel_goto: _agent_of_printing_multiset_operator6;;
-		*);;
-
-		-> _agent_of_printing_multiset_operator6
-		(*
-			<- waitReturn;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _proc_descriptor;;
-
-			=> nrel_goto: _agent_of_printing_multiset_operator7;;
-		*);;
-
-		-> _agent_of_printing_multiset_operator7
-		(*
-			<- genElStr5;;
-
-			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
-			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_const: rrel_scp_var: _arc;;
-			-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
-			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
-			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
-			
-			=> nrel_goto: _agent_of_printing_multiset_operator_return;;
-		*);;
-	
-		-> _agent_of_printing_multiset_operator_return
-		(*
-			<- return;;
-		*);;
+		_=> nrel_else:: .._agent_of_printing_multiset_operator_return;;
+		_=> nrel_then:: .._agent_of_printing_multiset_operator3;;
 	*);;
+
+	_-> .._agent_of_printing_multiset_operator3 (*
+		_<- printNl;;
+		_-> rrel_1:: rrel_scp_const:: [Агент нахождения элементов мультимножества];;
+
+		_=> nrel_goto:: .._agent_of_printing_multiset_operator4;;
+	*);;
+
+	_-> .._agent_of_printing_multiset_operator_return (*
+		_<- return;;
+
+	*);;
+
+	_-> .._agent_of_printing_multiset_operator4 (*
+		_<- searchElStr5;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _quest;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc_to_multiset;;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _multiset;;
+		_-> rrel_4:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc_rrel;;
+		_-> rrel_5:: rrel_fixed:: rrel_scp_const:: rrel_1;;
+
+		_=> nrel_else:: .._agent_of_printing_multiset_operator_return;;
+		_=> nrel_then:: .._agent_of_printing_multiset_operator5;;
+	*);;
+
+	_-> .._agent_of_printing_multiset_operator5 (*
+		_<- call;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: proc_add_multiset_to_answer;;
+		_-> rrel_2:: rrel_fixed:: rrel_scp_const:: .._agent_of_printing_multiset_param0 (*
+			_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _multiset;;
+			_-> rrel_2:: rrel_assign:: rrel_scp_var:: _answer;;
+		*);;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _proc_descriptor;;
+
+		_=> nrel_goto:: .._agent_of_printing_multiset_operator6;;
+	*);;
+
+	_-> .._agent_of_printing_multiset_operator6 (*
+		_<- waitReturn;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _proc_descriptor;;
+
+		_=> nrel_goto:: .._agent_of_printing_multiset_operator7;;
+	*);;
+
+	_-> .._agent_of_printing_multiset_operator7 (*
+		_<- genElStr5;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _quest;;
+		_-> rrel_2:: rrel_assign:: rrel_common:: rrel_const:: rrel_scp_var:: _arc;;
+		_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _answer;;
+		_-> rrel_4:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc2;;
+		_-> rrel_5:: rrel_fixed:: rrel_scp_const:: nrel_answer;;
+
+		_=> nrel_goto:: .._agent_of_printing_multiset_operator_return;;
+	*);;
+
 *);;
+
+*];;
 *];;

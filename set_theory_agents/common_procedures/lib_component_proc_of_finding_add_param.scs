@@ -11,60 +11,71 @@ lib_component_proc_of_finding_add_param
 -> rrel_key_sc_element: 
 	proc_of_finding_add_param;;
 
-lib_component_proc_of_finding_add_param = [*
-scp_program -> proc_of_finding_add_param (*
-	-> rrel_params: ...(*
-    	-> rrel_1: rrel_in: _quest;;
-    	-> rrel_2: rrel_out: rrel_assign: rrel_scp_var: _s1;;
-    	-> rrel_3: rrel_out: rrel_assign: rrel_scp_var: _s2;;
-    	-> rrel_4: rrel_out: rrel_assign: rrel_scp_var: _answer;;
-  	*);;
-  
-	-> rrel_operators: ...(*
-    	-> rrel_init: _proc_of_finding_add_param_operator0 (*
-			<- genEl;;
-			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer;;
-			=> nrel_goto: _proc_of_finding_add_param_operator_1;;
-		*);;
-		
-		-> _proc_of_finding_add_param_operator_1 (*
-		  <- searchElStr5;;
-		  -> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
-		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc5;;
-		  -> rrel_3: rrel_assign: rrel_scp_var: _s1;;
-      	  -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-		  -> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+lib_component_proc_of_finding_add_param = [*proc_of_finding_add_param
+=> nrel_main_idtf:
+	[] (* <- lang_ru;; *);
+	[] (* <- lang_en;; *);
+<- scp_program;
+-> rrel_key_sc_element: .._process1;;
 
-		  => nrel_then: _proc_of_finding_add_param_operator_2;;
-		  => nrel_else: _proc_of_finding_add_param_operator_return;;
-		*);;
+proc_of_finding_add_param = [*
+.._process1
+_<- scp_process;
 
-		-> _proc_of_finding_add_param_operator_2 (*
-		  <- searchElStr5;;
-		  -> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
-		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc5;;
-		  -> rrel_3: rrel_assign: rrel_scp_var: _node_temp;;
-      	  -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-		  -> rrel_5: rrel_fixed: rrel_scp_const: rrel_2;;
+_-> rrel_1:: rrel_in:: _quest;
+_-> rrel_2:: rrel_assign:: rrel_out:: rrel_scp_var:: _s1;
+_-> rrel_3:: rrel_assign:: rrel_out:: rrel_scp_var:: _s2;
+_-> rrel_4:: rrel_assign:: rrel_out:: rrel_scp_var:: _answer;
+_<= nrel_decomposition_of_action:: .._actions (*
 
-		  => nrel_then: _proc_of_finding_add_param_operator_3;;
-		  => nrel_else: _proc_of_finding_add_param_operator_return;;
-		*);;
+	_-> rrel_1:: .._proc_of_finding_add_param_operator0 (*
+		_<- genEl;;
+		_-> rrel_1:: rrel_assign:: rrel_const:: rrel_node:: rrel_scp_var:: _answer;;
 
-		-> _proc_of_finding_add_param_operator_3 (*
-		  <- searchElStr5;;
-		  -> rrel_1: rrel_fixed: rrel_scp_var: _node_temp;;
-		  -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc5;;
-		  -> rrel_3: rrel_assign: rrel_scp_var: _s2;;
-      	  -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
-		  -> rrel_5: rrel_fixed: rrel_scp_const: rrel_1;;
+		_=> nrel_goto:: .._proc_of_finding_add_param_operator_1;;
+	*);;
 
-		  => nrel_goto: _proc_of_finding_add_param_operator_return;;
-		*);;
+	_-> .._proc_of_finding_add_param_operator_1 (*
+		_<- searchElStr5;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: _quest;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc5;;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _s1;;
+		_-> rrel_4:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc1;;
+		_-> rrel_5:: rrel_fixed:: rrel_scp_const:: rrel_1;;
 
-	    -> _proc_of_finding_add_param_operator_return(*
-    	  <- return;;
-    *);;
-  *);;
+		_=> nrel_else:: .._proc_of_finding_add_param_operator_return;;
+		_=> nrel_then:: .._proc_of_finding_add_param_operator_2;;
+	*);;
+
+	_-> .._proc_of_finding_add_param_operator_2 (*
+		_<- searchElStr5;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_const:: _quest;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc5;;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _node_temp;;
+		_-> rrel_4:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc1;;
+		_-> rrel_5:: rrel_fixed:: rrel_scp_const:: rrel_2;;
+
+		_=> nrel_else:: .._proc_of_finding_add_param_operator_return;;
+		_=> nrel_then:: .._proc_of_finding_add_param_operator_3;;
+	*);;
+
+	_-> .._proc_of_finding_add_param_operator_return (*
+		_<- return;;
+
+	*);;
+
+	_-> .._proc_of_finding_add_param_operator_3 (*
+		_<- searchElStr5;;
+		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _node_temp;;
+		_-> rrel_2:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc5;;
+		_-> rrel_3:: rrel_assign:: rrel_scp_var:: _s2;;
+		_-> rrel_4:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc1;;
+		_-> rrel_5:: rrel_fixed:: rrel_scp_const:: rrel_1;;
+
+		_=> nrel_goto:: .._proc_of_finding_add_param_operator_return;;
+	*);;
+
 *);;
+
+*];;
 *];;

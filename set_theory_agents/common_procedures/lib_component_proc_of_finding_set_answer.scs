@@ -24,7 +24,7 @@ scp_program -> proc_add_el_set_answer (*
             -> rrel_1: rrel_fixed: rrel_scp_const: [процедура добавления элементов 2 множеств в ответ];;
             => nrel_goto: _proc_add_el_set_answer_operator63304;;
         *);;
-        ->_proc_add_el_set_answer_operator63304 (*
+        ->.._proc_add_el_set_answer_operator63304 (*
             <- searchSetStr3;;
             -> rrel_1: rrel_fixed: rrel_scp_var: _set1;;
             -> rrel_2: rrel_scp_var: rrel_assign: rrel_pos_const_perm: _arc;;
@@ -33,7 +33,7 @@ scp_program -> proc_add_el_set_answer (*
             -> rrel_set_3: rrel_fixed: rrel_scp_var: _answer;;
             => nrel_goto: _proc_add_el_set_answer_operator5364;;
         *);;
-        ->_proc_add_el_set_answer_operator5364 (*
+        ->.._proc_add_el_set_answer_operator5364 (*
             <- searchSetStr3;;
             -> rrel_1: rrel_fixed: rrel_scp_var: _set2;;
             -> rrel_2: rrel_scp_var: rrel_assign: rrel_pos_const_perm: _arc;;
@@ -41,7 +41,7 @@ scp_program -> proc_add_el_set_answer (*
             -> rrel_set_2: rrel_fixed: rrel_scp_var: _answer;;
             => nrel_goto: _proc_add_el_set_answer_operator60931;;
         *);;
-        ->_proc_add_el_set_answer_operator60931 (*
+        ->.._proc_add_el_set_answer_operator60931 (*
             <- return;;
         *);;
     *);;
