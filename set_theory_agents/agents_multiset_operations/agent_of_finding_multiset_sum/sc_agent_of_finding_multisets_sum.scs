@@ -13,6 +13,8 @@ sc_agent_of_finding_multisets_sum
 => nrel_initiation_condition_and_result: 
 		(..sc_agent_of_finding_buildings_condition_multisets_sum => _sc_agent_of_finding_buildings_result);
 
+=> nrel_sc_agent_action_class:
+	question_finding_multisets_sum;
 <= nrel_sc_agent_key_sc_elements:
 	{
 	question_initiated;

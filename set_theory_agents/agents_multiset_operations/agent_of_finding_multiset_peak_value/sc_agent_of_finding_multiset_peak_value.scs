@@ -13,6 +13,8 @@ sc_agent_of_finding_multiset_peak_value
 => nrel_initiation_condition_and_result: 
 		(..sc_agent_of_finding_multiset_peak_value => _sc_agent_of_finding_multiset_peak_value_result);
 
+=> nrel_sc_agent_action_class:
+	question_finding_multiset_peak_value;
 <= nrel_sc_agent_key_sc_elements:
 	{
 	question_initiated;

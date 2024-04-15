@@ -123,7 +123,7 @@ _<= nrel_decomposition_of_action:: .._actions (*
 
 	_-> .._proc_of_finding_multiset_peak_value_assign_current_link_to_peak (*
 		_<- varAssign;;
-		_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _peak_value;;
+		_-> rrel_1:: rrel_assign:: rrel_scp_var:: _peak_value;;
 		_-> rrel_2:: rrel_fixed:: rrel_scp_var:: _current_link;;
 
 		_=> nrel_goto:: .._proc_of_finding_multiset_peak_value_operator2;;
