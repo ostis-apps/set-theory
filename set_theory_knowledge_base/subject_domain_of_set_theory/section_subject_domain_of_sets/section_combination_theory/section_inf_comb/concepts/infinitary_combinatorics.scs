@@ -1,0 +1,26 @@
+infinitary_combinatorics <- rrel_maximum_studied_object_class: section_infinitary_combinatorics;;
+    
+infinitary_combinatorics <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(инфинитарная комбинаторика)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(infinitary combinatorics)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_using_constants:
+					{
+					combination_theory;
+					set;
+					infinite_set;
+					set_theory;
+					extreme_combinatorics
+					};;
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[Инфинитарная комбинаторика — применение идей и методов комбинаторики к бесконечным множествам. Это часть теории множеств, область математической логики, но использует инструменты и идеи как теории множеств, так и экстремальной комбинаторики.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [Infinitary combinatorics is the application of ideas and methods of combinatorics to infinite sets. It is part of set theory, a branch of mathematical logic, but uses the tools and ideas of both set theory and extremal combinatorics.] (* <-lang_en;; *);;
+		*);;
+	*);;
+

@@ -1,0 +1,25 @@
+probabilistic_combinatorics <- rrel_maximum_studied_object_class: section_probabilistic_combinatorics;;
+
+probabilistic_combinatorics <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опре.(вероятностная комбинаторика)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(probabilistic combinatorics)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_using_constants:
+					{
+					combination_theory;
+					concept_random_graph;
+					probabilistic_method;
+					extreme_combinatorics
+					};;
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[Вероятностная комбинаторика — это раздел комбинаторики, который отвечает на вопросы вида: какова вероятность присутствия определённого свойства для случайного дискретного объекта, такого как случайный граф? Например, каково среднее число треугольников в случайном графе? Вероятностные методы также используются для определения существования комбинаторных объектов с определёнными заданными свойствами (для которых явные примеры может быть трудно найти), просто наблюдая, что вероятность случайного выбора объекта с этими свойствами больше 0. Этот подход (часто называемый вероятностным методом) доказал свою высокую эффективность в приложениях экстремальной комбинаторики и теории графов.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [Probabilistic combinatorics is a branch of combinatorics that answers questions like: what is the probability of the presence of a certain property for a random discrete object, such as a random graph? For example, what is the average number of triangles in a random graph? Probabilistic methods are also used to determine the existence of combinatorial objects with certain specified properties (for which explicit examples may be difficult to find) simply by observing that the probability of choosing an object at random with those properties is greater than 0. This approach (often called the probabilistic method) has proven to be highly effective in applications of extremal combinatorics and graph theory.] (* <-lang_en;; *);;
+		*);;
+	*);;
+
