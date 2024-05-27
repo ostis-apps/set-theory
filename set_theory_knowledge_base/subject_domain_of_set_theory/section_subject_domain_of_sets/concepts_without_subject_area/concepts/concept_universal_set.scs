@@ -1,0 +1,30 @@
+sc_node -> concept_universal_set;;
+concept_universal_set => nrel_main_idtf:
+    [универсальное множество] (* <- lang_ru;; *);
+    [universal set] (* <- lang_en;; *);;
+concept_universal_set => nrel_main_idtf:
+    [универсум] (* <- lang_ru;; *);;
+    
+concept_universal_set <- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf: [Опр.(универсальное множество)] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [Def.(universal set)](* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_using_constants:
+	    {
+	    element_of_set;
+	    set
+	    };;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+        [Универсальное множество представляет собой множество, которое содержит все возможные элементы или объекты, рассматриваемые в определенном контексте.](* <- lang_ru;; *);;
+        -> rrel_example:
+        [A universal set is a set that contains all possible elements or objects considered within a specific context.] (* <-lang_en;; *);;
+        *);;
+    *);;
+
+
+set => nrel_inclusion: concept_universal_set;;

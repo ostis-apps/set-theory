@@ -1,0 +1,27 @@
+sc_node -> probabilistic_method;;
+probabilistic_method => nrel_main_idtf:
+	[вероятностный метод] (* <- lang_ru;; *);
+	[probabilistic method] (* <- lang_en;; *);;
+	
+probabilistic_method <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(вероятностный метод)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(probabilistic method)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_using_constants:
+					{
+					combination_theory;
+					non_constructive_proof
+					};;
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[Вероятностный метод — неконструктивный метод доказательства существования математического объекта с заданными свойствами. В основном используется в комбинаторике, но также и в теории чисел, линейной алгебре и математическом анализе, а также в информатике и теории информации. ](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [The probabilistic method is a non-constructive method of proving the existence of a mathematical object with given properties. Mainly used in combinatorics, but also in number theory, linear algebra and calculus, as well as in computer science (for example, the probabilistic rounding method) and information theory.] (* <-lang_en;; *);;
+		*);;
+	*);;
+	
+probabilistic_method <- rrel_not_maximum_studied_object_class: section_probabilistic_combinatorics;;

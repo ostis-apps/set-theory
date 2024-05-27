@@ -1,0 +1,29 @@
+sc_node -> convex_fuzzy_set;;
+
+convex_fuzzy_set => nrel_main_idtf:
+    [выпуклое нечёткое множество] (* <- lang_ru;; *);
+    [convex fuzzy set] (* <- lang_en;; *);;
+
+convex_fuzzy_set <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(выпуклое нечёткое множествоетание)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def. (convex fuzzy set)](* <- lang_en;; *);;
+	<= nrel_using_constants: fuzzy_set;;	
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: "file://contents/convex_fuzzy_set_ru.html"
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		-> rrel_example: "file://contents/convex_fuzzy_set_eng.html"
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+

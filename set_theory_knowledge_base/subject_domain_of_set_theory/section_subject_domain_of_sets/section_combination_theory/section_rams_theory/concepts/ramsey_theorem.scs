@@ -1,0 +1,77 @@
+sc_node -> ramsey_theorem;;
+ramsey_theorem => nrel_main_idtf:
+    [теорема Рамсея] (* <- lang_ru;; *);
+    [Ramsey theorem] (* <- lang_en;; *);;
+ 
+ramsey_theorem <- rrel_not_maximum_studied_object_class: section_ramsey_theory;;
+ 
+ramsey_theorem <- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf: [Опр.(теорема Рамсея)] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [Def.(Ramsey theorem)](* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_using_constants:
+                    {
+                    set;
+                    natural_number;
+                    nrel_inclusion;
+                    element_of_set;
+                    concept_edge;
+                    concept_complete_graph;
+                    nrel_subgraph
+                    };;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+        [Теорема Рамсея — теорема комбинаторики о разбиениях множеств, сформулированная и доказанная английским математиком Фрэнком Рамсеем в 1930 году.](* <- lang_ru;; *);;
+        -> rrel_example:
+        [Ramsey's theorem is a combinatorics theorem about partitions of sets, formulated and proven by the English mathematician Frank Ramsey in 1930.] (* <-lang_en;; *);;
+        *);;
+    *);;
+    
+ramsey_theorem <- rrel_key_sc_element:
+    ...
+    (*
+    <- sc_statement;;
+    => nrel_main_idtf: [Утв.(Теоретико-множественная формулировка теоремы Рамсея)] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [St.(Set-theoretic formulation of Ramsey's theorem)](* <- lang_en;; *);;
+    <- sc_statement;;
+    <= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://contents/ramsey_theorem_ru.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		-> rrel_example: "file://contents/ramsey_theorem_eng.html"
+(*
+	<- lang_en;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+    *);;
+    
+ramsey_theorem <- rrel_key_sc_element:
+    ramsey_number
+    (*
+    => nrel_main_idtf: [Опр.(число Рамсея)] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [St.(Ramsey number)](* <- lang_en;; *);;
+    <- rrel_not_maximum_studied_object_class: section_ramsey_theory;;
+    <= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://contents/ramsey_number_ru.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		-> rrel_example: "file://contents/ramsey_number_eng.html"
+(*
+	<- lang_en;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+    *);;

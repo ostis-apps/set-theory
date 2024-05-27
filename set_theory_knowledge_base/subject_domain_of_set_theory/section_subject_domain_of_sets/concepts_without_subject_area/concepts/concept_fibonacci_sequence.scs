@@ -1,0 +1,47 @@
+sc_node -> concept_fibonacci_sequence;;
+
+concept_fibonacci_sequence => nrel_main_idtf:
+    [числа Фибоначи] (* <- lang_ru;; *);
+    [fibonacci sequence] (* <- lang_en;; *);;
+
+concept_fibonacci_sequence <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(число Фибоначчи)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def. (fibonacci sequence)](* <- lang_en;; *);;	
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example:
+		[Числа Фибоначчи — элементы числовой последовательности 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, … в которой первые два числа равны 0 и 1, а каждое последующее число равно сумме двух предыдущих чисел. Названы в честь средневекового математика Леонардо Пизанского (известного как Фибоначчи).](* <- lang_ru;; *);;
+		-> rrel_example:
+		[Fibonacci sequence - elements of the number sequence 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, ... in which the first two numbers are 0 and 1, and each subsequent number is equal to the sum of the two previous numbers. Named after the medieval mathematician Leonardo of Pisa (known as Fibonacci).] (* <-lang_en;; *);;
+		*);;
+	*);;
+	
+concept_fibonacci_sequence => nrel_inclusion:
+		{
+		0;
+		1;
+		2;
+		3;
+		5;
+		8;
+		13;
+		21;
+		34;
+		55;
+		89;
+		144;
+		233;
+		377;
+		610;
+		987;
+		1597;
+		2584;
+		4181;
+		6765;
+		10946;
+		17711
+		};;

@@ -1,0 +1,29 @@
+sc_node -> concave_fuzzy_set;;
+
+concave_fuzzy_set => nrel_main_idtf:
+    [вогнутое нечёткое множество] (* <- lang_ru;; *);
+    [concave fuzzy set] (* <- lang_en;; *);;
+
+concave_fuzzy_set <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(вогнутое нечёткое множествоетание)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def. (concave fuzzy set)](* <- lang_en;; *);;
+	<= nrel_using_constants: fuzzy_set;;	
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: "file://contents/concave_fuzzy_set_ru.html"
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		-> rrel_example: "file://contents/concave_fuzzy_set_eng.html"
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+

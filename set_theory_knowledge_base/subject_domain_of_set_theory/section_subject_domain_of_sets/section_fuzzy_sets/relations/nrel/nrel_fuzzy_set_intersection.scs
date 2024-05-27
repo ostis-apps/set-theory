@@ -1,0 +1,33 @@
+sc_node -> nrel_fuzzy_set_intersection;;
+
+nrel_fuzzy_set_intersection => nrel_main_idtf:
+    [пересечение нечётких множеств*] (* <- lang_ru;; *);
+    [nrel fuzzy set intersection*] (* <- lang_en;; *);;
+
+nrel_fuzzy_set_intersection => nrel_first_domain: fuzzy_set;;
+
+nrel_fuzzy_set_intersection => nrel_second_domain: fuzzy_set;;
+
+nrel_fuzzy_set_intersection <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(пересечение нечётких множеств*)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def. (nrel fuzzy set intersection*)](* <- lang_en;; *);;
+	<= nrel_using_constants: fuzzy_set;;	
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: "file://contents/fuzzy_set_intersection_ru.html"
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		-> rrel_example: "file://contents/fuzzy_set_intersection_eng.html"
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+

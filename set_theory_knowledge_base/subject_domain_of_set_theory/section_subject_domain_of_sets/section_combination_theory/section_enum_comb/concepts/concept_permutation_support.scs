@@ -1,0 +1,29 @@
+sc_node -> concept_permutation_support;;
+
+concept_permutation_support => nrel_main_idtf:
+    [носитель перестановки] (* <- lang_ru;; *);
+    [permutation support] (* <- lang_en;; *);;
+
+concept_permutation_support <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(носитель перестановки)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def. (permutation support)](* <- lang_en;; *);;	
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: "file://contents/permutation_support_ru.html"
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		-> rrel_example: "file://contents/permutation_support_eng.html"
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+concept_permutation_support <- rrel_not_maximum_studied_object_class: section_enumerative_combinatorics;;

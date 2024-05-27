@@ -1,0 +1,22 @@
+enumerative_combinatorics <- rrel_maximum_studied_object_class: section_enumerative_combinatorics;;
+
+enumerative_combinatorics => nrel_idtf:
+    [исчисляющая комбинаторика] (* <- lang_ru;; *);;
+    
+enumerative_combinatorics <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Определение: перечислительная комбинаторика] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: enumerative combinatorics](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[Перечислительная комбинаторика (или исчисляющая комбинаторика) — раздел комбинаторики, который рассматривает задачи о перечислении, то есть подсчёте количества, или непосредственного построения и перебора, различных конфигураций (например, перестановок), образуемых элементами конечных множеств, на которые могут накладываться определённые ограничения, такие как: различимость или неразличимость элементов, возможность повторения одинаковых элементов и т. п. ](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [Enumerative combinatorics (or calculative combinatorics) is a section of combinatorics that considers problems of enumeration, that is, counting the quantity, or direct construction and enumeration, of various configurations (for example, permutations) formed by elements of finite sets, which may be subject to certain restrictions, such as : distinguishability or indistinguishability of elements, the possibility of repeating identical elements, etc.] (* <-lang_en;; *);;
+		*);;
+	*);;
+	
+enumerative_combinatorics <= nrel_using_constants: element_of_set;;

@@ -1,0 +1,73 @@
+sc_node -> concept_combination;;
+
+concept_combination => nrel_main_idtf:
+    [сочетание] (* <- lang_ru;; *);
+    [combination] (* <- lang_en;; *);;
+
+concept_combination <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(сочетание)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def. (combination)](* <- lang_en;; *);;	
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: "file://contents/combination_ru.html"
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		-> rrel_example: "file://contents/combination_eng.html"
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+concept_combination <- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(число сочетаний)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [St.(number of combinations)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: "file://contents/number_of_combination_ru.html"
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example: "file://contents/number_of_combination_eng.html"
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+			*);;
+	*);;
+
+concept_combination <- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(cочетания с повторениями)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [St.(combinations with repetitions)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: "file://contents/combinations_with_repetitions_ru.html"
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example: "file://contents/combinations_with_repetitions_eng.html"
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+			*);;
+	*);;
+	
+concept_combination <- rrel_not_maximum_studied_object_class: section_enumerative_combinatorics;;

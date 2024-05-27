@@ -1,0 +1,51 @@
+sc_node -> concept_lucas_theorem;;
+
+concept_lucas_theorem => nrel_main_idtf:
+    [теорема Люка] (* <- lang_ru;; *);
+    [lucas theorem] (* <- lang_en;; *);;
+
+concept_lucas_theorem <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(теорема Люка)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def. (lucas theorem)](* <- lang_en;; *);;	
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: "file://contents/lucas_theorem_ru.html"
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		-> rrel_example: "file://contents/lucas_theorem_eng.html"
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+concept_lucas_theorem <- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(доказательство теоремы Люка)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [St.(proof of Lucas theorem)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: "file://contents/lucas_theorem_proof_ru.html"
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example: "file://contents/lucas_theorem_proof_eng.html"
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+			*);;
+	*);;
+
+concept_lucas_theorem <- rrel_not_maximum_studied_object_class: section_enumerative_combinatorics;;

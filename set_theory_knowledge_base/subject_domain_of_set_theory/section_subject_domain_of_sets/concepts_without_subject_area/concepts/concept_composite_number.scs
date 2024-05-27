@@ -1,0 +1,29 @@
+sc_node -> concept_composite_number;;
+
+concept_composite_number => nrel_main_idtf:
+    [составное число] (* <- lang_ru;; *);
+    [composite number] (* <- lang_en;; *);;
+
+concept_composite_number <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(составное число)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def. (composite number)](* <- lang_en;; *);;
+	<= nrel_using_constants: natural_number;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example:
+		[Составное число — натуральное число, имеющее делители, отличные от единицы и самого себя. Каждое составное число является произведением двух или более натуральных чисел, больших единицы.](* <- lang_ru;; *);;
+		-> rrel_example:
+		[A composite number is a natural number that has divisors other than one and itself. Every composite number is the product of two or more natural numbers greater than one.] (* <-lang_en;; *);;
+		*);;
+	*);;
+	
+concept_composite_number => nrel_inclusion:
+		{
+		4;6;8;9;10;12;14;15;16;18;20;21;22;24;25;26;27;28;30;32;33;34;35;36;38;39;40;42;44;45;46;48;49;50;51;52;54;55;56;57;58;60;62;63;64;65
+		};;
+		
+natural_number => nrel_inclusion: concept_composite_number;;

@@ -1,0 +1,54 @@
+sc_node -> concept_generating_function;;
+
+concept_generating_function => nrel_main_idtf:
+    [производящая функция последовательности] (* <- lang_ru;; *);
+    [generating function] (* <- lang_en;; *);;
+
+concept_generating_function <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(производящая функция последовательности)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def. (generating function)](* <- lang_en;; *);;	
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: "file://contents/generating_function_ru.html"
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		-> rrel_example: "file://contents/generating_function_eng.html"
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+concept_generating_function <- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(свойства производящей функции последовательности)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [St.(properties of generating function)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: "file://contents/generating_function_properties_ru.html"
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example: "file://contents/generating_function_properties_eng.html"
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+			*);;
+	*);;
+
+
+concept_generating_function <- rrel_not_maximum_studied_object_class: section_enumerative_combinatorics;;
+
+function => nrel_inclusion: concept_generating_function;;

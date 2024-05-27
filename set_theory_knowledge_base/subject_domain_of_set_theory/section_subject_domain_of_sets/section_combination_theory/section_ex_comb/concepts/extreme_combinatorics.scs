@@ -1,0 +1,24 @@
+extreme_combinatorics <- rrel_maximum_studied_object_class: section_extreme_combinatorics;;
+    
+extreme_combinatorics <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(экстремальная комбинаторика)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(extremal combinatorics)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_using_constants:
+					{
+					combination_theory;
+					set;
+					concept_graph
+					};;
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[Экстремальная комбинаторика изучает экстремальные вопросы о системах множеств. Типы вопросов, рассматриваемых в этом случае, относятся к самому большому возможному графу, который удовлетворяет определённым свойствам.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [Extremal combinatorics studies extremal questions about set systems. The types of questions considered in this case refer to the largest possible graph that satisfies certain properties.] (* <-lang_en;; *);;
+		*);;
+	*);;
+

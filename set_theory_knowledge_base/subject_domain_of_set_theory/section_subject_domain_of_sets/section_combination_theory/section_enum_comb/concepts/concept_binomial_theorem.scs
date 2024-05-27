@@ -1,0 +1,51 @@
+sc_node -> concept_binomial_theorem;;
+
+concept_binomial_theorem => nrel_main_idtf:
+    [бином Ньютона] (* <- lang_ru;; *);
+    [binomial theorem] (* <- lang_en;; *);;
+
+concept_binomial_theorem <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(бином Ньютона)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def. (binomial theorem)](* <- lang_en;; *);;	
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: "file://contents/binomial_theorem_ru.html"
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		-> rrel_example: "file://contents/binomial_theorem_eng.html"
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+concept_binomial_theorem <- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(доказательство бинома Ньютона)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [St.(binomial theorem proof)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: "file://contents/binomial_theorem_proof_ru.html"
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example: "file://contents/binomial_theorem_proof_eng.html"
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+			*);;
+	*);;
+
+concept_binomial_theorem <- rrel_not_maximum_studied_object_class: section_enumerative_combinatorics;;

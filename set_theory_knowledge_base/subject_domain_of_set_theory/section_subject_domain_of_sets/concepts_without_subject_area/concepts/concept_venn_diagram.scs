@@ -1,0 +1,45 @@
+sc_node -> concept_venn_diagram;;
+concept_venn_diagram => nrel_main_idtf:
+    [диаграмма Венна] (* <- lang_ru;; *);
+    [Venn diagram] (* <- lang_en;; *);;
+concept_venn_diagram => nrel_idtf:
+    [диаграмма Эйлера — Венна] (* <- lang_ru;; *);;
+    
+concept_venn_diagram <- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf: [Опр.(диаграмма Венна)] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [Def.(Venn diagram)](* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_using_constants:
+                    {
+                    relation;
+                    nrel_combination;
+                    nrel_intersection;
+                    concept_universal_set;
+                    nrel_inclusion;
+	       	    set
+                    };;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+        [Диаграмма Венна — схематичное изображение всех возможных отношений (объединение, пересечение, разность, симметрическая разность) нескольких (часто — трёх) подмножеств универсального множества. На диаграммах Венна универсальное множество U изображается множеством точек некоторого прямоугольника, в котором располагаются в виде кругов или других простых фигур все остальные рассматриваемые множества.](* <- lang_ru;; *);;
+        -> rrel_example:
+        [A Venn diagram is a schematic representation of all possible relationships (combination, intersection, difference, symmetric difference) of several (often three) subsets of a universal set. In Venn diagrams, the universal set U is depicted as a set of points of a certain rectangle, in which all other sets under consideration are located in the form of circles or other simple figures.] (* <-lang_en;; *);;
+        *);;
+    *);;
+
+concept_venn_diagram <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/Venn_diagram.png"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;

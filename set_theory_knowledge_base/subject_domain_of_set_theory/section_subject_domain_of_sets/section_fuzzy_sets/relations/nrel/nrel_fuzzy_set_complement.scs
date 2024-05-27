@@ -1,0 +1,31 @@
+sc_node -> nrel_fuzzy_set_complement;;
+
+nrel_fuzzy_set_complement => nrel_main_idtf:
+    [отрицание нечёткого множества*] (* <- lang_ru;; *);
+    [nrel fuzzy set complement*] (* <- lang_en;; *);;
+
+nrel_fuzzy_set_complement => nrel_first_domain: fuzzy_set;;
+
+nrel_fuzzy_set_complement <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(отрицание нечёткого множества*)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def. (nrel fuzzy set complement*)](* <- lang_en;; *);;
+	<= nrel_using_constants: fuzzy_set;;	
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: "file://contents/fuzzy_set_complement_ru.html"
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		-> rrel_example: "file://contents/fuzzy_set_complement_eng.html"
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+

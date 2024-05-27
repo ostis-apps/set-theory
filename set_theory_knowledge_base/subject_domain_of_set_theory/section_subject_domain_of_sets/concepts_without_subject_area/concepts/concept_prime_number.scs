@@ -1,0 +1,29 @@
+sc_node -> concept_prime_number;;
+
+concept_prime_number => nrel_main_idtf:
+    [простое число] (* <- lang_ru;; *);
+    [prime number] (* <- lang_en;; *);;
+
+concept_prime_number <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(простое число)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def. (prime number)](* <- lang_en;; *);;
+	<= nrel_using_constants: natural_number;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example:
+		[Простое число — натуральное число, имеющее ровно два различных натуральных делителя. Другими словами, натуральное число p является простым, если оно отлично от 1 и делится без остатка только на 1 и на само p.](* <- lang_ru;; *);;
+		-> rrel_example:
+		[A prime number is a natural number that has exactly two distinct natural factors. In other words, a natural number p is prime if it is different from 1 and is divisible without remainder only by 1 and p itself.] (* <-lang_en;; *);;
+		*);;
+	*);;
+	
+concept_prime_number => nrel_inclusion:
+		{
+		2;3;5;7;11;13;17;19;23;29;31;37;41;43;47;53;59;61;67;71;73;79;83;89;97;101;103;107;109;113;127;131;137;139;149;151;157;163;167;173;179;181;191;193;197;199;211;223;227;229;233
+		};;
+		
+natural_number => nrel_inclusion: concept_prime_number;;
