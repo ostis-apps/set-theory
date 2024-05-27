@@ -1,0 +1,27 @@
+sc_node -> subnormal_fuzzy_set;;
+
+subnormal_fuzzy_set => nrel_main_idtf:
+    [субнормальное нечёткое множество] (* <- lang_ru;; *);
+    [subnormal fuzzy set] (* <- lang_en;; *);;
+
+subnormal_fuzzy_set <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(субнормальное нечёткое множествоетание)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def. (subnormal fuzzy set)](* <- lang_en;; *);;
+	<= nrel_using_constants: 
+	{
+	fuzzy_set;
+	nrel_height_of_fuzzy_set
+	};;	
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example:
+		[Если высота строго меньше 1, нечёткое множество называется субнормальным.](* <- lang_ru;; *);;
+		-> rrel_example:
+		[If the height is strictly less than 1, the fuzzy set is called subnormal.] (* <-lang_en;; *);;
+		*);;
+	*);;
+

@@ -1,0 +1,27 @@
+sc_node -> normal_fuzzy_set;;
+
+normal_fuzzy_set => nrel_main_idtf:
+    [нормальное нечёткое множество] (* <- lang_ru;; *);
+    [normal fuzzy set] (* <- lang_en;; *);;
+
+normal_fuzzy_set <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(нормальное нечёткое множествоетание)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def. (normal fuzzy set)](* <- lang_en;; *);;
+	<= nrel_using_constants: 
+	{
+	fuzzy_set;
+	nrel_height_of_fuzzy_set
+	};;	
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example:
+		[Нечёткое множество A нормально, если его высота равна 1.](* <- lang_ru;; *);;
+		-> rrel_example:
+		[A fuzzy set A is normal if its height is 1.] (* <-lang_en;; *);;
+		*);;
+	*);;
+

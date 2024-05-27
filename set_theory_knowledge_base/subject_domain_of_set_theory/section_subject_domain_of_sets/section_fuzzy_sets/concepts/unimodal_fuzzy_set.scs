@@ -1,0 +1,23 @@
+sc_node -> unimodal_fuzzy_set;;
+
+unimodal_fuzzy_set => nrel_main_idtf:
+    [унимодальных нечёткое множество] (* <- lang_ru;; *);
+    [subnormal fuzzy set] (* <- lang_en;; *);;
+
+unimodal_fuzzy_set <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(унимодальных нечёткое множествоетание)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def. (unimodal fuzzy set)](* <- lang_en;; *);;
+	<= nrel_using_constants: fuzzy_set;;	
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example:
+		[Нечёткое множество унимодально, если μ(x) = 1 только на одном x из X.](* <- lang_ru;; *);;
+		-> rrel_example:
+		[A fuzzy set is unimodal if μ(x) = 1 on only one x of X.] (* <-lang_en;; *);;
+		*);;
+	*);;
+
