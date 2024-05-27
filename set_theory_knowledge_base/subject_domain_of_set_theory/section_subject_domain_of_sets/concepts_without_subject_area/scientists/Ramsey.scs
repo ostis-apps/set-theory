@@ -1,0 +1,48 @@
+sc_node -> Ramsey;;
+Ramsey => nrel_main_idtf:
+    [Фрэнк Пламптон Рамсей] (* <- lang_ru;; *);
+    [Frank Plumpton Ramsey] (* <- lang_en;; *);;
+ 
+Ramsey <= nrel_author: ramsey_theorem;;
+Ramsey <= nrel_author: ramsey_theory;;
+
+Ramsey =>nrel_place_of_birth: Cambridge
+(*
+=> nrel_main_idtf:
+[Кембридж, Великобритания](* <-lang_ru;; *);
+[Cambridge, UK] (* <- lang_en;; *);;
+*);;
+
+Ramsey =>nrel_year_birth: 1903(* <- number;; *);;
+
+Ramsey =>nrel_year_death: 1930(* <- number;; *);;
+
+Ramsey <= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://contents/Ramsey_ru.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		-> rrel_example: "file://contents/Ramsey_eng.html"
+(*
+	<- lang_en;;
+	=> nrel_format: format_html;;
+*);;
+	*);;
+
+Ramsey <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/Ramsey.png"
+(*=> nrel_format:format_png;;
+*);;
+			*);;
+	*);;
+

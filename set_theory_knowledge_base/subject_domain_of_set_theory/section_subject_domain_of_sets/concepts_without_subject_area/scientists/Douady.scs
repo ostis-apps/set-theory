@@ -1,0 +1,47 @@
+sc_node -> Douady;;
+Douady => nrel_main_idtf:
+    [Адриен Дауди] (* <- lang_ru;; *);
+    [Adrien Douady] (* <- lang_en;; *);;
+ 
+Douady <= nrel_author: concept_mandelbrot_set;;
+
+Douady =>nrel_place_of_birth: La_Tronche
+(*
+=> nrel_main_idtf:
+[Ла-Тронш, Франция](* <-lang_ru;; *);
+[La Tronche, France] (* <- lang_en;; *);;
+*);;
+
+Douady =>nrel_year_birth: 1935(* <- number;; *);;
+
+Douady =>nrel_year_death: 2006(* <- number;; *);;
+
+Douady <= nrel_sc_text_translation:
+	...
+	(* 
+	-> rrel_example: "file://contents/Douady_ru.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		-> rrel_example: "file://contents/Douady_eng.html"
+(*
+	<- lang_en;;
+	=> nrel_format: format_html;;
+*);;
+	*);;
+
+Douady <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/Douady.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+
