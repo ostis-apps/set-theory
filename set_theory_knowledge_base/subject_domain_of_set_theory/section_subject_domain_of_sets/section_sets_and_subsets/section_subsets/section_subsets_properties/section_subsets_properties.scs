@@ -1,0 +1,97 @@
+section_subsets_properties
+=> nrel_main_idtf:
+	[Раздел. Свойства подмножеств]
+	(* <- lang_ru;; *);
+	[Section. Properties_of_subsets]
+	(* <- lang_eng;; *);;
+
+section_subsets_properties = [*
+reflexive_property_subset
+=> nrel_main_idtf: 
+	[Рефлективность] (* <- lang_ru;; *);
+	[Reflexive] (* <- lang_en;; *);
+<- observation;
+<= nrel_sc_text_translation:	
+		...
+		(*
+		-> 
+			"file://content/content_html/reflexive.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+
+asymmetrical_property_subset
+=> nrel_main_idtf: 
+	[Ассиметричность] (* <- lang_ru;; *);
+	[Asymemtry] (* <- lang_en;; *);
+<- observation;
+<= nrel_sc_text_translation:	
+		...
+		(*
+		-> 
+			"file://content/content_html/asymmetry.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+
+transitivity_property_subset
+=> nrel_main_idtf: 
+	[Транзитивность] (* <- lang_ru;; *);
+	[Transitivity] (* <- lang_en;; *);
+<- observation;
+<= nrel_sc_text_translation:	
+		...
+		(*
+		-> 
+			"file://content/content_html/transitivity.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+
+emty_set_property_subset
+=> nrel_main_idtf: 
+	[Свойство пустого множества для подмножеств] (* <- lang_ru;; *);
+	[Empty set in subsets] (* <- lang_en;; *);
+<- observation;
+<= nrel_sc_text_translation:	
+		...
+		(*
+		-> 
+			"file://content/content_html/empty_set.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+
+three_sets_properties
+=> nrel_main_idtf: 
+	[Свойство подмножества для трех множеств] (* <- lang_ru;; *);
+	[Properties of subset for three sets] (* <- lang_en;; *);
+<- observation;
+<= nrel_sc_text_translation:	
+		...
+		(*
+		-> 
+			"file://content/content_html/three_sets.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+
+*];;
+
+
+section_sets_axioms
+<- rrel_key_sc_element:
+	asymmetrical_property_subset;
+	reflexive_property_subset;
+	transitivity_property_subset;
+        three_sets_properties;;

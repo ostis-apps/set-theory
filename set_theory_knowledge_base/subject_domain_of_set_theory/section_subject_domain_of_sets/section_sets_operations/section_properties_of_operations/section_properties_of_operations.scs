@@ -92,12 +92,451 @@ commutative<- rrel_key_sc_element:
 					rrel_argument_of_action;; 
 				*);;
 			*);;
+			
+idempotence
+		=> nrel_main_idtf:
+			[идемпотентность]
+			(* <- lang_ru;;	*);
+		=> nrel_idtf:
+			[свойство идемпотентности]
+			(* <- lang_ru;;	*);
+			[равносильность]
+			(* <- lang_ru;;	*);
+			[idempotence]
+			(*<- lang_en;; *);;
 
-	
+idempotence <-rrel_key_sc_element:
+		   Definition_of_idempotence
+			(* 
+				=> nrel_main_idtf:
+					[Опр. (идемпотентность)]
+				(* <- lang_ru;;	*);;
+				<- definition;;
+
+			<= nrel_sc_text_translation:
+				.associativity_definition
+				(* 
+					-> rrel_example:"file://content/content_htmls/idempotence.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+				*);;
+
+			<= nrel_using_constants:
+				...
+					(*
+					 -> parameter; 
+					    binary_operation;
+					    nrel_result;; 
+					*);;
+			*);;
+
+distributive_property
+		=> nrel_main_idtf:
+			[дистрибутивность]
+			(* <- lang_ru;;	*);
+		=> nrel_idtf:
+			[распределительный закон]
+			(* <- lang_ru;;	*);
+			[distributive property]
+			(*<- lang_en;; *);;
+
+distributive_property <-rrel_key_sc_element:
+		   Definition_of_distributive_property
+			(* 
+				=> nrel_main_idtf:
+					[Опр. (дистрибутивность)]
+				(* <- lang_ru;;	*);;
+				<- definition;;
+
+			<= nrel_sc_text_translation:
+				.associativity_definition
+				(* 
+					-> rrel_example:"file://content/content_htmls/distributive_property.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+				*);;
+
+			<= nrel_using_constants:
+				...
+					(*
+					 -> parameter; 
+					    binary_operation;
+					    nrel_result;; 
+					*);;
+			*);;
+			
+takeover
+		=> nrel_main_idtf:
+			[поглощение]
+			(* <- lang_ru;;	*);
+		=> nrel_idtf:
+			[takeover]
+			(*<- lang_en;; *);;
+
+takeover <-rrel_key_sc_element:
+		   Definition_of_takeover
+			(* 
+				=> nrel_main_idtf:
+					[Опр. (поглощение)]
+				(* <- lang_ru;;	*);;
+				<- definition;;
+
+			<= nrel_sc_text_translation:
+				.associativity_definition
+				(* 
+					-> rrel_example:"file://content/content_htmls/takeover.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+				*);;
+
+			<= nrel_using_constants:
+				...
+					(*
+					 -> parameter; 
+					    binary_operation;
+					    nrel_result;; 
+					*);;
+			*);;
+
+properties_of_null
+		=> nrel_main_idtf:
+			[свойства нуля]
+			(* <- lang_ru;;	*);
+		=> nrel_idtf:
+			[properties of null]
+			(*<- lang_en;; *);;
+
+properties_of_null <-rrel_key_sc_element:
+		   Definition_of_properties_of_null
+			(* 
+				=> nrel_main_idtf:
+					[Опр. (свойства нуля)]
+				(* <- lang_ru;;	*);;
+				<- definition;;
+
+			<= nrel_sc_text_translation:
+				.associativity_definition
+				(* 
+					-> rrel_example:"file://content/content_htmls/properties_of_null.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+				*);;
+
+			<= nrel_using_constants:
+				...
+					(*
+					 -> parameter; 
+					    binary_operation;
+					    nrel_result;; 
+					*);;
+			*);;
+
+properties_of_one
+		=> nrel_main_idtf:
+			[свойства единицы]
+			(* <- lang_ru;;	*);
+		=> nrel_idtf:
+			[properties of one]
+			(*<- lang_en;; *);;
+
+properties_of_one <-rrel_key_sc_element:
+		   Definition_of_properties_of_one
+			(* 
+				=> nrel_main_idtf:
+					[Опр. (свойства единицы)]
+				(* <- lang_ru;;	*);;
+				<- definition;;
+
+			<= nrel_sc_text_translation:
+				.associativity_definition
+				(* 
+					-> rrel_example:"file://content/content_htmls/properties_of_one.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+				*);;
+
+			<= nrel_using_constants:
+				...
+					(*
+					 -> parameter; 
+					    binary_operation;
+					    nrel_result;; 
+					*);;
+			*);;
+			
+De_Morgans_laws
+		=> nrel_main_idtf:
+			[законы Де Моргана]
+			(* <- lang_ru;;	*);
+		=> nrel_idtf:
+			[De Morgan's laws]
+			(*<- lang_en;; *);;
+
+De_Morgans_laws <-rrel_key_sc_element:
+		   Definition_of_De_Morgans_laws
+			(* 
+				=> nrel_main_idtf:
+					[Опр. (законы Де Моргана)]
+				(* <- lang_ru;;	*);;
+				<- definition;;
+
+			<= nrel_sc_text_translation:
+				.associativity_definition
+				(* 
+					-> rrel_example:"file://content/content_htmls/De_Morgans_laws.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+				*);;
+
+			<= nrel_using_constants:
+				...
+					(*
+					 -> parameter; 
+					    binary_operation;
+					    nrel_result;; 
+					*);;
+			*);;
+
+properties_of_object
+		=> nrel_main_idtf:
+			[свойства дополнения]
+			(* <- lang_ru;;	*);
+		=> nrel_idtf:
+			[properties of object]
+			(*<- lang_en;; *);;
+
+properties_of_object <-rrel_key_sc_element:
+		   Definition_of_properties_of_object
+			(* 
+				=> nrel_main_idtf:
+					[Опр. (свойства дополнения)]
+				(* <- lang_ru;;	*);;
+				<- definition;;
+
+			<= nrel_sc_text_translation:
+				.associativity_definition
+				(* 
+					-> rrel_example:"file://content/content_htmls/properties_of_object.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+				*);;
+
+			<= nrel_using_constants:
+				...
+					(*
+					 -> parameter; 
+					    binary_operation;
+					    nrel_result;; 
+					*);;
+			*);;
+
+properties_of_complement
+		=> nrel_main_idtf:
+			[выражение для разности]
+			(* <- lang_ru;;	*);
+		=> nrel_idtf:
+			[properties of complement]
+			(*<- lang_en;; *);;
+
+properties_of_complement <-rrel_key_sc_element:
+		   Definition_of_properties_of_complement
+			(* 
+				=> nrel_main_idtf:
+					[Опр. (выражение для разности)]
+				(* <- lang_ru;;	*);;
+				<- definition;;
+
+			<= nrel_sc_text_translation:
+				.associativity_definition
+				(* 
+					-> rrel_example:"file://content/content_htmls/properties_of_complement.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+				*);;
+
+			<= nrel_using_constants:
+				...
+					(*
+					 -> parameter; 
+					    binary_operation;
+					    nrel_result;; 
+					*);;
+			*);;
+			
+takeover_identity
+		=> nrel_main_idtf:
+			[тождество поглощения]
+			(* <- lang_ru;;	*);
+		=> nrel_idtf:
+			[getting identity by takeover]
+			(*<- lang_en;; *);;
+
+takeover_identity <-rrel_key_sc_element:
+		   Definition_of_takeover_identity
+			(* 
+				=> nrel_main_idtf:
+					[Опр. (тодество поглощения)]
+				(* <- lang_ru;;	*);;
+				<- definition;;
+
+			<= nrel_sc_text_translation:
+				.associativity_definition
+				(* 
+					-> rrel_example:"file://content/content_htmls/takeover_identity.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+				*);;
+
+			<= nrel_using_constants:
+				...
+					(*
+					 -> parameter; 
+					    binary_operation;
+					    nrel_result;; 
+					*);;
+			*);;
+
+
+simple_bonding_identity
+		=> nrel_main_idtf:
+			[простое склеивание]
+			(* <- lang_ru;;	*);
+		=> nrel_idtf:
+			[getting identity by simple bonding]
+			(*<- lang_en;; *);;
+
+simple_bonding_identity <-rrel_key_sc_element:
+		   Definition_of_simple_bonding_identity
+			(* 
+				=> nrel_main_idtf:
+					[Опр. (простое склеивание)]
+				(* <- lang_ru;;	*);;
+				<- definition;;
+
+			<= nrel_sc_text_translation:
+				.associativity_definition
+				(* 
+					-> rrel_example:"file://content/content_htmls/simple_bonding_identity.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+				*);;
+
+			<= nrel_using_constants:
+				...
+					(*
+					 -> parameter; 
+					    binary_operation;
+					    nrel_result;; 
+					*);;
+			*);;
+			
+generalized_bonding_identity
+		=> nrel_main_idtf:
+			[обощенное склеивание]
+			(* <- lang_ru;;	*);
+		=> nrel_idtf:
+			[getting identity by generalized bonding]
+			(*<- lang_en;; *);;
+generalized_bonding_identity <-rrel_key_sc_element:
+		   Definition_of_generalized_bonding_identity
+			(* 
+				=> nrel_main_idtf:
+					[Опр. (обобщенное склеивание)]
+				(* <- lang_ru;;	*);;
+				<- definition;;
+
+			<= nrel_sc_text_translation:
+				.associativity_definition
+				(* 
+					-> rrel_example:"file://content/content_htmls/generalized_bonding_identity.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+				*);;
+
+			<= nrel_using_constants:
+				...
+					(*
+					 -> parameter; 
+					    binary_operation;
+					    nrel_result;; 
+					*);;
+			*);;
+
+
+reducting_formula
+		=> nrel_main_idtf:
+			[формула сокращения]
+			(* <- lang_ru;;	*);
+		=> nrel_idtf:
+			[reducting formula]
+			(*<- lang_en;; *);;
+reducting_formula <-rrel_key_sc_element:
+		   Definition_of_reducting_formula
+			(* 
+				=> nrel_main_idtf:
+					[Опр. (формула сокращения)]
+				(* <- lang_ru;;	*);;
+				<- definition;;
+
+			<= nrel_sc_text_translation:
+				.associativity_definition
+				(* 
+					-> rrel_example:"file://content/content_htmls/reducting_formula.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+				*);;
+
+			<= nrel_using_constants:
+				...
+					(*
+					 -> parameter; 
+					    binary_operation;
+					    nrel_result;; 
+					*);;
+			*);;
+
+
+
 *];;
 section_properties_of_operations
 -> rrel_key_sc_element:
 	 associativity; 
-	 commutative;;
+	 commutative;
+	 idempotence;
+	 distributive_property;
+	 takeover;
+	 properties_of_null;
+	 properties_of_one;
+	 De_Morgans_laws;
+	 properties_of_object;
+	 properties_of_complement;
+	 takeover_identity;
+	 simple_bonding_identity;
+	 generalized_bonding_identity;
+	 reducting_formula;;
 
 

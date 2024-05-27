@@ -1,0 +1,287 @@
+section_cover_and_partition_of_set
+=> nrel_main_idtf:
+	[Раздел. Покрытие и разбиение множества]
+	(* <- lang_ru;; *);
+	[Section. Cover and partition of set]
+	(* <- lang_eng;; *);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/section_defenition_of_subset.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+
+
+
+section_cover_and_partition_of_set =  [*
+
+cover_of_a_set
+<- sc_node_class;
+=> nrel_main_idtf:
+        [покрытие множества](* <- lang_ru;;	*);
+	[cover of a set] (* <- lang_eng;;	*);;
+
+<- rrel_key_sc_element:
+	Def_of_cover_of_a_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/cover_of_a_set.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> set;;
+		-> subset_of_set;;
+		*);;
+
+	*);;
+
+Def_of_cover_of_a_set
+=> nrel_main_idtf:
+	[Определение понятия "покрытие множества"]
+	(* <- lang_ru;;	*);
+	[Defenition of "cover of a set"]
+	(* <- lang_eng;;	*);;
+	
+subcover_of_a_set
+<- sc_node_class;
+=> nrel_main_idtf:
+        [подпокрытие множества](* <- lang_ru;;	*);
+	[cover of a set] (* <- lang_eng;;	*);;
+
+<- rrel_key_sc_element:
+	Def_of_subcover_of_a_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/subcover_of_a_set.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> set;;
+		-> subset_of_set;;
+		-> cover_of_a_set;;
+		*);;
+
+	*);;
+
+Def_of_subcover_of_a_set
+=> nrel_main_idtf:
+	[Определение понятия "подпокрытие множества"]
+	(* <- lang_ru;;	*);
+	[Defenition of "subcover of a set"]
+	(* <- lang_eng;;	*);;
+	
+inscribed_cover_of_a_set
+<- sc_node_class;
+=> nrel_main_idtf:
+        [вписаное покрытие множества](* <- lang_ru;;	*);
+	[inscribed cover of a set] (* <- lang_eng;;	*);;
+
+<- rrel_key_sc_element:
+	Def_of_inscribed_cover_of_a_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/inscribed_cover_of_a_set.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> set;;
+		-> subset_of_set;;
+		-> cover_of_a_set;;
+		*);;
+
+	*);;
+
+Def_of_inscribed_cover_of_a_set
+=> nrel_main_idtf:
+	[Определение понятия "вписаное покрытие множества"]
+	(* <- lang_ru;;	*);
+	[Defenition of "cover of a set"]
+	(* <- lang_eng;;	*);;
+
+locally_finite_cover_of_a_set
+<- sc_node_class;
+=> nrel_main_idtf:
+        [локально конечное покрытие множества](* <- lang_ru;;	*);
+	[locally finite cover of a set] (* <- lang_eng;;	*);;
+
+<- rrel_key_sc_element:
+	Def_of_locally_finite_cover_of_a_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/locally_finite_cover_of_a_set.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> set;;
+		-> subset_of_set;;
+		-> cover_of_a_set;;
+		*);;
+
+	*);;
+
+Def_of_locally_finite_cover_of_a_set
+=> nrel_main_idtf:
+	[Определение понятия "локально конечное покрытие"]
+	(* <- lang_ru;;	*);
+	[Defenition of "locally finite cover of a set"]
+	(* <- lang_eng;;	*);;
+	
+fundamental_cover_of_a_set
+<- sc_node_class;
+=> nrel_main_idtf:
+        [фундаментальное покрытие множества](* <- lang_ru;;	*);
+	[fundamental cover of a set] (* <- lang_eng;;	*);;
+
+<- rrel_key_sc_element:
+	Def_of_fundamental_cover_of_a_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/fundamental_cover_of_a_set.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> set;;
+		-> subset_of_set;;
+		-> cover_of_a_set;;
+		*);;
+
+	*);;
+
+Def_of_fundamental_cover_of_a_set
+=> nrel_main_idtf:
+	[Определение понятия "фундаментальное покрытие"]
+	(* <- lang_ru;;	*);
+	[Defenition of "fundamental cover of a set"]
+	(* <- lang_eng;;	*);;
+
+compact_cover_of_a_set
+<- sc_node_class;
+=> nrel_main_idtf:
+        [компактное покрытие множества](* <- lang_ru;;	*);
+	[compact cover of a set] (* <- lang_eng;;	*);;
+
+<- rrel_key_sc_element:
+	Def_of_compact_cover_of_a_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/compact_cover_of_a_set.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> set;;
+		-> subset_of_set;;
+		-> cover_of_a_set;;
+		-> subcover_of_a_set;;
+		*);;
+
+	*);;
+
+Def_of_compact_cover_of_a_set
+=> nrel_main_idtf:
+	[Определение понятия "компактное покрытие"]
+	(* <- lang_ru;;	*);
+	[Defenition of "compact cover of a set"]
+	(* <- lang_eng;;	*);;
+
+procompact_cover_of_a_set
+<- sc_node_class;
+=> nrel_main_idtf:
+        [прокомпактное покрытие множества](* <- lang_ru;;	*);
+	[pro-compact cover of a set] (* <- lang_eng;;	*);;
+
+<- rrel_key_sc_element:
+	Def_of_procompact_cover_of_a_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/procompact_cover_of_a_set.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> set;;
+		-> subset_of_set;;
+		-> cover_of_a_set;;
+		-> subcover_of_a_set;;
+		*);;
+
+	*);;
+
+Def_of_procompact_cover_of_a_set
+=> nrel_main_idtf:
+	[Определение понятия "прокомпактное покрытие"]
+	(* <- lang_ru;;	*);
+	[Defenition of "pro-compact cover of a set"]
+	(* <- lang_eng;;	*);;
+
+
+*];;
+
+section_defenition_of_subset
+-> rrel_key_sc_element:
+	partition_of_a_set;
+	cover_of_a_set;
+	subcover_of_a_set;
+	inscribed_cover_of_a_set;
+	locally_finite_cover_of_a_set;
+	fundamental_cover_of_a_set;
+	compact_cover_of_a_set;
+	procompact_cover_of_a_set;;
+	
