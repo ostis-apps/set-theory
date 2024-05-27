@@ -1,0 +1,237 @@
+section_defenition_of_subset
+=> nrel_main_idtf:
+	[Раздел. Определение понятия подмножества]
+	(* <- lang_ru;; *);
+	[Section. Defenition of subsets]
+	(* <- lang_eng;; *);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/section_defenition_of_subset.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+
+
+
+section_defenition_of_subset =  [*
+subset_of_set
+<- sc_node_class;
+=> nrel_main_idtf:
+        [подмножество](* <- lang_ru;;	*);
+	[subset] (* <- lang_eng;;	*);;
+
+<- rrel_key_sc_element:
+	Def_of_subset_of_set
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/defenition_of_subset.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> element_of_set;;
+		-> set;;
+		-> empty_set;;
+		*);;
+
+	*);;
+
+Def_of_subsets_of_set
+=> nrel_main_idtf:
+	[Определение понятия "подмножества"]
+	(* <- lang_ru;;	*);
+	[Defenition of "subset"]
+	(* <- lang_eng;;	*);;
+	
+
+superset
+<- sc_node_class;
+=> nrel_main_idtf:
+        [надмножество](* <- lang_ru;;	*);
+	[superset] (* <- lang_eng;;	*);;
+
+
+<- rrel_key_sc_element:
+	Defenition_of_superset
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/defenition_superset.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> element_of_set;;
+		-> set;;
+		-> subset_of_set;;
+		*);;
+
+	*);;
+
+Def_of_superset
+=> nrel_main_idtf:
+	[Определение понятия "надмножество"]
+	(* <- lang_ru;;	*);
+	[Defenition of "superset"]
+	(* <- lang_eng;;	*);;
+
+	
+trivial_subset
+<- sc_node_class;
+=> nrel_main_idtf:
+        [несобственное подмножество](* <- lang_ru;;	*);
+	[trivial subset] (* <- lang_eng;;	*);;
+=> nrel_idtf:
+        [тривиальное подмножество](* <- lang_ru;;	*);
+
+
+<- rrel_key_sc_element:
+	Defenition_of_trivial_subset
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/defenition_trivial_subset.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> element_of_set;;
+		-> set;;
+		-> empty_set;;
+		-> subset_of_set;;
+		*);;
+
+	*);;
+
+Def_of_trivial_subset
+=> nrel_main_idtf:
+	[Определение понятия "несобственное подмножество"]
+	(* <- lang_ru;;	*);
+	[Defenition of "trivial subset"]
+	(* <- lang_eng;;	*);;
+=> nrel_idtf:
+	[Определение понятия "тривильное подмножество"]
+	(* <- lang_ru;;	*);;
+
+	
+non_trivial_subset
+<- sc_node_class;
+=> nrel_main_idtf:
+        [собственное подмножество](* <- lang_ru;;	*);
+	[non-trivial subset] (* <- lang_eng;;	*);;
+=> nrel_idtf:
+        [нетривиальное подмножество](* <- lang_ru;;	*);
+
+
+<- rrel_key_sc_element:
+	Def_of_non_trivial_subset
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/defenition_non-trivial_subset .html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> element_of_set;;
+		-> set;;
+		-> empty_set;;
+		-> subset_of_set;;
+		*);;
+
+	*);;
+
+Def_of_non_trivial_subset
+=> nrel_main_idtf:
+	[Определение понятия "собственное подмножество"]
+	(* <- lang_ru;;	*);
+	[Defenition of "non-trivial subset"]
+	(* <- lang_eng;;	*);;
+=> nrel_idtf:
+	[Определение понятия "тревильное подмножество"]
+	(* <- lang_ru;;	*);;
+	
+boolean
+<- sc_node_class;
+=> nrel_main_idtf:
+        [булеан](* <- lang_ru;;	*);
+	[boolean] (* <- lang_eng;;	*);;
+=> nrel_idtf:
+        [множество всех подмножеств](* <- lang_ru;;	*);
+        [показательное множество](* <- lang_ru;;	*);
+        [powerset](* <- lang_ru;;	*);
+
+
+<- rrel_key_sc_element:
+	Def_of_boolean
+	(* 
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://content/defenition_bolean.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+	<= nrel_using_constants:
+		...
+		(* 
+		-> set;;
+		-> subset_of_set;;
+		*);;
+
+	*);;
+
+Def_of_boolean
+=> nrel_main_idtf:
+	[Определение понятия "булеан"]
+	(* <- lang_ru;;	*);
+	[Defenition of "boolean"]
+	(* <- lang_eng;;	*);;
+=> nrel_idtf:
+        [Определение понятия "множество всех подмножеств"](* <- lang_ru;;	*);
+        ["показательное множество"](* <- lang_ru;;	*);
+        [Defenition of "powerset"](* <- lang_ru;;	*);;
+        
+
+
+*];;
+
+section_defenition_of_subset
+-> rrel_key_sc_element:
+        subset_of_set;
+	superset;
+	trivial_subset;
+	non_trivial_subset;
+	boolean;;
+	

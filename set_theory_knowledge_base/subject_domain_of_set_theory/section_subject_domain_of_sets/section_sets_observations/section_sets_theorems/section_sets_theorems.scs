@@ -98,6 +98,102 @@ Szpilrajn_theorem
 	=> nrel_format: format_html;;
 *);;
 		*);;
+		
+discontiniuum_theorem
+=> nrel_main_idtf: 
+	[Теорема о дисконтиниуме] (* <- lang_ru;; *);
+	[Discontinuum theorem] (* <- lang_en;; *);
+<- observation;
+<= nrel_sc_text_translation:	
+		...
+		(*
+		-> 
+			"file://content/content_html/discontinuum_theorem.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+		
+Zorns_lemma
+=> nrel_main_idtf: 
+	[Лемма Цорна] (* <- lang_ru;; *);
+	[Zorn's Lemma] (* <- lang_en;; *);
+<- observation;
+<= nrel_sc_text_translation:	
+		...
+		(*
+		-> 
+			"file://content/content_html/zorns_lemma.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+		
+Kleenes_theorem
+=> nrel_main_idtf: 
+	[Теорема Клини о неподвижной точке] (* <- lang_ru;; *);
+	[Kleene's theorem] (* <- lang_en;; *);
+<- observation;
+<= nrel_sc_text_translation:	
+		...
+		(*
+		-> 
+			"file://content/content_html/kleenes_theorem.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+		
+Ramseys_theorem
+=> nrel_main_idtf: 
+	[Теорема Рамсея] (* <- lang_ru;; *);
+	[Ramsey's theorem] (* <- lang_en;; *);
+<- observation;
+<= nrel_sc_text_translation:	
+		...
+		(*
+		-> 
+			"file://content/content_html/ramseys_theorem.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+		
+Zermelos_theorem
+=> nrel_main_idtf: 
+	[Теорема Цермело] (* <- lang_ru;; *);
+	[Zermelos theorem] (* <- lang_en;; *);
+<- observation;
+<= nrel_sc_text_translation:	
+		...
+		(*
+		-> 
+			"file://content/content_html/zermelos_theorem.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+		
+Housefods_theorem
+=> nrel_main_idtf: 
+	[Теорема Хаусдорфа] (* <- lang_ru;; *);
+	[Housefod's theorem] (* <- lang_en;; *);
+<- observation;
+<= nrel_sc_text_translation:	
+		...
+		(*
+		-> 
+			"file://content/content_html/housefods_theorem.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
 *];;
 
 section_sets_theorems
@@ -107,4 +203,10 @@ section_sets_theorems
 	Cantor_theorem;
 	diagonal_theorem;
 	Dilworth_theorem;
-	Szpilrajn_theorem;;
+	Szpilrajn_theorem;
+	Housefods_theorem;
+	Zermelos_theorem;
+	Ramseys_theorem;
+	Kleenes_theorem;
+	Zorns_lemma;
+	discontiniuum_theorem;;

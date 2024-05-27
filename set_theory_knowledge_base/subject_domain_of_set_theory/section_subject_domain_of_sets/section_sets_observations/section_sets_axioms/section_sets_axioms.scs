@@ -71,6 +71,9 @@ axiom_of_boolean
 => nrel_main_idtf: 
 	[Аксиома булеана] (* <- lang_ru;; *);
 	[Axiom of boolean] (* <- lang_en;; *);
+=> nrel_idtf:
+        [Аксиома множества подмножеств] (* <- lang_ru;; *);
+        [Аксиома степени] (* <- lang_ru;; *);
 <- observation;
 <= nrel_sc_text_translation:	
 		...
@@ -103,6 +106,9 @@ allocation_scheme
 => nrel_main_idtf: 
 	[Аксиома выделения] (* <- lang_ru;; *);
 	[Allocation scheme] (* <- lang_en;; *);
+=> nrel_idtf:
+        [Схема выделения] (* <- lang_ru;; *);
+
 <- observation;
 <= nrel_sc_text_translation:	
 		...
@@ -135,6 +141,8 @@ axiom_of_regularity
 => nrel_main_idtf: 
 	[Аксиома регулярности] (* <- lang_ru;; *);
 	[Axiom of regularity] (* <- lang_en;; *);
+=> nrel_idtf:
+        [Аксиома основания] (* <- lang_ru;; *);
 <- observation;
 <= nrel_sc_text_translation:	
 		...
@@ -178,7 +186,9 @@ axiom_of_determinacy
 	=> nrel_format: format_html;;
 *);;
 		*);;
+
 *];;
+
 
 section_sets_axioms
 <- rrel_key_sc_element:
@@ -192,5 +202,6 @@ section_sets_axioms
 	conversion_circuit;
 	axiom_of_regularity;
 	axiom_of_choice;
+	axiom_of_set_of_subsets;
 	axiom_of_determinacy;;
 

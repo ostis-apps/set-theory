@@ -9,6 +9,11 @@ section_sets_and_subsets
 		=> nrel_section_base_order: 
 			section_describing_sets;;
 		*);
+		section_subsets
+		(*
+		=> nrel_section_base_order: 
+			section_describing_sets;;
+		*);
 		section_describing_sets
 		(*
 		=> nrel_section_base_order: 
