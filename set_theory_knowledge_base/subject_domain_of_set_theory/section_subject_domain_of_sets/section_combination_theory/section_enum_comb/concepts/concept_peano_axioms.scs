@@ -1,0 +1,46 @@
+sc_node -> concept_peano_axioms;;
+
+concept_peano_axioms => nrel_main_idtf:
+    [аксиомы Пиано] (* <- lang_ru;; *);
+    [peano axioms] (* <- lang_en;; *);;
+
+concept_peano_axioms <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(аксиомы Пиано)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def. (peano axioms)](* <- lang_en;; *);;	
+	<= nrel_using_constants: natural_number;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Аксиомы Пеано — одна из систем аксиом для натуральных чисел, введённая в 1889 году итальянским математиком Джузеппе Пеано. ](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [Peano's axioms are one of the systems of axioms for natural numbers, introduced in 1889 by the Italian mathematician Giuseppe Peano.] (* <-lang_en;; *);;
+		*);;
+	*);;
+
+concept_peano_axioms <- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(формулировка аксиом Пиано)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [St.(formulation of Piano's axioms)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: "file://contents/peano_axioms_ru.html"
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example: "file://contents/peano_axioms_eng.html"
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+			*);;
+	*);;
+	
+concept_peano_axioms <- rrel_not_maximum_studied_object_class: section_enumerative_combinatorics;;

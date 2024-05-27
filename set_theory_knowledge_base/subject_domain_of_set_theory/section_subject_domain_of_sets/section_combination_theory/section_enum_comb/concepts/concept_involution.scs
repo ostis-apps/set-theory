@@ -1,0 +1,47 @@
+sc_node -> concept_involution;;
+
+concept_involution => nrel_main_idtf:
+    [инволюция] (* <- lang_ru;; *);
+    [involution] (* <- lang_en;; *);;
+
+concept_involution <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(инволюция)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def. (involution)](* <- lang_en;; *);;	
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: "file://contents/involution_ru.html"
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		-> rrel_example: "file://contents/involution_eng.html"
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+concept_involution <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/Involution.png"
+(*=> nrel_format:format_png;;
+*);;
+			*);;
+	*);;
+
+concept_permutation => nrel_inclusion: concept_involution;;
+
+bijection => nrel_inclusion: concept_involution;;
+
+concept_involution <- rrel_not_maximum_studied_object_class: section_enumerative_combinatorics;;

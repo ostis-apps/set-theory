@@ -1,0 +1,100 @@
+sc_node -> concept_cyclic_permutation;;
+
+concept_cyclic_permutation => nrel_main_idtf:
+    [циклическая перестановка] (* <- lang_ru;; *);
+    [сyclic permutation] (* <- lang_en;; *);;
+
+concept_cyclic_permutation <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(циклическая перестановка)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def. (сyclic permutation)](* <- lang_en;; *);;	
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: "file://contents/cyclic_permutation_ru.html"
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		-> rrel_example: "file://contents/cyclic_permutation_eng.html"
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+concept_cyclic_permutation <- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(свойства циклической перестановки)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [St.(properties of cyclic permutation)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: "file://contents/cyclic_permutation_properties_ru.html"
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example: "file://contents/cyclic_permutation_properties_eng.html"
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+			*);;
+	*);;
+
+bijection => nrel_inclusion: concept_cyclic_permutation;;
+
+concept_permutation => nrel_inclusion: concept_cyclic_permutation;;	
+
+concept_cyclic_permutation <- rrel_not_maximum_studied_object_class: section_enumerative_combinatorics;;
+
+sc_node -> concept_cyclic_number;;
+
+concept_cyclic_number => nrel_main_idtf:
+    [циклическое число] (* <- lang_ru;; *);
+    [сyclic number] (* <- lang_en;; *);;
+
+concept_cyclic_number <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(циклическое число)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def. (сyclic number)](* <- lang_en;; *);;	
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: "file://contents/cyclic_number_ru.html"
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		-> rrel_example: "file://contents/cyclic_number_eng.html"
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+concept_cyclic_number <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/cyclic_number.png"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+	
+concept_cyclic_number <- rrel_not_maximum_studied_object_class: section_enumerative_combinatorics;;
+

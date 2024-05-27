@@ -1,0 +1,73 @@
+sc_node -> concept_binomial_coefficient;;
+
+concept_binomial_coefficient => nrel_main_idtf:
+    [биномиальный коэффициент] (* <- lang_ru;; *);
+    [binomial theorem] (* <- lang_en;; *);;
+
+concept_binomial_coefficient <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(биномиальный коэффициент)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def. (binomial coefficient)](* <- lang_en;; *);;	
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: "file://contents/binomial_coefficient_ru.html"
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		-> rrel_example: "file://contents/binomial_coefficient_eng.html"
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+concept_binomial_coefficient <- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(явные формулы для биномиальных коэффициентов)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [St.(explicit formulas for binomial coefficients)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: "file://contents/explicit_formulas_ru.html"
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example: "file://contents/explicit_formulas_eng.html"
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+			*);;
+	*);;
+	
+concept_binomial_coefficient <- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(свойства биномиальных коэффициентов)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [St.(properties of binomial coefficients)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: "file://contents/properties_binomial_coefficients_ru.html"
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example: "file://contents/properties_binomial_coefficients_eng.html"
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+			*);;
+	*);;
+	
+concept_binomial_coefficient <- rrel_not_maximum_studied_object_class: section_enumerative_combinatorics;;
