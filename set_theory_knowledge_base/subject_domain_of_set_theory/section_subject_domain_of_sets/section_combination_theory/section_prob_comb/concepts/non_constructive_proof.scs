@@ -1,0 +1,43 @@
+sc_node -> non_constructive_proof;;
+non_constructive_proof => nrel_main_idtf:
+	[неконструктивное доказательство] (* <- lang_ru;; *);
+	[non constructive proof] (* <- lang_en;; *);;
+
+non_constructive_proof => nrel_idtf:
+    [неэффективное доказательство] (* <- lang_ru;; *);;
+
+non_constructive_proof <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(неконструктивное доказательство)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(non constructive proof)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_using_constants:
+			{
+			set;
+			element_of_set
+			};;
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[Неконструктивное доказательство — класс математических доказательств, доказывающих лишь существование в заданном (как правило, бесконечном) множестве элемента, удовлетворяющего заданным свойствам, но не дающее никакой информации о других свойствах элемента, то есть не позволяющие ни предъявить его, ни приблизительно описать.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [Non-constructive proof is a class of mathematical proofs that prove only the existence in a given (usually infinite) set of an element that satisfies given properties, but does not provide any information about other properties of the element, that is, it does not allow it to be presented or approximately described.] (* <-lang_en;; *);;
+		*);;
+	*);;
+
+non_constructive_proof <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(неэффективная константа)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [St.(ineffective constant)] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Если в доказательстве доказывается формула, в которой одна из величин — постоянная, но её значение восстановить невозможно, то это число называется неэффективной константой. ](*<- lang_ru;;*);;
+-> rrel_example: 
+[If the proof proves a formula in which one of the quantities is a constant, but its value cannot be restored, then this number is called an ineffective constant.](*<- lang_en;;*);;
+*);;
+*);;

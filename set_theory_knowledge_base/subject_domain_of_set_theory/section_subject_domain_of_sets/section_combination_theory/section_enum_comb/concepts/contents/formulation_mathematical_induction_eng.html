@@ -1,0 +1,18 @@
+<p><b>Formulation:</b></p>
+<p>Suppose we need to establish the truth of an infinite sequence of statements, numbered by <sc_element sys_idtf="natural_number">natural numbers</sc_element>: P<sub>1</sub>, P<sub>2</sub>, ..., P<sub>n</sub>, P<sub>n+1</sub>, ...</p>
+<p>Suppose that:</p>
+<ol>
+<li>It is established that P<sub>1</sub> is true. (This statement is called the basis of induction.)</li>
+<li>For any n, it is proven that if P<sub>n</sub> is true, then P<sub>n+1</sub> is also true. (This statement is called the inductive step.)</li>
+</ol>
+<p>Then all the statements in our sequence are true.</p>
+
+<p><b>The Principle of Complete Mathematical Induction:</b></p>
+
+<p>There is also a variation, the so-called principle of complete mathematical induction. Here is its formal formulation:</p>
+
+<p>Let there be a sequence of statements P<sub>1</sub>, P<sub>2</sub>, P<sub>3</sub>, ... . If for a natural n > 1, it follows from the fact that all P<sub>1</sub>, P<sub>2</sub>, P<sub>3</sub>, ..., P<sub>n-1</sub> are true, that P<sub>n</sub> is also true, then all statements in this sequence are true, that is, (∀n∈ℕ, n>1) ((∀i∈{1;...;n-1}) P<sub>i</sub> ⇒ P<sub>n</sub>) ⇒ (∀n∈ℕ) P<sub>n</sub>.</p>
+
+<p>In this variation, the basis of induction turns out to be unnecessary, since it is a trivial special case of the inductive step. Indeed, for n = 1, the condition (∀i∈{1;...;n-1}) P<sub>i</sub> ⇒ P<sub>n</sub> is exactly equivalent to P<sub>1</sub> (its truth does not follow from anything). However, often one still has to prove the inductive step for P<sub>1</sub> separately, so it is reasonable to single out this part as the basis.</p>
+
+<p>The principle of complete mathematical induction is equivalent to the axiom of induction in the <sc_element sys_idtf="concept_peano_axioms">Peano axioms</sc_element>.</p>

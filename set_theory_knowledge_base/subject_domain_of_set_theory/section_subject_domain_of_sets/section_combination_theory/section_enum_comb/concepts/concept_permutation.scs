@@ -1,0 +1,45 @@
+sc_node -> concept_permutation;;
+
+concept_permutation => nrel_main_idtf:
+    [перестановка] (* <- lang_ru;; *);
+    [permutation] (* <- lang_en;; *);;
+
+concept_permutation <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(перестановка)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def. (permutation)](* <- lang_en;; *);;	
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: "file://contents/permutation_ru.html"
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		-> rrel_example: "file://contents/permutation_eng.html"
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+concept_permutation <- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(перестановка является частным случаем размещения)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [St.(permutation is a special case of placemen)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> [Перестановка является частным случаем размещения, когда выбираются все элементы множества.](*<- lang_ru;;*);;
+			-> [Permutation is a special case of placement where all elements of a set are selected.](*<- lang_en;;*);;
+			*);;
+	*);;
+
+concept_partial_permutation => nrel_inclusion: concept_permutation;;
+
+concept_permutation <- rrel_not_maximum_studied_object_class: section_enumerative_combinatorics;;

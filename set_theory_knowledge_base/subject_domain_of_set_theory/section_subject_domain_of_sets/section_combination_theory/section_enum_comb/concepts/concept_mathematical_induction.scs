@@ -1,0 +1,55 @@
+sc_node -> concept_mathematical_induction;;
+
+concept_mathematical_induction => nrel_main_idtf:
+    [математическая индукция] (* <- lang_ru;; *);
+    [mathematical induction] (* <- lang_en;; *);;
+
+concept_mathematical_induction => nrel_idtf:
+    [индукция] (* <- lang_ru;; *);
+    [induction] (* <- lang_en;; *);;
+    
+concept_mathematical_induction <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(математическая индукция)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def. (mathematical induction)](* <- lang_en;; *);;	
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: "file://contents/mathematical_induction_ru.html"
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		-> rrel_example: "file://contents/mathematical_induction_eng.html"
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+concept_mathematical_induction <- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(формулировка математической индукции)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [St.(formulation of mathematical induction)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: "file://contents/formulation_mathematical_induction_ru.html"
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example: "file://contents/formulation_mathematical_induction_eng.html"
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+			*);;
+	*);;
+
+concept_mathematical_induction <- rrel_not_maximum_studied_object_class: section_enumerative_combinatorics;;

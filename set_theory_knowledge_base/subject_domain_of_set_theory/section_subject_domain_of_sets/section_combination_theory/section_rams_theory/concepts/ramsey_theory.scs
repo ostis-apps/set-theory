@@ -1,0 +1,35 @@
+ramsey_theory <- rrel_maximum_studied_object_class: section_ramsey_theory;;
+    
+ramsey_theory <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(теория Рамсея)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(Ramsey theory)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[Теория Рамсея — раздел комбинаторики, изучающий условия, при которых в произвольно формируемых математических объектах обязан появиться некоторый порядок. ](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [Ramsey theory is a branch of combinatorics that studies the conditions under which some order must appear in arbitrarily formed mathematical objects.] (* <-lang_en;; *);;
+		*);;
+	*);;
+	
+ramsey_theory <= nrel_using_constants: combination_theory;;
+
+ramsey_theory <- rrel_key_sc_element: 
+	...
+	(*
+	<- sc_statement;;
+	=> nrel_main_idtf: [Утв.(задачи в теории Рамсея)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [St.(problems inRamsey theory)](* <- lang_en;; *);;	
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[Задачи в теории Рамсея обычно звучат в форме вопроса «сколько элементов должно быть в некотором объекте, чтобы гарантированно выполнялось заданное условие или существовала заданная структура». ](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [Problems in Ramsey theory usually take the form of the question “how many elements must be in some object in order to be guaranteed to satisfy a given condition or to have a given structure.”] (* <-lang_en;; *);;
+		*);;
+	*);;

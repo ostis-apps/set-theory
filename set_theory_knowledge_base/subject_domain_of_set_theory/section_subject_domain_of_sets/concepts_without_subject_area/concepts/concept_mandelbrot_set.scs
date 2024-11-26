@@ -1,0 +1,63 @@
+sc_node -> concept_mandelbrot_set;;
+concept_mandelbrot_set => nrel_main_idtf:
+    [множество Мандельброта] (* <- lang_ru;; *);
+    [Mandelbrot set] (* <- lang_en;; *);;
+ 
+concept_mandelbrot_set <- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf: [Опр.(множество Мандельброта)] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [Def.(Mandelbrot set)](* <- lang_en;; *);;
+    <- definition;; 
+    <= nrel_using_constants:
+                    {
+                    element_of_set;
+	       	    set
+                    };;
+    <= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://contents/mandelbrot_set_ru.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
+		-> rrel_example: "file://contents/mandelbrot_set_eng.html"
+(*
+	<- lang_en;;
+	=> nrel_format: format_html;;
+*);;
+		*);;
+    *);;	
+
+concept_mandelbrot_set <- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf: [Утв.(площадь множества Мандельброта)] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [St.(area of ​​the Mandelbrot set)](* <- lang_en;; *);;
+    <- sc_statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+        [Точное значение площади множества Мандельброта неизвестно. На 2012 год она оценивалась как 1,506 591 884 9 ± 2,8×10−9.](* <- lang_ru;; *);;
+        -> rrel_example:
+        [The exact area of ​​the Mandelbrot set is unknown. For 2012, it was estimated as 1.5065918849 ± 2.8 × 10−9.] (* <-lang_en;; *);;
+        *);;
+    *);;
+ 
+concept_mandelbrot_set <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/Mandelbrot_set.png"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+	
+set => nrel_inclusion: concept_mandelbrot_set;;

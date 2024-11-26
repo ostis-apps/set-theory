@@ -1,0 +1,47 @@
+sc_node -> concept_transposition;;
+
+concept_transposition => nrel_main_idtf:
+    [транспозиция] (* <- lang_ru;; *);
+    [transposition] (* <- lang_en;; *);;
+
+concept_transposition <- rrel_key_sc_element:
+	...
+	(*
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(транспозиция)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def. (transposition)](* <- lang_en;; *);;	
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: "file://contents/transposition_ru.html"
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		-> rrel_example: "file://contents/transposition_eng.html"
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+
+concept_transposition <- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(свойство транспозиции)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [St.(propertie of transposition)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> [Любая перестановка конечного множества может быть представлена в виде композиции элементарных транспозиций.](*<- lang_ru;;*);;
+			-> [Any permutation of a finite set can be represented as a composition of elementary transpositions.](*<- lang_en;;*);;
+			*);;
+	*);;
+
+bijection => nrel_inclusion: concept_transposition;;
+
+concept_permutation => nrel_inclusion: concept_transposition;;	
+
+concept_transposition <- rrel_not_maximum_studied_object_class: section_enumerative_combinatorics;;

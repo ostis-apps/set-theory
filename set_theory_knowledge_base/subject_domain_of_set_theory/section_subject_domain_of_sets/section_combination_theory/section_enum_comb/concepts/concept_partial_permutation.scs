@@ -1,0 +1,48 @@
+sc_node -> concept_partial_permutation;;
+
+concept_partial_permutation => nrel_main_idtf:
+    [размещение] (* <- lang_ru;; *);
+    [partial permutation] (* <- lang_en;; *);;
+
+concept_partial_permutation <- rrel_key_sc_element:
+	...
+	(*
+	<=nrel_using_constants:
+		{
+		oriented_set;
+		element_of_set
+		};;
+	<- definition;;
+	=> nrel_main_idtf: [Опр.(размещение)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def. (partial permutation)](* <- lang_en;; *);;	
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> [Упорядоченные наборы, состоящие из k различных элементов, выбранных из n данных элементов, называются размещениями из n элементов по k.](*<- lang_ru;;*);;
+		-> [Ordered sets consisting of k distinct elements selected from n given elements are called n-element-by-k permutaions.](*<- lang_en;;*);;
+		*);;
+	*);;
+
+concept_partial_permutation <- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(формула числа всех размещение)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [St.(formula for the number of all partial permutations)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: "file://contents/partial_permutation_ru.html"
+			(*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+			-> rrel_example: "file://contents/partial_permutation_eng.html"
+			(*
+				<- lang_en;;
+				=> nrel_format: format_html;;
+			*);;
+			*);;
+	*);;
+	
+concept_partial_permutation <- rrel_not_maximum_studied_object_class: section_enumerative_combinatorics;;
