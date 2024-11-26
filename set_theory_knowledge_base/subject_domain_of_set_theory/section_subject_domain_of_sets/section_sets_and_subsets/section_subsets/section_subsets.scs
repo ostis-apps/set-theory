@@ -1,0 +1,20 @@
+section_subsets
+=> nrel_main_idtf:
+	[Раздел. Подмножества]
+	(* <- lang_ru;; *);
+	[Section. Subsets]
+	(* <- lang_eng;; *);
+<= nrel_section_decomposition:
+	{
+		section_defenition_of_subset
+		(*
+		=> nrel_section_base_order: 
+			section_subsets_properties;;
+		*);
+		section_subsets_properties	
+		(*
+		=> nrel_section_base_order: 
+			section_cover_and_partition_of_set;;
+		*);
+		section_cover_and_partition_of_set	
+	};;
