@@ -1,9 +1,9 @@
 set_theory_knowledge_base
 => nrel_main_idtf:
-	[База знаний теории множеств]
+	[Раздел. Предментая область теории множеств]
 	(* <- lang_ru;; *);
 => nrel_main_idtf:
-	[Set theory knowledge base]
+	[Section. Set Theory]
 	(* <- lang_en;; *);
 
 <- not_enough_formed_structure;

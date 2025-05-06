@@ -5,7 +5,7 @@ section_questions_for_the_exam_on_the_discipline_MOIS
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_pdfs/Вопросы к экзамену 2015.pdf" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_pdfs/questions_2015.pdf" (* <-lang_ru;; => nrel_format: format_pdf;; *);;
 	*);;
 
 
@@ -1547,6 +1547,7 @@ section_answer_for_the_exam_on_the_discipline_MOIS_answer_2
 	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_2.html" 
 		(* 
 			<- lang_ru;;
+			=> nrel_format: format_html;;
 			=> nrel_sourse: [База знаний IMS OSTIS] (* <-lang_ru;; *);;
 		*);;
 	-> rrel_example: "file://content/content_images/question2.png"
@@ -1588,17 +1589,20 @@ section_answer_for_the_exam_on_the_discipline_MOIS_answer_4
 	(*
 	-> rrel_example: "file://content/content_htmls/answers/4/section_answer_for_the_exam_on_the_discipline_MOIS_answer_4_1.html" 
 		(* 
-			<-lang_ru;; 
+			<-lang_ru;;
+			=> nrel_format: format_html;;
 			=> nrel_sourse: [База знаний IMS OSTIS] (* <-lang_ru;; *);;
 		*);;
 	-> rrel_example: "file://content/content_htmls/answers/4/section_answer_for_the_exam_on_the_discipline_MOIS_answer_4_2.html" 
 		(* 
 			<-lang_ru;;
+			=> nrel_format: format_html;;
 			=> nrel_sourse: [База знаний IMS OSTIS] (* <-lang_ru;; *);;
 		*);;
 	-> rrel_example: "file://content/content_htmls/answers/4/section_answer_for_the_exam_on_the_discipline_MOIS_answer_4_3.html" 
 		(* 
-			<-lang_ru;; 
+			<-lang_ru;;
+			=> nrel_format: format_html;;
 			=> nrel_sourse: [База знаний IMS OSTIS] (* <-lang_ru;; *);;
 		*);;
 
@@ -2361,12 +2365,14 @@ section_answer_for_the_exam_on_the_discipline_MOIS_answer_50
 	(*
 	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_50_1.html" 
 		(* 
-			<-lang_ru;; 
+			<-lang_ru;;
+			=> nrel_format: format_html;;
 			=> nrel_sourse: [Голенков В.В., Гулякина Н.А. Графодинамические модели параллельной обработки знаний: принципы построения, реализации и проектирования. В сб.: Открытые семантические технологии проектирования интеллектуальных систем (OSTIS-2012): материалы Междунар. науч.-техн. конф., Минск, 16-18 февраля 2015г. Минск: БГУИР, 2012. С. 22, 53.] (* <-lang_ru;; *);;
 		*);;
 	-> rrel_example: "file://content/content_htmls/answers/section_answer_for_the_exam_on_the_discipline_MOIS_answer_50_2.html" 
 		(* 
-			<-lang_ru;; 
+			<-lang_ru;;
+			=> nrel_format: format_html;;
 			=> nrel_sourse: [Теория формальных языков. — Москва, "Учебное пособие", 2004. — С. 59-60] (* <-lang_ru;; *);;
 		*);;
 	*);;
