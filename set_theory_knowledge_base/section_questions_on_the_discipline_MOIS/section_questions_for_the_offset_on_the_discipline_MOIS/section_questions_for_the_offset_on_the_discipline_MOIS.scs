@@ -5,5 +5,5 @@ section_questions_for_the_offset_on_the_discipline_MOIS
 <= nrel_sc_text_translation:
 	...
 	(*
-	-> rrel_example: "file://content/content_pdfs/Вопросы к зачету 2015.pdf" (* <-lang_ru;; *);;
+	-> rrel_example: "file://content/content_pdfs/questions_2015.pdf" (* <-lang_ru;; => nrel_format: format_pdf;;  *);;
 	*);;
